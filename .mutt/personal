@@ -40,6 +40,7 @@ folder-hook .                                 source ~/.mutt/folders/DEFAULTS
 folder-hook =lists/                           source ~/.mutt/mailing-list
 folder-hook =inboxes/MAIN$                    source ~/.mutt/folders/MAIN
 folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
+folder-hook =inboxes/junk-mail                source ~/.mutt/folders/junk-mail
 folder-hook =(inboxes|lists)/zsh-             source ~/.mutt/folders/zsh
 folder-hook =(inboxes|lists)/alsa-            source ~/.mutt/folders/alsa
 folder-hook =(inboxes|lists)/void             source ~/.mutt/folders/void
@@ -458,8 +459,8 @@ alias lizzie.kerr Lizzie Kerr <lizziekuk@yahoo.com>
 alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
 alias add2 kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
 
-alias birthday-and-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt
-alias birthday-and-sponsorship2 sarsli, dave, annabel.borthwick, clare.raybould
+alias birthday-and-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
+alias sponsorship-followup nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, matt.jones, rosie.biss, livia.harris, claire.roff, matthew.pay, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
 
 # }}}
 
@@ -920,6 +921,16 @@ subscribe linux-diald
 #mailboxes =inboxes/linux-diald
 
 alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
+
+# }}}
+# {{{ easytag
+
+alias easytag "EasyTAG mailing list" <easytag@lists.sourceforge.net>
+fcc-save-hook "easytag.*lists.sourceforge.net" =lists/easytag
+subscribe easytag
+#mailboxes =inboxes/easytag
+send-hook "easytag.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <easytag@adamspiers.org>'
+send-hook "easytag.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <easytag@adamspiers.org>'
 
 # }}}
 # {{{ folding.el
