@@ -85,22 +85,24 @@
    bind  pager  f            next-page
    bind  pager  b            previous-page     
  
-   bind  pager  ^   top
-   bind  pager  g   top
-   bind  pager  G   bottom
+   bind  pager  ^      top
+   bind  pager  g      top
+   bind  pager  G      bottom
  
-   bind  pager  /   search
-   bind  pager  N   search-next
+   bind  pager  /      search
+   bind  pager  N      search-next
    bind  index  ?      search-reverse
  
-   bind  pager  n   next-undeleted
-   bind  pager  p   previous-undeleted
-   bind  pager  P   print-message
+   bind  pager  n      next-undeleted
+   bind  pager  p      previous-undeleted
+   bind  pager  P      print-message
  
-   bind  pager  L   list-reply
-   bind  pager  r   reply             
-#  bind  pager  F   forward-message
-   bind  pager  D   delete-message
+   bind  pager  L      list-reply
+   bind  pager  r      reply             
+#  bind  pager  F      forward-message
+   bind  pager  D      delete-message
+
+   bind  pager  .      parent-message
 
 # }}}
 # {{{ macro
