@@ -48,6 +48,7 @@ lists linux-vortex-bug vortex-bug
 lists linux-thinkpad linux-laptop linux-diald
 lists contrib-list
 #mailboxes /home/adam/mail/inboxes/redhat-contrib
+#mailboxes /home/adam/mail/inboxes/redhat-bugzilla
 #mailboxes /home/adam/mail/inboxes/linux-thinkpad
 #mailboxes /home/adam/mail/inboxes/linux-laptop
 mailboxes /home/adam/mail/inboxes/linux-smp
@@ -74,6 +75,7 @@ mailboxes /home/adam/mail/inboxes/alsa-user
 mailboxes /home/adam/mail/inboxes/alsa-devel
 #mailboxes /home/adam/mail/inboxes/apmd-list
 mailboxes /home/adam/mail/inboxes/mozilla-announce
+#mailboxes /home/adam/mail/inboxes/mozilla-bugzilla
 #mailboxes /home/adam/mail/inboxes/pcmcia-beta
 #mailboxes /home/adam/mail/inboxes/pcmcia-apm
 mailboxes /home/adam/mail/inboxes/mutt-users
@@ -98,6 +100,10 @@ mailboxes /home/adam/mail/inboxes/unix-admin
 ## News
 mailboxes /home/adam/mail/inboxes/freshmeat
 mailboxes /home/adam/mail/inboxes/slashdot
+
+## Websites
+mailboxes /home/adam/mail/inboxes/amazon
+mailboxes /home/adam/mail/inboxes/sourceforge
 
 ## Miscellaneous
 mailboxes /home/adam/mail/inboxes/jobserve-filtered
