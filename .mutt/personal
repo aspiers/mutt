@@ -148,9 +148,11 @@ fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
 fcc-save-hook nmcgrogan@iname\.com =Oxford/friends/nick.mcgrogan
 fcc-save-hook nicholas\.mcgrogan@oxford-biosignals.com =Oxford/friends/nick.mcgrogan
 fcc-save-hook nick_mcgrogan@yahoo.co.uk =Oxford/friends/nick.mcgrogan
-alias nick.mcgrogan "Nick McGrogan" <nmcgrogan@iname.com>
+alias nick.mcgrogan.iname "Nick McGrogan" <nmcgrogan@iname.com>
+alias nick.mcgrogan.yahoo "Nick McGrogan" <nick_mcgrogan@yahoo.co.uk>
 alias nick.mcgrogan.bio "Nick McGrogan" <nicholas.mcgrogan@oxford-biosignals.com>
-alias nick nick.mcgrogan
+alias nick.mcgrogan.work nick.mcgrogan.bio
+alias nick nick.mcgrogan.yahoo
 
 alias nicks nick,nick.williams
 
@@ -228,7 +230,7 @@ alias ivan.rockey.ECO "FAO: Ivan Rockey" <mail@e-c-orch.demon.co.uk>
 alias ivan ivan.rockey
 alias ives ivan.rockey
 
-alias sarah.metcalf "Sarah Metcalf" <s-metcalf@dfid.gtnet.gov.uk>
+alias sarah.metcalf "Sarah Metcalf" <s-metcalf@dfid.gov.uk>
 alias sarsli sarah.metcalf
 alias ian.macmullen "Ian MacMullen" <ian_macmullen@hotmail.com>
 alias tim.lucas "Tim Lucas" <lucatim_uk@yahoo.co.uk>
