@@ -1060,6 +1060,12 @@ alias rt "RT mailing list" <rt@auk.fsck.com>
 alias dcl "Daniel C. L'Hommedieu (reqNG developer)" <dcl@explore.com>
 
 # }}}
+# {{{ Rubyphoto
+
+subscribe rubyphoto
+mailboxes =inboxes/rubyphoto
+
+# }}}
 # {{{ sawfish
 
 subscribe sawmill
