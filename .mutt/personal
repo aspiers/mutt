@@ -923,15 +923,15 @@ alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
 # {{{ zsh
 
 subscribe zsh-users zsh-workers
-#mailboxes /home/adam/mail/inboxes/zsh-users
-#mailboxes /home/adam/mail/inboxes/zsh-workers
+#mailboxes /home/adam/mail/inboxes/zsh/users
+#mailboxes /home/adam/mail/inboxes/zsh/workers
 alias zsh-users "zsh users mailing list" <zsh-users@sunsite.auc.dk>
 alias zsh-workers "zsh workers mailing list" <zsh-workers@sunsite.auc.dk>
-fcc-save-hook zsh-announce@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-announce
-fcc-save-hook zsh-users@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-users
-fcc-save-hook zsh-workers@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-workers
+fcc-save-hook zsh-announce@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh/announce
+fcc-save-hook zsh-users@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh/users
+fcc-save-hook zsh-workers@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh/workers
 
-fcc-save-hook schaefer.*brasslantern\.com =lists/zsh-workers
+fcc-save-hook schaefer.*brasslantern\.com =lists/zsh/workers
 
 alias pws "Peter Stephenson" <pws@ibmth.df.unipi.it>
 alias sven.wischnowsky "Sven Wischnowsky" <wischnow@informatik.hu-berlin.de>
