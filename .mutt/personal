@@ -31,6 +31,7 @@ mailboxes /home/adam/mail/inboxes/ggnews
 mailboxes /home/adam/mail/inboxes/gg-uk
 mailboxes /home/adam/mail/inboxes/gg-cvs-notify
 mailboxes /home/adam/mail/inboxes/gg-bugzilla
+mailboxes /home/adam/mail/inboxes/gg-watches
 mailboxes /home/adam/mail/inboxes/linux-alert
 mailboxes /home/adam/mail/inboxes/linux-security
 mailboxes /home/adam/mail/inboxes/bugtraq
@@ -50,6 +51,7 @@ mailboxes /home/adam/mail/inboxes/mutt-users
 mailboxes /home/adam/mail/inboxes/mutt-dev
 mailboxes /home/adam/mail/inboxes/zsh-users
 mailboxes /home/adam/mail/inboxes/zsh-workers
+mailboxes /home/adam/mail/inboxes/bashprompt
 mailboxes /home/adam/mail/inboxes/mustang-list
 mailboxes /home/adam/mail/inboxes/security-audit
 mailboxes /home/adam/mail/inboxes/linux-smp
@@ -80,6 +82,7 @@ lists req reqng-developers wishlist rt-users
 lists zsh-users zsh-workers
 lists alsa-devel alsa-user
 lists infobot p5p
+lists bash
 
 # System (software) lists
 lists apmd-list

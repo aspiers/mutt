@@ -14,14 +14,9 @@ alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 # Friends
 ##############################################################################
 
-alias friends stacey, tim.c-c, nick, lindsey, ben, nick.williams, dave, chris, jo, ivan, jess, sarah.metcalf, ian.macmullen, tim.lucas, graeme, rachel, annabel, bear, stephen, tiss, kevin, oli, peronel, nick.collins, andy.radford, vicky.hamilton, dave.willetts, matthew.kirkwood, chris.evans, paul.eastham, heather, bruce, jeremy.lund, emma, matt.clay, john.hargreaves, matthew.bright, green, stewart.dunn, sarah.boxall, daniel.spiers, peter, helen2, michael, chloe, ian, alastair.white, wilson, paul.rogers, arathranar, sheila.davies
+alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
+alias add2 tiss, kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
 
-
-alias housewarming tim.c-c, nick, lindsey, ben, nick.williams, dave, chris, jo, ivan, jess, sarah.metcalf, ian.macmullen, tim.lucas, graeme, annabel, bear, oli, peronel, nick.collins, andy.radford, vicky.hamilton, dave.willetts, matthew.kirkwood, chris.evans, paul.eastham, emma, matt.clay, sarah.boxall
-
-alias housewarming-feedback nick, lindsey, ben, nick.williams, dave, chris, jo, ivan, jess, sarah.metcalf, ian.macmullen, tim.lucas, graeme, annabel, bear, oli, nick.collins, andy.radford, vicky.hamilton, dave.willetts, matthew.kirkwood, chris.evans, paul.eastham, emma, matt.clay, sarah.boxall
-
-#
 # (Ex-)Oxford friends
 #
 
@@ -60,7 +55,6 @@ alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
 alias oli.dickson Oli Dickson <olimpia.dickson@tao.j-sainsbury.co.uk>
 alias peronel.smith "Peronel Smith" <peronel_smith@harcourtbrace.com>
 alias nick.collins Nick Collins <nickcollins@hotmail.com>
-alias andy.radford "Andy Radford" <ykn35@dial.pipex.com>
 alias vicky.hamilton Victoria Hamilton <victoria.hamilton@stagetech.com>
 alias dave.willetts "Dave Willetts" <davetm@thelonious.new.ox.ac.uk>
 alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
@@ -95,14 +89,12 @@ alias jon.greenwell Jonathan Greenwell <J.R.Greenwell@mds.qmw.ac.uk>
 alias dan.davies Daniel Davies <dddavies@students.jhubc.it>
 alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
 alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
-alias katie.green "Katie Green" <kg6441@bristol.ac.uk>
 alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
-alias matt.clay "Matthew Clay" <95127396@brookes.ac.uk>
-alias john.hargreaves John Hargreaves <JoGorHar@aol.com>
 alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
-alias green.family "Richard/Alex/Kathy Green" <richard.green7@virgin.net>
+alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
 alias alex.green "Alex Green" <richard.green7@virgin.net>
-alias richard.green "Richard Green, at school" <stlucias@aol.com>
+alias richard.green "Richard Green" <richard.green7@virgin.net>
+alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
 
 alias gilbert.roscoe "Gilbert Roscoe" <gilbert@sionix.demon.co.uk>
 alias stewart.dunn Stewart Dunn <info@sdunn.demon.co.uk>
@@ -114,7 +106,7 @@ alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
 #
 
 alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
-alias rosie.biss "Ross Biss" <rosiebiss@yahoo.com>
+alias rosie.biss "Rosie Biss" <rosiebiss@yahoo.com>
 alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
 
 
@@ -132,7 +124,7 @@ alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 
 alias daddy "Stuart Spiers" <stuart@spiers.net>
 alias thea "Thea Spiers" <stuart@spiers.net>
-alias daniel.spiers "Daniel Spier"s <d.spiers@sympatico.ca>
+alias daniel.spiers "Daniel Spiers" <d.spiers@sympatico.ca>
 alias peter "Peter O'Connor" <azrael14@juno.com>
 alias helen "Helen O'Connor" <oconh@mayo.edu>
 alias helen2 "Helen O'Connor" <helenoc@juno.com>
@@ -326,3 +318,4 @@ source ~/.mutt/quake-aliases
 # Incoming (need to be classified)
 ##############################################################################
 
+alias alex.green2 Alex Green <ppytarg@nottingham.ac.uk>
