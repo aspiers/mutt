@@ -52,12 +52,13 @@ mailboxes /home/adam/mail/inboxes/linux-kernel
 # }}}
 # {{{ Security lists
 
-subscribe bugtraq linux-security security-audit 
+subscribe bugtraq linux-security security-audit linux-alert
 subscribe unix-admin
+mailboxes /home/adam/mail/inboxes/bugtraq
+mailboxes /home/adam/mail/inboxes/linux-security
 mailboxes /home/adam/mail/inboxes/security-audit
 mailboxes /home/adam/mail/inboxes/linux-alert
-mailboxes /home/adam/mail/inboxes/linux-security
-mailboxes /home/adam/mail/inboxes/bugtraq
+mailboxes /home/adam/mail/inboxes/unix-admin
 
 # }}}
 # {{{ Software lists
@@ -69,6 +70,7 @@ subscribe alsa-devel alsa-user
 subscribe infobot p5p oxford-pm gimp-perl
 subscribe bash gnokii sawmill galeon-devel
 subscribe buggies gnome-pilot-list plucker-dev
+subscribe sitescooper-talk
 #mailboxes /home/adam/mail/inboxes/linux-diald
 mailboxes /home/adam/mail/inboxes/alsa-user
 mailboxes /home/adam/mail/inboxes/alsa-devel
@@ -93,6 +95,7 @@ mailboxes /home/adam/mail/inboxes/gimp-perl
 mailboxes /home/adam/mail/inboxes/buggies
 mailboxes /home/adam/mail/inboxes/gnome-pilot-list
 #mailboxes /home/adam/mail/inboxes/plucker-dev
+#mailboxes /home/adam/mail/inboxes/sitescooper
 
 # }}}
 # {{{ Chatter
