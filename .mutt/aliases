@@ -324,6 +324,7 @@ alias bashprompt bashprompt mailing list <bash@current.nu>
 alias modules "modules@perl.org" <modules@perl.org>
 alias sawfish "sawfish mailing list" <sawmill@aarg.net>
 alias sawmill sawfish
+alias modperl mod_perl mailing list <modperl@apache.org>
 
 # }}}
 # {{{ Software (authors)
