@@ -75,6 +75,7 @@ alias me.thelonious "Adam Spiers, on thelonious" <adam@thelonious.new.ox.ac.uk>
 alias me.hotmail "Adam Spiers, on hotmail" <adam_spiers@hotmail.com>
 alias me.test "Adam Spiers, testing something" <adam-test@corelli.new.ox.ac.uk>
 alias me.dict "Adam Spiers, dictionary gateway" <adam-dict@corelli.new.ox.ac.uk>
+alias me.lehman "Adam Spiers, Lehman Brothers" <aspiers@lehman.com>
 alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 
 # }}}
@@ -89,6 +90,7 @@ alias thea.rncm "Thea Spiers" <SpiersT@rncm.ac.uk>
 alias thea "Thea Spiers" <thea@spiers.net>
 fcc-save-hook thea@spiers\.net =relatives/thea
 fcc-save-hook theaspiers@hotmail\.com =relatives/thea
+fcc-save-hook theaspiers@yahoo\.co\.uk =relatives/thea
 fcc-save-hook spierst@(student\.)?rncm\.ac\.uk =relatives/thea
 
 alias chloe "Chloe Spiers" <chloe@spiers.net>
@@ -229,6 +231,7 @@ alias ives ivan.rockey
 alias sarah.metcalf "Sarah Metcalf" <s-metcalf@dfid.gtnet.gov.uk>
 alias ian.macmullen "Ian MacMullen" <ian_macmullen@hotmail.com>
 alias tim.lucas "Tim Lucas" <timothy.lucas@new.ox.ac.uk>
+alias tim.lucas.latest \"Lucas, Timothy (Insight Investment)\" <Tim.Lucas@insightinvestment.com>
 
 alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
 
@@ -271,6 +274,7 @@ fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
 fcc-save-hook nicolocollinsi =friends/Oxford/nick.collins
 alias nick.collins.mac Nick Collins <nicolocollinsi@mac.com>
 alias nick.collins Nick Collins <nickcollins@hotmail.com>
+alias nick.collins.mdx Nick Collins <n.collins@mdx.ac.uk>
 
 alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
 alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
@@ -466,6 +470,8 @@ fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
 
 #alias OLD-robin.stevens.astro Robin Stevens <rejs@astro.ox.ac.uk>
 
+fcc-save-hook mgm@eskimoman\.net =Oxford/acquaintances/mike.mason
+
 # }}}
 # {{{ Official
 
@@ -646,6 +652,11 @@ fcc-save-hook ghughes@cmedltd.com =computer-work/gareth.hughes
 alias gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
 
 # }}}
+# {{{ Orange Genie
+
+alias tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
+
+# }}}
 
 alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
 
@@ -712,10 +723,12 @@ subscribe oxford-pm
 # }}}
 # {{{ London.pm
 
-subscribe london_pm london-list
+subscribe london_pm london-list london-pm london.pm
 #mailboxes =inboxes/london-pm
-alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
-fcc-save-hook london.*\.pm\.org =lists/london-list
+#alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
+fcc-save-hook london.*\.pm\.org =lists/london-pm
+send-hook "london.pm" 'my_hdr From: "Adam Spiers" <london.pm@adamspiers.org>'
+send-hook "london.pm" 'my_hdr Reply-To: "Adam Spiers" <london.pm@adamspiers.org>'
 
 # }}}
 
@@ -780,6 +793,7 @@ subscribe arch-users
 mailboxes =inboxes/arch-users
 send-hook "arch-users" 'my_hdr From: "Adam Spiers" <arch-users@adamspiers.org>'
 send-hook "arch-users" 'my_hdr Reply-To: "Adam Spiers" <arch-users@adamspiers.org>'
+send-hook "arch-users" 'my_hdr Sender: "Adam Spiers" <arch-users@adamspiers.org>'
 
 alias arch-dev "arch-dev mailing list" <arch-dev@regexps.com>
 fcc-save-hook arch-dev =lists/arch-dev
@@ -1129,4 +1143,3 @@ alias bcc-only lots of people <adam-dev-null@corelli.new.ox.ac.uk>
 # Unclassified aliases
 #
 
-alias Tim.Lucas.latest \"Lucas, Timothy (Insight Investment)\" <Tim.Lucas@insightinvestment.com>
