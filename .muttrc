@@ -13,7 +13,10 @@
    set   copy             # Always keep a copy of my mails!
    set   delete=yes
 
+   # Here begins the struggle for a good default_hook ...
+
 #  ~p              message is addressed to you (consults $alternates)
+#                  ** includes messages Cc: me
 #  ~P              message is from you (consults $alternates)
 #  ~t USER         message is to USER
 #  ~c USER         message is Cc: USER
@@ -24,9 +27,24 @@
 
    # My attempts.  The tricky bit is getting it right when it's
    # neither to or from you (e.g. list mail), but without adding too
-   # loose a pattern so as to screw up friend's group mails.  The 3rd
-   # clause is for list mail which doesn't have me in From: or To:.
-   set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~C %s)"
+   # loose a pattern so as to screw up friend's group mails.  The
+   # first clause should handle group mails from friends, since ~p
+   # includes messages Cc'd to me.  The 3rd clause is for list mail
+   # which doesn't have me in From: or To:.
+   # 
+   # I suspect the main problem is that with default_hook set to
+   # multiple clauses, internally, mutt's algorithm is effectively
+   # "iterate through all save-hooks, setting %s and seeing if any
+   # clauses match" whereas I'd want it to try '~p ~f %s' for all
+   # hooks first as the outer loop, then '~P ~t %s' etc.  However by
+   # making the clauses mutually exclusive regardless of the value of
+   # %s, only one of the many clauses (generated from the many values
+   # of %s) can ever match, so the order of clause matching ceases to
+   # matter.
+   
+   #set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~C %s)"
+   # This one's better when friend's bcc me:
+   set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~f %s)"
 
    # If I can't get the list stuff right, it's probably
    # worth adopting the
