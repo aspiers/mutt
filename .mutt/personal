@@ -233,11 +233,11 @@ fcc-save-hook bolton@susq\.com =friends/Oxford/bear.bolton
 fcc-save-hook bolton@sig\.com =friends/Oxford/bear.bolton
 fcc-save-hook mbolton@iol.ie =friends/Oxford/bear.bolton
 fcc-save-hook bear@redfrontdoor.org =friends/Oxford/bear.bolton
-alias bear.home Bear North <bear@redfrontdoor.org>
-alias bear.corelli Bear <bear@corelli.new.ox.ac.uk>
-alias bear.hotmail Bear <bearbolton@hotmail.com>
-alias bear.home Bear at home <mbolton@iol.ie>
-alias bear.work Bear North <bolton@susq.com>
+alias bear.home "Bear North" <bear@redfrontdoor.org>
+alias bear.corelli "Bear" <bear@corelli.new.ox.ac.uk>
+alias bear.hotmail "Bear" <bearbolton@hotmail.com>
+alias bear.parents "Mike Bolton, Bear's dad" <mbolton@iol.ie>
+alias bear.work "Bear North" <bolton@susq.com>
 alias bear bear.home
 
 alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
