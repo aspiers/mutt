@@ -69,8 +69,8 @@
    # manual spam classification for parp (changes stats/friends db)
 #   macro index "\eW"  ";|formail -s parp -rwv\n"   "please don't use this directly"
 
-   macro index "\eS"  "<copy-message>=inboxes/retry/is-spam/\n;\ej"   "treat as false negative (spam)"
-   macro index "\eH"  "<copy-message>=inboxes/retry/is-ham/\n;s!\n"   "treat as false positive (ham)"
+   macro index "\eS"  "<copy-message>=inboxes/retry/is-spam/\n;\ej;|formail -s crm-learn spam\n"   "treat as false negative (spam)"
+   macro index "\eH"  "<copy-message>=inboxes/retry/is-ham/\n;s!\n;|formail -s crm-learn ham\n"    "treat as false positive (ham)"
 
    macro index "\eA" "<limit>~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
    macro index "\eV"  "<save-message>=misc/virii\n"   "treat as virus-related email"
@@ -144,6 +144,7 @@
 
    macro pager "\ei"  "|CRM-SA-parp-inject\n"   "parp: (re)Inject into spool"
    macro pager "\et"  "|parp -rtv\n"  "parp: Test run"
+   macro pager "\eM"  "|crm-classify-test\n"  "crm114: Test run"
 #  macro pager "\eT"  "|parp-new -rtv\n"  "parp: Test run, new code"
 
 # !!! PLEASE ALSO SEE CORRESPONDING SECTION FOR INDEX BINDINGS !!!
@@ -154,8 +155,8 @@
    # flag spam classification as wrong (changes stats/friends db)
    macro pager "\eW"  "|parp -rwv\n"   "please don't use this directly"
 
-   macro pager "\eS"  "<copy-message>=inboxes/retry/is-spam/\n\ej"   "treat as false negative (spam)"
-   macro pager "\eH"  "<copy-message>=inboxes/retry/is-ham/\ns!\n"   "treat as false positive (ham)"
+   macro pager "\eS"  "<copy-message>=inboxes/retry/is-spam/\n\ej|crm-learn spam\n"   "treat as false negative (spam)"
+   macro pager "\eH"  "<copy-message>=inboxes/retry/is-ham/\ns!\n|crm-learn ham\n"    "treat as false positive (ham)"
 
    macro pager "\eA" "<limit>~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
    macro pager "\eV"  "<save-message>=misc/virii\n"   "treat as virus-related email"
