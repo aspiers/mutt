@@ -46,14 +46,6 @@ folder-hook =inboxes/SAFE                     'push "<delete-pattern>~r >1w\n"'
 folder-hook =backup                           'push "<delete-pattern>~r >1w\n"'
 
 folder-hook =lists/                           source ~/.mutt/mailing-list
-folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
-folder-hook =(inboxes|lists)/zsh-             source ~/.mutt/folders/zsh
-folder-hook =(inboxes|lists)/alsa-            source ~/.mutt/folders/alsa
-folder-hook =(inboxes|lists)/void             source ~/.mutt/folders/void
-folder-hook =(inboxes|lists)/london.pm        source ~/.mutt/folders/london.pm
-folder-hook =(inboxes|lists)/openzaurus-      source ~/.mutt/folders/openzaurus
-folder-hook =(inboxes|lists)/zoe-             source ~/.mutt/mailing-list
-folder-hook =(inboxes|lists)/rpm-list         source ~/.mutt/mailing-list
 
 # }}}
 
@@ -877,6 +869,7 @@ send-hook "golf.*perl.org" 'my_hdr From: "Adam Spiers" <perl-golf@adamspiers.org
 send-hook "golf.*perl.org" 'my_hdr Reply-To: "Adam Spiers" <perl-golf@adamspiers.org>'
 alias dave.hoover Dave Hoover <dave@redsquirreldesign.com>
 
+folder-hook =(inboxes|lists)/london.pm        source ~/.mutt/folders/london.pm
 alias london.pm \"London.pm Perl Mongers\" <london.pm@london.pm.org>
 
 # }}}
@@ -890,6 +883,8 @@ alias ntk "NTK" <tips@spesh.com>
 # {{{ Chatter
 
 # {{{ (void)
+
+folder-hook =(inboxes|lists)/void             source ~/.mutt/folders/void
 
 #mailboxes =inboxes/void
 subscribe void
@@ -955,6 +950,7 @@ alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
 # }}}
 # {{{ ALSA
 
+folder-hook =(inboxes|lists)/alsa- source ~/.mutt/folders/alsa
 subscribe alsa-devel alsa-user
 mailboxes =inboxes/alsa-user
 mailboxes =inboxes/alsa-devel
@@ -973,6 +969,8 @@ subscribe apmd-list
 
 # }}}
 # {{{ arch
+
+folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
 
 #alias arch-users.old "arch-users mailing list" <arch-users@regexps.com>
 alias arch-users "arch users mailing list" <arch-users@lists.fifthvision.net>
@@ -1212,6 +1210,8 @@ alias netatalk "netatalk mailing list" <netatalk@umich.edu>
 # }}}
 # {{{ OpenZaurus
 
+folder-hook =(inboxes|lists)/openzaurus- source ~/.mutt/folders/openzaurus
+
 alias openzaurus-users "OpenZaurus users mailing list" <openzaurus-users@lists.sourceforge.net>
 fcc-save-hook "openzaurus-users.*lists.sourceforge.net" =lists/openzaurus-users
 subscribe openzaurus-users
@@ -1325,6 +1325,7 @@ send-hook "rt-devel.*@lists.fsck.com" 'my_hdr Reply-To: "Adam Spiers" <rt@adamsp
 # }}}
 # {{{ rpm
 
+folder-hook =(inboxes|lists)/rpm-list         source ~/.mutt/mailing-list
 alias rpm-list "rpm mailing list" <rpm-list@redhat.com>
 fcc-save-hook "rpm-list.*redhat.com" =lists/rpm-list
 subscribe rpm-list
@@ -1379,6 +1380,8 @@ alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
 # }}}
 # {{{ zoe
 
+folder-hook =(inboxes|lists)/zoe- source ~/.mutt/mailing-list
+
 alias zoe "zoe-general list" <zoe-general@lists.sourceforge.net>
 fcc-save-hook "zoe-general.*@lists\.sourceforge\.net" =lists/zoe
 subscribe zoe
@@ -1388,6 +1391,8 @@ send-hook "zoe-general.*@lists\.sourceforge\.net" 'my_hdr Reply-To: "Adam Spiers
 
 # }}}
 # {{{ zsh
+
+folder-hook =(inboxes|lists)/zsh- source ~/.mutt/folders/zsh
 
 subscribe zsh-users zsh-workers
 mailboxes =inboxes/zsh-users
