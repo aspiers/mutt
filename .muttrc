@@ -103,7 +103,7 @@ alternative_order text/enriched text/plain text/html
 source ~/.mutt/personal
 source ~/.mutt/mutt-aliases
 source ~/.mutt/bindings
-source ~/.mutt/colours
+source ~/.mutt/colours.default
 source ~/.mutt/format-strings
 source ~/.mutt/local
 
