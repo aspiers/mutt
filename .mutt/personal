@@ -75,10 +75,11 @@ alias me.guideguide "Adam Spiers, at guideguide" <aspiers@guideguide.com>
 alias me.musician "Adam Spiers" <adam.spiers@musician.org>
 alias me.ox "Adam Spiers" <adam.spiers@new.ox.ac.uk>
 alias me.oxford "Adam Spiers" <adam.spiers@new.oxford.ac.uk>
+alias me.corelli "Adam Spiers, on corelli" <adam@corelli.new.ox.ac.uk>
 alias me.thelonious "Adam Spiers, on thelonious" <adam@thelonious.new.ox.ac.uk>
 alias me.hotmail "Adam Spiers, on hotmail" <adam_spiers@hotmail.com>
-alias me.test "Adam Spiers, testing something" <adam-test@thelonious.new.ox.ac.uk>
-alias me.dict "Adam Spiers, dictionary gateway" <adam-dict@thelonious.new.ox.ac.uk>
+alias me.test "Adam Spiers, testing something" <adam-test@corelli.new.ox.ac.uk>
+alias me.dict "Adam Spiers, dictionary gateway" <adam-dict@corelli.new.ox.ac.uk>
 alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 
 # }}}
@@ -138,9 +139,7 @@ fcc-save-hook supple@iol\.ie =relatives/siobhan.supple
 
 # {{{ (Ex-)Oxford friends
 
-alias nick.williams "Nick Williams" <nick@thelonious.new.ox.ac.uk>
 alias nick.williams2 "Nick Williams" <nickhw@btinternet.com>
-fcc-save-hook nick@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/nick.williams
 fcc-save-hook nickhw@btinternet\.com =Oxford/friends/nick.williams
 fcc-save-hook nwilliams@compd\.com =Oxford/friends/nick.williams
 
@@ -169,7 +168,6 @@ alias stacey stacey.hotmail
 fcc-save-hook stacey.*steele =friends/Oxford/stacey.steele
 fcc-save-hook goldfish_74 =friends/Oxford/stacey.steele
 
-#alias graeme.wearden Graeme Wearden <graeme@thelonious.new.ox.ac.uk>
 alias graeme.wearden Graeme Wearden <Graeme_Wearden@zdnet.com>
 fcc-save-hook g.*wearden =friends/Oxford/graeme.wearden
 
@@ -187,15 +185,15 @@ fcc-save-hook strangetimes@hotmail\.com =friends/Oxford/ben.teasdale
 alias ben.teasdale.bbc "Ben Teasdale" <ben.teasdale@bbc.co.uk>
 alias ben.teasdale "Ben Teasdale" <ben.teasdale@ntlworld.com>
 
-fcc-save-hook ben@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
+fcc-save-hook ben@corelli\.new\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
 fcc-save-hook north.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
 fcc-save-hook Ben_North@eur.3com.com =Oxford/friends/ben.north
-alias ben.north.thelonious "Ben North" <ben@thelonious.new.ox.ac.uk>
+alias ben.north.corelli "Ben North" <ben@corelli.new.ox.ac.uk>
 alias ben.north.3com "Ben North" <Ben_North@eur.3com.com>
-alias ben ben.north.thelonious
+alias ben ben.north.corelli
 
-fcc-save-hook dave@thelonious\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
-alias dave.lindgren "David Lindgren" <dave@thelonious.new.ox.ac.uk>
+fcc-save-hook dave@corelli\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
+alias dave.lindgren "David Lindgren" <dave@corelli.new.ox.ac.uk>
 alias dave dave.lindgren
 
 fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
@@ -230,11 +228,11 @@ alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
 alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
 
 fcc-save-hook bearbolton@hotmail\.com =friends/Oxford/bear.bolton
-fcc-save-hook bear@thelonious\.new\.ox\.ac\.uk =friends/Oxford/bear.bolton
+fcc-save-hook bear@corelli\.new\.ox\.ac\.uk =friends/Oxford/bear.bolton
 fcc-save-hook bolton@susq\.com =friends/Oxford/bear.bolton
 fcc-save-hook bolton@sig\.com =friends/Oxford/bear.bolton
 fcc-save-hook mbolton@iol.ie =friends/Oxford/bear.bolton
-alias bear.bolton Bear <bear@thelonious.new.ox.ac.uk>
+alias bear.bolton Bear <bear@corelli.new.ox.ac.uk>
 alias bear.bolton.hotmail Bear <bearbolton@hotmail.com>
 alias bear.bolton.home Bear at home <mbolton@iol.ie>
 alias bear.bolton.work Bear Bolton <bolton@susq.com>
@@ -243,11 +241,9 @@ alias bear bear.bolton.work
 alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
 alias bears.aunt "Bear at Hilary Stephen's" <hilary@arc.net.au>
 
-fcc-save-hook cmb@thelonious.new.ox.ac.uk =friends/Oxford/christie.bolton
+fcc-save-hook cmb@corelli.new.ox.ac.uk =friends/Oxford/christie.bolton
 alias christie.bolton "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
 alias tiss.bolton christie.bolton
-
-alias stephen.walmsley "Stephen Walmsley" <stephen@thelonious.new.ox.ac.uk>
 
 alias kevin.barsby "Kevin Barsby" <kevin.barsby@hummingbird-it.co.uk>
 #alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
@@ -264,8 +260,6 @@ alias peronel.smith "Peronel Smith" <peronel@mgp.ltd.uk>
 fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
 alias nick.collins Nick Collins <nickcollins@hotmail.com>
 
-alias dave.willetts "Dave Willetts" <davetm@thelonious.new.ox.ac.uk>
-
 alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
 alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
 alias weejock matthew.kirkwood
@@ -275,10 +269,6 @@ fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
 alias chris.evans "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
 
 alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
-alias bruce.hickey "Bruce Hickey" <bruce@thelonious.new.ox.ac.uk>
-
-alias ben.thompson "Ben Thompson" <bt@thelonious.new.ox.ac.uk>
-alias jo.dillon "Joel Dillon" <jo.dillon@new.oxford.ac.uk>
 
 # }}}
 # {{{ Friends from home
@@ -416,37 +406,22 @@ alias john.moore John Moore <JFM@shrewsbury.org.uk>
 
 # {{{ New College / IT work
 
-alias james.dore \"James Dore, New College sysadmin\" <james.dore@new.ox.ac.uk>
-alias chris.tromans Chris Tromans <ctromans@thelonious.new.ox.ac.uk>
+alias james.dore "James Dore, New College sysadmin" <james.dore@new.ox.ac.uk>
+fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
+
+alias chris.tromans Chris Tromans <chris@corelli.new.ox.ac.uk>
+fcc-save-hook c.*tromans =Oxford/college/chris.tromans
+
 alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
-alias alex.fuller Alex Fuller <alex.fuller@afis.demon.co.uk>
-alias it-support-dist "IT Support Team, bypassing Req system" <it-support-dist@thelonious.new.ox.ac.uk>
-alias is "IT Support team, using Req system" <it-support@thelonious.new.ox.ac.uk>
-alias db "Caroline Thomas, New College Domestic Bursar" <caroline.thomas@new.ox.ac.uk>
-alias caroline.thomas "Caroline Thomas, New College Domestic Bursar" <caroline.thomas@new.ox.ac.uk>
 alias ncsec "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
 alias barbara.vardag "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
 alias alastair.white "Alastair White" <alastair.white@new.ox.ac.uk>
-alias sue.anderson "Sue Anderson, New College DB's secretary" <sue.anderson@new.ox.ac.uk>
-alias wylie.horn "Wylie Horn, College admin network sysadmin" <wylie.horn@oucs.ox.ac.uk>
-alias warden "Alan Ryan" <alan.ryan@new.ox.ac.uk>
-alias alan.ryan "Alan Ryan" <alan.ryan@new.ox.ac.uk>
-alias rinku "Rinku Chandra, MCR computer rep." <rinku.chandra@new.oxford.ac.uk>
 alias wilson "Wilson Sutherland" <wilson.sutherland@new.ox.ac.uk>
 alias geraint "Geraint Jones" <geraint.jones@comlab.ox.ac.uk>
 alias david.gavaghan "David Gavaghan" <gavaghan@vax.ox.ac.uk>
-alias wendy.coyne "Wendy Coyne, New College Graduates and Admissions Office" <wendy.coyne@new.ox.ac.uk>
-alias maggie "Maggie Davies, Fellows' Secretary" <maggie.davies@new.ox.ac.uk>
-alias sue.ashcroft-jones "Sue Ashcroft-Jones (Development Office)" <sue.ashcroft-jones@new.ox.ac.uk>
-alias accurate.solutions "Steve Harper, Accurate Solutions Ltd." <yl90@dial.pipex.com>
-alias admissions New College Admissions <admissions@new.ox.ac.uk>
-alias free-computers free-computers@thelonious.new.ox.ac.uk
 alias jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
 
 # }}}
-
-fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
-fcc-save-hook c.*tromans =Oxford/college/chris.tromans
 
 # }}}
 
@@ -1072,7 +1047,7 @@ alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
 alias kevin.spiers "Kevin L Spiers" <kevin@spiers.net>
 alias kevin.spiers2 Kevin Spiers <stock03@worldnet.att.net>
 
-alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
+alias bcc-only lots of people <adam-dev-null@corelli.new.ox.ac.uk>
 
 #source ~/.mutt/quake-aliases
 
