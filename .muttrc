@@ -99,15 +99,11 @@ auto_view text/x-vcard text/html
 # Some people think that HTML is good for email <sigh>
 alternative_order text/enriched text/plain text/html
 
-# Support for compressed folders
-#open-hook \\.gz$ "gzip -cd %f > %t" 
-#close-hook \\.gz$ "gzip -c %t > %f"
-#append-hook \\.gz$ "gzip -c %t >> %f" 
-
 source ~/.mutt/personal
 source ~/.mutt/mutt-aliases
 source ~/.mutt/bindings
 source ~/.mutt/colours
 source ~/.mutt/format-strings
+source ~/.mutt/local
 
 push V
