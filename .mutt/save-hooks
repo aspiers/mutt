@@ -24,6 +24,8 @@ fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
 fcc-save-hook n\.byrne@ram\.ac\.uk =friends/RAM/nick.byrne
 fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
 fcc-save-hook chris.*@.*\.wadham\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
+fcc-save-hook stacey.*steele =friends/Oxford/stacey.steele
+fcc-save-hook c.*hildrew =friends/Oxford/chris.hildrew
 
 
 ##############################################################################
@@ -40,8 +42,9 @@ fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
 fcc-save-hook alex@mediaconsult\.com =computer-work/alex.mclean
 fcc-save-hook alex@guideguide\.com =computer-work/alex.mclean
 fcc-save-hook amclean@guideguide\.com =computer-work/alex.mclean
-fcc-save-hook javila@guideguide\.com =computer-work/jesus.avila
+fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
 fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
+fcc-save-hook javila@guideguide\.com =computer-work/jesus.avila
 
 
 ##############################################################################
@@ -86,9 +89,3 @@ fcc-save-hook apmd =lists/apmd-list
 # Unclassified
 ##############################################################################
 
-
-fcc-save-hook stacey\..*steele =friends/Oxford/stacey.steele
-
-fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
-
-fcc-save-hook amcfarland =computer-work/andy.mcfarland
