@@ -122,6 +122,7 @@
 
    macro pager "\ef"  "|parp -ev\n"   "parp: extract friends"
    macro pager "\et"  "|parp -rtv\n"  "parp: dummy run"
+#  macro pager "\eT"  "|parp-new -rtv\n"  "parp: dummy run, new code"
    macro pager "\er"  "|parp -wv\n"   "parp: flag spam classification as incorrect"
 
    macro pager "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
