@@ -203,7 +203,7 @@ alias ben ben.north.home
 
 fcc-save-hook dave@corelli\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
 fcc-save-hook dave@kites.org.uk =friends/Oxford/dave.lindgren
-alias dave.lindgren "David Lindgren" <dave@corelli.new.ox.ac.uk>
+alias dave.lindgren "David Lindgren" <dave@kites.org.uk>
 alias dave dave.lindgren
 
 fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
@@ -229,13 +229,13 @@ alias ivan ivan.rockey
 alias ives ivan.rockey
 
 alias sarah.metcalf "Sarah Metcalf" <s-metcalf@dfid.gtnet.gov.uk>
-alias sarah.metcalf sarsli
+alias sarsli sarah.metcalf
 alias ian.macmullen "Ian MacMullen" <ian_macmullen@hotmail.com>
 alias tim.lucas "Tim Lucas" <lucatim_uk@yahoo.co.uk>
 alias jeremy.cave "Jeremy Cave" <jeremy.cave@fandc.com>
 alias sarah.hudson "Sarah Hudson" <Sarahhudson4@aol.com>
 alias kath.noble "Kath Noble" <kath_noble@hotmail.com>
-alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
+alias annabel.borthwick Annabel Borthwick <afborth@hotmail.com>
 
 alias jessie.hadley Jess Hadley <jhadley@uvic.ca>
 #alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
@@ -256,10 +256,6 @@ alias bear bear.home
 
 alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
 alias bears.aunt "Bear at Hilary Stephen's" <hilary@arc.net.au>
-
-fcc-save-hook cmb@corelli.new.ox.ac.uk =friends/Oxford/christie.bolton
-alias christie.bolton "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
-alias tiss.bolton christie.bolton
 
 alias kevin.barsby "Kevin Barsby" <kevin.barsby@hummingbird-it.co.uk>
 #alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
@@ -444,14 +440,17 @@ alias matthew.pay Matthew Pay <Matthew.Pay@ntl.com>
 fcc-save-hook matt.*pay@ntl.com =friends/Endellion/matthew.pay
 
 alias joanna.warden Jo Warden <joannawarden@hotmail.com>
+alias rose.redgrave "Rose Redgrave" <adrian.rose@muirkirkroad.freeserve.co.uk>
+alias clare.raybould "Clare Raybould" <clareraybould@bigfoot.com>
 
 # }}}
 # {{{ Groups of friends
 
 alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
-alias add2 tiss, kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
+alias add2 kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
 
-alias birthday-and-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, dave, oli, ives, sarsli, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, annabel.borthwick, tiss.bolton, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt
+alias birthday-and-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt
+alias birthday-and-sponsorship2 sarsli, dave, annabel.borthwick, clare.raybould
 
 # }}}
 
