@@ -50,8 +50,6 @@ folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
 
 # }}}
 
-source /usr/share/doc/mutt-1.2.5i/samples/gpg.rc
-
 # {{{ send-hook
 
 #send-hook . 'unmy_hdr From'
