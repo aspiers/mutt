@@ -146,7 +146,7 @@ fcc-save-hook nwilliams@compd\.com =Oxford/friends/nick.williams
 fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
 fcc-save-hook nmcgrogan@iname\.com =Oxford/friends/nick.mcgrogan
 fcc-save-hook nicholas\.mcgrogan@oxford-biosignals.com =Oxford/friends/nick.mcgrogan
-alias nick.mcgrogan "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
+alias nick.mcgrogan "Nick McGrogan" <nmcgrogan@iname.com>
 alias nick.mcgrogan.bio "Nick McGrogan" <nicholas.mcgrogan@oxford-biosignals.com>
 alias nick nick.mcgrogan
 
@@ -300,6 +300,8 @@ alias richard.green "Richard Green" <richard.green7@virgin.net>
 alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
 
 alias di.north Di North <di@amaroo.demon.co.uk>
+
+alias charles.gaskell Charles Gaskell <gaskell@gaskell.f9.co.uk>
 
 # }}}
 # {{{ RAM friends
@@ -517,7 +519,7 @@ alias mjones mark.hulme-jones
 alias ture Mark Hulme-Jones <mjones@ture.org>
 alias recoil mark.hulme-jones
 fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
-fcc-save-hook ture@ture\.org =computer-work/mark.hulme-jones
+fcc-save-hook @ture\.org =computer-work/mark.hulme-jones
 
 alias rob.partington Rob Partington <rjp@plig.net>
 alias basho rob.partington
@@ -733,6 +735,19 @@ alias apmd-list "apmd mailing list" <apmd-list@worldvisions.ca>
 fcc-save-hook apmd =lists/apmd-list
 subscribe apmd-list
 #mailboxes =inboxes/apmd-list
+
+# }}}
+# {{{ arch
+
+alias arch-users "arch-users mailing list" <arch-users@regexps.com>
+fcc-save-hook arch-users =lists/arch-users
+subscribe arch-users
+mailboxes =inboxes/arch-users
+
+alias arch-dev "arch-dev mailing list" <arch-dev@regexps.com>
+fcc-save-hook arch-dev =lists/arch-dev
+subscribe arch-dev
+mailboxes =inboxes/arch-dev
 
 # }}}
 # {{{ bashprompt
