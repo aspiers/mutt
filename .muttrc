@@ -48,7 +48,7 @@
    set   mark_old         # make distinction between new and old mail
 
 # This makes it beep every time it checks for new mail on idle
-#  set   meta_key         # META behaves in typical ESCAPE fashion
+   set   meta_key         # META behaves in typical ESCAPE fashion
 
    set   move=no          # folder update: do not move read mail to "mbox"
 #  set   pager=less -aCMsei
@@ -94,7 +94,7 @@ unignore x-parp-accepted x-parp-rejected x-parp-received-parse
 unignore x-filter-accepted x-filter-rejected
 unignore x-cron-env x-seq x-hn-forum
 
-auto_view text/x-vcard text/html application/pgp-signature
+#auto_view text/x-vcard text/html application/pgp-signature
 
 # Some people think that HTML is good for email <sigh>
 alternative_order text/enriched text/plain text/html
