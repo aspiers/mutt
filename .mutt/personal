@@ -49,8 +49,6 @@ folder-hook =(inboxes|lists)/london-pm  source ~/.mutt/folders/london-pm
 
 # {{{ send-hook, my_hdr
 
-#send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
-
 my_hdr X-URL: http://tigerpig.org/
 my_hdr X-OS: RedHat Linux
 send-hook . 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
@@ -817,6 +815,7 @@ subscribe bash
 #mailboxes =inboxes/bashprompt
 alias bashprompt "bashprompt mailing list" <bash@current.nu>
 fcc-save-hook bash@current\.nu =lists/bashprompt
+#send-hook "bash@current\.nu" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 
 # }}}
 # {{{ bugzilla
@@ -894,6 +893,15 @@ fcc-save-hook gnokii =lists/gnokii
 fcc-save-hook chris.*kemp =lists/gnokii
 fcc-save-hook ck231@.*cam\.ac\.uk =lists/gnokii
 alias chris.kemp "Christopher Kemp" <ck231@cam.ac.uk>
+
+# }}}
+# {{{ GNU screen
+
+subscribe gnu-screen
+fcc-save-hook gnu-screen =lists/gnu-screen
+alias gnu-screen gnu-screen list <gnu-screen@yahoogroups.com>
+send-hook "gnu-screen.*@yahoogroups\.com" 'my_hdr From: "Adam Spiers" <gnu-screen@adamspiers.org>'
+send-hook "gnu-screen.*@yahoogroups\.com" 'my_hdr Reply-To: "Adam Spiers" <gnu-screen@adamspiers.org>'
 
 # }}}
 # {{{ gphoto
@@ -1106,6 +1114,7 @@ subscribe linux-thinkpad linux-laptop
 
 alias linux-thinkpad linux-thinkpad mailing list <linux-thinkpad@topica.com>
 fcc-save-hook linux-thinkpad =lists/linux-thinkpad
+#send-hook "linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 alias linux-thinkpad-maintainer "Linux on ThinkPads web page maintainer" <linux-tp@e-oasis.com>
 alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
 alias kharker "Kenneth Harker, Linux on Laptops maintainer" <kharker@cs.utexas.edu>
