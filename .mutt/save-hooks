@@ -91,6 +91,7 @@ fcc-save-hook (alix|aposcharsky)@guideguide\.com =computer-work/alix.poscharsky
 fcc-save-hook oxford-pm-list@happyfunball\.pm\.org =lists/oxford-pm
 fcc-save-hook perl5-porters.*perl.org =p5p
 fcc-save-hook london-list@happyfunball\.pm\.org =lists/london-list
+fcc-save-hook simon@cozens\.net =Perl/simon.cozens
 
 # }}}
 # {{{ security
