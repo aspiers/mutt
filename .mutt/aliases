@@ -1,6 +1,10 @@
+# -*- mode: shell-script; -*-
+
 ##############################################################################
-# Me :-)
+# Adam's aliases
 ##############################################################################
+
+# {{{ Me :-)
 
 alias me "Adam Spiers" <adam@spiers.net>
 alias me.guideguide "Adam Spiers, at guideguide" <aspiers@guideguide.com>
@@ -10,16 +14,34 @@ alias me.oxford "Adam Spiers" <adam.spiers@new.oxford.ac.uk>
 alias me.thelonious "Adam Spiers, on thelonious" <adam@thelonious.new.ox.ac.uk>
 alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 
-##############################################################################
-# Friends
-##############################################################################
+# }}}
+# {{{ Relatives
 
-alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
-alias add2 tiss, kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
+alias daddy "Stuart Spiers" <stuart@spiers.net>
+alias thea "Thea Spiers" <stuart@spiers.net>
+alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
+alias peter "Peter O'Connor" <azrael14@juno.com>
+alias helen "Helen O'Connor" <oconh@mayo.edu>
+alias helen2 "Helen O'Connor" <helenoc@juno.com>
+alias michael "Michael O'Connor" <mkoconnor@mayo.edu>
+alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
+alias chloe "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
+alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
+alias ian.spiers "Ian Spiers" <ian@spiers.net>
+alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
+alias ian ian.spiers
+alias barry.spiers "Barry Spiers" <barry@spiers.net>
+alias barry barry.spiers
+alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
+alias david.griffith "David Griffith" <eppltd@indigo.ie>
+alias nessa.griffith "Nessa Griffith" <ngriffith@ndc.ie>
+alias niamh.oconnor Niamh O'Connor <sive99@yahoo.com>
 
-# (Ex-)Oxford friends
-#
+# }}}
 
+# {{{ (Ex-)Oxford friends
+
+alias giles.harrison Giles Harrison <giles.harrison@bbc.co.uk>
 alias stacey Stacey Steele <Stacey.Steele@bowne.com>
 alias tim.corbett-clark "Tim Corbett-Clark" <tcc@robots.ox.ac.uk>
 alias nick.mcgrogan "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
@@ -59,7 +81,8 @@ alias bears.aunt Bear at Hilary Stephen's <hilary@arc.net.au>
 alias stephen.walmsley "Stephen Walmsley" <stephen@thelonious.new.ox.ac.uk>
 alias christie.bolton "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
 alias tiss.bolton christie.bolton
-alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
+alias kevin.barsby "Kevin Barsby" <kevin.barsby@hummingbird-it.co.uk>
+#alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
 alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
 alias oli.dickson Oli Dickson <olimpia.dickson@tao.j-sainsbury.co.uk>
 alias peronel.smith "Peronel Smith" <peronel_smith@harcourtbrace.com>
@@ -86,20 +109,17 @@ alias jo.dillon "Joel Dillon" <jo.dillon@new.oxford.ac.uk>
 alias rich.graham "Rich Graham (MCR president)" <richard.graham@new.ox.ac.uk>
 alias ferdia.gallagher Ferdia Gallagher <ferdia.gallagher@new.oxford.ac.uk>
 
-
 alias nicks nick,nick.williams
 
-
-#
-# Friends from home
-#
+# }}}
+# {{{ Friends from home
 
 alias matthew.clay Matt Clay <m.clay@prsarchitects.com>
-alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
+#alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
+alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
 alias jon.greenwell Jonathan Greenwell <J.R.Greenwell@mds.qmw.ac.uk>
 alias dan.davies Daniel Davies <dddavies@students.jhubc.it>
 alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
-alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
 alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
 alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
 alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
@@ -107,14 +127,26 @@ alias alex.green "Alex Green" <richard.green7@virgin.net>
 alias richard.green "Richard Green" <richard.green7@virgin.net>
 alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
 
+# }}}
+# {{{ Old skools
+
+alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
 alias gilbert.roscoe "Gilbert Roscoe" <gilbert@sionix.demon.co.uk>
 alias stewart.dunn Stewart Dunn <info@sdunn.demon.co.uk>
 alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
+alias john.moore John Moore <JFM@shrewsbury.org.uk>
 
+# }}}
+# {{{ RAM friends
 
-#
-# RAM friends
-#
+alias yan.fitterer "Yan Fitterer" <y.fitterer@ram.ac.uk>
+alias yan yan.fitterer
+alias nick.byrne Nick Byrne <n.byrne@RAM.AC.UK>
+alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
+alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
+
+# }}}
+# {{{ NYO friends
 
 alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
 alias rosie.biss "Rosie Biss" <rosiebiss@yahoo.com>
@@ -122,53 +154,65 @@ alias rosie rosie.biss
 alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
 alias malcs malcolm.cross
 
-
-#
-# London friends
-#
+# }}}
+# {{{ London friends
 
 alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
 alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 
+# }}}
+# {{{ Groups of friends
 
-##############################################################################
-# Relatives
-##############################################################################
+alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
+alias add2 tiss, kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
 
-alias daddy "Stuart Spiers" <stuart@spiers.net>
-alias thea "Thea Spiers" <stuart@spiers.net>
-alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
-alias peter "Peter O'Connor" <azrael14@juno.com>
-alias helen "Helen O'Connor" <oconh@mayo.edu>
-alias helen2 "Helen O'Connor" <helenoc@juno.com>
-alias michael "Michael O'Connor" <mkoconnor@mayo.edu>
-alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
-alias chloe "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
-alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
-alias ian.spiers "Ian Spiers" <ian@spiers.net>
-alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
-alias ian ian.spiers
-alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
+# }}}
 
-
-##############################################################################
-# RAM
-##############################################################################
+# {{{ RAM official
 
 alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
 alias estates RAM Estates Office <estates@ram.ac.uk>
-alias yan.fitterer "Yan Fitterer" <y.fitterer@ram.ac.uk>
-alias yan yan.fitterer
 alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
-alias nick.byrne Nick Byrne <n.byrne@RAM.AC.UK>
-alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
-alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
 alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
 
+# }}}
+# {{{ Computer work
 
-##############################################################################
-# New College / IT work
-##############################################################################
+alias christof.damian "Christof Damian" <cdamian@guideguide.com>
+alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
+alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
+alias alex.mclean "Alex McLean" <alex@slab.org>
+alias alex.mclean2 Alex McLean <amclean@guideguide.com>
+alias alex.mclean3 Alex McLean <alex@guideguide.com>
+alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
+alias john.imrie John Imrie <jimrie@guideguide.com>
+alias dave.cross Dave Cross <dave@dave.org.uk>
+alias nathan.carr Nathan Carr <nathan@nowt.net>
+
+alias ggdev "guideguide development list" <ggdev@guideguide.com>
+alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
+
+
+alias paul.rogers "Paul Rogers" <pr@mbn.co.uk>
+alias micromedia Micromedia <sales@micromedia.net>
+
+alias miguel "Miguel Ripoll" <miguel@itv.com>
+
+alias adam.bailey "Adam Bailey" <post@w3w.net>
+alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
+
+alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
+
+# }}}
+
+# {{{ Musical acquaintances
+
+alias michael.borthwick Michael Borthwick <m@borthwick.org>
+
+# }}}
+# {{{ Oxford University
+
+# {{{ New College / IT work
 
 alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
 alias alex.fuller Alex Fuller <alex.fuller@afis.demon.co.uk>
@@ -195,19 +239,16 @@ alias admissions New College Admissions <admissions@new.ox.ac.uk>
 alias free-computers free-computers@thelonious.new.ox.ac.uk
 alias jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
 
-
-##############################################################################
-# Oxford University
-##############################################################################
-
-# Official
+# }}}
+# {{{ Official
 
 alias advisory OUCS Advisory Service <advisory@computing-services.oxford.ac.uk>
 alias user.registration "User Registration, OUCS" <user.registration@computing-services.oxford.ac.uk>
 alias oxcert "OxCERT" <oxcert@ox.ac.uk>
 alias hostmaster "OUCS host administration" <hostmaster@ox.ac.uk>
 
-# Personal
+# }}}
+# {{{ Personal
 
 alias ruth.porter "Ruth Porter (OUCS contact for New College)" <ruth.porter@oucs.ox.ac.uk>
 alias malcolm.beattie "Malcolm Beattie" <mbeattie@sable.ox.ac.uk>
@@ -220,10 +261,10 @@ alias darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.
 alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
 alias simon.cozens Simon Cozens <simon@brecon.co.uk>
 
+# }}}
 
-##############################################################################
-# Mailing lists
-##############################################################################
+# }}}
+# {{{ Mailing lists
 
 alias linux-security "Linux Security mailing list" <linux-security@redhat.com>
 alias linux-kernel <linux-kernel@vger.rutgers.edu>
@@ -249,11 +290,10 @@ alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
 alias alsa-devel "ALSA development mailing list" <alsa-devel@alsa-project.org>
 alias alsa-user "ALSA users mailing list" <alsa-user@alsa-project.org>
 alias bashprompt bashprompt mailing list <bash@current.nu>
+alias modules "modules@perl.org" <modules@perl.org>
 
-
-##############################################################################
-# Software authors
-##############################################################################
+# }}}
+# {{{ Software authors
 
 alias Lingua::EN::Squeeze Jari Aalto <jari.aalto@poboxes.com>
 alias netatalk netatalk <netatalk@umich.edu>
@@ -274,39 +314,8 @@ alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
 alias diald "linux-diald mailing list" <linux-diald@vger.rutgers.edu>
 alias junkbuster.blocklist Stefan Waldherr <stefan@waldherr.org>
 
-
-##############################################################################
-# Computer work
-##############################################################################
-
-alias paul.rogers "Paul Rogers" <pr@mbn.co.uk>
-alias micromedia Micromedia <sales@micromedia.net>
-
-alias miguel "Miguel Ripoll" <miguel@itv.com>
-
-alias adam.bailey "Adam Bailey" <post@w3w.net>
-alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
-
-alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
-
-alias christof.damian "Christof Damian" <cdamian@guideguide.com>
-alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
-alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
-alias alex.mclean "Alex McLean" <alex@slab.org>
-alias alex.mclean2 Alex McLean <amclean@guideguide.com>
-alias alex.mclean3 Alex McLean <alex@guideguide.com>
-alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
-alias john.imrie John Imrie <jimrie@guideguide.com>
-alias dave.cross Dave Cross <dave@dave.org.uk>
-alias nathan.carr Nathan Carr <nathan@nowt.net>
-
-alias ggdev "guideguide development list" <ggdev@guideguide.com>
-alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
-
-
-##############################################################################
-# Linux on laptops / ThinkPad 390E dudes
-##############################################################################
+# }}}
+# {{{ Linux on laptops / ThinkPad 390E dudes
 
 alias linux-thinkpad linux-thinkpad mailing list <linux-thinkpad@topica.com>
 
@@ -327,10 +336,9 @@ alias rainer.rudigier "Rainer Rudigier (ThinkPad 390E Linux user)" <rainer.rudig
 alias daniel.canas "Daniel Canas (ThinkPad 390E Linux user)" <daniel@intnet.co.cr>
 alias mike.carney "Mike Carney  (ThinkPad 390E Linux user)" <mwc@spg-east-004.east.sun.com>
 
+# }}}
 
-##############################################################################
-# Miscellaneous
-##############################################################################
+# {{{ Miscellaneous
 
 alias kevin.spiers "Kevin L Spiers" <kevin@spiers.net>
 alias colin.wright "Colin Wright, juggler & mathematician" <cdw10@liv.ac.uk>
@@ -339,8 +347,9 @@ alias ahbou "alt.humor.best-of-usenet submissions" <ahbou-sub@acpub.duke.edu>
 
 alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 
-source ~/.mutt/quake-aliases
+#source ~/.mutt/quake-aliases
 
+# }}}
 
 ##############################################################################
 # Incoming (need to be classified)
