@@ -72,7 +72,7 @@
  
    bind  pager  <pagedown>   next-page
    bind  pager  <pageup>     previous-page     
-   bind  pager  " "          next-page
+   bind  pager  <space>      next-page
    bind  pager  <backspace>  previous-page
    bind  pager  f            next-page
    bind  pager  b            previous-page     
@@ -97,8 +97,8 @@
  
    macro pager  B   "|urlview\n"
  
-   macro pager  i   "<change-folder>=in\t<down>" "show main inboxes"
-   macro pager  I   "<change-folder>!\n"  "switch to MAIN inbox"
+   macro pager  i   "<change-folder>=inboxes\t\t\t<down>" "show main inboxes"
+   macro pager  I   "<change-folder>!<enter>"  "switch to MAIN inbox"
  
    macro pager  l   "<exit><limit>"  "show only messages matching a pattern"
  
