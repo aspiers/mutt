@@ -19,7 +19,16 @@ alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 # {{{ Relatives
 
 alias daddy "Stuart Spiers" <stuart@spiers.net>
-alias thea "Thea Spiers" <stuart@spiers.net>
+alias mummy "Stuart Spiers" <liz@spiers.net>
+alias thea "Thea Spiers" <thea@spiers.net>
+alias chloe "Chloe Spiers" <chloe@spiers.net>
+alias chloe.man "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
+#alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
+alias ian.spiers "Ian Spiers" <ian@spiers.net>
+alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
+alias ian ian.spiers
+alias barry.spiers "Barry Spiers" <barry@spiers.net>
+alias barry barry.spiers
 alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
 alias peter.oconnor "Peter O'Connor" <azrael14@juno.com>
 alias helen.oconnor.mayo "Helen O'Connor at work" <oconh@mayo.edu>
@@ -28,13 +37,6 @@ alias helen.oconnor helen.oconnor.juno
 alias michael.oconnor "Michael O'Connor" <mkoconnor@mayo.edu>
 alias niamh.oconnor Niamh O'Connor <sive99@yahoo.com>
 alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
-alias chloe "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
-#alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
-alias ian.spiers "Ian Spiers" <ian@spiers.net>
-alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
-alias ian ian.spiers
-alias barry.spiers "Barry Spiers" <barry@spiers.net>
-alias barry barry.spiers
 alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
 alias david.griffith "David Griffith" <eppltd@indigo.ie>
 alias nessa.griffith "Nessa Griffith" <ngriffith@ndc.ie>
@@ -360,3 +362,11 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 alias alex.mclean.lurk Alex McLean <alex@lurk.org>
 alias andreas.koenig "Andreas J. Koenig" <andreas.koenig@anima.de>
 alias mjd Mark-Jason Dominus <mjd@plover.com>
+alias nessa.griffith2 Nessa Griffith <nessandc@iol.ie>
+alias kirsten.salter Kirsten Salter <Kirsten.Salter@emic.co.uk>
+alias mjones Mark Hulme-Jones <mjones@guideguide.com>
+alias rob.partington Rob Partington <rpartington@guideguide.com>
+alias david.spiers David Spiers <duvido@home.com>
+alias barry.spiers.work "Barry Spiers, at work" <flexdeck@intelog.com>
+alias sheila.davies2 Sheila Davies <DaviesS@sesahs.nsw.GOV.AU>
+alias yan.fitterer.u-net Yan Fitterer <y.fitterer@ithut.u-net.com>
