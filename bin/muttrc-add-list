@@ -12,7 +12,7 @@ EOF
 
 my ($short, $addr, $long) = @ARGV;
 
-my ($regexp = $addr) =~ s/\@/.*/;
+(my $regexp = $addr) =~ s/\@/.*/;
 my $folder = $short;
 
 open(CONFIG, ">>$mutt_file")
