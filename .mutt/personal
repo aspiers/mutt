@@ -284,7 +284,7 @@ fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
 alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
 
 alias dan.davies.old Daniel Davies <dddavies@students.jhubc.it>
-alias dan.davies Dan Davies <dddavies@pop3.lineone.net>
+alias dan.davies Dan Davies <dddavies@lineone.net>
 alias dan.davies.work Dan Davies <DaviesDD@bp.com>
 fcc-save-hook dddavies =friends/home/dan.davies
 fcc-save-hook daviesdd =friends/home/dan.davies
@@ -411,6 +411,7 @@ fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
 
 alias chris.tromans Chris Tromans <chris@corelli.new.ox.ac.uk>
 fcc-save-hook c.*tromans =Oxford/college/chris.tromans
+fcc-save-hook chris@corelli.new.ox.ac.uk =Oxford/college/chris.tromans
 
 alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
 alias ncsec "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
