@@ -7,7 +7,7 @@
 
 # {{{ Personal config variables
 
-set alternates="(adam(\.spiers)?|(local)?adams|newc0115|m93asp|a\.?spiers).*@(((thelonio?us|cornholio|miles|www)\.)?new\.ox(ford)?\.ac\.uk|musician\.org|(a25\.|pulse\.)?ram\.ac\.uk|spiers\.net|(mediaconsult|guideguide)\.com)|.*@adamspiers\.org"
+alternates "adam@mandolinarchive\.com|adam@spiers\.net|.*@(adamspiers|tigerpig)\.org|(a25|pulse)\.ram\.ac\.uk|aspiers@musician\.org|aspiers@cpan\.org|adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk|((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com|(m93asp|newc0115)@.*\.ox\.ac\.uk"
 
 # }}}
 
@@ -44,8 +44,8 @@ folder-hook =inboxes/bad-junk-mail            'push "<tag-pattern>all\n;\ej"'
 # but sadly it won't accept from STDIN.
 folder-hook =inboxes/retry/is-spam            'push "<tag-pattern>all\n;| mailfilter.crm --learnspam"'
 folder-hook =inboxes/retry/is-ham             'push "<tag-pattern>all\n;| mailfilter.crm --learnnonspam"'
-folder-hook =inboxes/SAFE                     'push "<delete-pattern>~r >1w\n"'
-folder-hook =backup                           'push "<delete-pattern>~r >1w\n"'
+folder-hook =inboxes/SAFE$                    'push "<delete-pattern>~r >1w\n"'
+folder-hook =backup$                          'push "<delete-pattern>~r >1w\n"'
 
 folder-hook =lists/                           source ~/.mutt/mailing-list
 
@@ -676,6 +676,8 @@ alias james.hickie.lehman James Hickie <jhickie@lehman.com>
 alias carl.marino Carl Marino <cmarino@group14.co.uk>
 alias louise.lee "Louise Lee" <llee_se1@yahoo.com>
 alias chris.johnston.home "Chris Johnston" <cjohnston@nextex.com>
+
+alias gema.lopez-sanz "Gema Lopez-Sanz" <gema@lopez-sanz.com>
 
 # }}}
 # {{{ Egenera
@@ -1530,3 +1532,4 @@ alias philip.smithies "Philip Smithies" <philipsmithies@lineone.net>
 #
 
 
+alias jasper.mccrea.gmail Jasper McCrea <jaspermccrea@gmail.com>
