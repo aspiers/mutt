@@ -313,6 +313,8 @@ alias alsa-devel "ALSA development mailing list" <alsa-devel@alsa-project.org>
 alias alsa-user "ALSA users mailing list" <alsa-user@alsa-project.org>
 alias bashprompt bashprompt mailing list <bash@current.nu>
 alias modules "modules@perl.org" <modules@perl.org>
+alias sawfish "sawfish mailing list" <sawmill@aarg.net>
+alias sawmill sawfish
 
 # }}}
 # {{{ Software (authors)
