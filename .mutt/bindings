@@ -56,7 +56,7 @@
    macro index "\ej"  "<save-message>=junk-mail.bz2<enter>"  "save as junk mail"
    macro index "\er"  ";|formail -s parp -rwv\n;\eR;\ej"   "parp: flag spam classification as incorrect, mark for refiltering"
    macro index "\eR"  "<copy-message>=inboxes/retry.bz2<enter>"  "mark for refiltering"
-   macro index "\eS" "l~h 'x-spam-level: \\*{15}'" "limit to high SpamAssassin scores"
+   macro index "\eS" "l~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
 
 # }}}
 
