@@ -1053,16 +1053,27 @@ alias pjbox.developers PJB developers <pjbox@phobos.fs.tum.de>
 # }}}
 # {{{ Request tracking
 
-subscribe req reqng-developers wishlist rt-users 
+#subscribe req reqng-developers wishlist
 #mailboxes =inboxes/rt-users
 #mailboxes =inboxes/req
 #mailboxes =inboxes/reqng
-alias req "Req mailing list" <req@ccs.neu.edu>
-alias reqng "reqNG developers mailing list" <reqng-developers@scuttlebutt.explore.com>
-alias reqng-wishlist "ReqNG wishlist" <wishlist@scuttlebutt.explore.com>
-alias rt "RT mailing list" <rt@auk.fsck.com>
+# alias req "Req mailing list" <req@ccs.neu.edu>
+# alias reqng "reqNG developers mailing list" <reqng-developers@scuttlebutt.explore.com>
+# alias reqng-wishlist "ReqNG wishlist" <wishlist@scuttlebutt.explore.com>
 
-alias dcl "Daniel C. L'Hommedieu (reqNG developer)" <dcl@explore.com>
+# alias dcl "Daniel C. L'Hommedieu (reqNG developer)" <dcl@explore.com>
+
+subscribe rt-users
+fcc-save-hook rt-users =lists/rt-users
+alias rt-users rt-users list <rt-users@lists.fsck.com>
+send-hook "rt-users.*@lists.fsck.com" 'my_hdr From: "Adam Spiers" <rt@adamspiers.org>'
+send-hook "rt-users.*@lists.fsck.com" 'my_hdr Reply-To: "Adam Spiers" <rt@adamspiers.org>'
+
+subscribe rt-devel
+fcc-save-hook rt-devel =lists/rt-devel
+alias rt-devel rt-devel list <rt-devel@lists.fsck.com>
+send-hook "rt-devel.*@lists.fsck.com" 'my_hdr From: "Adam Spiers" <rt@adamspiers.org>'
+send-hook "rt-devel.*@lists.fsck.com" 'my_hdr Reply-To: "Adam Spiers" <rt@adamspiers.org>'
 
 # }}}
 # {{{ Rubyphoto
