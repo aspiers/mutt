@@ -1,17 +1,7 @@
 # -*- mode: sh -*-
 
-# Some personalised bindings are in ~/.mutt/personal.
+# Some personalised bindings might be in ~/.mutt/personal.
 
-# {{{ Bindings for attach
-
-   bind  attach <space> view-attach
-   bind  attach \Cg     exit
-   macro attach <left>  "<exit><previous-undeleted><view-attachments>"  "move to previous message"
-   macro attach <right> "<exit><next-undeleted><view-attachments>"  "move to next message"
-   macro attach n       <right>
-   macro attach p       <left>
-
-# }}}
 # {{{ Bindings for index
 
    bind  index h           help   
@@ -134,13 +124,6 @@
    macro pager "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
 
 # }}}
-# {{{ Bindings for browser menu
-
-   bind  browser <space>  select-entry
-   macro browser  q       "<exit>^u\n"  "return to current folder"
-   macro browser  i       "q"           "return to current folder"
-
-# }}}
 # {{{ Bindings for compose menu
 
    bind  compose  y  noop
@@ -156,5 +139,22 @@
 # {{{ Bindings for line editor
 
    bind  editor <delete> backspace
+
+# }}}
+# {{{ Bindings for attach
+
+   bind  attach <space> view-attach
+   bind  attach \Cg     exit
+   macro attach <left>  "<exit><previous-undeleted><view-attachments>"  "move to previous message"
+   macro attach <right> "<exit><next-undeleted><view-attachments>"  "move to next message"
+   macro attach n       <right>
+   macro attach p       <left>
+
+# }}}
+# {{{ Bindings for browser menu
+
+   bind  browser <space>  select-entry
+   macro browser  q       "<exit>^u\n"  "return to current folder"
+   macro browser  i       "q"           "return to current folder"
 
 # }}}
