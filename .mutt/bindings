@@ -57,7 +57,6 @@
    macro index X  "Dall\n" "mark all messages as deleted"
 
    macro index "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
-#   macro index "\er"  "|parp -wvf -\n"   "parp: flag spam classification as incorrect"
    macro index "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
 
 ## ===========================
