@@ -487,6 +487,9 @@ fcc-save-hook dav.*lasserson =friends/musicians/david.lasserson
 
 alias nick.rippon "Nick Rippon" <nicholas.rippon@tinyworld.co.uk>
 
+# Dan Watt's boyfriend
+alias brady.pohle "Brady A Pohle" <brady.pohle@herbertsmith.com>
+
 # }}}
 # {{{ Endellion friends
 
@@ -665,10 +668,13 @@ fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
 alias kordian.witek.work Kordian Witek <kwitek@lehman.com>
 alias kordian.witek Kordian Witek <kordy@kordian.com>
 alias duncan.young.home Duncan Young <duncan@duncanyoung.com>
+
 alias dan.beimborn Dan Beimborn <dan@beimborn.com>
 alias dan.beimborn.lehman2 Dan Beimborn <dan.beimborn@lehman.com>
 alias dan.beimborn.lehman Dan Beimborn <dbeimbor@lehman.com>
 alias dan.beimborn.celtic Dan Beimborn <Dan@Celticmusic.com>
+fcc-save-hook 'beimborn|celticmusic|mandolinarchive' =computer-work/dan.beimborn
+
 alias james.hickie.lehman James Hickie <jhickie@lehman.com>
 alias carl.marino Carl Marino <cmarino@group14.co.uk>
 alias louise.lee "Louise Lee" <llee_se1@yahoo.com>
@@ -1340,6 +1346,28 @@ subscribe sawmill
 alias sawfish "sawfish mailing list" <sawmill@aarg.net>
 alias sawmill sawfish
 fcc-save-hook sawmill.*aarg\.net =lists/sawfish
+
+# }}}
+# {{{ Slim Devices lists
+
+alias slim-updates "Slim Devices updates" <updates@lists.slimdevices.com>
+fcc-save-hook "updates.*lists.slimdevices.com" =lists/slim-updates
+subscribe slim-updates
+#mailboxes =inboxes/slim-updates
+send-hook "updates.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-updates@adamspiers.org>'
+send-hook "updates.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-updates@adamspiers.org>'
+alias slim-devel "Slim Devices development list" <developers@lists.slimdevices.com>
+fcc-save-hook "developers.*lists.slimdevices.com" =lists/slim-devel
+subscribe slim-devel
+#mailboxes =inboxes/slim-devel
+send-hook "developers.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-devel@adamspiers.org>'
+send-hook "developers.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-devel@adamspiers.org>'
+alias slim-discuss "Slim Devices discussion list" <discuss@lists.slimdevices.com>
+fcc-save-hook "discuss.*lists.slimdevices.com" =lists/slim-discuss
+subscribe slim-discuss
+#mailboxes =inboxes/slim-discuss
+send-hook "discuss.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-discuss@adamspiers.org>'
+send-hook "discuss.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-discuss@adamspiers.org>'
 
 # }}}
 # {{{ xwrits
