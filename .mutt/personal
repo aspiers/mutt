@@ -1010,8 +1010,8 @@ alias gnucash-user "gnucash users lists" <gnucash-user@lists.gnucash.org>
 fcc-save-hook "gnucash-user.*lists.gnucash.org" =lists/gnucash-user
 subscribe gnucash-user
 #mailboxes =inboxes/gnucash-user
-send-hook "gnucash-user.*lists.gnucash.org" 'my_hdr From: "Adam Spiers" <gnucash-user@adamspiers.org>'
-send-hook "gnucash-user.*lists.gnucash.org" 'my_hdr Reply-To: "Adam Spiers" <gnucash-user@adamspiers.org>'
+send-hook "gnucash-user.*lists.gnucash.org" 'my_hdr From: "Adam Spiers" <gnucash@adamspiers.org>'
+send-hook "gnucash-user.*lists.gnucash.org" 'my_hdr Reply-To: "Adam Spiers" <gnucash@adamspiers.org>'
 
 # }}}
 # {{{ GNU screen
