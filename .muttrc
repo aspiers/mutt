@@ -94,6 +94,7 @@ unignore posted-to
 unignore x-parp-accepted x-parp-rejected x-parp-received-parse
 unignore x-filter-accepted x-filter-rejected
 unignore x-cron-env x-seq x-hn-forum
+unignore x-spam-status x-spam-level
 
 auto_view text/x-vcard text/html application/pgp-signature
 
