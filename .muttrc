@@ -21,7 +21,7 @@
 
    set   editor="emacs -nw"
    set   fast_reply
-   set   folder=~/mail2   # directory with all mail folders
+   set   folder=~/mail    # directory with all mail folders
    set   force_name       # save outbound mail by username
                           # (even if =username does not exist)
    set nohelp
