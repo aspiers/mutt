@@ -15,6 +15,7 @@ EOF
 
 my ($short, $addr, $long) = @ARGV;
 
+$addr =~ s/%s/$short/g;
 (my $regexp = $addr) =~ s/\@/.*/;
 my $folder = $short;
 
