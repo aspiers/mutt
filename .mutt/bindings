@@ -114,7 +114,8 @@
    macro pager "\e9"    ":set pager_index_lines=10\n"     # Change PIL size
 
    macro pager "\ef"  "|parp -ev\n"
-   macro pager "\et"  "|parp -vt\n"
+   macro pager "\et"  "|parp -tv\n"
+   macro pager "\er"  "|parp -wv\n"
 
 ## ===========================
 ## Bindings for browser menu
