@@ -13,12 +13,6 @@
    set   confirmcreate
    set   copy             # Always keep a copy of my mails!
    set   delete=yes
-
-#  ~p              message is addressed to you (consults $alternates)
-#  ~P              message is from you (consults $alternates)
-   set   default_hook="!~P (~f %s | ~C %s) | (~P ~C %s)"
-#   set   default_hook="~p (~f %s) | ~P (~t %s) | (!~p !~P ~C %s)"
-
    set   editor="emacs -nw"
    set   fast_reply
    set   folder=~/mail    # directory with all mail folders
@@ -74,7 +68,7 @@ unignore x-mailer x-newsreader
 unignore posted-to
 unignore x-parp-accepted x-parp-rejected
 unignore x-filter-accepted x-filter-rejected
-unignore x-cron-env
+unignore x-cron-env x-seq x-hn-forum
 
 auto_view text/x-vcard
 
