@@ -1,9 +1,8 @@
+# -*- mode: sh -*-
+
 # Some personalised bindings are in ~/.mutt/personal.
 
-
-## ========================
-## Bindings for attach
-## ========================
+# {{{ Bindings for attach
 
    bind  attach <space> view-attach
    bind  attach \Cg     exit
@@ -12,10 +11,8 @@
    macro attach n       <right>
    macro attach p       <left>
 
-
-## ======================
-## Bindings for index
-## ======================
+# }}}
+# {{{ Bindings for index
 
    bind  index h           help   
 
@@ -59,13 +56,13 @@
 
    macro index X  "Dall\n" "mark all messages as deleted"
 
+   macro index "\eh"  "/~h "
    macro index "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
-#   macro index "\er"  "|parp -wvf -\n"   "parp: flag spam classification as incorrect"
+   macro index "\er"  ";|formail -s parp -wvf\n \eR\ej"   "parp: flag spam classification as incorrect, mark for refiltering"
    macro index "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
 
-## ===========================
-## Bindings for pager
-## ===========================
+# }}}
+# {{{ Bindings for pager
 
    bind  index  h      help   
 
@@ -136,19 +133,15 @@
    macro pager "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
    macro pager "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
 
-
-## ===========================
-## Bindings for browser menu
-## ===========================
+# }}}
+# {{{ Bindings for browser menu
 
    bind  browser <space>  select-entry
    macro browser  q       "<exit>^u\n"  "return to current folder"
    macro browser  i       "q"           "return to current folder"
 
-
-## ===========================
-## Bindings for compose menu
-## ===========================
+# }}}
+# {{{ Bindings for compose menu
 
    bind  compose  y  noop
    bind  compose  g  send-message
@@ -159,9 +152,9 @@
    macro compose  P  "<exit>y"   "postpone message"
    macro compose  Q  "<exit>n"   "abort message"
 
-
-## ===========================
-## Bindings for line editor
-## ===========================
+# }}}
+# {{{ Bindings for line editor
 
    bind  editor <delete> backspace
+
+# }}}
