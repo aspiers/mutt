@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cd ~/mail/inboxes
+
+for box in "$@"; do
+  destdir="$box.maildir"
+  if [ -d "$destdir" ]; then
+    echo "$destdir already exists"
+    exit 1
+  fi
+  mkdir -p $destdir/{tmp,cur,new}
+  formail -s $HOME/local/bin/safecat $HOME/tmp $destdir/new < $box
+done
