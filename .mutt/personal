@@ -279,7 +279,13 @@ alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 
 alias emma.cullender Emma Cullender <redneluc@globalnet.co.uk>
 fcc-save-hook redneluc =friends/misc/emma.cullender
-fcc-save-hook le7053@qmw.ac.uk =friends/misc/emma.cullender
+fcc-save-hook le7053@qmw\.ac\.uk =friends/misc/emma.cullender
+
+# }}}
+# {{{ Foreign friends
+
+alias miriam Miriam <Diamond5475@aol.com>
+fcc-save-hook Diamond5475@aol\.com =friends/misc/miriam
 
 # }}}
 # {{{ Groups of friends
