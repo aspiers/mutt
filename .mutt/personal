@@ -504,7 +504,8 @@ alias clare.raybould "Clare Raybould" <clareraybould@bigfoot.com>
 
 alias lizzie.kerr Lizzie Kerr <lizziekuk@yahoo.com>
 
-alias kirsten.salter "Kirsten Salter" <Kirsten.Salter@emic.co.uk>
+#alias kirsten.salter "Kirsten Salter" <Kirsten.Salter@emic.co.uk>
+alias kirsten.salter "Kirsten Salter" <kirsten@naxos.co.uk>
 alias tom.hickox "Tom Hickox" <tomhickox@hotmail.com>
 alias ben.rogerson "Ben Rogerson" <benedictrogerson@yahoo.com>
 
@@ -512,7 +513,32 @@ alias inga.taylor.work Inga Taylor <itaylor@mxbex.com>
 alias inga.taylor Inga Taylor <ingataylor@hotmail.com>
 alias myrtledene <ian.bysh@advantage-business.co.uk>, <duncan_french@djf.ndo.co.uk>, <mike@theeurekafactor.com>, <nickidivett@fulham73.freeserve.co.uk>, joanna.warden, inga.taylor, anne-marie.cullum
 
-alias endellion-marathon-sponsors <stewart@mcilwham37.fsnet.co.uk>, <tom@thomasguthrie.com>, <hilary.bentley@gartmore.com>, <colin.fleming@creditlyonnais.co.uk>, Dominic <devers@nspcc.org.uk>, <peter.howell@write-away.org>, tom.hickox, matthew.pay, <coghlanangie@aol.com>, <thorsten@terweiden.de>, <Jane.Dickinson@ncl.ac.uk>, <Susanna.Thriddy@zoo.ox.ac.uk>, oliver.wilson, annabel.borthwick, <jemima.peterken@virgin.net>, <jjp@ipswich.suffolk.sch.uk>, <harrymooregwyn@aol.com>, rose.redgrave, clare.raybould, kirsten.salter, ben.rogerson, michael.borthwick, <rjmbutler@aol.com>, <elaineft@mac.com>, myrtledene
+alias endellion-marathon-sponsors <stewart@mcilwham37.fsnet.co.uk>, <tom@thomasguthrie.com>, <hilary.bentley@gartmore.com>, <colin.fleming@creditlyonnais.co.uk>, Dominic <devers@nspcc.org.uk>, <peter.howell@write-away.org>, tom.hickox, matthew.pay, <coghlanangie@aol.com>, <thorsten@terweiden.de>, <Jane.Dickinson@ncl.ac.uk>, oliver.wilson, annabel.borthwick, <jemima.peterken@virgin.net>, <jjp@ipswich.suffolk.sch.uk>, <harrymooregwyn@aol.com>, rose.redgrave, clare.raybould, ben.rogerson, michael.borthwick, <rjmbutler@aol.com>, <elaineft@mac.com>, myrtledene, <susanna.twiddy@zoo.ox.ac.uk>
+
+# Orchestra
+alias jessica.townsend "Jessica Townsend" <jtownsend@rcm.ac.uk> # clarinet
+alias katherine.barnecutt "Katherine Barnecutt" <kbarnecutt@hotmail.com> # viola, Jeremy
+alias celia.birkinshaw "Celia Birkinshaw" <Celia.Birkinshaw@dorset.pnn.police.uk> # bassoon
+alias nancy.buchanan "Nancy Buchanan" <nancybuchanan@hotmail.com> # violin, Morris Minor
+alias jane.dickinson "Jane Dickinson" <Jane@ajd-ophth.freeserve.co.uk>
+alias claire.gibb "Claire Gibb" <CGibb@TCM.AC.UK> # french horn
+alias andre.harries "Andre Harries" <andre.h@messages.co.uk> # gave me a lift
+alias sandy.macdonald "Sandy MacDonald" <sandymacdonald@lineone.net> # lute!
+alias peter.markham "Peter Markham" <peter@markham-home.fslife.co.uk>
+alias stewart.mcilwham "Stewart McIlwham" <stewart@mcilwham37.fsnet.co.uk> # flute, Rachel Ives
+alias alice.neary "Alice Neary" <alice@tneary.fsnet.co.uk>
+alias deborah.white "deborah white" <debwhite76@hotmail.com>
+
+# Still orchestra, but who?
+# alias lewis.edney "Lewis Edney" <ledney2000@yahoo.co.uk>
+# alias claire.hawkes "Claire Hawkes" <claire@tropic.org.uk>
+# alias laura.newton "Laura Newton" <L.Newton@unn.ac.uk>
+# alias max.pitcher "Max Pitcher" <pitcher1@breathemail.net>
+# alias james.ranson "James Ranson" <j_f_ranson@hotmail.com>
+# alias mark.robinson "Mark Robinson" <kramrob@hotmail.com>
+# alias ian.sandbrook "Ian Sandbrook" <isandbrook@ukonline.co.uk>
+# alias andrew.uttley "Andrew Uttley" <andrew@ajd-amu.freeserve.co.uk>
+
 
 # }}}
 # {{{ Groups of friends
