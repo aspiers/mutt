@@ -289,6 +289,7 @@ alias chris.evans "Chris Evans" <chris@scary.beasts.org>
 alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
 
 alias harry.yeates Harry Yeates <Harry.Yeates@rbi.co.uk>
+alias barny.hollington Barny Hollington <b_hollington@hotmail.com>
 
 # }}}
 # {{{ Friends from home
@@ -353,6 +354,8 @@ alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
 fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 
 fcc-save-hook ben.trigg =friends/RAM/ben.trigg
+alias lindsay.wood Lindsay Wood <l.wood@ram.ac.uk>
+fcc-save-hook l.wood@ram.ac.uk =friends/RAM/lindsay.wood
 
 # }}}
 # {{{ NYO friends
@@ -412,8 +415,12 @@ alias sonia \"Sonia (JSO)\" <pg004593@sghms.ac.uk>
 alias paul.skinner Paul Skinner <paulski@supanet.com>
 fcc-save-hook paulski.*supanet\.com =friends/Jersey/paul.skinner
 alias samy.bishai Samy Bishai <s_bishai@hotmail.com>
+fcc-save-hook s.*bishai =friends/musicians/samy.bishai
 alias claire.roff Claire Roff <claire_roff@hotmail.com>
 alias david.lasserson David Lasserson <davidlasserson@hotmail.com>
+fcc-save-hook dav.*lasserson =friends/musicians/david.lasserson
+alias matthew.pay Matthew Pay <Matthew.Pay@ntl.com>
+fcc-save-hook matt.*pay@ntl.com =friends/Endellion/matthew.pay
 
 # }}}
 # {{{ Groups of friends
@@ -525,6 +532,19 @@ fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
 
 # {{{ Work
 
+# {{{ Lehman Brothers
+
+alias kordian.witek.work Kordian Witek <kwitek@lehman.com>
+alias kordian.witek Kordian Witek <kordy@kordian.com>
+alias duncan.young.home Duncan Young <duncan@duncanyoung.com>
+
+# }}}
+# {{{ Egenera
+
+alias ken.robson Ken Robson <ken@robson.net>
+# sleepingbarber
+
+# }}}
 # {{{ Orange Genie
 
 alias tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
@@ -966,6 +986,16 @@ alias oznoid "Oznoid (Kevin Lenzo)" <lenzo@cs.cmu.edu>
 alias junkbuster.blocklist "Stefan Waldherr" <stefan@waldherr.org>
 
 # }}}
+# {{{ Linux IEEE1394 (FireWire)
+
+alias linux1394-user "Linux IEEE1394 users mailing list" <linux1394-user@lists.sourceforge.net>
+fcc-save-hook "linux1394-user.*lists.sourceforge.net" =lists/linux1394-user
+subscribe linux1394-user
+#mailboxes =inboxes/linux1394-user
+send-hook "linux1394-user.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <linux1394-user@adamspiers.org>'
+send-hook "linux1394-user.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <linux1394-user@adamspiers.org>'
+
+# }}}
 # {{{ Linux kernel
 
 alias linux-kernel <linux-kernel@vger.rutgers.edu>
@@ -1001,6 +1031,23 @@ mailboxes =inboxes/mutt-dev
 # {{{ netatalk
 
 alias netatalk "netatalk mailing list" <netatalk@umich.edu>
+
+# }}}
+# {{{ OpenZaurus
+
+alias openzaurus-users "OpenZaurus users mailing list" <openzaurus-users@lists.sourceforge.net>
+fcc-save-hook "openzaurus-users.*lists.sourceforge.net" =lists/openzaurus-users
+subscribe openzaurus-users
+#mailboxes =inboxes/openzaurus-users
+send-hook "openzaurus-users.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <openzaurus-users@adamspiers.org>'
+send-hook "openzaurus-users.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <openzaurus-users@adamspiers.org>'
+
+alias openzaurus-devel "OpenZaurus developers mailing list" <openzaurus-devel@lists.sourceforge.net>
+fcc-save-hook "openzaurus-devel.*lists.sourceforge.net" =lists/openzaurus-devel
+subscribe openzaurus-devel
+#mailboxes =inboxes/openzaurus-devel
+send-hook "openzaurus-devel.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <openzaurus-devel@adamspiers.org>'
+send-hook "openzaurus-devel.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <openzaurus-devel@adamspiers.org>'
 
 # }}}
 # {{{ Palm
@@ -1152,6 +1199,18 @@ alias zefram "Zefram" <zefram@fysh.org>
 # }}}
 # {{{ Hardware
 
+# {{{ iPod
+
+alias ipodlinux-devel "Linux on iPod mailing list" <ipodlinux-devel@lists.sourceforge.net>
+fcc-save-hook "ipodlinux-devel.*lists.sourceforge.net" =lists/ipodlinux-devel
+subscribe ipodlinux-devel
+#mailboxes =inboxes/ipodlinux-devel
+send-hook "ipodlinux-devel.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <ipodlinux-devel@adamspiers.org>'
+send-hook "ipodlinux-devel.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <ipodlinux-devel@adamspiers.org>'
+
+# }}}
+# {{{ laptops
+
 subscribe linux-thinkpad linux-laptop
 #mailboxes =inboxes/linux-thinkpad
 #mailboxes =inboxes/linux-laptop
@@ -1164,12 +1223,17 @@ alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
 alias kharker "Kenneth Harker, Linux on Laptops maintainer" <kharker@cs.utexas.edu>
 alias lilac "Werner Heuser, LiLAC website maintainer" <wehe@snafu.de>
 
+# }}}
+# {{{ p800
+
 alias p800-linux "P800 with Linux" <p800@linux.pt>
 fcc-save-hook "p800.*linux.pt" =lists/p800-linux
 subscribe p800-linux
 #mailboxes =inboxes/p800-linux
 send-hook "p800.*linux.pt" 'my_hdr From: "Adam Spiers" <p800-linux@adamspiers.org>'
 send-hook "p800.*linux.pt" 'my_hdr Reply-To: "Adam Spiers" <p800-linux@adamspiers.org>'
+
+# }}}
 
 # }}}
 # {{{ RedHat
