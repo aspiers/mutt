@@ -3,9 +3,6 @@
 # at least some of this.  I'll leave it mostly intact just in case
 # it gives you some nice ideas though.
 
-macro pager    U  "<exit><save-message>=junk-mail.gz<enter>"  "save as junk mail"
-
-
 set alternates="(adam(\.spiers)?|(local)?adams|newc0115|m93asp|a\.?spiers).*@(((thelonio?us|cornholio|miles|www)\.)?new\.ox(ford)?\.ac\.uk|musician\.org|(a25\.|pulse\.)?ram\.ac\.uk|spiers\.net|(mediaconsult|guideguide)\.com)"
 
 
@@ -19,8 +16,9 @@ mailboxes !
 mailboxes /home/adam/mail/inboxes/test
 
 ## guideguide
-subscribe ggdev ggnews gg-uk
+subscribe ggdev ggnews gg-uk codereview
 mailboxes /home/adam/mail/inboxes/ggdev
+mailboxes /home/adam/mail/inboxes/codereview
 mailboxes /home/adam/mail/inboxes/ggnews
 mailboxes /home/adam/mail/inboxes/gg-uk
 mailboxes /home/adam/mail/inboxes/gg-email
@@ -59,7 +57,7 @@ subscribe zsh-users zsh-workers
 subscribe alsa-devel alsa-user
 subscribe infobot p5p oxford-pm gimp-perl
 subscribe bash gnokii sawmill galeon-devel
-subscribe buggies
+subscribe buggies gnome-pilot-list
 #mailboxes /home/adam/mail/inboxes/linux-diald
 mailboxes /home/adam/mail/inboxes/alsa-user
 mailboxes /home/adam/mail/inboxes/alsa-devel
@@ -82,6 +80,7 @@ mailboxes /home/adam/mail/inboxes/p5p
 mailboxes /home/adam/mail/inboxes/gimp-perl
 #mailboxes /home/adam/mail/inboxes/galeon-devel
 mailboxes /home/adam/mail/inboxes/buggies
+mailboxes /home/adam/mail/inboxes/gnome-pilot-list
 
 ## Chatter
 subscribe oxford-pm london_pm london-list void 
