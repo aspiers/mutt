@@ -1175,8 +1175,10 @@ send-hook "rt-devel.*@lists.fsck.com" 'my_hdr Reply-To: "Adam Spiers" <rt@adamsp
 # }}}
 # {{{ Rubyphoto
 
+#mailboxes =inboxes/rubyphoto
+alias rubyphoto "rubyphoto mailing list" <rubyphoto@plig.net>
+fcc-save-hook "rubyphoto.*plig.net" =lists/rubyphoto
 subscribe rubyphoto
-mailboxes =inboxes/rubyphoto
 
 # }}}
 # {{{ sawfish
@@ -1302,3 +1304,4 @@ alias bcc-only lots of people <dev.null@adamspiers.org>
 # Unclassified aliases
 #
 
+alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
