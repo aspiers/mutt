@@ -655,7 +655,7 @@ send-hook "fwp" 'my_hdr Reply-To: "Adam Spiers" <fwp@adamspiers.org>'
 alias perl-golf "Perl golf" <golf@perl.org>
 fcc-save-hook "golf.*perl.org" =lists/perl-golf
 subscribe golf
-#mailboxes =inboxes/perl-golf
+mailboxes =inboxes/perl-golf
 send-hook "golf.*perl.org" 'my_hdr From: "Adam Spiers" <perl-golf@adamspiers.org>'
 send-hook "golf.*perl.org" 'my_hdr Reply-To: "Adam Spiers" <perl-golf@adamspiers.org>'
 
@@ -992,8 +992,8 @@ alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
 alias christian.lemburg Christian Lemburg <lemburg@aixonix.de>
 
 subscribe perlunit-users perlunit-devel
-#mailboxes =inboxes/perlunit-users
-#mailboxes =inboxes/perlunit-devel
+mailboxes =inboxes/perlunit-users
+mailboxes =inboxes/perlunit-devel
 alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
 alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
 fcc-save-hook perlunit-devel@.*sourceforge\.net =lists/perlunit-devel
@@ -1037,8 +1037,8 @@ alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
 # {{{ zsh
 
 subscribe zsh-users zsh-workers
-#mailboxes =inboxes/zsh/users
-#mailboxes =inboxes/zsh/workers
+mailboxes =inboxes/zsh-users
+mailboxes =inboxes/zsh-workers
 alias zsh-users "zsh users mailing list" <zsh-users@sunsite.auc.dk>
 alias zsh-workers "zsh workers mailing list" <zsh-workers@sunsite.auc.dk>
 fcc-save-hook zsh-announce@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-announce
