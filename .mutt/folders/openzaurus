@@ -1,7 +1,15 @@
 source ~/.mutt/scoring
-score '~s "c7[056x]0"' +50
-score '~f "kergoth"' +50
+
+score '~s "c7[56]0"' +30
+score '~s "c7[x0]0"' +80
+score '~s "c7[x0]0"' +80
+score '~s "5[56]00"' -20
+
+score '~s "3\.[34]"' +30
+
 score '~s "bluetooth|affix|bluez"' +30
-score '~s "3\.3"' +30
+
+score '~f "kergoth"' +50
+score '~f "lauer"'   +40
 
 source ~/.mutt/mailing-list
