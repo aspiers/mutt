@@ -218,6 +218,8 @@ alias nathan.carr Nathan Carr <nathan@nowt.net>
 alias ncarr nathan.carr
 alias andrew.simmons Andrew Simmons <asimmons@guideguide.com>
 alias asimmons andrew.simmons
+alias luke.robinson Luke Robinson <lrobinson@guideguide.com>
+alias lrobinson luke.robinson
 
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
@@ -326,6 +328,7 @@ alias modules "modules@perl.org" <modules@perl.org>
 alias sawfish "sawfish mailing list" <sawmill@aarg.net>
 alias sawmill sawfish
 alias modperl mod_perl mailing list <modperl@apache.org>
+alias gimp-perl gimp-perl mailing list <gimp-perl@lists.netcentral.net>
 
 # }}}
 # {{{ Software (authors)
