@@ -26,10 +26,11 @@ open(CONFIG, ">>$mutt_file")
 my $new_stuff = <<EOTEMPLATE;
 alias $short "$long" <$addr>
 fcc-save-hook "$regexp" =lists/$short
-subscribe $short
+subscribe $addr
 #mailboxes =inboxes/$short
 send-hook "$regexp" 'my_hdr From: "Adam Spiers" <$short\@adamspiers.org>'
 send-hook "$regexp" 'my_hdr Reply-To: "Adam Spiers" <$short\@adamspiers.org>'
+folder-hook =(inboxes|lists)/$short source ~/.mutt/mailing-list
 EOTEMPLATE
 
 print "Adding to $mutt_file:\n$new_stuff";
