@@ -52,6 +52,8 @@ alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
 alias sheila.davies2 Sheila Davies <DaviesS@sesahs.nsw.GOV.AU>
 alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
 
+alias siobhan.supple Siobhan Supple <supple@iol.ie>
+
 # }}}
 
 # {{{ (Ex-)Oxford friends
@@ -137,7 +139,8 @@ alias matthew.clay Matt Clay <m.clay@prsarchitects.com>
 #alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
 alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
 alias jon.greenwell Jonathan Greenwell <J.R.Greenwell@mds.qmw.ac.uk>
-alias dan.davies Daniel Davies <dddavies@students.jhubc.it>
+alias dan.davies.old Daniel Davies <dddavies@students.jhubc.it>
+alias dan.davies Dan Davies <dddavies@pop3.lineone.net>
 alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
 alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
 alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
@@ -161,10 +164,11 @@ alias john.moore John Moore <JFM@shrewsbury.org.uk>
 alias yan.fitterer "Yan Fitterer" <y.fitterer@ram.ac.uk>
 alias yan.fitterer.u-net Yan Fitterer <y.fitterer@ithut.u-net.com>
 alias yan yan.fitterer
-alias nick.byrne Nick Byrne <n.byrne@RAM.AC.UK>
+alias nick.byrne Nick Byrne <kaptain_birdeye@hotmail.com>
 alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
 alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
 alias sarah.hammel Sarah Hammel <naomihammel@hotmail.com>
+alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
 
 # }}}
 # {{{ NYO friends
@@ -174,12 +178,15 @@ alias rosie.biss "Rosie Biss" <rosiebiss@yahoo.com>
 alias rosie rosie.biss
 alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
 alias malcs malcolm.cross
+alias bourby.norman Bourby Norman <bourby.norman@bbc.co.uk>
+alias rachel.norman bourby.norman
 
 # }}}
 # {{{ London friends
 
 alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
 alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
+alias emma.cullender Emma Cullender <redneluc@globalnet.co.uk>
 
 # }}}
 # {{{ Groups of friends
@@ -431,6 +438,3 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # Incoming (need to be classified)
 ##############################################################################
 
-alias siobhan.supple Siobhan Supple <supple@iol.ie>
-alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
-alias dan.davies2 Dan Davies <dddavies@pop3.lineone.net>
