@@ -6,6 +6,8 @@ fcc-save-hook stuart.*spiers =relatives/daddy
 fcc-save-hook thea@spiers\.net =relatives/thea
 fcc-save-hook chloe.*spiers =relatives/chloe
 fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
+fcc-save-hook daviess@.*\.gov\.au =relatives/sheila.davies
+fcc-save-hook helenoc@juno\.com =relatives/helen.oconnor
 
 
 ##############################################################################
@@ -29,12 +31,12 @@ fcc-save-hook ben@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
 fcc-save-hook north.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
 fcc-save-hook rg232@.*\.cam\.ac\.uk =friends/Oxford/rachael.gulliver
 fcc-save-hook v.*hamilt =Oxford/friends/victoria.hamilton
-fcc-save-hook helenoc@juno\.com =relatives/helen.oconnor
 fcc-save-hook n\.byrne@ram\.ac\.uk =friends/RAM/nick.byrne
 fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
 fcc-save-hook chris.*@.*\.wadham\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
 fcc-save-hook stacey.*steele =friends/Oxford/stacey.steele
 fcc-save-hook c.*hildrew =friends/Oxford/chris.hildrew
+fcc-save-hook naomi.*hammel =friends/RAM/sarah.hammel
 
 
 ##############################################################################
@@ -97,4 +99,6 @@ fcc-save-hook apmd =lists/apmd-list
 ##############################################################################
 # Unclassified
 ##############################################################################
+
+
 
