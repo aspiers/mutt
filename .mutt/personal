@@ -1115,6 +1115,16 @@ fcc-save-hook sawmill.*aarg\.net =lists/sawfish
 alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
 
 # }}}
+# {{{ zoe
+
+alias zoe "zoe-general list" <zoe-general@lists.sourceforge.net>
+fcc-save-hook "zoe-general.*@lists\.sourceforge\.net" =lists/zoe
+subscribe zoe
+mailboxes =inboxes/zoe
+send-hook "zoe-general.*@lists\.sourceforge\.net" 'my_hdr From: "Adam Spiers" <zoe@adamspiers.org>'
+send-hook "zoe-general.*@lists\.sourceforge\.net" 'my_hdr Reply-To: "Adam Spiers" <zoe@adamspiers.org>'
+
+# }}}
 # {{{ zsh
 
 subscribe zsh-users zsh-workers
@@ -1149,6 +1159,13 @@ alias linux-thinkpad-maintainer "Linux on ThinkPads web page maintainer" <linux-
 alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
 alias kharker "Kenneth Harker, Linux on Laptops maintainer" <kharker@cs.utexas.edu>
 alias lilac "Werner Heuser, LiLAC website maintainer" <wehe@snafu.de>
+
+alias p800-linux "P800 with Linux" <p800@linux.pt>
+fcc-save-hook "p800.*linux.pt" =lists/p800-linux
+subscribe p800-linux
+#mailboxes =inboxes/p800-linux
+send-hook "p800.*linux.pt" 'my_hdr From: "Adam Spiers" <p800-linux@adamspiers.org>'
+send-hook "p800.*linux.pt" 'my_hdr Reply-To: "Adam Spiers" <p800-linux@adamspiers.org>'
 
 # }}}
 # {{{ RedHat
