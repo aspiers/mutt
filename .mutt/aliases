@@ -12,6 +12,7 @@ alias me.musician "Adam Spiers" <adam.spiers@musician.org>
 alias me.ox "Adam Spiers" <adam.spiers@new.ox.ac.uk>
 alias me.oxford "Adam Spiers" <adam.spiers@new.oxford.ac.uk>
 alias me.thelonious "Adam Spiers, on thelonious" <adam@thelonious.new.ox.ac.uk>
+alias me.test "Adam Spiers, testing something" <adam-test@thelonious.new.ox.ac.uk>
 alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 
 # }}}
@@ -20,13 +21,15 @@ alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 alias daddy "Stuart Spiers" <stuart@spiers.net>
 alias thea "Thea Spiers" <stuart@spiers.net>
 alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
-alias peter "Peter O'Connor" <azrael14@juno.com>
-alias helen "Helen O'Connor" <oconh@mayo.edu>
-alias helen2 "Helen O'Connor" <helenoc@juno.com>
-alias michael "Michael O'Connor" <mkoconnor@mayo.edu>
+alias peter.oconnor "Peter O'Connor" <azrael14@juno.com>
+alias helen.oconnor.mayo "Helen O'Connor at work" <oconh@mayo.edu>
+alias helen.oconnor.juno "Helen O'Connor at home" <helenoc@juno.com>
+alias helen.oconnor helen.oconnor.juno
+alias michael.oconnor "Michael O'Connor" <mkoconnor@mayo.edu>
+alias niamh.oconnor Niamh O'Connor <sive99@yahoo.com>
 alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
 alias chloe "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
-alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
+#alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
 alias ian.spiers "Ian Spiers" <ian@spiers.net>
 alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
 alias ian ian.spiers
@@ -35,7 +38,6 @@ alias barry barry.spiers
 alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
 alias david.griffith "David Griffith" <eppltd@indigo.ie>
 alias nessa.griffith "Nessa Griffith" <ngriffith@ndc.ie>
-alias niamh.oconnor Niamh O'Connor <sive99@yahoo.com>
 
 # }}}
 
@@ -355,3 +357,4 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # Incoming (need to be classified)
 ##############################################################################
 
+alias alex.mclean.lurk Alex McLean <alex@lurk.org>
