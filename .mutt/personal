@@ -219,7 +219,7 @@ alias jo.sherratt.hotmail Joanna Sherratt <josherratt@hotmail.com>
 alias jo.sherratt.notts Joanna Sherratt <mzytjls@nottingham.ac.uk>
 alias jo.sherratt.bm "Joanna Sherratt" <jsherrat@ibl.bm>
 alias jo.sherratt.work Joanna Sherratt <jsherrat@CENTRERE.COM>
-alias jo jo.sherratt.hotmail
+alias jo.sherratt jo.sherratt.hotmail
 
 fcc-save-hook e-c-orch\.demon\.co\.uk =Oxford/friends/ivan.rockey
 fcc-save-hook ivan.rockey@btinternet.com =Oxford/friends/ivan.rockey
@@ -451,7 +451,7 @@ alias joanna.warden Jo Warden <joannawarden@hotmail.com>
 alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
 alias add2 tiss, kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
 
-alias birthday-and-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, dave, oli, ives, sarsli, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, annabel.borthwick, tiss.bolton, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali
+alias birthday-and-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, dave, oli, ives, sarsli, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, annabel.borthwick, tiss.bolton, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt
 
 # }}}
 
