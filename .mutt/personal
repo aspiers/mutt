@@ -37,11 +37,14 @@ mailboxes =inboxes/friends
 # {{{ folder-hooks
 
 folder-hook .                                 source ~/.mutt/folders/DEFAULTS
-folder-hook =lists/                           source ~/.mutt/mailing-list
 folder-hook =inboxes/MAIN$                    source ~/.mutt/folders/MAIN
-folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
 folder-hook =inboxes/junk-mail                source ~/.mutt/folders/junk-mail
 folder-hook =inboxes/bad-junk-mail            source ~/.mutt/folders/junk-mail
+folder-hook =inboxes/SAFE                     "push 'D~r >1w\n'"
+folder-hook =inboxes/backup                   "push 'D~r >1w\n'"
+
+folder-hook =lists/                           source ~/.mutt/mailing-list
+folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
 folder-hook =(inboxes|lists)/zsh-             source ~/.mutt/folders/zsh
 folder-hook =(inboxes|lists)/alsa-            source ~/.mutt/folders/alsa
 folder-hook =(inboxes|lists)/void             source ~/.mutt/folders/void
