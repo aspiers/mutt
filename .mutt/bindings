@@ -192,7 +192,7 @@
 # }}}
 # {{{ Bindings for browser menu
 
-   bind  browser <space>  select-entry
+#   bind  browser <space>  select-entry
    macro browser  q       "<exit>^u\n"  "return to current folder"
    macro browser  i       "q"           "return to current folder"
 
