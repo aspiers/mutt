@@ -32,8 +32,8 @@
 ## default:  set forw_format="[%a: %s]"
 set forw_format="%s (fwd)"
 
-## hdr_format - format of all mails shown in the index display
-set hdr_format="%Z%3C %{%b %d} %-21.21F %s"
+## index_format - format of all mails shown in the index display
+## SET THIS IN ~/.mutt/folders/DEFAULTS
 
 ## pager_format - format of summary on current mail in the pager
 set pager_format="%S [%C/%m] %-.20n %s"

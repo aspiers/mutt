@@ -4,4 +4,5 @@ score '~s "music"' +20
 score '~s "linux"' +30
 score '~s "perl|cpan"' +30
 
-set hdr_format="%Z%3C (%2N) %{%b %d} %-21.21F %s"
+## N.B. See also ~/.mutt/format-strings !
+set index_format="%Z%3C (%2N) %(%b %d) %-21.21F %s"

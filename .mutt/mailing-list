@@ -1,4 +1,6 @@
+## N.B. See also ~/.mutt/format-strings !
 # set hdr_format="%4C %Z %{%b %d} %-15.15n (%4l) %s"
+
 unset pgp_verify_sig
   set sort=threads
   set pager_index_lines=7
