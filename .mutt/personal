@@ -34,6 +34,35 @@ mailboxes /home/adam/mail/inboxes/friends
 # }}}
 
 # }}}
+# {{{ folder-hooks
+
+folder-hook .                     source ~/.mutt/folders/DEFAULTS
+folder-hook =lists/               source ~/.mutt/mailing-list
+folder-hook =inboxes/             source ~/.mutt/mailing-list
+folder-hook =inboxes/Mailbox$     source ~/.mutt/folders/Mailbox
+folder-hook =(inboxes|lists)/zsh-            source ~/.mutt/folders/zsh
+folder-hook =(inboxes|lists)/alsa-           source ~/.mutt/folders/alsa
+folder-hook =(inboxes|lists)/void            source ~/.mutt/folders/void
+folder-hook =(inboxes|lists)/linux-thinkpad  source ~/.mutt/folders/linux-thinkpad
+folder-hook =(inboxes|lists)/linux-laptop    source ~/.mutt/folders/linux-laptop 
+folder-hook =(inboxes|lists)/linux-diald    source ~/.mutt/folders/linux-diald
+folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
+
+# }}}
+
+source /usr/doc/mutt-1.2.5i/samples/pgp2.rc
+
+#send-hook . 'unmy_hdr From'
+#send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
+
+# {{{ my_hdr
+
+my_hdr X-Home-Page: http://www.new.ox.ac.uk/~adam/
+my_hdr X-OS: RedHat Linux
+my_hdr From: "Adam Spiers" <adam@spiers.net>
+
+# }}}
+
 # {{{ Aliases, save-hooks, lists, mailboxes
 
 # {{{ Me :-)
@@ -183,6 +212,7 @@ alias jo.sherratt.work Joanna Sherratt <jsherrat@CENTRERE.COM>
 alias jo jo.sherratt.hotmail
 
 fcc-save-hook e-c-orch\.demon\.co\.uk =Oxford/friends/ivan.rockey
+fcc-save-hook ivan.rockey@btinternet.com =Oxford/friends/ivan.rockey
 alias ivan.rockey Ivan Rockey <Ivan.Rockey@btinternet.com>
 alias ivan.rockey.ECO "FAO: Ivan Rockey" <mail@e-c-orch.demon.co.uk>
 alias ivan ivan.rockey
@@ -197,6 +227,7 @@ alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
 alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
 
 fcc-save-hook bearbolton@hotmail\.com =friends/Oxford/bear.bolton
+fcc-save-hook bear@thelonious\.new\.ox\.ac\.uk =friends/Oxford/bear.bolton
 fcc-save-hook bolton@susq\.com =friends/Oxford/bear.bolton
 fcc-save-hook bolton@sig\.com =friends/Oxford/bear.bolton
 fcc-save-hook mbolton@iol.ie =friends/Oxford/bear.bolton
@@ -209,6 +240,7 @@ alias bear bear.bolton.work
 alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
 alias bears.aunt "Bear at Hilary Stephen's" <hilary@arc.net.au>
 
+fcc-save-hook cmb@thelonious.new.ox.ac.uk =friends/Oxford/christie.bolton
 alias christie.bolton "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
 alias tiss.bolton christie.bolton
 
@@ -223,7 +255,8 @@ fcc-save-hook oli.*dickson =friends/Oxford/olimpia.dickson
 alias oli.dickson Oli Dickson <olimpia.dickson@tao.j-sainsbury.co.uk>
 alias oli.dickson2 Oli Dickson <Olimpia.Dickson@tao.sainsburys.co.uk>
 
-alias peronel.smith "Peronel Smith" <peronel_smith@harcourtbrace.com>
+fcc-save-hook peronel =friends/Oxford/peronel.smith
+alias peronel.smith "Peronel Smith" <peronel@mgp.ltd.uk>
 
 fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
 alias nick.collins Nick Collins <nickcollins@hotmail.com>
@@ -271,6 +304,8 @@ alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
 alias alex.green "Alex Green" <richard.green7@virgin.net>
 alias richard.green "Richard Green" <richard.green7@virgin.net>
 alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
+
+alias di.north Di North <di@amaroo.demon.co.uk>
 
 # }}}
 # {{{ RAM friends
@@ -327,6 +362,8 @@ alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 alias emma.cullender Emma Cullender <redneluc@globalnet.co.uk>
 fcc-save-hook redneluc =friends/misc/emma.cullender
 fcc-save-hook le7053@qmw\.ac\.uk =friends/misc/emma.cullender
+
+alias jessica.ong Jessica Ong <jessica.ong@freshfields.com>
 
 # }}}
 # {{{ Foreign friends
@@ -569,6 +606,8 @@ mailboxes /home/adam/mail/inboxes/gg-watches
 
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
+send-hook "gg-uk@guideguide\.com" 'my_hdr From: "Adam Spiers" <aspiers@guideguide.com>'
+
 alias codereview guideguide codereview list <codereview@guideguide.com>
 alias translations "ggdev translations" <translations@guideguide.com>
 
@@ -926,8 +965,14 @@ subscribe perlunit-users perlunit-devel
 #mailboxes /home/adam/mail/inboxes/perlunit-devel
 alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
 alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
-fcc-save-hook perlunit-devel =lists/perlunit-devel
-fcc-save-hook perlunit-users =lists/perlunit-users
+fcc-save-hook perlunit-devel@.*\.sourceforge\.net =lists/perlunit-devel
+fcc-save-hook perlunit-users@.*\.sourceforge\.net =lists/perlunit-users
+
+# }}}
+# {{{ PJB
+
+alias alexander.mosley Alexander Mosley <ajm@netlink.co.uk>
+alias pjbox.developers PJB developers <pjbox@phobos.fs.tum.de>
 
 # }}}
 # {{{ Request tracking
@@ -1026,37 +1071,8 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # }}}
 
 # }}}
-# {{{ folder-hooks
-
-folder-hook .                     source ~/.mutt/folders/DEFAULTS
-folder-hook =lists/               source ~/.mutt/mailing-list
-folder-hook =inboxes/             source ~/.mutt/mailing-list
-folder-hook =inboxes/Mailbox$     source ~/.mutt/folders/Mailbox
-folder-hook =(inboxes|lists)/zsh-            source ~/.mutt/folders/zsh
-folder-hook =(inboxes|lists)/alsa-           source ~/.mutt/folders/alsa
-folder-hook =(inboxes|lists)/void            source ~/.mutt/folders/void
-folder-hook =(inboxes|lists)/linux-thinkpad  source ~/.mutt/folders/linux-thinkpad
-folder-hook =(inboxes|lists)/linux-laptop    source ~/.mutt/folders/linux-laptop 
-folder-hook =(inboxes|lists)/linux-diald    source ~/.mutt/folders/linux-diald
-folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
-
-# }}}
-
-source /usr/doc/mutt-1.2.5i/samples/pgp2.rc
-
-#send-hook . 'unmy_hdr From'
-#send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
-
-# {{{ my_hdr
-
-my_hdr X-Home-Page: http://www.new.ox.ac.uk/~adam/
-my_hdr X-OS: RedHat Linux
-my_hdr From: "Adam Spiers" <adam@spiers.net>
-
-# }}}
 
 #
-# Unclassified
+# Unclassified aliases
 #
 
-alias jessica.ong Jessica Ong <jessica.ong@freshfields.com>
