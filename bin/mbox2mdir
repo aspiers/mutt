@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-cd ~/mail/inboxes
-
 for box in "$@"; do
   destdir="$box.maildir"
   if [ -d "$destdir" ]; then
