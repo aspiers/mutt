@@ -60,7 +60,7 @@
    set   tmpdir=/tmp      # directory where temporary files are to be placed
 #  set   to_chars=
    set   tilde            # show empty lines at end with a tilde
- unset   wait_key
+   set   wait_key
    set   write_inc=1      # display increment count for every n-th mail
 
   ignore *
