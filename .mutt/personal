@@ -39,9 +39,9 @@ mailboxes =inboxes/friends
 folder-hook .                                 source ~/.mutt/folders/DEFAULTS
 folder-hook =inboxes/MAIN$                    source ~/.mutt/folders/MAIN
 folder-hook =inboxes/junk-mail                source ~/.mutt/folders/junk-mail
-folder-hook =inboxes/bad-junk-mail            source ~/.mutt/folders/junk-mail
-folder-hook =inboxes/SAFE                     "push 'D~r >1w\n'"
-folder-hook =inboxes/backup                   "push 'D~r >1w\n'"
+folder-hook =inboxes/bad-junk-mail            'push "Tall\n;\ej"'
+folder-hook =inboxes/SAFE                     'push "D~r >1w\n"'
+folder-hook =inboxes/backup                   'push "D~r >1w\n"'
 
 folder-hook =lists/                           source ~/.mutt/mailing-list
 folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
@@ -49,7 +49,7 @@ folder-hook =(inboxes|lists)/zsh-             source ~/.mutt/folders/zsh
 folder-hook =(inboxes|lists)/alsa-            source ~/.mutt/folders/alsa
 folder-hook =(inboxes|lists)/void             source ~/.mutt/folders/void
 folder-hook =(inboxes|lists)/london-pm        source ~/.mutt/folders/london-pm
-folder-hook =(inboxes|lists)/openzaurus-users source ~/.mutt/folders/openzaurus
+folder-hook =(inboxes|lists)/openzaurus-      source ~/.mutt/folders/openzaurus
 
 # }}}
 
@@ -654,7 +654,7 @@ fcc-save-hook (lrobinson|luke)@guideguide\.com =computer-work/luke.robinson
 alias rob.ryan Rob Ryan <rryan@guideguide.com>
 alias rryan rob.ryan
 alias rollmop rob.ryan
-fcc-save-hook rryan@guideguide.com =computer-work/robert.ryan
+fcc-save-hook rryan@guideguide\.com =computer-work/robert.ryan
 
 alias christian.allen Christian Allen <callen@guideguide.com>
 alias callen christian.allen
@@ -671,28 +671,28 @@ fcc-save-hook (alix|aposcharsky)@guideguide\.com =computer-work/alix.poscharsky
 
 alias rob.andrews Rob Andrews <randrews@guideguide.com>
 alias nine rob.andrews
-fcc-save-hook randrews@guideguide.com =computer-work/rob.andrews
+fcc-save-hook randrews@guideguide\.com =computer-work/rob.andrews
 
 alias astrid.otoole "Astrid O\'Toole" <aotoole@guideguide.com>
-fcc-save-hook aotoole@guideguide.com =computer-work/astrid.otoole
+fcc-save-hook aotoole@guideguide\.com =computer-work/astrid.otoole
 
 alias sven.hessler "Sven Hessler" <shessler@guideguide.com>
-fcc-save-hook shessler@guideguide.com =computer-work/sven.hessler
+fcc-save-hook shessler@guideguide\.com =computer-work/sven.hessler
 
-alias ben.simpson "Ben Simpson" <bsimpson@guideguide.com>
-fcc-save-hook (bsimpson|ben)@guideguide.com =computer-work/ben.simpson
+alias ben.simpson "Ben Simpson" <ben@hy-street.net>
+fcc-save-hook ben@hy-street\.net =computer-work/ben.simpson
 
 alias jasper.mccrea "Jasper McCrea" <jmccrea@guideguide.com>
-fcc-save-hook (jmccrea|jasper)@guideguide.com =computer-work/jasper.mccrea
+fcc-save-hook (jmccrea|jasper)@guideguide\.com =computer-work/jasper.mccrea
 
 alias anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 
 alias anthony.gardner Anthony Gardner <agardner@guideguide.com>
 alias agardner anthony.gardner
-fcc-save-hook agardner@guideguide.com =computer-work/anthony.gardner
+fcc-save-hook agardner@guideguide\.com =computer-work/anthony.gardner
 
 alias roland.gockel Roland Gockel <rgockel@guideguide.com>
-fcc-save-hook rgockel@guideguide.com =computer-work/roland.gockel
+fcc-save-hook rgockel@guideguide\.com =computer-work/roland.gockel
 
 # }}}
 # {{{ other

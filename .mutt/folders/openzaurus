@@ -1,10 +1,7 @@
-source ~/.mutt/mailing-list
-
+source ~/.mutt/scoring
 score '~s "c7[056]0"' +50
 score '~f "kergoth"' +50
 score '~s "bluetooth|affix|bluez"' +30
 score '~s "3\.3"' +30
 
-source ~/.mutt/scoring
-
-push Y
+source ~/.mutt/mailing-list
