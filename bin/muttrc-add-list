@@ -5,7 +5,7 @@ use strict;
 my $mutt_file = "$ENV{HOME}/.mutt/personal";
 
 unless (@ARGV == 3) {
-  die <<EOF
+  die <<'EOF';
 Usage: $0 <list short name> <list-addr> <list description>
 
 Short name gets used as folder name and @adamspiers.org prefix.
