@@ -77,7 +77,6 @@ alias david.spiers "David Spiers" <duvido@home.com>
 alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
 fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
 
-alias peter.oconnor "Peter O'Connor" <azrael14@juno.com>
 alias helen.oconnor.mayo "Helen O'Connor at work" <oconh@mayo.edu>
 alias helen.oconnor.juno "Helen O'Connor at home" <helenoc@juno.com>
 alias helen.oconnor helen.oconnor.juno
@@ -400,6 +399,7 @@ alias colin.carr Colin Carr <ccarr@atlas.co.uk>
 alias michael.borthwick Michael Borthwick <m@borthwick.org>
 alias kirsten.salter Kirsten Salter <Kirsten.Salter@emic.co.uk>
 alias John Hargreaves John Hargreaves <musicmaestros@netscapeonline.co.uk>
+alias adrian.warrick Adrian Warrick <awarrick@argonet.co.uk>
 
 # }}}
 
@@ -482,7 +482,7 @@ alias ben.simpson "Ben Simpson" <bsimpson@guideguide.com>
 fcc-save-hook (bsimpson|ben)@guideguide.com =computer-work/ben.simpson
 
 alias jasper.mccrea "Jasper McCrea" <jmccrea@guideguide.com>
-fcc-save-hook jmccrea@guideguide.com =computer-work/jasper.mccrea
+fcc-save-hook (jmccrea|jasper)@guideguide.com =computer-work/jasper.mccrea
 
 alias anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 
