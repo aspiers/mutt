@@ -926,6 +926,7 @@ alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
 # {{{ Miscellaneous
 
 alias kevin.spiers "Kevin L Spiers" <kevin@spiers.net>
+alias kevin.spiers2 Kevin Spiers <stock03@worldnet.att.net>
 
 alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 
@@ -962,3 +963,8 @@ my_hdr X-OS: RedHat Linux
 my_hdr From: "Adam Spiers" <adam@spiers.net>
 
 # }}}
+
+#
+# Unclassified
+#
+
