@@ -54,7 +54,7 @@ fcc-save-hook rian@w3w\.net =computer-work/rian.kruger
 fcc-save-hook .*@.*w3w\.net =computer-work/W3W
 fcc-save-hook powerhost\.co\.uk =computer-work/W3W
 
-fcc-save-hook ggdev@mediaconsult\.com =computer-work/ggdev
+fcc-save-hook ggdev@guideguide\.com =computer-work/ggdev
 fcc-save-hook christof@mediaconsult\.com =computer-work/christof.damian
 fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
 fcc-save-hook tdamian@guideguide\.com =computer-work/thomas.damian
