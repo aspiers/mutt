@@ -2,7 +2,6 @@
 ## File:        $HOME/.muttrc
 ## Author:      Adam Spiers (thanks to Sven Guckes)
 ## Purpose:     Setup file for the Mail program "Mutt"
-## Current version applies to version "mutt-0.93.1i".
 ## ========================================================================
 
    set   abort_nosubject=no
@@ -101,9 +100,9 @@ auto_view text/x-vcard text/html
 alternative_order text/enriched text/plain text/html
 
 # Support for compressed folders
-open-hook \\.gz$ "gzip -cd %f > %t" 
-close-hook \\.gz$ "gzip -c %t > %f"
-append-hook \\.gz$ "gzip -c %t >> %f" 
+#open-hook \\.gz$ "gzip -cd %f > %t" 
+#close-hook \\.gz$ "gzip -c %t > %f"
+#append-hook \\.gz$ "gzip -c %t >> %f" 
 
 source ~/.mutt/personal
 source ~/.mutt/mutt-aliases
