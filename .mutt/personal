@@ -117,6 +117,8 @@ mailboxes /home/adam/mail/inboxes/interjazz
 mailboxes /home/adam/mail/inboxes/jobserve
 mailboxes /home/adam/mail/inboxes/hacking
 #mailboxes /home/adam/mail/inboxes/family-tree
+mailboxes /home/adam/mail/inboxes/chat
+mailboxes /home/adam/mail/inboxes/friends
 
 ## Unclassified
 
