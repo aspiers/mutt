@@ -593,6 +593,7 @@ alias tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
 # {{{ Aston Carter
 
 alias jeff.harrod Jeff Harrod <jharrod@astoncarter.co.uk>
+fcc-save-hook jharrod =computer-work/jeff.harrod
 alias jason.yank Jason Yank <jyank@astoncarter.co.uk>
 
 # }}}
