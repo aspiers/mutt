@@ -74,3 +74,11 @@ fcc-save-hook apmd =lists/apmd-list
 ##############################################################################
 
 
+
+fcc-save-hook alex@guideguide\.com =computer-work/alex.mclean
+
+fcc-save-hook wstearns@pobox\.com =software/buildkernel
+
+fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
+
+fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
