@@ -1,3 +1,5 @@
+source ~/.mutt/mailing-list
+
 score '~s "mp3"' +10
 score '~s "zen"' +30
 score '~s "cello"' +50

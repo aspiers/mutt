@@ -36,17 +36,14 @@ mailboxes =inboxes/friends
 # }}}
 # {{{ folder-hooks
 
-folder-hook .                     source ~/.mutt/folders/DEFAULTS
-folder-hook =lists/               source ~/.mutt/mailing-list
-folder-hook =inboxes/             source ~/.mutt/mailing-list
-folder-hook =inboxes/Mailbox$     source ~/.mutt/folders/Mailbox
-folder-hook =(inboxes|lists)/zsh-            source ~/.mutt/folders/zsh
-folder-hook =(inboxes|lists)/alsa-           source ~/.mutt/folders/alsa
-folder-hook =(inboxes|lists)/void            source ~/.mutt/folders/void
-folder-hook =(inboxes|lists)/linux-thinkpad  source ~/.mutt/folders/linux-thinkpad
-folder-hook =(inboxes|lists)/linux-laptop    source ~/.mutt/folders/linux-laptop 
-folder-hook =(inboxes|lists)/linux-diald    source ~/.mutt/folders/linux-diald
-folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
+folder-hook .                           source ~/.mutt/folders/DEFAULTS
+folder-hook =lists/                     source ~/.mutt/mailing-list
+folder-hook =inboxes/MAIN$              source ~/.mutt/folders/MAIN
+folder-hook =inboxes/arch-              source ~/.mutt/mailing-list
+folder-hook =(inboxes|lists)/zsh-       source ~/.mutt/folders/zsh
+folder-hook =(inboxes|lists)/alsa-      source ~/.mutt/folders/alsa
+folder-hook =(inboxes|lists)/void       source ~/.mutt/folders/void
+folder-hook =(inboxes|lists)/london-pm  source ~/.mutt/folders/london-pm
 
 # }}}
 
