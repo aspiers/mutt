@@ -13,6 +13,7 @@
    set   confirmcreate
    set   copy             # Always keep a copy of my mails!
    set   delete=yes
+   set   default_hook="!~P (~f %s | ~C %s) | (~P ~C %s)"
    set   editor="emacs -nw"
    set   fast_reply
    set   folder=~/mail    # directory with all mail folders
