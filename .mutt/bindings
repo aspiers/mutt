@@ -140,7 +140,7 @@
    macro pager "\e8" ":set pager_index_lines=16\n"
    macro pager "\e9" ":set pager_index_lines=18\n"
 
-   macro pager "\ei"  "|parp-inject ~/mail/spool\n"   "parp: (re)Inject into spool"
+   macro pager "\ei"  "|spamc -f -p 7195 | parp-inject ~/mail/spool\n"   "parp: (re)Inject into spool"
    macro pager "\et"  "|parp -rtv\n"  "parp: Test run"
 #  macro pager "\eT"  "|parp-new -rtv\n"  "parp: Test run, new code"
 
