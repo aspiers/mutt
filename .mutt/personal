@@ -31,12 +31,14 @@ set alternates="(adam(\.spiers)?|(local)?adams|newc0115|m93asp|a\.?spiers).*@(((
 ## Main mailboxes
 mailboxes !
 #mailboxes /home/adam/mail/inboxes/junk-mail
+mailboxes /home/adam/mail/inboxes/test
 
 ## guideguide
 lists ggdev ggnews gg-uk
 mailboxes /home/adam/mail/inboxes/ggdev
 mailboxes /home/adam/mail/inboxes/ggnews
 mailboxes /home/adam/mail/inboxes/gg-uk
+mailboxes /home/adam/mail/inboxes/gg-email
 mailboxes /home/adam/mail/inboxes/gg-cvs-notify
 mailboxes /home/adam/mail/inboxes/gg-bugzilla
 mailboxes /home/adam/mail/inboxes/gg-watches
@@ -69,7 +71,7 @@ lists req reqng-developers wishlist rt-users
 lists zsh-users zsh-workers
 lists alsa-devel alsa-user
 lists infobot p5p oxford-pm
-lists bash
+lists bash gnokii
 #mailboxes /home/adam/mail/inboxes/linux-diald
 mailboxes /home/adam/mail/inboxes/alsa-user
 mailboxes /home/adam/mail/inboxes/alsa-devel
@@ -106,6 +108,7 @@ mailboxes /home/adam/mail/inboxes/amazon
 mailboxes /home/adam/mail/inboxes/sourceforge
 
 ## Miscellaneous
+mailboxes /home/adam/mail/inboxes/mobile
 mailboxes /home/adam/mail/inboxes/jobserve-filtered
 mailboxes /home/adam/mail/inboxes/interjazz
 mailboxes /home/adam/mail/inboxes/jobserve
@@ -124,6 +127,7 @@ folder-hook =(inboxes|lists)/void            source ~/.mutt/folders/void
 folder-hook =(inboxes|lists)/linux-thinkpad  source ~/.mutt/folders/linux-thinkpad
 folder-hook =(inboxes|lists)/linux-laptop    source ~/.mutt/folders/linux-laptop 
 folder-hook =(inboxes|lists)/linux-diald    source ~/.mutt/folders/linux-diald
+folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
 
 source ~/.mutt/save-hooks
 

@@ -18,6 +18,7 @@ fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
 fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
 fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
 fcc-save-hook oli.*dickson =friends/Oxford/olimpia.dickson
+fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
 fcc-save-hook sherrat =friends/Oxford/joanna.sherratt
 fcc-save-hook mzytjls@nottingham\.ac\.uk =friends/Oxford/joanna.sherratt
 fcc-save-hook dave@thelonious\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
@@ -97,8 +98,15 @@ fcc-save-hook linux-diald =lists/linux-diald
 fcc-save-hook infobot =lists/infobot
 fcc-save-hook apmd =lists/apmd-list
 
+fcc-save-hook gnokii =lists/gnokii
+
 
 ##############################################################################
 # Unclassified
 ##############################################################################
 
+
+
+fcc-save-hook chris.*kemp =lists/gnokii
+
+fcc-save-hook ck231@.*cam\.ac\.uk =lists/gnokii
