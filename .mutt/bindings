@@ -17,6 +17,10 @@
 ## Bindings for index
 ## ======================
 
+   bind  index h           help   
+
+   bind  index ?           search-reverse
+   bind  index n           search-next
 
    bind  index <pagedown>  next-page
    bind  index <pageup>    previous-page
@@ -52,16 +56,18 @@
    macro index I  "<change-folder>!\n"  "switch to MAIN inbox"
 
    macro index B  "|urlview\n"  "pipe message to urlview"
-   macro index N  "S\n"         "move to next match in search"
 
    macro index X  "Dall\n" "mark all messages as deleted"
 
    macro index "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
+#   macro index "\er"  "|parp -wvf -\n"   "parp: flag spam classification as incorrect"
    macro index "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
 
 ## ===========================
 ## Bindings for pager
 ## ===========================
+
+   bind  index  h      help   
 
    bind  pager  <down> next-line
    bind  pager  <up>   previous-line
@@ -87,6 +93,7 @@
  
    bind  pager  /   search
    bind  pager  N   search-next
+   bind  index  ?      search-reverse
  
    bind  pager  n   next-undeleted
    bind  pager  p   previous-undeleted
@@ -124,7 +131,7 @@
    macro pager "\ei"  "|parp-inject ~/mail/spool\n"   "parp: extract friends"
    macro pager "\et"  "|parp -rtv\n"  "parp: dummy run"
 #  macro pager "\eT"  "|parp-new -rtv\n"  "parp: dummy run, new code"
-   macro pager "\er"  "|parp -wv\n"   "parp: flag spam classification as incorrect"
+   macro pager "\er"  "|parp -rwv\n"   "parp: flag spam classification as incorrect"
 
    macro pager "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
    macro pager "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
