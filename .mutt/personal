@@ -7,7 +7,7 @@
 
 # {{{ Personal config variables
 
-set alternates="(adam(\.spiers)?|(local)?adams|newc0115|m93asp|a\.?spiers).*@(((thelonio?us|cornholio|miles|www)\.)?new\.ox(ford)?\.ac\.uk|musician\.org|(a25\.|pulse\.)?ram\.ac\.uk|spiers\.net|(mediaconsult|guideguide)\.com)"
+set alternates="(adam(\.spiers)?|(local)?adams|newc0115|m93asp|a\.?spiers).*@(((thelonio?us|cornholio|miles|www)\.)?new\.ox(ford)?\.ac\.uk|musician\.org|(a25\.|pulse\.)?ram\.ac\.uk|spiers\.net|(mediaconsult|guideguide)\.com)|.*@adamspiers\.org"
 
 # }}}
 
@@ -225,7 +225,8 @@ alias tim.lucas "Tim Lucas" <timothy.lucas@new.ox.ac.uk>
 
 alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
 
-alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
+alias jessie.hadley Jess Hadley <jhadley@uvic.ca>
+#alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
 
 fcc-save-hook bearbolton@hotmail\.com =friends/Oxford/bear.bolton
 fcc-save-hook bear@corelli\.new\.ox\.ac\.uk =friends/Oxford/bear.bolton
@@ -352,6 +353,8 @@ alias malcs malcolm.cross
 fcc-save-hook bourby =friends/Oxford/bourby.norman
 alias bourby.norman Bourby Norman <bourbynorman@hotmail.com>
 alias rachel.norman bourby.norman
+
+fcc-save-hook mattojones =friends/NYO/matt.jones
 
 # }}}
 # {{{ London friends
