@@ -50,11 +50,14 @@ folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
 
 # }}}
 
-source /usr/doc/mutt-1.2.5i/samples/pgp2.rc
+source /usr/share/doc/mutt-1.2.5i/samples/pgp2.rc
+
+# {{{ send-hook
 
 #send-hook . 'unmy_hdr From'
 #send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 
+# }}}
 # {{{ my_hdr
 
 my_hdr X-Home-Page: http://www.new.ox.ac.uk/~adam/
@@ -335,9 +338,12 @@ fcc-save-hook meticulous.*freeuk\.com =friends/RAM/mat.heighway
 alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
 fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 
+fcc-save-hook ben.trigg =friends/RAM/ben.trigg
+
 # }}}
 # {{{ NYO friends
 
+alias matt.jones Matt Jones <mattojones@hotmail.com>
 alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
 
 alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
@@ -528,6 +534,7 @@ fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
 
 alias mark.hulme-jones Mark Hulme-Jones <mjones@guideguide.com>
 alias mjones mark.hulme-jones
+alias ture Mark Hulme-Jones <mjones@ture.org>
 alias recoil mark.hulme-jones
 fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
 fcc-save-hook ture@ture\.org =computer-work/mark.hulme-jones
@@ -607,6 +614,7 @@ mailboxes /home/adam/mail/inboxes/gg-watches
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
 send-hook "gg-uk@guideguide\.com" 'my_hdr From: "Adam Spiers" <aspiers@guideguide.com>'
+fcc-save-hook gg-uk@guideguide\.com =computer-work/gg-uk
 
 alias codereview guideguide codereview list <codereview@guideguide.com>
 alias translations "ggdev translations" <translations@guideguide.com>
