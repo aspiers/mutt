@@ -1,21 +1,26 @@
+# -*- mode: shell-script -*-
+#
 # This is the personal part of my mutt configuration, i.e., stuff
 # which only applies to me.  You should very likely change all or
 # at least some of this.  I'll leave it mostly intact just in case
 # it gives you some nice ideas though.
 
+# {{{ Personal config variables
+
 set alternates="(adam(\.spiers)?|(local)?adams|newc0115|m93asp|a\.?spiers).*@(((thelonio?us|cornholio|miles|www)\.)?new\.ox(ford)?\.ac\.uk|musician\.org|(a25\.|pulse\.)?ram\.ac\.uk|spiers\.net|(mediaconsult|guideguide)\.com)"
 
+# }}}
+# {{{ Mailboxes and mailing lists
 
-###
-### Mailboxes and mailing lists
-###
+# {{{ Main mailboxes
 
-## Main mailboxes
 mailboxes !
 #mailboxes /home/adam/mail/inboxes/junk-mail
 mailboxes /home/adam/mail/inboxes/test
 
-## guideguide
+# }}}
+# {{{ guideguide
+
 subscribe ggdev ggnews gg-uk codereview
 mailboxes /home/adam/mail/inboxes/ggdev
 mailboxes /home/adam/mail/inboxes/codereview
@@ -28,7 +33,9 @@ mailboxes /home/adam/mail/inboxes/gg-bugzilla
 mailboxes /home/adam/mail/inboxes/gg-watches
 #mailboxes /home/adam/mail/inboxes/gg-faqomatic
 
-## System (software) lists
+# }}}
+# {{{ System (software) lists
+
 subscribe apmd-list
 subscribe linux-kernel linux-smp
 subscribe linux-vortex-bug vortex-bug
@@ -42,7 +49,9 @@ mailboxes /home/adam/mail/inboxes/linux-smp
 mailboxes /home/adam/mail/inboxes/vortex-bug
 mailboxes /home/adam/mail/inboxes/linux-kernel
 
-## Security lists
+# }}}
+# {{{ Security lists
+
 subscribe bugtraq linux-security security-audit 
 subscribe unix-admin
 mailboxes /home/adam/mail/inboxes/security-audit
@@ -50,7 +59,9 @@ mailboxes /home/adam/mail/inboxes/linux-alert
 mailboxes /home/adam/mail/inboxes/linux-security
 mailboxes /home/adam/mail/inboxes/bugtraq
 
-## Software lists
+# }}}
+# {{{ Software lists
+
 subscribe mutt-dev mutt-users mutt-announce 
 subscribe req reqng-developers wishlist rt-users 
 subscribe zsh-users zsh-workers
@@ -83,7 +94,9 @@ mailboxes /home/adam/mail/inboxes/buggies
 mailboxes /home/adam/mail/inboxes/gnome-pilot-list
 mailboxes /home/adam/mail/inboxes/plucker-dev
 
-## Chatter
+# }}}
+# {{{ Chatter
+
 subscribe oxford-pm london_pm london-list void 
 #mailboxes /home/adam/mail/inboxes/oxford-pm
 #mailboxes /home/adam/mail/inboxes/london-pm
@@ -91,15 +104,21 @@ subscribe oxford-pm london_pm london-list void
 mailboxes /home/adam/mail/inboxes/oxluug
 mailboxes /home/adam/mail/inboxes/unix-admin
 
-## News
+# }}}
+# {{{ News
+
 mailboxes /home/adam/mail/inboxes/freshmeat
 mailboxes /home/adam/mail/inboxes/slashdot
 
-## Websites
+# }}}
+# {{{ Websites
+
 mailboxes /home/adam/mail/inboxes/amazon
 mailboxes /home/adam/mail/inboxes/sourceforge
 
-## Miscellaneous
+# }}}
+# {{{ Miscellaneous
+
 #mailboxes /home/adam/mail/inboxes/mobile
 mailboxes /home/adam/mail/inboxes/jobserve-filtered
 mailboxes /home/adam/mail/inboxes/interjazz
@@ -109,8 +128,10 @@ mailboxes /home/adam/mail/inboxes/hacking
 mailboxes /home/adam/mail/inboxes/chat
 mailboxes /home/adam/mail/inboxes/friends
 
-## Unclassified
+# }}}
 
+# }}}
+# {{{ folder-hooks
 
 folder-hook .                     source ~/.mutt/folders/DEFAULTS
 folder-hook =lists/               source ~/.mutt/mailing-list
@@ -124,11 +145,17 @@ folder-hook =(inboxes|lists)/linux-laptop    source ~/.mutt/folders/linux-laptop
 folder-hook =(inboxes|lists)/linux-diald    source ~/.mutt/folders/linux-diald
 folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
 
+# }}}
+
 source ~/.mutt/save-hooks
 
 #send-hook . 'unmy_hdr From'
 #send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 
+# {{{ my_hdr
+
 my_hdr X-Home-Page: http://www.new.ox.ac.uk/~adam/
 my_hdr X-OS: RedHat Linux
 my_hdr From: "Adam Spiers" <adam@spiers.net>
+
+# }}}
