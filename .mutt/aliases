@@ -70,7 +70,8 @@ alias nick nick.mcgrogan
 alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
 alias ben.teasdale.bbc "Ben Teasdale" <ben.teasdale@bbc.co.uk>
 alias ben.teasdale "Ben Teasdale" <ben.teasdale@ntlworld.com>
-alias ben.north "Ben North" <ben@thelonious.new.ox.ac.uk>
+alias ben.north.thelonious "Ben North" <ben@thelonious.new.ox.ac.uk>
+alias ben.north "Ben North" <Ben_North@eur.3com.com>
 alias ben ben.north
 alias nick.williams "Nick Williams" <nick@thelonious.new.ox.ac.uk>
 alias nick.williams2 "Nick Williams" <nickhw@btinternet.com>
@@ -139,7 +140,8 @@ alias nicks nick,nick.williams
 # }}}
 # {{{ Friends from home
 
-alias matthew.clay Matt Clay <m.clay@prsarchitects.com>
+alias matthew.clay.old Matt Clay <m.clay@prsarchitects.com>
+alias matthew.clay Matt Clay <mclay@e-mango.com>
 #alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
 alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
 alias jon.greenwell Jonathan Greenwell <J.R.Greenwell@mds.qmw.ac.uk>
@@ -396,31 +398,35 @@ alias ntk NTK <tips@spesh.com>
 # }}}
 # {{{ Software & developers
 
-alias Lingua::EN::Squeeze Jari Aalto <jari.aalto@poboxes.com>
-alias netatalk netatalk <netatalk@umich.edu>
+alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
+alias buggies "landfill bugzilla testing" <buggies@landfill.tequilarista.org>
+alias chris.kemp "Christopher Kemp" <ck231@cam.ac.uk>
 alias david.hinds "David Hinds (PCMCIA author)" <dhinds@zen.stanford.edu>
 alias dcl "Daniel C. L'Hommedieu (reqNG developer)" <dcl@explore.com>
-alias zircon "Lindsay F. Marshall, author of Zircon" <zircon@catless.ncl.ac.uk>
-alias oznoid "Oznoid (Kevin Lenzo)" <lenzo@cs.cmu.edu>
-alias htmlpp "Nicolas Thiery, author of htmlpp" <Nicolas.Thiery@ens.fr>
-alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <andersl@csd.uu.se>
-alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
-alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
-alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
-alias pws Peter Stephenson <pws@ibmth.df.unipi.it>
-alias tanaka.akira Tanaka Akira <akr@jaist.ac.jp>
-alias sven.wischnowsky Sven Wischnowsky <wischnow@informatik.hu-berlin.de>
-alias zefram Zefram <zefram@fysh.org>
-alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
 alias diald "linux-diald mailing list" <linux-diald@vger.rutgers.edu>
-alias junkbuster.blocklist Stefan Waldherr <stefan@waldherr.org>
-alias william.stearns William Stearns <wstearns@pobox.com>
-alias bill.stearns william.stearns
+alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <andersl@csd.uu.se>
+alias gnokii "gnokii mailing list" <gnokii@net.lut.ac.uk>
+alias htmlpp "Nicolas Thiery, author of htmlpp" <Nicolas.Thiery@ens.fr>
+alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
+alias junkbuster.blocklist "Stefan Waldherr" <stefan@waldherr.org>
+alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
+alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
+alias netatalk "netatalk mailing list" <netatalk@umich.edu>
+alias oznoid "Oznoid (Kevin Lenzo)" <lenzo@cs.cmu.edu>
+alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
+alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
+alias plucker-dev "Plucker development" <plucker-dev@rubberchicken.org>
+alias pws "Peter Stephenson" <pws@ibmth.df.unipi.it>
+alias sven.wischnowsky "Sven Wischnowsky" <wischnow@informatik.hu-berlin.de>
+alias tanaka.akira "Tanaka Akira" <akr@jaist.ac.jp>
+
+alias william.stearns "William Stearns" <wstearns@pobox.com>
 alias buildkernel william.stearns
-alias gnokii gnokii mailing list <gnokii@net.lut.ac.uk>
-alias chris.kemp Christopher Kemp <ck231@cam.ac.uk>
-alias buggies landfill bugzilla testing <buggies@landfill.tequilarista.org>
-alias plucker-dev Plucker development <plucker-dev@rubberchicken.org>
+alias bill.stearns william.stearns
+
+alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
+alias zefram "Zefram" <zefram@fysh.org>
+alias zircon "Lindsay F. Marshall, author of Zircon" <zircon@catless.ncl.ac.uk>
 
 # }}}
 # {{{ Computing acquaintances
