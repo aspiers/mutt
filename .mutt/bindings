@@ -2,12 +2,17 @@
 
 # Some personalised bindings might be in ~/.mutt/personal.
 
-# {{{ Bindings for index
+# For macros, the "<function>" syntax is only used for functions
+# which we might conceivably rebind at some point in the future;
+# otherwise, the obvious binding is used for brevity, e.g. we're
+# *never* going to stop "\n" being bound to <enter> or "|" to
+# <pipe-message>.
 
-# {{{ bind
+# {{{ Bindings for index
 
    bind  index h           help   
 
+   bind  index /           search
    bind  index ?           search-reverse
    bind  index n           search-next
 
@@ -42,8 +47,7 @@
    bind  index y           collapse-thread
    bind  index Y           collapse-all
 
-# }}}
-# {{{ macro
+   bind  index H           display-toggle-weed
 
    macro index i  "<change-folder>=inboxes/\t\t\t<down>"  "show main inboxes"
    macro index I  "<change-folder>!\n"  "switch to MAIN inbox"
@@ -52,21 +56,23 @@
 
    macro index X  "Dall\n" "mark all messages as deleted"
 
-   macro index "\eh"  "/~h "
-   macro index "\ej"  "<save-message>=junk-mail.bz2<enter>"  "save as junk mail"
-   macro index "\ew"  ";|formail -s parp -rwv\n"   "parp: flag spam classification as wrong"
-   macro index "\er"  "\eF;\eR;\ej"   "parp: flag spam classification as incorrect, mark for Refiltering"
-   macro index "\eR"  "<copy-message>=inboxes/retry.bz2<enter>"  "mark for Refiltering"
-   macro index "\eS" "l~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
+   macro index "\eh"  "/~h " "search by header substring"
+   macro index "\ej"  "<save-message>=junk-mail.bz2\n"  "save as junk mail"
+#   macro index "\eR"  "<copy-message>=inboxes/retry.bz2\n"  "save for Refiltering"
 
-# }}}
+   # flag spam classification as wrong (changes stats/friends db)
+   macro index "\eW"  ";|formail -s parp -rwv\n"   "please don't use this"
+
+   macro index "\eS"  "\eW;<copy-message>=inboxes/retry/is-spam.bz2\n;\ej"   "treat as false negative (spam)"
+   macro index "\eH"  "\eW;<copy-message>=inboxes/retry/is-ham\n;s!\n"   "treat as false positive (ham)"
+
+   macro index "\eA" "l~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
+   macro index "\ev"  "\eW;\eR;\ej"   "parp: flag as virus"
 
 # }}}
 # {{{ Bindings for pager
 
-# {{{ bind
-
-   bind  index  h      help   
+   bind  pager  h      help   
 
    bind  pager  <down> next-line
    bind  pager  <up>   previous-line
@@ -91,9 +97,11 @@
    bind  pager  G      bottom
  
    bind  pager  /      search
+   bind  pager  ?      search-reverse
    bind  pager  N      search-next
-   bind  index  ?      search-reverse
  
+   bind  pager  H      display-toggle-weed
+
    bind  pager  n      next-undeleted
    bind  pager  p      previous-undeleted
    bind  pager  P      print-message
@@ -105,15 +113,12 @@
 
    bind  pager  .      parent-message
 
-# }}}
-# {{{ macro
-
    macro pager  $   "<exit><sync-mailbox>" "quit pager and sync mailbox"
  
    macro pager  B   "|urlview\n"
  
    macro pager  i   "<change-folder>=inboxes\t\t\t<down>" "show main inboxes"
-   macro pager  I   "<change-folder>!<enter>"  "switch to MAIN inbox"
+   macro pager  I   "<change-folder>!\n"  "switch to MAIN inbox"
  
    macro pager  l   "<exit><limit>"  "show only messages matching a pattern"
  
@@ -131,26 +136,25 @@
    macro pager "\e8" ":set pager_index_lines=16\n"
    macro pager "\e9" ":set pager_index_lines=18\n"
 
-   macro pager "\ef"  "|parp -ev\n"   "parp: extract friends"
-   macro pager "\ei"  "|parp-inject ~/mail/spool\n"   "parp: extract friends"
-   macro pager "\et"  "|parp -rtv\n"  "parp: dummy run"
-#  macro pager "\eT"  "|parp-new -rtv\n"  "parp: dummy run, new code"
-   macro pager "\er"  "|parp -rwv\n"   "parp: flag spam classification as incorrect"
+   macro pager "\ef"  "|parp -ev\n"   "parp: extract Friends"
+   macro pager "\ei"  "|parp-inject ~/mail/spool\n"   "parp: (re)Inject into spool"
+   macro pager "\et"  "|parp -rtv\n"  "parp: Test run"
+#  macro pager "\eT"  "|parp-new -rtv\n"  "parp: Test run, new code"
 
-   macro pager "\ej"  "<save-message>=junk-mail.bz2<enter>"  "save as junk mail"
-   macro pager "\eR"  "<copy-message>=inboxes/retry.bz2<enter>"  "mark for refiltering"
-
-# }}}
+   macro pager "\ej"  "<save-message>=junk-mail.bz2\n"  "save as junk mail"
+#   macro pager "\eR"  "<copy-message>=inboxes/retry/either.bz2\n"  "mark for refiltering"
 
 # }}}
 # {{{ Bindings for compose menu
 
+   # To avoid unfortunate accidents:
    bind  compose  y  noop
-   bind  compose  g  send-message
-   bind  compose  v  view-attach
    bind  compose  q  noop
 
-   macro compose  F  "<edit-fcc><kill-line><enter>"  "clear fcc setting"
+   bind  compose  g  send-message
+   bind  compose  v  view-attach
+
+   macro compose  F  "<edit-fcc><kill-line>\n"  "clear fcc setting"
    macro compose  P  "<exit>y"   "postpone message"
    macro compose  Q  "<exit>n"   "abort message"
 
