@@ -55,6 +55,7 @@
    macro index N  "S\r"         "move to next match in search"
 
    macro index "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
+   macro index "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
 
 ## ===========================
 ## Bindings for pager
@@ -122,6 +123,7 @@
    macro pager "\er"  "|parp -wv\n"   "parp: flag spam classification as incorrect"
 
    macro pager "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
+   macro pager "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
 
 
 ## ===========================
