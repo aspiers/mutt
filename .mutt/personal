@@ -48,7 +48,7 @@ folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
 folder-hook =(inboxes|lists)/zsh-             source ~/.mutt/folders/zsh
 folder-hook =(inboxes|lists)/alsa-            source ~/.mutt/folders/alsa
 folder-hook =(inboxes|lists)/void             source ~/.mutt/folders/void
-folder-hook =(inboxes|lists)/london-pm        source ~/.mutt/folders/london-pm
+folder-hook =(inboxes|lists)/london.pm        source ~/.mutt/folders/london.pm
 folder-hook =(inboxes|lists)/openzaurus-      source ~/.mutt/folders/openzaurus
 folder-hook =(inboxes|lists)/zoe-             source ~/.mutt/mailing-list
 
@@ -811,9 +811,9 @@ subscribe oxford-pm
 # {{{ London.pm
 
 subscribe london_pm london-list london-pm london.pm
-#mailboxes =inboxes/london-pm
+#mailboxes =inboxes/london.pm
 #alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
-fcc-save-hook london.*\.pm\.org =lists/london-pm
+fcc-save-hook london.*\.pm\.org =lists/london.pm
 send-hook "london.pm" 'my_hdr From: "Adam Spiers" <london.pm@adamspiers.org>'
 send-hook "london.pm" 'my_hdr Reply-To: "Adam Spiers" <london.pm@adamspiers.org>'
 
@@ -1366,3 +1366,7 @@ alias philip.smithies "Philip Smithies" <philipsmithies@lineone.net>
 # Unclassified aliases
 #
 
+alias dan.beimborn Dan Beimborn <dan@beimborn.com>
+alias dan.beimborn.lehman Dan Beimborn <dan.beimborn@lehman.com>
+alias dan.beimborn.lehman2 Dan Beimborn <dbeimbor@lehman.com>
+alias dan.beimborn.celtic Dan Beimborn <Dan@Celticmusic.com>
