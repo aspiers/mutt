@@ -121,6 +121,7 @@ fcc-save-hook dave@thelonious\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
 fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
 fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
 fcc-save-hook nmcgrogan@iname\.com =Oxford/friends/nick.mcgrogan
+fcc-save-hook nicholas\.mcgrogan@oxford-biosignals.com =Oxford/friends/nick.mcgrogan
 fcc-save-hook nick@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/nick.williams
 fcc-save-hook nickhw@btinternet\.com =Oxford/friends/nick.williams
 fcc-save-hook nwilliams@compd\.com =Oxford/friends/nick.williams
@@ -151,6 +152,7 @@ alias stacey stacey.hotmail
 alias tim.corbett-clark Timothy Corbett-Clark <tcorbettclark@thirdphase.com>
 alias tcc tim.corbett-clark
 alias nick.mcgrogan "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
+alias nick.mcgrogan.bio "Nick McGrogan" <nicholas.mcgrogan@oxford-biosignals.com>
 alias nick nick.mcgrogan
 alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
 alias ben.teasdale.bbc "Ben Teasdale" <ben.teasdale@bbc.co.uk>
