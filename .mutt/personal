@@ -185,9 +185,11 @@ alias ben.teasdale "Ben Teasdale" <ben.teasdale@ntlworld.com>
 fcc-save-hook ben@corelli\.new\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
 fcc-save-hook north.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
 fcc-save-hook Ben_North@eur.3com.com =Oxford/friends/ben.north
+fcc-save-hook ben@redfrontdoor.org =friends/Oxford/ben.north
 alias ben.north.corelli "Ben North" <ben@corelli.new.ox.ac.uk>
 alias ben.north.3com "Ben North" <Ben_North@eur.3com.com>
-alias ben ben.north.corelli
+alias ben.north.home Ben North <ben@redfrontdoor.org>
+alias ben ben.north.home
 
 fcc-save-hook dave@corelli\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
 fcc-save-hook dave@kites.org.uk =friends/Oxford/dave.lindgren
@@ -230,6 +232,7 @@ fcc-save-hook bear@corelli\.new\.ox\.ac\.uk =friends/Oxford/bear.bolton
 fcc-save-hook bolton@susq\.com =friends/Oxford/bear.bolton
 fcc-save-hook bolton@sig\.com =friends/Oxford/bear.bolton
 fcc-save-hook mbolton@iol.ie =friends/Oxford/bear.bolton
+fcc-save-hook bear@redfrontdoor.org =friends/Oxford/bear.bolton
 alias bear.home Bear North <bear@redfrontdoor.org>
 alias bear.corelli Bear <bear@corelli.new.ox.ac.uk>
 alias bear.hotmail Bear <bearbolton@hotmail.com>
