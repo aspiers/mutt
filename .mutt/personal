@@ -138,4 +138,6 @@ source ~/.mutt/save-hooks
 #send-hook . 'unmy_hdr From'
 #send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 
+my_hdr X-Home-Page: http://www.new.ox.ac.uk/~adam/
+my_hdr X-OS: RedHat Linux
 my_hdr From: "Adam Spiers" <adam@spiers.net>

@@ -77,8 +77,8 @@ unignore x-cron-env
 
 auto_view text/x-vcard
 
-my_hdr X-Home-Page: http://www.new.ox.ac.uk/~adam/
-my_hdr X-OS: RedHat Linux
+# Some people think that HTML is good for email <sigh>
+alternative_order text/enriched text/plain text/html
 
 # Support for compressed folders
 open-hook \\.gz$ "gzip -cd %f > %t" 
