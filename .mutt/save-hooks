@@ -21,6 +21,7 @@ fcc-save-hook supple@iol\.ie =relatives/siobhan.supple
 fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
 fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
 fcc-save-hook ben\.teasdale@ntlworld\.com =friends/Oxford/ben.teasdale
+fcc-save-hook strangetimes@hotmail\.com =friends/Oxford/ben.teasdale
 fcc-save-hook bearbolton@hotmail\.com =friends/Oxford/bear.bolton
 fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
 fcc-save-hook oli.*dickson =friends/Oxford/olimpia.dickson
@@ -87,6 +88,7 @@ fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
 fcc-save-hook javila@guideguide\.com =computer-work/jesus.avila
 fcc-save-hook asimmons@(guideguide|redhotchilli)\.com =computer-work/andrew.simmons
 fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
+fcc-save-hook ture@ture\.org =computer-work/mark.hulme-jones
 fcc-save-hook (lrobinson|luke)@guideguide\.com =computer-work/luke.robinson
 fcc-save-hook rob(\+.*)?@guideguide\.com =computer-work/rob.partington
 fcc-save-hook rpartington@guideguide\.com =computer-work/rob.partington
@@ -109,6 +111,7 @@ fcc-save-hook oxford-pm-list@happyfunball\.pm\.org =lists/oxford-pm
 fcc-save-hook perl5-porters.*perl.org =p5p
 fcc-save-hook london-list@happyfunball\.pm\.org =lists/london-list
 fcc-save-hook simon@cozens\.net =Perl/simon.cozens
+fcc-save-hook .*@simon-cozens\.org =Perl/simon.cozens
 
 # }}}
 # {{{ security
