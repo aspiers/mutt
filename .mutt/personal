@@ -427,8 +427,6 @@ fcc-save-hook ture@ture\.org =computer-work/mark.hulme-jones
 
 alias rob.partington Rob Partington <rjp@plig.net>
 alias basho rob.partington
-fcc-save-hook rob(\+.*)?@guideguide\.com =computer-work/rob.partington
-fcc-save-hook rpartington@guideguide\.com =computer-work/rob.partington
 fcc-save-hook rjp@.*plig\.net =computer-work/rob.partington
 fcc-save-hook rjp@browser\.org =computer-work/rob.partington
 
