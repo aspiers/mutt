@@ -756,10 +756,10 @@ subscribe gphoto-devel
 # }}}
 # {{{ gqview
 
-subscribe gqview-user
-mailboxes /home/adam/mail/inboxes/gqview-user
-fcc-save-hook gqview-user.*lists\.sourceforge\.net =lists/gqview-user
-alias gqview-user  "gqview user list"  <gqview-user@lists.sourceforge.net>
+subscribe gqview-users
+mailboxes /home/adam/mail/inboxes/gqview-users
+fcc-save-hook gqview-users.*lists\.sourceforge\.net =lists/gqview-users
+alias gqview-users  "gqview user list"  <gqview-users@lists.sourceforge.net>
 
 # }}}
 # {{{ htmlpp
