@@ -7,8 +7,8 @@
 
    bind  attach <space> view-attach
    bind  attach \Cg     exit
-   macro attach <left>  "<exit><up><view-attachments>" "move to previous message"
-   macro attach <right> "<exit><down><view-attachments>" "move to next message"
+   macro attach <left>  "<exit><previous-undeleted><view-attachments>"  "move to previous message"
+   macro attach <right> "<exit><next-undeleted><view-attachments>"  "move to next message"
    macro attach n       <left>
    macro attach p       <right>
 
