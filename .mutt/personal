@@ -3,25 +3,10 @@
 # at least some of this.  I'll leave it mostly intact just in case
 # it gives you some nice ideas though.
 
-# Stop lusers wasting my time
-
-#macro index  \ei  "|/usr/local/sbin/IT-luser-bounce\rd"
-#macro index  \ek  "|/usr/local/bin/req -mcreate -\rd"
-#macro index  \em  "|/usr/local/bin/req -comment  -\Cb\Cb"
-
-#macro pager  \ei  "|/usr/local/sbin/IT-luser-bounce\rD"
-#macro pager  \ek  "|/usr/local/bin/req -mcreate -\rD"
-#macro pager  \em  "|/usr/local/bin/req -comment  -\Cb\Cb"
-
-macro pager    U  "qs=junk-mail.gz\r"
-macro compose  I  "c\Cuis\rr\Cuis\rf\Cu\r"
-macro compose  S  "s\Ca[it-support@new #] \Cb\Cb"
-#macro compose X "r\Cucomputer-manager@new.ox.ac.uk\r"
+macro pager    U  "<exit><save-message>=junk-mail.gz<enter>"  "save as junk mail"
 
 
 set alternates="(adam(\.spiers)?|(local)?adams|newc0115|m93asp|a\.?spiers).*@(((thelonio?us|cornholio|miles|www)\.)?new\.ox(ford)?\.ac\.uk|musician\.org|(a25\.|pulse\.)?ram\.ac\.uk|spiers\.net|(mediaconsult|guideguide)\.com)"
-
-#  localsite  ox.ac.uk
 
 
 ###
