@@ -965,8 +965,8 @@ subscribe perlunit-users perlunit-devel
 #mailboxes /home/adam/mail/inboxes/perlunit-devel
 alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
 alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
-fcc-save-hook perlunit-devel@.*\.sourceforge\.net =lists/perlunit-devel
-fcc-save-hook perlunit-users@.*\.sourceforge\.net =lists/perlunit-users
+fcc-save-hook perlunit-devel@.*sourceforge\.net =lists/perlunit-devel
+fcc-save-hook perlunit-users@.*sourceforge\.net =lists/perlunit-users
 
 # }}}
 # {{{ PJB
