@@ -398,7 +398,7 @@ fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 fcc-save-hook ben.trigg =friends/RAM/ben.trigg
 
 alias lindsay.wood Lindsay Wood <l.wood@ram.ac.uk>
-fcc-save-hook l.wood@ram.ac.uk =friends/RAM/lindsay.wood
+fcc-save-hook l\.wood@ram\.ac\.uk =friends/RAM/lindsay.wood
 alias lindsay.wood.hotmail Lindsay Wood <lawood79@hotmail.com>
 fcc-save-hook lawood =friends/RAM/lindsay.wood
 
@@ -406,6 +406,8 @@ alias mike.francis Mike Francis <mjfrancis@onetel.net.uk>
 fcc-save-hook mjfrancis =friends/RAM/mike.francis
 
 alias roderick.chadwick Roderick Chadwick <RoderickJC@aol.com>
+
+alias katie.chatburn Katie Chatburn <katie@acm.ac.uk>
 
 # }}}
 # {{{ NYO friends
@@ -653,6 +655,8 @@ fcc-save-hook awarrick.*argonet\.co\.uk =friends/musicians/adrian.warrick
 alias gareth.jones Gareth Jones <jones@garethd.freeserve.co.uk>
 fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
 
+alias heather.badke Heather Badke <heatherbadke@hotmail.com>
+
 # }}}
 
 # {{{ Computing
@@ -787,6 +791,7 @@ alias mcopping matt.copping
 alias ben.simpson "Ben Simpson" <ben@hy-street.net>
 fcc-save-hook ben@hy-street\.net =computer-work/ben.simpson
 
+alias jasper.mccrea.gmail Jasper McCrea <jaspermccrea@gmail.com>
 alias jasper.mccrea "Jasper McCrea" <j@mccrea.demon.co.uk>
 fcc-save-hook mccrea =computer-work/jasper.mccrea
 fcc-save-hook jasper.*spamjab\.com =computer-work/jasper.mccrea
@@ -1531,5 +1536,3 @@ alias philip.smithies "Philip Smithies" <philipsmithies@lineone.net>
 # Unclassified aliases
 #
 
-
-alias jasper.mccrea.gmail Jasper McCrea <jaspermccrea@gmail.com>
