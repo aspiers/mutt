@@ -56,7 +56,7 @@ alias stephen.walmsley "Stephen Walmsley" <stephen@thelonious.new.ox.ac.uk>
 alias tiss "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
 alias christie.bolton "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
 alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
-
+alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
 alias oli.dickson Oli Dickson <olimpia.dickson@tao.j-sainsbury.co.uk>
 alias peronel.smith "Peronel Smith" <peronel_smith@harcourtbrace.com>
 alias nick.collins Nick Collins <nickcollins@hotmail.com>
@@ -90,6 +90,7 @@ alias nicks nick,nick.williams
 # Friends from home
 #
 
+alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
 alias jon.greenwell Jonathan Greenwell <J.R.Greenwell@mds.qmw.ac.uk>
 alias dan.davies Daniel Davies <dddavies@students.jhubc.it>
 alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
@@ -109,13 +110,20 @@ alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
 
 
 #
-# Other friends
+# RAM friends
 #
 
 alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
-alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
 alias rosie.biss "Ross Biss" <rosiebiss@yahoo.com>
 alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
+
+
+#
+# London friends
+#
+
+alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
+alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 
 
 ##############################################################################
@@ -141,8 +149,11 @@ alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
 # RAM
 ##############################################################################
 
+alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
+alias estates RAM Estates Office <estates@ram.ac.uk>
 alias yan.fitterer "Yan Fitterer, RAM sysadmin" <y.fitterer@ram.ac.uk>
 alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
+alias nick.byrne Nick Byrne <n.byrne@RAM.AC.UK>
 alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
 alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
 
@@ -242,6 +253,9 @@ alias oznoid "Oznoid (Kevin Lenzo)" <lenzo@cs.cmu.edu>
 alias htmlpp "Nicolas Thiery, author of htmlpp" <Nicolas.Thiery@ens.fr>
 alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <andersl@csd.uu.se>
 alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
+alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
+alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
+alias pws Peter Stephenson <pws@ibmth.df.unipi.it>
 
 
 ##############################################################################
@@ -262,6 +276,7 @@ alias christof.damian "Christof Damian" <cdamian@guideguide.com>
 alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
 alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
 alias alex.mclean "Alex McLean" <amclean@guideguide.com>
+alias alex.mclean2 Alex McLean <alex@guideguide.com>
 alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
 alias john.imrie John Imrie <jimrie@guideguide.com>
 alias dave.cross Dave Cross <dave@dave.org.uk>
@@ -311,15 +326,3 @@ source ~/.mutt/quake-aliases
 # Incoming (need to be classified)
 ##############################################################################
 
-
-alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
-alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
-alias estates RAM Estates Office <estates@ram.ac.uk>
-alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
-alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
-alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
-alias alex.mclean2 Alex McLean <alex@guideguide.com>
-alias pws Peter Stephenson <pws@ibmth.df.unipi.it>
-alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
-alias paul.eastham2 Paul Eastham <pre23@cam.ac.uk>
-alias nick.byrne Nick Byrne <n.byrne@RAM.AC.UK>
