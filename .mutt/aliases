@@ -272,13 +272,8 @@ alias mcopping matt.copping
 alias alix.poscharsky Alix Poscharsky <alix@guideguide.com>
 alias youssou alix.poscharsky
 
-alias tom.rees-herdman Tom Rees-Herdman <therdman@guideguide.com>
-alias therdman tom.rees-herdman
-alias dave.scott Dave Scott <dscott@guideguide.com>
-alias dscott dave.scott
-
-#alias dave.thorn Dave Thorn <dthorn@guideguide.com>
-#alias dthorn dave.thorn
+alias rob.andrews Rob Andrews <randrews@guideguide.com>
+alias nine rob.andrews
 
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
@@ -484,3 +479,5 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # Incoming (need to be classified)
 ##############################################################################
 
+alias astrid.otoole Astrid O\'Toole <aotoole@guideguide.com>
+alias datebk4-support DateBk4 tech support <SWSupport@PimlicoSoftware.com>
