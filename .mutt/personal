@@ -300,7 +300,7 @@ fcc-save-hook Diamond5475@aol\.com =friends/misc/miriam
 # {{{ Music friends
 
 alias paul.skinner Paul Skinner <paulski@supanet.com>
-fcc-save-hook paulski.*supanet\.com =friends/musicians
+fcc-save-hook paulski.*supanet\.com =friends/musicians/paul.skinner
 
 # }}}
 # {{{ Groups of friends
@@ -410,7 +410,9 @@ alias colin.carr Colin Carr <ccarr@atlas.co.uk>
 alias michael.borthwick Michael Borthwick <m@borthwick.org>
 alias kirsten.salter Kirsten Salter <Kirsten.Salter@emic.co.uk>
 alias John Hargreaves John Hargreaves <musicmaestros@netscapeonline.co.uk>
+
 alias adrian.warrick Adrian Warrick <awarrick@argonet.co.uk>
+fcc-save-hook awarrick.*argonet\.co\.uk =music/adrian.warrick
 
 # }}}
 
