@@ -460,6 +460,8 @@ alias birthday-and-sponsorship2 sarsli, dave, annabel.borthwick, clare.raybould
 
 # }}}
 
+alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
+
 # }}}
 # {{{ Old skools
 
@@ -650,9 +652,9 @@ alias callen christian.allen
 alias pershino christian.allen
 fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
 
-alias matt.copping Matt Copping <mcopping@guideguide.com>
-alias mcopping matt.copping
 fcc-save-hook mcopping@guideguide\.com =computer-work/matt.copping
+alias matt.copping Matt Copping <matt@frontgarden.net>
+alias mcopping matt.copping
 
 alias alix.poscharsky Alix Poscharsky <alix@guideguide.com>
 alias youssou alix.poscharsky
@@ -1308,4 +1310,3 @@ alias bcc-only lots of people <dev.null@adamspiers.org>
 # Unclassified aliases
 #
 
-alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
