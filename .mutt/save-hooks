@@ -51,6 +51,8 @@ fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 fcc-save-hook dddavies =friends/home/dan.davies
 fcc-save-hook redneluc =friends/misc/emma.cullender
 fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
+fcc-save-hook tcorbettclark@thirdphase.com =Oxford/friends/tim.corbett-clark
+fcc-save-hook le7053@qmw.ac.uk =friends/misc/emma.cullender
 
 # }}}
 
@@ -145,6 +147,8 @@ fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
 fcc-save-hook buggies@tequilarista =lists/buggies
 
 fcc-save-hook gnome-pilot.*@gnome\.org =lists/gnome-pilot
+
+fcc-save-hook upload.*@.*speed-link\.de =Perl/PAUSE
 
 # }}}
 # {{{ chatter
