@@ -36,14 +36,15 @@ mailboxes =inboxes/friends
 # }}}
 # {{{ folder-hooks
 
-folder-hook .                           source ~/.mutt/folders/DEFAULTS
-folder-hook =lists/                     source ~/.mutt/mailing-list
-folder-hook =inboxes/MAIN$              source ~/.mutt/folders/MAIN
-folder-hook =inboxes/arch-              source ~/.mutt/mailing-list
-folder-hook =(inboxes|lists)/zsh-       source ~/.mutt/folders/zsh
-folder-hook =(inboxes|lists)/alsa-      source ~/.mutt/folders/alsa
-folder-hook =(inboxes|lists)/void       source ~/.mutt/folders/void
-folder-hook =(inboxes|lists)/london-pm  source ~/.mutt/folders/london-pm
+folder-hook .                                 source ~/.mutt/folders/DEFAULTS
+folder-hook =lists/                           source ~/.mutt/mailing-list
+folder-hook =inboxes/MAIN$                    source ~/.mutt/folders/MAIN
+folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
+folder-hook =(inboxes|lists)/zsh-             source ~/.mutt/folders/zsh
+folder-hook =(inboxes|lists)/alsa-            source ~/.mutt/folders/alsa
+folder-hook =(inboxes|lists)/void             source ~/.mutt/folders/void
+folder-hook =(inboxes|lists)/london-pm        source ~/.mutt/folders/london-pm
+folder-hook =(inboxes|lists)/openzaurus-users source ~/.mutt/folders/openzaurus
 
 # }}}
 
@@ -828,7 +829,8 @@ subscribe apmd-list
 # }}}
 # {{{ arch
 
-alias arch-users "arch-users mailing list" <arch-users@regexps.com>
+#alias arch-users.old "arch-users mailing list" <arch-users@regexps.com>
+alias arch-users "arch users mailing list" <arch-users@lists.fifthvision.net>
 fcc-save-hook arch-users =lists/arch-users
 subscribe arch-users
 mailboxes =inboxes/arch-users
