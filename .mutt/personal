@@ -654,7 +654,7 @@ send-hook "fwp" 'my_hdr Reply-To: "Adam Spiers" <fwp@adamspiers.org>'
 
 alias perl-golf "Perl golf" <golf@perl.org>
 fcc-save-hook "golf.*perl.org" =lists/perl-golf
-subscribe perl-golf
+subscribe golf
 #mailboxes =inboxes/perl-golf
 send-hook "golf.*perl.org" 'my_hdr From: "Adam Spiers" <perl-golf@adamspiers.org>'
 send-hook "golf.*perl.org" 'my_hdr Reply-To: "Adam Spiers" <perl-golf@adamspiers.org>'
