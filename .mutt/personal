@@ -687,8 +687,8 @@ fcc-save-hook shessler@guideguide\.com =computer-work/sven.hessler
 alias ben.simpson "Ben Simpson" <ben@hy-street.net>
 fcc-save-hook ben@hy-street\.net =computer-work/ben.simpson
 
-alias jasper.mccrea "Jasper McCrea" <jmccrea@guideguide.com>
-fcc-save-hook (jmccrea|jasper)@guideguide\.com =computer-work/jasper.mccrea
+alias jasper.mccrea "Jasper McCrea" <j@mccrea.demon.co.uk>
+fcc-save-hook mccrea =computer-work/jasper.mccrea
 
 alias anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 
