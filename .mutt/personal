@@ -282,7 +282,9 @@ alias weejock matthew.kirkwood
 alias jock matthew.kirkwood
 
 fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
-alias chris.evans "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
+fcc-save-hook chris.*@scary\.beasts\.org =Oxford/friends/chris.evans
+alias chris.evans.ferret "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
+alias chris.evans "Chris Evans" <chris@scary.beasts.org>
 
 alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
 
@@ -314,6 +316,7 @@ alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
 alias alex.green "Alex Green" <richard.green7@virgin.net>
 alias richard.green "Richard Green" <richard.green7@virgin.net>
 alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
+alias katie.green Katie Green <green@burlington.org.uk>
 
 alias di.north Di North <di@amaroo.demon.co.uk>
 
@@ -455,7 +458,7 @@ alias jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
 # {{{ Acquaintances
 
 alias ruth.porter "Ruth Porter (OUCS contact for New College)" <ruth.porter@oucs.ox.ac.uk>
-alias malcolm.beattie "Malcolm Beattie" <mbeattie@sable.ox.ac.uk>
+alias malcolm.beattie "Malcolm Beattie" <mbeattie@clueful.co.uk>
 alias jan.grothusen "Jan Grothusen" <jan@robots.ox.ac.uk>
 alias robin.watts "Robin Watts" <robin.watts@comlab.ox.ac.uk>
 alias pete.biggs Pete Biggs <pete@physchem.ox.ac.uk>
@@ -691,6 +694,7 @@ subscribe golf
 mailboxes =inboxes/perl-golf
 send-hook "golf.*perl.org" 'my_hdr From: "Adam Spiers" <perl-golf@adamspiers.org>'
 send-hook "golf.*perl.org" 'my_hdr Reply-To: "Adam Spiers" <perl-golf@adamspiers.org>'
+alias dave.hoover Dave Hoover <dave@redsquirreldesign.com>
 
 # }}}
 # {{{ News
