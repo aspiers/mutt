@@ -691,6 +691,8 @@ send-hook "golf.*perl.org" 'my_hdr From: "Adam Spiers" <perl-golf@adamspiers.org
 send-hook "golf.*perl.org" 'my_hdr Reply-To: "Adam Spiers" <perl-golf@adamspiers.org>'
 alias dave.hoover Dave Hoover <dave@redsquirreldesign.com>
 
+alias london.pm \"London.pm Perl Mongers\" <london.pm@london.pm.org>
+
 # }}}
 # {{{ News
 
@@ -898,6 +900,7 @@ alias chris.kemp "Christopher Kemp" <ck231@cam.ac.uk>
 # {{{ GNU screen
 
 subscribe gnu-screen
+mailboxes =inboxes/gnu-screen
 fcc-save-hook gnu-screen =lists/gnu-screen
 alias gnu-screen gnu-screen list <gnu-screen@yahoogroups.com>
 send-hook "gnu-screen.*@yahoogroups\.com" 'my_hdr From: "Adam Spiers" <gnu-screen@adamspiers.org>'
@@ -1149,6 +1152,7 @@ mailboxes =inboxes/amazon
 
 # }}}
 
+alias keet Christiaan Keet <keet@plig.net>
 alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
 
 # }}}
