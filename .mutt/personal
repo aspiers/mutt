@@ -1362,7 +1362,7 @@ send-hook "updates.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim
 
 alias slim-devel "Slim Devices development list" <developers@lists.slimdevices.com>
 fcc-save-hook "developers.*lists.slimdevices.com" =lists/slim-devel
-subscribe devel@lists.slimdevices.com
+subscribe developers@lists.slimdevices.com
 mailboxes =inboxes/slim-devel
 send-hook "developers.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-devel@adamspiers.org>'
 send-hook "developers.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-devel@adamspiers.org>'
