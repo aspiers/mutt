@@ -90,24 +90,27 @@ alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 alias daddy "Stuart Spiers" <stuart@spiers.net>
 fcc-save-hook stuart.*spiers =relatives/daddy
 
-alias mummy "Stuart Spiers" <liz@spiers.net>
+alias mummy "Liz Spiers" <liz@spiers.net>
 
 alias thea.rncm "Thea Spiers" <SpiersT@rncm.ac.uk>
-alias thea "Thea Spiers" <thea@spiers.net>
+alias thea.spiers "Thea Spiers" <thea@spiers.net>
+alias thea.yahoo "Thea Spiers" <theaspiers@yahoo.co.uk>
+alias thea thea.yahoo
 fcc-save-hook thea@spiers\.net =relatives/thea
 fcc-save-hook theaspiers@hotmail\.com =relatives/thea
 fcc-save-hook theaspiers@yahoo\.co\.uk =relatives/thea
 fcc-save-hook spierst@(student\.)?rncm\.ac\.uk =relatives/thea
 
-alias chloe "Chloe Spiers" <chloe@spiers.net>
-alias chloe.man "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
-alias chloe.work Chloe Spiers <Chloe_Spiers@hyperion.com>
-alias chloe.hotmail Chloe Spiers <chloespiers@hotmail.com>
-#alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
+alias chloe.spiers "Chloe Spiers" <chloe@spiers.net>
+alias chloe.yahoo "Chloe Spiers" <chloespiers@yahoo.co.uk>
+alias chloe.hotmail "Chloe Spiers" <chloespiers@hotmail.com>
+alias chloe chloe.spiers
 fcc-save-hook chloe.*spiers =relatives/chloe
 
+alias family daddy, chloe, thea, ian
+
 alias ian.spiers "Ian Spiers" <ian@spiers.net>
-alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
+#alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
 alias ian ian.spiers
 fcc-save-hook ian.*spiers =relatives/ian.spiers
 
@@ -127,21 +130,35 @@ alias niamh.oconnor "Niamh O'Connor" <sive99@yahoo.com>
 
 alias david.griffith "David Griffith" <eppltd@indigo.ie>
 alias nessa.griffith "Nessa Griffith" <ngriffith@ndc.ie>
-alias nessa.griffith2 "Nessa Griffith" <nessandc@iol.ie>
+#alias nessa.griffith2 "Nessa Griffith" <nessandc@iol.ie>
 
 alias viv.mchugh "Viv McHugh" <vivmike@oceanfree.net>
 alias michael.mchugh "Michael McHugh" <vivmike@oceanfree.net>
 
-alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
-alias sheila.davies2 "Sheila Davies" <DaviesS@sesahs.nsw.GOV.AU>
-fcc-save-hook daviess@.*\.gov\.au =relatives/sheila.davies
-
+alias pat.griffith Pat Griffith <griffith@iol.ie>
 alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
 
 alias siobhan.supple "Siobhan Supple" <supple@iol.ie>
 fcc-save-hook supple@iol\.ie =relatives/siobhan.supple
 
-alias christina.french Christina French <realslim_16@hotmail.com>
+alias christina.french "Christina French" <realslim_16@hotmail.com>
+alias mary.richardson Mary Richardson <MaryR@MS-society.ie>
+alias barra.okeeffe "Barra O'Keeffe" <bocaoimh1@eircom.net>
+
+alias relatives-in-Eire david.griffith, nessa.griffith, viv.mchugh, pat.griffith, siobhan.supple, barra.okeeffe, christina.french
+
+alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
+alias sheila.davies2 "Sheila Davies" <DaviesS@sesahs.nsw.GOV.AU>
+fcc-save-hook daviess@.*\.gov\.au =relatives/sheila.davies
+
+alias peter.leckstein "Peter Leckstein" <pml@nildram.co.uk>
+alias leonard.pearce "Leonard Pearce" <leanard@pearcel63.freeserve.co.uk>
+alias david.horwich "David Horwich" <david.h.horwich@WellsFargo.COM>
+alias deloris.horwich "Deloris Horwich" <dnhorwich@earthlink.net>
+alias elise.horwich "Elise Horwich" <ehorwich@aol.com>
+
+alias relatives-in-England leonard.pearce, peter.leckstein
+alias relatives-in-UK relatives-in-England, relatives-in-Eire
 
 # }}}
 # {{{ Friends
@@ -169,9 +186,11 @@ alias nicks nick,nick.williams
 fcc-save-hook d.*nicker.*@.*.ox(ford)?.ac.uk =security/darren.nickerson
 fcc-save-hook darren.*@.*roam\.tpc\.int =security/darren.nickerson
 
-alias rachael.gulliver.old "Rachael Gulliver" <rachaelgulliver@hotmail.com>
-alias rachael.gulliver "Rachael Gulliver" <rg232@cam.ac.uk>
-fcc-save-hook rg232@.*\.cam\.ac\.uk =friends/Oxford/rachael.gulliver
+#alias rachael.gulliver.old "Rachael Gulliver" <rachaelgulliver@hotmail.com>
+#alias rachael.gulliver "Rachael Gulliver" <rg232@cam.ac.uk>
+#fcc-save-hook rg232@.*\.cam\.ac\.uk =friends/Oxford/rachael.gulliver
+alias rachael.gulliver "Rachael Schofield (nee Gulliver)" <jandrschofield@hotmail.com>
+alias rachael.schofield rachael.gulliver
 fcc-save-hook jandrschofield@hotmail.com =friends/Oxford/rachael.gulliver
 
 alias vicky.hamilton Victoria Hamilton <victoria.hamilton@stagetech.com>
@@ -230,7 +249,7 @@ fcc-save-hook mzytjls@nottingham\.ac\.uk =friends/Oxford/joanna.sherratt
 alias jo.sherratt.hotmail Joanna Sherratt <josherratt@hotmail.com>
 alias jo.sherratt.notts Joanna Sherratt <mzytjls@nottingham.ac.uk>
 alias jo.sherratt.bm "Joanna Sherratt" <jsherrat@ibl.bm>
-alias jo.sherratt.work Joanna Sherratt <jsherrat@CENTRERE.COM>
+#alias jo.sherratt.work Joanna Sherratt <jsherrat@CENTRERE.COM>
 alias jo.sherratt jo.sherratt.hotmail
 
 fcc-save-hook e-c-orch\.demon\.co\.uk =Oxford/friends/ivan.rockey
@@ -314,27 +333,31 @@ alias bokc.leyton becky.leyton
 # }}}
 # {{{ Friends from home
 
-alias matthew.clay.old Matt Clay <m.clay@prsarchitects.com>
-alias matthew.clay.old2 Matt Clay <mclay@e-mango.com>
-alias matthew.clay.old3 Matt Clay <matt@clay76.freeserve.co.uk>
-alias matthew.clay Matt Clay <misterclay@ukonline.co.uk>
+# alias matthew.clay.old Matt Clay <m.clay@prsarchitects.com>
+# alias matthew.clay.old2 Matt Clay <mclay@e-mango.com>
+# alias matthew.clay.old3 Matt Clay <matt@clay76.freeserve.co.uk>
+# alias matthew.clay Matt Clay <misterclay@ukonline.co.uk>
 fcc-save-hook mclay@e-mango.com =friends/home/matthew.clay
+alias matthew.clay "Matthew Clay" <mattclay@hotmail.com>
 fcc-save-hook (mister|matt).*clay =friends/home/matthew.clay
 
 fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
 #alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
 alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
 
-alias dan.davies.old Daniel Davies <dddavies@students.jhubc.it>
-alias dan.davies Dan Davies <dddavies@lineone.net>
-alias dan.davies.work Dan Davies <DaviesDD@bp.com>
+#alias dan.davies.old Daniel Davies <dddavies@students.jhubc.it>
+#alias dan.davies.work Dan Davies <DaviesDD@bp.com>
+alias dan.davies.lineone "Daniel Davies" <dddavies@lineone.net>
+alias dan.davies "Daniel Davies" <ddavie12@jhu.edu>
 fcc-save-hook dddavies =friends/home/dan.davies
 fcc-save-hook daviesdd =friends/home/dan.davies
 
-alias jon.greenwell "Jonathan Greenwell" <J.R.Greenwell@mds.qmw.ac.uk>
+alias julian.thompson "Julian Thompson" <julianthompson@doctors.net.com>
+
+#alias jon.greenwell "Jonathan Greenwell" <J.R.Greenwell@mds.qmw.ac.uk>
 alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
-alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
-alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
+#alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
+#alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
 alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
 alias alex.green "Alex Green" <richard.green7@virgin.net>
 alias richard.green "Richard Green" <richard.green7@virgin.net>
@@ -362,6 +385,7 @@ alias nick.byrne Nick Byrne <kaptainbirdeye@hotmail.com>
 alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
 
 alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
+alias kirsty kirsten.lestrange
 
 alias sarah.hammel Sarah Hammel <naomihammel@hotmail.com>
 fcc-save-hook naomi.*hammel =friends/RAM/sarah.hammel
@@ -384,13 +408,15 @@ fcc-save-hook lawood =friends/RAM/lindsay.wood
 alias mike.francis Mike Francis <mjfrancis@onetel.net.uk>
 fcc-save-hook mjfrancis =friends/RAM/mike.francis
 
+alias roderick.chadwick Roderick Chadwick <RoderickJC@aol.com>
+
 # }}}
 # {{{ NYO friends
 
 alias matt.jones Matt Jones <mattojones@hotmail.com>
 fcc-save-hook mattojones =friends/NYO/matt.jones
 
-alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
+#alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
 
 alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
 
@@ -408,12 +434,16 @@ alias rachel.norman bourby.norman
 alias sali-wyn.ryan "Sali-Wyn Ryan" <sali.ryan@classicfm.com>
 alias sali sali-wyn.ryan
 
+alias oliver.wilson "Oliver Wilson" <wilson_ocj50@hotmail.com>
+alias olly oliver.wilson
+
 # }}}
 # {{{ London friends
 
 alias livia.harris Livia Harris <liviaharris@yahoo.co.uk>
 
 alias matt.shlomowitz Matthew Shlomowitz <mshlom@hotmail.com>
+alias shlom matt.shlomowitz
 fcc-save-hook shlom@hotmail.com =friends/RAM/matthew.shlomowitz
 
 alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
@@ -458,14 +488,29 @@ alias nick.rippon "Nick Rippon" <nicholas.rippon@tinyworld.co.uk>
 # }}}
 # {{{ Endellion friends
 
-alias matthew.pay Matthew Pay <Matthew.Pay@ntl.com>
-fcc-save-hook matt.*pay@ntl.com =friends/Endellion/matthew.pay
+alias matthew.pay Matthew Pay <matthew.pay@videonetworks.com>
+fcc-save-hook matt.*pay.*videonetworks.com =friends/Endellion/matthew.pay
 
-alias joanna.warden Jo Warden <joannawarden@hotmail.com>
+alias joanna.warden.hotmail Jo Warden <joannawarden@hotmail.com>
+alias joanna.warden.aol Jo Warden <wardenjoanna1809@aol.com>
+alias joanna.warden joanna.warden.aol
+
+alias anne-marie.cullum "Anne-Marie Cullum" <anniec30@hotmail.com>
+
 alias rose.redgrave "Rose Redgrave" <adrian.rose@muirkirkroad.freeserve.co.uk>
 alias clare.raybould "Clare Raybould" <clareraybould@bigfoot.com>
 
 alias lizzie.kerr Lizzie Kerr <lizziekuk@yahoo.com>
+
+alias kirsten.salter "Kirsten Salter" <Kirsten.Salter@emic.co.uk>
+alias tom.hickox "Tom Hickox" <tomhickox@hotmail.com>
+alias ben.rogerson "Ben Rogerson" <benedictrogerson@yahoo.com>
+
+alias inga.taylor.work Inga Taylor <itaylor@mxbex.com>
+alias inga.taylor Inga Taylor <ingataylor@hotmail.com>
+alias myrtledene <ian.bysh@advantage-business.co.uk>, <duncan_french@djf.ndo.co.uk>, <mike@theeurekafactor.com>, <nickidivett@fulham73.freeserve.co.uk>, joanna.warden, inga.taylor, anne-marie.cullum
+
+alias endellion-marathon-sponsors <stewart@mcilwham37.fsnet.co.uk>, <tom@thomasguthrie.com>, <hilary.bentley@gartmore.com>, <colin.fleming@creditlyonnais.co.uk>, Dominic <devers@nspcc.org.uk>, <peter.howell@write-away.org>, tom.hickox, matthew.pay, <coghlanangie@aol.com>, <thorsten@terweiden.de>, <Jane.Dickinson@ncl.ac.uk>, <Susanna.Thriddy@zoo.ox.ac.uk>, oliver.wilson, annabel.borthwick, <jemima.peterken@virgin.net>, <jjp@ipswich.suffolk.sch.uk>, <harrymooregwyn@aol.com>, rose.redgrave, clare.raybould, kirsten.salter, ben.rogerson, michael.borthwick, <rjmbutler@aol.com>, <elaineft@mac.com>, myrtledene
 
 # }}}
 # {{{ Groups of friends
@@ -473,8 +518,12 @@ alias lizzie.kerr Lizzie Kerr <lizziekuk@yahoo.com>
 alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
 alias add2 kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
 
-alias birthday-and-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
-alias sponsorship-followup nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, matt.jones, rosie.biss, livia.harris, claire.roff, matthew.pay, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
+alias birthday-and-nacro-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
+alias nacro-sponsorship-followup nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, matt.jones, rosie.biss, livia.harris, claire.roff, matthew.pay, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
+
+alias marathon-relatives family, relatives-in-UK, michael.oconnor, helen.oconnor
+
+alias marathon-sponsorship endellion-marathon-sponsors, marathon-relatives, nick, vicky.hamilton, rachael.schofield, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, di.north, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, julian.thompson, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, nick.rippon, ture, andym, xtof, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, becky.leyton, matthew.clay, richard.green, stig, yan, ron.hickman, mike.francis, jeremy.lund, paul.newbold, gareth.jones, adrian.warrick, john.hargreaves, jeff.harrod, jason.yank, cello-teachers, kirsty, shlom
 
 # }}}
 
@@ -561,14 +610,16 @@ alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
 
 alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
 alias colin.carr Colin Carr <ccarr@atlas.co.uk>
+alias david.strange David Strange <d.strange@ram.ac.uk>
+alias cello-teachers philip.sheppard, colin.carr, david.strange
 
 # }}}
 # {{{ Musical acquaintances
 
-alias michael.borthwick.btopenworld Michael Borthwick <maborth@btopenworld.com>
-alias michael.borthwick Michael Borthwick <m@borthwick.org>
-alias kirsten.salter Kirsten Salter <Kirsten.Salter@emic.co.uk>
-alias John Hargreaves John Hargreaves <musicmaestros@netscapeonline.co.uk>
+alias michael.borthwick.btopenworld "Michael Borthwick" <maborth@btopenworld.com>
+alias michael.borthwick "Michael Borthwick" <m@borthwick.org>
+
+alias john.hargreaves "John Hargreaves" <musicmaestros@netscapeonline.co.uk>
 
 alias adrian.warrick Adrian Warrick <awarrick@argonet.co.uk>
 fcc-save-hook awarrick.*argonet\.co\.uk =friends/musicians/adrian.warrick
@@ -593,6 +644,8 @@ alias dan.beimborn.lehman Dan Beimborn <dbeimbor@lehman.com>
 alias dan.beimborn.celtic Dan Beimborn <Dan@Celticmusic.com>
 alias james.hickie.lehman James Hickie <jhickie@lehman.com>
 alias carl.marino Carl Marino <cmarino@group14.co.uk>
+alias louise.lee "Louise Lee" <llee_se1@yahoo.com>
+alias chris.johnston.home "Chris Johnston" <cjohnston@nextex.com>
 
 # }}}
 # {{{ Egenera
@@ -625,19 +678,20 @@ alias gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
 
 # {{{ people
 
-alias christof.damian "Christof Damian" <cdamian@guideguide.com>
+#alias christof.damian "Christof Damian" <cdamian@guideguide.com>
+alias christof.damian "Christof Damian" <christof@damian.net>
 alias cdamian christof.damian
 alias xtof christof.damian
 fcc-save-hook christof@mediaconsult\.com =computer-work/christof.damian
 fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
 
-alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
-alias tdamian thomas.damian
-fcc-save-hook tdamian@guideguide\.com =computer-work/thomas.damian
-fcc-save-hook thomas@ggid\.com =computer-work/thomas.damian
+# alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
+# alias tdamian thomas.damian
+# fcc-save-hook tdamian@guideguide\.com =computer-work/thomas.damian
+# fcc-save-hook thomas@ggid\.com =computer-work/thomas.damian
 
-alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
-alias mhecken mikel.hecken
+# alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
+# alias mhecken mikel.hecken
 
 alias andy.mcfarland "Andy McFarland" <andy@slab.org>
 alias andym andy.mcfarland
@@ -664,38 +718,38 @@ alias nathan.carr Nathan Carr <nathan@nowt.net>
 alias ncarr nathan.carr
 alias nomad nathan.carr
 
-alias luke.robinson Luke Robinson <lrobinson@guideguide.com>
-alias luke luke.robinson
-alias lrobinson luke.robinson
-fcc-save-hook (lrobinson|luke)@guideguide\.com =computer-work/luke.robinson
+# alias luke.robinson Luke Robinson <lrobinson@guideguide.com>
+# alias luke luke.robinson
+# alias lrobinson luke.robinson
+# fcc-save-hook (lrobinson|luke)@guideguide\.com =computer-work/luke.robinson
 
-alias rob.ryan Rob Ryan <rryan@guideguide.com>
-alias rryan rob.ryan
-alias rollmop rob.ryan
-fcc-save-hook rryan@guideguide\.com =computer-work/robert.ryan
+# alias rob.ryan Rob Ryan <rryan@guideguide.com>
+# alias rryan rob.ryan
+# alias rollmop rob.ryan
+# fcc-save-hook rryan@guideguide\.com =computer-work/robert.ryan
 
-alias christian.allen Christian Allen <callen@guideguide.com>
-alias callen christian.allen
-alias pershino christian.allen
-fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
+# alias christian.allen Christian Allen <callen@guideguide.com>
+# alias callen christian.allen
+# alias pershino christian.allen
+# fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
 
-fcc-save-hook mcopping@guideguide\.com =computer-work/matt.copping
+# fcc-save-hook mcopping@guideguide\.com =computer-work/matt.copping
 alias matt.copping Matt Copping <matt@frontgarden.net>
 alias mcopping matt.copping
 
-alias alix.poscharsky Alix Poscharsky <alix@guideguide.com>
-alias youssou alix.poscharsky
-fcc-save-hook (alix|aposcharsky)@guideguide\.com =computer-work/alix.poscharsky
+# alias alix.poscharsky Alix Poscharsky <alix@guideguide.com>
+# alias youssou alix.poscharsky
+# fcc-save-hook (alix|aposcharsky)@guideguide\.com =computer-work/alix.poscharsky
 
-alias rob.andrews Rob Andrews <randrews@guideguide.com>
-alias nine rob.andrews
-fcc-save-hook randrews@guideguide\.com =computer-work/rob.andrews
+# alias rob.andrews Rob Andrews <randrews@guideguide.com>
+# alias nine rob.andrews
+# fcc-save-hook randrews@guideguide\.com =computer-work/rob.andrews
 
-alias astrid.otoole "Astrid O\'Toole" <aotoole@guideguide.com>
-fcc-save-hook aotoole@guideguide\.com =computer-work/astrid.otoole
+# alias astrid.otoole "Astrid O\'Toole" <aotoole@guideguide.com>
+# fcc-save-hook aotoole@guideguide\.com =computer-work/astrid.otoole
 
-alias sven.hessler "Sven Hessler" <shessler@guideguide.com>
-fcc-save-hook shessler@guideguide\.com =computer-work/sven.hessler
+# alias sven.hessler "Sven Hessler" <shessler@guideguide.com>
+# fcc-save-hook shessler@guideguide\.com =computer-work/sven.hessler
 
 alias ben.simpson "Ben Simpson" <ben@hy-street.net>
 fcc-save-hook ben@hy-street\.net =computer-work/ben.simpson
@@ -705,55 +759,55 @@ fcc-save-hook mccrea =computer-work/jasper.mccrea
 
 alias anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 
-alias anthony.gardner Anthony Gardner <agardner@guideguide.com>
-alias agardner anthony.gardner
-fcc-save-hook agardner@guideguide\.com =computer-work/anthony.gardner
+# alias anthony.gardner Anthony Gardner <agardner@guideguide.com>
+# alias agardner anthony.gardner
+# fcc-save-hook agardner@guideguide\.com =computer-work/anthony.gardner
 
-alias roland.gockel Roland Gockel <rgockel@guideguide.com>
-fcc-save-hook rgockel@guideguide\.com =computer-work/roland.gockel
+# alias roland.gockel Roland Gockel <rgockel@guideguide.com>
+# fcc-save-hook rgockel@guideguide\.com =computer-work/roland.gockel
 
 # }}}
 # {{{ other
 
-subscribe ggdev ggnews gg-uk codereview
-mailboxes =inboxes/ggdev
-mailboxes =inboxes/codereview
-mailboxes =inboxes/ggnews
-mailboxes =inboxes/gg-uk
-mailboxes =inboxes/gg-email
-mailboxes =inboxes/gg-work
-#mailboxes =inboxes/gg-cvs-notify
-mailboxes =inboxes/gg-bugzilla
-mailboxes =inboxes/gg-watches
-#mailboxes =inboxes/gg-faqomatic
+# subscribe ggdev ggnews gg-uk codereview
+# mailboxes =inboxes/ggdev
+# mailboxes =inboxes/codereview
+# mailboxes =inboxes/ggnews
+# mailboxes =inboxes/gg-uk
+# mailboxes =inboxes/gg-email
+# mailboxes =inboxes/gg-work
+# #mailboxes =inboxes/gg-cvs-notify
+# mailboxes =inboxes/gg-bugzilla
+# mailboxes =inboxes/gg-watches
+# #mailboxes =inboxes/gg-faqomatic
 
-alias ggdev "guideguide development list" <ggdev@guideguide.com>
-alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
-#send-hook ".*@guideguide\.com" 'my_hdr From: "Adam Spiers" <aspiers@guideguide.com>'
-#send-hook ".*@guideguide\.com" 'my_hdr Reply-To: "Adam Spiers" <aspiers@guideguide.com>'
-fcc-save-hook gg-uk@guideguide\.com =computer-work/gg-uk
+# alias ggdev "guideguide development list" <ggdev@guideguide.com>
+# alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
+# #send-hook ".*@guideguide\.com" 'my_hdr From: "Adam Spiers" <aspiers@guideguide.com>'
+# #send-hook ".*@guideguide\.com" 'my_hdr Reply-To: "Adam Spiers" <aspiers@guideguide.com>'
+# fcc-save-hook gg-uk@guideguide\.com =computer-work/gg-uk
 
-alias codereview guideguide codereview list <codereview@guideguide.com>
-alias translations "ggdev translations" <translations@guideguide.com>
+# alias codereview guideguide codereview list <codereview@guideguide.com>
+# alias translations "ggdev translations" <translations@guideguide.com>
 
-fcc-save-hook ggdev@guideguide\.com =computer-work/ggdev
-fcc-save-hook codereview@guideguide\.com =computer-work/codereview
+# fcc-save-hook ggdev@guideguide\.com =computer-work/ggdev
+# fcc-save-hook codereview@guideguide\.com =computer-work/codereview
 
 # }}}
 
 # }}}
 # {{{ W3W
 
-fcc-save-hook rian@w3w\.net =computer-work/rian.kruger
-fcc-save-hook .*@.*w3w\.net =computer-work/W3W
-fcc-save-hook powerhost\.co\.uk =computer-work/W3W
-alias adam.bailey "Adam Bailey" <post@w3w.net>
-alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
+# fcc-save-hook rian@w3w\.net =computer-work/rian.kruger
+# fcc-save-hook .*@.*w3w\.net =computer-work/W3W
+# fcc-save-hook powerhost\.co\.uk =computer-work/W3W
+# alias adam.bailey "Adam Bailey" <post@w3w.net>
+# alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
 
 # }}}
 # {{{ MoneyWorld
 
-alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
+#alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
 
 # }}}
 
