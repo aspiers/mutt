@@ -6,7 +6,7 @@
 
 color attachment green default
 color body magenta default [_a-z\.A-Z0-9-]+@[a-zA-Z0-9\./\-]+
-color body magenta default (http|ftp)://[_a-zA-Z0-9\./~\-]+
+color body magenta default (http|(wu-?|s)?ftp)://[_a-zA-Z0-9\./~\-]+
 color bold brightwhite default
 color error brightred default
 color header yellow default Subject:
