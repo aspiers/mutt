@@ -257,12 +257,17 @@ fcc-save-hook yanfitterer@yahoo\.co\.uk =friends/RAM/yan.fitterer
 alias nick.byrne Nick Byrne <kaptainbirdeye@hotmail.com>
 alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
 alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
+
 alias sarah.hammel Sarah Hammel <naomihammel@hotmail.com>
-alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
+fcc-save-hook naomi.*hammel =friends/RAM/sarah.hammel
+
 alias ailsa.murdoch Ailsa Murdoch <ailsa.murdoch@virgin.net>
 
+alias mat.heighway Mat Heighway <meticulous@freeuk.com>
+fcc-save-hook meticulous.*freeuk\.com =friends/RAM/mat.heighway
+
+alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
 fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
-fcc-save-hook naomi.*hammel =friends/RAM/sarah.hammel
 
 # }}}
 # {{{ NYO friends
@@ -290,6 +295,12 @@ fcc-save-hook le7053@qmw\.ac\.uk =friends/misc/emma.cullender
 
 alias miriam Miriam <Diamond5475@aol.com>
 fcc-save-hook Diamond5475@aol\.com =friends/misc/miriam
+
+# }}}
+# {{{ Music friends
+
+alias paul.skinner Paul Skinner <paulski@supanet.com>
+fcc-save-hook paulski.*supanet\.com =friends/musicians
 
 # }}}
 # {{{ Groups of friends
@@ -843,6 +854,8 @@ alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
 
 # }}}
 # {{{ perlunit
+
+alias christian.lemburg Christian Lemburg <lemburg@aixonix.de>
 
 subscribe perlunit-users perlunit-devel
 #mailboxes /home/adam/mail/inboxes/perlunit-users
