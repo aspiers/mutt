@@ -14,6 +14,7 @@ alias me.oxford "Adam Spiers" <adam.spiers@new.oxford.ac.uk>
 alias me.thelonious "Adam Spiers, on thelonious" <adam@thelonious.new.ox.ac.uk>
 alias me.hotmail "Adam Spiers, on hotmail" <adam_spiers@hotmail.com>
 alias me.test "Adam Spiers, testing something" <adam-test@thelonious.new.ox.ac.uk>
+alias me.dict "Adam Spiers, dictionary gateway" <adam-dict@thelonious.new.ox.ac.uk>
 alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 
 # }}}
@@ -44,6 +45,8 @@ alias helen.oconnor.juno "Helen O'Connor at home" <helenoc@juno.com>
 alias helen.oconnor helen.oconnor.juno
 alias michael.oconnor "Michael O'Connor" <mkoconnor@mayo.edu>
 alias niamh.oconnor Niamh O'Connor <sive99@yahoo.com>
+alias viv.mchugh Viv McHugh <vivmike@oceanfree.net>
+alias michael.mchugh Viv McHugh <vivmike@oceanfree.net>
 
 alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
 alias sheila.davies2 Sheila Davies <DaviesS@sesahs.nsw.GOV.AU>
@@ -380,3 +383,5 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # Incoming (need to be classified)
 ##############################################################################
 
+alias gnokii gnokii mailing list <gnokii@net.lut.ac.uk>
+alias chris.kemp Christopher Kemp <ck231@cam.ac.uk>
