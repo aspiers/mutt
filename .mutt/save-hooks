@@ -71,6 +71,7 @@ fcc-save-hook asimmons@guideguide\.com =computer-work/andrew.simmons
 fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
 fcc-save-hook lrobinson@guideguide\.com =computer-work/luke.robinson
 fcc-save-hook rob(\+.*)?@guideguide\.com =computer-work/rob.partington
+fcc-save-hook dthorn@guideguide\.com =computer-work/dave.thorn
 
 # }}}
 # {{{ Perl Mongers/Porters

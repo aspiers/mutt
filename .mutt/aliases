@@ -221,6 +221,8 @@ alias andrew.simmons Andrew Simmons <asimmons@guideguide.com>
 alias asimmons andrew.simmons
 alias luke.robinson Luke Robinson <lrobinson@guideguide.com>
 alias lrobinson luke.robinson
+alias dave.thorn Dave Thorn <dthorn@guideguide.com>
+alias dthorn dave.thorn
 
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
@@ -406,3 +408,4 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # Incoming (need to be classified)
 ##############################################################################
 
+alias siobhan.supple Siobhan Supple <supple@iol.ie>
