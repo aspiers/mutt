@@ -91,5 +91,6 @@ source ~/.mutt/aliases
 source ~/.mutt/bindings
 source ~/.mutt/colours
 source ~/.mutt/format-strings
+source /usr/doc/mutt-1.2.4i/samples/pgp2.rc
 
 push V
