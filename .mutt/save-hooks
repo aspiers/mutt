@@ -47,6 +47,7 @@ fcc-save-hook bourby =friends/Oxford/bourby.norman
 fcc-save-hook g.*wearden =friends/Oxford/graeme.wearden
 fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 fcc-save-hook dddavies =friends/home/dan.davies
+fcc-save-hook redneluc =friends/misc/emma.cullender
 
 # }}}
 
@@ -76,6 +77,7 @@ fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
 fcc-save-hook lrobinson@guideguide\.com =computer-work/luke.robinson
 fcc-save-hook rob(\+.*)?@guideguide\.com =computer-work/rob.partington
 fcc-save-hook rpartington@guideguide\.com =computer-work/rob.partington
+fcc-save-hook rjp@.*plig\.net =computer-work/rob.partington
 fcc-save-hook dthorn@guideguide\.com =computer-work/dave.thorn
 fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
 
