@@ -479,6 +479,12 @@ fcc-save-hook bsimpson@guideguide.com =computer-work/ben.simpson
 alias jasper.mccrea "Jasper McCrea" <jmccrea@guideguide.com>
 fcc-save-hook jmccrea@guideguide.com =computer-work/jasper.mccrea
 
+alias anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
+
+alias anthony.gardner Anthony Gardner <agardner@guideguide.com>
+alias agardner anthony.gardner
+fcc-save-hook agardner@guideguide.com =computer-work/anthony.gardner
+
 # }}}
 # {{{ other
 
