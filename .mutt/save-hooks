@@ -130,11 +130,15 @@ fcc-save-hook ck231@.*cam\.ac\.uk =lists/gnokii
 fcc-save-hook linux-diald =lists/linux-diald
 
 fcc-save-hook sawmill.*aarg\.net =lists/sawfish
+
 fcc-save-hook gimp-perl.*lists\.netcentral\.net =lists/gimp-perl
+
 fcc-save-hook galeon-devel.*lists\.sourceforge\.net =lists/galeon-devel
 
 fcc-save-hook gerv\.net =Oxford/acquaintances/gervase.markham
 fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
+
+fcc-save-hook buggies@tequilarista =lists/buggies
 
 # }}}
 # {{{ chatter
