@@ -5,125 +5,129 @@
 ## Bindings for attach
 ## ========================
 
-#  bind  attach ' '     select-entry
-#  bind  attach \Cg     exit
-   macro attach <left>  "qkv"
-   macro attach <right> "qjv"
+   bind  attach <space> view-attach
+   bind  attach \Cg     exit
+   macro attach <left>  "<exit><up><view-attachments>" "move to previous message"
+   macro attach <right> "<exit><down><view-attachments>" "move to next message"
+   macro attach n       <left>
+   macro attach p       <right>
+
 
 ## ======================
 ## Bindings for index
 ## ======================
 
 
-   bind index <pagedown>  next-page
-   bind index <pageup>    previous-page
-   bind index <home>      first-entry
-   bind index <end>       last-entry
+   bind  index <pagedown>  next-page
+   bind  index <pageup>    previous-page
+   bind  index <home>      first-entry
+   bind  index <end>       last-entry
                          
-   bind index g           group-reply
+   bind  index g           group-reply
                          
-   bind index \Cv         forget-passphrase
-   bind index <           previous-page
-   bind index >           next-page
+   bind  index \Cv         forget-passphrase
+   bind  index <           previous-page
+   bind  index >           next-page
                          
-#   bind index ^           first-entry
-   bind index =           first-entry
-   bind index *           last-entry
-#  bind index <home>      first-entry
-#  bind index <end>       last-entry
-                         
-   bind index $           sync-mailbox
-                         
-   bind index +           next-page
-   bind index -           previous-page
+#  bind  index ^           first-entry
+   bind  index =           first-entry
+   bind  index *           last-entry
+#  bind  index <home>      first-entry
+#  bind  index <end>       last-entry
+                          
+   bind  index $           sync-mailbox
+                          
+   bind  index +           next-page
+   bind  index -           previous-page
+ 
+#  bind  index P           recall-message
+   bind  index L           list-reply
+#  bind  index  \t         next-unread
+#  bind  index ,\t         previous-unread
+ 
+   bind  index y           collapse-thread
+   bind  index Y           collapse-all
 
-#  bind index P           recall-message
-   bind index L           list-reply
-#  bind index  \t         next-unread
-#  bind index ,\t         previous-unread
+   macro index i  "<change-folder>=inboxes/\t\t\t<down>"  "show main inboxes"
+   macro index I  "<change-folder>!\n"  "switch to MAIN inbox"
 
-   bind index y           collapse-thread
-   bind index Y           collapse-all
-
-   macro index  i  "\$c=inboxes/\t\t\tj"
-   macro index  I  "c!\n"
-
-   macro index  B  "|urlview\n"
-   macro index  N  "S\r"
-
+   macro index B  "|urlview\n"  "pipe message to urlview"
+   macro index N  "S\r"         "move to next match in search"
 
 
 ## ===========================
 ## Bindings for pager
 ## ===========================
 
-   bind pager  <down> next-line
-   bind pager  <up>   previous-line
-   bind pager  j      next-line         
-   bind pager  k      previous-line     
-   bind pager  \Cm    next-line         
-                      
-   bind pager  u      half-up
-   bind pager  d      half-down
+   bind  pager  <down> next-line
+   bind  pager  <up>   previous-line
+   bind  pager  j      next-line         
+   bind  pager  k      previous-line     
+   bind  pager  \Cm    next-line         
+                       
+   bind  pager  u      half-up
+   bind  pager  d      half-down
+ 
+   bind  pager  :      enter-command      
+ 
+   bind  pager  <pagedown>   next-page
+   bind  pager  <pageup>     previous-page     
+   bind  pager  " "          next-page
+   bind  pager  <backspace>  previous-page
+   bind  pager  f            next-page
+   bind  pager  b            previous-page     
+ 
+   bind  pager  ^   top
+   bind  pager  g   top
+   bind  pager  G   bottom
+ 
+   bind  pager  /   search
+   bind  pager  N   search-next
+ 
+   bind  pager  n   next-undeleted
+   bind  pager  p   previous-undeleted
+   bind  pager  P   print-message
+ 
+   bind  pager  L   list-reply
+   bind  pager  r   reply             
+#  bind  pager  F   forward-message
+   bind  pager  D   delete-message
 
-   bind pager  :      enter-command      
+   macro pager  $   "<exit><sync-mailbox>" "quit pager and sync mailbox"
+ 
+   macro pager  B   "|urlview\n"
+ 
+   macro pager  i   "<change-folder>=in\t<down>" "show main inboxes"
+   macro pager  I   "<change-folder>!\n"  "switch to MAIN inbox"
+ 
+   macro pager  l   "<exit><limit>"  "show only messages matching a pattern"
+ 
+   macro pager  w   ":set invsmart_wrap invmarkers\n" "toggle wrap mode"
 
-   bind pager  pagedown      next-page
-   bind pager  pageup        previous-page     
-   bind pager  " "           next-page
-   bind pager  <backspace>   previous-page
-   bind pager  f             next-page
-   bind pager  b             previous-page     
+   # Change PIL size
+   macro pager "\e0" ":set pager_index_lines=0\n"
+   macro pager "\e1" ":set pager_index_lines=2\n"
+   macro pager "\e2" ":set pager_index_lines=3\n"
+   macro pager "\e3" ":set pager_index_lines=4\n"
+   macro pager "\e4" ":set pager_index_lines=5\n"
+   macro pager "\e5" ":set pager_index_lines=6\n"
+   macro pager "\e6" ":set pager_index_lines=7\n"
+   macro pager "\e7" ":set pager_index_lines=8\n"
+   macro pager "\e8" ":set pager_index_lines=9\n"
+   macro pager "\e9" ":set pager_index_lines=10\n"
 
-   bind pager  ^   top
-   bind pager  g   top
-   bind pager  G   bottom
+   macro pager "\ef"  "|parp -ev\n"   "parp: extract friends"
+   macro pager "\et"  "|parp -rtv\n"  "parp: dummy run"
+   macro pager "\er"  "|parp -wv\n"   "parp: flag spam classification as incorrect"
 
-   bind pager  /   search
-   bind pager  N   search-next
-
-   bind pager  n   next-undeleted
-   bind pager  p   previous-undeleted
-   bind pager  P   print-message
-
-   bind pager  L   list-reply
-   bind pager  r   reply             
-#  bind pager  F   forward-message
-   bind pager  D   delete-message
-
-   macro pager $   "q\$"
-
-   macro pager B   "|urlview\n"
-
-   macro pager i   "qi"
-   macro pager I   "qc!\n"
-
-   macro pager l   "ql"
-
-   macro pager "w"      ":set invsmart_wrap invmarkers\n" # Toggle wrap stuff
-   macro pager "y"      "c?\t"                            # "-y" screen
-   macro pager "\e0"    ":set pager_index_lines=0\n"      # Change PIL size
-   macro pager "\e1"    ":set pager_index_lines=2\n"      # Change PIL size
-   macro pager "\e2"    ":set pager_index_lines=3\n"      # Change PIL size
-   macro pager "\e3"    ":set pager_index_lines=4\n"      # Change PIL size
-   macro pager "\e4"    ":set pager_index_lines=5\n"      # Change PIL size
-   macro pager "\e5"    ":set pager_index_lines=6\n"      # Change PIL size
-   macro pager "\e6"    ":set pager_index_lines=7\n"      # Change PIL size
-   macro pager "\e7"    ":set pager_index_lines=8\n"      # Change PIL size
-   macro pager "\e8"    ":set pager_index_lines=9\n"      # Change PIL size
-   macro pager "\e9"    ":set pager_index_lines=10\n"     # Change PIL size
-
-   macro pager "\ef"  "|parp -ev\n"
-   macro pager "\et"  "|parp -rtv\n"
-   macro pager "\er"  "|parp -wv\n"
 
 ## ===========================
 ## Bindings for browser menu
 ## ===========================
 
-   bind  browser ' '  select-entry
-   macro browser  i   "qc^u!\r"
-   bind browser  q   exit
+   bind  browser <space>  select-entry
+   macro browser  q       "<exit>^u\r"
+   macro browser  i       "q"
 
 
 ## ===========================
@@ -143,4 +147,4 @@
 ## Bindings for line editor
 ## ===========================
 
-   bind editor <delete> backspace
+   bind  editor <delete> backspace
