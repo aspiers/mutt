@@ -61,17 +61,19 @@
 # !!! PLEASE ALSO SEE CORRESPONDING SECTION FOR PAGER BINDINGS !!!
 
    macro index "\ef"  ";|formail -s parp -ev\n"   "parp: extract Friends"
-   macro index "\ej"  "<save-message>=junk-mail-`date +%Y-%m`.bz2\n"  "save as junk mail"
-#   macro index "\eR"  "<copy-message>=inboxes/retry.bz2\n"  "save for Refiltering"
+
+   macro pager "\ei"  "|TESTMEFIRST formail -s CRM-SA-parp-inject\n"   "parp: (re)Inject into spool"
+
+   macro index "\ej"  "<save-message>=junk-mail-`date +%Y-%m`/\n"  "save as junk mail"
 
    # manual spam classification for parp (changes stats/friends db)
-   macro index "\eW"  ";|formail -s parp -rwv\n"   "please don't use this directly"
+#   macro index "\eW"  ";|formail -s parp -rwv\n"   "please don't use this directly"
 
-   macro index "\eS"  "\eW;<copy-message>=inboxes/retry/is-spam.bz2\n;\ej"   "treat as false negative (spam)"
-   macro index "\eH"  "\eW;<copy-message>=inboxes/retry/is-ham\n;s!\n"   "treat as false positive (ham)"
+   macro index "\eS"  "<copy-message>=inboxes/retry/is-spam/\n;\ej"   "treat as false negative (spam)"
+   macro index "\eH"  "<copy-message>=inboxes/retry/is-ham/\n;s!\n"   "treat as false positive (ham)"
 
-   macro index "\eA" "l~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
-   macro index "\eV"  "\eW;<save-message>=misc/virii\n"   "treat as virus-related email"
+   macro index "\eA" "<limit>~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
+   macro index "\eV"  "<save-message>=misc/virii\n"   "treat as virus-related email"
 
 # }}}
 # {{{ Bindings for pager
@@ -140,23 +142,23 @@
    macro pager "\e8" ":set pager_index_lines=16\n"
    macro pager "\e9" ":set pager_index_lines=18\n"
 
-   macro pager "\ei"  "|spamc -f -p 7195 | parp-inject ~/mail/spool\n"   "parp: (re)Inject into spool"
+   macro pager "\ei"  "|CRM-SA-parp-inject\n"   "parp: (re)Inject into spool"
    macro pager "\et"  "|parp -rtv\n"  "parp: Test run"
 #  macro pager "\eT"  "|parp-new -rtv\n"  "parp: Test run, new code"
 
 # !!! PLEASE ALSO SEE CORRESPONDING SECTION FOR INDEX BINDINGS !!!
 
    macro pager "\ef"  "|parp -ev\n"   "parp: extract Friends"
-   macro pager "\ej"  "<save-message>=junk-mail-`date +%Y-%m`.bz2\n"  "save as junk mail"
+   macro pager "\ej"  "<save-message>=junk-mail-`date +%Y-%m`/\n"  "save as junk mail"
 
    # flag spam classification as wrong (changes stats/friends db)
    macro pager "\eW"  "|parp -rwv\n"   "please don't use this directly"
 
-   macro pager "\eS"  "\eW<copy-message>=inboxes/retry/is-spam.bz2\n\ej"   "treat as false negative (spam)"
-   macro pager "\eH"  "\eW<copy-message>=inboxes/retry/is-ham\ns!\n"   "treat as false positive (ham)"
+   macro pager "\eS"  "<copy-message>=inboxes/retry/is-spam/\n\ej"   "treat as false negative (spam)"
+   macro pager "\eH"  "<copy-message>=inboxes/retry/is-ham/\ns!\n"   "treat as false positive (ham)"
 
-   macro pager "\eA" "l~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
-   macro pager "\eV"  "\eW<save-message>=misc/virii\n"   "treat as virus-related email"
+   macro pager "\eA" "<limit>~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
+   macro pager "\eV"  "<save-message>=misc/virii\n"   "treat as virus-related email"
 
 # }}}
 # {{{ Bindings for compose menu
