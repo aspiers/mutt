@@ -6,7 +6,7 @@
 ## ========================================================================
 
    set   abort_nosubject=no
-   set   abort_unmodified=ask-yes
+   set   abort_unmodified=no
    set   alias_file=~/.mutt/personal
    set   attribution="%n (%a) wrote:"
    set noconfirmappend
