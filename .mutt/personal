@@ -532,7 +532,7 @@ fcc-save-hook thomas@ggid\.com =computer-work/thomas.damian
 alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
 alias mhecken mikel.hecken
 
-alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
+alias andy.mcfarland "Andy McFarland" <andy@slab.org>
 alias andym andy.mcfarland
 fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
 fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
@@ -621,8 +621,8 @@ mailboxes =inboxes/gg-watches
 
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
-send-hook ".*@guideguide\.com" 'my_hdr From: "Adam Spiers" <aspiers@guideguide.com>'
-send-hook ".*@guideguide\.com" 'my_hdr Reply-To: "Adam Spiers" <aspiers@guideguide.com>'
+#send-hook ".*@guideguide\.com" 'my_hdr From: "Adam Spiers" <aspiers@guideguide.com>'
+#send-hook ".*@guideguide\.com" 'my_hdr Reply-To: "Adam Spiers" <aspiers@guideguide.com>'
 fcc-save-hook gg-uk@guideguide\.com =computer-work/gg-uk
 
 alias codereview guideguide codereview list <codereview@guideguide.com>
