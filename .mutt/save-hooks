@@ -44,6 +44,7 @@ fcc-save-hook c.*hildrew =friends/Oxford/chris.hildrew
 fcc-save-hook naomi.*hammel =friends/RAM/sarah.hammel
 fcc-save-hook bourby =friends/Oxford/bourby.norman
 fcc-save-hook g.*wearden =friends/Oxford/graeme.wearden
+fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 
 # }}}
 
