@@ -199,18 +199,22 @@ alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
 # {{{ Computer work
 
 alias christof.damian "Christof Damian" <cdamian@guideguide.com>
+alias cdamian christof.damian
 alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
+alias tdamian thomas.damian
 alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
+alias mhecken mikel.hecken
 alias alex.mclean "Alex McLean" <alex@slab.org>
 alias alex.mclean2 Alex McLean <amclean@guideguide.com>
 alias alex.mclean3 Alex McLean <alex@guideguide.com>
 alias alex.mclean.lurk Alex McLean <alex@lurk.org>
 alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
+alias andym andy.mcfarland
 alias rob.partington Rob Partington <rpartington@guideguide.com>
-alias mjones Mark Hulme-Jones <mjones@guideguide.com>
-alias john.imrie John Imrie <jimrie@guideguide.com>
-alias dave.cross Dave Cross <dave@dave.org.uk>
+alias mark.hulme-jones Mark Hulme-Jones <mjones@guideguide.com>
+alias mjones mark.hulme-jones
 alias nathan.carr Nathan Carr <nathan@nowt.net>
+alias ncarr nathan.carr
 
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
@@ -221,6 +225,7 @@ alias micromedia Micromedia <sales@micromedia.net>
 
 alias miguel "Miguel Ripoll" <miguel@itv.com>
 
+alias dave.cross Dave Cross <dave@dave.org.uk>
 alias adam.bailey "Adam Bailey" <post@w3w.net>
 alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
 
