@@ -1,0 +1,105 @@
+# This is the personal part of my mutt configuration, i.e., stuff
+# which only applies to me.  You should very likely change all or
+# at least some of this.  I'll leave it mostly intact just in case
+# it gives you some nice ideas though.
+
+# Stop lusers wasting my time
+
+#macro index  \ei  "|/usr/local/sbin/IT-luser-bounce\rd"
+#macro index  \ek  "|/usr/local/bin/req -mcreate -\rd"
+#macro index  \em  "|/usr/local/bin/req -comment  -\Cb\Cb"
+
+#macro pager  \ei  "|/usr/local/sbin/IT-luser-bounce\rD"
+#macro pager  \ek  "|/usr/local/bin/req -mcreate -\rD"
+#macro pager  \em  "|/usr/local/bin/req -comment  -\Cb\Cb"
+
+macro pager    U  "qs=junk-mail\r"
+macro compose  I  "c\Cuis\rr\Cuis\rf\Cu\r"
+macro compose  S  "s\Ca[it-support@new #] \Cb\Cb"
+#macro compose X "r\Cucomputer-manager@new.ox.ac.uk\r"
+
+
+set alternates="(adam(\.spiers)?|newc0115|m93asp|a\.?spiers).*@(((thelonio?us|cornholio|miles|www)\.)?new\.ox(ford)?\.ac\.uk|musician\.org|ram\.ac\.uk|spiers\.net|(mediaconsult|guideguide)\.com)"
+
+#  localsite  ox.ac.uk
+
+## Command mailboxes
+mailboxes !
+mailboxes /home/adam/mail/inboxes/linux-thinkpad
+mailboxes /home/adam/mail/inboxes/ggdev
+mailboxes /home/adam/mail/inboxes/ggnews
+mailboxes /home/adam/mail/inboxes/gg-uk
+mailboxes /home/adam/mail/inboxes/gg-cvs-notify
+mailboxes /home/adam/mail/inboxes/gg-bugzilla
+mailboxes /home/adam/mail/inboxes/linux-alert
+mailboxes /home/adam/mail/inboxes/linux-security
+mailboxes /home/adam/mail/inboxes/bugtraq
+mailboxes /home/adam/mail/inboxes/alsa-user
+mailboxes /home/adam/mail/inboxes/alsa-devel
+mailboxes /home/adam/mail/inboxes/apmd-list
+mailboxes /home/adam/mail/inboxes/linux-laptop
+mailboxes /home/adam/mail/inboxes/mozilla-announce
+mailboxes /home/adam/mail/inboxes/pcmcia-beta
+mailboxes /home/adam/mail/inboxes/pcmcia-apm
+mailboxes /home/adam/mail/inboxes/jobserve-filtered
+mailboxes /home/adam/mail/inboxes/rt-users
+mailboxes /home/adam/mail/inboxes/req
+mailboxes /home/adam/mail/inboxes/reqng
+mailboxes /home/adam/mail/inboxes/oxluug
+mailboxes /home/adam/mail/inboxes/mutt-users
+mailboxes /home/adam/mail/inboxes/mutt-dev
+mailboxes /home/adam/mail/inboxes/zsh-users
+mailboxes /home/adam/mail/inboxes/zsh-workers
+mailboxes /home/adam/mail/inboxes/mustang-list
+mailboxes /home/adam/mail/inboxes/security-audit
+mailboxes /home/adam/mail/inboxes/linux-smp
+mailboxes /home/adam/mail/inboxes/unix-admin
+mailboxes /home/adam/mail/inboxes/vortex-bug
+mailboxes /home/adam/mail/inboxes/infobot
+mailboxes /home/adam/mail/inboxes/london_pm
+mailboxes /home/adam/mail/inboxes/p5p
+mailboxes /home/adam/mail/inboxes/freshmeat
+mailboxes /home/adam/mail/inboxes/slashdot
+mailboxes /home/adam/mail/inboxes/interjazz
+mailboxes /home/adam/mail/inboxes/jobserve
+mailboxes /home/adam/mail/inboxes/void
+mailboxes /home/adam/mail/inboxes/linux-kernel
+
+## Command lists :
+## Syntax: lists {listname}
+## MUTT usually shows the name of the sender in the index.
+## But for the mailins lists listed with "lists" it will show the name of the
+## mailing list.
+
+# Work
+lists ggdev ggnews gg-uk
+
+# Software lists
+lists mutt-dev mutt-users mutt-announce 
+lists req reqng-developers wishlist rt-users 
+lists zsh-users zsh-workers
+lists alsa-devel alsa-user
+lists infobot p5p
+
+# System (software) lists
+lists apmd-list
+lists linux-kernel linux-smp
+lists linux-vortex-bug vortex-bug
+lists linux-thinkpad linux-laptop
+
+# Security lists
+lists bugtraq linux-security security-audit 
+lists unix-admin
+
+# Chatter
+lists london_pm london-list void 
+
+folder-hook .                     source ~/.mutt/folders/DEFAULTS
+folder-hook =lists/               source ~/.mutt/mailing-list
+folder-hook =inboxes/             source ~/.mutt/mailing-list
+folder-hook =inboxes/Mailbox$     source ~/.mutt/folders/Mailbox
+folder-hook =.*/zsh-              source ~/.mutt/folders/zsh
+folder-hook =.*/alsa-             source ~/.mutt/folders/alsa
+folder-hook =.*/void              source ~/.mutt/folders/void
+
+source ~/.mutt/save-hooks

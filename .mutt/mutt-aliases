@@ -1,0 +1,48 @@
+alias muttann      MUTT Announcements      <mutt-announce@cs.hmc.edu>
+alias muttusers    MUTT Users                <mutt-users@cs.hmc.edu>
+alias muttdev      MUTT Developers             <mutt-dev@cs.hmc.edu>
+
+alias muttauthor   Michael Elkins                    <me@cs.hmc.edu>
+alias muttfaq      Felix von Leitner            <leitner@math.fu-berlin.de>
+alias mutthan      Park Myeong Seok                 <pms@romance.kaist.ac.kr>
+alias muttpages    Sven Guckes                   <guckes@math.fu-berlin.de>
+alias muttpatches  Ollivier Robert      <ollivier.robert@eurocontrol.fr>
+
+## An alias that points to myself:
+	alias sveng   Sven Guckes    <guckes@math.fu-berlin.de>
+## Two users without a name:
+#	alias user1 <address1@domain1>
+#	alias user2 <address2@domain2>
+## Two users with names:
+#	alias userA     User A <addressA@domain1>
+#	alias userB     User B <addressB@domain2>
+#	alias group1           sveng,user1,user2
+#	alias group2           sveng,userA,userB
+#	alias group3 MUTT_Gang:sveng,user1,user2;
+#	alias group4 MUTT_Gang:sveng,userA,userB;
+## Try these with the following command: "mutt -c muttgang2 muttgang1"
+## Note:  (1)  My address comes first, so mails to these aliases will be saved
+## in folder =guckes as I use "set force_name".  (2)  Options come first!
+## Thus option "-c" and parameter must come *before* all other parameters!
+
+##	TESTing Aliases
+##
+##	Q: Is there a danger for recursive alias mapping?
+##	A: No, Sir! :-)
+##
+#alias a b
+#alias b a
+##
+##	Q: When redefining an alias - which definition will be used?
+##	A: The first one found in the list will be used!
+##
+#alias someone    Someone <someaddress>
+#alias someone    Someone Else <someaddress>
+##
+##	Q: Does MUTT remove parentheses from comments?
+##	A: It does for addresses of format "comment <address>"
+##	   but not for addresses of format "address (comment)".
+##	   This is correct by RFC0822!
+##	Examples:
+#alias jutie1 Ute "JuTie" Fuchs <utefuchs>
+#alias jutie2 utefuchs (Ute "JuTie" Fuchs)

@@ -1,0 +1,83 @@
+##############################################################################
+# Quake mailing lists
+##############################################################################
+
+alias uq "UK Quake mailing list" <ukquake@minos.co.uk>
+alias ukquake "UK Quake mailing list" <ukquake@minos.co.uk>
+alias uksquad "ClanUK mailing list" <uksquad@minos.co.uk>
+alias clanuk "ClanUK mailing list" <uksquad@minos.co.uk>
+alias qadmin UK Quake server admin mailing list <qadmin@virtual.org.uk>
+
+
+##############################################################################
+# Authors of Quake software
+##############################################################################
+
+alias david.carter "David Carter, KingPin Mod author" <carter@bitstream.net>
+alias cheapo "Cheapo author (Sami Tammilehto)" <softech@sci.fi>
+alias qspy "Paul Miller, Author of Linux Qspy port" <pmiller@unix.midplains.net>
+alias zoid Zoid <zoid@idsoftware.com>
+alias kemiKal "kemiKal (Thomas Andersson)" <ason@dice.se>
+alias perkele "Perkele" <jmkujala@cc.jyu.fi>
+alias Zibbo "Zibbo" <r151925@proffa.cc.tut.fi>
+
+
+##############################################################################
+# Quake websites
+##############################################################################
+
+alias deicide deicide <deicide@gameaholic.com>
+alias methos Methos <methos@llamanet.net>
+alias nomad "The Nomad" <nomad@easynet.co.uk>
+alias nftf "News From The Front" <nomad@easynet.co.uk>
+alias newsatquad "News At Quad, UK Quake news page" <newsatquad@robertsworld.org.uk>
+alias ukquakenews nftf, newsatquad, "Sujoy Roy" <mail@sujoy.com>
+
+
+##############################################################################
+# Quake Friends
+##############################################################################
+
+alias randy "Randemarr (Dierk W.)" <randy@hrz1.hrz.tu-darmstadt.de>
+alias barry "Barry@barrysworld" <barry@thedbs.com>
+alias dbs "Barry@barrysworld" <barry@thedbs.com>
+alias yarn "Yarn (Ian Clark)" <i.c.clark@ex.ac.uk>
+alias cheeky Cheeky <j.d.howley@exeter.ac.uk>
+alias phaze "Karl (Phaze)" <phazey@mad-skillz.co.uk>
+alias arathranar "Arathranar (Adrian Garside)" <adrian@irltd.demon.co.uk>
+alias andrew.brennand "Andrew Brennand, Minos" <andrew@minos.co.uk>
+alias sujoy "Sujoy Roy" <mail@sujoy.com>
+alias nightwing "Jon Askew, Nightwing" <jja21@cam.ac.uk>
+alias james.golding "BigSquid (James Golding)" <james.golding@st-hughs.oxford.aalias pundit "Pundit" <dmoss@gridleys.co.uk>
+alias bigsquid "BigSquid (James Golding)" <james.golding@st-hughs.oxford.ac.uk>
+alias ody "Odysseus" <qpdody@dial.pipex.com>
+alias boywonder "BoyWonder (Robin Grant)" <rgrant@internal.brann.co.uk>
+alias mnk "MNK" <supreme.quake.warrior@mnk.prestel.co.uk>
+alias chuma Chuma <si.wellings@zetnet.co.uk>
+alias lordstorm LordStorm <jaime@telecomet.co.uk>
+alias remembrance Remembrance <jamesbarton@ndirect.co.uk>
+alias dave.capes "Dave Capes (Billy)" <capes@robots.ox.ac.uk>
+alias kelvin "Kelvin Tooth, Shoot'n'Surf" <kelvin@shootnsurf.co.uk>
+alias rawmeat2 "RawMeat (Dominic O'Reirdan)" <dominic@ns1.avnet.co.uk>
+alias rawmeat "RawMeat" <rawmeat@shootnsurf.co.uk>
+alias babyfragger "BabyFragger (Gary Cook)" <gary@pmgl.demon.co.uk>
+alias bigfoot "BigFoot (David Angus)" <davidangus@dial.pipex.com>
+alias pilsner "Joe *Pilsner* Cise" <pilsner-df@bigfoot.com>
+
+
+##############################################################################
+# QPD
+##############################################################################
+
+alias acquiesce "Acquiesce (Alex Ahern), QPD" <Alex@Ahern.demon.co.uk>
+alias ving2 "Ving (Jon Sprake)" <ving@dial.pipex.com>
+alias danman "Danman (Dani Arrusi), QPD" <Dani.Arrusi@brunel.ac.uk>
+alias coerj "Coerj (Jonathon Benford), QPD" <jbenford@cix.compulink.co.uk>
+alias ving "Ving (Jon Mallard), QPD" <jon@mallard.u-net.com>
+alias dazza "Dazza (Darren Allan), QPD" <darrena@idg.co.uk>
+alias killjoy "Killjoy (Alan Silcock), QPD" <alansil@nortonhl.u-net.com>
+alias spirit "Spirit, QPD" <Spirit@spiritualnet.com>
+alias cenobite "CeNoBiTe (Andy Bell), QPD" <andybell@dial.pipex.com>
+alias funkster "Funkster, QPD" <Jonny@funkster.demon.co.uk>
+
+#alias qpd coerj, ving, dazza, killjoy, spirit, dogboy, scanman, cenobite, toxic, funkster

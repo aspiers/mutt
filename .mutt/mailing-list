@@ -1,0 +1,3 @@
+# set hdr_format="%4C %Z %{%b %d} %-15.15n (%4l) %s"
+unset pgp_verify_sig
+  set sort=threads

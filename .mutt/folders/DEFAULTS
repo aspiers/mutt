@@ -1,0 +1,7 @@
+bind pager z noop
+
+  set hdr_format="%Z%3C %{%b %d} %-21.21F %s"
+unset signature
+  set pgp_verify_sig
+
+

@@ -1,0 +1,78 @@
+## ========================================================================
+## File:        $HOME/.muttrc
+## Author:      Adam Spiers (thanks to Sven Guckes)
+## Purpose:     Setup file for the Mail program "Mutt"
+## Current version applies to version "mutt-0.93.1i".
+## ========================================================================
+
+   set   abort_nosubject=no
+   set   abort_unmodified=ask-yes
+   set   alias_file=~/.mutt/aliases
+   set   attribution="%n (%a) wrote:"
+   set noconfirmappend
+   set   confirmcreate
+   set   copy             # Always keep a copy of my mails!
+   set   delete=yes
+   set   editor="emacs -nw"
+   set   fast_reply
+   set   folder=~/mail    # directory with all mail folders
+   set   force_name       # save outbound mail by username
+                          # (even if =username does not exist)
+   set nohelp
+   set   history=20
+   set   include          # include mail as quoted text in replies
+   set   mark_old         # make distinction between new and old mail
+
+# This makes it beep every time it checks for new mail on idle
+#  set   meta_key         # META behaves in typical ESCAPE fashion
+
+   set   move=no          # folder update: do not move read mail to "mbox"
+#  set   pager=less -aCMsei
+   set   pager_index_lines=0
+   set   pager_stop       # next-page doesn't perform a next-undeleted when
+                          # the end of the mail is shown
+#  set noprompt_after     # prompt when pager exits?
+#  set   point_new
+   set   postponed="~/mail/.postponed"
+   set   pgp_encryptself
+   set   pgp_verify_sig=yes
+   set   pgp_replyencrypt
+   set   quote_regexp="^> *"
+   set   recall=no
+#  set   record="PLEASE CHOOSE AN FCC FOLDER!"
+   set   reply_to=ask-yes # use address in Reply-To when replying?
+   set   reverse_alias    # show name of sender as set with my alias for him
+   set   resolve          # do not proceed to next unread mail after command
+   set nosave_name        # save outbound mail to =username if it exists
+   set   timeout=30       # time in seconds until new mail check
+   set nosave_empty
+   set   sort=threads 
+   set   status_on_top
+#  set   strict_threads   # use only references for threading?
+   set   tmpdir=/tmp      # directory where temporary files are to be placed
+#  set   to_chars=
+   set   tilde            # show empty lines at end with a tilde
+ unset   wait_key
+   set   write_inc=1      # display increment count for every n-th mail
+
+  ignore *
+unignore from date subject to cc
+unignore organization organisation x-mailer: x-newsreader: x-mailing-list:
+unignore posted-to:
+
+auto_view text/x-vcard
+
+my_hdr X-URL: http://www.new.ox.ac.uk/~adam/
+my_hdr X-OS: `/bin/uname -srm`
+
+# Support for compressed folders (read-only in this case)
+#open-hook \\.gz$ "gzip -cd %f > %t"
+
+source ~/.mutt/personal
+source ~/.mutt/mutt-aliases
+source ~/.mutt/aliases
+source ~/.mutt/bindings
+source ~/.mutt/colours
+source ~/.mutt/format-strings
+
+push V

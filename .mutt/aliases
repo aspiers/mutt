@@ -1,0 +1,319 @@
+##############################################################################
+# Me :-)
+##############################################################################
+
+alias me "Adam Spiers" <adam@spiers.net>
+alias me.guideguide "Adam Spiers, at guideguide" <aspiers@guideguide.com>
+alias me.musician "Adam Spiers" <adam.spiers@musician.org>
+alias me.ox "Adam Spiers" <adam.spiers@new.ox.ac.uk>
+alias me.oxford "Adam Spiers" <adam.spiers@new.oxford.ac.uk>
+alias me.thelonious "Adam Spiers, on thelonious" <adam@thelonious.new.ox.ac.uk>
+alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
+
+##############################################################################
+# Friends
+##############################################################################
+
+alias friends stacey, tim.c-c, nick, lindsey, ben, nick.williams, dave, chris, jo, ivan, jess, sarah.metcalf, ian.macmullen, tim.lucas, graeme, rachel, annabel, bear, stephen, tiss, kevin, oli, peronel, nick.collins, andy.radford, vicky.hamilton, dave.willetts, matthew.kirkwood, chris.evans, paul.eastham, heather, bruce, jeremy.lund, emma, matt.clay, john.hargreaves, matthew.bright, green, stewart.dunn, sarah.boxall, daniel.spiers, peter, helen2, michael, chloe, ian, alastair.white, wilson, paul.rogers, arathranar, sheila.davies
+
+
+alias housewarming tim.c-c, nick, lindsey, ben, nick.williams, dave, chris, jo, ivan, jess, sarah.metcalf, ian.macmullen, tim.lucas, graeme, annabel, bear, oli, peronel, nick.collins, andy.radford, vicky.hamilton, dave.willetts, matthew.kirkwood, chris.evans, paul.eastham, emma, matt.clay, sarah.boxall
+
+alias housewarming-feedback nick, lindsey, ben, nick.williams, dave, chris, jo, ivan, jess, sarah.metcalf, ian.macmullen, tim.lucas, graeme, annabel, bear, oli, nick.collins, andy.radford, vicky.hamilton, dave.willetts, matthew.kirkwood, chris.evans, paul.eastham, emma, matt.clay, sarah.boxall
+
+#
+# (Ex-)Oxford friends
+#
+
+alias stacey Stacey Steele <Stacey.Steele@bowne.com>
+alias tim.corbett-clark "Tim Corbett-Clark" <tcc@robots.ox.ac.uk>
+alias nick "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
+alias nick.mcgrogan "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
+alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
+alias ben.teasdale "Ben Teasdale" <ben.teasdale@bbc.co.uk>
+alias ben "Ben North" <ben@thelonious.new.ox.ac.uk>
+alias nick.williams "Nick Williams" <nick@thelonious.new.ox.ac.uk>
+alias dave "David Lindgren" <dave@thelonious.new.ox.ac.uk>
+alias chris "Christopher Cladingboel" <christopher.cladingboel@wadham.ox.ac.uk>
+alias jo.sherratt "Joanna Sherratt" <joanna.sherratt@new.oxford.ac.uk>
+alias jo.sherratt.bm "Joanna Sherratt" <jsherrat@ibl.bm>
+alias jo.sherratt.work Joanna Sherratt <jsherrat@CENTRERE.COM>
+alias ivan.rockey Ivan Rockey <Ivan.Rockey@btinternet.com>
+alias ivan.rockey.ECO "FAO: Ivan Rockey" <mail@e-c-orch.demon.co.uk>
+alias sarah.metcalf "Sarah Metcalf" <s-metcalf@dfid.gtnet.gov.uk>
+alias ian.macmullen "Ian MacMullen" <ian_macmullen@hotmail.com>
+alias tim.lucas "Tim Lucas" <timothy.lucas@new.ox.ac.uk>
+alias graeme.wearden Graeme Wearden <graeme@thelonious.new.ox.ac.uk>
+alias rachael.gulliver.old "Rachael Gulliver" <rachaelgulliver@hotmail.com>
+alias rachael.gulliver "Rachael Gulliver" <rg232@cam.ac.uk>
+alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
+alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
+alias bear Bear <bear@thelonious.new.ox.ac.uk>
+alias bear.home Bear at home <mbolton@iol.ie>
+alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
+alias bears.aunt Bear at Hilary Stephen's <hilary@arc.net.au>
+alias stephen.walmsley "Stephen Walmsley" <stephen@thelonious.new.ox.ac.uk>
+alias tiss "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
+alias christie.bolton "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
+alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
+
+alias oli.dickson Oli Dickson <olimpia.dickson@tao.j-sainsbury.co.uk>
+alias peronel.smith "Peronel Smith" <peronel_smith@harcourtbrace.com>
+alias nick.collins Nick Collins <nickcollins@hotmail.com>
+alias andy.radford "Andy Radford" <ykn35@dial.pipex.com>
+alias vicky.hamilton Victoria Hamilton <victoria.hamilton@stagetech.com>
+alias dave.willetts "Dave Willetts" <davetm@thelonious.new.ox.ac.uk>
+alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+alias jock Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+alias weejock Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+alias chris.evans "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
+alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
+alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
+alias bruce.hickey "Bruce Hickey" <bruce@thelonious.new.ox.ac.uk>
+alias nicola.schreiber Nicola Schreiber <nicola.schreiber@new.ox.ac.uk>
+
+alias eric.metcalfe "Eric Metcalfe" <eric.metcalfe@new.oxford.ac.uk>
+alias peter.hunter Peter Hunter <peter.hunter@blackfriars.ox.ac.uk>
+alias mark.childs Mark Childs <mad@thelonious.new.ox.ac.uk>
+alias mike.mason Mike Mason <mgm@ox.compsoc.net>
+alias george.foot "George Foot" <george.foot@merton.ox.ac.uk>
+alias ben.thompson "Ben Thompson" <bt@thelonious.new.ox.ac.uk>
+alias jo.dillon "Joel Dillon" <jo.dillon@new.oxford.ac.uk>
+alias rich.graham "Rich Graham (MCR president)" <richard.graham@new.ox.ac.uk>
+alias ferdia.gallagher Ferdia Gallagher <ferdia.gallagher@new.oxford.ac.uk>
+
+
+alias nicks nick,nick.williams
+
+
+#
+# Friends from home
+#
+
+alias jon.greenwell Jonathan Greenwell <J.R.Greenwell@mds.qmw.ac.uk>
+alias dan.davies Daniel Davies <dddavies@students.jhubc.it>
+alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
+alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
+alias katie.green "Katie Green" <kg6441@bristol.ac.uk>
+alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
+alias matt.clay "Matthew Clay" <95127396@brookes.ac.uk>
+alias john.hargreaves John Hargreaves <JoGorHar@aol.com>
+alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
+alias green.family "Richard/Alex/Kathy Green" <richard.green7@virgin.net>
+alias alex.green "Alex Green" <richard.green7@virgin.net>
+alias richard.green "Richard Green, at school" <stlucias@aol.com>
+
+alias gilbert.roscoe "Gilbert Roscoe" <gilbert@sionix.demon.co.uk>
+alias stewart.dunn Stewart Dunn <info@sdunn.demon.co.uk>
+alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
+
+
+#
+# Other friends
+#
+
+alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
+alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
+alias rosie.biss "Ross Biss" <rosiebiss@yahoo.com>
+alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
+
+
+##############################################################################
+# Relatives
+##############################################################################
+
+alias daddy "Stuart Spiers" <stuart@spiers.net>
+alias thea "Thea Spiers" <stuart@spiers.net>
+alias daniel.spiers "Daniel Spier"s <d.spiers@sympatico.ca>
+alias peter "Peter O'Connor" <azrael14@juno.com>
+alias helen "Helen O'Connor" <oconh@mayo.edu>
+alias helen2 "Helen O'Connor" <helenoc@juno.com>
+alias michael "Michael O'Connor" <mkoconnor@mayo.edu>
+alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
+alias chloe "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
+alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
+alias ian "Ian Spiers" <ian@spiers.net>
+alias ian.old "Ian Spiers" <ian@spiers.newnet.co.uk>
+alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
+
+
+##############################################################################
+# RAM
+##############################################################################
+
+alias yan.fitterer "Yan Fitterer, RAM sysadmin" <y.fitterer@ram.ac.uk>
+alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
+alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
+alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
+
+
+##############################################################################
+# New College / IT work
+##############################################################################
+
+alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
+alias alex.fuller Alex Fuller <alex.fuller@afis.demon.co.uk>
+alias it-support-dist "IT Support Team, bypassing Req system" <it-support-dist@thelonious.new.ox.ac.uk>
+alias is "IT Support team, using Req system" <it-support@thelonious.new.ox.ac.uk>
+alias db "Caroline Thomas, New College Domestic Bursar" <caroline.thomas@new.ox.ac.uk>
+alias caroline.thomas "Caroline Thomas, New College Domestic Bursar" <caroline.thomas@new.ox.ac.uk>
+alias ncsec "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
+alias barbara.vardag "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
+alias alastair.white "Alastair White" <alastair.white@new.ox.ac.uk>
+alias sue.anderson "Sue Anderson, New College DB's secretary" <sue.anderson@new.ox.ac.uk>
+alias wylie.horn "Wylie Horn, College admin network sysadmin" <wylie.horn@oucs.ox.ac.uk>
+alias warden "Alan Ryan" <alan.ryan@new.ox.ac.uk>
+alias alan.ryan "Alan Ryan" <alan.ryan@new.ox.ac.uk>
+alias rinku "Rinku Chandra, MCR computer rep." <rinku.chandra@new.oxford.ac.uk>
+alias wilson "Wilson Sutherland" <wilson.sutherland@new.ox.ac.uk>
+alias geraint "Geraint Jones" <geraint.jones@comlab.ox.ac.uk>
+alias david.gavaghan "David Gavaghan" <gavaghan@vax.ox.ac.uk>
+alias wendy.coyne "Wendy Coyne, New College Graduates and Admissions Office" <wendy.coyne@new.ox.ac.uk>
+alias maggie "Maggie Davies, Fellows' Secretary" <maggie.davies@new.ox.ac.uk>
+alias sue.ashcroft-jones "Sue Ashcroft-Jones (Development Office)" <sue.ashcroft-jones@new.ox.ac.uk>
+alias accurate.solutions "Steve Harper, Accurate Solutions Ltd." <yl90@dial.pipex.com>
+alias admissions New College Admissions <admissions@new.ox.ac.uk>
+alias free-computers free-computers@thelonious.new.ox.ac.uk
+alias jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
+
+
+##############################################################################
+# Oxford University
+##############################################################################
+
+# Official
+
+alias advisory OUCS Advisory Service <advisory@computing-services.oxford.ac.uk>
+alias user.registration "User Registration, OUCS" <user.registration@computing-services.oxford.ac.uk>
+alias oxcert "OxCERT" <oxcert@ox.ac.uk>
+alias hostmaster "OUCS host administration" <hostmaster@ox.ac.uk>
+
+# Personal
+
+alias ruth.porter "Ruth Porter (OUCS contact for New College)" <ruth.porter@oucs.ox.ac.uk>
+alias malcolm.beattie "Malcolm Beattie" <mbeattie@sable.ox.ac.uk>
+alias jan.grothusen "Jan Grothusen" <jan@robots.ox.ac.uk>
+alias robin.watts "Robin Watts" <robin.watts@comlab.ox.ac.uk>
+alias pete.biggs Pete Biggs <pete@physchem.ox.ac.uk>
+alias geoff.lescott Geoff Lescott <geoff.lescott@computing-services.oxford.ac.uk>
+alias darren.nickerson "Darren Nickerson" <dnicker@ermine.ox.ac.uk>
+alias darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.uk>
+
+
+##############################################################################
+# Mailing lists
+##############################################################################
+
+alias linux-security "Linux Security mailing list" <linux-security@redhat.com>
+alias linux-kernel <linux-kernel@vger.rutgers.edu>
+alias zsh-users zsh users mailing list <zsh-users@sunsite.auc.dk>
+alias zsh-workers zsh workers mailing list <zsh-workers@sunsite.auc.dk>
+alias colleges-it Colleges IT Group mailing list <colleges-it-l@maillist.ox.ac.uk>
+alias coll-it-forum College IT Officers' Forum mailing list <coll-it-forum@maillist.ox.ac.uk>
+alias linux-smp Linux SMP mailing list <linux-smp@vger.rutgers.edu>
+alias reqng "reqNG developers mailing list" <reqng-developers@scuttlebutt.explore.com>
+alias wishlist "ReqNG wishlist" <wishlist@scuttlebutt.explore.com>
+alias bugtraq "Bugtraq, UNIX security mailing list" <bugtraq@securityfocus.com>
+alias rt "RT mailing list" <rt@auk.fsck.com>
+alias req "Req mailing list" <req@ccs.neu.edu>
+alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
+alias vortex-bug Linux Vortex bugs mailing list <linux-vortex-bug@beowulf.gsfc.nasa.gov>
+alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
+alias void "(void)" <void@slab.org>
+alias infobot Infobot mailing list <infobot-dev@cs.cmu.edu>
+alias it "College IT forum mailing list" <coll-it-forum@maillist.ox.ac.uk>
+alias apmd-list "apmd mailing list" <apmd-list@worldvisions.ca>
+alias laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
+alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
+alias alsa-devel "ALSA development mailing list" <alsa-devel@alsa-project.org>
+alias alsa-user "ALSA users mailing list" <alsa-user@alsa-project.org>
+
+
+##############################################################################
+# Software authors
+##############################################################################
+
+alias Lingua::EN::Squeeze Jari Aalto <jari.aalto@poboxes.com>
+alias netatalk netatalk <netatalk@umich.edu>
+alias david.hinds "David Hinds (PCMCIA author)" <dhinds@zen.stanford.edu>
+alias dcl "Daniel C. L'Hommedieu (reqNG developer)" <dcl@explore.com>
+alias zircon "Lindsay F. Marshall, author of Zircon" <zircon@catless.ncl.ac.uk>
+alias oznoid "Oznoid (Kevin Lenzo)" <lenzo@cs.cmu.edu>
+alias htmlpp "Nicolas Thiery, author of htmlpp" <Nicolas.Thiery@ens.fr>
+alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <andersl@csd.uu.se>
+alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
+
+
+##############################################################################
+# Computer work
+##############################################################################
+
+alias paul.rogers "Paul Rogers" <pr@mbn.co.uk>
+alias micromedia Micromedia <sales@micromedia.net>
+
+alias miguel "Miguel Ripoll" <miguel@itv.com>
+
+alias adam.bailey "Adam Bailey" <post@w3w.net>
+alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
+
+alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
+
+alias christof.damian "Christof Damian" <cdamian@guideguide.com>
+alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
+alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
+alias alex.mclean "Alex McLean" <amclean@guideguide.com>
+alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
+alias john.imrie John Imrie <jimrie@guideguide.com>
+alias dave.cross Dave Cross <dave@dave.org.uk>
+alias nathan.carr Nathan Carr <nathan@nowt.net>
+
+alias ggdev "guideguide development list" <ggdev@guideguide.com>
+alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
+
+
+##############################################################################
+# Linux on laptops / ThinkPad 390E dudes
+##############################################################################
+
+alias linux-thinkpad linux-thinkpad mailing list <linux-thinkpad@topica.com>
+
+alias linux-thinkpad-maintainer "Linux on ThinkPads web page maintainer" <linux-tp@e-oasis.com>
+alias kharker "Kenneth Harker, Linux on Laptops maintainer" <kharker@cs.utexas.edu>
+alias lilac "Werner Heuser, LiLAC website maintainer" <wehe@snafu.de>
+
+
+alias damon.anderson "Damon Anderson (ThinkPad 390E Linux user)" <damon@get.topica.com>
+alias eric.stephens "Eric A. Stephens" <estephen@appliedtheory.com>
+alias kees.cook "Kees Cook (ThinkPad 390E Linux user)" <cook@cpoint.net>
+alias allin.cottrell "Allin Cottrell (ThinkPad 390E Linux user)" <cottrell@ricardo.ecn.wfu.edu>
+alias stuart.guarnieri "Stuart Guarnieri (ThinkPad 390E Linux user)" <sguarnieri@infonow.com>
+alias hal.brooks "Hal N. Brooks (ThinkPad 390E Linux user)" <hal.brooks@mindspring.com>
+alias michael.carney "Michael W. Carney (ThinkPad 390E Linux user)" <michael.carney@east.sun.com>
+alias yaresham.saaya "Yaresham Saaya (ThinkPad 390E Linux user)" <yaresham@netscape.net>
+alias rainer.rudigier "Rainer Rudigier (ThinkPad 390E Linux user)" <rainer.rudigier@newlogic.at>
+alias daniel.canas "Daniel Canas (ThinkPad 390E Linux user)" <daniel@intnet.co.cr>
+alias mike.carney "Mike Carney  (ThinkPad 390E Linux user)" <mwc@spg-east-004.east.sun.com>
+
+
+##############################################################################
+# Miscellaneous
+##############################################################################
+
+alias kevin.spiers "Kevin L Spiers" <kevin@spiers.net>
+alias colin.wright "Colin Wright, juggler & mathematician" <cdw10@liv.ac.uk>
+alias pgp "PGP public key server (Oxford)" <pgp-public-keys@keys.uk.pgp.net>
+alias ahbou "alt.humor.best-of-usenet submissions" <ahbou-sub@acpub.duke.edu>
+
+source ~/.mutt/quake-aliases
+
+
+##############################################################################
+# Incoming (need to be classified)
+##############################################################################
+
+
+alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
+alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
+alias estates RAM Estates Office <estates@ram.ac.uk>
+alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
+alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>

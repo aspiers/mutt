@@ -1,0 +1,51 @@
+## =================
+## Color definitions
+## =================
+## Format:
+## color object      foreground   background
+
+color attachment green black
+color body magenta black [_a-z\.A-Z0-9-]+@[a-zA-Z0-9\./\-]+
+color body magenta black (http|ftp)://[_a-zA-Z0-9\./~\-]+
+color bold brightwhite black
+color error brightred black
+color header yellow black Subject:
+color header brightwhite black .
+color hdrdefault brightyellow blue
+color indicator brightwhite black
+color markers brightgreen black
+color message brightwhite black
+color quoted cyan black
+color normal white black
+color signature brightblack black
+color status brightyellow blue
+color tilde blue black
+color tree brightmagenta black
+color underline brightwhite black
+
+# Colour definitions when on a mono screen
+mono bold      bold
+mono underline underline
+mono indicator reverse
+
+# Colours for items in the reader
+#color header brightwhite cyan "^(From|Subject):"
+color header brightred   white "^X-Junked-Because:"
+mono  header bold       "^(From|Subject|X-Junked-Because):"
+
+# Highlights inside the body of a message.
+
+# URLs
+color body brightblue  black "(http|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+color body brightblue  black "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+mono  body bold              "(http|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+mono  body bold              "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+
+# email addresses
+color body brightblue  black "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+mono  body bold              "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+
+# Various smilies and the like
+color body brightgreen black "<[Gg]>"               # <g>
+color body brightgreen black "<[Bb][Gg]>"           # <bg>
+color body brightgreen black " [;:]-*[)>(<|]"       # :-) etc...

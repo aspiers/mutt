@@ -1,0 +1,70 @@
+##############################################################################
+# Friends / relatives
+##############################################################################
+
+fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
+fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
+fcc-save-hook nick@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/nick.williams
+fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/christopher.cladingboel
+fcc-save-hook chris.*@.*\.wadham\.ox(ford)?\.ac\.uk =Oxford/friends/christopher.cladingboel
+fcc-save-hook e-c-orch\.demon\.co\.uk =Oxford/friends/ivan
+fcc-save-hook rosiebiss =friends/NYO/rosie.biss
+fcc-save-hook d.*nicker.*@.*.ox(ford)?.ac.uk =security/darren.nickerson
+fcc-save-hook darren.*@.*roam\.tpc\.int =security/darren.nickerson
+fcc-save-hook ben@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
+fcc-save-hook north.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
+fcc-save-hook rg232@.*\.cam\.ac\.uk =friends/Oxford/rachael.gulliver
+fcc-save-hook v.*hamilt =Oxford/friends/victoria.hamilton
+fcc-save-hook helenoc@juno\.com =relatives/helenoc
+fcc-save-hook d.*spiers@.*\.ca =relatives/d.spiers
+
+
+##############################################################################
+# Computer work
+##############################################################################
+
+fcc-save-hook rian@w3w\.net =computer-work/rian.kruger
+fcc-save-hook .*@.*w3w\.net =computer-work/W3W
+fcc-save-hook powerhost\.co\.uk =computer-work/W3W
+
+fcc-save-hook ggdev@mediaconsult\.com =computer-work/ggdev
+fcc-save-hook christof@mediaconsult\.com =computer-work/christof.damian
+fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
+fcc-save-hook alex@mediaconsult\.com =computer-work/alex.mclean
+fcc-save-hook amclean@guideguide\.com =computer-work/alex.mclean
+fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
+
+
+##############################################################################
+# Computing
+##############################################################################
+
+fcc-save-hook perl5-porters.*perl.org =p5p
+
+fcc-save-hook '~t bugtraq.*@.*securityfocus\.com' =lists/bugtraq
+fcc-save-hook linux-security =lists/linux-security
+fcc-save-hook spaf.*@.*\.purdue\.edu =security/spaf
+
+fcc-save-hook bugzilla.*@redhat\.com =Linux/redhat-bugzilla
+
+fcc-save-hook alsa-devel.*@.*alsa-project\.org =lists/alsa-devel
+fcc-save-hook alsa-users.*@.*alsa-project\.org =lists/alsa-users
+
+fcc-save-hook 'zsh-announce@(math\.gatech\.edu|sunsite\.auc\.dk)' =lists/zsh-announce
+fcc-save-hook 'zsh-users@(math\.gatech\.edu|sunsite\.auc\.dk)' =lists/zsh-users
+fcc-save-hook 'zsh-workers@(math\.gatech\.edu|sunsite\.auc\.dk)' =lists/zsh-workers
+fcc-save-hook '~t zsh-announce' =lists/zsh-announce
+fcc-save-hook '~t zsh-users' =lists/zsh-users
+fcc-save-hook '~t zsh-workers' =lists/zsh-workers
+
+fcc-save-hook '~t london-list@happyfunball\.pm\.org' =lists/london-list
+fcc-save-hook '~t void@slab\.org' =lists/void
+
+fcc-save-hook linux-thinkpad =lists/linux-thinkpad
+fcc-save-hook '~t linux-thinkpad' =lists/linux-thinkpad
+
+
+##############################################################################
+# Unclassified
+##############################################################################
+

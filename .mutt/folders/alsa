@@ -1,0 +1,4 @@
+score '~s "solo.?1"' +30
+score '~s "1938"' +30
+
+source ~/.mutt/scoring

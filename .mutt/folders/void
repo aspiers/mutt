@@ -1,0 +1,9 @@
+score '~s "mp3"' +10
+score '~s "zen"' +30
+score '~f alex@slab\.org' +10
+score '~f mcfarland' +10
+score '~f merlyn' +20
+
+source ~/.mutt/scoring
+
+push Y
