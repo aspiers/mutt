@@ -27,8 +27,7 @@
    # neither to or from you (e.g. list mail), but without adding too
    # loose a pattern so as to screw up friend's group mails.  The 3rd
    # clause is for list mail which doesn't have me in From: or To:.
-   # The 4th clause is for list mail which is To: me, but Cc: the list.
-   set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~C %s) | (~p ~c %s)"
+   set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~C %s)"
 
    # If I can't get the list stuff right, it's probably
    # worth adopting the
@@ -92,7 +91,7 @@ unignore organization organisation
 unignore x-mailer x-newsreader
 #unignore x-mailing-list
 unignore posted-to
-unignore x-parp-accepted x-parp-rejected
+unignore x-parp-accepted x-parp-rejected x-parp-received-parse
 unignore x-filter-accepted x-filter-rejected
 unignore x-cron-env x-seq x-hn-forum
 
