@@ -112,7 +112,7 @@ fcc-save-hook ben\.teasdale@ntlworld\.com =friends/Oxford/ben.teasdale
 fcc-save-hook strangetimes@hotmail\.com =friends/Oxford/ben.teasdale
 fcc-save-hook bearbolton@hotmail\.com =friends/Oxford/bear.bolton
 fcc-save-hook bolton@susq\.com =friends/Oxford/bear.bolton
-fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
+fcc-save-hook bolton@sig\.com =friends/Oxford/bear.bolton
 fcc-save-hook oli.*dickson =friends/Oxford/olimpia.dickson
 fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
 fcc-save-hook sherrat =friends/Oxford/joanna.sherratt
@@ -156,8 +156,8 @@ alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
 alias ben.teasdale.bbc "Ben Teasdale" <ben.teasdale@bbc.co.uk>
 alias ben.teasdale "Ben Teasdale" <ben.teasdale@ntlworld.com>
 alias ben.north.thelonious "Ben North" <ben@thelonious.new.ox.ac.uk>
-alias ben.north "Ben North" <Ben_North@eur.3com.com>
-alias ben ben.north
+alias ben.north.3com "Ben North" <Ben_North@eur.3com.com>
+alias ben ben.north.thelonious
 alias nick.williams "Nick Williams" <nick@thelonious.new.ox.ac.uk>
 alias nick.williams2 "Nick Williams" <nickhw@btinternet.com>
 alias dave.lindgren "David Lindgren" <dave@thelonious.new.ox.ac.uk>
@@ -250,6 +250,9 @@ alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
 alias yan.fitterer "Yan Fitterer" <y.fitterer@ram.ac.uk>
 alias yan.fitterer.u-net Yan Fitterer <y.fitterer@ithut.u-net.com>
 alias yan yan.fitterer
+fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
+fcc-save-hook yanfitterer@yahoo\.co\.uk =friends/RAM/yan.fitterer
+
 alias nick.byrne Nick Byrne <kaptainbirdeye@hotmail.com>
 alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
 alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
@@ -474,7 +477,7 @@ alias sven.hessler "Sven Hessler" <shessler@guideguide.com>
 fcc-save-hook shessler@guideguide.com =computer-work/sven.hessler
 
 alias ben.simpson "Ben Simpson" <bsimpson@guideguide.com>
-fcc-save-hook bsimpson@guideguide.com =computer-work/ben.simpson
+fcc-save-hook (bsimpson|ben)@guideguide.com =computer-work/ben.simpson
 
 alias jasper.mccrea "Jasper McCrea" <jmccrea@guideguide.com>
 fcc-save-hook jmccrea@guideguide.com =computer-work/jasper.mccrea
@@ -689,10 +692,13 @@ alias fetchmail-friends "fetchmail-friends mailing list" <fetchmail-friends@list
 # }}}
 # {{{ galeon
 
-subscribe galeon-devel
+subscribe galeon-user galeon-devel
+#mailboxes /home/adam/mail/inboxes/galeon-user
 #mailboxes /home/adam/mail/inboxes/galeon-devel
+fcc-save-hook galeon-user.*lists\.sourceforge\.net =lists/galeon-user
 fcc-save-hook galeon-devel.*lists\.sourceforge\.net =lists/galeon-devel
-alias galeon "galeon mailing list" <galeon-devel@lists.sourceforge.net>
+alias galeon-user  "galeon user list"  <galeon-user@lists.sourceforge.net>
+alias galeon-devel "galeon devel list" <galeon-devel@lists.sourceforge.net>
 
 # }}}
 # {{{ gimp-perl
@@ -838,7 +844,7 @@ alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
 
 subscribe perlunit-users perlunit-devel
 #mailboxes /home/adam/mail/inboxes/perlunit-users
-mailboxes /home/adam/mail/inboxes/perlunit-devel
+#mailboxes /home/adam/mail/inboxes/perlunit-devel
 alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
 alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
 fcc-save-hook perlunit-devel =lists/perlunit-devel
