@@ -54,7 +54,7 @@
    macro index "\eh"  "/~h "
    macro index "\ej"  "<save-message>=junk-mail.bz2<enter>"  "save as junk mail"
    macro index "\er"  ";|formail -s parp -rwv\n;\eR;\ej"   "parp: flag spam classification as incorrect, mark for refiltering"
-   macro index "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
+   macro index "\eR"  "<copy-message>=inboxes/retry.bz2<enter>"  "mark for refiltering"
 
 # }}}
 
@@ -133,7 +133,7 @@
    macro pager "\er"  "|parp -rwv\n"   "parp: flag spam classification as incorrect"
 
    macro pager "\ej"  "<save-message>=junk-mail.bz2<enter>"  "save as junk mail"
-   macro pager "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
+   macro pager "\eR"  "<copy-message>=inboxes/retry.bz2<enter>"  "mark for refiltering"
 
 # }}}
 
