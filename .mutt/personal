@@ -230,11 +230,12 @@ fcc-save-hook bear@corelli\.new\.ox\.ac\.uk =friends/Oxford/bear.bolton
 fcc-save-hook bolton@susq\.com =friends/Oxford/bear.bolton
 fcc-save-hook bolton@sig\.com =friends/Oxford/bear.bolton
 fcc-save-hook mbolton@iol.ie =friends/Oxford/bear.bolton
-alias bear.bolton Bear <bear@corelli.new.ox.ac.uk>
-alias bear.bolton.hotmail Bear <bearbolton@hotmail.com>
-alias bear.bolton.home Bear at home <mbolton@iol.ie>
-alias bear.bolton.work Bear Bolton <bolton@susq.com>
-alias bear bear.bolton.work
+alias bear.home Bear North <bear@redfrontdoor.org>
+alias bear.corelli Bear <bear@corelli.new.ox.ac.uk>
+alias bear.hotmail Bear <bearbolton@hotmail.com>
+alias bear.home Bear at home <mbolton@iol.ie>
+alias bear.work Bear North <bolton@susq.com>
+alias bear bear.home
 
 alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
 alias bears.aunt "Bear at Hilary Stephen's" <hilary@arc.net.au>
@@ -650,6 +651,13 @@ subscribe fwp
 mailboxes =inboxes/fwp
 send-hook "fwp" 'my_hdr From: "Adam Spiers" <fwp@adamspiers.org>'
 send-hook "fwp" 'my_hdr Reply-To: "Adam Spiers" <fwp@adamspiers.org>'
+
+alias perl-golf "Perl golf" <golf@perl.org>
+fcc-save-hook "golf.*perl.org" =lists/perl-golf
+subscribe perl-golf
+#mailboxes =inboxes/perl-golf
+send-hook "golf.*perl.org" 'my_hdr From: "Adam Spiers" <perl-golf@adamspiers.org>'
+send-hook "golf.*perl.org" 'my_hdr Reply-To: "Adam Spiers" <perl-golf@adamspiers.org>'
 
 # }}}
 # {{{ News
