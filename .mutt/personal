@@ -28,6 +28,7 @@ mailboxes /home/adam/mail/inboxes/gg-work
 mailboxes /home/adam/mail/inboxes/gg-cvs-notify
 mailboxes /home/adam/mail/inboxes/gg-bugzilla
 mailboxes /home/adam/mail/inboxes/gg-watches
+#mailboxes /home/adam/mail/inboxes/gg-faqomatic
 
 ## System (software) lists
 subscribe apmd-list
