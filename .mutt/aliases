@@ -310,6 +310,7 @@ alias John Hargreaves John Hargreaves <musicmaestros@netscapeonline.co.uk>
 # {{{ New College / IT work
 
 alias james.dore \"James Dore, New College sysadmin\" <james.dore@new.ox.ac.uk>
+alias chris.tromans Chris Tromans <ctromans@thelonious.new.ox.ac.uk>
 alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
 alias alex.fuller Alex Fuller <alex.fuller@afis.demon.co.uk>
 alias it-support-dist "IT Support Team, bypassing Req system" <it-support-dist@thelonious.new.ox.ac.uk>
@@ -364,60 +365,64 @@ alias OLD-robin.stevens.astro Robin Stevens <rejs@astro.ox.ac.uk>
 # }}}
 # {{{ Mailing lists
 
-alias linux-security "Linux Security mailing list" <linux-security@redhat.com>
-alias linux-kernel <linux-kernel@vger.rutgers.edu>
-alias zsh-users zsh users mailing list <zsh-users@sunsite.auc.dk>
-alias zsh-workers zsh workers mailing list <zsh-workers@sunsite.auc.dk>
-alias colleges-it Colleges IT Group mailing list <colleges-it-l@maillist.ox.ac.uk>
-alias coll-it-forum College IT Officers' Forum mailing list <coll-it-forum@maillist.ox.ac.uk>
-alias linux-smp Linux SMP mailing list <linux-smp@vger.rutgers.edu>
-alias reqng "reqNG developers mailing list" <reqng-developers@scuttlebutt.explore.com>
-alias wishlist "ReqNG wishlist" <wishlist@scuttlebutt.explore.com>
-alias bugtraq "Bugtraq, UNIX security mailing list" <bugtraq@securityfocus.com>
-alias rt "RT mailing list" <rt@auk.fsck.com>
-alias req "Req mailing list" <req@ccs.neu.edu>
-alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
-alias vortex-bug Linux Vortex bugs mailing list <linux-vortex-bug@beowulf.gsfc.nasa.gov>
-alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
-alias void "(void)" <void@slab.org>
-alias infobot Infobot mailing list <infobot-dev@cs.cmu.edu>
-alias it "College IT forum mailing list" <coll-it-forum@maillist.ox.ac.uk>
-alias apmd-list "apmd mailing list" <apmd-list@worldvisions.ca>
-alias laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
-alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
 alias alsa-devel "ALSA development mailing list" <alsa-devel@alsa-project.org>
 alias alsa-user "ALSA users mailing list" <alsa-user@alsa-project.org>
-alias bashprompt bashprompt mailing list <bash@current.nu>
+alias apmd-list "apmd mailing list" <apmd-list@worldvisions.ca>
+alias bashprompt "bashprompt mailing list" <bash@current.nu>
+alias bugtraq "Bugtraq, UNIX security mailing list" <bugtraq@securityfocus.com>
+alias coll-it-forum "College IT Officers' Forum mailing list" <coll-it-forum@maillist.ox.ac.uk>
+alias colleges-it "Colleges IT Group mailing list" <colleges-it-l@maillist.ox.ac.uk>
+alias diald "linux-diald mailing list" <linux-diald@vger.rutgers.edu>
+alias galeon "galeon mailing list" <galeon-devel@lists.sourceforge.net>
+alias gimp-perl "gimp-perl mailing list" <gimp-perl@lists.netcentral.net>
+alias gnokii "gnokii mailing list" <gnokii@net.lut.ac.uk>
+alias gnome-pilot "gnome-pilot mailing list" <gnome-pilot-list@gnome.org>
+alias infobot "Infobot mailing list" <infobot-dev@cs.cmu.edu>
+alias it "College IT forum mailing list" <coll-it-forum@maillist.ox.ac.uk>
+alias laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
+alias linux-kernel <linux-kernel@vger.rutgers.edu>
+alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
+alias linux-security "Linux Security mailing list" <linux-security@redhat.com>
+alias linux-smp "Linux SMP mailing list" <linux-smp@vger.rutgers.edu>
+alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
+alias modperl "mod_perl mailing list" <modperl@apache.org>
 alias modules "modules@perl.org" <modules@perl.org>
+alias netatalk "netatalk mailing list" <netatalk@umich.edu>
+alias ntk "NTK" <tips@spesh.com>
+alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
+alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
+alias plucker-dev "Plucker development" <plucker-dev@rubberchicken.org>
+alias req "Req mailing list" <req@ccs.neu.edu>
+alias reqng "reqNG developers mailing list" <reqng-developers@scuttlebutt.explore.com>
+alias rt "RT mailing list" <rt@auk.fsck.com>
 alias sawfish "sawfish mailing list" <sawmill@aarg.net>
 alias sawmill sawfish
-alias modperl mod_perl mailing list <modperl@apache.org>
-alias gimp-perl gimp-perl mailing list <gimp-perl@lists.netcentral.net>
-alias galeon galeon mailing list <galeon-devel@lists.sourceforge.net>
-alias gnome-pilot gnome-pilot mailing list <gnome-pilot-list@gnome.org>
-alias ntk NTK <tips@spesh.com>
+alias sitescooper-talk sitescooper-talk@lists.sourceforge.net
+alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
+alias void "(void)" <void@slab.org>
+alias vortex-bug "Linux Vortex bugs mailing list" <linux-vortex-bug@beowulf.gsfc.nasa.gov>
+alias wishlist "ReqNG wishlist" <wishlist@scuttlebutt.explore.com>
+alias zsh-users "zsh users mailing list" <zsh-users@sunsite.auc.dk>
+alias zsh-workers "zsh workers mailing list" <zsh-workers@sunsite.auc.dk>
 
 # }}}
 # {{{ Software & developers
 
-alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
+# lists
 alias buggies "landfill bugzilla testing" <buggies@landfill.tequilarista.org>
+
+alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
 alias chris.kemp "Christopher Kemp" <ck231@cam.ac.uk>
 alias david.hinds "David Hinds (PCMCIA author)" <dhinds@zen.stanford.edu>
 alias dcl "Daniel C. L'Hommedieu (reqNG developer)" <dcl@explore.com>
-alias diald "linux-diald mailing list" <linux-diald@vger.rutgers.edu>
 alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <andersl@csd.uu.se>
-alias gnokii "gnokii mailing list" <gnokii@net.lut.ac.uk>
 alias htmlpp "Nicolas Thiery, author of htmlpp" <Nicolas.Thiery@ens.fr>
 alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
 alias junkbuster.blocklist "Stefan Waldherr" <stefan@waldherr.org>
 alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
 alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
-alias netatalk "netatalk mailing list" <netatalk@umich.edu>
 alias oznoid "Oznoid (Kevin Lenzo)" <lenzo@cs.cmu.edu>
-alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
-alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
-alias plucker-dev "Plucker development" <plucker-dev@rubberchicken.org>
+alias piers.cawley Piers Cawley <pdcawley@bofh.org.uk>
 alias pws "Peter Stephenson" <pws@ibmth.df.unipi.it>
 alias sven.wischnowsky "Sven Wischnowsky" <wischnow@informatik.hu-berlin.de>
 alias tanaka.akira "Tanaka Akira" <akr@jaist.ac.jp>
@@ -477,5 +482,3 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # Incoming (need to be classified)
 ##############################################################################
 
-alias sitescooper-talk sitescooper-talk@lists.sourceforge.net
-alias piers.cawley Piers Cawley <pdcawley@bofh.org.uk>
