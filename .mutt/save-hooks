@@ -20,6 +20,8 @@ fcc-save-hook supple@iol\.ie =relatives/siobhan.supple
 
 fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
 fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
+fcc-save-hook ben\.teasdale@ntlworld\.com =friends/Oxford/ben.teasdale
+fcc-save-hook bearbolton@hotmail\.com =friends/Oxford/bear.bolton
 fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
 fcc-save-hook oli.*dickson =friends/Oxford/olimpia.dickson
 fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
@@ -29,6 +31,7 @@ fcc-save-hook dave@thelonious\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
 fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
 fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
 fcc-save-hook nick@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/nick.williams
+fcc-save-hook nickhw@btinternet\.com =Oxford/friends/nick.williams
 fcc-save-hook e-c-orch\.demon\.co\.uk =Oxford/friends/ivan.rockey
 fcc-save-hook rosiebiss =friends/NYO/rosie.biss
 fcc-save-hook d.*nicker.*@.*.ox(ford)?.ac.uk =security/darren.nickerson

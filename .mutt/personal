@@ -92,7 +92,7 @@ mailboxes /home/adam/mail/inboxes/gimp-perl
 #mailboxes /home/adam/mail/inboxes/galeon-devel
 mailboxes /home/adam/mail/inboxes/buggies
 mailboxes /home/adam/mail/inboxes/gnome-pilot-list
-mailboxes /home/adam/mail/inboxes/plucker-dev
+#mailboxes /home/adam/mail/inboxes/plucker-dev
 
 # }}}
 # {{{ Chatter
@@ -123,7 +123,7 @@ mailboxes /home/adam/mail/inboxes/sourceforge
 mailboxes /home/adam/mail/inboxes/jobserve-filtered
 mailboxes /home/adam/mail/inboxes/interjazz
 mailboxes /home/adam/mail/inboxes/jobserve
-mailboxes /home/adam/mail/inboxes/hacking
+#mailboxes /home/adam/mail/inboxes/hacking
 #mailboxes /home/adam/mail/inboxes/family-tree
 mailboxes /home/adam/mail/inboxes/chat
 mailboxes /home/adam/mail/inboxes/friends

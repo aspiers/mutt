@@ -68,10 +68,12 @@ alias tcc tim.corbett-clark
 alias nick.mcgrogan "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
 alias nick nick.mcgrogan
 alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
-alias ben.teasdale "Ben Teasdale" <ben.teasdale@bbc.co.uk>
+alias ben.teasdale.bbc "Ben Teasdale" <ben.teasdale@bbc.co.uk>
+alias ben.teasdale "Ben Teasdale" <ben.teasdale@ntlworld.com>
 alias ben.north "Ben North" <ben@thelonious.new.ox.ac.uk>
 alias ben ben.north
 alias nick.williams "Nick Williams" <nick@thelonious.new.ox.ac.uk>
+alias nick.williams2 "Nick Williams" <nickhw@btinternet.com>
 alias dave.lindgren "David Lindgren" <dave@thelonious.new.ox.ac.uk>
 alias dave dave.lindgren
 alias chris.cladingboel "Chris Cladingboel" <christopher.cladingboel@wadham.ox.ac.uk>
@@ -199,12 +201,18 @@ alias add2 tiss, kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.ra
 
 # }}}
 
-# {{{ RAM official
+# {{{ RAM staff
+
+# admin
 
 alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
 alias estates RAM Estates Office <estates@ram.ac.uk>
 alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
+
+# teachers
+
 alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
+alias colin.carr Colin Carr <ccarr@atlas.co.uk>
 
 # }}}
 # {{{ Computer work
@@ -227,7 +235,8 @@ alias alex.mclean.lurk Alex McLean <alex@lurk.org>
 alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
 alias andym andy.mcfarland
 
-alias rob.partington Rob Partington <rob@guideguide.com>
+#alias rob.partington Rob Partington <rob@guideguide.com>
+alias rob.partington Rob Partington <rjp@plig.net>
 alias basho rob.partington
 
 alias mark.hulme-jones Mark Hulme-Jones <mjones@guideguide.com>
@@ -280,6 +289,8 @@ alias adam.bailey "Adam Bailey" <post@w3w.net>
 alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
 
 alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
+
+alias gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
 
 # }}}
 
@@ -342,6 +353,7 @@ alias darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.
 alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
 alias simon.cozens Simon Cozens <simon@brecon.co.uk>
 alias gervase.markham Gervase Markham <gerv@gerv.net>
+alias OLD-robin.stevens.astro Robin Stevens <rejs@astro.ox.ac.uk>
 
 # }}}
 
@@ -379,6 +391,7 @@ alias modperl mod_perl mailing list <modperl@apache.org>
 alias gimp-perl gimp-perl mailing list <gimp-perl@lists.netcentral.net>
 alias galeon galeon mailing list <galeon-devel@lists.sourceforge.net>
 alias gnome-pilot gnome-pilot mailing list <gnome-pilot-list@gnome.org>
+alias ntk NTK <tips@spesh.com>
 
 # }}}
 # {{{ Software & developers
@@ -456,4 +469,3 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # Incoming (need to be classified)
 ##############################################################################
 
-alias ntk NTK <tips@spesh.com>
