@@ -7,7 +7,7 @@
 
    set   abort_nosubject=no
    set   abort_unmodified=ask-yes
-   set   alias_file=~/.mutt/aliases
+   set   alias_file=~/.mutt/personal
    set   attribution="%n (%a) wrote:"
    set noconfirmappend
    set   confirmcreate
@@ -88,7 +88,6 @@ append-hook \\.gz$ "gzip -c %t >> %f"
 
 source ~/.mutt/personal
 source ~/.mutt/mutt-aliases
-source ~/.mutt/aliases
 source ~/.mutt/bindings
 source ~/.mutt/colours
 source ~/.mutt/format-strings
