@@ -92,7 +92,7 @@ mailboxes /home/adam/mail/inboxes/mutt-dev
 #mailboxes /home/adam/mail/inboxes/sawfish
 mailboxes /home/adam/mail/inboxes/p5p
 mailboxes /home/adam/mail/inboxes/gimp-perl
-#mailboxes /home/adam/mail/inboxes/galeon-devel
+mailboxes /home/adam/mail/inboxes/galeon-devel
 
 ## Chatter
 lists oxford-pm london_pm london-list void 
