@@ -63,7 +63,7 @@ alias giles.harrison Giles Harrison <giles.harrison@bbc.co.uk>
 alias stacey.work Stacey Steele <Stacey.Steele@bowne.com>
 alias stacey.hotmail Stacey Steele <goldfish_74@hotmail.com>
 alias stacey stacey.hotmail
-alias tim.corbett-clark "Tim Corbett-Clark" <tcc@robots.ox.ac.uk>
+alias tim.corbett-clark Timothy Corbett-Clark <tcorbettclark@thirdphase.com>
 alias nick.mcgrogan "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
 alias nick nick.mcgrogan
 alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
@@ -262,6 +262,7 @@ alias youssou alix.poscharsky
 
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
+alias codereview guideguide codereview list <codereview@guideguide.com>
 alias translations "ggdev translations" <translations@guideguide.com>
 
 alias paul.rogers "Paul Rogers" <pr@mbn.co.uk>
