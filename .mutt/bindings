@@ -45,7 +45,7 @@
    bind index y           collapse-thread
    bind index Y           collapse-all
 
-   macro index  i  "\$c=inboxes/\t\tj"
+   macro index  i  "\$c=inboxes/\t\t\tj"
    macro index  I  "c!\n"
 
    macro index  B  "|urlview\n"
