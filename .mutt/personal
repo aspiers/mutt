@@ -319,7 +319,8 @@ alias chris.evans "Chris Evans" <chris@scary.beasts.org>
 alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
 
 alias harry.yeates Harry Yeates <Harry.Yeates@rbi.co.uk>
-alias barny.hollington Barny Hollington <b_hollington@hotmail.com>
+alias barny.hollington.filtered Barny Hollington <b_hollington@hotmail.com>
+alias barny.hollington Barny Hollington <brnhllngtn@aol.com>
 
 alias becky.leyton Becky Leyton <beckyleyton@aol.com>
 alias bokc.leyton becky.leyton
@@ -592,6 +593,7 @@ alias jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
 
 # {{{ Acquaintances
 
+alias roger.proctor Roger Proctor <cubemusic@yahoo.com>
 alias ruth.porter "Ruth Porter (OUCS contact for New College)" <ruth.porter@oucs.ox.ac.uk>
 alias malcolm.beattie "Malcolm Beattie" <mbeattie@clueful.co.uk>
 alias jan.grothusen "Jan Grothusen" <jan@robots.ox.ac.uk>
@@ -662,6 +664,7 @@ fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
 alias kordian.witek.work Kordian Witek <kwitek@lehman.com>
 alias kordian.witek Kordian Witek <kordy@kordian.com>
 alias duncan.young.home Duncan Young <duncan@duncanyoung.com>
+alias alan.champion Alan Champion <achampio@lehman.com>
 
 alias dan.beimborn Dan Beimborn <dan@beimborn.com>
 alias dan.beimborn.lehman2 Dan Beimborn <dan.beimborn@lehman.com>
@@ -683,6 +686,7 @@ alias ken.robson Ken Robson <ken@robson.net>
 # }}}
 # {{{ Orange Genie
 
+alias payroll Orange Genie Payroll <payroll@orangegenie.com>
 alias tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
 
 # }}}
@@ -783,6 +787,7 @@ fcc-save-hook ben@hy-street\.net =computer-work/ben.simpson
 
 alias jasper.mccrea "Jasper McCrea" <j@mccrea.demon.co.uk>
 fcc-save-hook mccrea =computer-work/jasper.mccrea
+fcc-save-hook jasper.*spamjab\.com =computer-work/jasper.mccrea
 
 alias anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 
@@ -1021,6 +1026,24 @@ alias william.stearns "William Stearns" <wstearns@pobox.com>
 alias buildkernel william.stearns
 alias bill.stearns william.stearns
 fcc-save-hook wstearns@pobox\.com =software/buildkernel
+
+# }}}
+# {{{ CRM114
+
+alias crm114-general "CRM114 general discussion" <crm114-general@lists.sourceforge.net>
+fcc-save-hook "crm114-general.*lists.sourceforge.net" =lists/crm114-general
+subscribe crm114-general@lists.sourceforge.net
+#mailboxes =inboxes/crm114-general
+send-hook "crm114-general.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <crm114-general@adamspiers.org>'
+send-hook "crm114-general.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <crm114-general@adamspiers.org>'
+folder-hook =(inboxes|lists)/crm114-general source ~/.mutt/mailing-list
+alias crm114-announce "CRM114 announcements" <crm114-announce@lists.sourceforge.net>
+fcc-save-hook "crm114-announce.*lists.sourceforge.net" =lists/crm114-announce
+subscribe crm114-announce@lists.sourceforge.net
+#mailboxes =inboxes/crm114-announce
+send-hook "crm114-announce.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <crm114-announce@adamspiers.org>'
+send-hook "crm114-announce.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <crm114-announce@adamspiers.org>'
+folder-hook =(inboxes|lists)/crm114-announce source ~/.mutt/mailing-list
 
 # }}}
 # {{{ diald
