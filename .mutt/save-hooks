@@ -107,6 +107,7 @@ fcc-save-hook zsh-announce@(math\.gatech\.edu|sunsite\.auc\.dk) =lists/zsh-annou
 fcc-save-hook zsh-users@(math\.gatech\.edu|sunsite\.auc\.dk) =lists/zsh-users
 fcc-save-hook zsh-workers@(math\.gatech\.edu|sunsite\.auc\.dk) =lists/zsh-workers
 fcc-save-hook bash@current\.nu =lists/bashprompt
+fcc-save-hook schaefer.*brasslantern\.com =lists/zsh-workers
 
 fcc-save-hook infobot =lists/infobot
 fcc-save-hook apmd =lists/apmd-list
