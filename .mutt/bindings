@@ -57,6 +57,7 @@
    macro index X  "Dall\n" "mark all messages as deleted"
 
    macro index "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
+#   macro index "\er"  "|parp -wvf -\n"   "parp: flag spam classification as incorrect"
    macro index "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
 
 ## ===========================
@@ -121,6 +122,7 @@
    macro pager "\e9" ":set pager_index_lines=10\n"
 
    macro pager "\ef"  "|parp -ev\n"   "parp: extract friends"
+   macro pager "\ei"  "|parp-inject ~/mail/spool\n"   "parp: extract friends"
    macro pager "\et"  "|parp -rtv\n"  "parp: dummy run"
 #  macro pager "\eT"  "|parp-new -rtv\n"  "parp: dummy run, new code"
    macro pager "\er"  "|parp -wv\n"   "parp: flag spam classification as incorrect"

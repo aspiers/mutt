@@ -478,7 +478,10 @@ alias kirsten.salter Kirsten Salter <Kirsten.Salter@emic.co.uk>
 alias John Hargreaves John Hargreaves <musicmaestros@netscapeonline.co.uk>
 
 alias adrian.warrick Adrian Warrick <awarrick@argonet.co.uk>
-fcc-save-hook awarrick.*argonet\.co\.uk =music/adrian.warrick
+fcc-save-hook awarrick.*argonet\.co\.uk =friends/musicians/adrian.warrick
+
+alias gareth.jones Gareth Jones <jones@garethd.freeserve.co.uk>
+fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
 
 # }}}
 
@@ -518,8 +521,9 @@ fcc-save-hook ture@ture\.org =computer-work/mark.hulme-jones
 
 alias rob.partington Rob Partington <rjp@plig.net>
 alias basho rob.partington
-fcc-save-hook rjp@.*plig\.net =computer-work/rob.partington
-fcc-save-hook rjp@browser\.org =computer-work/rob.partington
+fcc-save-hook rjp@.*plig\.net =hosting/plig.net
+fcc-save-hook rjp@browser\.org =hosting/plig.net
+#=computer-work/rob.partington
 
 alias nathan.carr Nathan Carr <nathan@nowt.net>
 alias ncarr nathan.carr
