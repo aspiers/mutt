@@ -495,7 +495,7 @@ mailboxes /home/adam/mail/inboxes/ggnews
 mailboxes /home/adam/mail/inboxes/gg-uk
 mailboxes /home/adam/mail/inboxes/gg-email
 mailboxes /home/adam/mail/inboxes/gg-work
-mailboxes /home/adam/mail/inboxes/gg-cvs-notify
+#mailboxes /home/adam/mail/inboxes/gg-cvs-notify
 mailboxes /home/adam/mail/inboxes/gg-bugzilla
 mailboxes /home/adam/mail/inboxes/gg-watches
 #mailboxes /home/adam/mail/inboxes/gg-faqomatic
