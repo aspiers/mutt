@@ -179,7 +179,7 @@ alias sarah.metcalf "Sarah Metcalf" <s-metcalf@dfid.gtnet.gov.uk>
 alias ian.macmullen "Ian MacMullen" <ian_macmullen@hotmail.com>
 alias tim.lucas "Tim Lucas" <timothy.lucas@new.ox.ac.uk>
 #alias graeme.wearden Graeme Wearden <graeme@thelonious.new.ox.ac.uk>
-alias graeme.wearden Graeme Wearden <graeme_wearden@ziffdavis.com>
+alias graeme.wearden Graeme Wearden <Graeme_Wearden@zdnet.com>
 alias rachael.gulliver.old "Rachael Gulliver" <rachaelgulliver@hotmail.com>
 alias rachael.gulliver "Rachael Gulliver" <rg232@cam.ac.uk>
 alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
@@ -724,6 +724,14 @@ alias galeon-user  "galeon user list"  <galeon-user@lists.sourceforge.net>
 alias galeon-devel "galeon devel list" <galeon-devel@lists.sourceforge.net>
 
 # }}}
+# {{{ gconf
+
+subscribe gconf-list
+#mailboxes /home/adam/mail/inboxes/gconf-list
+fcc-save-hook gconf-list.*gnome\.org =lists/gconf-list
+alias gconf-list  "galeon user list"  <gconf-list@gnome.org>
+
+# }}}
 # {{{ gimp-perl
 
 subscribe gimp-perl
@@ -1013,3 +1021,4 @@ my_hdr From: "Adam Spiers" <adam@spiers.net>
 # Unclassified
 #
 
+alias jessica.ong Jessica Ong <jessica.ong@freshfields.com>
