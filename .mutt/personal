@@ -16,20 +16,20 @@ set alternates="(adam(\.spiers)?|(local)?adams|newc0115|m93asp|a\.?spiers).*@(((
 # {{{ Main mailboxes
 
 mailboxes !
-#mailboxes /home/adam/mail/inboxes/junk-mail
-mailboxes /home/adam/mail/inboxes/test
+#mailboxes =inboxes/junk-mail
+mailboxes =inboxes/test
 
 # }}}
 # {{{ Miscellaneous
 
-#mailboxes /home/adam/mail/inboxes/mobile
-mailboxes /home/adam/mail/inboxes/jobserve-filtered
-mailboxes /home/adam/mail/inboxes/interjazz
-mailboxes /home/adam/mail/inboxes/jobserve
-#mailboxes /home/adam/mail/inboxes/hacking
-#mailboxes /home/adam/mail/inboxes/family-tree
-mailboxes /home/adam/mail/inboxes/chat
-mailboxes /home/adam/mail/inboxes/friends
+#mailboxes =inboxes/mobile
+mailboxes =inboxes/jobserve-filtered
+mailboxes =inboxes/interjazz
+mailboxes =inboxes/jobserve
+#mailboxes =inboxes/hacking
+#mailboxes =inboxes/family-tree
+mailboxes =inboxes/chat
+mailboxes =inboxes/friends
 
 # }}}
 
@@ -577,16 +577,16 @@ fcc-save-hook rgockel@guideguide.com =computer-work/roland.gockel
 # {{{ other
 
 subscribe ggdev ggnews gg-uk codereview
-mailboxes /home/adam/mail/inboxes/ggdev
-mailboxes /home/adam/mail/inboxes/codereview
-mailboxes /home/adam/mail/inboxes/ggnews
-mailboxes /home/adam/mail/inboxes/gg-uk
-mailboxes /home/adam/mail/inboxes/gg-email
-mailboxes /home/adam/mail/inboxes/gg-work
-#mailboxes /home/adam/mail/inboxes/gg-cvs-notify
-mailboxes /home/adam/mail/inboxes/gg-bugzilla
-mailboxes /home/adam/mail/inboxes/gg-watches
-#mailboxes /home/adam/mail/inboxes/gg-faqomatic
+mailboxes =inboxes/ggdev
+mailboxes =inboxes/codereview
+mailboxes =inboxes/ggnews
+mailboxes =inboxes/gg-uk
+mailboxes =inboxes/gg-email
+mailboxes =inboxes/gg-work
+#mailboxes =inboxes/gg-cvs-notify
+mailboxes =inboxes/gg-bugzilla
+mailboxes =inboxes/gg-watches
+#mailboxes =inboxes/gg-faqomatic
 
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
@@ -643,8 +643,8 @@ fcc-save-hook pdcawley =Perl/piers.cawley
 # }}}
 # {{{ News
 
-mailboxes /home/adam/mail/inboxes/freshmeat
-mailboxes /home/adam/mail/inboxes/slashdot
+mailboxes =inboxes/freshmeat
+mailboxes =inboxes/slashdot
 alias ntk "NTK" <tips@spesh.com>
 
 # }}}
@@ -652,7 +652,7 @@ alias ntk "NTK" <tips@spesh.com>
 
 # {{{ (void)
 
-#mailboxes /home/adam/mail/inboxes/void
+#mailboxes =inboxes/void
 subscribe void
 alias void "(void)" <void@slab.org>
 fcc-save-hook void@slab\.org =lists/void
@@ -664,7 +664,7 @@ alias alex.mclean.lurk Alex McLean <alex@lurk.org>
 
 # {{{ Oxford.pm
 
-#mailboxes /home/adam/mail/inboxes/oxford-pm
+#mailboxes =inboxes/oxford-pm
 fcc-save-hook oxford-pm-list@happyfunball\.pm\.org =lists/oxford-pm
 subscribe oxford-pm
 
@@ -672,7 +672,7 @@ subscribe oxford-pm
 # {{{ London.pm
 
 subscribe london_pm london-list
-#mailboxes /home/adam/mail/inboxes/london-pm
+#mailboxes =inboxes/london-pm
 alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
 fcc-save-hook london-list@happyfunball\.pm\.org =lists/london-list
 
@@ -682,21 +682,21 @@ fcc-save-hook london-list@happyfunball\.pm\.org =lists/london-list
 # {{{ Security
 
 subscribe linux-security
-mailboxes /home/adam/mail/inboxes/linux-security
+mailboxes =inboxes/linux-security
 alias linux-security "Linux Security mailing list" <linux-security@redhat.com>
 fcc-save-hook linux-security =lists/linux-security
 
 subscribe security-audit
-mailboxes /home/adam/mail/inboxes/security-audit
+mailboxes =inboxes/security-audit
 
 subscribe linux-alert
-mailboxes /home/adam/mail/inboxes/linux-alert
+mailboxes =inboxes/linux-alert
 
 subscribe unix-admin
-mailboxes /home/adam/mail/inboxes/unix-admin
+mailboxes =inboxes/unix-admin
 
 subscribe bugtraq
-mailboxes /home/adam/mail/inboxes/bugtraq
+mailboxes =inboxes/bugtraq
 alias bugtraq "Bugtraq, UNIX security mailing list" <bugtraq@securityfocus.com>
 fcc-save-hook bugtraq.*@.*securityfocus\.com =lists/bugtraq
 
@@ -705,7 +705,7 @@ fcc-save-hook spaf.*@.*\.purdue\.edu =security/spaf
 # }}}
 # {{{ Software
 
-mailboxes /home/adam/mail/inboxes/sourceforge
+mailboxes =inboxes/sourceforge
 
 # {{{ addressbook
 
@@ -715,8 +715,8 @@ alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
 # {{{ ALSA
 
 subscribe alsa-devel alsa-user
-mailboxes /home/adam/mail/inboxes/alsa-user
-mailboxes /home/adam/mail/inboxes/alsa-devel
+mailboxes =inboxes/alsa-user
+mailboxes =inboxes/alsa-devel
 alias alsa-devel "ALSA development mailing list" <alsa-devel@alsa-project.org>
 alias alsa-user "ALSA users mailing list" <alsa-user@alsa-project.org>
 fcc-save-hook alsa-devel.*@.*alsa-project\.org =lists/alsa-devel
@@ -728,13 +728,13 @@ fcc-save-hook alsa-user.*@.*alsa-project\.org =lists/alsa-user
 alias apmd-list "apmd mailing list" <apmd-list@worldvisions.ca>
 fcc-save-hook apmd =lists/apmd-list
 subscribe apmd-list
-#mailboxes /home/adam/mail/inboxes/apmd-list
+#mailboxes =inboxes/apmd-list
 
 # }}}
 # {{{ bashprompt
 
 subscribe bash
-#mailboxes /home/adam/mail/inboxes/bashprompt
+#mailboxes =inboxes/bashprompt
 alias bashprompt "bashprompt mailing list" <bash@current.nu>
 fcc-save-hook bash@current\.nu =lists/bashprompt
 
@@ -742,7 +742,7 @@ fcc-save-hook bash@current\.nu =lists/bashprompt
 # {{{ bugzilla
 
 subscribe buggies 
-mailboxes /home/adam/mail/inboxes/buggies
+mailboxes =inboxes/buggies
 alias buggies "landfill bugzilla testing" <buggies@landfill.tequilarista.org>
 fcc-save-hook buggies@landfill\.tequilarista\.org =lists/buggies
 
@@ -760,7 +760,7 @@ fcc-save-hook wstearns@pobox\.com =software/buildkernel
 alias diald "linux-diald mailing list" <linux-diald@vger.rutgers.edu>
 fcc-save-hook linux-diald =lists/linux-diald
 subscribe linux-diald
-#mailboxes /home/adam/mail/inboxes/linux-diald
+#mailboxes =inboxes/linux-diald
 
 alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
 
@@ -773,7 +773,7 @@ alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <ander
 # {{{ fetchmail
 
 subscribe fetchmail-friends
-mailboxes /home/adam/mail/inboxes/fetchmail
+mailboxes =inboxes/fetchmail
 fcc-save-hook fetchmail-friends =lists/fetchmail-friends
 alias fetchmail-friends "fetchmail-friends mailing list" <fetchmail-friends@lists.ccil.org>
 
@@ -781,8 +781,8 @@ alias fetchmail-friends "fetchmail-friends mailing list" <fetchmail-friends@list
 # {{{ galeon
 
 subscribe galeon-user galeon-devel
-#mailboxes /home/adam/mail/inboxes/galeon-user
-#mailboxes /home/adam/mail/inboxes/galeon-devel
+#mailboxes =inboxes/galeon-user
+#mailboxes =inboxes/galeon-devel
 fcc-save-hook galeon-user.*lists\.sourceforge\.net =lists/galeon-user
 fcc-save-hook galeon-devel.*lists\.sourceforge\.net =lists/galeon-devel
 alias galeon-user  "galeon user list"  <galeon-user@lists.sourceforge.net>
@@ -792,7 +792,7 @@ alias galeon-devel "galeon devel list" <galeon-devel@lists.sourceforge.net>
 # {{{ gconf
 
 subscribe gconf-list
-#mailboxes /home/adam/mail/inboxes/gconf-list
+#mailboxes =inboxes/gconf-list
 fcc-save-hook gconf-list.*gnome\.org =lists/gconf-list
 alias gconf-list  "galeon user list"  <gconf-list@gnome.org>
 
@@ -800,7 +800,7 @@ alias gconf-list  "galeon user list"  <gconf-list@gnome.org>
 # {{{ gimp-perl
 
 subscribe gimp-perl
-mailboxes /home/adam/mail/inboxes/gimp-perl
+mailboxes =inboxes/gimp-perl
 alias gimp-perl "gimp-perl mailing list" <gimp-perl@lists.netcentral.net>
 fcc-save-hook gimp-perl.*lists\.netcentral\.net =lists/gimp-perl
 
@@ -830,7 +830,7 @@ subscribe gphoto-devel
 # {{{ gqview
 
 subscribe gqview-users
-mailboxes /home/adam/mail/inboxes/gqview-users
+mailboxes =inboxes/gqview-users
 fcc-save-hook gqview-users.*lists\.sourceforge\.net =lists/gqview-users
 alias gqview-users  "gqview user list"  <gqview-users@lists.sourceforge.net>
 
@@ -843,7 +843,7 @@ alias htmlpp "Nicolas Thiery, author of htmlpp" <Nicolas.Thiery@ens.fr>
 # {{{ infobot
 
 subscribe infobot
-#mailboxes /home/adam/mail/inboxes/infobot
+#mailboxes =inboxes/infobot
 alias infobot "Infobot mailing list" <infobot-dev@cs.cmu.edu>
 fcc-save-hook infobot =lists/infobot
 
@@ -859,13 +859,13 @@ alias junkbuster.blocklist "Stefan Waldherr" <stefan@waldherr.org>
 
 alias linux-kernel <linux-kernel@vger.rutgers.edu>
 subscribe linux-kernel
-mailboxes /home/adam/mail/inboxes/linux-kernel
+mailboxes =inboxes/linux-kernel
 
 # }}}
 # {{{ Linux SMP
 
 alias linux-smp "Linux SMP mailing list" <linux-smp@vger.rutgers.edu>
-mailboxes /home/adam/mail/inboxes/linux-smp
+mailboxes =inboxes/linux-smp
 subscribe linux-smp
 
 # }}}
@@ -876,15 +876,15 @@ alias modperl "mod_perl mailing list" <modperl@apache.org>
 # }}}
 # {{{ mozilla
 
-mailboxes /home/adam/mail/inboxes/mozilla-announce
-#mailboxes /home/adam/mail/inboxes/mozilla-bugzilla
+mailboxes =inboxes/mozilla-announce
+#mailboxes =inboxes/mozilla-bugzilla
 
 # }}}
 # {{{ mutt
 
 subscribe mutt-dev mutt-users mutt-announce 
-mailboxes /home/adam/mail/inboxes/mutt-users
-mailboxes /home/adam/mail/inboxes/mutt-dev
+mailboxes =inboxes/mutt-users
+mailboxes =inboxes/mutt-dev
 
 # }}}
 # {{{ netatalk
@@ -899,7 +899,7 @@ alias netatalk "netatalk mailing list" <netatalk@umich.edu>
 alias plucker-dev "Plucker development" <plucker-dev@rubberchicken.org>
 fcc-save-hook plucker-dev =lists/plucker-dev
 subscribe plucker-dev
-#mailboxes /home/adam/mail/inboxes/plucker-dev
+#mailboxes =inboxes/plucker-dev
 
 # }}}
 # {{{ sitescooper
@@ -907,13 +907,13 @@ subscribe plucker-dev
 alias sitescooper-talk sitescooper-talk@lists.sourceforge.net
 fcc-save-hook sitescooper-talk =lists/sitescooper-talk
 subscribe sitescooper-talk
-#mailboxes /home/adam/mail/inboxes/sitescooper
+#mailboxes =inboxes/sitescooper
 
 # }}}
 # {{{ gnome-pilot
 
 subscribe gnome-pilot-list
-mailboxes /home/adam/mail/inboxes/gnome-pilot-list
+mailboxes =inboxes/gnome-pilot-list
 alias gnome-pilot "gnome-pilot mailing list" <gnome-pilot-list@gnome.org>
 fcc-save-hook gnome-pilot.*@gnome\.org =lists/gnome-pilot
 
@@ -927,8 +927,8 @@ alias datebk4-support "DateBk4 tech support" <SWSupport@PimlicoSoftware.com>
 # }}}
 # {{{ PCMCIA
 
-#mailboxes /home/adam/mail/inboxes/pcmcia-beta
-#mailboxes /home/adam/mail/inboxes/pcmcia-apm
+#mailboxes =inboxes/pcmcia-beta
+#mailboxes =inboxes/pcmcia-apm
 alias david.hinds "David Hinds (PCMCIA author)" <dhinds@zen.stanford.edu>
 
 # }}}
@@ -938,7 +938,7 @@ alias modules "modules@perl.org" <modules@perl.org>
 fcc-save-hook upload.*@.*speed-link\.de =Perl/PAUSE
 
 subscribe p5p
-mailboxes /home/adam/mail/inboxes/p5p
+mailboxes =inboxes/p5p
 fcc-save-hook perl5-porters.*perl.org =p5p
 
 alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
@@ -949,8 +949,8 @@ alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
 alias christian.lemburg Christian Lemburg <lemburg@aixonix.de>
 
 subscribe perlunit-users perlunit-devel
-#mailboxes /home/adam/mail/inboxes/perlunit-users
-#mailboxes /home/adam/mail/inboxes/perlunit-devel
+#mailboxes =inboxes/perlunit-users
+#mailboxes =inboxes/perlunit-devel
 alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
 alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
 fcc-save-hook perlunit-devel@.*sourceforge\.net =lists/perlunit-devel
@@ -966,9 +966,9 @@ alias pjbox.developers PJB developers <pjbox@phobos.fs.tum.de>
 # {{{ Request tracking
 
 subscribe req reqng-developers wishlist rt-users 
-#mailboxes /home/adam/mail/inboxes/rt-users
-#mailboxes /home/adam/mail/inboxes/req
-#mailboxes /home/adam/mail/inboxes/reqng
+#mailboxes =inboxes/rt-users
+#mailboxes =inboxes/req
+#mailboxes =inboxes/reqng
 alias req "Req mailing list" <req@ccs.neu.edu>
 alias reqng "reqNG developers mailing list" <reqng-developers@scuttlebutt.explore.com>
 alias reqng-wishlist "ReqNG wishlist" <wishlist@scuttlebutt.explore.com>
@@ -980,7 +980,7 @@ alias dcl "Daniel C. L'Hommedieu (reqNG developer)" <dcl@explore.com>
 # {{{ sawfish
 
 subscribe sawmill
-#mailboxes /home/adam/mail/inboxes/sawfish
+#mailboxes =inboxes/sawfish
 alias sawfish "sawfish mailing list" <sawmill@aarg.net>
 alias sawmill sawfish
 fcc-save-hook sawmill.*aarg\.net =lists/sawfish
@@ -994,8 +994,8 @@ alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
 # {{{ zsh
 
 subscribe zsh-users zsh-workers
-#mailboxes /home/adam/mail/inboxes/zsh/users
-#mailboxes /home/adam/mail/inboxes/zsh/workers
+#mailboxes =inboxes/zsh/users
+#mailboxes =inboxes/zsh/workers
 alias zsh-users "zsh users mailing list" <zsh-users@sunsite.auc.dk>
 alias zsh-workers "zsh workers mailing list" <zsh-workers@sunsite.auc.dk>
 fcc-save-hook zsh-announce@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-announce
@@ -1015,8 +1015,8 @@ alias zefram "Zefram" <zefram@fysh.org>
 # {{{ Hardware
 
 subscribe linux-thinkpad linux-laptop
-#mailboxes /home/adam/mail/inboxes/linux-thinkpad
-#mailboxes /home/adam/mail/inboxes/linux-laptop
+#mailboxes =inboxes/linux-thinkpad
+#mailboxes =inboxes/linux-laptop
 
 alias linux-thinkpad linux-thinkpad mailing list <linux-thinkpad@topica.com>
 fcc-save-hook linux-thinkpad =lists/linux-thinkpad
@@ -1028,10 +1028,10 @@ alias lilac "Werner Heuser, LiLAC website maintainer" <wehe@snafu.de>
 # }}}
 # {{{ RedHat
 
-#mailboxes /home/adam/mail/inboxes/redhat-bugzilla
+#mailboxes =inboxes/redhat-bugzilla
 fcc-save-hook bugzilla.*@.*redhat\.com =Linux/redhat-bugzilla
 
-#mailboxes /home/adam/mail/inboxes/redhat-contrib
+#mailboxes =inboxes/redhat-contrib
 fcc-save-hook contrib-list.*@redhat\.com =lists/redhat-contrib
 subscribe contrib-list
 
@@ -1039,7 +1039,7 @@ subscribe contrib-list
 
 # {{{ Online shopping
 
-mailboxes /home/adam/mail/inboxes/amazon
+mailboxes =inboxes/amazon
 
 # }}}
 
