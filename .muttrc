@@ -43,6 +43,8 @@
    set   pgp_encryptself
    set   pgp_verify_sig=yes
    set   pgp_replyencrypt
+   set   pgp_v2=/usr/local/bin/pgp
+#  set   pgp_gpg=
    set   quote_regexp="^> *"
    set   recall=no
 #  set   record="PLEASE CHOOSE AN FCC FOLDER!"
