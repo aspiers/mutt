@@ -34,7 +34,7 @@ mailboxes !
 mailboxes /home/adam/mail/inboxes/test
 
 ## guideguide
-lists ggdev ggnews gg-uk
+subscribe ggdev ggnews gg-uk
 mailboxes /home/adam/mail/inboxes/ggdev
 mailboxes /home/adam/mail/inboxes/ggnews
 mailboxes /home/adam/mail/inboxes/gg-uk
@@ -44,11 +44,11 @@ mailboxes /home/adam/mail/inboxes/gg-bugzilla
 mailboxes /home/adam/mail/inboxes/gg-watches
 
 ## System (software) lists
-lists apmd-list
-lists linux-kernel linux-smp
-lists linux-vortex-bug vortex-bug
-lists linux-thinkpad linux-laptop linux-diald
-lists contrib-list
+subscribe apmd-list
+subscribe linux-kernel linux-smp
+subscribe linux-vortex-bug vortex-bug
+subscribe linux-thinkpad linux-laptop linux-diald
+subscribe contrib-list
 #mailboxes /home/adam/mail/inboxes/redhat-contrib
 #mailboxes /home/adam/mail/inboxes/redhat-bugzilla
 #mailboxes /home/adam/mail/inboxes/linux-thinkpad
@@ -58,20 +58,20 @@ mailboxes /home/adam/mail/inboxes/vortex-bug
 mailboxes /home/adam/mail/inboxes/linux-kernel
 
 ## Security lists
-lists bugtraq linux-security security-audit 
-lists unix-admin
+subscribe bugtraq linux-security security-audit 
+subscribe unix-admin
 mailboxes /home/adam/mail/inboxes/security-audit
 mailboxes /home/adam/mail/inboxes/linux-alert
 mailboxes /home/adam/mail/inboxes/linux-security
 mailboxes /home/adam/mail/inboxes/bugtraq
 
 ## Software lists
-lists mutt-dev mutt-users mutt-announce 
-lists req reqng-developers wishlist rt-users 
-lists zsh-users zsh-workers
-lists alsa-devel alsa-user
-lists infobot p5p oxford-pm gimp-perl
-lists bash gnokii sawmill galeon-devel
+subscribe mutt-dev mutt-users mutt-announce 
+subscribe req reqng-developers wishlist rt-users 
+subscribe zsh-users zsh-workers
+subscribe alsa-devel alsa-user
+subscribe infobot p5p oxford-pm gimp-perl
+subscribe bash gnokii sawmill galeon-devel
 #mailboxes /home/adam/mail/inboxes/linux-diald
 mailboxes /home/adam/mail/inboxes/alsa-user
 mailboxes /home/adam/mail/inboxes/alsa-devel
@@ -95,7 +95,7 @@ mailboxes /home/adam/mail/inboxes/gimp-perl
 mailboxes /home/adam/mail/inboxes/galeon-devel
 
 ## Chatter
-lists oxford-pm london_pm london-list void 
+subscribe oxford-pm london_pm london-list void 
 #mailboxes /home/adam/mail/inboxes/oxford-pm
 #mailboxes /home/adam/mail/inboxes/london-pm
 #mailboxes /home/adam/mail/inboxes/void
