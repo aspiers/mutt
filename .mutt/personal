@@ -633,7 +633,9 @@ fcc-save-hook simon@cozens\.net =Perl/simon.cozens
 fcc-save-hook .*@simon-cozens\.org =Perl/simon.cozens
 
 alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
+
 alias piers.cawley Piers Cawley <pdcawley@bofh.org.uk>
+fcc-save-hook pdcawley =Perl/piers.cawley
 
 # }}}
 # {{{ News
