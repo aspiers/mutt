@@ -4,6 +4,8 @@
 
 # {{{ Bindings for index
 
+# {{{ bind
+
    bind  index h           help   
 
    bind  index ?           search-reverse
@@ -39,6 +41,9 @@
    bind  index y           collapse-thread
    bind  index Y           collapse-all
 
+# }}}
+# {{{ macro
+
    macro index i  "<change-folder>=inboxes/\t\t\t<down>"  "show main inboxes"
    macro index I  "<change-folder>!\n"  "switch to MAIN inbox"
 
@@ -52,7 +57,11 @@
    macro index "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
 
 # }}}
+
+# }}}
 # {{{ Bindings for pager
+
+# {{{ bind
 
    bind  index  h      help   
 
@@ -91,6 +100,9 @@
 #  bind  pager  F   forward-message
    bind  pager  D   delete-message
 
+# }}}
+# {{{ macro
+
    macro pager  $   "<exit><sync-mailbox>" "quit pager and sync mailbox"
  
    macro pager  B   "|urlview\n"
@@ -122,6 +134,8 @@
 
    macro pager "\ej"  "<save-message>=junk-mail.gz<enter>"  "save as junk mail"
    macro pager "\eR"  "<copy-message>=inboxes/retry<enter>"  "mark for refiltering"
+
+# }}}
 
 # }}}
 # {{{ Bindings for compose menu
