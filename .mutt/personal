@@ -925,7 +925,7 @@ alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
 # }}}
 # {{{ easytag
 
-alias easytag "EasyTAG mailing list" <easytag@lists.sourceforge.net>
+alias easytag "EasyTAG mailing list" <easytag-mailing@lists.sourceforge.net>
 fcc-save-hook "easytag.*lists.sourceforge.net" =lists/easytag
 subscribe easytag
 #mailboxes =inboxes/easytag
@@ -1154,8 +1154,8 @@ alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
 alias christian.lemburg Christian Lemburg <lemburg@aixonix.de>
 
 subscribe perlunit-users perlunit-devel
-mailboxes =inboxes/perlunit-users
-mailboxes =inboxes/perlunit-devel
+# mailboxes =inboxes/perlunit-users
+# mailboxes =inboxes/perlunit-devel
 alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
 alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
 fcc-save-hook perlunit-devel@.*sourceforge\.net =lists/perlunit-devel
