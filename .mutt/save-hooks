@@ -1,5 +1,15 @@
 ##############################################################################
-# Friends / relatives
+# Relatives
+##############################################################################
+
+fcc-save-hook stuart.*spiers =relatives/daddy
+fcc-save-hook thea@spiers\.net =relatives/thea
+fcc-save-hook chloe.*spiers =relatives/chloe
+fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
+
+
+##############################################################################
+# Friends
 ##############################################################################
 
 fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
@@ -20,7 +30,6 @@ fcc-save-hook north.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
 fcc-save-hook rg232@.*\.cam\.ac\.uk =friends/Oxford/rachael.gulliver
 fcc-save-hook v.*hamilt =Oxford/friends/victoria.hamilton
 fcc-save-hook helenoc@juno\.com =relatives/helen.oconnor
-fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
 fcc-save-hook n\.byrne@ram\.ac\.uk =friends/RAM/nick.byrne
 fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
 fcc-save-hook chris.*@.*\.wadham\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
