@@ -123,6 +123,7 @@
 
    bind  browser ' '  select-entry
    macro browser  i   "qc^u!\r"
+   bind browser  q   exit
 
 
 ## ===========================
