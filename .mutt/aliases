@@ -22,19 +22,26 @@ alias add2 tiss, kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.ra
 
 alias stacey Stacey Steele <Stacey.Steele@bowne.com>
 alias tim.corbett-clark "Tim Corbett-Clark" <tcc@robots.ox.ac.uk>
-alias nick "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
 alias nick.mcgrogan "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
+alias nick nick.mcgrogan
 alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
 alias ben.teasdale "Ben Teasdale" <ben.teasdale@bbc.co.uk>
-alias ben "Ben North" <ben@thelonious.new.ox.ac.uk>
+alias ben.north "Ben North" <ben@thelonious.new.ox.ac.uk>
+alias ben ben.north
 alias nick.williams "Nick Williams" <nick@thelonious.new.ox.ac.uk>
-alias dave "David Lindgren" <dave@thelonious.new.ox.ac.uk>
-alias chris "Christopher Cladingboel" <christopher.cladingboel@wadham.ox.ac.uk>
-alias jo.sherratt "Joanna Sherratt" <joanna.sherratt@new.oxford.ac.uk>
+alias dave.lindgren "David Lindgren" <dave@thelonious.new.ox.ac.uk>
+alias dave dave.lindgren
+alias chris.cladingboel "Christopher Cladingboel" <christopher.cladingboel@wadham.ox.ac.uk>
+alias chris chris.cladingboel
+alias jo.sherratt.hotmail Joanna Sherratt <josherratt@hotmail.com>
+alias jo.sherratt.notts Joanna Sherratt <mzytjls@nottingham.ac.uk>
 alias jo.sherratt.bm "Joanna Sherratt" <jsherrat@ibl.bm>
 alias jo.sherratt.work Joanna Sherratt <jsherrat@CENTRERE.COM>
+alias jo jo.sherratt.hotmail
 alias ivan.rockey Ivan Rockey <Ivan.Rockey@btinternet.com>
 alias ivan.rockey.ECO "FAO: Ivan Rockey" <mail@e-c-orch.demon.co.uk>
+alias ivan ivan.rockey
+alias ives ivan.rockey
 alias sarah.metcalf "Sarah Metcalf" <s-metcalf@dfid.gtnet.gov.uk>
 alias ian.macmullen "Ian MacMullen" <ian_macmullen@hotmail.com>
 alias tim.lucas "Tim Lucas" <timothy.lucas@new.ox.ac.uk>
@@ -43,13 +50,14 @@ alias rachael.gulliver.old "Rachael Gulliver" <rachaelgulliver@hotmail.com>
 alias rachael.gulliver "Rachael Gulliver" <rg232@cam.ac.uk>
 alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
 alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
-alias bear Bear <bear@thelonious.new.ox.ac.uk>
-alias bear.home Bear at home <mbolton@iol.ie>
+alias bear.bolton Bear <bear@thelonious.new.ox.ac.uk>
+alias bear.bolton.home Bear at home <mbolton@iol.ie>
+alias bear bear.bolton
 alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
 alias bears.aunt Bear at Hilary Stephen's <hilary@arc.net.au>
 alias stephen.walmsley "Stephen Walmsley" <stephen@thelonious.new.ox.ac.uk>
-alias tiss "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
 alias christie.bolton "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
+alias tiss.bolton christie.bolton
 alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
 alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
 alias oli.dickson Oli Dickson <olimpia.dickson@tao.j-sainsbury.co.uk>
@@ -58,8 +66,9 @@ alias nick.collins Nick Collins <nickcollins@hotmail.com>
 alias vicky.hamilton Victoria Hamilton <victoria.hamilton@stagetech.com>
 alias dave.willetts "Dave Willetts" <davetm@thelonious.new.ox.ac.uk>
 alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
-alias jock Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
-alias weejock Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+alias weejock matthew.kirkwood
+alias jock matthew.kirkwood
 alias chris.evans "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
 alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
 alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
@@ -107,7 +116,9 @@ alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
 
 alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
 alias rosie.biss "Rosie Biss" <rosiebiss@yahoo.com>
+alias rosie rosie.biss
 alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
+alias malcs malcolm.cross
 
 
 #
@@ -132,8 +143,9 @@ alias michael "Michael O'Connor" <mkoconnor@mayo.edu>
 alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
 alias chloe "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
 alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
-alias ian "Ian Spiers" <ian@spiers.net>
-alias ian.old "Ian Spiers" <ian@spiers.newnet.co.uk>
+alias ian.spiers "Ian Spiers" <ian@spiers.net>
+alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
+alias ian ian.spiers
 alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
 
 
@@ -144,7 +156,7 @@ alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
 alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
 alias estates RAM Estates Office <estates@ram.ac.uk>
 alias yan.fitterer "Yan Fitterer" <y.fitterer@ram.ac.uk>
-alias yan "Yan Fitterer" <y.fitterer@ram.ac.uk>
+alias yan yan.fitterer
 alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
 alias nick.byrne Nick Byrne <n.byrne@RAM.AC.UK>
 alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
@@ -202,6 +214,8 @@ alias pete.biggs Pete Biggs <pete@physchem.ox.ac.uk>
 alias geoff.lescott Geoff Lescott <geoff.lescott@computing-services.oxford.ac.uk>
 alias darren.nickerson "Darren Nickerson" <dnicker@ermine.ox.ac.uk>
 alias darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.uk>
+alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
+alias simon.cozens Simon Cozens <simon@brecon.co.uk>
 
 
 ##############################################################################
@@ -231,6 +245,7 @@ alias laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
 alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
 alias alsa-devel "ALSA development mailing list" <alsa-devel@alsa-project.org>
 alias alsa-user "ALSA users mailing list" <alsa-user@alsa-project.org>
+alias bashprompt bashprompt mailing list <bash@current.nu>
 
 
 ##############################################################################
@@ -249,6 +264,12 @@ alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
 alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
 alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
 alias pws Peter Stephenson <pws@ibmth.df.unipi.it>
+alias tanaka.akira Tanaka Akira <akr@jaist.ac.jp>
+alias sven.wischnowsky Sven Wischnowsky <wischnow@informatik.hu-berlin.de>
+alias zefram Zefram <zefram@fysh.org>
+alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
+alias diald "linux-diald mailing list" <linux-diald@vger.rutgers.edu>
+alias junkbuster.blocklist Stefan Waldherr <stefan@waldherr.org>
 
 
 ##############################################################################
@@ -319,15 +340,4 @@ source ~/.mutt/quake-aliases
 # Incoming (need to be classified)
 ##############################################################################
 
-alias alex.green2 Alex Green <ppytarg@nottingham.ac.uk>
-alias bashprompt bashprompt mailing list <bash@current.nu>
 alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
-alias rh-hassle webmaster@redhat.com, bugzilla-owner@redhat.com, webmaster@developer.redhat.com, dkl@redhat.com, ewt@redhat.com, postmaster@redhat.com, postmaster@developer.redhat.com, contrib-list@redhat.com
-alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
-alias simon.cozens Simon Cozens <simon@brecon.co.uk>
-alias junkbuster.blocklist Stefan Waldherr <stefan@waldherr.org>
-alias tanaka.akira Tanaka Akira <akr@jaist.ac.jp>
-alias sven.wischnowsky Sven Wischnowsky <wischnow@informatik.hu-berlin.de>
-alias zefram Zefram <zefram@fysh.org>
-alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
-alias diald "linux-diald mailing list" <linux-diald@vger.rutgers.edu>
