@@ -348,7 +348,9 @@ alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
 #alias dan.davies.old Daniel Davies <dddavies@students.jhubc.it>
 #alias dan.davies.work Dan Davies <DaviesDD@bp.com>
 alias dan.davies.lineone "Daniel Davies" <dddavies@lineone.net>
-alias dan.davies "Daniel Davies" <ddavie12@jhu.edu>
+alias dan.davies.hotmail Dan Davies <dddavies@hotmail.com>
+alias dan.davies.jhu "Daniel Davies" <ddavie12@jhu.edu>
+alias dan.davies dan.davies.jhu
 fcc-save-hook dddavies =friends/home/dan.davies
 fcc-save-hook daviesdd =friends/home/dan.davies
 
