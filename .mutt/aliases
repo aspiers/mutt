@@ -272,6 +272,8 @@ alias youssou alix.poscharsky
 
 alias tom.rees-herdman Tom Rees-Herdman <therdman@guideguide.com>
 alias therdman tom.rees-herdman
+alias dave.scott Dave Scott <dscott@guideguide.com>
+alias dscott dave.scott
 
 #alias dave.thorn Dave Thorn <dthorn@guideguide.com>
 #alias dthorn dave.thorn
@@ -353,7 +355,7 @@ alias geoff.lescott Geoff Lescott <geoff.lescott@computing-services.oxford.ac.uk
 alias darren.nickerson "Darren Nickerson" <dnicker@ermine.ox.ac.uk>
 alias darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.uk>
 alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
-alias simon.cozens Simon Cozens <simon@brecon.co.uk>
+alias simon.cozens Simon Cozens <simon@simon-cozens.org>
 alias gervase.markham Gervase Markham <gerv@gerv.net>
 alias OLD-robin.stevens.astro Robin Stevens <rejs@astro.ox.ac.uk>
 
@@ -475,3 +477,5 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # Incoming (need to be classified)
 ##############################################################################
 
+alias sitescooper-talk sitescooper-talk@lists.sourceforge.net
+alias piers.cawley Piers Cawley <pdcawley@bofh.org.uk>
