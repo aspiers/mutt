@@ -93,6 +93,8 @@ fcc-save-hook spierst@(student\.)?rncm\.ac\.uk =relatives/thea
 
 alias chloe "Chloe Spiers" <chloe@spiers.net>
 alias chloe.man "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
+alias chloe.work Chloe Spiers <Chloe_Spiers@hyperion.com>
+alias chloe.hotmail Chloe Spiers <chloespiers@hotmail.com>
 #alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
 fcc-save-hook chloe.*spiers =relatives/chloe
 
@@ -131,6 +133,8 @@ alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
 alias siobhan.supple "Siobhan Supple" <supple@iol.ie>
 fcc-save-hook supple@iol\.ie =relatives/siobhan.supple
 
+alias christina.french Christina French <realslim_16@hotmail.com>
+
 # }}}
 # {{{ Friends
 
@@ -143,6 +147,7 @@ fcc-save-hook nwilliams@compd\.com =Oxford/friends/nick.williams
 fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
 fcc-save-hook nmcgrogan@iname\.com =Oxford/friends/nick.mcgrogan
 fcc-save-hook nicholas\.mcgrogan@oxford-biosignals.com =Oxford/friends/nick.mcgrogan
+fcc-save-hook nick_mcgrogan@yahoo.co.uk =Oxford/friends/nick.mcgrogan
 alias nick.mcgrogan "Nick McGrogan" <nmcgrogan@iname.com>
 alias nick.mcgrogan.bio "Nick McGrogan" <nicholas.mcgrogan@oxford-biosignals.com>
 alias nick nick.mcgrogan
@@ -261,6 +266,8 @@ fcc-save-hook peronel =friends/Oxford/peronel.smith
 alias peronel.smith "Peronel Smith" <peronel@mgp.ltd.uk>
 
 fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
+fcc-save-hook nicolocollinsi =friends/Oxford/nick.collins
+alias nick.collins.mac Nick Collins <nicolocollinsi@mac.com>
 alias nick.collins Nick Collins <nickcollins@hotmail.com>
 
 alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
@@ -359,6 +366,11 @@ fcc-save-hook mattojones =friends/NYO/matt.jones
 # }}}
 # {{{ London friends
 
+alias livia.harris Livia Harris <liviaharris@yahoo.co.uk>
+
+alias matt.shlomowitz Matthew Shlomowitz <mshlom@hotmail.com>
+fcc-save-hook shlom@hotmail.com =friends/RAM/matthew.shlomowitz
+
 alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
 alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 
@@ -386,7 +398,7 @@ alias sonia \"Sonia (JSO)\" <pg004593@sghms.ac.uk>
 # {{{ Music friends
 
 alias paul.skinner Paul Skinner <paulski@supanet.com>
-fcc-save-hook paulski.*supanet\.com =friends/musicians/paul.skinner
+fcc-save-hook paulski.*supanet\.com =friends/Jersey/paul.skinner
 
 # }}}
 # {{{ Groups of friends
@@ -525,6 +537,7 @@ alias ture Mark Hulme-Jones <ture@plig.net>
 alias recoil mark.hulme-jones
 fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
 fcc-save-hook @ture\.org =computer-work/mark.hulme-jones
+fcc-save-hook ture@.*plig\.net =computer-work/mark.hulme-jones
 
 alias rob.partington Rob Partington <rjp@plig.net>
 alias basho rob.partington
