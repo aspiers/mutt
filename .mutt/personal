@@ -354,7 +354,7 @@ alias dan.davies dan.davies.jhu
 fcc-save-hook dddavies =friends/home/dan.davies
 fcc-save-hook daviesdd =friends/home/dan.davies
 
-alias julian.thompson "Julian Thompson" <julianthompson@doctors.net.com>
+#alias julian.thompson "Julian Thompson" <julianthompson@doctors.net.com>
 
 #alias jon.greenwell "Jonathan Greenwell" <J.R.Greenwell@mds.qmw.ac.uk>
 alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
@@ -367,7 +367,7 @@ alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
 alias katie.green "Katie Green" <green@burlington.org.uk>
 alias stig "Stig (Peter) Edwards" <PEdwards@factset.com>
 
-alias di.north "Di North" <di@amaroo.demon.co.uk>
+#alias di.north "Di North" <di@amaroo.demon.co.uk>
 
 alias charles.gaskell "Charles Gaskell" <gaskell@gaskell.f9.co.uk>
 
@@ -550,7 +550,7 @@ alias nacro-sponsorship-followup nick, vicky.hamilton, graeme.wearden, tim.corbe
 
 alias marathon-relatives family, relatives-in-UK, michael.oconnor, helen.oconnor
 
-alias marathon-sponsorship endellion-marathon-sponsors, marathon-relatives, nick, vicky.hamilton, rachael.schofield, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, di.north, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, julian.thompson, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, nick.rippon, ture, andym, xtof, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, becky.leyton, matthew.clay, richard.green, stig, yan, ron.hickman, mike.francis, jeremy.lund, paul.newbold, gareth.jones, adrian.warrick, john.hargreaves, jeff.harrod, jason.yank, cello-teachers, kirsty, shlom
+alias marathon-sponsorship endellion-marathon-sponsors, marathon-relatives, nick, vicky.hamilton, rachael.schofield, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, di.north, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, nick.rippon, ture, andym, xtof, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, becky.leyton, matthew.clay, richard.green, stig, yan, ron.hickman, mike.francis, paul.newbold, gareth.jones, adrian.warrick, john.hargreaves, jeff.harrod, jason.yank, cello-teachers, kirsty, shlom
 
 # }}}
 
@@ -559,7 +559,7 @@ alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
 # }}}
 # {{{ Old skools
 
-alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
+#alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
 alias gilbert.roscoe "Gilbert Roscoe" <gilbert@sionix.demon.co.uk>
 alias stewart.dunn Stewart Dunn <info@sdunn.demon.co.uk>
 alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
