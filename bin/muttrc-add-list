@@ -1,0 +1,33 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+my $mutt_file = "$ENV{HOME}/.mutt/personal";
+
+unless (@ARGV == 3) {
+  die <<EOF
+Usage: $0 <list-short-name> <list-addr> <list-long-name>
+EOF
+}
+
+my ($short, $addr, $long) = @ARGV;
+
+my ($regexp = $addr) =~ s/\@/.*/;
+my $folder = $short;
+
+open(CONFIG, ">>$mutt_file")
+  or die "Couldn't append to $mutt_file: $!";
+
+my $new_stuff = <<EOTEMPLATE;
+alias $short "$long" <$addr>
+fcc-save-hook "$regexp" =lists/$short
+subscribe $short
+#mailboxes =inboxes/$short
+send-hook "$regexp" 'my_hdr From: "Adam Spiers" <$short\@adamspiers.org>'
+send-hook "$regexp" 'my_hdr Reply-To: "Adam Spiers" <$short\@adamspiers.org>'
+EOTEMPLATE
+
+print "Adding to $mutt_file:\n$new_stuff";
+print CONFIG $new_stuff;
+
+close(CONFIG);

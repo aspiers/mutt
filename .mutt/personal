@@ -50,17 +50,14 @@ folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
 
 # }}}
 
-# {{{ send-hook
+# {{{ send-hook, my_hdr
 
-#send-hook . 'unmy_hdr From'
 #send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
-
-# }}}
-# {{{ my_hdr
 
 my_hdr X-URL: http://tigerpig.org/
 my_hdr X-OS: RedHat Linux
-my_hdr From: "Adam Spiers" <adam@spiers.net>
+send-hook . 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
+send-hook . 'my_hdr Reply-To: "Adam Spiers" <adam@spiers.net>'
 
 # }}}
 
@@ -516,7 +513,8 @@ fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
 
 alias mark.hulme-jones Mark Hulme-Jones <mjones@guideguide.com>
 alias mjones mark.hulme-jones
-alias ture Mark Hulme-Jones <mjones@ture.org>
+alias ture Mark Hulme-Jones <ture@plig.net>
+#alias ture Mark Hulme-Jones <mjones@ture.org>
 alias recoil mark.hulme-jones
 fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
 fcc-save-hook @ture\.org =computer-work/mark.hulme-jones
@@ -646,6 +644,13 @@ alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
 alias piers.cawley Piers Cawley <pdcawley@bofh.org.uk>
 fcc-save-hook pdcawley =Perl/piers.cawley
 
+alias fwp "Fun With Perl" <fwp@perl.org>
+fcc-save-hook fwp.*perl\.org =lists/fwp
+subscribe fwp
+mailboxes =inboxes/fwp
+send-hook "fwp" 'my_hdr From: "Adam Spiers" <fwp@adamspiers.org>'
+send-hook "fwp" 'my_hdr Reply-To: "Adam Spiers" <fwp@adamspiers.org>'
+
 # }}}
 # {{{ News
 
@@ -743,11 +748,22 @@ alias arch-users "arch-users mailing list" <arch-users@regexps.com>
 fcc-save-hook arch-users =lists/arch-users
 subscribe arch-users
 mailboxes =inboxes/arch-users
+send-hook "arch-users" 'my_hdr From: "Adam Spiers" <arch-users@adamspiers.org>'
+send-hook "arch-users" 'my_hdr Reply-To: "Adam Spiers" <arch-users@adamspiers.org>'
 
 alias arch-dev "arch-dev mailing list" <arch-dev@regexps.com>
 fcc-save-hook arch-dev =lists/arch-dev
 subscribe arch-dev
 mailboxes =inboxes/arch-dev
+send-hook "arch-dev" 'my_hdr From: "Adam Spiers" <arch-dev@adamspiers.org>'
+send-hook "arch-dev" 'my_hdr Reply-To: "Adam Spiers" <arch-dev@adamspiers.org>'
+
+alias bug-arch "bug-arch mailing list" <bug-arch@regexps.com>
+fcc-save-hook bug-arch =lists/bug-arch
+subscribe bug-arch
+mailboxes =inboxes/bug-arch
+send-hook "bug-arch" 'my_hdr From: "Adam Spiers" <bug-arch@adamspiers.org>'
+send-hook "bug-arch" 'my_hdr Reply-To: "Adam Spiers" <bug-arch@adamspiers.org>'
 
 # }}}
 # {{{ bashprompt
