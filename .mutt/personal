@@ -41,7 +41,7 @@ folder-hook =inboxes/MAIN$                    source ~/.mutt/folders/MAIN
 folder-hook =inboxes/junk-mail                source ~/.mutt/folders/junk-mail
 folder-hook =inboxes/bad-junk-mail            'push "Tall\n;\ej"'
 folder-hook =inboxes/SAFE                     'push "D~r >1w\n"'
-folder-hook =inboxes/backup                   'push "D~r >1w\n"'
+folder-hook =backup                           'push "D~r >1w\n"'
 
 folder-hook =lists/                           source ~/.mutt/mailing-list
 folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
@@ -63,7 +63,8 @@ send-hook . 'my_hdr Reply-To: "Adam Spiers" <adam@spiers.net>'
 
 # }}}
 
-# {{{ Aliases, save-hooks, lists, mailboxes
+################################################
+# Aliases, save-hooks, lists, mailboxes
 
 # {{{ Me :-)
 
@@ -368,8 +369,11 @@ alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
 fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 
 fcc-save-hook ben.trigg =friends/RAM/ben.trigg
+
 alias lindsay.wood Lindsay Wood <l.wood@ram.ac.uk>
 fcc-save-hook l.wood@ram.ac.uk =friends/RAM/lindsay.wood
+alias lindsay.wood.hotmail Lindsay Wood <lawood79@hotmail.com>
+fcc-save-hook lawood =friends/RAM/lindsay.wood
 
 alias mike.francis Mike Francis <mjfrancis@onetel.net.uk>
 fcc-save-hook mjfrancis =friends/RAM/mike.francis
@@ -939,6 +943,16 @@ send-hook "easytag.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <easytag@
 send-hook "easytag.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <easytag@adamspiers.org>'
 
 # }}}
+# {{{ eci
+
+alias eci "ECI ADSL mailing list" <eci@ml.free.fr>
+fcc-save-hook "eci.*ml.free.fr" =lists/eci
+subscribe eci
+#mailboxes =inboxes/eci
+send-hook "eci.*ml.free.fr" 'my_hdr From: "Adam Spiers" <eci@adamspiers.org>'
+send-hook "eci.*ml.free.fr" 'my_hdr Reply-To: "Adam Spiers" <eci@adamspiers.org>'
+
+# }}}
 # {{{ folding.el
 
 alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <andersl@csd.uu.se>
@@ -988,6 +1002,16 @@ fcc-save-hook gnokii =lists/gnokii
 fcc-save-hook chris.*kemp =lists/gnokii
 fcc-save-hook ck231@.*cam\.ac\.uk =lists/gnokii
 alias chris.kemp "Christopher Kemp" <ck231@cam.ac.uk>
+
+# }}}
+# {{{ gnucash
+
+alias gnucash-user "gnucash users lists" <gnucash-user@lists.gnucash.org>
+fcc-save-hook "gnucash-user.*lists.gnucash.org" =lists/gnucash-user
+subscribe gnucash-user
+#mailboxes =inboxes/gnucash-user
+send-hook "gnucash-user.*lists.gnucash.org" 'my_hdr From: "Adam Spiers" <gnucash-user@adamspiers.org>'
+send-hook "gnucash-user.*lists.gnucash.org" 'my_hdr Reply-To: "Adam Spiers" <gnucash-user@adamspiers.org>'
 
 # }}}
 # {{{ GNU screen
@@ -1199,6 +1223,16 @@ send-hook "rt-devel.*@lists.fsck.com" 'my_hdr From: "Adam Spiers" <rt@adamspiers
 send-hook "rt-devel.*@lists.fsck.com" 'my_hdr Reply-To: "Adam Spiers" <rt@adamspiers.org>'
 
 # }}}
+# {{{ rpm
+
+alias rpm-list "rpm mailing list" <rpm-list@redhat.com>
+fcc-save-hook "rpm-list.*redhat.com" =lists/rpm-list
+subscribe rpm-list
+#mailboxes =inboxes/rpm-list
+send-hook "rpm-list.*redhat.com" 'my_hdr From: "Adam Spiers" <rpm-list@adamspiers.org>'
+send-hook "rpm-list.*redhat.com" 'my_hdr Reply-To: "Adam Spiers" <rpm-list@adamspiers.org>'
+
+# }}}
 # {{{ Rubyphoto
 
 #mailboxes =inboxes/rubyphoto
@@ -1326,7 +1360,7 @@ alias philip.smithies "Philip Smithies" <philipsmithies@lineone.net>
 
 # }}}
 
-# }}}
+################################################
 
 #
 # Unclassified aliases
