@@ -171,7 +171,8 @@ alias stacey stacey.hotmail
 fcc-save-hook stacey.*steele =friends/Oxford/stacey.steele
 fcc-save-hook goldfish_74 =friends/Oxford/stacey.steele
 
-alias graeme.wearden Graeme Wearden <Graeme_Wearden@zdnet.com>
+#alias graeme.wearden Graeme Wearden <Graeme_Wearden@zdnet.com>
+alias graeme.wearden Graeme Wearden <graeme.wearden@zdnet.co.uk>
 fcc-save-hook g.*wearden =friends/Oxford/graeme.wearden
 
 alias tim.corbett-clark Timothy Corbett-Clark <tcorbettclark@thirdphase.com>
@@ -1128,3 +1129,4 @@ alias bcc-only lots of people <adam-dev-null@corelli.new.ox.ac.uk>
 # Unclassified aliases
 #
 
+alias Tim.Lucas.latest \"Lucas, Timothy (Insight Investment)\" <Tim.Lucas@insightinvestment.com>
