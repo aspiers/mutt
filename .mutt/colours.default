@@ -4,24 +4,24 @@
 ## Format:
 ## color object      foreground   background
 
-color attachment green black
+color attachment green default
 color body magenta black [_a-z\.A-Z0-9-]+@[a-zA-Z0-9\./\-]+
 color body magenta black (http|ftp)://[_a-zA-Z0-9\./~\-]+
-color bold brightwhite black
-color error brightred black
+color bold brightwhite default
+color error brightred default
 color header yellow black Subject:
 color header brightwhite black .
 color hdrdefault brightyellow blue
-color indicator brightwhite black
-color markers brightgreen black
-color message brightwhite black
-color quoted cyan black
-color normal white black
-color signature brightblack black
+color indicator brightwhite default
+color markers brightgreen default
+color message brightwhite default
+color quoted cyan default
+color normal white default
+color signature brightblack default
 color status brightyellow blue
-color tilde blue black
-color tree brightmagenta black
-color underline brightwhite black
+color tilde blue default
+color tree brightmagenta default
+color underline brightwhite default
 
 # Colour definitions when on a mono screen
 mono bold      bold
