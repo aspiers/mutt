@@ -36,18 +36,140 @@ mailboxes /home/adam/mail/inboxes/gg-watches
 # }}}
 # {{{ System (software) lists
 
+subscribe linux-diald
+#mailboxes /home/adam/mail/inboxes/linux-diald
+
 subscribe apmd-list
-subscribe linux-kernel linux-smp
+#mailboxes /home/adam/mail/inboxes/apmd-list
+
+subscribe linux-kernel
+mailboxes /home/adam/mail/inboxes/linux-kernel
+
 subscribe linux-vortex-bug vortex-bug
-subscribe linux-thinkpad linux-laptop linux-diald
-subscribe contrib-list
-#mailboxes /home/adam/mail/inboxes/redhat-contrib
-#mailboxes /home/adam/mail/inboxes/redhat-bugzilla
+mailboxes /home/adam/mail/inboxes/vortex-bug
+
+mailboxes /home/adam/mail/inboxes/linux-smp
+subscribe linux-smp
+
+subscribe linux-thinkpad linux-laptop
 #mailboxes /home/adam/mail/inboxes/linux-thinkpad
 #mailboxes /home/adam/mail/inboxes/linux-laptop
-mailboxes /home/adam/mail/inboxes/linux-smp
-mailboxes /home/adam/mail/inboxes/vortex-bug
-mailboxes /home/adam/mail/inboxes/linux-kernel
+
+subscribe contrib-list
+#mailboxes /home/adam/mail/inboxes/redhat-contrib
+
+#mailboxes /home/adam/mail/inboxes/redhat-bugzilla
+
+# }}}
+# {{{ Software lists
+
+# {{{ ALSA
+
+subscribe alsa-devel alsa-user
+mailboxes /home/adam/mail/inboxes/alsa-user
+mailboxes /home/adam/mail/inboxes/alsa-devel
+
+# }}}
+# {{{ bashprompt
+
+subscribe bash
+#mailboxes /home/adam/mail/inboxes/bashprompt
+
+# }}}
+# {{{ bugzilla
+
+subscribe buggies 
+mailboxes /home/adam/mail/inboxes/buggies
+
+# }}}
+# {{{ galeon
+
+subscribe galeon-devel
+#mailboxes /home/adam/mail/inboxes/galeon-devel
+
+# }}}
+# {{{ gimp-perl
+
+subscribe gimp-perl
+mailboxes /home/adam/mail/inboxes/gimp-perl
+
+# }}}
+# {{{ gnokii
+
+subscribe gnokii
+
+# }}}
+# {{{ infobot
+
+subscribe infobot
+#mailboxes /home/adam/mail/inboxes/infobot
+
+# }}}
+# {{{ mozilla
+
+mailboxes /home/adam/mail/inboxes/mozilla-announce
+#mailboxes /home/adam/mail/inboxes/mozilla-bugzilla
+
+# }}}
+# {{{ mutt
+
+subscribe mutt-dev mutt-users mutt-announce 
+mailboxes /home/adam/mail/inboxes/mutt-users
+mailboxes /home/adam/mail/inboxes/mutt-dev
+
+# }}}
+# {{{ Palm
+
+subscribe plucker-dev
+#mailboxes /home/adam/mail/inboxes/plucker-dev
+
+subscribe sitescooper-talk
+#mailboxes /home/adam/mail/inboxes/sitescooper
+
+subscribe gnome-pilot-list
+mailboxes /home/adam/mail/inboxes/gnome-pilot-list
+
+# }}}
+# {{{ PCMCIA
+
+#mailboxes /home/adam/mail/inboxes/pcmcia-beta
+#mailboxes /home/adam/mail/inboxes/pcmcia-apm
+
+# }}}
+# {{{ Perl forums
+
+subscribe p5p oxford-pm 
+mailboxes /home/adam/mail/inboxes/p5p
+
+# }}}
+# {{{ PerlUnit
+
+subscribe perlunit-users perlunit-devel
+#mailboxes /home/adam/mail/inboxes/perlunit-users
+mailboxes /home/adam/mail/inboxes/perlunit-devel
+
+# }}}
+# {{{ Request tracking
+
+subscribe req reqng-developers wishlist rt-users 
+#mailboxes /home/adam/mail/inboxes/rt-users
+#mailboxes /home/adam/mail/inboxes/req
+#mailboxes /home/adam/mail/inboxes/reqng
+
+# }}}
+# {{{ sawfish
+
+subscribe sawmill
+#mailboxes /home/adam/mail/inboxes/sawfish
+
+# }}}
+# {{{ zsh
+
+subscribe zsh-users zsh-workers
+#mailboxes /home/adam/mail/inboxes/zsh-users
+#mailboxes /home/adam/mail/inboxes/zsh-workers
+
+# }}}
 
 # }}}
 # {{{ Security lists
@@ -59,43 +181,6 @@ mailboxes /home/adam/mail/inboxes/linux-security
 mailboxes /home/adam/mail/inboxes/security-audit
 mailboxes /home/adam/mail/inboxes/linux-alert
 mailboxes /home/adam/mail/inboxes/unix-admin
-
-# }}}
-# {{{ Software lists
-
-subscribe mutt-dev mutt-users mutt-announce 
-subscribe req reqng-developers wishlist rt-users 
-subscribe zsh-users zsh-workers
-subscribe alsa-devel alsa-user
-subscribe infobot p5p oxford-pm gimp-perl
-subscribe bash gnokii sawmill galeon-devel
-subscribe buggies gnome-pilot-list plucker-dev
-subscribe sitescooper-talk
-#mailboxes /home/adam/mail/inboxes/linux-diald
-mailboxes /home/adam/mail/inboxes/alsa-user
-mailboxes /home/adam/mail/inboxes/alsa-devel
-#mailboxes /home/adam/mail/inboxes/apmd-list
-mailboxes /home/adam/mail/inboxes/mozilla-announce
-#mailboxes /home/adam/mail/inboxes/mozilla-bugzilla
-#mailboxes /home/adam/mail/inboxes/pcmcia-beta
-#mailboxes /home/adam/mail/inboxes/pcmcia-apm
-mailboxes /home/adam/mail/inboxes/mutt-users
-mailboxes /home/adam/mail/inboxes/mutt-dev
-#mailboxes /home/adam/mail/inboxes/zsh-users
-#mailboxes /home/adam/mail/inboxes/zsh-workers
-#mailboxes /home/adam/mail/inboxes/bashprompt
-#mailboxes /home/adam/mail/inboxes/rt-users
-#mailboxes /home/adam/mail/inboxes/req
-#mailboxes /home/adam/mail/inboxes/reqng
-#mailboxes /home/adam/mail/inboxes/infobot
-#mailboxes /home/adam/mail/inboxes/sawfish
-mailboxes /home/adam/mail/inboxes/p5p
-mailboxes /home/adam/mail/inboxes/gimp-perl
-#mailboxes /home/adam/mail/inboxes/galeon-devel
-mailboxes /home/adam/mail/inboxes/buggies
-mailboxes /home/adam/mail/inboxes/gnome-pilot-list
-#mailboxes /home/adam/mail/inboxes/plucker-dev
-#mailboxes /home/adam/mail/inboxes/sitescooper
 
 # }}}
 # {{{ Chatter
