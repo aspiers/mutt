@@ -109,6 +109,7 @@ fcc-save-hook ck231@.*cam\.ac\.uk =lists/gnokii
 fcc-save-hook linux-diald =lists/linux-diald
 
 fcc-save-hook sawmill.*aarg\.net =lists/sawfish
+fcc-save-hook gimp-perl.*lists\.netcentral\.net =lists/gimp-perl
 
 # }}}
 # {{{ chatter
