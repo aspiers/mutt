@@ -124,7 +124,7 @@ alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 
 alias daddy "Stuart Spiers" <stuart@spiers.net>
 alias thea "Thea Spiers" <stuart@spiers.net>
-alias daniel.spiers "Daniel Spiers" <d.spiers@sympatico.ca>
+alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
 alias peter "Peter O'Connor" <azrael14@juno.com>
 alias helen "Helen O'Connor" <oconh@mayo.edu>
 alias helen2 "Helen O'Connor" <helenoc@juno.com>
@@ -143,7 +143,7 @@ alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
 
 alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
 alias estates RAM Estates Office <estates@ram.ac.uk>
-alias yan.fitterer "Yan Fitterer, RAM sysadmin" <y.fitterer@ram.ac.uk>
+alias yan.fitterer "Yan Fitterer" <y.fitterer@ram.ac.uk>
 alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
 alias nick.byrne Nick Byrne <n.byrne@RAM.AC.UK>
 alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
@@ -321,3 +321,10 @@ source ~/.mutt/quake-aliases
 alias alex.green2 Alex Green <ppytarg@nottingham.ac.uk>
 alias bashprompt bashprompt mailing list <bash@current.nu>
 alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
+alias rh-hassle webmaster@redhat.com, bugzilla-owner@redhat.com, webmaster@developer.redhat.com, dkl@redhat.com, ewt@redhat.com, postmaster@redhat.com, postmaster@developer.redhat.com, contrib-list@redhat.com
+alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
+alias simon.cozens Simon Cozens <simon@brecon.co.uk>
+alias junkbuster.blocklist Stefan Waldherr <stefan@waldherr.org>
+alias tanaka.akira Tanaka Akira <akr@jaist.ac.jp>
+alias sven.wischnowsky Sven Wischnowsky <wischnow@informatik.hu-berlin.de>
+alias zefram Zefram <zefram@fysh.org>

@@ -3,6 +3,7 @@ score '~s "zen"' +30
 score '~f alex@slab\.org' +10
 score '~f mcfarland' +10
 score '~f merlyn' +20
+score '~f teasdale' +20
 
 source ~/.mutt/scoring
 

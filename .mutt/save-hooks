@@ -47,6 +47,7 @@ fcc-save-hook linux-security =lists/linux-security
 fcc-save-hook spaf.*@.*\.purdue\.edu =security/spaf
 
 fcc-save-hook bugzilla.*@redhat\.com =Linux/redhat-bugzilla
+fcc-save-hook contrib-list.*@redhat\.com =lists/redhat-contrib
 
 fcc-save-hook alsa-devel.*@.*alsa-project\.org =lists/alsa-devel
 fcc-save-hook alsa-user.*@.*alsa-project\.org =lists/alsa-user
@@ -82,3 +83,7 @@ fcc-save-hook wstearns@pobox\.com =software/buildkernel
 fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
 
 fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
+
+fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
+
+fcc-save-hook oxford-pm-list@happyfunball\.pm\.org =lists/oxford-pm
