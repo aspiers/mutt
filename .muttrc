@@ -50,6 +50,7 @@
 # This makes it beep every time it checks for new mail on idle
    set   meta_key         # META behaves in typical ESCAPE fashion
 
+#  set   mime_forward=ask-no
    set   move=no          # folder update: do not move read mail to "mbox"
 #  set   pager=less -aCMsei
    set   pager_index_lines=0
