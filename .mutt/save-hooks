@@ -12,6 +12,7 @@ fcc-save-hook chloe.*spiers =relatives/chloe
 fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
 fcc-save-hook daviess@.*\.gov\.au =relatives/sheila.davies
 fcc-save-hook helenoc@juno\.com =relatives/helen.oconnor
+fcc-save-hook supple@iol\.ie =relatives/siobhan.supple
 
 # }}}
 # {{{ Friends
