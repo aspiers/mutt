@@ -40,10 +40,12 @@
 #  set noprompt_after     # prompt when pager exits?
 #  set   point_new
    set   postponed="~/mail/.postponed"
-   set   pgp_encryptself
    set   pgp_verify_sig=yes
    set   pgp_replyencrypt
-   set   pgp_v2=/usr/local/bin/pgp
+   set   pgp_replysign
+   set   pgp_replysignencrypted
+   set   pgp_retainable_sigs
+#   set   pgp_v2=/usr/local/bin/pgp
 #  set   pgp_gpg=
    set   quote_regexp="^> *"
    set   recall=no
