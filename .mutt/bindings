@@ -102,16 +102,16 @@
 
    macro pager "w"      ":set invsmart_wrap invmarkers\n" # Toggle wrap stuff
    macro pager "y"      "c?\t"                            # "-y" screen
-   macro pager "\e1"    ":set pager_index_lines=1\n"      # Change PIL size
-   macro pager "\e2"    ":set pager_index_lines=2\n"      # Change PIL size
-   macro pager "\e3"    ":set pager_index_lines=3\n"      # Change PIL size
-   macro pager "\e4"    ":set pager_index_lines=4\n"      # Change PIL size
-   macro pager "\e5"    ":set pager_index_lines=5\n"      # Change PIL size
-   macro pager "\e6"    ":set pager_index_lines=6\n"      # Change PIL size
-   macro pager "\e7"    ":set pager_index_lines=7\n"      # Change PIL size
-   macro pager "\e8"    ":set pager_index_lines=8\n"      # Change PIL size
-   macro pager "\e9"    ":set pager_index_lines=9\n"      # Change PIL size
    macro pager "\e0"    ":set pager_index_lines=0\n"      # Change PIL size
+   macro pager "\e1"    ":set pager_index_lines=2\n"      # Change PIL size
+   macro pager "\e2"    ":set pager_index_lines=3\n"      # Change PIL size
+   macro pager "\e3"    ":set pager_index_lines=4\n"      # Change PIL size
+   macro pager "\e4"    ":set pager_index_lines=5\n"      # Change PIL size
+   macro pager "\e5"    ":set pager_index_lines=6\n"      # Change PIL size
+   macro pager "\e6"    ":set pager_index_lines=7\n"      # Change PIL size
+   macro pager "\e7"    ":set pager_index_lines=8\n"      # Change PIL size
+   macro pager "\e8"    ":set pager_index_lines=9\n"      # Change PIL size
+   macro pager "\e9"    ":set pager_index_lines=10\n"     # Change PIL size
 
 ## ===========================
 ## Bindings for browser menu
