@@ -1351,6 +1351,8 @@ fcc-save-hook sawmill.*aarg\.net =lists/sawfish
 # }}}
 # {{{ Slim Devices lists
 
+folder-hook =(inboxes|lists)/slim- source ~/.mutt/mailing-list
+
 alias slim-updates "Slim Devices updates" <updates@lists.slimdevices.com>
 fcc-save-hook "updates.*lists.slimdevices.com" =lists/slim-updates
 subscribe updates@lists.slimdevices.com
