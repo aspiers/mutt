@@ -102,6 +102,8 @@ fcc-save-hook chloe.*spiers =relatives/chloe
 alias ian.spiers "Ian Spiers" <ian@spiers.net>
 alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
 alias ian ian.spiers
+fcc-save-hook ian.*spiers =relatives/ian.spiers
+
 alias barry.spiers "Barry Spiers" <barry@spiers.net>
 alias barry.spiers.work "Barry Spiers, at work" <flexdeck@intelog.com>
 alias barry barry.spiers
@@ -191,6 +193,7 @@ alias ben.north.3com "Ben North" <Ben_North@eur.3com.com>
 alias ben ben.north.corelli
 
 fcc-save-hook dave@corelli\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
+fcc-save-hook dave@kites.org.uk =friends/Oxford/dave.lindgren
 alias dave.lindgren "David Lindgren" <dave@corelli.new.ox.ac.uk>
 alias dave dave.lindgren
 
