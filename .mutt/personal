@@ -66,19 +66,24 @@ send-hook . 'my_hdr Reply-To: "Adam Spiers" <adam@spiers.net>'
 # {{{ Me :-)
 
 alias me "Adam Spiers" <adam@spiers.net>
-alias me.guideguide "Adam Spiers, at guideguide" <aspiers@guideguide.com>
-alias me.musician "Adam Spiers" <adam.spiers@musician.org>
-alias me.ox "Adam Spiers" <adam.spiers@new.ox.ac.uk>
-alias me.oxford "Adam Spiers" <adam.spiers@new.oxford.ac.uk>
-alias me.corelli "Adam Spiers, on corelli" <adam@corelli.new.ox.ac.uk>
-alias me.thelonious "Adam Spiers, on thelonious" <adam@thelonious.new.ox.ac.uk>
+alias me.adamspiers "Adam Spiers" <me@adamspiers.org>
+alias me.tigerpig "Adam Spiers" <adam@tigerpig.org>
+alias me.roink "Adam Spiers" <roink@tigerpig.org>
 alias me.hotmail "Adam Spiers, on hotmail" <adam_spiers@hotmail.com>
-alias me.test "Adam Spiers, testing something" <adam-test@corelli.new.ox.ac.uk>
-alias me.dict "Adam Spiers, dictionary gateway" <adam-dict@corelli.new.ox.ac.uk>
+alias me.CPAN "Adam Spiers on CPAN" <aspiers@cpan.org>
 alias me.lehman "Adam Spiers, Lehman Brothers" <aspiers@lehman.com>
 alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 
+#alias me.guideguide "Adam Spiers, at guideguide" <aspiers@guideguide.com>
+#alias me.musician "Adam Spiers" <adam.spiers@musician.org>
+#alias me.ox "Adam Spiers" <adam.spiers@new.ox.ac.uk>
+#alias me.oxford "Adam Spiers" <adam.spiers@new.oxford.ac.uk>
+
 # }}}
+
+# Everyone is classified by how I first met them.
+# Roughly in chronological order.
+
 # {{{ Relatives
 
 alias daddy "Stuart Spiers" <stuart@spiers.net>
@@ -155,9 +160,98 @@ alias relatives-in-England leonard.pearce, peter.leckstein
 alias relatives-in-UK relatives-in-England, relatives-in-Eire
 
 # }}}
-# {{{ Friends
+# {{{ Old schoolteachers
 
-# Classified by how I first met them
+#alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
+alias gilbert.roscoe "Gilbert Roscoe" <gilbert@sionix.demon.co.uk>
+alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
+alias john.moore John Moore <JFM@shrewsbury.org.uk>
+
+# }}}
+
+# {{{ Friends from home
+
+# alias matthew.clay.old Matt Clay <m.clay@prsarchitects.com>
+# alias matthew.clay.old2 Matt Clay <mclay@e-mango.com>
+# alias matthew.clay.old3 Matt Clay <matt@clay76.freeserve.co.uk>
+# alias matthew.clay Matt Clay <misterclay@ukonline.co.uk>
+fcc-save-hook mclay@e-mango.com =friends/home/matthew.clay
+alias matthew.clay "Matthew Clay" <mattclay@hotmail.com>
+fcc-save-hook (mister|matt).*clay =friends/home/matthew.clay
+
+fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
+#alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
+alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
+
+#alias dan.davies.old Daniel Davies <dddavies@students.jhubc.it>
+#alias dan.davies.work Dan Davies <DaviesDD@bp.com>
+alias dan.davies.lineone "Daniel Davies" <dddavies@lineone.net>
+alias dan.davies.hotmail Dan Davies <dddavies@hotmail.com>
+alias dan.davies.jhu "Daniel Davies" <ddavie12@jhu.edu>
+alias dan.davies dan.davies.jhu
+fcc-save-hook dddavies =friends/home/dan.davies
+fcc-save-hook daviesdd =friends/home/dan.davies
+
+#alias julian.thompson "Julian Thompson" <julianthompson@doctors.net.com>
+alias julian.thompson "Julian Thompson" <julianthompson@doctors.org.uk>
+alias julian.thompson.hotmail "Julian Thompson" <julesthompson50@hotmail.com>
+
+#alias jon.greenwell "Jonathan Greenwell" <J.R.Greenwell@mds.qmw.ac.uk>
+alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
+#alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
+#alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
+alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
+alias alex.green "Alex Green" <richard.green7@virgin.net>
+alias richard.green "Richard Green" <richard.green7@virgin.net>
+alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
+alias katie.green "Katie Green" <green@burlington.org.uk>
+alias stig "Stig (Peter) Edwards" <PEdwards@factset.com>
+
+#alias di.north "Di North" <di@amaroo.demon.co.uk>
+
+alias charles.gaskell "Charles Gaskell" <gaskell@gaskell.f9.co.uk>
+alias stewart.dunn Stewart Dunn <info@sdunn.demon.co.uk>
+
+alias home-party-friends matthew.clay, stig, alex.green, katie.green, julian.thompson
+# rowan sprogged
+# Dan away
+
+# }}}
+# {{{ NYO friends
+
+alias annabel.borthwick Annabel Borthwick <afborth@hotmail.com>
+alias annabel annabel.borthwick
+alias bels annabel
+
+alias matt.jones Matt Jones <mattojones@hotmail.com>
+fcc-save-hook mattojones =friends/NYO/matt.jones
+
+#alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
+
+alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
+
+fcc-save-hook rosiebiss =friends/NYO/rosie.biss
+alias rosie.biss "Rosie Biss" <rosiebiss@yahoo.com>
+alias rosie rosie.biss
+
+alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
+alias malcs malcolm.cross
+
+fcc-save-hook bourby =friends/Oxford/bourby.norman
+alias bourby.norman Bourby Norman <bourbynorman@hotmail.com>
+alias rachel.norman bourby.norman
+
+alias sali-wyn.ryan "Sali-Wyn Ryan" <sali.ryan@classicfm.com>
+alias sali sali-wyn.ryan
+
+alias oliver.wilson "Oliver Wilson" <wilson_ocj50@hotmail.com>
+alias olly oliver.wilson
+
+alias roger.proctor Roger Proctor <cubemusic@yahoo.com>
+
+alias NYO-party-friends matt.jones, rosie, sali, olly, bels
+
+# }}}
 
 # {{{ (Ex-)Oxford friends
 
@@ -175,10 +269,8 @@ alias nick.mcgrogan.bio "Nick McGrogan" <nicholas.mcgrogan@oxford-biosignals.com
 alias nick.mcgrogan.work nick.mcgrogan.bio
 alias nick nick.mcgrogan.yahoo
 
-alias nicks nick,nick.williams
-
-fcc-save-hook d.*nicker.*@.*.ox(ford)?.ac.uk =security/darren.nickerson
-fcc-save-hook darren.*@.*roam\.tpc\.int =security/darren.nickerson
+# fcc-save-hook d.*nicker.*@.*.ox(ford)?.ac.uk =security/darren.nickerson
+# fcc-save-hook darren.*@.*roam\.tpc\.int =security/darren.nickerson
 
 #alias rachael.gulliver.old "Rachael Gulliver" <rachaelgulliver@hotmail.com>
 #alias rachael.gulliver "Rachael Gulliver" <rg232@cam.ac.uk>
@@ -261,7 +353,6 @@ alias tim.lucas "Tim Lucas" <lucatim_uk@yahoo.co.uk>
 alias jeremy.cave "Jeremy Cave" <jeremy.cave@fandc.com>
 alias sarah.hudson "Sarah Hudson" <Sarahhudson4@aol.com>
 alias kath.noble "Kath Noble" <kath_noble@hotmail.com>
-alias annabel.borthwick Annabel Borthwick <afborth@hotmail.com>
 
 #alias jessie.hadley.old Jess Hadley <jhadley@uvic.ca>
 #alias jessie.hadley.hotmail Jess Hadley <jessiekate@hotmail.com>
@@ -325,48 +416,60 @@ alias barny.hollington Barny Hollington <brnhllngtn@aol.com>
 alias becky.leyton Becky Leyton <beckyleyton@aol.com>
 alias bokc.leyton becky.leyton
 
-# }}}
-# {{{ Friends from home
-
-# alias matthew.clay.old Matt Clay <m.clay@prsarchitects.com>
-# alias matthew.clay.old2 Matt Clay <mclay@e-mango.com>
-# alias matthew.clay.old3 Matt Clay <matt@clay76.freeserve.co.uk>
-# alias matthew.clay Matt Clay <misterclay@ukonline.co.uk>
-fcc-save-hook mclay@e-mango.com =friends/home/matthew.clay
-alias matthew.clay "Matthew Clay" <mattclay@hotmail.com>
-fcc-save-hook (mister|matt).*clay =friends/home/matthew.clay
-
-fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
-#alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
-alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
-
-#alias dan.davies.old Daniel Davies <dddavies@students.jhubc.it>
-#alias dan.davies.work Dan Davies <DaviesDD@bp.com>
-alias dan.davies.lineone "Daniel Davies" <dddavies@lineone.net>
-alias dan.davies.hotmail Dan Davies <dddavies@hotmail.com>
-alias dan.davies.jhu "Daniel Davies" <ddavie12@jhu.edu>
-alias dan.davies dan.davies.jhu
-fcc-save-hook dddavies =friends/home/dan.davies
-fcc-save-hook daviesdd =friends/home/dan.davies
-
-#alias julian.thompson "Julian Thompson" <julianthompson@doctors.net.com>
-
-#alias jon.greenwell "Jonathan Greenwell" <J.R.Greenwell@mds.qmw.ac.uk>
-alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
-#alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
-#alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
-alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
-alias alex.green "Alex Green" <richard.green7@virgin.net>
-alias richard.green "Richard Green" <richard.green7@virgin.net>
-alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
-alias katie.green "Katie Green" <green@burlington.org.uk>
-alias stig "Stig (Peter) Edwards" <PEdwards@factset.com>
-
-#alias di.north "Di North" <di@amaroo.demon.co.uk>
-
-alias charles.gaskell "Charles Gaskell" <gaskell@gaskell.f9.co.uk>
+alias Oxford-party-friends nick, vicky.hamilton, rachael.schofield, graeme.wearden, giles.harrison, ben.teasdale, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, jo.sherratt, sarsli, lindsey.napier,
+# ben, bear too busy with Meg this time
 
 # }}}
+# {{{ New College colleagues
+
+alias wilson "Wilson Sutherland" <wilson.sutherland@new.ox.ac.uk>
+alias geraint "Geraint Jones" <geraint.jones@comlab.ox.ac.uk>
+alias david.gavaghan "David Gavaghan" <gavaghan@vax.ox.ac.uk>
+
+alias james.dore "James Dore, New College sysadmin" <james.dore@new.ox.ac.uk>
+fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
+
+alias chris.tromans Chris Tromans <chris@corelli.new.ox.ac.uk>
+fcc-save-hook c.*tromans =Oxford/college/chris.tromans
+fcc-save-hook chris@corelli.new.ox.ac.uk =Oxford/college/chris.tromans
+
+alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
+alias ncsec "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
+alias barbara.vardag "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
+alias alastair.white "Alastair White" <alastair.white@new.ox.ac.uk>
+
+# }}}
+# {{{ University-wide acquaintances
+
+alias ruth.porter "Ruth Porter (OUCS contact for New College)" <ruth.porter@oucs.ox.ac.uk>
+alias malcolm.beattie "Malcolm Beattie" <mbeattie@clueful.co.uk>
+alias jan.grothusen "Jan Grothusen" <jan@robots.ox.ac.uk>
+alias robin.watts "Robin Watts" <robin.watts@comlab.ox.ac.uk>
+alias pete.biggs Pete Biggs <pete@physchem.ox.ac.uk>
+alias geoff.lescott Geoff Lescott <geoff.lescott@computing-services.oxford.ac.uk>
+alias darren.nickerson "Darren Nickerson" <dnicker@ermine.ox.ac.uk>
+alias darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.uk>
+alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
+
+alias gervase.markham Gervase Markham <gerv@gerv.net>
+fcc-save-hook gerv\.net =Oxford/acquaintances/gervase.markham
+fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
+
+#alias OLD-robin.stevens.astro Robin Stevens <rejs@astro.ox.ac.uk>
+
+fcc-save-hook mgm@eskimoman\.net =Oxford/acquaintances/mike.mason
+alias jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
+
+# }}}
+# {{{ Official university email addresses
+
+alias advisory OUCS Advisory Service <advisory@computing-services.oxford.ac.uk>
+alias user.registration "User Registration, OUCS" <user.registration@computing-services.oxford.ac.uk>
+alias oxcert "OxCERT" <oxcert@ox.ac.uk>
+alias hostmaster "OUCS host administration" <hostmaster@ox.ac.uk>
+
+# }}}
+
 # {{{ RAM friends
 
 alias yan.fitterer "Yan Fitterer" <y.fitterer@ram.ac.uk>
@@ -397,9 +500,9 @@ fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 
 fcc-save-hook ben.trigg =friends/RAM/ben.trigg
 
-alias lindsay.wood Lindsay Wood <l.wood@ram.ac.uk>
-fcc-save-hook l\.wood@ram\.ac\.uk =friends/RAM/lindsay.wood
+alias lindsay.wood.RAM Lindsay Wood <l.wood@ram.ac.uk>
 alias lindsay.wood.hotmail Lindsay Wood <lawood79@hotmail.com>
+fcc-save-hook l\.wood@ram\.ac\.uk =friends/RAM/lindsay.wood
 fcc-save-hook lawood =friends/RAM/lindsay.wood
 
 alias mike.francis Mike Francis <mjfrancis@onetel.net.uk>
@@ -409,67 +512,35 @@ alias roderick.chadwick Roderick Chadwick <RoderickJC@aol.com>
 
 alias katie.chatburn Katie Chatburn <katie@acm.ac.uk>
 
-# }}}
-# {{{ NYO friends
-
-alias matt.jones Matt Jones <mattojones@hotmail.com>
-fcc-save-hook mattojones =friends/NYO/matt.jones
-
-#alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
-
-alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
-
-fcc-save-hook rosiebiss =friends/NYO/rosie.biss
-alias rosie.biss "Rosie Biss" <rosiebiss@yahoo.com>
-alias rosie rosie.biss
-
-alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
-alias malcs malcolm.cross
-
-fcc-save-hook bourby =friends/Oxford/bourby.norman
-alias bourby.norman Bourby Norman <bourbynorman@hotmail.com>
-alias rachel.norman bourby.norman
-
-alias sali-wyn.ryan "Sali-Wyn Ryan" <sali.ryan@classicfm.com>
-alias sali sali-wyn.ryan
-
-alias oliver.wilson "Oliver Wilson" <wilson_ocj50@hotmail.com>
-alias olly oliver.wilson
-
-# }}}
-# {{{ London friends
-
-alias livia.harris Livia Harris <liviaharris@yahoo.co.uk>
+alias laura.stanford Laura Stanford <lollydrofnats@hotmail.com>
 
 alias matt.shlomowitz Matthew Shlomowitz <mshlom@hotmail.com>
 alias shlom matt.shlomowitz
 fcc-save-hook shlom@hotmail.com =friends/RAM/matthew.shlomowitz
 
-alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
-alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
-
-alias emma.cullender Emma Cullender <redneluc@globalnet.co.uk>
-fcc-save-hook redneluc =friends/misc/emma.cullender
-fcc-save-hook le7053@qmw\.ac\.uk =friends/misc/emma.cullender
-
-alias jessica.ong Jessica Ong <jessica.ong@freshfields.com>
+alias RAM-party-friends nick.byrne, lindsay.wood, mike.francis, kirsty, shlom, laura.stanford, roderick.chadwick, katie.chatburn
 
 # }}}
-# {{{ Foreign friends
+alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
+# {{{ RAM staff
 
-alias miriam Miriam <Diamond5475@aol.com>
-fcc-save-hook Diamond5475@aol\.com =friends/misc/miriam
+# admin
 
-# }}}
-# {{{ Jersey friends
+alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
+alias estates RAM Estates Office <estates@ram.ac.uk>
+alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
 
-alias ron.hickman Ron Hickman <tekron@ic24.net>
-fcc-save-hook tekron@ic24\.net =friends/Jersey/ron.hickman
+# teachers
 
-alias sonia "Sonia (JSO)" <pg004593@sghms.ac.uk>
+alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
+alias colin.carr Colin Carr <ccarr@atlas.co.uk>
+alias david.strange David Strange <d.strange@ram.ac.uk>
+alias cello-teachers philip.sheppard, colin.carr, david.strange
 
 # }}}
 # {{{ Music friends
+
+alias heather.badke Heather Badke <heatherbadke@hotmail.com>
 
 alias paul.skinner Paul Skinner <paulski@supanet.com>
 fcc-save-hook paulski.*supanet\.com =friends/Jersey/paul.skinner
@@ -486,6 +557,37 @@ alias nick.rippon "Nick Rippon" <nicholas.rippon@tinyworld.co.uk>
 
 # Dan Watt's boyfriend
 alias brady.pohle "Brady A Pohle" <brady.pohle@herbertsmith.com>
+
+alias music-party-friends claire.roff, david.lasserson, brady.pohle, livia.harris, heather.badke
+# Ripper can't make this one
+
+# }}}
+# {{{ Other London friends
+
+alias livia.harris Livia Harris <liviaharris@yahoo.co.uk>
+
+alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
+alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
+
+# alias emma.cullender Emma Cullender <redneluc@globalnet.co.uk>
+# fcc-save-hook redneluc =friends/misc/emma.cullender
+# fcc-save-hook le7053@qmw\.ac\.uk =friends/misc/emma.cullender
+
+alias jessica.ong Jessica Ong <jessica.ong@freshfields.com>
+
+# }}}
+# {{{ Foreign friends
+
+alias miriam Miriam <Diamond5475@aol.com>
+fcc-save-hook Diamond5475@aol\.com =friends/misc/miriam
+
+# }}}
+# {{{ Jersey friends
+
+alias ron.hickman Ron Hickman <tekron@ic24.net>
+fcc-save-hook tekron@ic24\.net =friends/Jersey/ron.hickman
+
+alias sonia "Sonia (JSO)" <pg004593@sghms.ac.uk>
 
 # }}}
 # {{{ Endellion friends
@@ -513,8 +615,6 @@ alias inga.taylor.work Inga Taylor <itaylor@mxbex.com>
 alias inga.taylor Inga Taylor <ingataylor@hotmail.com>
 alias myrtledene <ian.bysh@advantage-business.co.uk>, <duncan_french@djf.ndo.co.uk>, <mike@theeurekafactor.com>, <nickidivett@fulham73.freeserve.co.uk>, joanna.warden, inga.taylor, anne-marie.cullum
 
-alias endellion-marathon-sponsors <stewart@mcilwham37.fsnet.co.uk>, <tom@thomasguthrie.com>, <hilary.bentley@gartmore.com>, <colin.fleming@creditlyonnais.co.uk>, Dominic <devers@nspcc.org.uk>, <peter.howell@write-away.org>, tom.hickox, matthew.pay, <coghlanangie@aol.com>, <thorsten@terweiden.de>, <Jane.Dickinson@ncl.ac.uk>, oliver.wilson, annabel.borthwick, <jemima.peterken@virgin.net>, <jjp@ipswich.suffolk.sch.uk>, <harrymooregwyn@aol.com>, clare.raybould, ben.rogerson, michael.borthwick, <rjmbutler@aol.com>, <elaineft@mac.com>, myrtledene, <susanna.twiddy@zoo.ox.ac.uk>
-
 # Orchestra
 alias jessica.townsend "Jessica Townsend" <jtownsend@rcm.ac.uk> # clarinet
 alias katherine.barnecutt "Katherine Barnecutt" <kbarnecutt@hotmail.com> # viola, Jeremy
@@ -539,107 +639,9 @@ alias deborah.white "deborah white" <debwhite76@hotmail.com>
 # alias ian.sandbrook "Ian Sandbrook" <isandbrook@ukonline.co.uk>
 # alias andrew.uttley "Andrew Uttley" <andrew@ajd-amu.freeserve.co.uk>
 
-# }}}
-# {{{ Groups of friends
+alias endellion-marathon-sponsors <stewart@mcilwham37.fsnet.co.uk>, <tom@thomasguthrie.com>, <hilary.bentley@gartmore.com>, <colin.fleming@creditlyonnais.co.uk>, Dominic <devers@nspcc.org.uk>, <peter.howell@write-away.org>, tom.hickox, matthew.pay, <coghlanangie@aol.com>, <thorsten@terweiden.de>, <Jane.Dickinson@ncl.ac.uk>, oliver.wilson, annabel.borthwick, <jemima.peterken@virgin.net>, <jjp@ipswich.suffolk.sch.uk>, <harrymooregwyn@aol.com>, clare.raybould, ben.rogerson, michael.borthwick, <rjmbutler@aol.com>, <elaineft@mac.com>, myrtledene, <susanna.twiddy@zoo.ox.ac.uk>
 
-alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
-alias add2 kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
-
-alias birthday-and-nacro-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
-alias nacro-sponsorship-followup nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, matt.jones, rosie.biss, livia.harris, claire.roff, matthew.pay, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
-
-alias marathon-relatives family, relatives-in-UK, michael.oconnor, helen.oconnor
-
-alias marathon-sponsorship endellion-marathon-sponsors, marathon-relatives, nick, vicky.hamilton, rachael.schofield, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, di.north, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, nick.rippon, ture, andym, xtof, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, becky.leyton, matthew.clay, richard.green, stig, yan, ron.hickman, mike.francis, paul.newbold, gareth.jones, adrian.warrick, john.hargreaves, jeff.harrod, jason.yank, cello-teachers, kirsty, shlom
-
-# }}}
-
-alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
-
-# }}}
-# {{{ Old skools
-
-#alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
-alias gilbert.roscoe "Gilbert Roscoe" <gilbert@sionix.demon.co.uk>
-alias stewart.dunn Stewart Dunn <info@sdunn.demon.co.uk>
-alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
-alias john.moore John Moore <JFM@shrewsbury.org.uk>
-
-# }}}
-
-# {{{ Oxford University
-
-# {{{ New College
-
-# {{{ New College / IT work
-
-alias james.dore "James Dore, New College sysadmin" <james.dore@new.ox.ac.uk>
-fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
-
-alias chris.tromans Chris Tromans <chris@corelli.new.ox.ac.uk>
-fcc-save-hook c.*tromans =Oxford/college/chris.tromans
-fcc-save-hook chris@corelli.new.ox.ac.uk =Oxford/college/chris.tromans
-
-alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
-alias ncsec "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
-alias barbara.vardag "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
-alias alastair.white "Alastair White" <alastair.white@new.ox.ac.uk>
-alias wilson "Wilson Sutherland" <wilson.sutherland@new.ox.ac.uk>
-alias geraint "Geraint Jones" <geraint.jones@comlab.ox.ac.uk>
-alias david.gavaghan "David Gavaghan" <gavaghan@vax.ox.ac.uk>
-alias jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
-
-# }}}
-
-# }}}
-
-# {{{ Acquaintances
-
-alias roger.proctor Roger Proctor <cubemusic@yahoo.com>
-alias ruth.porter "Ruth Porter (OUCS contact for New College)" <ruth.porter@oucs.ox.ac.uk>
-alias malcolm.beattie "Malcolm Beattie" <mbeattie@clueful.co.uk>
-alias jan.grothusen "Jan Grothusen" <jan@robots.ox.ac.uk>
-alias robin.watts "Robin Watts" <robin.watts@comlab.ox.ac.uk>
-alias pete.biggs Pete Biggs <pete@physchem.ox.ac.uk>
-alias geoff.lescott Geoff Lescott <geoff.lescott@computing-services.oxford.ac.uk>
-alias darren.nickerson "Darren Nickerson" <dnicker@ermine.ox.ac.uk>
-alias darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.uk>
-alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
-
-alias gervase.markham Gervase Markham <gerv@gerv.net>
-fcc-save-hook gerv\.net =Oxford/acquaintances/gervase.markham
-fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
-
-#alias OLD-robin.stevens.astro Robin Stevens <rejs@astro.ox.ac.uk>
-
-fcc-save-hook mgm@eskimoman\.net =Oxford/acquaintances/mike.mason
-
-# }}}
-# {{{ Official
-
-alias advisory OUCS Advisory Service <advisory@computing-services.oxford.ac.uk>
-alias user.registration "User Registration, OUCS" <user.registration@computing-services.oxford.ac.uk>
-alias oxcert "OxCERT" <oxcert@ox.ac.uk>
-alias hostmaster "OUCS host administration" <hostmaster@ox.ac.uk>
-
-# }}}
-
-# }}}
-
-# {{{ RAM staff
-
-# admin
-
-alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
-alias estates RAM Estates Office <estates@ram.ac.uk>
-alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
-
-# teachers
-
-alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
-alias colin.carr Colin Carr <ccarr@atlas.co.uk>
-alias david.strange David Strange <d.strange@ram.ac.uk>
-alias cello-teachers philip.sheppard, colin.carr, david.strange
+alias Endellion-party-friends clare.raybould, ben.rogerson, tom.hickox, matthew.pay, joanna.warden, anne-marie.cullum, claire.gibb
 
 # }}}
 # {{{ Musical acquaintances
@@ -655,17 +657,28 @@ fcc-save-hook awarrick.*argonet\.co\.uk =friends/musicians/adrian.warrick
 alias gareth.jones Gareth Jones <jones@garethd.freeserve.co.uk>
 fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
 
-alias heather.badke Heather Badke <heatherbadke@hotmail.com>
+# }}}
+# {{{ Running friends
+
+alias marc.allison "Marc Allison" <Marc_Allison@standardandpoors.com>
+alias chris.williamson "Chris Williamson" <C.M.Williamson@btinternet.com>
+alias cecilia.desuiza "Cecilia deSuiza" <Cecilia.deSuiza@ubs.com>
+
+fcc-save-hook (marc.*allison|c.*williamson|desuiza) =exercise/reebok.sports.club
+
+# Nick Blackwell
+# Pete McHugh
+# James Brown
+# Gary McGhee
 
 # }}}
-
 # {{{ Computing
 
 # {{{ Work
 
 # {{{ Lehman Brothers
 
-alias kordian.witek.work Kordian Witek <kwitek@lehman.com>
+#alias kordian.witek.work Kordian Witek <kwitek@lehman.com>
 alias kordian.witek Kordian Witek <kordy@kordian.com>
 alias duncan.young.home Duncan Young <duncan@duncanyoung.com>
 alias alan.champion Alan Champion <achampio@lehman.com>
@@ -1506,14 +1519,7 @@ mailboxes =inboxes/amazon
 alias keet Christiaan Keet <keet@plig.net>
 alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
 
-# }}}
-# {{{ Exercise
-
-alias marc.allison "Marc Allison" <Marc_Allison@standardandpoors.com>
-alias chris.williamson "Chris Williamson" <C.M.Williamson@btinternet.com>
-alias cecilia.desuiza "Cecilia deSuiza" <Cecilia.deSuiza@ubs.com>
-
-fcc-save-hook (marc.*allison|c.*williamson|desuiza) =exercise/reebok.sports.club
+alias computer-party-friends ture, ben.simpson, jasper.mccrea
 
 # }}}
 
@@ -1527,6 +1533,23 @@ alias bcc-only lots of people <dev.null@adamspiers.org>
 alias philip.smithies "Philip Smithies" <philipsmithies@lineone.net>
 
 #source ~/.mutt/quake-aliases
+
+# }}}
+
+# {{{ Groups of friends
+
+alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
+alias add2 kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
+
+alias birthday-and-nacro-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
+alias nacro-sponsorship-followup nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, matt.jones, rosie.biss, livia.harris, claire.roff, matthew.pay, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
+
+alias marathon-relatives family, relatives-in-UK, michael.oconnor, helen.oconnor
+
+alias marathon-sponsorship endellion-marathon-sponsors, marathon-relatives, nick, vicky.hamilton, rachael.schofield, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, di.north, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, nick.rippon, ture, andym, xtof, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, becky.leyton, matthew.clay, richard.green, stig, yan, ron.hickman, mike.francis, paul.newbold, gareth.jones, adrian.warrick, john.hargreaves, jeff.harrod, jason.yank, cello-teachers, kirsty, shlom
+
+
+alias flat-warming home-party-friends, NYO-party-friends, Oxford-party-friends, RAM-party-friends, Endellion-party-friends, music-party-friends, computer-party-friends
 
 # }}}
 
