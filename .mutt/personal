@@ -239,8 +239,9 @@ alias sarah.hudson "Sarah Hudson" <Sarahhudson4@aol.com>
 alias kath.noble "Kath Noble" <kath_noble@hotmail.com>
 alias annabel.borthwick Annabel Borthwick <afborth@hotmail.com>
 
-alias jessie.hadley Jess Hadley <jhadley@uvic.ca>
-#alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
+#alias jessie.hadley.old Jess Hadley <jhadley@uvic.ca>
+#alias jessie.hadley.hotmail Jess Hadley <jessiekate@hotmail.com>
+alias jessie.hadley Jess Hadley <jess@heretics.ca>
 
 fcc-save-hook bearbolton@hotmail\.com =friends/Oxford/bear.bolton
 fcc-save-hook bear@corelli\.new\.ox\.ac\.uk =friends/Oxford/bear.bolton
