@@ -469,6 +469,9 @@ fcc-save-hook aotoole@guideguide.com =computer-work/astrid.otoole
 alias sven.hessler Sven Hessler <shessler@guideguide.com>
 fcc-save-hook shessler@guideguide.com =computer-work/sven.hessler
 
+alias ben.simpson Ben Simpson <bsimpson@guideguide.com>
+fcc-save-hook bsimpson@guideguide.com =computer-work/ben.simpson
+
 # }}}
 # {{{ other
 
