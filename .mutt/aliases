@@ -333,6 +333,7 @@ alias sawfish "sawfish mailing list" <sawmill@aarg.net>
 alias sawmill sawfish
 alias modperl mod_perl mailing list <modperl@apache.org>
 alias gimp-perl gimp-perl mailing list <gimp-perl@lists.netcentral.net>
+alias galeon galeon mailing list <galeon-devel@lists.sourceforge.net>
 
 # }}}
 # {{{ Software (authors)
@@ -409,3 +410,4 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 ##############################################################################
 
 alias siobhan.supple Siobhan Supple <supple@iol.ie>
+alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>

@@ -120,6 +120,7 @@ fcc-save-hook linux-diald =lists/linux-diald
 
 fcc-save-hook sawmill.*aarg\.net =lists/sawfish
 fcc-save-hook gimp-perl.*lists\.netcentral\.net =lists/gimp-perl
+fcc-save-hook galeon-devel.*lists\.sourceforge\.net =lists/galeon
 
 # }}}
 # {{{ chatter
