@@ -76,7 +76,7 @@ unignore x-cron-env
 auto_view text/x-vcard
 
 my_hdr X-Home-Page: http://www.new.ox.ac.uk/~adam/
-my_hdr X-OS: `/bin/uname -srm`
+my_hdr X-OS: RedHat Linux
 
 # Support for compressed folders
 open-hook \\.gz$ "gzip -cd %f > %t" 
