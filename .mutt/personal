@@ -172,9 +172,11 @@ fcc-save-hook goldfish_74 =friends/Oxford/stacey.steele
 alias graeme.wearden Graeme Wearden <graeme.wearden@zdnet.co.uk>
 fcc-save-hook g.*wearden =friends/Oxford/graeme.wearden
 
-alias tim.corbett-clark Timothy Corbett-Clark <tcorbettclark@thirdphase.com>
+alias tim.corbett-clark.thirdphase Timothy Corbett-Clark <tcorbettclark@thirdphase.com>
+alias tim.corbett-clark Timothy Corbett-Clark <tim@corbettclark.com>
 alias tcc tim.corbett-clark
 fcc-save-hook tcorbettclark@thirdphase.com =Oxford/friends/tim.corbett-clark
+fcc-save-hook corbettclark.com =Oxford/friends/tim.corbett-clark
 
 alias giles.harrison Giles Harrison <giles.harrison@bbc.co.uk>
 
