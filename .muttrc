@@ -21,20 +21,23 @@
 #  ~C USER         message is to: or Cc: USER
 
    # Mutt's default 
-#  set   default_hook="~f %s !~P | (~P ~C %s)"
+#  set default_hook="~f %s !~P | (~P ~C %s)"
 
-   # My attempts.  The tricky bit is getting it right when it's neither
-   # to or from you (e.g. list mail), but without adding too loose a
-   # pattern so as to screw up friend's group mails.  This is the 3rd
-   # clause.  If I can't get the list stuff right, it's probably
+   # My attempts.  The tricky bit is getting it right when it's
+   # neither to or from you (e.g. list mail), but without adding too
+   # loose a pattern so as to screw up friend's group mails.  The 3rd
+   # clause is for list mail which doesn't have me in From: or To:.
+   # The 4th clause is for list mail which is To: me, but Cc: the list.
+   set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~C %s) | (~p ~c %s)"
+
+   # If I can't get the list stuff right, it's probably
    # worth adopting the
    #
    #   foo-hook "~f foo-list@lists\.foo\.com" =folder
    # 
    # form when matching lists; I think some lists have their address
    # in the To: line, and some in From:.  Sometimes people even
-   # Cc: to a list instead!
-   set   default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~C %s)"
+   # Cc: to a list, or send To: me *and* To: the list...
 
    set   editor="emacs -nw"
    set   fast_reply
