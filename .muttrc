@@ -57,7 +57,7 @@
                           # the end of the mail is shown
 #  set noprompt_after     # prompt when pager exits?
 #  set   point_new
-   set   postponed="~/mail/.postponed"
+   set   postponed="=.postponed"
    set   pgp_verify_sig=yes
    set   pgp_replyencrypt
    set   pgp_replysign
