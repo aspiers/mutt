@@ -365,6 +365,9 @@ fcc-save-hook ben.trigg =friends/RAM/ben.trigg
 alias lindsay.wood Lindsay Wood <l.wood@ram.ac.uk>
 fcc-save-hook l.wood@ram.ac.uk =friends/RAM/lindsay.wood
 
+alias mike.francis Mike Francis <mjfrancis@onetel.net.uk>
+fcc-save-hook mjfrancis =friends/RAM/mike.francis
+
 # }}}
 # {{{ NYO friends
 
