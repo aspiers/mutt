@@ -126,8 +126,8 @@
 ## ===========================
 
    bind  browser <space>  select-entry
-   macro browser  q       "<exit>^u\r"
-   macro browser  i       "q"
+   macro browser  q       "<exit>^u\r"  "return to current folder"
+   macro browser  i       "q"           "return to current folder"
 
 
 ## ===========================
@@ -137,10 +137,11 @@
    bind  compose  y  noop
    bind  compose  g  send-message
    bind  compose  v  view-attach
+   bind  compose  q  noop
 
-   macro compose  F  "f\Cu\r"
-   macro compose  P  "qy"
-   macro compose  Q  "qn"
+   macro compose  F  "<edit-fcc><kill-line><enter>"  "clear fcc setting"
+   macro compose  P  "<exit>y"   "postpone message"
+   macro compose  Q  "<exit>n"   "abort message"
 
 
 ## ===========================
