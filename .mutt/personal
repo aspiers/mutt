@@ -50,6 +50,7 @@ folder-hook =(inboxes|lists)/alsa-            source ~/.mutt/folders/alsa
 folder-hook =(inboxes|lists)/void             source ~/.mutt/folders/void
 folder-hook =(inboxes|lists)/london-pm        source ~/.mutt/folders/london-pm
 folder-hook =(inboxes|lists)/openzaurus-      source ~/.mutt/folders/openzaurus
+folder-hook =(inboxes|lists)/zoe-             source ~/.mutt/mailing-list
 
 # }}}
 
@@ -325,7 +326,7 @@ alias dan.davies.work Dan Davies <DaviesDD@bp.com>
 fcc-save-hook dddavies =friends/home/dan.davies
 fcc-save-hook daviesdd =friends/home/dan.davies
 
-alias jon.greenwell Jonathan Greenwell <J.R.Greenwell@mds.qmw.ac.uk>
+alias jon.greenwell "Jonathan Greenwell" <J.R.Greenwell@mds.qmw.ac.uk>
 alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
 alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
 alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
@@ -333,11 +334,12 @@ alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
 alias alex.green "Alex Green" <richard.green7@virgin.net>
 alias richard.green "Richard Green" <richard.green7@virgin.net>
 alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
-alias katie.green Katie Green <green@burlington.org.uk>
+alias katie.green "Katie Green" <green@burlington.org.uk>
+alias stig "Stig (Peter) Edwards" <PEdwards@factset.com>
 
-alias di.north Di North <di@amaroo.demon.co.uk>
+alias di.north "Di North" <di@amaroo.demon.co.uk>
 
-alias charles.gaskell Charles Gaskell <gaskell@gaskell.f9.co.uk>
+alias charles.gaskell "Charles Gaskell" <gaskell@gaskell.f9.co.uk>
 
 # }}}
 # {{{ RAM friends
@@ -627,10 +629,11 @@ alias andym andy.mcfarland
 fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
 fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
 
-alias mark.hulme-jones Mark Hulme-Jones <mjones@guideguide.com>
+alias mark.hulme-jones Mark Hulme-Jones <ture@plig.net>
+alias mark.hulme-jones.work "Mark Hulme-Jones, at work" <Hulmem@cpw.co.uk>
 alias mjones mark.hulme-jones
-alias ture Mark Hulme-Jones <ture@plig.net>
 #alias ture Mark Hulme-Jones <mjones@ture.org>
+alias ture mark.hulme-jones
 alias recoil mark.hulme-jones
 fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
 fcc-save-hook @ture\.org =computer-work/mark.hulme-jones
@@ -872,7 +875,7 @@ subscribe apmd-list
 #alias arch-users.old "arch-users mailing list" <arch-users@regexps.com>
 alias arch-users "arch users mailing list" <arch-users@lists.fifthvision.net>
 fcc-save-hook arch-users =lists/arch-users
-subscribe arch-users
+subscribe arch-users gnu-arch-users
 mailboxes =inboxes/arch-users
 send-hook "arch-users" 'my_hdr From: "Adam Spiers" <arch-users@adamspiers.org>'
 send-hook "arch-users" 'my_hdr Reply-To: "Adam Spiers" <arch-users@adamspiers.org>'
