@@ -230,7 +230,8 @@ alias ivan.rockey.ECO "FAO: Ivan Rockey" <mail@e-c-orch.demon.co.uk>
 alias ivan ivan.rockey
 alias ives ivan.rockey
 
-alias sarah.metcalf "Sarah Metcalf" <s-metcalf@dfid.gov.uk>
+#alias sarah.metcalf.old-work "Sarah Metcalf" <s-metcalf@dfid.gov.uk>
+alias sarah.metcalf "Sarah Metcalf" <sarsli@hotmail.com>
 alias sarsli sarah.metcalf
 alias ian.macmullen "Ian MacMullen" <ian_macmullen@hotmail.com>
 alias tim.lucas "Tim Lucas" <lucatim_uk@yahoo.co.uk>
