@@ -8,7 +8,7 @@
 
 fcc-save-hook stuart.*spiers =relatives/daddy
 fcc-save-hook thea@spiers\.net =relatives/thea
-fcc-save-hook spierst@rncm\.ac\.uk =relatives/thea
+fcc-save-hook spierst@(student\.)?rncm\.ac\.uk =relatives/thea
 fcc-save-hook chloe.*spiers =relatives/chloe
 fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
 fcc-save-hook daviess@.*\.gov\.au =relatives/sheila.davies
@@ -30,6 +30,7 @@ fcc-save-hook mzytjls@nottingham\.ac\.uk =friends/Oxford/joanna.sherratt
 fcc-save-hook dave@thelonious\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
 fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
 fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
+fcc-save-hook nmcgrogan@iname\.com =Oxford/friends/nick.mcgrogan
 fcc-save-hook nick@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/nick.williams
 fcc-save-hook nickhw@btinternet\.com =Oxford/friends/nick.williams
 fcc-save-hook e-c-orch\.demon\.co\.uk =Oxford/friends/ivan.rockey
@@ -38,6 +39,7 @@ fcc-save-hook d.*nicker.*@.*.ox(ford)?.ac.uk =security/darren.nickerson
 fcc-save-hook darren.*@.*roam\.tpc\.int =security/darren.nickerson
 fcc-save-hook ben@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
 fcc-save-hook north.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
+fcc-save-hook Ben_North@eur.3com.com =Oxford/friends/ben.north
 fcc-save-hook rg232@.*\.cam\.ac\.uk =friends/Oxford/rachael.gulliver
 fcc-save-hook v.*hamilt =Oxford/friends/victoria.hamilton
 fcc-save-hook n\.byrne@ram\.ac\.uk =friends/RAM/nick.byrne
@@ -56,6 +58,7 @@ fcc-save-hook redneluc =friends/misc/emma.cullender
 fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
 fcc-save-hook tcorbettclark@thirdphase.com =Oxford/friends/tim.corbett-clark
 fcc-save-hook le7053@qmw.ac.uk =friends/misc/emma.cullender
+fcc-save-hook mclay@e-mango.com =friends/home/matthew.clay
 
 # }}}
 
@@ -88,12 +91,14 @@ fcc-save-hook (lrobinson|luke)@guideguide\.com =computer-work/luke.robinson
 fcc-save-hook rob(\+.*)?@guideguide\.com =computer-work/rob.partington
 fcc-save-hook rpartington@guideguide\.com =computer-work/rob.partington
 fcc-save-hook rjp@.*plig\.net =computer-work/rob.partington
+fcc-save-hook rjp@browser\.org =computer-work/rob.partington
 fcc-save-hook dthorn@guideguide\.com =computer-work/dave.thorn
 fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
 fcc-save-hook mcopping@guideguide\.com =computer-work/matt.copping
 fcc-save-hook (alix|aposcharsky)@guideguide\.com =computer-work/alix.poscharsky
 fcc-save-hook rryan@guideguide.com =computer-work/robert.ryan
 fcc-save-hook dscott@guideguide.com =computer-work/dave.scott
+fcc-save-hook aotoole@guideguide.com =computer-work/astrid.otoole
 
 fcc-save-hook ghughes@cmedltd.com =computer-work/gareth.hughes
 
@@ -157,6 +162,9 @@ fcc-save-hook gnome-pilot.*@gnome\.org =lists/gnome-pilot
 fcc-save-hook upload.*@.*speed-link\.de =Perl/PAUSE
 
 fcc-save-hook plucker-dev =lists/plucker-dev
+
+fcc-save-hook perlunit-devel =lists/perlunit-devel
+fcc-save-hook perlunit-users =lists/perlunit-users
 
 # }}}
 # {{{ chatter
