@@ -1352,20 +1352,22 @@ fcc-save-hook sawmill.*aarg\.net =lists/sawfish
 
 alias slim-updates "Slim Devices updates" <updates@lists.slimdevices.com>
 fcc-save-hook "updates.*lists.slimdevices.com" =lists/slim-updates
-subscribe slim-updates
-#mailboxes =inboxes/slim-updates
+subscribe updates@lists.slimdevices.com
+mailboxes =inboxes/slim-updates
 send-hook "updates.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-updates@adamspiers.org>'
 send-hook "updates.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-updates@adamspiers.org>'
+
 alias slim-devel "Slim Devices development list" <developers@lists.slimdevices.com>
 fcc-save-hook "developers.*lists.slimdevices.com" =lists/slim-devel
-subscribe slim-devel
-#mailboxes =inboxes/slim-devel
+subscribe devel@lists.slimdevices.com
+mailboxes =inboxes/slim-devel
 send-hook "developers.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-devel@adamspiers.org>'
 send-hook "developers.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-devel@adamspiers.org>'
+
 alias slim-discuss "Slim Devices discussion list" <discuss@lists.slimdevices.com>
 fcc-save-hook "discuss.*lists.slimdevices.com" =lists/slim-discuss
-subscribe slim-discuss
-#mailboxes =inboxes/slim-discuss
+subscribe discuss@lists.slimdevices.com
+mailboxes =inboxes/slim-discuss
 send-hook "discuss.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-discuss@adamspiers.org>'
 send-hook "discuss.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-discuss@adamspiers.org>'
 
