@@ -60,7 +60,7 @@ source /usr/share/doc/mutt-1.2.5i/samples/gpg.rc
 # }}}
 # {{{ my_hdr
 
-my_hdr X-Home-Page: http://tigerpig.org/
+my_hdr X-URL: http://tigerpig.org/
 my_hdr X-OS: RedHat Linux
 my_hdr From: "Adam Spiers" <adam@spiers.net>
 
