@@ -5,12 +5,12 @@
 ## color object      foreground   background
 
 color attachment green default
-color body magenta black [_a-z\.A-Z0-9-]+@[a-zA-Z0-9\./\-]+
-color body magenta black (http|ftp)://[_a-zA-Z0-9\./~\-]+
+color body magenta default [_a-z\.A-Z0-9-]+@[a-zA-Z0-9\./\-]+
+color body magenta default (http|ftp)://[_a-zA-Z0-9\./~\-]+
 color bold brightwhite default
 color error brightred default
-color header yellow black Subject:
-color header brightwhite black .
+color header yellow default Subject:
+color header brightwhite default .
 color hdrdefault brightyellow blue
 color indicator brightwhite default
 color markers brightgreen default
@@ -36,16 +36,16 @@ mono  header bold       "^(From|Subject|X-Junked-Because):"
 # Highlights inside the body of a message.
 
 # URLs
-color body brightblue  black "(http|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
-color body brightblue  black "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
-mono  body bold              "(http|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
-mono  body bold              "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+color body brightblue  default "(http|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+color body brightblue  default "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+mono  body bold                "(http|ftp|news|telnet|finger)://[^ \"\t\r\n]*"
+mono  body bold                "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
 
 # email addresses
-color body brightblue  black "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
-mono  body bold              "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+color body brightblue  default "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+mono  body bold                "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
 
 # Various smilies and the like
-color body brightgreen black "<[Gg]>"               # <g>
-color body brightgreen black "<[Bb][Gg]>"           # <bg>
-color body brightgreen black " [;:]-*[)>(<|]"       # :-) etc...
+color body brightgreen default "<[Gg]>"               # <g>
+color body brightgreen default "<[Bb][Gg]>"           # <bg>
+color body brightgreen default " [;:]-*[)>(<|]"       # :-) etc...
