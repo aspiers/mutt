@@ -134,6 +134,7 @@ fcc-save-hook gimp-perl.*lists\.netcentral\.net =lists/gimp-perl
 fcc-save-hook galeon-devel.*lists\.sourceforge\.net =lists/galeon-devel
 
 fcc-save-hook gerv\.net =Oxford/acquaintances/gervase.markham
+fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
 
 # }}}
 # {{{ chatter
