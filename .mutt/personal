@@ -285,9 +285,10 @@ alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
 
 alias matthew.clay.old Matt Clay <m.clay@prsarchitects.com>
 alias matthew.clay.old2 Matt Clay <mclay@e-mango.com>
-alias matthew.clay Matt Clay <matt@clay76.freeserve.co.uk>
+alias matthew.clay.old3 Matt Clay <matt@clay76.freeserve.co.uk>
+alias matthew.clay Matt Clay <misterclay@ukonline.co.uk>
 fcc-save-hook mclay@e-mango.com =friends/home/matthew.clay
-fcc-save-hook matt.*clay =friends/home/matthew.clay
+fcc-save-hook (mister|matt).*clay =friends/home/matthew.clay
 
 fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
 #alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
@@ -712,7 +713,7 @@ subscribe oxford-pm
 subscribe london_pm london-list
 #mailboxes =inboxes/london-pm
 alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
-fcc-save-hook london-list@happyfunball\.pm\.org =lists/london-list
+fcc-save-hook london.*\.pm\.org =lists/london-list
 
 # }}}
 
