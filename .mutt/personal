@@ -267,8 +267,9 @@ alias peronel.smith "Peronel Smith" <peronel@mgp.ltd.uk>
 
 fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
 fcc-save-hook nicolocollinsi =friends/Oxford/nick.collins
+alias nick.collins Nick Collins <nick@sicklincoln.org>
+alias nick.collins.hotmail Nick Collins <nickcollins@hotmail.com>
 alias nick.collins.mac Nick Collins <nicolocollinsi@mac.com>
-alias nick.collins Nick Collins <nickcollins@hotmail.com>
 alias nick.collins.mdx Nick Collins <n.collins@mdx.ac.uk>
 
 alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
@@ -282,6 +283,8 @@ alias chris.evans.ferret "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
 alias chris.evans "Chris Evans" <chris@scary.beasts.org>
 
 alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
+
+alias harry.yeates Harry Yeates <Harry.Yeates@rbi.co.uk>
 
 # }}}
 # {{{ Friends from home
@@ -404,6 +407,9 @@ alias sonia \"Sonia (JSO)\" <pg004593@sghms.ac.uk>
 
 alias paul.skinner Paul Skinner <paulski@supanet.com>
 fcc-save-hook paulski.*supanet\.com =friends/Jersey/paul.skinner
+alias samy.bishai Samy Bishai <s_bishai@hotmail.com>
+alias claire.roff Claire Roff <claire_roff@hotmail.com>
+alias david.lasserson David Lasserson <davidlasserson@hotmail.com>
 
 # }}}
 # {{{ Groups of friends
@@ -498,6 +504,7 @@ alias colin.carr Colin Carr <ccarr@atlas.co.uk>
 # }}}
 # {{{ Musical acquaintances
 
+alias michael.borthwick.btopenworld Michael Borthwick <maborth@btopenworld.com>
 alias michael.borthwick Michael Borthwick <m@borthwick.org>
 alias kirsten.salter Kirsten Salter <Kirsten.Salter@emic.co.uk>
 alias John Hargreaves John Hargreaves <musicmaestros@netscapeonline.co.uk>
@@ -656,6 +663,7 @@ alias tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
 
 # }}}
 
+alias jeff.harrod Jeff Harrod <jharrod@astoncarter.co.uk>
 alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
 
 # }}}
