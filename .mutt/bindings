@@ -91,12 +91,14 @@
 #  bind pager  F   forward-message
    bind pager  D   delete-message
 
-   macro pager $  "q\$"
+   macro pager $   "q\$"
 
-   macro pager B  "|urlview\n"
+   macro pager B   "|urlview\n"
 
-   macro pager i  "qi"
-   macro pager I  "qc!\n"
+   macro pager i   "qi"
+   macro pager I   "qc!\n"
+
+   macro pager l   "ql"
 
    macro pager "w"      ":set invsmart_wrap invmarkers\n" # Toggle wrap stuff
    macro pager "y"      "c?\t"                            # "-y" screen
