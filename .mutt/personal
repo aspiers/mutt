@@ -236,6 +236,7 @@ folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
 # }}}
 
 source ~/.mutt/save-hooks
+source /usr/doc/mutt-1.2.4i/samples/pgp2.rc
 
 #send-hook . 'unmy_hdr From'
 #send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
