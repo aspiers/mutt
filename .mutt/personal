@@ -403,87 +403,71 @@ alias John Hargreaves John Hargreaves <musicmaestros@netscapeonline.co.uk>
 alias christof.damian "Christof Damian" <cdamian@guideguide.com>
 alias cdamian christof.damian
 alias xtof christof.damian
+fcc-save-hook christof@mediaconsult\.com =computer-work/christof.damian
+fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
 
 alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
 alias tdamian thomas.damian
+fcc-save-hook tdamian@guideguide\.com =computer-work/thomas.damian
+fcc-save-hook thomas@ggid\.com =computer-work/thomas.damian
 
 alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
 alias mhecken mikel.hecken
 
-alias alex.mclean "Alex McLean" <alex@slab.org>
-alias alex.mclean2 Alex McLean <amclean@guideguide.com>
-alias alex.mclean3 Alex McLean <alex@guideguide.com>
-alias alex.mclean.lurk Alex McLean <alex@lurk.org>
-
 alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
 alias andym andy.mcfarland
-
-#alias rob.partington Rob Partington <rob@guideguide.com>
-alias rob.partington Rob Partington <rjp@plig.net>
-alias basho rob.partington
+fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
+fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
 
 alias mark.hulme-jones Mark Hulme-Jones <mjones@guideguide.com>
 alias mjones mark.hulme-jones
 alias recoil mark.hulme-jones
+fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
+fcc-save-hook ture@ture\.org =computer-work/mark.hulme-jones
+
+alias rob.partington Rob Partington <rjp@plig.net>
+alias basho rob.partington
+fcc-save-hook rob(\+.*)?@guideguide\.com =computer-work/rob.partington
+fcc-save-hook rpartington@guideguide\.com =computer-work/rob.partington
+fcc-save-hook rjp@.*plig\.net =computer-work/rob.partington
+fcc-save-hook rjp@browser\.org =computer-work/rob.partington
 
 alias nathan.carr Nathan Carr <nathan@nowt.net>
 alias ncarr nathan.carr
 alias nomad nathan.carr
 
-alias andrew.simmons Andrew Simmons <asimmons@guideguide.com>
-alias asimmons andrew.simmons
-alias vila andrew.simmons
-
 alias luke.robinson Luke Robinson <lrobinson@guideguide.com>
 alias luke luke.robinson
 alias lrobinson luke.robinson
+fcc-save-hook (lrobinson|luke)@guideguide\.com =computer-work/luke.robinson
 
 alias rob.ryan Rob Ryan <rryan@guideguide.com>
 alias rryan rob.ryan
 alias rollmop rob.ryan
+fcc-save-hook rryan@guideguide.com =computer-work/robert.ryan
 
 alias christian.allen Christian Allen <callen@guideguide.com>
 alias callen christian.allen
 alias pershino christian.allen
+fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
 
 alias matt.copping Matt Copping <mcopping@guideguide.com>
 alias mcopping matt.copping
+fcc-save-hook mcopping@guideguide\.com =computer-work/matt.copping
 
 alias alix.poscharsky Alix Poscharsky <alix@guideguide.com>
 alias youssou alix.poscharsky
+fcc-save-hook (alix|aposcharsky)@guideguide\.com =computer-work/alix.poscharsky
 
 alias rob.andrews Rob Andrews <randrews@guideguide.com>
 alias nine rob.andrews
+fcc-save-hook randrews@guideguide.com =computer-work/rob.andrews
 
 alias astrid.otoole "Astrid O\'Toole" <aotoole@guideguide.com>
-
-fcc-save-hook christof@mediaconsult\.com =computer-work/christof.damian
-fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
-fcc-save-hook tdamian@guideguide\.com =computer-work/thomas.damian
-fcc-save-hook thomas@ggid\.com =computer-work/thomas.damian
-fcc-save-hook alex@mediaconsult\.com =computer-work/alex.mclean
-fcc-save-hook alex@guideguide\.com =computer-work/alex.mclean
-fcc-save-hook amclean@guideguide\.com =computer-work/alex.mclean
-fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
-fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
-fcc-save-hook javila@guideguide\.com =computer-work/jesus.avila
-fcc-save-hook asimmons@(guideguide|redhotchilli)\.com =computer-work/andrew.simmons
-fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
-fcc-save-hook ture@ture\.org =computer-work/mark.hulme-jones
-fcc-save-hook (lrobinson|luke)@guideguide\.com =computer-work/luke.robinson
-fcc-save-hook rob(\+.*)?@guideguide\.com =computer-work/rob.partington
-fcc-save-hook rpartington@guideguide\.com =computer-work/rob.partington
-fcc-save-hook rjp@.*plig\.net =computer-work/rob.partington
-fcc-save-hook rjp@browser\.org =computer-work/rob.partington
-fcc-save-hook dthorn@guideguide\.com =computer-work/dave.thorn
-fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
-fcc-save-hook mcopping@guideguide\.com =computer-work/matt.copping
-fcc-save-hook (alix|aposcharsky)@guideguide\.com =computer-work/alix.poscharsky
-fcc-save-hook rryan@guideguide.com =computer-work/robert.ryan
-fcc-save-hook dscott@guideguide.com =computer-work/dave.scott
 fcc-save-hook aotoole@guideguide.com =computer-work/astrid.otoole
+
+alias sven.hessler Sven Hessler <shessler@guideguide.com>
 fcc-save-hook shessler@guideguide.com =computer-work/sven.hessler
-fcc-save-hook randrews@guideguide.com =computer-work/rob.andrews
 
 # }}}
 # {{{ other
@@ -562,6 +546,9 @@ alias ntk "NTK" <tips@spesh.com>
 subscribe void
 alias void "(void)" <void@slab.org>
 fcc-save-hook void@slab\.org =lists/void
+
+alias alex.mclean "Alex McLean" <alex@slab.org>
+alias alex.mclean.lurk Alex McLean <alex@lurk.org>
 
 # }}}
 
