@@ -225,7 +225,7 @@ alias alex.mclean.lurk Alex McLean <alex@lurk.org>
 alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
 alias andym andy.mcfarland
 
-alias rob.partington Rob Partington <rpartington@guideguide.com>
+alias rob.partington Rob Partington <rob@guideguide.com>
 alias basho rob.partington
 
 alias mark.hulme-jones Mark Hulme-Jones <mjones@guideguide.com>
@@ -376,7 +376,7 @@ alias galeon galeon mailing list <galeon-devel@lists.sourceforge.net>
 alias gnome-pilot gnome-pilot mailing list <gnome-pilot-list@gnome.org>
 
 # }}}
-# {{{ Software (developers)
+# {{{ Software & developers
 
 alias Lingua::EN::Squeeze Jari Aalto <jari.aalto@poboxes.com>
 alias netatalk netatalk <netatalk@umich.edu>
@@ -402,6 +402,7 @@ alias buildkernel william.stearns
 alias gnokii gnokii mailing list <gnokii@net.lut.ac.uk>
 alias chris.kemp Christopher Kemp <ck231@cam.ac.uk>
 alias buggies landfill bugzilla testing <buggies@landfill.tequilarista.org>
+alias plucker-dev Plucker development <plucker-dev@rubberchicken.org>
 
 # }}}
 # {{{ Computing acquaintances
@@ -450,3 +451,4 @@ alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
 # Incoming (need to be classified)
 ##############################################################################
 
+alias ntk NTK <tips@spesh.com>
