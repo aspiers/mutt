@@ -37,7 +37,8 @@
    bind  index L           list-reply
 #  bind  index  \t         next-unread
 #  bind  index ,\t         previous-unread
- 
+   bind  index "\eT"       tag-subthread
+
    bind  index y           collapse-thread
    bind  index Y           collapse-all
 
