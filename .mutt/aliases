@@ -373,7 +373,7 @@ alias gimp-perl gimp-perl mailing list <gimp-perl@lists.netcentral.net>
 alias galeon galeon mailing list <galeon-devel@lists.sourceforge.net>
 
 # }}}
-# {{{ Software (authors)
+# {{{ Software (developers)
 
 alias Lingua::EN::Squeeze Jari Aalto <jari.aalto@poboxes.com>
 alias netatalk netatalk <netatalk@umich.edu>
@@ -398,6 +398,7 @@ alias bill.stearns william.stearns
 alias buildkernel william.stearns
 alias gnokii gnokii mailing list <gnokii@net.lut.ac.uk>
 alias chris.kemp Christopher Kemp <ck231@cam.ac.uk>
+alias buggies landfill bugzilla testing <buggies@landfill.tequilarista.org>
 
 # }}}
 # {{{ Computing acquaintances
