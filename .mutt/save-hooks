@@ -144,11 +144,13 @@ fcc-save-hook galeon-devel.*lists\.sourceforge\.net =lists/galeon-devel
 fcc-save-hook gerv\.net =Oxford/acquaintances/gervase.markham
 fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
 
-fcc-save-hook buggies@tequilarista =lists/buggies
+fcc-save-hook buggies@landfill\.tequilarista\.org =lists/buggies
 
 fcc-save-hook gnome-pilot.*@gnome\.org =lists/gnome-pilot
 
 fcc-save-hook upload.*@.*speed-link\.de =Perl/PAUSE
+
+fcc-save-hook plucker-dev =lists/plucker-dev
 
 # }}}
 # {{{ chatter
