@@ -107,6 +107,8 @@ fcc-save-hook ck231@.*cam\.ac\.uk =lists/gnokii
 
 fcc-save-hook linux-diald =lists/linux-diald
 
+fcc-save-hook sawmill.*aarg\.net =lists/sawfish
+
 # }}}
 # {{{ chatter
 

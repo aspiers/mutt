@@ -57,7 +57,9 @@ alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
 # {{{ (Ex-)Oxford friends
 
 alias giles.harrison Giles Harrison <giles.harrison@bbc.co.uk>
-alias stacey Stacey Steele <Stacey.Steele@bowne.com>
+alias stacey.work Stacey Steele <Stacey.Steele@bowne.com>
+alias stacey.hotmail Stacey Steele <goldfish_74@hotmail.com>
+alias stacey stacey.hotmail
 alias tim.corbett-clark "Tim Corbett-Clark" <tcc@robots.ox.ac.uk>
 alias nick.mcgrogan "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
 alias nick nick.mcgrogan
