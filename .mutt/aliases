@@ -100,7 +100,8 @@ alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
 alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
 alias bear.bolton Bear <bear@thelonious.new.ox.ac.uk>
 alias bear.bolton.home Bear at home <mbolton@iol.ie>
-alias bear bear.bolton
+alias bear.bolton.work Bear Bolton <bolton@susq.com>
+alias bear bear.bolton.work
 alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
 alias bears.aunt Bear at Hilary Stephen's <hilary@arc.net.au>
 alias stephen.walmsley "Stephen Walmsley" <stephen@thelonious.new.ox.ac.uk>
