@@ -592,6 +592,7 @@ alias dan.beimborn.lehman2 Dan Beimborn <dan.beimborn@lehman.com>
 alias dan.beimborn.lehman Dan Beimborn <dbeimbor@lehman.com>
 alias dan.beimborn.celtic Dan Beimborn <Dan@Celticmusic.com>
 alias james.hickie.lehman James Hickie <jhickie@lehman.com>
+alias carl.marino Carl Marino <cmarino@group14.co.uk>
 
 # }}}
 # {{{ Egenera
@@ -608,6 +609,7 @@ alias tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
 # {{{ Aston Carter
 
 alias jeff.harrod Jeff Harrod <jharrod@astoncarter.co.uk>
+alias jeff.harrod.home Jeff Harrod <jeff_harrod2002@yahoo.co.uk>
 fcc-save-hook jharrod =computer-work/jeff.harrod
 alias jason.yank Jason Yank <jyank@astoncarter.co.uk>
 
@@ -1355,6 +1357,15 @@ alias keet Christiaan Keet <keet@plig.net>
 alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
 
 # }}}
+# {{{ Exercise
+
+alias marc.allison "Marc Allison" <Marc_Allison@standardandpoors.com>
+alias chris.williamson "Chris Williamson" <C.M.Williamson@btinternet.com>
+alias cecilia.desuiza "Cecilia deSuiza" <Cecilia.deSuiza@ubs.com>
+
+fcc-save-hook (marc.*allison|c.*williamson|desuiza) =exercise/reebok.sports.club
+
+# }}}
 
 # {{{ Miscellaneous
 
@@ -1374,4 +1385,5 @@ alias philip.smithies "Philip Smithies" <philipsmithies@lineone.net>
 #
 # Unclassified aliases
 #
+
 
