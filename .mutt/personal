@@ -70,7 +70,7 @@ lists mutt-dev mutt-users mutt-announce
 lists req reqng-developers wishlist rt-users 
 lists zsh-users zsh-workers
 lists alsa-devel alsa-user
-lists infobot p5p oxford-pm
+lists infobot p5p oxford-pm gimp-perl
 lists bash gnokii sawmill
 #mailboxes /home/adam/mail/inboxes/linux-diald
 mailboxes /home/adam/mail/inboxes/alsa-user
@@ -91,10 +91,11 @@ mailboxes /home/adam/mail/inboxes/zsh-workers
 #mailboxes /home/adam/mail/inboxes/infobot
 #mailboxes /home/adam/mail/inboxes/sawfish
 mailboxes /home/adam/mail/inboxes/p5p
+mailboxes /home/adam/mail/inboxes/gimp-perl
 
 ## Chatter
 lists oxford-pm london_pm london-list void 
-mailboxes /home/adam/mail/inboxes/oxford-pm
+#mailboxes /home/adam/mail/inboxes/oxford-pm
 #mailboxes /home/adam/mail/inboxes/london-pm
 #mailboxes /home/adam/mail/inboxes/void
 mailboxes /home/adam/mail/inboxes/oxluug
@@ -109,12 +110,12 @@ mailboxes /home/adam/mail/inboxes/amazon
 mailboxes /home/adam/mail/inboxes/sourceforge
 
 ## Miscellaneous
-mailboxes /home/adam/mail/inboxes/mobile
+#mailboxes /home/adam/mail/inboxes/mobile
 mailboxes /home/adam/mail/inboxes/jobserve-filtered
 mailboxes /home/adam/mail/inboxes/interjazz
 mailboxes /home/adam/mail/inboxes/jobserve
 mailboxes /home/adam/mail/inboxes/hacking
-mailboxes /home/adam/mail/inboxes/family-tree
+#mailboxes /home/adam/mail/inboxes/family-tree
 
 ## Unclassified
 
