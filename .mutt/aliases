@@ -253,6 +253,9 @@ alias pershino christian.allen
 alias matt.copping Matt Copping <mcopping@guideguide.com>
 alias mcopping matt.copping
 
+alias alix.poscharsky Alix Poscharsky <alix@guideguide.com>
+alias youssou alix.poscharsky
+
 #alias dave.thorn Dave Thorn <dthorn@guideguide.com>
 #alias dthorn dave.thorn
 
@@ -284,6 +287,7 @@ alias John Hargreaves John Hargreaves <musicmaestros@netscapeonline.co.uk>
 
 # {{{ New College / IT work
 
+alias james.dore \"James Dore, New College sysadmin\" <james.dore@new.ox.ac.uk>
 alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
 alias alex.fuller Alex Fuller <alex.fuller@afis.demon.co.uk>
 alias it-support-dist "IT Support Team, bypassing Req system" <it-support-dist@thelonious.new.ox.ac.uk>
