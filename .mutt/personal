@@ -676,7 +676,7 @@ alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <ander
 # {{{ fetchmail
 
 subscribe fetchmail-friends
-mailboxes /home/adam/mail/inboxes/fetchmail-friends
+mailboxes /home/adam/mail/inboxes/fetchmail
 fcc-save-hook fetchmail-friends =lists/fetchmail-friends
 alias fetchmail-friends "fetchmail-friends mailing list" <fetchmail-friends@lists.ccil.org>
 
