@@ -102,7 +102,7 @@
  
    macro pager  l   "<exit><limit>"  "show only messages matching a pattern"
  
-   macro pager  w   ":set invsmart_wrap invmarkers\n" "toggle wrap mode"
+   macro pager  w   ":set invsmart_wrap\n" "toggle wrap mode"
 
    # Change PIL size
    macro pager "\e0" ":set pager_index_lines=0\n"
