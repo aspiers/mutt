@@ -46,7 +46,7 @@ fcc-save-hook bugtraq.*@.*securityfocus\.com =lists/bugtraq
 fcc-save-hook linux-security =lists/linux-security
 fcc-save-hook spaf.*@.*\.purdue\.edu =security/spaf
 
-fcc-save-hook bugzilla.*@redhat\.com =Linux/redhat-bugzilla
+fcc-save-hook bugzilla.*@.*redhat\.com =Linux/redhat-bugzilla
 fcc-save-hook contrib-list.*@redhat\.com =lists/redhat-contrib
 
 fcc-save-hook alsa-devel.*@.*alsa-project\.org =lists/alsa-devel
@@ -65,6 +65,7 @@ fcc-save-hook london-list@happyfunball\.pm\.org =lists/london-list
 fcc-save-hook void@slab\.org =lists/void
 
 fcc-save-hook linux-thinkpad =lists/linux-thinkpad
+fcc-save-hook linux-diald =lists/linux-diald
 
 fcc-save-hook infobot =lists/infobot
 fcc-save-hook apmd =lists/apmd-list

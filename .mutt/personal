@@ -68,6 +68,7 @@ mailboxes /home/adam/mail/inboxes/void
 mailboxes /home/adam/mail/inboxes/linux-kernel
 mailboxes /home/adam/mail/inboxes/oxford-pm
 mailboxes /home/adam/mail/inboxes/redhat-contrib
+mailboxes /home/adam/mail/inboxes/linux-diald
 
 ## Command lists :
 ## Syntax: lists {listname}
@@ -90,7 +91,7 @@ lists bash
 lists apmd-list
 lists linux-kernel linux-smp
 lists linux-vortex-bug vortex-bug
-lists linux-thinkpad linux-laptop
+lists linux-thinkpad linux-laptop linux-diald
 lists contrib-list
 
 # Security lists
@@ -104,11 +105,15 @@ folder-hook .                     source ~/.mutt/folders/DEFAULTS
 folder-hook =lists/               source ~/.mutt/mailing-list
 folder-hook =inboxes/             source ~/.mutt/mailing-list
 folder-hook =inboxes/Mailbox$     source ~/.mutt/folders/Mailbox
-folder-hook =.*/zsh-              source ~/.mutt/folders/zsh
-folder-hook =.*/alsa-             source ~/.mutt/folders/alsa
-folder-hook =.*/void              source ~/.mutt/folders/void
+folder-hook =(inboxes|lists)/zsh-            source ~/.mutt/folders/zsh
+folder-hook =(inboxes|lists)/alsa-           source ~/.mutt/folders/alsa
+folder-hook =(inboxes|lists)/void            source ~/.mutt/folders/void
+folder-hook =(inboxes|lists)/linux-thinkpad  source ~/.mutt/folders/linux-thinkpad
+folder-hook =(inboxes|lists)/linux-laptop    source ~/.mutt/folders/linux-laptop 
 
 source ~/.mutt/save-hooks
 
-send-hook . 'unmy_hdr From'
-send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
+#send-hook . 'unmy_hdr From'
+#send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
+
+my_hdr From: "Adam Spiers" <adam@spiers.net>

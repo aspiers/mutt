@@ -1,4 +1,5 @@
 score '~s "solo.?1"' +30
 score '~s "1938"' +30
+push "D~n -0\r"
 
 source ~/.mutt/scoring
