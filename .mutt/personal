@@ -673,6 +673,14 @@ alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
 alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <andersl@csd.uu.se>
 
 # }}}
+# {{{ fetchmail
+
+subscribe fetchmail-friends
+mailboxes /home/adam/mail/inboxes/fetchmail-friends
+fcc-save-hook fetchmail-friends =lists/fetchmail-friends
+alias fetchmail-friends "fetchmail-friends mailing list" <fetchmail-friends@lists.ccil.org>
+
+# }}}
 # {{{ galeon
 
 subscribe galeon-devel
