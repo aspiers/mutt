@@ -464,11 +464,14 @@ fcc-save-hook randrews@guideguide.com =computer-work/rob.andrews
 alias astrid.otoole "Astrid O\'Toole" <aotoole@guideguide.com>
 fcc-save-hook aotoole@guideguide.com =computer-work/astrid.otoole
 
-alias sven.hessler Sven Hessler <shessler@guideguide.com>
+alias sven.hessler "Sven Hessler" <shessler@guideguide.com>
 fcc-save-hook shessler@guideguide.com =computer-work/sven.hessler
 
-alias ben.simpson Ben Simpson <bsimpson@guideguide.com>
+alias ben.simpson "Ben Simpson" <bsimpson@guideguide.com>
 fcc-save-hook bsimpson@guideguide.com =computer-work/ben.simpson
+
+alias jasper.mccrea "Jasper McCrea" <jmccrea@guideguide.com>
+fcc-save-hook jmccrea@guideguide.com =computer-work/jasper.mccrea
 
 # }}}
 # {{{ other
