@@ -273,10 +273,8 @@ alias kevin.barsby "Kevin Barsby" <kevin.barsby@hummingbird-it.co.uk>
 alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
 
 fcc-save-hook oli.*dickson =friends/Oxford/olimpia.dickson
-alias olimpia.dickson Oli Dickson <olimpia.dickson@tao.j-sainsbury.co.uk>
-alias olimpia.dickson2 Oli Dickson <Olimpia.Dickson@tao.sainsburys.co.uk>
-alias oli.dickson olimpia.dickson
-alias oli oli.dickson
+alias olimpia.lindgren Oli Dickson <olimpia.lindgren@sainsburys.co.uk>
+alias oli olimpia.lindgren
 
 fcc-save-hook peronel =friends/Oxford/peronel.smith
 alias peronel.craddock "Peronel Craddock" <peronel@mgp.ltd.uk>
@@ -1321,6 +1319,8 @@ alias kevin.spiers "Kevin L Spiers" <kevin@spiers.net>
 alias kevin.spiers2 Kevin Spiers <stock03@worldnet.att.net>
 
 alias bcc-only lots of people <dev.null@adamspiers.org>
+
+alias philip.smithies "Philip Smithies" <philip.smithies@lineone.net>
 
 #source ~/.mutt/quake-aliases
 
