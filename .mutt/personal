@@ -703,7 +703,7 @@ alias chris.kemp "Christopher Kemp" <ck231@cam.ac.uk>
 # {{{ gphoto
 
 alias gphoto "gphoto developers\' list" <gphoto@gphoto.net>
-fcc-save-hook gphoto =lists/gphoto
+fcc-save-hook gphoto@gphoto.net =lists/gphoto
 subscribe gphoto
 
 alias gphoto-devel "gphoto developers\' list" <gphoto-devel@gphoto.net>
