@@ -160,6 +160,7 @@ fcc-save-hook darren.*@.*roam\.tpc\.int =security/darren.nickerson
 alias rachael.gulliver.old "Rachael Gulliver" <rachaelgulliver@hotmail.com>
 alias rachael.gulliver "Rachael Gulliver" <rg232@cam.ac.uk>
 fcc-save-hook rg232@.*\.cam\.ac\.uk =friends/Oxford/rachael.gulliver
+fcc-save-hook jandrschofield@hotmail.com =friends/Oxford/rachael.gulliver
 
 alias vicky.hamilton Victoria Hamilton <victoria.hamilton@stagetech.com>
 fcc-save-hook v.*hamilt =Oxford/friends/victoria.hamilton
