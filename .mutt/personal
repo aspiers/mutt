@@ -10,7 +10,8 @@
 set alternates="(adam(\.spiers)?|(local)?adams|newc0115|m93asp|a\.?spiers).*@(((thelonio?us|cornholio|miles|www)\.)?new\.ox(ford)?\.ac\.uk|musician\.org|(a25\.|pulse\.)?ram\.ac\.uk|spiers\.net|(mediaconsult|guideguide)\.com)"
 
 # }}}
-# {{{ Mailboxes and mailing lists
+
+# {{{ Mailboxes
 
 # {{{ Main mailboxes
 
@@ -19,7 +20,473 @@ mailboxes !
 mailboxes /home/adam/mail/inboxes/test
 
 # }}}
+# {{{ Miscellaneous
+
+#mailboxes /home/adam/mail/inboxes/mobile
+mailboxes /home/adam/mail/inboxes/jobserve-filtered
+mailboxes /home/adam/mail/inboxes/interjazz
+mailboxes /home/adam/mail/inboxes/jobserve
+#mailboxes /home/adam/mail/inboxes/hacking
+#mailboxes /home/adam/mail/inboxes/family-tree
+mailboxes /home/adam/mail/inboxes/chat
+mailboxes /home/adam/mail/inboxes/friends
+
+# }}}
+
+# }}}
+# {{{ Aliases, save-hooks, lists, mailboxes
+
+# {{{ Me :-)
+
+alias me "Adam Spiers" <adam@spiers.net>
+alias me.guideguide "Adam Spiers, at guideguide" <aspiers@guideguide.com>
+alias me.musician "Adam Spiers" <adam.spiers@musician.org>
+alias me.ox "Adam Spiers" <adam.spiers@new.ox.ac.uk>
+alias me.oxford "Adam Spiers" <adam.spiers@new.oxford.ac.uk>
+alias me.thelonious "Adam Spiers, on thelonious" <adam@thelonious.new.ox.ac.uk>
+alias me.hotmail "Adam Spiers, on hotmail" <adam_spiers@hotmail.com>
+alias me.test "Adam Spiers, testing something" <adam-test@thelonious.new.ox.ac.uk>
+alias me.dict "Adam Spiers, dictionary gateway" <adam-dict@thelonious.new.ox.ac.uk>
+alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
+
+# }}}
+# {{{ Relatives
+
+alias daddy "Stuart Spiers" <stuart@spiers.net>
+fcc-save-hook stuart.*spiers =relatives/daddy
+
+alias mummy "Stuart Spiers" <liz@spiers.net>
+
+alias thea.rncm "Thea Spiers" <SpiersT@rncm.ac.uk>
+alias thea "Thea Spiers" <thea@spiers.net>
+fcc-save-hook thea@spiers\.net =relatives/thea
+fcc-save-hook spierst@(student\.)?rncm\.ac\.uk =relatives/thea
+
+alias chloe "Chloe Spiers" <chloe@spiers.net>
+alias chloe.man "Chloe Spiers" <chloe.spiers@stud.man.ac.uk>
+#alias chloe.de "Chloe in Germany" <mafangongsi@t-online.de> 
+fcc-save-hook chloe.*spiers =relatives/chloe
+
+alias ian.spiers "Ian Spiers" <ian@spiers.net>
+alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
+alias ian ian.spiers
+alias barry.spiers "Barry Spiers" <barry@spiers.net>
+alias barry.spiers.work "Barry Spiers, at work" <flexdeck@intelog.com>
+alias barry barry.spiers
+alias david.spiers "David Spiers" <duvido@home.com>
+alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
+fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
+
+alias peter.oconnor "Peter O'Connor" <azrael14@juno.com>
+alias helen.oconnor.mayo "Helen O'Connor at work" <oconh@mayo.edu>
+alias helen.oconnor.juno "Helen O'Connor at home" <helenoc@juno.com>
+alias helen.oconnor helen.oconnor.juno
+fcc-save-hook helenoc@juno\.com =relatives/helen.oconnor
+alias michael.oconnor "Michael O'Connor" <mkoconnor@mayo.edu>
+alias niamh.oconnor "Niamh O'Connor" <sive99@yahoo.com>
+
+alias david.griffith "David Griffith" <eppltd@indigo.ie>
+alias nessa.griffith "Nessa Griffith" <ngriffith@ndc.ie>
+alias nessa.griffith2 "Nessa Griffith" <nessandc@iol.ie>
+
+alias viv.mchugh "Viv McHugh" <vivmike@oceanfree.net>
+alias michael.mchugh "Michael McHugh" <vivmike@oceanfree.net>
+
+alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
+alias sheila.davies2 "Sheila Davies" <DaviesS@sesahs.nsw.GOV.AU>
+fcc-save-hook daviess@.*\.gov\.au =relatives/sheila.davies
+
+alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
+
+alias siobhan.supple "Siobhan Supple" <supple@iol.ie>
+fcc-save-hook supple@iol\.ie =relatives/siobhan.supple
+
+# }}}
+# {{{ Friends
+
+# {{{ (Ex-)Oxford friends
+
+fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
+fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
+fcc-save-hook ben\.teasdale@ntlworld\.com =friends/Oxford/ben.teasdale
+fcc-save-hook strangetimes@hotmail\.com =friends/Oxford/ben.teasdale
+fcc-save-hook bearbolton@hotmail\.com =friends/Oxford/bear.bolton
+fcc-save-hook bolton@susq\.com =friends/Oxford/bear.bolton
+fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
+fcc-save-hook oli.*dickson =friends/Oxford/olimpia.dickson
+fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
+fcc-save-hook sherrat =friends/Oxford/joanna.sherratt
+fcc-save-hook mzytjls@nottingham\.ac\.uk =friends/Oxford/joanna.sherratt
+fcc-save-hook dave@thelonious\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
+fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
+fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
+fcc-save-hook nmcgrogan@iname\.com =Oxford/friends/nick.mcgrogan
+fcc-save-hook nick@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/nick.williams
+fcc-save-hook nickhw@btinternet\.com =Oxford/friends/nick.williams
+fcc-save-hook nwilliams@compd\.com =Oxford/friends/nick.williams
+fcc-save-hook e-c-orch\.demon\.co\.uk =Oxford/friends/ivan.rockey
+fcc-save-hook rosiebiss =friends/NYO/rosie.biss
+fcc-save-hook d.*nicker.*@.*.ox(ford)?.ac.uk =security/darren.nickerson
+fcc-save-hook darren.*@.*roam\.tpc\.int =security/darren.nickerson
+fcc-save-hook ben@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
+fcc-save-hook north.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
+fcc-save-hook Ben_North@eur.3com.com =Oxford/friends/ben.north
+fcc-save-hook rg232@.*\.cam\.ac\.uk =friends/Oxford/rachael.gulliver
+fcc-save-hook v.*hamilt =Oxford/friends/victoria.hamilton
+fcc-save-hook n\.byrne@ram\.ac\.uk =friends/RAM/nick.byrne
+fcc-save-hook kaptainbirdeye@hotmail\.com =friends/RAM/nick.byrne
+fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
+fcc-save-hook chris.*@.*\.wadham\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
+fcc-save-hook stacey.*steele =friends/Oxford/stacey.steele
+fcc-save-hook goldfish_74 =friends/Oxford/stacey.steele
+fcc-save-hook c.*hildrew =friends/Oxford/chris.hildrew
+fcc-save-hook bourby =friends/Oxford/bourby.norman
+fcc-save-hook g.*wearden =friends/Oxford/graeme.wearden
+fcc-save-hook tcorbettclark@thirdphase.com =Oxford/friends/tim.corbett-clark
+
+alias giles.harrison Giles Harrison <giles.harrison@bbc.co.uk>
+alias stacey.work Stacey Steele <Stacey.Steele@bowne.com>
+alias stacey.hotmail Stacey Steele <goldfish_74@hotmail.com>
+alias stacey stacey.hotmail
+alias tim.corbett-clark Timothy Corbett-Clark <tcorbettclark@thirdphase.com>
+alias tcc tim.corbett-clark
+alias nick.mcgrogan "Nick McGrogan" <nmcgroga@thelonious.new.ox.ac.uk>
+alias nick nick.mcgrogan
+alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
+alias ben.teasdale.bbc "Ben Teasdale" <ben.teasdale@bbc.co.uk>
+alias ben.teasdale "Ben Teasdale" <ben.teasdale@ntlworld.com>
+alias ben.north.thelonious "Ben North" <ben@thelonious.new.ox.ac.uk>
+alias ben.north "Ben North" <Ben_North@eur.3com.com>
+alias ben ben.north
+alias nick.williams "Nick Williams" <nick@thelonious.new.ox.ac.uk>
+alias nick.williams2 "Nick Williams" <nickhw@btinternet.com>
+alias dave.lindgren "David Lindgren" <dave@thelonious.new.ox.ac.uk>
+alias dave dave.lindgren
+alias chris.cladingboel "Chris Cladingboel" <christopher.cladingboel@wadham.ox.ac.uk>
+alias chris chris.cladingboel
+alias chris.hildrew "Chris Hildrew" <chris_hildrew@yahoo.com>
+alias jo.sherratt.hotmail Joanna Sherratt <josherratt@hotmail.com>
+alias jo.sherratt.notts Joanna Sherratt <mzytjls@nottingham.ac.uk>
+alias jo.sherratt.bm "Joanna Sherratt" <jsherrat@ibl.bm>
+alias jo.sherratt.work Joanna Sherratt <jsherrat@CENTRERE.COM>
+alias jo jo.sherratt.hotmail
+alias ivan.rockey Ivan Rockey <Ivan.Rockey@btinternet.com>
+alias ivan.rockey.ECO "FAO: Ivan Rockey" <mail@e-c-orch.demon.co.uk>
+alias ivan ivan.rockey
+alias ives ivan.rockey
+alias sarah.metcalf "Sarah Metcalf" <s-metcalf@dfid.gtnet.gov.uk>
+alias ian.macmullen "Ian MacMullen" <ian_macmullen@hotmail.com>
+alias tim.lucas "Tim Lucas" <timothy.lucas@new.ox.ac.uk>
+#alias graeme.wearden Graeme Wearden <graeme@thelonious.new.ox.ac.uk>
+alias graeme.wearden Graeme Wearden <graeme_wearden@ziffdavis.com>
+alias rachael.gulliver.old "Rachael Gulliver" <rachaelgulliver@hotmail.com>
+alias rachael.gulliver "Rachael Gulliver" <rg232@cam.ac.uk>
+alias annabel.borthwick Annabel Borthwick <annabel.borthwick@new.ox.ac.uk>
+alias jessie.hadley Jess Hadley <jessiekate@hotmail.com>
+alias bear.bolton Bear <bear@thelonious.new.ox.ac.uk>
+alias bear.bolton.home Bear at home <mbolton@iol.ie>
+alias bear.bolton.work Bear Bolton <bolton@susq.com>
+alias bear bear.bolton.work
+alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
+alias bears.aunt "Bear at Hilary Stephen's" <hilary@arc.net.au>
+alias stephen.walmsley "Stephen Walmsley" <stephen@thelonious.new.ox.ac.uk>
+alias christie.bolton "Tiss (Christie Bolton)" <christine.bolton@new.ox.ac.uk>
+alias tiss.bolton christie.bolton
+alias kevin.barsby "Kevin Barsby" <kevin.barsby@hummingbird-it.co.uk>
+#alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
+alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
+alias oli.dickson Oli Dickson <olimpia.dickson@tao.j-sainsbury.co.uk>
+alias oli.dickson2 Oli Dickson <Olimpia.Dickson@tao.sainsburys.co.uk>
+alias peronel.smith "Peronel Smith" <peronel_smith@harcourtbrace.com>
+alias nick.collins Nick Collins <nickcollins@hotmail.com>
+alias vicky.hamilton Victoria Hamilton <victoria.hamilton@stagetech.com>
+alias dave.willetts "Dave Willetts" <davetm@thelonious.new.ox.ac.uk>
+alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+alias weejock matthew.kirkwood
+alias jock matthew.kirkwood
+alias chris.evans "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
+alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
+alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
+alias bruce.hickey "Bruce Hickey" <bruce@thelonious.new.ox.ac.uk>
+alias nicola.schreiber Nicola Schreiber <nicola.schreiber@new.ox.ac.uk>
+
+alias eric.metcalfe "Eric Metcalfe" <eric.metcalfe@new.oxford.ac.uk>
+alias peter.hunter Peter Hunter <peter.hunter@blackfriars.ox.ac.uk>
+alias mark.childs Mark Childs <mad@thelonious.new.ox.ac.uk>
+alias mike.mason Mike Mason <mgm@ox.compsoc.net>
+alias george.foot "George Foot" <george.foot@merton.ox.ac.uk>
+alias ben.thompson "Ben Thompson" <bt@thelonious.new.ox.ac.uk>
+alias jo.dillon "Joel Dillon" <jo.dillon@new.oxford.ac.uk>
+alias rich.graham "Rich Graham (MCR president)" <richard.graham@new.ox.ac.uk>
+alias ferdia.gallagher Ferdia Gallagher <ferdia.gallagher@new.oxford.ac.uk>
+
+alias nicks nick,nick.williams
+
+# }}}
+# {{{ Friends from home
+
+fcc-save-hook mclay@e-mango.com =friends/home/matthew.clay
+fcc-save-hook dddavies =friends/home/dan.davies
+
+alias matthew.clay.old Matt Clay <m.clay@prsarchitects.com>
+alias matthew.clay Matt Clay <mclay@e-mango.com>
+#alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
+alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
+alias jon.greenwell Jonathan Greenwell <J.R.Greenwell@mds.qmw.ac.uk>
+alias dan.davies.old Daniel Davies <dddavies@students.jhubc.it>
+alias dan.davies Dan Davies <dddavies@pop3.lineone.net>
+alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
+alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
+alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
+alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
+alias alex.green "Alex Green" <richard.green7@virgin.net>
+alias richard.green "Richard Green" <richard.green7@virgin.net>
+alias richard.green.school "Richard Green, at school" <stlucias@aol.com>
+
+# }}}
+# {{{ RAM friends
+
+alias yan.fitterer "Yan Fitterer" <y.fitterer@ram.ac.uk>
+alias yan.fitterer.u-net Yan Fitterer <y.fitterer@ithut.u-net.com>
+alias yan yan.fitterer
+alias nick.byrne Nick Byrne <kaptainbirdeye@hotmail.com>
+alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
+alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
+alias sarah.hammel Sarah Hammel <naomihammel@hotmail.com>
+alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
+alias ailsa.murdoch Ailsa Murdoch <ailsa.murdoch@virgin.net>
+
+fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
+fcc-save-hook naomi.*hammel =friends/RAM/sarah.hammel
+
+# }}}
+# {{{ NYO friends
+
+alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
+alias rosie.biss "Rosie Biss" <rosiebiss@yahoo.com>
+alias rosie rosie.biss
+alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
+alias malcs malcolm.cross
+alias bourby.norman Bourby Norman <bourbynorman@hotmail.com>
+alias rachel.norman bourby.norman
+
+# }}}
+# {{{ London friends
+
+alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
+alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
+
+alias emma.cullender Emma Cullender <redneluc@globalnet.co.uk>
+fcc-save-hook redneluc =friends/misc/emma.cullender
+fcc-save-hook le7053@qmw.ac.uk =friends/misc/emma.cullender
+
+# }}}
+# {{{ Groups of friends
+
+alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
+alias add2 tiss, kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
+
+# }}}
+
+# }}}
+# {{{ Old skools
+
+alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
+alias gilbert.roscoe "Gilbert Roscoe" <gilbert@sionix.demon.co.uk>
+alias stewart.dunn Stewart Dunn <info@sdunn.demon.co.uk>
+alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
+alias john.moore John Moore <JFM@shrewsbury.org.uk>
+
+# }}}
+
+# {{{ Oxford University
+
+# {{{ New College
+
+# {{{ New College / IT work
+
+alias james.dore \"James Dore, New College sysadmin\" <james.dore@new.ox.ac.uk>
+alias chris.tromans Chris Tromans <ctromans@thelonious.new.ox.ac.uk>
+alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
+alias alex.fuller Alex Fuller <alex.fuller@afis.demon.co.uk>
+alias it-support-dist "IT Support Team, bypassing Req system" <it-support-dist@thelonious.new.ox.ac.uk>
+alias is "IT Support team, using Req system" <it-support@thelonious.new.ox.ac.uk>
+alias db "Caroline Thomas, New College Domestic Bursar" <caroline.thomas@new.ox.ac.uk>
+alias caroline.thomas "Caroline Thomas, New College Domestic Bursar" <caroline.thomas@new.ox.ac.uk>
+alias ncsec "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
+alias barbara.vardag "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
+alias alastair.white "Alastair White" <alastair.white@new.ox.ac.uk>
+alias sue.anderson "Sue Anderson, New College DB's secretary" <sue.anderson@new.ox.ac.uk>
+alias wylie.horn "Wylie Horn, College admin network sysadmin" <wylie.horn@oucs.ox.ac.uk>
+alias warden "Alan Ryan" <alan.ryan@new.ox.ac.uk>
+alias alan.ryan "Alan Ryan" <alan.ryan@new.ox.ac.uk>
+alias rinku "Rinku Chandra, MCR computer rep." <rinku.chandra@new.oxford.ac.uk>
+alias wilson "Wilson Sutherland" <wilson.sutherland@new.ox.ac.uk>
+alias geraint "Geraint Jones" <geraint.jones@comlab.ox.ac.uk>
+alias david.gavaghan "David Gavaghan" <gavaghan@vax.ox.ac.uk>
+alias wendy.coyne "Wendy Coyne, New College Graduates and Admissions Office" <wendy.coyne@new.ox.ac.uk>
+alias maggie "Maggie Davies, Fellows' Secretary" <maggie.davies@new.ox.ac.uk>
+alias sue.ashcroft-jones "Sue Ashcroft-Jones (Development Office)" <sue.ashcroft-jones@new.ox.ac.uk>
+alias accurate.solutions "Steve Harper, Accurate Solutions Ltd." <yl90@dial.pipex.com>
+alias admissions New College Admissions <admissions@new.ox.ac.uk>
+alias free-computers free-computers@thelonious.new.ox.ac.uk
+alias jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
+
+# }}}
+
+fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
+fcc-save-hook c.*tromans =Oxford/college/chris.tromans
+
+# }}}
+
+# {{{ Acquaintances
+
+alias ruth.porter "Ruth Porter (OUCS contact for New College)" <ruth.porter@oucs.ox.ac.uk>
+alias malcolm.beattie "Malcolm Beattie" <mbeattie@sable.ox.ac.uk>
+alias jan.grothusen "Jan Grothusen" <jan@robots.ox.ac.uk>
+alias robin.watts "Robin Watts" <robin.watts@comlab.ox.ac.uk>
+alias pete.biggs Pete Biggs <pete@physchem.ox.ac.uk>
+alias geoff.lescott Geoff Lescott <geoff.lescott@computing-services.oxford.ac.uk>
+alias darren.nickerson "Darren Nickerson" <dnicker@ermine.ox.ac.uk>
+alias darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.uk>
+alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
+
+alias gervase.markham Gervase Markham <gerv@gerv.net>
+fcc-save-hook gerv\.net =Oxford/acquaintances/gervase.markham
+fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
+
+#alias OLD-robin.stevens.astro Robin Stevens <rejs@astro.ox.ac.uk>
+
+# }}}
+# {{{ Official
+
+alias advisory OUCS Advisory Service <advisory@computing-services.oxford.ac.uk>
+alias user.registration "User Registration, OUCS" <user.registration@computing-services.oxford.ac.uk>
+alias oxcert "OxCERT" <oxcert@ox.ac.uk>
+alias hostmaster "OUCS host administration" <hostmaster@ox.ac.uk>
+
+# }}}
+
+# }}}
+
+# {{{ RAM staff
+
+# admin
+
+alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
+alias estates RAM Estates Office <estates@ram.ac.uk>
+alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
+
+# teachers
+
+alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
+alias colin.carr Colin Carr <ccarr@atlas.co.uk>
+
+# }}}
+# {{{ Musical acquaintances
+
+alias michael.borthwick Michael Borthwick <m@borthwick.org>
+alias kirsten.salter Kirsten Salter <Kirsten.Salter@emic.co.uk>
+alias John Hargreaves John Hargreaves <musicmaestros@netscapeonline.co.uk>
+
+# }}}
+
+# {{{ Computing
+
+# {{{ Work
+
 # {{{ guideguide
+
+# {{{ people
+
+alias christof.damian "Christof Damian" <cdamian@guideguide.com>
+alias cdamian christof.damian
+alias xtof christof.damian
+
+alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
+alias tdamian thomas.damian
+
+alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
+alias mhecken mikel.hecken
+
+alias alex.mclean "Alex McLean" <alex@slab.org>
+alias alex.mclean2 Alex McLean <amclean@guideguide.com>
+alias alex.mclean3 Alex McLean <alex@guideguide.com>
+alias alex.mclean.lurk Alex McLean <alex@lurk.org>
+
+alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
+alias andym andy.mcfarland
+
+#alias rob.partington Rob Partington <rob@guideguide.com>
+alias rob.partington Rob Partington <rjp@plig.net>
+alias basho rob.partington
+
+alias mark.hulme-jones Mark Hulme-Jones <mjones@guideguide.com>
+alias mjones mark.hulme-jones
+alias recoil mark.hulme-jones
+
+alias nathan.carr Nathan Carr <nathan@nowt.net>
+alias ncarr nathan.carr
+alias nomad nathan.carr
+
+alias andrew.simmons Andrew Simmons <asimmons@guideguide.com>
+alias asimmons andrew.simmons
+alias vila andrew.simmons
+
+alias luke.robinson Luke Robinson <lrobinson@guideguide.com>
+alias luke luke.robinson
+alias lrobinson luke.robinson
+
+alias rob.ryan Rob Ryan <rryan@guideguide.com>
+alias rryan rob.ryan
+alias rollmop rob.ryan
+
+alias christian.allen Christian Allen <callen@guideguide.com>
+alias callen christian.allen
+alias pershino christian.allen
+
+alias matt.copping Matt Copping <mcopping@guideguide.com>
+alias mcopping matt.copping
+
+alias alix.poscharsky Alix Poscharsky <alix@guideguide.com>
+alias youssou alix.poscharsky
+
+alias rob.andrews Rob Andrews <randrews@guideguide.com>
+alias nine rob.andrews
+
+alias astrid.otoole "Astrid O\'Toole" <aotoole@guideguide.com>
+
+fcc-save-hook christof@mediaconsult\.com =computer-work/christof.damian
+fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
+fcc-save-hook tdamian@guideguide\.com =computer-work/thomas.damian
+fcc-save-hook thomas@ggid\.com =computer-work/thomas.damian
+fcc-save-hook alex@mediaconsult\.com =computer-work/alex.mclean
+fcc-save-hook alex@guideguide\.com =computer-work/alex.mclean
+fcc-save-hook amclean@guideguide\.com =computer-work/alex.mclean
+fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
+fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
+fcc-save-hook javila@guideguide\.com =computer-work/jesus.avila
+fcc-save-hook asimmons@(guideguide|redhotchilli)\.com =computer-work/andrew.simmons
+fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
+fcc-save-hook ture@ture\.org =computer-work/mark.hulme-jones
+fcc-save-hook (lrobinson|luke)@guideguide\.com =computer-work/luke.robinson
+fcc-save-hook rob(\+.*)?@guideguide\.com =computer-work/rob.partington
+fcc-save-hook rpartington@guideguide\.com =computer-work/rob.partington
+fcc-save-hook rjp@.*plig\.net =computer-work/rob.partington
+fcc-save-hook rjp@browser\.org =computer-work/rob.partington
+fcc-save-hook dthorn@guideguide\.com =computer-work/dave.thorn
+fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
+fcc-save-hook mcopping@guideguide\.com =computer-work/matt.copping
+fcc-save-hook (alix|aposcharsky)@guideguide\.com =computer-work/alix.poscharsky
+fcc-save-hook rryan@guideguide.com =computer-work/robert.ryan
+fcc-save-hook dscott@guideguide.com =computer-work/dave.scott
+fcc-save-hook aotoole@guideguide.com =computer-work/astrid.otoole
+fcc-save-hook shessler@guideguide.com =computer-work/sven.hessler
+fcc-save-hook randrews@guideguide.com =computer-work/rob.andrews
+
+# }}}
+# {{{ other
 
 subscribe ggdev ggnews gg-uk codereview
 mailboxes /home/adam/mail/inboxes/ggdev
@@ -33,76 +500,254 @@ mailboxes /home/adam/mail/inboxes/gg-bugzilla
 mailboxes /home/adam/mail/inboxes/gg-watches
 #mailboxes /home/adam/mail/inboxes/gg-faqomatic
 
-# }}}
-# {{{ System (software) lists
+alias ggdev "guideguide development list" <ggdev@guideguide.com>
+alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
+alias codereview guideguide codereview list <codereview@guideguide.com>
+alias translations "ggdev translations" <translations@guideguide.com>
 
-subscribe linux-diald
-#mailboxes /home/adam/mail/inboxes/linux-diald
-
-subscribe apmd-list
-#mailboxes /home/adam/mail/inboxes/apmd-list
-
-subscribe linux-kernel
-mailboxes /home/adam/mail/inboxes/linux-kernel
-
-subscribe linux-vortex-bug vortex-bug
-mailboxes /home/adam/mail/inboxes/vortex-bug
-
-mailboxes /home/adam/mail/inboxes/linux-smp
-subscribe linux-smp
-
-subscribe linux-thinkpad linux-laptop
-#mailboxes /home/adam/mail/inboxes/linux-thinkpad
-#mailboxes /home/adam/mail/inboxes/linux-laptop
-
-subscribe contrib-list
-#mailboxes /home/adam/mail/inboxes/redhat-contrib
-
-#mailboxes /home/adam/mail/inboxes/redhat-bugzilla
+fcc-save-hook ggdev@guideguide\.com =computer-work/ggdev
+fcc-save-hook codereview@guideguide\.com =computer-work/codereview
 
 # }}}
-# {{{ Software lists
 
+# }}}
+
+# {{{ W3W
+
+fcc-save-hook rian@w3w\.net =computer-work/rian.kruger
+fcc-save-hook .*@.*w3w\.net =computer-work/W3W
+fcc-save-hook powerhost\.co\.uk =computer-work/W3W
+alias adam.bailey "Adam Bailey" <post@w3w.net>
+alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
+
+# }}}
+# {{{ cmed
+
+fcc-save-hook ghughes@cmedltd.com =computer-work/gareth.hughes
+alias gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
+
+# }}}
+
+alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
+
+# }}}
+
+# {{{ Perl
+
+alias andreas.koenig "Andreas J. Koenig" <andreas.koenig@anima.de>
+alias mjd Mark-Jason Dominus <mjd@plover.com>
+
+alias dave.cross Dave Cross <dave@dave.org.uk>
+
+alias simon.cozens Simon Cozens <simon@simon-cozens.org>
+fcc-save-hook simon@cozens\.net =Perl/simon.cozens
+fcc-save-hook .*@simon-cozens\.org =Perl/simon.cozens
+
+alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
+alias piers.cawley Piers Cawley <pdcawley@bofh.org.uk>
+
+# }}}
+# {{{ News
+
+mailboxes /home/adam/mail/inboxes/freshmeat
+mailboxes /home/adam/mail/inboxes/slashdot
+alias ntk "NTK" <tips@spesh.com>
+
+# }}}
+# {{{ Chatter
+
+# {{{ (void)
+
+#mailboxes /home/adam/mail/inboxes/void
+subscribe void
+alias void "(void)" <void@slab.org>
+fcc-save-hook void@slab\.org =lists/void
+
+# }}}
+
+# {{{ Oxford.pm
+
+#mailboxes /home/adam/mail/inboxes/oxford-pm
+fcc-save-hook oxford-pm-list@happyfunball\.pm\.org =lists/oxford-pm
+subscribe oxford-pm
+
+# }}}
+# {{{ London.pm
+
+subscribe london_pm london-list
+#mailboxes /home/adam/mail/inboxes/london-pm
+alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
+fcc-save-hook london-list@happyfunball\.pm\.org =lists/london-list
+
+# }}}
+
+# }}}
+# {{{ Security
+
+subscribe linux-security
+mailboxes /home/adam/mail/inboxes/linux-security
+alias linux-security "Linux Security mailing list" <linux-security@redhat.com>
+fcc-save-hook linux-security =lists/linux-security
+
+subscribe security-audit
+mailboxes /home/adam/mail/inboxes/security-audit
+
+subscribe linux-alert
+mailboxes /home/adam/mail/inboxes/linux-alert
+
+subscribe unix-admin
+mailboxes /home/adam/mail/inboxes/unix-admin
+
+subscribe bugtraq
+mailboxes /home/adam/mail/inboxes/bugtraq
+alias bugtraq "Bugtraq, UNIX security mailing list" <bugtraq@securityfocus.com>
+fcc-save-hook bugtraq.*@.*securityfocus\.com =lists/bugtraq
+
+fcc-save-hook spaf.*@.*\.purdue\.edu =security/spaf
+
+# }}}
+# {{{ Software
+
+mailboxes /home/adam/mail/inboxes/sourceforge
+
+# {{{ addressbook
+
+alias addressbook "Clemens Durka, author of addressbook" <clemens@dagobah.de>
+
+# }}}
 # {{{ ALSA
 
 subscribe alsa-devel alsa-user
 mailboxes /home/adam/mail/inboxes/alsa-user
 mailboxes /home/adam/mail/inboxes/alsa-devel
+alias alsa-devel "ALSA development mailing list" <alsa-devel@alsa-project.org>
+alias alsa-user "ALSA users mailing list" <alsa-user@alsa-project.org>
+fcc-save-hook alsa-devel.*@.*alsa-project\.org =lists/alsa-devel
+fcc-save-hook alsa-user.*@.*alsa-project\.org =lists/alsa-user
+
+# }}}
+# {{{ apmd
+
+alias apmd-list "apmd mailing list" <apmd-list@worldvisions.ca>
+fcc-save-hook apmd =lists/apmd-list
+subscribe apmd-list
+#mailboxes /home/adam/mail/inboxes/apmd-list
 
 # }}}
 # {{{ bashprompt
 
 subscribe bash
 #mailboxes /home/adam/mail/inboxes/bashprompt
+alias bashprompt "bashprompt mailing list" <bash@current.nu>
+fcc-save-hook bash@current\.nu =lists/bashprompt
 
 # }}}
 # {{{ bugzilla
 
 subscribe buggies 
 mailboxes /home/adam/mail/inboxes/buggies
+alias buggies "landfill bugzilla testing" <buggies@landfill.tequilarista.org>
+fcc-save-hook buggies@landfill\.tequilarista\.org =lists/buggies
+
+# }}}
+# {{{ buildkernel
+
+alias william.stearns "William Stearns" <wstearns@pobox.com>
+alias buildkernel william.stearns
+alias bill.stearns william.stearns
+fcc-save-hook wstearns@pobox\.com =software/buildkernel
+
+# }}}
+# {{{ diald
+
+alias diald "linux-diald mailing list" <linux-diald@vger.rutgers.edu>
+fcc-save-hook linux-diald =lists/linux-diald
+subscribe linux-diald
+#mailboxes /home/adam/mail/inboxes/linux-diald
+
+alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
+
+# }}}
+# {{{ folding.el
+
+alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <andersl@csd.uu.se>
 
 # }}}
 # {{{ galeon
 
 subscribe galeon-devel
 #mailboxes /home/adam/mail/inboxes/galeon-devel
+fcc-save-hook galeon-devel.*lists\.sourceforge\.net =lists/galeon-devel
+alias galeon "galeon mailing list" <galeon-devel@lists.sourceforge.net>
 
 # }}}
 # {{{ gimp-perl
 
 subscribe gimp-perl
 mailboxes /home/adam/mail/inboxes/gimp-perl
+alias gimp-perl "gimp-perl mailing list" <gimp-perl@lists.netcentral.net>
+fcc-save-hook gimp-perl.*lists\.netcentral\.net =lists/gimp-perl
 
 # }}}
 # {{{ gnokii
 
 subscribe gnokii
+alias gnokii "gnokii mailing list" <gnokii@net.lut.ac.uk>
+fcc-save-hook gnokii =lists/gnokii
+
+fcc-save-hook chris.*kemp =lists/gnokii
+fcc-save-hook ck231@.*cam\.ac\.uk =lists/gnokii
+alias chris.kemp "Christopher Kemp" <ck231@cam.ac.uk>
+
+# }}}
+# {{{ gphoto
+
+alias gphoto "gphoto developers\' list" <gphoto@gphoto.net>
+fcc-save-hook gphoto =lists/gphoto
+subscribe gphoto
+
+alias gphoto-devel "gphoto developers\' list" <gphoto-devel@gphoto.net>
+fcc-save-hook gphoto-devel =lists/gphoto-devel
+subscribe gphoto-devel
+
+# }}}
+# {{{ htmlpp
+
+alias htmlpp "Nicolas Thiery, author of htmlpp" <Nicolas.Thiery@ens.fr>
 
 # }}}
 # {{{ infobot
 
 subscribe infobot
 #mailboxes /home/adam/mail/inboxes/infobot
+alias infobot "Infobot mailing list" <infobot-dev@cs.cmu.edu>
+fcc-save-hook infobot =lists/infobot
+
+alias oznoid "Oznoid (Kevin Lenzo)" <lenzo@cs.cmu.edu>
+
+# }}}
+# {{{ junkbuster
+
+alias junkbuster.blocklist "Stefan Waldherr" <stefan@waldherr.org>
+
+# }}}
+# {{{ Linux kernel
+
+alias linux-kernel <linux-kernel@vger.rutgers.edu>
+subscribe linux-kernel
+mailboxes /home/adam/mail/inboxes/linux-kernel
+
+# }}}
+# {{{ Linux SMP
+
+alias linux-smp "Linux SMP mailing list" <linux-smp@vger.rutgers.edu>
+mailboxes /home/adam/mail/inboxes/linux-smp
+subscribe linux-smp
+
+# }}}
+# {{{ mod_perl
+
+alias modperl "mod_perl mailing list" <modperl@apache.org>
 
 # }}}
 # {{{ mozilla
@@ -118,35 +763,72 @@ mailboxes /home/adam/mail/inboxes/mutt-users
 mailboxes /home/adam/mail/inboxes/mutt-dev
 
 # }}}
+# {{{ netatalk
+
+alias netatalk "netatalk mailing list" <netatalk@umich.edu>
+
+# }}}
 # {{{ Palm
 
+# {{{ plucker
+
+alias plucker-dev "Plucker development" <plucker-dev@rubberchicken.org>
+fcc-save-hook plucker-dev =lists/plucker-dev
 subscribe plucker-dev
 #mailboxes /home/adam/mail/inboxes/plucker-dev
 
+# }}}
+# {{{ sitescooper
+
+alias sitescooper-talk sitescooper-talk@lists.sourceforge.net
+fcc-save-hook sitescooper-talk =lists/sitescooper-talk
 subscribe sitescooper-talk
 #mailboxes /home/adam/mail/inboxes/sitescooper
 
+# }}}
+# {{{ gnome-pilot
+
 subscribe gnome-pilot-list
 mailboxes /home/adam/mail/inboxes/gnome-pilot-list
+alias gnome-pilot "gnome-pilot mailing list" <gnome-pilot-list@gnome.org>
+fcc-save-hook gnome-pilot.*@gnome\.org =lists/gnome-pilot
+
+# }}}
+# {{{ DateBk4
+
+alias datebk4-support "DateBk4 tech support" <SWSupport@PimlicoSoftware.com>
+
+# }}}
 
 # }}}
 # {{{ PCMCIA
 
 #mailboxes /home/adam/mail/inboxes/pcmcia-beta
 #mailboxes /home/adam/mail/inboxes/pcmcia-apm
+alias david.hinds "David Hinds (PCMCIA author)" <dhinds@zen.stanford.edu>
 
 # }}}
-# {{{ Perl forums
+# {{{ Perl
 
-subscribe p5p oxford-pm 
+alias modules "modules@perl.org" <modules@perl.org>
+fcc-save-hook upload.*@.*speed-link\.de =Perl/PAUSE
+
+subscribe p5p
 mailboxes /home/adam/mail/inboxes/p5p
+fcc-save-hook perl5-porters.*perl.org =p5p
+
+alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
 
 # }}}
-# {{{ PerlUnit
+# {{{ perlunit
 
 subscribe perlunit-users perlunit-devel
 #mailboxes /home/adam/mail/inboxes/perlunit-users
 mailboxes /home/adam/mail/inboxes/perlunit-devel
+alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
+alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
+fcc-save-hook perlunit-devel =lists/perlunit-devel
+fcc-save-hook perlunit-users =lists/perlunit-users
 
 # }}}
 # {{{ Request tracking
@@ -155,12 +837,26 @@ subscribe req reqng-developers wishlist rt-users
 #mailboxes /home/adam/mail/inboxes/rt-users
 #mailboxes /home/adam/mail/inboxes/req
 #mailboxes /home/adam/mail/inboxes/reqng
+alias req "Req mailing list" <req@ccs.neu.edu>
+alias reqng "reqNG developers mailing list" <reqng-developers@scuttlebutt.explore.com>
+alias reqng-wishlist "ReqNG wishlist" <wishlist@scuttlebutt.explore.com>
+alias rt "RT mailing list" <rt@auk.fsck.com>
+
+alias dcl "Daniel C. L'Hommedieu (reqNG developer)" <dcl@explore.com>
 
 # }}}
 # {{{ sawfish
 
 subscribe sawmill
 #mailboxes /home/adam/mail/inboxes/sawfish
+alias sawfish "sawfish mailing list" <sawmill@aarg.net>
+alias sawmill sawfish
+fcc-save-hook sawmill.*aarg\.net =lists/sawfish
+
+# }}}
+# {{{ xwrits
+
+alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
 
 # }}}
 # {{{ zsh
@@ -168,53 +864,64 @@ subscribe sawmill
 subscribe zsh-users zsh-workers
 #mailboxes /home/adam/mail/inboxes/zsh-users
 #mailboxes /home/adam/mail/inboxes/zsh-workers
+alias zsh-users "zsh users mailing list" <zsh-users@sunsite.auc.dk>
+alias zsh-workers "zsh workers mailing list" <zsh-workers@sunsite.auc.dk>
+fcc-save-hook zsh-announce@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-announce
+fcc-save-hook zsh-users@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-users
+fcc-save-hook zsh-workers@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-workers
+
+fcc-save-hook schaefer.*brasslantern\.com =lists/zsh-workers
+
+alias pws "Peter Stephenson" <pws@ibmth.df.unipi.it>
+alias sven.wischnowsky "Sven Wischnowsky" <wischnow@informatik.hu-berlin.de>
+alias tanaka.akira "Tanaka Akira" <akr@jaist.ac.jp>
+alias zefram "Zefram" <zefram@fysh.org>
 
 # }}}
 
 # }}}
-# {{{ Security lists
+# {{{ Hardware
 
-subscribe bugtraq linux-security security-audit linux-alert
-subscribe unix-admin
-mailboxes /home/adam/mail/inboxes/bugtraq
-mailboxes /home/adam/mail/inboxes/linux-security
-mailboxes /home/adam/mail/inboxes/security-audit
-mailboxes /home/adam/mail/inboxes/linux-alert
-mailboxes /home/adam/mail/inboxes/unix-admin
+subscribe linux-thinkpad linux-laptop
+#mailboxes /home/adam/mail/inboxes/linux-thinkpad
+#mailboxes /home/adam/mail/inboxes/linux-laptop
 
-# }}}
-# {{{ Chatter
-
-subscribe oxford-pm london_pm london-list void 
-#mailboxes /home/adam/mail/inboxes/oxford-pm
-#mailboxes /home/adam/mail/inboxes/london-pm
-#mailboxes /home/adam/mail/inboxes/void
-mailboxes /home/adam/mail/inboxes/oxluug
-mailboxes /home/adam/mail/inboxes/unix-admin
+alias linux-thinkpad linux-thinkpad mailing list <linux-thinkpad@topica.com>
+fcc-save-hook linux-thinkpad =lists/linux-thinkpad
+alias linux-thinkpad-maintainer "Linux on ThinkPads web page maintainer" <linux-tp@e-oasis.com>
+alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
+alias kharker "Kenneth Harker, Linux on Laptops maintainer" <kharker@cs.utexas.edu>
+alias lilac "Werner Heuser, LiLAC website maintainer" <wehe@snafu.de>
 
 # }}}
-# {{{ News
+# {{{ RedHat
 
-mailboxes /home/adam/mail/inboxes/freshmeat
-mailboxes /home/adam/mail/inboxes/slashdot
+#mailboxes /home/adam/mail/inboxes/redhat-bugzilla
+fcc-save-hook bugzilla.*@.*redhat\.com =Linux/redhat-bugzilla
+
+#mailboxes /home/adam/mail/inboxes/redhat-contrib
+fcc-save-hook contrib-list.*@redhat\.com =lists/redhat-contrib
+subscribe contrib-list
 
 # }}}
-# {{{ Websites
+
+# {{{ Online shopping
 
 mailboxes /home/adam/mail/inboxes/amazon
-mailboxes /home/adam/mail/inboxes/sourceforge
 
 # }}}
+
+alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
+
+# }}}
+
 # {{{ Miscellaneous
 
-#mailboxes /home/adam/mail/inboxes/mobile
-mailboxes /home/adam/mail/inboxes/jobserve-filtered
-mailboxes /home/adam/mail/inboxes/interjazz
-mailboxes /home/adam/mail/inboxes/jobserve
-#mailboxes /home/adam/mail/inboxes/hacking
-#mailboxes /home/adam/mail/inboxes/family-tree
-mailboxes /home/adam/mail/inboxes/chat
-mailboxes /home/adam/mail/inboxes/friends
+alias kevin.spiers "Kevin L Spiers" <kevin@spiers.net>
+
+alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
+
+#source ~/.mutt/quake-aliases
 
 # }}}
 
@@ -235,8 +942,7 @@ folder-hook =(inboxes|lists)/london-pm      source ~/.mutt/folders/london-pm
 
 # }}}
 
-source ~/.mutt/save-hooks
-source /usr/doc/mutt-1.2.4i/samples/pgp2.rc
+source /usr/doc/mutt-1.2.5i/samples/pgp2.rc
 
 #send-hook . 'unmy_hdr From'
 #send-hook "bash@current\.nu|linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
