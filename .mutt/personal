@@ -193,6 +193,7 @@ fcc-save-hook ben@redfrontdoor.org =friends/Oxford/ben.north
 alias ben.north.corelli "Ben North" <ben@corelli.new.ox.ac.uk>
 alias ben.north.3com "Ben North" <Ben_North@eur.3com.com>
 alias ben.north.home Ben North <ben@redfrontdoor.org>
+alias ben.north.work Ben North <northb@sig.com>
 alias ben ben.north.home
 
 fcc-save-hook dave@corelli\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
@@ -243,7 +244,8 @@ alias bear.home "Bear North" <bear@redfrontdoor.org>
 alias bear.corelli "Bear" <bear@corelli.new.ox.ac.uk>
 alias bear.hotmail "Bear" <bearbolton@hotmail.com>
 alias bear.parents "Mike Bolton, Bear's dad" <mbolton@iol.ie>
-alias bear.work "Bear North" <bolton@susq.com>
+alias bear.work.old "Bear North, at work" <bolton@susq.com>
+alias bear.work "Bear North, at work" <north@sig.com>
 alias bear bear.home
 
 alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
