@@ -57,7 +57,7 @@ subscribe zsh-users zsh-workers
 subscribe alsa-devel alsa-user
 subscribe infobot p5p oxford-pm gimp-perl
 subscribe bash gnokii sawmill galeon-devel
-subscribe buggies gnome-pilot-list
+subscribe buggies gnome-pilot-list plucker-dev
 #mailboxes /home/adam/mail/inboxes/linux-diald
 mailboxes /home/adam/mail/inboxes/alsa-user
 mailboxes /home/adam/mail/inboxes/alsa-devel
@@ -81,6 +81,7 @@ mailboxes /home/adam/mail/inboxes/gimp-perl
 #mailboxes /home/adam/mail/inboxes/galeon-devel
 mailboxes /home/adam/mail/inboxes/buggies
 mailboxes /home/adam/mail/inboxes/gnome-pilot-list
+mailboxes /home/adam/mail/inboxes/plucker-dev
 
 ## Chatter
 subscribe oxford-pm london_pm london-list void 
