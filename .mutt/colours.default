@@ -12,7 +12,7 @@ color error brightred default
 color header yellow default Subject:
 color header brightwhite default .
 color hdrdefault brightyellow blue
-color indicator brightwhite default
+color indicator brightwhite green
 color markers brightgreen default
 color message brightwhite default
 color quoted cyan default
