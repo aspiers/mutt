@@ -485,6 +485,9 @@ alias anthony.gardner Anthony Gardner <agardner@guideguide.com>
 alias agardner anthony.gardner
 fcc-save-hook agardner@guideguide.com =computer-work/anthony.gardner
 
+alias roland.gockel Roland Gockel <rgockel@guideguide.com>
+fcc-save-hook rgockel@guideguide.com =computer-work/roland.gockel
+
 # }}}
 # {{{ other
 
