@@ -31,8 +31,9 @@ alias ben ben.north
 alias nick.williams "Nick Williams" <nick@thelonious.new.ox.ac.uk>
 alias dave.lindgren "David Lindgren" <dave@thelonious.new.ox.ac.uk>
 alias dave dave.lindgren
-alias chris.cladingboel "Christopher Cladingboel" <christopher.cladingboel@wadham.ox.ac.uk>
+alias chris.cladingboel "Chris Cladingboel" <christopher.cladingboel@wadham.ox.ac.uk>
 alias chris chris.cladingboel
+alias chris.hildrew "Chris Hildrew" <chris_hildrew@yahoo.com>
 alias jo.sherratt.hotmail Joanna Sherratt <josherratt@hotmail.com>
 alias jo.sherratt.notts Joanna Sherratt <mzytjls@nottingham.ac.uk>
 alias jo.sherratt.bm "Joanna Sherratt" <jsherrat@ibl.bm>
@@ -93,6 +94,7 @@ alias nicks nick,nick.williams
 # Friends from home
 #
 
+alias matthew.clay Matt Clay <m.clay@prsarchitects.com>
 alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
 alias jon.greenwell Jonathan Greenwell <J.R.Greenwell@mds.qmw.ac.uk>
 alias dan.davies Daniel Davies <dddavies@students.jhubc.it>
@@ -159,6 +161,7 @@ alias yan.fitterer "Yan Fitterer" <y.fitterer@ram.ac.uk>
 alias yan yan.fitterer
 alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
 alias nick.byrne Nick Byrne <n.byrne@RAM.AC.UK>
+alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
 alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
 alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
 
@@ -289,8 +292,9 @@ alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
 alias christof.damian "Christof Damian" <cdamian@guideguide.com>
 alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
 alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
-alias alex.mclean "Alex McLean" <amclean@guideguide.com>
-alias alex.mclean2 Alex McLean <alex@guideguide.com>
+alias alex.mclean "Alex McLean" <alex@slab.org>
+alias alex.mclean2 Alex McLean <amclean@guideguide.com>
+alias alex.mclean3 Alex McLean <alex@guideguide.com>
 alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
 alias john.imrie John Imrie <jimrie@guideguide.com>
 alias dave.cross Dave Cross <dave@dave.org.uk>
@@ -333,6 +337,8 @@ alias colin.wright "Colin Wright, juggler & mathematician" <cdw10@liv.ac.uk>
 alias pgp "PGP public key server (Oxford)" <pgp-public-keys@keys.uk.pgp.net>
 alias ahbou "alt.humor.best-of-usenet submissions" <ahbou-sub@acpub.duke.edu>
 
+alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>
+
 source ~/.mutt/quake-aliases
 
 
@@ -340,4 +346,3 @@ source ~/.mutt/quake-aliases
 # Incoming (need to be classified)
 ##############################################################################
 
-alias bcc-only lots of people <adam-dev-null@thelonious.new.ox.ac.uk>

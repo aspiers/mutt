@@ -2,11 +2,15 @@
 # Friends / relatives
 ##############################################################################
 
+fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
+fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
+fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
+fcc-save-hook sherrat =friends/Oxford/joanna.sherratt
+fcc-save-hook mzytjls@nottingham\.ac\.uk =friends/Oxford/joanna.sherratt
+fcc-save-hook dave@thelonious\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
 fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
 fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
 fcc-save-hook nick@thelonious\.new\.ox(ford)?\.ac\.uk =Oxford/friends/nick.williams
-fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
-fcc-save-hook chris.*@.*\.wadham\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
 fcc-save-hook e-c-orch\.demon\.co\.uk =Oxford/friends/ivan.rockey
 fcc-save-hook rosiebiss =friends/NYO/rosie.biss
 fcc-save-hook d.*nicker.*@.*.ox(ford)?.ac.uk =security/darren.nickerson
@@ -18,6 +22,8 @@ fcc-save-hook v.*hamilt =Oxford/friends/victoria.hamilton
 fcc-save-hook helenoc@juno\.com =relatives/helen.oconnor
 fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
 fcc-save-hook n\.byrne@ram\.ac\.uk =friends/RAM/nick.byrne
+fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
+fcc-save-hook chris.*@.*\.wadham\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
 
 
 ##############################################################################
@@ -32,6 +38,7 @@ fcc-save-hook ggdev@mediaconsult\.com =computer-work/ggdev
 fcc-save-hook christof@mediaconsult\.com =computer-work/christof.damian
 fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
 fcc-save-hook alex@mediaconsult\.com =computer-work/alex.mclean
+fcc-save-hook alex@guideguide\.com =computer-work/alex.mclean
 fcc-save-hook amclean@guideguide\.com =computer-work/alex.mclean
 fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
 
@@ -40,6 +47,9 @@ fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
 # Computing
 ##############################################################################
 
+fcc-save-hook wstearns@pobox\.com =software/buildkernel
+
+fcc-save-hook oxford-pm-list@happyfunball\.pm\.org =lists/oxford-pm
 fcc-save-hook perl5-porters.*perl.org =p5p
 
 fcc-save-hook bugtraq.*@.*securityfocus\.com =lists/bugtraq
@@ -76,15 +86,8 @@ fcc-save-hook apmd =lists/apmd-list
 ##############################################################################
 
 
+fcc-save-hook stacey\..*steele =friends/Oxford/stacey.steele
 
-fcc-save-hook alex@guideguide\.com =computer-work/alex.mclean
+fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
 
-fcc-save-hook wstearns@pobox\.com =software/buildkernel
-
-fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
-
-fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
-
-fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
-
-fcc-save-hook oxford-pm-list@happyfunball\.pm\.org =lists/oxford-pm
+fcc-save-hook amcfarland =computer-work/andy.mcfarland
