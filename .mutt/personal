@@ -297,6 +297,14 @@ alias miriam Miriam <Diamond5475@aol.com>
 fcc-save-hook Diamond5475@aol\.com =friends/misc/miriam
 
 # }}}
+# {{{ Jersey friends
+
+alias ron.hickman Ron Hickman <tekron@ic24.net>
+fcc-save-hook tekron@ic24\.net =friends/Jersey/ron.hickman
+
+alias sonia \"Sonia (JSO)\" <pg004593@sghms.ac.uk>
+
+# }}}
 # {{{ Music friends
 
 alias paul.skinner Paul Skinner <paulski@supanet.com>
@@ -744,6 +752,14 @@ subscribe gphoto
 alias gphoto-devel "gphoto developers\' list" <gphoto-devel@gphoto.net>
 fcc-save-hook gphoto-devel =lists/gphoto-devel
 subscribe gphoto-devel
+
+# }}}
+# {{{ gqview
+
+subscribe gqview-user
+mailboxes /home/adam/mail/inboxes/gqview-user
+fcc-save-hook gqview-user.*lists\.sourceforge\.net =lists/gqview-user
+alias gqview-user  "gqview user list"  <gqview-user@lists.sourceforge.net>
 
 # }}}
 # {{{ htmlpp
