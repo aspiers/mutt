@@ -136,6 +136,8 @@ alias christina.french Christina French <realslim_16@hotmail.com>
 # }}}
 # {{{ Friends
 
+# Classified by how I first met them
+
 # {{{ (Ex-)Oxford friends
 
 alias nick.williams2 "Nick Williams" <nickhw@btinternet.com>
@@ -430,10 +432,15 @@ alias claire.roff Claire Roff <claire_roff@hotmail.com>
 alias david.lasserson David Lasserson <davidlasserson@hotmail.com>
 fcc-save-hook dav.*lasserson =friends/musicians/david.lasserson
 
+alias nick.rippon "Nick Rippon" <nicholas.rippon@tinyworld.co.uk>
+
+# }}}
+# {{{ Endellion friends
+
 alias matthew.pay Matthew Pay <Matthew.Pay@ntl.com>
 fcc-save-hook matt.*pay@ntl.com =friends/Endellion/matthew.pay
 
-alias nick.rippon "Nick Rippon" <nicholas.rippon@tinyworld.co.uk>
+alias joanna.warden Jo Warden <joannawarden@hotmail.com>
 
 # }}}
 # {{{ Groups of friends
