@@ -202,28 +202,49 @@ alias philip.sheppard Philip Sheppard <phil@bluesnow.easynet.co.uk>
 alias christof.damian "Christof Damian" <cdamian@guideguide.com>
 alias cdamian christof.damian
 alias xtof christof.damian
+
 alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
 alias tdamian thomas.damian
+
 alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
 alias mhecken mikel.hecken
+
 alias alex.mclean "Alex McLean" <alex@slab.org>
 alias alex.mclean2 Alex McLean <amclean@guideguide.com>
 alias alex.mclean3 Alex McLean <alex@guideguide.com>
 alias alex.mclean.lurk Alex McLean <alex@lurk.org>
+
 alias andy.mcfarland "Andy McFarland" <amcfarland@guideguide.com>
 alias andym andy.mcfarland
+
 alias rob.partington Rob Partington <rpartington@guideguide.com>
 alias basho rob.partington
+
 alias mark.hulme-jones Mark Hulme-Jones <mjones@guideguide.com>
 alias mjones mark.hulme-jones
+alias recoil mark.hulme-jones
+
 alias nathan.carr Nathan Carr <nathan@nowt.net>
 alias ncarr nathan.carr
+alias nomad nathan.carr
+
 alias andrew.simmons Andrew Simmons <asimmons@guideguide.com>
 alias asimmons andrew.simmons
+alias vila andrew.simmons
+
 alias luke.robinson Luke Robinson <lrobinson@guideguide.com>
 alias lrobinson luke.robinson
-alias dave.thorn Dave Thorn <dthorn@guideguide.com>
-alias dthorn dave.thorn
+
+alias rob.ryan Rob Ryan <rryan@guideguide.com>
+alias rryan rob.ryan
+alias rollmop rob.ryan
+
+alias christian.allen Christian Allen <callen@guideguide.com>
+alias callen christian.allen
+alias pershino christian.allen
+
+#alias dave.thorn Dave Thorn <dthorn@guideguide.com>
+#alias dthorn dave.thorn
 
 alias ggdev "guideguide development list" <ggdev@guideguide.com>
 alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
