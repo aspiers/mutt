@@ -521,6 +521,24 @@ fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
 
 # {{{ Work
 
+# {{{ Orange Genie
+
+alias tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
+
+# }}}
+# {{{ Aston Carter
+
+alias jeff.harrod Jeff Harrod <jharrod@astoncarter.co.uk>
+alias jason.yank Jason Yank <jyank@astoncarter.co.uk>
+
+# }}}
+
+# {{{ cmed
+
+fcc-save-hook ghughes@cmedltd.com =computer-work/gareth.hughes
+alias gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
+
+# }}}
 # {{{ guideguide
 
 # {{{ people
@@ -641,7 +659,6 @@ fcc-save-hook codereview@guideguide\.com =computer-work/codereview
 # }}}
 
 # }}}
-
 # {{{ W3W
 
 fcc-save-hook rian@w3w\.net =computer-work/rian.kruger
@@ -651,20 +668,11 @@ alias adam.bailey "Adam Bailey" <post@w3w.net>
 alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
 
 # }}}
-# {{{ cmed
+# {{{ MoneyWorld
 
-fcc-save-hook ghughes@cmedltd.com =computer-work/gareth.hughes
-alias gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
-
-# }}}
-# {{{ Orange Genie
-
-alias tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
-
-# }}}
-
-alias jeff.harrod Jeff Harrod <jharrod@astoncarter.co.uk>
 alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
+
+# }}}
 
 # }}}
 
