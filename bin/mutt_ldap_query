@@ -61,10 +61,10 @@ foreach my $askfor ( @ARGV ) {
     open( LDAPQUERY, "$command |" ) or die "LDAP query error: $!";
 
     while ( <LDAPQUERY> ) {
-	next if ! /^mail:(.*)$/im;
+	next if ! /^mail:\s*(.*)$/im;
 	my $email = $1;
-	my $phone = /^telephoneNumber:(.*)$/im ? $1 : '';
-	my ( @name ) = ( /^cn:(.*)$/im, /^sn=(.*)$/im );
+	my $phone = /^telephoneNumber:\s*(.*)$/im ? $1 : '';
+	my ( @name ) = ( /^cn:\s*(.*)$/im, /^sn=\s*(.*)$/im );
 	push @results, "$email\t@name\t$phone\n";
     }
 
