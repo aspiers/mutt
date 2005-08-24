@@ -1,0 +1,75 @@
+#!/usr/bin/perl -w
+
+# Copyright (C) 4/14/98 Marc de Courville <marc@courville.org>
+#       but feel free to redistribute it however you like.
+#
+# Modifications for University of Twente service by Remco van de Meent
+#
+# mutt_ldap_query.pl: perl script to parse the outputs of ldapsearch
+# (ldap server query tool present in ldap-3.3 distribution
+# http://www.umich.edu/~rsug/ldap) in order to pass the required
+# formatted data to mutt (mail client http://www.mutt.org/)
+# using Brandon Long's the "External Address Query" patch
+# (http://www.fiction.net/blong/programs/mutt/#query).
+#
+# Warren Jones <wjones@tc.fluke.com> 2-10-99
+#    o Instead of just matching "sn", I try to match these fields
+#      in the LDAP database: "cn", "mail", "sn" and "givenname".
+#      A wildcard is used to make a prefix match.  (I borrowed
+#      this query from pine.)
+#
+#    o Commas separating command line arguments are optional.
+#      (Does mutt really start up $query_command with comma
+#      separated args?)
+#
+#    o Streamlined the perl here and there.  In particular,
+#      I used paragraph mode to read in each match in a single
+#      chunk.
+#
+#    o Added "use strict" and made the script "-w" safe.
+#
+#    o Returned non-zero exit status for errors or when there
+#      is no match, as specified by the mutt docs.
+#
+#    o Explicitly close the pipe from ldapsearch and check
+#      error status.
+#
+
+use strict;
+
+my $ldap_server = $ENV{LDAP_SERVER};
+my $BASEDN      = $ENV{LDAP_BASE};
+
+# Fields to search in the LDAP database:
+#
+my @fields = qw(cn mail sn givenname);
+
+die "Usage: $0 <name_to_query>, [[<other_name_to_query>], ...]\n"
+    if ! @ARGV;
+
+$/ = '';	# Paragraph mode for input.
+my @results;
+
+foreach my $askfor ( @ARGV ) {
+
+    $askfor =~ s/,$//;	# Remove optional trailing comma.
+
+    my $query = join '', map { "($_=$askfor*)" } @fields;
+    my $command = "ldapsearch -h $ldap_server -b '$BASEDN' -x '(|$query)'" .
+                  " sn cn givenName mail telephoneNumber";
+
+    open( LDAPQUERY, "$command |" ) or die "LDAP query error: $!";
+
+    while ( <LDAPQUERY> ) {
+	next if ! /^mail:(.*)$/im;
+	my $email = $1;
+	my $phone = /^telephoneNumber:(.*)$/im ? $1 : '';
+	my ( @name ) = ( /^cn:(.*)$/im, /^sn=(.*)$/im );
+	push @results, "$email\t@name\t$phone\n";
+    }
+
+    close( LDAPQUERY ) or die "ldapsearch failed: $!\n";
+}
+
+print "LDAP query: found ", scalar(@results), "\n", @results;
+exit 1 if ! @results;
