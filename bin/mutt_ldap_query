@@ -37,8 +37,8 @@
 
 use strict;
 
-my $ldap_server = $ENV{LDAP_SERVER};
-my $BASEDN      = $ENV{LDAP_BASE};
+die "\$LDAP_SERVER not defined in environment\n" unless $ENV{LDAP_SERVER};
+die "\$LDAP_BASE not defined in environment\n"   unless $ENV{LDAP_BASE};
 
 # Fields to search in the LDAP database:
 #
@@ -55,7 +55,7 @@ foreach my $askfor ( @ARGV ) {
     $askfor =~ s/,$//;	# Remove optional trailing comma.
 
     my $query = join '', map { "($_=$askfor*)" } @fields;
-    my $command = "ldapsearch -h $ldap_server -b '$BASEDN' -x '(|$query)'" .
+    my $command = "ldapsearch -h $ENV{LDAP_SERVER} -b '$ENV{LDAP_BASE}' -x '(|$query)'" .
                   " sn cn givenName mail telephoneNumber";
 
     open( LDAPQUERY, "$command |" ) or die "LDAP query error: $!";
