@@ -7,7 +7,7 @@
 
 # {{{ Personal config variables
 
-alternates "adam@mandolinarchive\.com|adam@spiers\.net|.*@(adamspiers|tigerpig)\.org|(a25|pulse)\.ram\.ac\.uk|aspiers@musician\.org|aspiers@cpan\.org|adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk|((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com|(m93asp|newc0115)@.*\.ox\.ac\.uk"
+set alternates="adam@mandolinarchive\.com|adam@spiers\.net|.*@(adamspiers|tigerpig)\.org|(a25|pulse)\.ram\.ac\.uk|aspiers@musician\.org|aspiers@cpan\.org|adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk|((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com|(m93asp|newc0115)@.*\.ox\.ac\.uk"
 
 # }}}
 
@@ -72,6 +72,8 @@ alias me.roink "Adam Spiers" <roink@tigerpig.org>
 alias me.hotmail "Adam Spiers, on hotmail" <adam_spiers@hotmail.com>
 alias me.CPAN "Adam Spiers on CPAN" <aspiers@cpan.org>
 alias me.lehman "Adam Spiers, Lehman Brothers" <aspiers@lehman.com>
+alias adamspiers.org "Adam Spiers" <f@adamspiers.org>
+alias me. "Adam Spiers" <f@adamspiers.org>
 alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 
 #alias me.guideguide "Adam Spiers, at guideguide" <aspiers@guideguide.com>
