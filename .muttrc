@@ -8,6 +8,7 @@
    set   abort_unmodified=no
    set   alias_file=~/.mutt/personal
    set   attribution="%n (%a) wrote:"
+   set   indent_string="> "
    set noconfirmappend
    set   confirmcreate
    set   copy             # Always keep a copy of my mails!
@@ -72,7 +73,7 @@
 #  set   mime_forward=ask-no
    set   move=no          # folder update: do not move read mail to "mbox"
 #  set   pager=less -aCMsei
-   set   pager_index_lines=0
+   set   pager_index_lines=5
    set   pager_stop       # next-page doesn't perform a next-undeleted when
                           # the end of the mail is shown
 #  set noprompt_after     # prompt when pager exits?
