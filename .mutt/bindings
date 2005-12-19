@@ -52,10 +52,11 @@
    macro index i  "<change-folder>=inboxes/\t\t\t<down>"  "show main inboxes"
    macro index I  "<change-folder>!\n"  "switch to MAIN inbox"
 
-   macro index B  "|urlview\n"  "pipe message to urlview"
+   macro index B     "|urlview\n"  "pipe message to urlview"
+   # http://www.spocom.com/users/gjohnson/mutt/#w3m
+   macro index "\cB" "|w3m\n"      "call w3m to extract URLs out of a message"
 
    macro index X  "Dall\n" "mark all messages as deleted"
-
    macro index "\eh"  "/~h " "search by header substring"
 
 # !!! PLEASE ALSO SEE CORRESPONDING SECTION FOR PAGER BINDINGS !!!
@@ -121,8 +122,10 @@
 
    macro pager  $   "<exit><sync-mailbox>" "quit pager and sync mailbox"
  
-   macro pager  B   "|urlview\n"
- 
+   macro pager  B    "|urlview\n"
+   # http://www.spocom.com/users/gjohnson/mutt/#w3m
+   macro pager "\cB" "|w3m\n"      "call w3m to extract URLs out of a message"
+
    macro pager  i   "<change-folder>=inboxes\t\t\t<down>" "show main inboxes"
    macro pager  I   "<change-folder>!\n"  "switch to MAIN inbox"
  
