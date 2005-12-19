@@ -7,9 +7,10 @@
    set   abort_nosubject=no
    set   abort_unmodified=no
    set   alias_file=~/.mutt/personal
+   set   ascii_chars
    set   attribution="%n (%a) wrote:"
-   set   indent_string="> "
    set noconfirmappend
+   set   certificate_file=~/.mutt/certificates
    set   confirmcreate
    set   copy             # Always keep a copy of my mails!
    set   delete=yes
@@ -44,7 +45,7 @@
    # matter.
    
    #set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~C %s)"
-   # This one's better when friend's bcc me:
+   # This one's better when friends bcc me:
    set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~f %s)"
 
    # If I can't get the list stuff right, it's probably
@@ -58,7 +59,11 @@
 
    set   editor="emacs -nw"
    set   fast_reply
+
+   # N.B. This has to come before any use of the '=' folder shortcut
+   # since '=' gets expanded at set-time not use-time :-(
    set   folder=~/mail    # directory with all mail folders
+
    set   force_name       # save outbound mail by username
                           # (even if =username does not exist)
    set nohelp
