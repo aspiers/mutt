@@ -130,17 +130,18 @@
  
    macro pager  w   ":set invsmart_wrap\n" "toggle wrap mode"
 
-   # Change PIL size
+   # Change PIL size.  Count includes status line, 
+   # e.g. setting to 4 means only 3 message lines are visible.
    macro pager "\e0" ":set pager_index_lines=0\n"
-   macro pager "\e1" ":set pager_index_lines=2\n"
-   macro pager "\e2" ":set pager_index_lines=4\n"
-   macro pager "\e3" ":set pager_index_lines=6\n"
-   macro pager "\e4" ":set pager_index_lines=8\n"
-   macro pager "\e5" ":set pager_index_lines=10\n"
-   macro pager "\e6" ":set pager_index_lines=12\n"
-   macro pager "\e7" ":set pager_index_lines=14\n"
-   macro pager "\e8" ":set pager_index_lines=16\n"
-   macro pager "\e9" ":set pager_index_lines=18\n"
+   macro pager "\e1" ":set pager_index_lines=4\n"
+   macro pager "\e2" ":set pager_index_lines=6\n"
+   macro pager "\e3" ":set pager_index_lines=8\n"
+   macro pager "\e4" ":set pager_index_lines=10\n"
+   macro pager "\e5" ":set pager_index_lines=12\n"
+   macro pager "\e6" ":set pager_index_lines=14\n"
+   macro pager "\e7" ":set pager_index_lines=16\n"
+   macro pager "\e8" ":set pager_index_lines=18\n"
+   macro pager "\e9" ":set pager_index_lines=20\n"
 
    macro pager "\ei"  "|CRM-SA-parp-inject\n"   "parp: (re)Inject into spool"
    macro pager "\et"  "|parp -rtv\n"  "parp: Test run"
