@@ -8,7 +8,6 @@
    set   abort_unmodified=no
    set   alias_file=~/.mutt/personal
    set   ascii_chars
-   set   attribution="%n (%a) wrote:"
    set noconfirmappend
    set   certificate_file=~/.mutt/certificates
    set   confirmcreate
