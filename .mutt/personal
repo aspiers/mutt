@@ -7,7 +7,11 @@
 
 # {{{ Personal config variables
 
-set alternates="adam@mandolinarchive\.com|adam@spiers\.net|.*@(adamspiers|tigerpig)\.org|(a25|pulse)\.ram\.ac\.uk|aspiers@musician\.org|aspiers@cpan\.org|adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk|((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com|(m93asp|newc0115)@.*\.ox\.ac\.uk"
+# mutt 1.5 syntax
+alternates "adam@mandolinarchive\.com|adam@spiers\.net|.*@(adamspiers|tigerpig)\.org|(a25|pulse)\.ram\.ac\.uk|aspiers@musician\.org|aspiers@cpan\.org|adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk|((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com|(m93asp|newc0115)@.*\.ox\.ac\.uk|aspiers@novell\.com"
+
+# mutt 1.4 syntax
+#set alternates="adam@mandolinarchive\.com|adam@spiers\.net|.*@(adamspiers|tigerpig)\.org|(a25|pulse)\.ram\.ac\.uk|aspiers@musician\.org|aspiers@cpan\.org|adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk|((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com|(m93asp|newc0115)@.*\.ox\.ac\.uk|aspiers@novell\.com"
 
 # }}}
 
@@ -71,7 +75,8 @@ alias me.tigerpig "Adam Spiers" <adam@tigerpig.org>
 alias me.roink "Adam Spiers" <roink@tigerpig.org>
 alias me.hotmail "Adam Spiers, on hotmail" <adam_spiers@hotmail.com>
 alias me.CPAN "Adam Spiers on CPAN" <aspiers@cpan.org>
-alias me.lehman "Adam Spiers, Lehman Brothers" <aspiers@lehman.com>
+#alias me.lehman "Adam Spiers, Lehman Brothers" <aspiers@lehman.com>
+alias me.novell "Adam Spiers, Novell" <aspiers@novell.com>
 alias adamspiers.org "Adam Spiers" <f@adamspiers.org>
 alias me. "Adam Spiers" <f@adamspiers.org>
 alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
@@ -678,6 +683,12 @@ fcc-save-hook (marc.*allison|c.*williamson|desuiza) =exercise/reebok.sports.club
 
 # {{{ Work
 
+# {{{ Novell
+
+alias matthias.eckermann \"Matthias G. Eckermann\" <mge@novell.com>
+alias mge matthias.eckermann
+
+# }}}
 # {{{ Lehman Brothers
 
 #alias kordian.witek.work Kordian Witek <kwitek@lehman.com>

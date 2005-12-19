@@ -6,5 +6,5 @@ bind pager z noop
   set attribution="%n (%a) wrote:"
   set indent_string="> "
   set pgp_verify_sig
-  set pager_index_lines=5
+  set pager_index_lines=8
 unset signature
