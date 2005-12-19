@@ -685,8 +685,26 @@ fcc-save-hook (marc.*allison|c.*williamson|desuiza) =exercise/reebok.sports.club
 
 # {{{ Novell
 
-alias matthias.eckermann \"Matthias G. Eckermann\" <mge@novell.com>
+# {{{ LST
+
+alias swat-emea Linux SWAT team EMEA <swat-emea@lists.novell.com>
+alias lst swat-emea
+
+alias andreas.nemeth Andreas Nemeth <andreas.nemeth@novell.com>
+alias michael.jores "F.-Michael Jores" <Michael.Jores@novell.com>
+
+alias matthias.eckermann "Matthias G. Eckermann" <mge@novell.com>
 alias mge matthias.eckermann
+
+alias manfred.hollstein Manfred Hollstein <mh@novell.com>
+alias mh manfred.hollstein
+
+# }}}
+
+alias owain.mcguire Owain McGuire <omcguire@novell.com>
+alias andrew.voysey Andrew Voysey <avoysey@novell.com>
+alias steve.gaines Steven Gaines <sgaines@novell.com>
+alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
 
 # }}}
 # {{{ Lehman Brothers
