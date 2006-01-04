@@ -691,7 +691,9 @@ alias swat-emea Linux SWAT team EMEA <swat-emea@lists.novell.com>
 alias lst swat-emea
 
 alias andreas.nemeth Andreas Nemeth <andreas.nemeth@novell.com>
+alias an andreas.nemeth
 alias michael.jores "F.-Michael Jores" <Michael.Jores@novell.com>
+alias mj michael.jores
 
 alias matthias.eckermann "Matthias G. Eckermann" <mge@novell.com>
 alias mge matthias.eckermann
@@ -699,12 +701,16 @@ alias mge matthias.eckermann
 alias manfred.hollstein Manfred Hollstein <mh@novell.com>
 alias mh manfred.hollstein
 
+alias peter.schinagl Peter Schinagl <peters@suse.de>
+alias ps peter.schinagl
+
 # }}}
 
 alias owain.mcguire Owain McGuire <omcguire@novell.com>
 alias andrew.voysey Andrew Voysey <avoysey@novell.com>
 alias steve.gaines Steven Gaines <sgaines@novell.com>
 alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
+alias dan.homolka Dan Homolka <Dan.Homolka@novell.com>
 
 # }}}
 # {{{ Lehman Brothers
@@ -726,6 +732,8 @@ alias louise.lee "Louise Lee" <llee_se1@yahoo.com>
 alias chris.johnston.home "Chris Johnston" <cjohnston@nextex.com>
 
 alias gema.lopez-sanz "Gema Lopez-Sanz" <gema@lopez-sanz.com>
+
+alias Julian Morris Julian Morris <julian.morris@db.com>
 
 # }}}
 # {{{ Egenera
