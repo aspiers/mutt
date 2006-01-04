@@ -107,7 +107,7 @@
    set   tmpdir=/tmp      # directory where temporary files are to be placed
 #  set   to_chars=
    set   tilde            # show empty lines at end with a tilde
-   set   wait_key
+ unset   wait_key
    set   write_inc=1      # display increment count for every n-th mail
 
   ignore *
@@ -122,6 +122,9 @@ unignore x-cron-env x-seq x-hn-forum
 unignore x-spam-status
 #unignore x-spam-level
 unignore x-crm114
+
+# Base mime type on extension for application/octet-stream - needs mutt 1.5.x
+mime_lookup application/octet-stream
 
 auto_view text/x-vcard text/html
 # gpg.rc takes care of this
