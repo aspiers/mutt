@@ -96,6 +96,13 @@
 #   is set.
    set   mime_forward_rest=yes
 
+# I notice that selecting a multipart/mixed from the recvattach menu
+# automatically decodes its inline contents, so if you also select the
+# inline contents individually, they get decoded and included twice in
+# the forwarded text.  Attachments don't seem to get included by
+# default if within a selected multipart/mixed, so they don't have this problem.
+# See also http://wiki.mutt.org/?MuttFaq/Attachment
+
    set   move=no          # folder update: do not move read mail to "mbox"
 #  set   pager=less -aCMsei
    # pager_index_lines gets set in .mutt/folders/DEFAULTS
