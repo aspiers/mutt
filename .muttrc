@@ -74,7 +74,28 @@
 # This makes it beep every time it checks for new mail on idle
    set   meta_key         # META behaves in typical ESCAPE fashion
 
-#  set   mime_forward=ask-no
+# mime_forward:
+#   When set, the message you are forwarding will be attached as a
+#   separate MIME part instead of decoded and included in the main body of the
+#   message.  This is useful for forwarding MIME messages so the receiver
+#   can properly view the message as it was delivered to you, but it's
+#   not as good for keeping the flow of a conversation.  I need the
+#   latter more often; the former is more for dealing with bounced mail etc.
+   set   mime_forward=ask-no
+
+# mime_forward_decode
+#   Controls the decoding of complex MIME messages into text/plain when
+#   forwarding a message while ````$mime_forward'''' is set. Otherwise
+#   ````$forward_decode'''' is used instead.
+   set   mime_forward_decode=yes
+
+# mime_forward_rest
+#   When forwarding multiple attachments of a MIME message from the
+#   recvattach menu, attachments which cannot be decoded in a reasonable
+#   manner will be attached to the newly composed message if this option
+#   is set.
+   set   mime_forward_rest=yes
+
    set   move=no          # folder update: do not move read mail to "mbox"
 #  set   pager=less -aCMsei
    # pager_index_lines gets set in .mutt/folders/DEFAULTS
@@ -126,7 +147,9 @@ unignore x-crm114
 # Base mime type on extension for application/octet-stream - needs mutt 1.5.x
 mime_lookup application/octet-stream
 
+# This works in conjunction with some magic text/html entries in .mailcap
 auto_view text/x-vcard text/html
+
 # gpg.rc takes care of this
 #auto_view application/pgp-signature
 
