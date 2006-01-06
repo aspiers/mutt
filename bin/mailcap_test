@@ -13,13 +13,18 @@
 
 PS4="${0##*/}+ "
 exec 1>>~/.mailcap_bg.log 2>&1
-set -x
 
 # Setup global variables.
 need_wait=no
 fname=${1} ; shift
 prog=${1} ; shift
-declare -a args=("${@}")
+declare -a args
+# gotta
+for ((i = 1; i <= $#; i = i+1)); do
+  eval args[i]="\$$i"
+done
+
+set -x
 
 # Test only if called as mailcap_test
 if [[ $0 == *_test ]]; then
