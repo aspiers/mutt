@@ -168,6 +168,9 @@
 # }}}
 # {{{ Bindings for compose menu
 
+   bind  compose  h  help
+   bind  compose  ?  noop
+
    # To avoid unfortunate accidents:
    bind  compose  y  noop
    bind  compose  q  noop
