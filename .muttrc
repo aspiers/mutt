@@ -71,7 +71,6 @@
    set   mark_old         # make distinction between new and old mail
    set   mbox_type=Maildir
 
-# This makes it beep every time it checks for new mail on idle
    set   meta_key         # META behaves in typical ESCAPE fashion
 
 # mime_forward:
@@ -116,8 +115,6 @@
    set   pgp_replysign
    set   pgp_replysignencrypted
    set   pgp_retainable_sigs
-#   set   pgp_v2=/usr/local/bin/pgp
-#  set   pgp_gpg=
    set   quote_regexp="^> *"
    set   recall=no
 #  set   record="PLEASE CHOOSE AN FCC FOLDER!"
