@@ -112,3 +112,5 @@ cp "$file" "$tmpfile"
     rm -f "$tmpfile"
     rmdir "$tmpdir"
 ) &
+
+exit 0
