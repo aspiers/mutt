@@ -710,6 +710,9 @@ alias peter.schinagl Peter Schinagl <peters@suse.de>
 alias ps peter.schinagl
 
 # }}}
+# {{{ UK
+
+# Yan is elsewhere
 
 alias owain.mcguire Owain McGuire <omcguire@novell.com>
 alias andrew.voysey Andrew Voysey <avoysey@novell.com>
@@ -718,7 +721,12 @@ alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
 alias dan.homolka Dan Homolka <Dan.Homolka@novell.com>
 alias jimmie.hay Jimmie Hay <jhay@novell.com>
 
-# Yan is elsewhere
+# }}}
+# {{{ EMEA
+
+alias jo.de.baer Jo de Baer <jdebaer@novell.com>
+
+# }}}
 
 # }}}
 # {{{ Lehman Brothers
