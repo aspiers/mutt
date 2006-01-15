@@ -57,7 +57,7 @@ folder-hook =lists/                           source ~/.mutt/mailing-list
 
 # {{{ send-hook, my_hdr
 
-my_hdr X-URL: http://tigerpig.org/
+#my_hdr X-URL: http://tigerpig.org/
 my_hdr X-OS: RedHat Linux
 send-hook . 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 send-hook . 'my_hdr Reply-To: "Adam Spiers" <adam@spiers.net>'
@@ -76,7 +76,7 @@ alias me.roink "Adam Spiers" <roink@tigerpig.org>
 alias me.hotmail "Adam Spiers, on hotmail" <adam_spiers@hotmail.com>
 alias me.CPAN "Adam Spiers on CPAN" <aspiers@cpan.org>
 #alias me.lehman "Adam Spiers, Lehman Brothers" <aspiers@lehman.com>
-alias me.novell "Adam Spiers, Novell" <aspiers@novell.com>
+alias me.novell "Adam Spiers" <aspiers@novell.com>
 alias adamspiers.org "Adam Spiers" <f@adamspiers.org>
 alias me. "Adam Spiers" <f@adamspiers.org>
 alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
@@ -115,17 +115,21 @@ fcc-save-hook chloe.*spiers =relatives/chloe
 
 alias family daddy, chloe, thea, ian
 
-alias ian.spiers "Ian Spiers" <ian@spiers.net>
 #alias ian.spiers.old "Ian Spiers" <ian@spiers.newnet.co.uk>
+#alias ian.spiers "Ian Spiers" <ian@spiers.net>
+alias ian.spiers Ian Spiers <ian.spiers@zen.co.uk>
 alias ian ian.spiers
 fcc-save-hook ian.*spiers =relatives/ian.spiers
 
 alias barry.spiers "Barry Spiers" <barry@spiers.net>
 alias barry.spiers.work "Barry Spiers, at work" <flexdeck@intelog.com>
 alias barry barry.spiers
-alias david.spiers "David Spiers" <duvido@home.com>
-alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
-fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
+#alias david.spiers "David Spiers" <duvido@home.com>
+alias david.spiers "David Spiers" <daveyspiers@msn.com>
+
+#alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
+alias daniel.spiers "Daniel Spiers" <spiers900@rogers.com>
+#fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
 
 alias helen.oconnor.mayo "Helen O'Connor at work" <oconh@mayo.edu>
 alias helen.oconnor.juno "Helen O'Connor at home" <helenoc@juno.com>
@@ -165,6 +169,10 @@ alias elise.horwich "Elise Horwich" <ehorwich@aol.com>
 
 alias relatives-in-England leonard.pearce, peter.leckstein
 alias relatives-in-UK relatives-in-England, relatives-in-Eire
+
+# 3rd cousin, ex-Lehman lawyer
+alias ken.pierce ken.pierce@cwt.com
+# his brother is coder with his own company
 
 # }}}
 # {{{ Old schoolteachers
@@ -256,7 +264,10 @@ alias olly oliver.wilson
 
 alias roger.proctor Roger Proctor <cubemusic@yahoo.com>
 
-alias NYO-party-friends matt.jones, rosie, sali, olly, bels
+alias mary.owen Mary Owen <maryowen17@hotmail.com>
+alias mary mary.owen
+
+alias NYO-party-friends matt.jones, rosie, sali, olly, bels, mary
 
 # }}}
 
@@ -310,10 +321,10 @@ alias giles.harrison Giles Harrison <giles.harrison@bbc.co.uk>
 alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
 
 fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
-fcc-save-hook ben\.teasdale@ntlworld\.com =friends/Oxford/ben.teasdale
+fcc-save-hook ben@litpop\.com =friends/Oxford/ben.teasdale
 fcc-save-hook strangetimes@hotmail\.com =friends/Oxford/ben.teasdale
 alias ben.teasdale.bbc "Ben Teasdale" <ben.teasdale@bbc.co.uk>
-alias ben.teasdale "Ben Teasdale" <ben.teasdale@ntlworld.com>
+alias ben.teasdale "Ben Teasdale" <ben@litpop.com>
 
 fcc-save-hook ben@corelli\.new\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
 fcc-save-hook north.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
@@ -357,7 +368,7 @@ alias sarah.metcalf "Sarah Metcalf" <sarsli@hotmail.com>
 alias sarsli sarah.metcalf
 alias ian.macmullen "Ian MacMullen" <ian_macmullen@hotmail.com>
 alias tim.lucas "Tim Lucas" <lucatim_uk@yahoo.co.uk>
-alias jeremy.cave "Jeremy Cave" <jeremy.cave@fandc.com>
+alias jeremy.cave "Jeremy Cave BROKEN ADDRESS" <jeremy.cave@fandc.com> #broken address
 alias sarah.hudson "Sarah Hudson" <Sarahhudson4@aol.com>
 alias kath.noble "Kath Noble" <kath_noble@hotmail.com>
 
@@ -385,7 +396,7 @@ alias bears.aunt "Bear at Hilary Stephen's" <hilary@arc.net.au>
 alias kevin.barsby "Kevin Barsby" <kevin.barsby@hummingbird-it.co.uk>
 #alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
 
-alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
+#alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
 
 fcc-save-hook oli.*dickson =friends/Oxford/olimpia.dickson
 alias olimpia.lindgren Oli Dickson <olimpia.lindgren@sainsburys.co.uk>
@@ -423,7 +434,14 @@ alias barny.hollington Barny Hollington <brnhllngtn@aol.com>
 alias becky.leyton Becky Leyton <beckyleyton@aol.com>
 alias bokc.leyton becky.leyton
 
-alias Oxford-party-friends nick, vicky.hamilton, rachael.schofield, graeme.wearden, giles.harrison, ben.teasdale, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, jo.sherratt, sarsli, lindsey.napier,
+alias ben.levy Ben Levy <benlevy1@hotmail.com>
+
+alias gussie.harris "Gussie Harris" <guswhateverharris@yahoo.co.uk>
+alias gussie gussie.harris
+
+alias kelly.thompson "Kelly Thompson" <oxkelly@hotmail.com>
+
+alias Oxford-party-friends nick, vicky.hamilton, rachael.schofield, graeme.wearden, giles.harrison, ben.teasdale, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, jo.sherratt, sarsli, lindsey.napier, ben.levy, gussie, kelly.thompson
 # ben, bear too busy with Meg this time
 
 # }}}
@@ -481,6 +499,7 @@ alias hostmaster "OUCS host administration" <hostmaster@ox.ac.uk>
 
 #alias yan.fitterer.ram "Yan Fitterer" <y.fitterer@ram.ac.uk>
 #alias yan.fitterer.u-net Yan Fitterer <y.fitterer@ithut.u-net.com>
+alias yan.fitterer.home Yan Fitterer <yan@fitterer.org>
 alias yan.fitterer.novell Yan Fitterer <yfitterer@novell.com>
 alias yan yan.fitterer.novell
 fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
@@ -506,12 +525,21 @@ fcc-save-hook meticulous.*freeuk\.com =friends/RAM/mat.heighway
 alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
 fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 
+alias rosie.banks "Rosie Banks" <rosiebanks@hotmail.com>
+
 fcc-save-hook ben.trigg =friends/RAM/ben.trigg
 
-alias lindsay.wood.RAM Lindsay Wood <l.wood@ram.ac.uk>
+#alias lindsay.wood.RAM Lindsay Wood <l.wood@ram.ac.uk>
 alias lindsay.wood.hotmail Lindsay Wood <lawood79@hotmail.com>
+alias lindsay.wood.RH "Lindsay Wood, at work" <lindsayw@richardhouse.org.uk>
+
+#alias linz.RAM lindsay.wood.RAM
+alias linz.hotmail lindsay.wood.hotmail
+alias linz.both linz.hotmail, linz.RH
+alias linz linz.both
 fcc-save-hook l\.wood@ram\.ac\.uk =friends/RAM/lindsay.wood
 fcc-save-hook lawood =friends/RAM/lindsay.wood
+fcc-save-hook lindsayw =friends/RAM/lindsay.wood
 
 alias mike.francis Mike Francis <mjfrancis@onetel.net.uk>
 fcc-save-hook mjfrancis =friends/RAM/mike.francis
@@ -519,6 +547,7 @@ fcc-save-hook mjfrancis =friends/RAM/mike.francis
 alias roderick.chadwick Roderick Chadwick <RoderickJC@aol.com>
 
 alias katie.chatburn Katie Chatburn <katie@acm.ac.uk>
+alias katie.chatburn2 Katie Chatburn <porcelina51@hotmail.com>
 
 alias laura.stanford Laura Stanford <lollydrofnats@hotmail.com>
 
@@ -526,7 +555,7 @@ alias matt.shlomowitz Matthew Shlomowitz <mshlom@hotmail.com>
 alias shlom matt.shlomowitz
 fcc-save-hook shlom@hotmail.com =friends/RAM/matthew.shlomowitz
 
-alias RAM-party-friends nick.byrne, lindsay.wood, mike.francis, kirsty, shlom, laura.stanford, roderick.chadwick, katie.chatburn
+alias RAM-party-friends nick.byrne, linz.both, mike.francis, kirsty, shlom, laura.stanford, roderick.chadwick, katie.chatburn
 
 # }}}
 alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
@@ -583,6 +612,8 @@ alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 
 alias jessica.ong Jessica Ong <jessica.ong@freshfields.com>
 
+alias josie.lyons Josephine Lyons <josephine_lyons@hotmail.com>
+
 # }}}
 # {{{ Foreign friends
 
@@ -621,6 +652,8 @@ alias ben.rogerson "Ben Rogerson" <benedictrogerson@yahoo.com>
 
 alias inga.taylor.work Inga Taylor <itaylor@mxbex.com>
 alias inga.taylor Inga Taylor <ingataylor@hotmail.com>
+
+# When I stayed in Myrtledene (Easter 2004 I think)
 alias myrtledene <ian.bysh@advantage-business.co.uk>, <duncan_french@djf.ndo.co.uk>, <mike@theeurekafactor.com>, <nickidivett@fulham73.freeserve.co.uk>, joanna.warden, inga.taylor, anne-marie.cullum
 
 # Orchestra
@@ -629,27 +662,40 @@ alias katherine.barnecutt "Katherine Barnecutt" <kbarnecutt@hotmail.com> # viola
 alias celia.birkinshaw "Celia Birkinshaw" <Celia.Birkinshaw@dorset.pnn.police.uk> # bassoon
 alias nancy.buchanan "Nancy Buchanan" <nancybuchanan@hotmail.com> # violin, Morris Minor
 alias jane.dickinson "Jane Dickinson" <Jane@ajd-ophth.freeserve.co.uk>
-alias claire.gibb "Claire Gibb" <CGibb@TCM.AC.UK> # french horn
+alias claire.gibb "Claire Gibb" <clairegibb@hotmail.com> # french horn
 alias andre.harries "Andre Harries" <andre.h@messages.co.uk> # gave me a lift
 alias sandy.macdonald "Sandy MacDonald" <sandymacdonald@lineone.net> # lute!
 alias peter.markham "Peter Markham" <peter@markham-home.fslife.co.uk>
 alias stewart.mcilwham "Stewart McIlwham" <stewart@mcilwham37.fsnet.co.uk> # flute, Rachel Ives
-alias alice.neary "Alice Neary" <alice@tneary.fsnet.co.uk>
-alias deborah.white "deborah white" <debwhite76@hotmail.com>
+alias alice.neary "Alice Neary" <alice@tneary.fsnet.co.uk> # cello
+alias deborah.white "Debbie White" <debwhite76@hotmail.com> # violin
+alias linden.guest "Linden Guest" <linden@kiwismail.com> # violin
+alias tim.steggals "Tim Steggals" <timsteggals@btinternet.com> # principal cello, curly hair
+alias mark.robinson "Mark Robinson" <kramrob@hotmail.com> # Percussion, Linz's Mark
+
+# "Ali Lee-Browne" <aleebrowne@aol.com> # bassoon
+# Andre Harries <andre.h@messages.co.uk> # lawyer, violin, gave me a lift in his fast car!
+# Andrew Uttley <andrew@ajd-amu.freeserve.co.uk> # violin
 
 # Still orchestra, but who?
 # alias lewis.edney "Lewis Edney" <ledney2000@yahoo.co.uk>
 # alias claire.hawkes "Claire Hawkes" <claire@tropic.org.uk>
+#       Claire Hawkes <claire@clairehawkes.com>
 # alias laura.newton "Laura Newton" <L.Newton@unn.ac.uk>
 # alias max.pitcher "Max Pitcher" <pitcher1@breathemail.net>
 # alias james.ranson "James Ranson" <j_f_ranson@hotmail.com>
-# alias mark.robinson "Mark Robinson" <kramrob@hotmail.com>
 # alias ian.sandbrook "Ian Sandbrook" <isandbrook@ukonline.co.uk>
-# alias andrew.uttley "Andrew Uttley" <andrew@ajd-amu.freeserve.co.uk>
+# Ben Palmer <conductor_composer@hotmail.com>
+# shulah oliver <shulaho@hotmail.com> # violin
 
-alias endellion-marathon-sponsors <stewart@mcilwham37.fsnet.co.uk>, <tom@thomasguthrie.com>, <hilary.bentley@gartmore.com>, <colin.fleming@creditlyonnais.co.uk>, Dominic <devers@nspcc.org.uk>, <peter.howell@write-away.org>, tom.hickox, matthew.pay, <coghlanangie@aol.com>, <thorsten@terweiden.de>, <Jane.Dickinson@ncl.ac.uk>, oliver.wilson, annabel.borthwick, <jemima.peterken@virgin.net>, <jjp@ipswich.suffolk.sch.uk>, <harrymooregwyn@aol.com>, clare.raybould, ben.rogerson, michael.borthwick, <rjmbutler@aol.com>, <elaineft@mac.com>, myrtledene, <susanna.twiddy@zoo.ox.ac.uk>
+alias tom.guthrie <tom@thomasguthrie.com>
+# These good people sponsored me or made a pledge
+alias Endellion-marathon-sponsors-2004 <stewart@mcilwham37.fsnet.co.uk>, tom.guthrie, <hilary.bentley@gartmore.com>, <colin.fleming@creditlyonnais.co.uk>, Dominic <devers@nspcc.org.uk>, <peter.howell@write-away.org>, tom.hickox, matthew.pay, <coghlanangie@aol.com>, <thorsten@terweiden.de>, <Jane.Dickinson@ncl.ac.uk>, oliver.wilson, annabel.borthwick, <jemima.peterken@virgin.net>, <jjp@ipswich.suffolk.sch.uk>, <harrymooregwyn@aol.com>, clare.raybould, ben.rogerson, michael.borthwick, <rjmbutler@aol.com>, <elaineft@mac.com>, myrtledene, <susanna.twiddy@zoo.ox.ac.uk>
 
 alias Endellion-party-friends clare.raybould, ben.rogerson, tom.hickox, matthew.pay, joanna.warden, anne-marie.cullum, claire.gibb
+
+# Friends from Easter Festival 2005
+alias Endellion-marathon-2005 tom.guthrie, tom.hickox, matthew.pay, annabel.borthwick, <jemima.peterken@virgin.net>, <harrymooregwyn@aol.com>, clare.raybould, michael.borthwick, <ian.bysh@advantage-business.co.uk>, <mike@theeurekafactor.com>, joanna.warden, inga.taylor, anne-marie.cullum, mary.owen, claire.gibb, nancy.buchanan, kirsten.salter, katherine.barnecutt, alice.neary, linden.guest, mark.robinson, mary.owen
 
 # }}}
 # {{{ Musical acquaintances
@@ -666,7 +712,7 @@ alias gareth.jones Gareth Jones <jones@garethd.freeserve.co.uk>
 fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
 
 # }}}
-# {{{ Running friends
+# {{{ Running friends/acquaintances
 
 alias marc.allison "Marc Allison" <Marc_Allison@standardandpoors.com>
 alias chris.williamson "Chris Williamson" <C.M.Williamson@btinternet.com>
@@ -678,6 +724,9 @@ fcc-save-hook (marc.*allison|c.*williamson|desuiza) =exercise/reebok.sports.club
 # Pete McHugh
 # James Brown
 # Gary McGhee
+
+# Art of Running, Malcolm Balk
+alias andrew.shields "Andrew Shields" <andrewshields@timeout.com>
 
 # }}}
 # {{{ Computing
@@ -732,7 +781,7 @@ alias jdb jo.de.baer
 # }}}
 # {{{ Lehman Brothers
 
-#alias kordian.witek.work Kordian Witek <kwitek@lehman.com>
+alias kordian.witek.work Kordian Witek <kordian.witek@gs.com>
 alias kordian.witek Kordian Witek <kordy@kordian.com>
 alias duncan.young.home Duncan Young <duncan@duncanyoung.com>
 alias alan.champion Alan Champion <achampio@lehman.com>
@@ -750,7 +799,15 @@ alias chris.johnston.home "Chris Johnston" <cjohnston@nextex.com>
 
 alias gema.lopez-sanz "Gema Lopez-Sanz" <gema@lopez-sanz.com>
 
-alias Julian Morris Julian Morris <julian.morris@db.com>
+alias ian.stewart "Ian Stewart" <ian.stewart@cheynecapital.com>
+
+alias andy.bush Andy Bush <andy_bush@bigfoot.com>
+alias pete.mchugh Pete McHugh <PMchugh@lehman.com>
+
+alias andy.brown "Andy Brown" <andyb999@btconnect.com>
+alias brett.sealey "Brett Sealey" <bretts@mortbay.com>
+alias robert.adler Robert Adler <robert_adler@yahoo.com>
+alias julian.morris Julian Morris <julian.morris@db.com>
 
 # }}}
 # {{{ Egenera
@@ -771,8 +828,16 @@ alias jeff.harrod Jeff Harrod <jharrod@astoncarter.co.uk>
 alias jeff.harrod.home Jeff Harrod <jeff_harrod2002@yahoo.co.uk>
 fcc-save-hook jharrod =computer-work/jeff.harrod
 alias jason.yank Jason Yank <jyank@astoncarter.co.uk>
+alias nina.loi Nina Loi <nloi@astoncarter.co.uk>
 
 # }}}
+# {{{ Huxley
+
+alias joanna.cohen Joanna Cohen <j.cohen@huxley.com>
+
+# }}}
+
+# {{{ Old
 
 # {{{ cmed
 
@@ -1113,6 +1178,7 @@ subscribe crm114-general@lists.sourceforge.net
 send-hook "crm114-general.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <crm114-general@adamspiers.org>'
 send-hook "crm114-general.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <crm114-general@adamspiers.org>'
 folder-hook =(inboxes|lists)/crm114-general source ~/.mutt/mailing-list
+
 alias crm114-announce "CRM114 announcements" <crm114-announce@lists.sourceforge.net>
 fcc-save-hook "crm114-announce.*lists.sourceforge.net" =lists/crm114-announce
 subscribe crm114-announce@lists.sourceforge.net
@@ -1516,6 +1582,17 @@ alias zefram "Zefram" <zefram@fysh.org>
 # }}}
 
 # }}}
+# {{{ www-style
+
+alias www-style "W3C CSS mailing list" <www-style@w3.org>
+fcc-save-hook "www-style.*w3.org" =lists/www-style
+subscribe www-style@w3.org
+#mailboxes =inboxes/www-style
+send-hook "www-style.*w3.org" 'my_hdr From: "Adam Spiers" <www-style@adamspiers.org>'
+send-hook "www-style.*w3.org" 'my_hdr Reply-To: "Adam Spiers" <www-style@adamspiers.org>'
+folder-hook =(inboxes|lists)/www-style source ~/.mutt/mailing-list
+
+# }}}
 # {{{ Hardware
 
 # {{{ iPod
@@ -1572,6 +1649,7 @@ mailboxes =inboxes/amazon
 
 # }}}
 
+
 alias keet Christiaan Keet <keet@plig.net>
 alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
 
@@ -1580,6 +1658,15 @@ alias computer-party-friends ture, ben.simpson, jasper.mccrea
 # }}}
 
 # {{{ Miscellaneous
+
+# {{{ First aid course friends
+
+# josmithlondon@yahoo.co.uk
+# trevs_mh@yahoo.co.uk
+# claire.webster@gcc.royalsun.com (bcc?)
+# paula.grant@eoson.co.uk (ebson?)
+
+# }}}
 
 alias kevin.spiers "Kevin L Spiers" <kevin@spiers.net>
 alias kevin.spiers2 Kevin Spiers <stock03@worldnet.att.net>
@@ -1597,15 +1684,19 @@ alias philip.smithies "Philip Smithies" <philipsmithies@lineone.net>
 alias address_change stacey, tim.corbett-clark, nick, lindsey.napier, ben.teasdale, ben, nick.williams, dave, chris, jo.sherratt, ivan.rockey, sarah.metcalf, ian.macmullen, tim.lucas, graeme.wearden, rachael.gulliver, annabel.borthwick, jessie.hadley, bear, stephen.walmsley,
 alias add2 kevin.barsby, oli.dickson, peronel.smith, nick.collins, andy.radford, vicky.hamilton, dave.willetts, weejock, chris.evans, paul.eastham, rowan.dennis, jon.greenwell, dan.davies, alex.steele, jeremy.lund, katie.green, emma.perks, matt.clay, john.hargreaves, richard.green, natasha.foster, rosie.biss, malcolm.cross, sarah.boxall, martin.grainger, daddy, daniel.spiers, helen, michael, chloe, ian, sheila.davies, nick.byrne, kirsten.lestrange, philip.sheppard, wilson, darren.nickerson, gg-uk
 
-alias birthday-and-nacro-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
+alias birthday-and-nacro-sponsorship nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, linz, matt.jones, rosie.biss, livia.harris, samy.bishai, claire.roff, david.lasserson, matthew.pay, joanna.warden, nick.rippon, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
 alias nacro-sponsorship-followup nick, vicky.hamilton, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, matt.jones, rosie.biss, livia.harris, claire.roff, matthew.pay, ture, andym, xtof, luke, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, dave, annabel.borthwick, clare.raybould
 
 alias marathon-relatives family, relatives-in-UK, michael.oconnor, helen.oconnor
 
-alias marathon-sponsorship endellion-marathon-sponsors, marathon-relatives, nick, vicky.hamilton, rachael.schofield, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, di.north, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, lindsay.wood, matt.jones, rosie.biss, livia.harris, nick.rippon, ture, andym, xtof, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, becky.leyton, matthew.clay, richard.green, stig, yan, ron.hickman, mike.francis, paul.newbold, gareth.jones, adrian.warrick, john.hargreaves, jeff.harrod, jason.yank, cello-teachers, kirsty, shlom
+# FLM April 2004
+alias marathon-2004-sponsorship Endellion-marathon-sponsors-2004, marathon-relatives, nick, vicky.hamilton, rachael.schofield, graeme.wearden, tim.corbett-clark, giles.harrison, lindsey.napier, ben, bear, di.north, dave, oli, ives, tim.lucas, jeremy.cave, sarah.hudson, kath.noble, peronel, mat.craddock, nick.collins, dan.davies, nick.byrne, linz, matt.jones, rosie.biss, livia.harris, nick.rippon, ture, andym, xtof, ben.simpson, matt.copping, jasper.mccrea, sali, jo.sherratt, sarsli, becky.leyton, matthew.clay, richard.green, stig, yan, ron.hickman, mike.francis, paul.newbold, gareth.jones, adrian.warrick, john.hargreaves, jeff.harrod, jason.yank, cello-teachers, kirsty, shlom
 
-
+# Ocean Wharf flat warming Feb 2005
 alias flat-warming home-party-friends, NYO-party-friends, Oxford-party-friends, RAM-party-friends, Endellion-party-friends, music-party-friends, computer-party-friends
+
+# FLM April 2005
+alias marathon-2005-sponsorship Endellion-marathon-2005, family, michael.oconnor, helen.oconnor, nick, vicky.hamilton, dave, oli, peronel, mat.craddock, linz, matt.jones, rosie.biss, sali, jo.sherratt, sarsli, becky.leyton, richard.green, stig, mike.francis, gareth.jones, kirsty, shlom, ben.rogerson, alex.green
 
 # }}}
 
@@ -1614,4 +1705,5 @@ alias flat-warming home-party-friends, NYO-party-friends, Oxford-party-friends, 
 #
 # Unclassified aliases
 #
+
 
