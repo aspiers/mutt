@@ -126,6 +126,7 @@
    set nosave_name        # save outbound mail to =username if it exists
    set   timeout=30       # time in seconds until new mail check
    set nosave_empty
+   set   simple_search="~f %s | ~C %s | ~s %s"
    set   sleep_time=0
    set   sort=threads
    set nosmart_wrap nomarkers
