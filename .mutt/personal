@@ -508,6 +508,7 @@ fcc-save-hook yanfitterer@yahoo\.co\.uk =friends/RAM/yan.fitterer
 fcc-save-hook n\.byrne@ram\.ac\.uk =friends/RAM/nick.byrne
 fcc-save-hook kaptainbirdeye@hotmail\.com =friends/RAM/nick.byrne
 alias nick.byrne Nick Byrne <kaptainbirdeye@hotmail.com>
+alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
 
 alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
 
@@ -558,7 +559,6 @@ fcc-save-hook shlom@hotmail.com =friends/RAM/matthew.shlomowitz
 alias RAM-party-friends nick.byrne, linz.both, mike.francis, kirsty, shlom, laura.stanford, roderick.chadwick, katie.chatburn
 
 # }}}
-alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
 # {{{ RAM staff
 
 # admin
@@ -758,6 +758,9 @@ alias mh manfred.hollstein
 alias peter.schinagl Peter Schinagl <peters@suse.de>
 alias ps peter.schinagl
 
+alias till.franke Till Franke <till.franke@novell.com>
+alias tf till.franke
+
 # }}}
 # {{{ UK
 
@@ -769,12 +772,21 @@ alias steve.gaines Steven Gaines <sgaines@novell.com>
 alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
 alias dan.homolka Dan Homolka <Dan.Homolka@novell.com>
 alias jimmie.hay Jimmie Hay <jhay@novell.com>
+alias andy.voysey Andrew Voysey <avoysey@novell.com>
+alias peter.regent Peter Regent <PRegent@novell.com>
+alias peter.connolly Peter Connolly <pconnolly@novell.com>
 
 # }}}
 # {{{ EMEA
 
 alias jo.de.baer Jo de Baer <jdebaer@novell.com>
 alias jdb jo.de.baer
+
+# }}}
+# {{{ US
+
+alias chantal.fera Chantal Fera <cfera@novell.com>
+alias jd.nyland JD Nyland <JDNyland@novell.com>
 
 # }}}
 
@@ -984,6 +996,7 @@ alias anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 
 # }}}
 
+# }}}
 # }}}
 
 # {{{ Perl
@@ -1705,5 +1718,3 @@ alias marathon-2005-sponsorship Endellion-marathon-2005, family, michael.oconnor
 #
 # Unclassified aliases
 #
-
-
