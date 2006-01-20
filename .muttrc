@@ -69,6 +69,7 @@
    set   history=20
    set   include          # include mail as quoted text in replies
    set   mark_old         # make distinction between new and old mail
+   set nomarkers          # no EOL markers when smart_wrap is on
    set   mbox_type=Maildir
 
    set   meta_key         # META behaves in typical ESCAPE fashion
@@ -129,7 +130,7 @@
    set   simple_search="~f %s | ~C %s | ~s %s"
    set   sleep_time=0
    set   sort=threads
-   set nosmart_wrap nomarkers
+   set   smart_wrap
    set   status_on_top
 #  set   strict_threads   # use only references for threading?
    set   tmpdir=/tmp      # directory where temporary files are to be placed
