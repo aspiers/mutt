@@ -58,7 +58,7 @@ folder-hook =lists/                           source ~/.mutt/mailing-list
 # {{{ send-hook, my_hdr
 
 #my_hdr X-URL: http://tigerpig.org/
-my_hdr X-OS: RedHat Linux
+my_hdr X-OS: Linux
 send-hook . 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 send-hook . 'my_hdr Reply-To: "Adam Spiers" <adam@spiers.net>'
 
