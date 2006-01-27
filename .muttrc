@@ -169,6 +169,6 @@ source ~/.mutt/mutt-aliases
 source ~/.mutt/bindings
 source ~/.mutt/colours.default
 source ~/.mutt/format-strings
-source ~/.mutt/local
+source ~/.mutt/hooks|
 
 push V
