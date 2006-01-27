@@ -79,7 +79,7 @@ alias me.CPAN "Adam Spiers on CPAN" <aspiers@cpan.org>
 alias me.novell "Adam Spiers" <aspiers@novell.com>
 alias adamspiers.org "Adam Spiers" <f@adamspiers.org>
 alias me. "Adam Spiers" <f@adamspiers.org>
-alias sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
+alias OLD.sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 
 #alias me.guideguide "Adam Spiers, at guideguide" <aspiers@guideguide.com>
 #alias me.musician "Adam Spiers" <adam.spiers@musician.org>
@@ -178,9 +178,9 @@ alias ken.pierce ken.pierce@cwt.com
 # {{{ Old schoolteachers
 
 #alias jeremy.lund Jeremy Lund <jklund@globalnet.co.uk>
-alias gilbert.roscoe "Gilbert Roscoe" <gilbert@sionix.demon.co.uk>
-alias masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
-alias john.moore John Moore <JFM@shrewsbury.org.uk>
+alias OLD.gilbert.roscoe "Gilbert Roscoe" <gilbert@sionix.demon.co.uk>
+alias OLD.masw "Mike Schutzer-Weissmann" <MASW@shrwsbry.demon.co.uk>
+alias OLD.john.moore John Moore <JFM@shrewsbury.org.uk>
 
 # }}}
 
@@ -212,7 +212,7 @@ alias julian.thompson "Julian Thompson" <julianthompson@doctors.org.uk>
 alias julian.thompson.hotmail "Julian Thompson" <julesthompson50@hotmail.com>
 
 #alias jon.greenwell "Jonathan Greenwell" <J.R.Greenwell@mds.qmw.ac.uk>
-alias alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
+alias OLD.alex.steele "Alex Steele" <ASTEELE@chelt.ac.uk>
 #alias emma.perks "Emma Perks" <E.H.Perks@durham.ac.uk>
 #alias matthew.bright "Matthew Bright" <matt@well.ox.ac.uk>
 alias green.family "Richard/Alex/Kathy/Katie Green" <richard.green7@virgin.net>
@@ -224,8 +224,8 @@ alias stig "Stig (Peter) Edwards" <PEdwards@factset.com>
 
 #alias di.north "Di North" <di@amaroo.demon.co.uk>
 
-alias charles.gaskell "Charles Gaskell" <gaskell@gaskell.f9.co.uk>
-alias stewart.dunn Stewart Dunn <info@sdunn.demon.co.uk>
+alias OLD.charles.gaskell "Charles Gaskell" <gaskell@gaskell.f9.co.uk>
+alias OLD.stewart.dunn Stewart Dunn <info@sdunn.demon.co.uk>
 
 alias home-party-friends matthew.clay, stig, alex.green, katie.green, julian.thompson
 # rowan sprogged
@@ -243,7 +243,7 @@ fcc-save-hook mattojones =friends/NYO/matt.jones
 
 #alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
 
-alias natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
+alias OLD.natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
 
 fcc-save-hook rosiebiss =friends/NYO/rosie.biss
 alias rosie.biss "Rosie Biss" <rosiebiss@yahoo.com>
@@ -253,8 +253,8 @@ alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
 alias malcs malcolm.cross
 
 fcc-save-hook bourby =friends/Oxford/bourby.norman
-alias bourby.norman Bourby Norman <bourbynorman@hotmail.com>
-alias rachel.norman bourby.norman
+alias OLD.bourby.norman Bourby Norman <bourbynorman@hotmail.com>
+alias OLD.rachel.norman bourby.norman
 
 alias sali-wyn.ryan "Sali-Wyn Ryan" <sali.ryan@classicfm.com>
 alias sali sali-wyn.ryan
@@ -273,7 +273,7 @@ alias NYO-party-friends matt.jones, rosie, sali, olly, bels, mary
 
 # {{{ (Ex-)Oxford friends
 
-alias nick.williams2 "Nick Williams" <nickhw@btinternet.com>
+alias OLD.nick.williams2 "Nick Williams" <nickhw@btinternet.com>
 fcc-save-hook nickhw@btinternet\.com =Oxford/friends/nick.williams
 fcc-save-hook nwilliams@compd\.com =Oxford/friends/nick.williams
 
@@ -318,7 +318,7 @@ fcc-save-hook corbettclark.com =Oxford/friends/tim.corbett-clark
 
 alias giles.harrison Giles Harrison <giles.harrison@bbc.co.uk>
 
-alias lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
+alias OLD.lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
 
 fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
 fcc-save-hook ben@litpop\.com =friends/Oxford/ben.teasdale
@@ -390,10 +390,10 @@ alias bear.work.old "Bear North, at work" <bolton@susq.com>
 alias bear.work "Bear North, at work" <north@sig.com>
 alias bear bear.home
 
-alias tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
-alias bears.aunt "Bear at Hilary Stephen's" <hilary@arc.net.au>
+alias OLD.tango "Tango Fawcett, Bear's sister" <tango.fawcett@btinternet.com>
+alias OLD.bears.aunt "Bear at Hilary Stephen's" <hilary@arc.net.au>
 
-alias kevin.barsby "Kevin Barsby" <kevin.barsby@hummingbird-it.co.uk>
+alias OLD.kevin.barsby "Kevin Barsby" <kevin.barsby@hummingbird-it.co.uk>
 #alias kevin.barsby "Kevin Barsby" <kevin.barsby@fjcomp.com>
 
 #alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
@@ -415,17 +415,17 @@ alias nick.collins.hotmail Nick Collins <nickcollins@hotmail.com>
 alias nick.collins.mac Nick Collins <nicolocollinsi@mac.com>
 alias nick.collins.mdx Nick Collins <n.collins@mdx.ac.uk>
 
-alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
-alias matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
-alias weejock matthew.kirkwood
-alias jock matthew.kirkwood
+alias OLD.matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+alias OLD.matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
+alias OLD.weejock matthew.kirkwood
+alias OLD.jock matthew.kirkwood
 
 fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
 fcc-save-hook chris.*@scary\.beasts\.org =Oxford/friends/chris.evans
-alias chris.evans.ferret "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
-alias chris.evans "Chris Evans" <chris@scary.beasts.org>
+alias OLD.chris.evans.ferret "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
+alias OLD.chris.evans "Chris Evans" <chris@scary.beasts.org>
 
-alias paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
+alias OLD.paul.eastham "Paul Eastham" <pre23@cam.ac.uk>
 
 alias harry.yeates Harry Yeates <Harry.Yeates@rbi.co.uk>
 alias barny.hollington.filtered Barny Hollington <b_hollington@hotmail.com>
@@ -448,50 +448,50 @@ alias Oxford-party-friends nick, vicky.hamilton, rachael.schofield, graeme.weard
 # {{{ New College colleagues
 
 alias wilson "Wilson Sutherland" <wilson.sutherland@new.ox.ac.uk>
-alias geraint "Geraint Jones" <geraint.jones@comlab.ox.ac.uk>
-alias david.gavaghan "David Gavaghan" <gavaghan@vax.ox.ac.uk>
+alias OLD.geraint "Geraint Jones" <geraint.jones@comlab.ox.ac.uk>
+alias OLD.david.gavaghan "David Gavaghan" <gavaghan@vax.ox.ac.uk>
 
 alias james.dore "James Dore, New College sysadmin" <james.dore@new.ox.ac.uk>
 fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
 
-alias chris.tromans Chris Tromans <chris@corelli.new.ox.ac.uk>
+alias OLD.chris.tromans Chris Tromans <chris@corelli.new.ox.ac.uk>
 fcc-save-hook c.*tromans =Oxford/college/chris.tromans
 fcc-save-hook chris@corelli.new.ox.ac.uk =Oxford/college/chris.tromans
 
-alias majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
-alias ncsec "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
-alias barbara.vardag "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
-alias alastair.white "Alastair White" <alastair.white@new.ox.ac.uk>
+alias OLD.majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
+alias OLD.ncsec "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
+alias OLD.barbara.vardag "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
+alias OLD.alastair.white "Alastair White" <alastair.white@new.ox.ac.uk>
 
 # }}}
 # {{{ University-wide acquaintances
 
-alias ruth.porter "Ruth Porter (OUCS contact for New College)" <ruth.porter@oucs.ox.ac.uk>
+alias OLD.ruth.porter "Ruth Porter (OUCS contact for New College)" <ruth.porter@oucs.ox.ac.uk>
 alias malcolm.beattie "Malcolm Beattie" <mbeattie@clueful.co.uk>
-alias jan.grothusen "Jan Grothusen" <jan@robots.ox.ac.uk>
-alias robin.watts "Robin Watts" <robin.watts@comlab.ox.ac.uk>
-alias pete.biggs Pete Biggs <pete@physchem.ox.ac.uk>
-alias geoff.lescott Geoff Lescott <geoff.lescott@computing-services.oxford.ac.uk>
-alias darren.nickerson "Darren Nickerson" <dnicker@ermine.ox.ac.uk>
-alias darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.uk>
-alias ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
+alias OLD.jan.grothusen "Jan Grothusen" <jan@robots.ox.ac.uk>
+alias OLD.robin.watts "Robin Watts" <robin.watts@comlab.ox.ac.uk>
+alias OLD.pete.biggs Pete Biggs <pete@physchem.ox.ac.uk>
+alias OLD.geoff.lescott Geoff Lescott <geoff.lescott@computing-services.oxford.ac.uk>
+alias OLD.darren.nickerson "Darren Nickerson" <dnicker@ermine.ox.ac.uk>
+alias OLD.darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox.ac.uk>
+alias OLD.ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
 
-alias gervase.markham Gervase Markham <gerv@gerv.net>
+alias OLD.gervase.markham Gervase Markham <gerv@gerv.net>
 fcc-save-hook gerv\.net =Oxford/acquaintances/gervase.markham
 fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
 
 #alias OLD-robin.stevens.astro Robin Stevens <rejs@astro.ox.ac.uk>
 
 fcc-save-hook mgm@eskimoman\.net =Oxford/acquaintances/mike.mason
-alias jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
+alias OLD.jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
 
 # }}}
 # {{{ Official university email addresses
 
-alias advisory OUCS Advisory Service <advisory@computing-services.oxford.ac.uk>
-alias user.registration "User Registration, OUCS" <user.registration@computing-services.oxford.ac.uk>
-alias oxcert "OxCERT" <oxcert@ox.ac.uk>
-alias hostmaster "OUCS host administration" <hostmaster@ox.ac.uk>
+alias OLD.advisory OUCS Advisory Service <advisory@computing-services.oxford.ac.uk>
+alias OLD.user.registration "User Registration, OUCS" <user.registration@computing-services.oxford.ac.uk>
+alias OLD.oxcert "OxCERT" <oxcert@ox.ac.uk>
+alias OLD.hostmaster "OUCS host administration" <hostmaster@ox.ac.uk>
 
 # }}}
 
@@ -510,7 +510,7 @@ fcc-save-hook kaptainbirdeye@hotmail\.com =friends/RAM/nick.byrne
 alias nick.byrne Nick Byrne <kaptainbirdeye@hotmail.com>
 alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
 
-alias sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
+alias OLD.sharon.worrall Sharon Worrall <nenoch@netvision.net.il>
 
 alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
 alias kirsty kirsten.lestrange
@@ -563,9 +563,9 @@ alias RAM-party-friends nick.byrne, linz.both, mike.francis, kirsty, shlom, laur
 
 # admin
 
-alias mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
-alias estates RAM Estates Office <estates@ram.ac.uk>
-alias ram.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
+alias RAM.mike.cherry Mike Cherry <m.cherry@ram.ac.uk>
+alias RAM.estates RAM Estates Office <estates@ram.ac.uk>
+alias RAM.registrar "Philip White, Registrar for the RAM" <p.white@ram.ac.uk>
 
 # teachers
 
@@ -579,7 +579,7 @@ alias cello-teachers philip.sheppard, colin.carr, david.strange
 
 alias heather.badke Heather Badke <heatherbadke@hotmail.com>
 
-alias paul.skinner Paul Skinner <paulski@supanet.com>
+alias OLD.paul.skinner Paul Skinner <paulski@supanet.com>
 fcc-save-hook paulski.*supanet\.com =friends/Jersey/paul.skinner
 
 alias samy.bishai Samy Bishai <s_bishai@hotmail.com>
@@ -603,14 +603,14 @@ alias music-party-friends claire.roff, david.lasserson, brady.pohle, livia.harri
 
 alias livia.harris Livia Harris <liviaharris@yahoo.co.uk>
 
-alias sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
-alias martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
+alias OLD.sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
+alias OLD.martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 
 # alias emma.cullender Emma Cullender <redneluc@globalnet.co.uk>
 # fcc-save-hook redneluc =friends/misc/emma.cullender
 # fcc-save-hook le7053@qmw\.ac\.uk =friends/misc/emma.cullender
 
-alias jessica.ong Jessica Ong <jessica.ong@freshfields.com>
+alias OLD.jessica.ong Jessica Ong <jessica.ong@freshfields.com>
 
 alias josie.lyons Josephine Lyons <josephine_lyons@hotmail.com>
 
@@ -623,10 +623,10 @@ fcc-save-hook Diamond5475@aol\.com =friends/misc/miriam
 # }}}
 # {{{ Jersey friends
 
-alias ron.hickman Ron Hickman <tekron@ic24.net>
+alias OLD.ron.hickman Ron Hickman <tekron@ic24.net>
 fcc-save-hook tekron@ic24\.net =friends/Jersey/ron.hickman
 
-alias sonia "Sonia (JSO)" <pg004593@sghms.ac.uk>
+alias OLD.sonia "Sonia (JSO)" <pg004593@sghms.ac.uk>
 
 # }}}
 # {{{ Endellion friends
@@ -714,9 +714,9 @@ fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
 # }}}
 # {{{ Running friends/acquaintances
 
-alias marc.allison "Marc Allison" <Marc_Allison@standardandpoors.com>
-alias chris.williamson "Chris Williamson" <C.M.Williamson@btinternet.com>
-alias cecilia.desuiza "Cecilia deSuiza" <Cecilia.deSuiza@ubs.com>
+alias OLD.marc.allison "Marc Allison" <Marc_Allison@standardandpoors.com>
+alias OLD.chris.williamson "Chris Williamson" <C.M.Williamson@btinternet.com>
+alias OLD.cecilia.desuiza "Cecilia deSuiza" <Cecilia.deSuiza@ubs.com>
 
 fcc-save-hook (marc.*allison|c.*williamson|desuiza) =exercise/reebok.sports.club
 
@@ -831,8 +831,8 @@ alias ken.robson Ken Robson <ken@robson.net>
 # }}}
 # {{{ Orange Genie
 
-alias payroll Orange Genie Payroll <payroll@orangegenie.com>
-alias tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
+alias OLD.payroll Orange Genie Payroll <payroll@orangegenie.com>
+alias OLD.tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
 
 # }}}
 # {{{ Aston Carter
@@ -855,7 +855,7 @@ alias joanna.cohen Joanna Cohen <j.cohen@huxley.com>
 # {{{ cmed
 
 fcc-save-hook ghughes@cmedltd.com =computer-work/gareth.hughes
-alias gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
+alias OLD.gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
 
 # }}}
 # {{{ guideguide
@@ -863,9 +863,9 @@ alias gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
 # {{{ people
 
 #alias christof.damian "Christof Damian" <cdamian@guideguide.com>
-alias christof.damian "Christof Damian" <christof@damian.net>
-alias cdamian christof.damian
-alias xtof christof.damian
+alias OLD.christof.damian "Christof Damian" <christof@damian.net>
+alias OLD.cdamian christof.damian
+alias OLD.xtof christof.damian
 fcc-save-hook christof@mediaconsult\.com =computer-work/christof.damian
 fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
 
@@ -898,9 +898,9 @@ fcc-save-hook rjp@.*plig\.net =hosting/plig.net
 fcc-save-hook rjp@browser\.org =hosting/plig.net
 #=computer-work/rob.partington
 
-alias nathan.carr Nathan Carr <nathan@nowt.net>
-alias ncarr nathan.carr
-alias nomad nathan.carr
+alias OLD.nathan.carr Nathan Carr <nathan@nowt.net>
+alias OLD.ncarr nathan.carr
+alias OLD.nomad nathan.carr
 
 # alias luke.robinson Luke Robinson <lrobinson@guideguide.com>
 # alias luke luke.robinson
@@ -918,8 +918,8 @@ alias nomad nathan.carr
 # fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
 
 # fcc-save-hook mcopping@guideguide\.com =computer-work/matt.copping
-alias matt.copping Matt Copping <matt@frontgarden.net>
-alias mcopping matt.copping
+alias OLD.matt.copping Matt Copping <matt@frontgarden.net>
+alias OLD.mcopping matt.copping
 
 # alias alix.poscharsky Alix Poscharsky <alix@guideguide.com>
 # alias youssou alix.poscharsky
@@ -943,7 +943,7 @@ alias jasper.mccrea "Jasper McCrea" <j@mccrea.demon.co.uk>
 fcc-save-hook mccrea =computer-work/jasper.mccrea
 fcc-save-hook jasper.*spamjab\.com =computer-work/jasper.mccrea
 
-alias anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
+alias OLD.anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 
 # alias anthony.gardner Anthony Gardner <agardner@guideguide.com>
 # alias agardner anthony.gardner
