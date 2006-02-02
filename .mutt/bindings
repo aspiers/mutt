@@ -181,6 +181,9 @@
    bind  compose  g  send-message
    bind  compose  v  view-attach
 
+   # no <view-text> command in compose menu :-(
+   macro compose  T  "<pipe-entry>less\n"
+
    macro compose  F  "<edit-fcc><kill-line>\n"  "clear fcc setting"
    macro compose  P  "<exit>y"   "postpone message"
    macro compose  Q  "<exit>n"   "abort message"
@@ -194,6 +197,7 @@
 # {{{ Bindings for attach
 
    bind  attach <space> view-attach
+   bind  attach \Cg     exit
    bind  attach \Cg     exit
    macro attach <left>  "<exit><previous-undeleted><view-attachments>"  "move to previous message"
    macro attach <right> "<exit><next-undeleted><view-attachments>"  "move to next message"
