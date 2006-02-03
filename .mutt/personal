@@ -764,17 +764,25 @@ alias tf till.franke
 # }}}
 # {{{ UK
 
-# Yan is elsewhere
-
+# Partners / Alliances
 alias owain.mcguire Owain McGuire <omcguire@novell.com>
-alias andrew.voysey Andrew Voysey <avoysey@novell.com>
 alias steve.gaines Steven Gaines <sgaines@novell.com>
+alias peter.regent Peter Regent <PRegent@novell.com>
+
+# Financial Services
+alias andrew.voysey Andrew Voysey <avoysey@novell.com>
+
+# Technical Specialists
 alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
 alias dan.homolka Dan Homolka <Dan.Homolka@novell.com>
+
+# Consulting
 alias jimmie.hay Jimmie Hay <jhay@novell.com>
-alias andy.voysey Andrew Voysey <avoysey@novell.com>
-alias peter.regent Peter Regent <PRegent@novell.com>
 alias peter.connolly Peter Connolly <pconnolly@novell.com>
+# Yan is elsewhere
+
+# Admin
+alias deborah.thomas Deborah Thomas <DThomas@novell.com>
 
 # }}}
 # {{{ EMEA
