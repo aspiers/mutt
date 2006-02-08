@@ -36,7 +36,7 @@ set forw_format="%s (fwd)"
 ## SET THIS IN ~/.mutt/folders/DEFAULTS
 
 ## pager_format - format of summary on current mail in the pager
-set pager_format="%S [%C/%m] %-.20n %s"
+set pager_format="%S %T [%C/%m] %-.20n %s (%c)"
 
 ## status_format - format of summary on the current folder in the index
 ## meta strings:
@@ -56,4 +56,4 @@ set pager_format="%S [%C/%m] %-.20n %s"
 ## %>X     right justify the rest of the string and pad with "X"
 ## %|X     pad to the end of the line with "X"
 
-set status_format="Mutt: %f (%s) [%M/%m] [N=%n%?t?,*=%t?%?d?,D=%d?%?p?,p/p=%p?%?b?,new=%b?]%> %r"
+set status_format="Mutt: %f (%s/%S) [%M/%m (%L/%l)] [N=%n%?o?,O=%o?%?t?,*=%t?%?d?,D=%d?%?p?,p/p=%p?%?b?,new=%b?] %> %r"
