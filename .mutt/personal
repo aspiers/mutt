@@ -750,6 +750,8 @@ alias an andreas.nemeth
 alias michael.jores "F.-Michael Jores" <Michael.Jores@novell.com>
 alias mj michael.jores
 
+alias managers pz, an, mj
+
 # Architects
 
 alias matthias.eckermann "Matthias G. Eckermann" <mge@novell.com>
@@ -763,6 +765,8 @@ alias ps peter.schinagl
 
 alias till.franke Till Franke <till.franke@novell.com>
 alias tf till.franke
+
+alias architects mh, mge, tf, ps
 
 # }}}
 # {{{ UK
