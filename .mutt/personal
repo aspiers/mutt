@@ -740,6 +740,7 @@ alias andrew.shields "Andrew Shields" <andrewshields@timeout.com>
 alias swat-emea Linux SWAT team EMEA <swat-emea@lists.novell.com>
 alias lst swat-emea
 
+# Managers
 alias phil.zamani Phil Zamani <PZamani@novell.com>
 alias pz phil.zamani
 
@@ -748,6 +749,8 @@ alias an andreas.nemeth
 
 alias michael.jores "F.-Michael Jores" <Michael.Jores@novell.com>
 alias mj michael.jores
+
+# Architects
 
 alias matthias.eckermann "Matthias G. Eckermann" <mge@novell.com>
 alias mge matthias.eckermann
@@ -771,6 +774,10 @@ alias peter.regent Peter Regent <PRegent@novell.com>
 
 # Financial Services
 alias andrew.voysey Andrew Voysey <avoysey@novell.com>
+alias allan.hunter Allan Hunter <ahunter@novell.com>
+
+# Account managers
+alias simon.lidgett Simon Lidgett <slidgett@novell.com>
 
 # Technical Specialists
 alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
@@ -789,6 +796,11 @@ alias deborah.thomas Deborah Thomas <DThomas@novell.com>
 
 alias jo.de.baer Jo de Baer <jdebaer@novell.com>
 alias jdb jo.de.baer
+
+# }}}
+# {{{ Lists
+
+alias cloc-list CLOC list <cloc@lists.novell.com>
 
 # }}}
 # {{{ US
