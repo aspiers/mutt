@@ -851,8 +851,9 @@ alias julian.morris Julian Morris <julian.morris@db.com>
 # }}}
 # {{{ Egenera
 
-alias ken.robson Ken Robson <ken@robson.net>
+alias ken.robson.net    "Ken Robson" <ken@robson.net>
 # sleepingbarber
+alias ken.robson.lehman "Ken Robson" <krobson@lehman.com>
 
 # }}}
 # {{{ Orange Genie
