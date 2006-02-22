@@ -597,6 +597,14 @@ alias nick.rippon "Nick Rippon" <nicholas.rippon@tinyworld.co.uk>
 # Dan Watt's boyfriend
 alias brady.pohle "Brady A Pohle" <brady.pohle@herbertsmith.com>
 
+alias sally.woods "Sally Woods" <sallywoods@hotmail.com>
+alias catrin.morgan "Catrin Morgan" <catrinwinmorgan@hotmail.com>
+alias matt.brice "Matt Brice" <matthew.brice@orange.net>
+alias paloma.deike "Paloma Deike" <palomapalomapaloma@hotmail.com>
+alias gabi.maas.cambridge "Gabi Maas" <lgm24@cam.ac.uk>
+alias gabi.maas.aol "Gabi Maas" <lucygabrielle@aol.com>
+alias claire.fillhart "Claire Fillhart" <clairefillhart@orange.net>
+
 alias music-party-friends claire.roff, david.lasserson, brady.pohle, livia.harris, heather.badke
 # Ripper can't make this one
 
@@ -792,6 +800,7 @@ alias dan.homolka Dan Homolka <Dan.Homolka@novell.com>
 # Consulting
 alias jimmie.hay Jimmie Hay <jhay@novell.com>
 alias peter.connolly Peter Connolly <pconnolly@novell.com>
+alias adrian.keward Adrian Keward <akeward@novell.com>
 # Yan is elsewhere
 
 # Admin
@@ -802,6 +811,8 @@ alias deborah.thomas Deborah Thomas <DThomas@novell.com>
 
 alias jo.de.baer Jo de Baer <jdebaer@novell.com>
 alias jdb jo.de.baer
+
+alias naji.almahmoud Naji Almahmoud <nalmahmoud@novell.com>
 
 # }}}
 # {{{ Lists
@@ -1581,6 +1592,12 @@ subscribe discuss@lists.slimdevices.com
 mailboxes =inboxes/slim-discuss
 send-hook "discuss.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-discuss@adamspiers.org>'
 send-hook "discuss.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-discuss@adamspiers.org>'
+
+# }}}
+# {{{ TWiki
+
+alias crawford.currie Crawford Currie <web@c-dot.co.uk>
+alias crawford.currie.plus Crawford Currie <crawfordcurrie@crawfordcurrie.plus.com>
 
 # }}}
 # {{{ xwrits
