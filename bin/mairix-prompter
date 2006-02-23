@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Search syntax documented here:
+#   http://www.rpcurnow.force9.co.uk/mairix/mairix.html#Use
+
 echo -n "mairix query? "
 read query
 mairix $query
