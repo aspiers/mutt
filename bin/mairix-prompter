@@ -3,4 +3,3 @@
 echo -n "mairix query? "
 read query
 mairix $query
-read
