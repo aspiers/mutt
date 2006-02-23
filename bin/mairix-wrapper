@@ -3,6 +3,14 @@
 # Search syntax documented here:
 #   http://www.rpcurnow.force9.co.uk/mairix/mairix.html#Use
 
+if ! which mairix >&/dev/null; then
+  echo "Can't find executable mairix!" >&2
+  exit 1
+fi
+
 echo -n "mairix query? "
 read query
-mairix $query
+[ -n "$query" ] && mairix $query
+
+# mutt's wait_key mechanism needs success to avoid asking for a key press
+exit 0 
