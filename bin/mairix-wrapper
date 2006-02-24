@@ -94,7 +94,7 @@ elsif ($mode eq 'field') {
   my @query = get_query($field, $value);
   warn "Searching for: @query\n";
   system($mairix, @query);
-  sleep 2;
+#  sleep 2;
 }
 else {
   die "$0: Invalid mode '$mode'\n";
