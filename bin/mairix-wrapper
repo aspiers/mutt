@@ -1,30 +1,130 @@
-#!/bin/bash
+#!/usr/bin/perl
 
 # Search syntax documented here:
 #   http://www.rpcurnow.force9.co.uk/mairix/mairix.html#Use
 
-if [ -z "$MAIRIX_RESULTS" ]; then
-  echo "\$MAIRIX_RESULTS not set; aborting." >&2
-  exit 1
-fi
+#  foo s:bar,baz=2+~qux+moo=
+#  ( ) (                   )  AND <- space-delimited
+#        ( ) (             )  OR  <- comma-delimited
+#            (   ) (  ) (  )  AND <- plus-delimited
+#  i.e.
+#    foo AND s:(bar OR ((baz, 2 errors)  AND (NOT qux) AND (SUBSTRING moo)))
 
-if [ -d "$MAIRIX_RESULTS/cur" ] && \
-   [ -d "$MAIRIX_RESULTS/new" ] && \
-   [ -d "$MAIRIX_RESULTS/tmp" ]; then
+use strict;
+use warnings;
+
+$SIG{PIPE} = sub {
+  warn "got SIGPIPE\n";
+  sleep 2;
+};
+
+use File::Path;
+use File::Which;
+
+my %fields = map { $_ => 1 } qw(Subject);
+
+sub usage {
+  die <<EOF;
+Usage:
+  $0 prompter
+  $0 field Subject < mail
+EOF
+}
+
+usage() unless @ARGV;
+my $mode = shift @ARGV;
+
+unless ($ENV{MAIRIX_RESULTS}) {
+  die "\$MAIRIX_RESULTS not set; aborting.\n";
+}
+
+if ($ENV{MAIRIX_RESULTS} =~ /mairix/i &&
+    -d "$ENV{MAIRIX_RESULTS}/cur"     &&
+    -d "$ENV{MAIRIX_RESULTS}/new"     &&
+    -d "$ENV{MAIRIX_RESULTS}/tmp")
+{
   # We do this so that an abandoned or failed run of mairix won't
   # result in mutt still switching to an irrelevant results folder.
   # mairix will automatically recreate the results folder on success.
-  rm -rf "$MAIRIX_RESULTS"
-fi
+  #rmtree($ENV{MAIRIX_RESULTS});
+}
 
-if ! which mairix >&/dev/null; then
-  echo "Can't find executable mairix!" >&2
-  exit 1
-fi
+my $mairix = which('mairix');
+die "Can't find executable mairix!\n" unless $mairix;
 
-echo -n "mairix query? "
-read query
-[ -n "$query" ] && mairix $query
+if ($mode eq 'prompt') {
+  print "mairix query? ";
+  chomp(my $query = <STDIN>);
+  if ($query) {
+    my @words = split /\s+/, $query;
+    system($mairix, @words);
+  }
+}
+elsif ($mode eq 'field') {
+  usage() unless @ARGV;
+  my $field = shift @ARGV;
+  die "$0: Can't follow unsupported field '$field'\n"
+    unless $fields{$field};
+
+  my $value = '';
+  while (<STDIN>) {
+    chomp;
+
+    last if /^$/; # no longer in header
+    
+    if (! $value) {
+      if (/^$field:\s+(.+)/) {
+        $value = $1;
+      }
+      next;
+    }
+
+    if (/^\s+(.+)/) {
+      # continuation of header
+      $value .= $1;
+      next;
+    }
+
+    # continuation ended
+    last;
+  }
+
+  die "$0: Didn't find '$field' field in header\n" unless $value;
+
+  my @query = get_query($field, $value);
+  warn "Searching for: @query\n";
+  system($mairix, @query);
+  sleep 2;
+}
+else {
+  die "$0: Invalid mode '$mode'\n";
+}
 
 # mutt's wait_key mechanism needs success to avoid asking for a key press
-exit 0 
+exit 0;
+
+sub get_query {
+  my ($field, $value) = @_;
+  
+  if ($field eq 'Subject') {
+    my $orig_value = $value;
+    1 while $value =~ s/^(Re:|Fwd:|\(Fwd\))\s*//i
+         or $value =~ s/^\[Fwd:\s*(.+)\s*\]$/$1/i
+         or $value =~ s/\s*\(Fwd\)\s*$//i
+         or $value =~ s/^\s*\[[\w -]+\]\s+//i;
+    if ($value ne $orig_value) {
+      warn "Normalized '$orig_value' to '$value'\n";
+    }
+    my $query = $value;
+    $query =~ s/^\s+//g;
+    $query =~ s/\s+$//g;
+
+    my @tokens = split /\s+|[^\w-]+/, $query;
+
+    return map "s:$_", grep { length($_) && /\w/ } @tokens;
+
+    return 's:' . join ",", grep { length($_) && /\w/ } @tokens;
+  }
+
+  die "BUG";
+}
