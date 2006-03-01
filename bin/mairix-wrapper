@@ -21,7 +21,7 @@ $SIG{PIPE} = sub {
 use File::Path;
 use File::Which;
 
-my %fields = map { $_ => 1 } qw(Subject);
+my %fields = map { $_ => 1 } qw(Subject From To);
 
 sub usage {
   die <<EOF;
@@ -46,7 +46,7 @@ if ($ENV{MAIRIX_RESULTS} =~ /mairix/i &&
   # We do this so that an abandoned or failed run of mairix won't
   # result in mutt still switching to an irrelevant results folder.
   # mairix will automatically recreate the results folder on success.
-  #rmtree($ENV{MAIRIX_RESULTS});
+  rmtree($ENV{MAIRIX_RESULTS});
 }
 
 my $mairix = which('mairix');
@@ -105,7 +105,14 @@ exit 0;
 
 sub get_query {
   my ($field, $value) = @_;
-  
+
+  if ($field eq 'From') {
+    # extract email address and real name
+    # search for real name (AND of all words) OR email address
+    require Mail::Address;
+    die "TODO";
+  }
+
   if ($field eq 'Subject') {
     my $orig_value = $value;
     1 while $value =~ s/^(Re:|Fwd:|\(Fwd\))\s*//i
@@ -119,7 +126,7 @@ sub get_query {
     $query =~ s/^\s+//g;
     $query =~ s/\s+$//g;
 
-    my @tokens = split /\s+|[^\w-]+/, $query;
+    my @tokens = split /\s+|[^\w]+/, $query;
 
     return map "s:$_", grep { length($_) && /\w/ } @tokens;
 
