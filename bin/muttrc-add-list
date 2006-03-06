@@ -10,13 +10,14 @@ Usage: $0 <list short name> <list-addr> <list description>
 
 Short name gets used as folder name and @adamspiers.org prefix.
 Long name gets used as alias description text.
-Can include '%s' in long name which expands to short name.
+Can include '%s' in long name and description which expands to short name.
 EOF
 }
 
 my ($short, $addr, $long) = @ARGV;
 
 $addr =~ s/%s/$short/g;
+$long =~ s/%s/$short/g;
 (my $regexp = $addr) =~ s/\@/.*/;
 my $folder = $short;
 
