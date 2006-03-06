@@ -1276,6 +1276,17 @@ send-hook "eci.*ml.free.fr" 'my_hdr From: "Adam Spiers" <eci@adamspiers.org>'
 send-hook "eci.*ml.free.fr" 'my_hdr Reply-To: "Adam Spiers" <eci@adamspiers.org>'
 
 # }}}
+# {{{ emacs-wiki-discuss (muse, planner, etc.)
+
+alias emacs-wiki-discuss "emacs-wiki-discuss" <emacs-wiki-discuss@nongnu.org>
+fcc-save-hook "emacs-wiki-discuss.*nongnu.org" =lists/emacs-wiki-discuss
+subscribe emacs-wiki-discuss@nongnu.org
+#mailboxes =inboxes/emacs-wiki-discuss
+send-hook "emacs-wiki-discuss.*nongnu.org" 'my_hdr From: "Adam Spiers" <emacs-wiki-discuss@adamspiers.org>'
+send-hook "emacs-wiki-discuss.*nongnu.org" 'my_hdr Reply-To: "Adam Spiers" <emacs-wiki-discuss@adamspiers.org>'
+folder-hook =(inboxes|lists)/emacs-wiki-discuss source ~/.mutt/mailing-list
+
+# }}}
 # {{{ folding.el
 
 alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <andersl@csd.uu.se>
@@ -1423,9 +1434,13 @@ mailboxes =inboxes/mozilla-announce
 # }}}
 # {{{ mutt
 
-subscribe mutt-dev mutt-users mutt-announce 
-mailboxes =inboxes/mutt-users
-mailboxes =inboxes/mutt-dev
+alias mutt-dev "mutt developers lists" <mutt-dev@mutt.org>
+fcc-save-hook "mutt-dev.*mutt.org" =lists/mutt-dev
+subscribe mutt-dev@mutt.org
+#mailboxes =inboxes/mutt-dev
+send-hook "mutt-dev.*mutt.org" 'my_hdr From: "Adam Spiers" <mutt-dev@adamspiers.org>'
+send-hook "mutt-dev.*mutt.org" 'my_hdr Reply-To: "Adam Spiers" <mutt-dev@adamspiers.org>'
+folder-hook =(inboxes|lists)/mutt-dev source ~/.mutt/mailing-list
 
 # }}}
 # {{{ netatalk
@@ -1767,5 +1782,6 @@ alias marathon-2005-sponsorship Endellion-marathon-2005, family, michael.oconnor
 ################################################
 
 #
-# Unclassified aliases
+# Unclassified
 #
+
