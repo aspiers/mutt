@@ -25,6 +25,7 @@ open(CONFIG, ">>$mutt_file")
   or die "Couldn't append to $mutt_file: $!";
 
 my $new_stuff = <<EOTEMPLATE;
+
 alias $short "$long" <$addr>
 fcc-save-hook "$regexp" =lists/$short
 subscribe $addr
