@@ -1589,6 +1589,17 @@ alias sawmill sawfish
 fcc-save-hook sawmill.*aarg\.net =lists/sawfish
 
 # }}}
+# {{{ screen-devel
+
+alias screen-devel "GNU screen developers list" <screen-devel@gnu.org>
+fcc-save-hook "screen-devel.*gnu.org" =lists/screen-devel
+subscribe screen-devel@gnu.org
+#mailboxes =inboxes/screen-devel
+send-hook "screen-devel.*gnu.org" 'my_hdr From: "Adam Spiers" <screen-devel@adamspiers.org>'
+send-hook "screen-devel.*gnu.org" 'my_hdr Reply-To: "Adam Spiers" <screen-devel@adamspiers.org>'
+folder-hook =(inboxes|lists)/screen-devel source ~/.mutt/mailing-list
+
+# }}}
 # {{{ Slim Devices lists
 
 folder-hook =(inboxes|lists)/slim- source ~/.mutt/mailing-list
@@ -1784,4 +1795,5 @@ alias marathon-2005-sponsorship Endellion-marathon-2005, family, michael.oconnor
 #
 # Unclassified
 #
+
 
