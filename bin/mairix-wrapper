@@ -9,6 +9,8 @@
 #            (   ) (  ) (  )  AND <- plus-delimited
 #  i.e.
 #    foo AND s:(bar OR ((baz, 2 errors)  AND (NOT qux) AND (SUBSTRING moo)))
+#
+# though I am not yet convinced the documentation is correct.
 
 use strict;
 use warnings;
