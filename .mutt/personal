@@ -807,9 +807,11 @@ alias peter.connolly Peter Connolly <pconnolly@novell.com>
 alias adrian.keward Adrian Keward <akeward@novell.com>
 # Yan is elsewhere
 
+# NTS
+alias roger.whittaker Roger Whittaker <rwhittaker@novell.com>
+
 # Admin
 alias deborah.thomas Deborah Thomas <DThomas@novell.com>
-alias paul.treadgold Paul Treadgold <Paul.Treadgold@gossfs.co.uk>
 
 # }}}
 # {{{ EMEA
@@ -837,6 +839,13 @@ alias andre.hill Andre Hill <ahill@novell.com>
 alias robert.wipfel Robert Wipfel <rawipfel@novell.com>
 alias justin.steinman Justin Steinman <JSteinman@novell.com>
 alias bryan.cardoza Bryan Cardoza <bcardoza@novell.com>
+alias mark.longwell Mark Longwell <mlongwell@novell.com>
+
+# }}}
+# {{{ Associated companies
+
+alias paul.treadgold Paul Treadgold <Paul.Treadgold@gossfs.co.uk>
+alias lisa.crispino Lisa Crispino <Lisa.Crispino@atpi.com>
 
 # }}}
 
