@@ -2,7 +2,7 @@
 
 . $ZDOTDIR/.zsh/functions/enable_nullglob
 
-for hook in $( . $ZDOTDIR/.zsh/functions/find_hooks .mutt/hooks.d ); do
+for hook in $( . $ZDOT_FIND_HOOKS .mutt/hooks.d ); do
     echo "# $hook follows:"
     cat $hook
 done
