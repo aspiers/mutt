@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Make this what gkrellm runs so we can keep the setting portable
+# between machines.
+
+. $ZDOT_RUN_HOOKS .gkrellm-mailcheck.d
