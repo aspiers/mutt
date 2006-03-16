@@ -1,16 +1,16 @@
 #!/usr/bin/perl
 
-# Search syntax documented here:
-#   http://www.rpcurnow.force9.co.uk/mairix/mairix.html#Use
-
-#  foo s:bar,baz=2+~qux+moo=
+# Search syntax documented in a conflicting manner here:
+#
+#  http://www.rpcurnow.force9.co.uk/mairix/mairix.html#command_005fline
+#
+#  foo s:bar/baz=2,~qux,moo=
 #  ( ) (                   )  AND <- space-delimited
-#        ( ) (             )  OR  <- comma-delimited
-#            (   ) (  ) (  )  AND <- plus-delimited
+#        (                 ) applies to subject only
+#        ( ) (             )  OR  <- slash-delimited
+#            (   ) (  ) (  )  AND <- comma-delimited
 #  i.e.
 #    foo AND s:(bar OR ((baz, 2 errors)  AND (NOT qux) AND (SUBSTRING moo)))
-#
-# though I am not yet convinced the documentation is correct.
 
 use strict;
 use warnings;
