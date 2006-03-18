@@ -16,12 +16,12 @@ if test "$url" = "$method" ; then
 	gopher)	    method=gopher	;;
 	*)
 	    case "${url}" in
-		*/*.htm|*/*.html) method=http	;;
-		*/*.htmls)	  method=https	;;
-		*@*)		  method=mailto ;;
 		/*) if test -r "${url}" ; then
 				  method=file
 		    fi				;;
+		*/*.htm|*/*.html) method=http	;;
+		*/*.htmls)	  method=https	;;
+		*@*)		  method=mailto ;;
 		*)				;;
 	    esac
 					;;
