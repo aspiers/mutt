@@ -60,6 +60,8 @@ if ($mode eq 'prompt') {
   if ($query) {
     my @words = split /\s+/, $query;
     system($mairix, @words);
+    # mutt's wait_key mechanism will ask for a key press on failure
+    exit $? >> 8;
   }
 }
 elsif ($mode eq 'field') {
@@ -96,14 +98,12 @@ elsif ($mode eq 'field') {
   my @query = get_query($field, $value);
   warn "Searching for: @query\n";
   system($mairix, @query);
-#  sleep 2;
+  # mutt's wait_key mechanism will ask for a key press on failure
+  exit $? >> 8;
 }
 else {
   die "$0: Invalid mode '$mode'\n";
 }
-
-# mutt's wait_key mechanism needs success to avoid asking for a key press
-exit 0;
 
 sub get_query {
   my ($field, $value) = @_;
