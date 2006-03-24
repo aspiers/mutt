@@ -168,6 +168,9 @@
    macro pager "\eA" "<limit>~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
    macro pager "\eV"  "<save-message>=misc/virii\n"   "treat as virus-related email"
 
+   macro pager <f5> "<enter-command>source ~/.mutt/normal-quoting\n"   "select normal quoting"
+   macro pager <f6> "<enter-command>source ~/.mutt/jeopardy-quoting\n" "select jeopardy quoting"
+
 # }}}
 # {{{ Bindings for compose menu
 
