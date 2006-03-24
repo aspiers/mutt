@@ -783,6 +783,9 @@ alias architects mh, mge, tf, ps
 # }}}
 # {{{ UK
 
+# Managers
+alias tony.dunn Tony Dunn <tdunn@novell.com>
+
 # Partners / Alliances
 alias owain.mcguire Owain McGuire <omcguire@novell.com>
 alias steve.gaines Steven Gaines <sgaines@novell.com>
@@ -798,6 +801,7 @@ alias dave.nicholls David Nicholls <dnicholls@novell.com>
 alias simon.lidgett Simon Lidgett <slidgett@novell.com>
 alias paul.roberts Paul Roberts <proberts@novell.com>
 alias katrina.joiner Katrina Joiner <kjoiner@novell.com>
+alias sean.mccarry Sean McCarry <SMcCarry@novell.com>
 
 # Technical Specialists
 alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
@@ -823,6 +827,9 @@ alias deborah.thomas Deborah Thomas <DThomas@novell.com>
 
 alias jo.de.baer Jo de Baer <jdebaer@novell.com>
 alias jdb jo.de.baer
+
+alias kurt.garloff Kurt Garloff <garloff@suse.de>
+alias jochen.schaefer Jochen Schaefer <jschaef@novell.com>
 
 alias naji.almahmoud Naji Almahmoud <nalmahmoud@novell.com>
 
