@@ -830,6 +830,7 @@ alias naji.almahmoud Naji Almahmoud <nalmahmoud@novell.com>
 # {{{ Lists
 
 alias cloc-list "CLOC list" <cloc@lists.novell.com>
+alias linux-list "Linux list" <linux@lists.novell.com>
 alias UK-FS-extended-team "UK Financial Services Extended Team" <DL-UK-FinancialServicesExtendedTeam@novell.com>
 
 # }}}
