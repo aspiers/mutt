@@ -1,7 +1,10 @@
 #!/usr/bin/perl
 #
 # extract message-id headers from mail stream on STDIN.
-# For use with 
+# For use with mutt, .e.g
+#
+#    macro index "\em"  ":set pipe_decode=no\n<pipe-message>mairix-copy-message-ids\n:set pipe_decode\n"
+
 
 use strict;
 use warnings;
