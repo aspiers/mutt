@@ -19,7 +19,7 @@ while (<STDIN>) {
 
 # xclip doesn't work :-(
 
-open(FAKECLIP, ">$ENV{HOME}/.clip-message-ids")
+open(FAKECLIP, ">$ENV{HOME}/.clip-mairix")
   or die "Couldn't open($ENV): $!\n";
 
 foreach (@found) {
