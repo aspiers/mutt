@@ -23,6 +23,8 @@ $SIG{PIPE} = sub {
 use File::Path;
 use File::Which;
 
+use Mairix;
+
 my %fields = map { $_ => 1 } qw(Subject From To);
 
 sub usage {
@@ -116,23 +118,7 @@ sub get_query {
   }
 
   if ($field eq 'Subject') {
-    my $orig_value = $value;
-    1 while $value =~ s/^(Re:|Fwd:|\(Fwd\))\s*//i
-         or $value =~ s/^\[Fwd:\s*(.+)\s*\]$/$1/i
-         or $value =~ s/\s*\(Fwd\)\s*$//i
-         or $value =~ s/^\s*\[[\w -]+\]\s+//i;
-    if ($value ne $orig_value) {
-      warn "Normalized '$orig_value' to '$value'\n";
-    }
-    my $query = $value;
-    $query =~ s/^\s+//g;
-    $query =~ s/\s+$//g;
-
-    my @tokens = split /\s+|[^\w]+/, $query;
-
-    return map "s:$_", grep { length($_) && /\w/ } @tokens;
-
-    return 's:' . join ",", grep { length($_) && /\w/ } @tokens;
+    return Mairix::subject_query($value);
   }
 
   die "BUG";

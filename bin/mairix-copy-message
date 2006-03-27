@@ -1,22 +1,64 @@
 #!/usr/bin/perl
 #
-# extract message-id headers from mail stream on STDIN.
+# extract headers from mail stream on STDIN.
 # For use with mutt, .e.g
 #
-#    macro index "\em"  ":set pipe_decode=no\n<pipe-message>mairix-copy-message-ids\n:set pipe_decode\n"
-
+#    macro index "\em"  ":set pipe_decode=no\n<pipe-message>mairix-copy-message ids\n:set pipe_decode\n"
 
 use strict;
 use warnings;
+use Getopt::Long;
+use Mairix;
+
+my %opts;
+GetOptions(
+  \%opts,
+  'help',
+  'ids', 'threads',
+) or usage();
+usage() if @ARGV or $opts{help};
+
+sub usage {
+  warn @_, "\n" if @_;
+
+  (my $me = $0) =~ s,.*/,,;
+
+  die <<EOUSAGE;
+Usage: cat mail1 [mail2 ...] | $me [--ids] [--threads]
+Options:
+  -h, --help     Show this help
+      --ids      Extract Message-ID header(s)
+      --threads  Extract thread subject(s)
+EOUSAGE
+}
 
 my @found;
 
+my $subject;
 while (<STDIN>) {
   chomp;
 
-  if (/^message-id:\s+<(.+)>\s*$/i) {
+  if ($opts{ids} && /^message-id:\s+<(.+)>\s*$/i) {
     push @found, "m:$1";
     next;
+  }
+
+  if ($opts{threads}) {
+    if ($subject) {
+      if (/^\s+(.+)/) {
+        # continuation line
+        $subject .= $1;
+        next;
+      }
+
+      # next header
+      push @found, join ' ', Mairix::subject_query($subject);
+      undef $subject;
+      next;
+    }
+    elsif (/^Subject:\s+(.+)\s*$/i) {
+      $subject = $1;
+    }
   }
 }
 
