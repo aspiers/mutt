@@ -15,7 +15,7 @@ while (<STDIN>) {
   chomp;
 
   if (/^message-id:\s+<(.+)>\s*$/i) {
-    push @found, $1;
+    push @found, "m:$1";
     next;
   }
 }
@@ -26,7 +26,7 @@ open(FAKECLIP, ">$ENV{HOME}/.clip-mairix")
   or die "Couldn't open($ENV): $!\n";
 
 foreach (@found) {
-  my $URL = "<mairix://m:$_>";
+  my $URL = "<mairix://$_>";
   print FAKECLIP "$URL\n";
   print          "$URL\n";
 }
