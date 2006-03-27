@@ -52,15 +52,15 @@
    macro index i  "<change-folder>=inboxes/\t\t\t<down>"  "show main inboxes"
    macro index I  "<change-folder>!\n"  "switch to MAIN inbox"
 
-   macro index B     "|urlview\n"  "pipe message to urlview"
+   macro index B     ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
    macro index "\cB" "|w3m\n"      "call w3m to extract URLs out of a message"
 
    macro index X  "Dall\n" "mark all messages as deleted"
    macro index "\eh"  "/~h " "search by header substring"
 
-   macro index "\em"  ":set pipe_decode=no\n<pipe-message>mairix-copy-message --ids\n:set pipe_decode\n"
-   macro index "\eB"  ":set pipe_decode=no\n<pipe-message>mairix-copy-message --threads\n:set pipe_decode\n"
+   macro index "\em"  "<pipe-message>mairix-copy-message --ids\n" "Extract message id(s) into mairix clipboard"
+   macro index "\eB"  "<pipe-message>mairix-copy-message --threads\n" "Extract thread subject(s) into mairix clipboard"
 
 # !!! PLEASE ALSO SEE CORRESPONDING SECTION FOR PAGER BINDINGS !!!
 
@@ -128,7 +128,7 @@
 
    macro pager  $   "<exit><sync-mailbox>" "quit pager and sync mailbox"
  
-   macro pager  B    "|urlview\n"
+   macro pager  B    ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
    macro pager "\cB" "|w3m\n"      "call w3m to extract URLs out of a message"
 
@@ -152,8 +152,8 @@
    macro pager "\e8" ":set pager_index_lines=18\n"
    macro pager "\e9" ":set pager_index_lines=20\n"
 
-   macro pager "\em"  ":set pipe_decode=no\n<pipe-message>mairix-copy-message --ids\n:set pipe_decode\n"
-   macro pager "\eB"  ":set pipe_decode=no\n<pipe-message>mairix-copy-message --threads\n:set pipe_decode\n"
+   macro pager "\em"  "<pipe-message>mairix-copy-message --ids\n" "Extract message id(s) into mairix clipboard"
+   macro pager "\eB"  "<pipe-message>mairix-copy-message --threads\n" "Extract thread subject(s) into mairix clipboard"
 
    macro pager "\ei"  "|CRM-SA-parp-inject\n"   "parp: (re)Inject into spool"
    macro pager "\et"  "|parp -rtv\n"  "parp: Test run"
