@@ -1,0 +1,37 @@
+#!/usr/bin/perl
+#
+# extract message-id headers from mail stream on STDIN.
+# For use with 
+
+use strict;
+use warnings;
+
+my @found;
+
+while (<STDIN>) {
+  chomp;
+
+  if (/^message-id:\s+<(.+)>\s*$/i) {
+    push @found, $1;
+    next;
+  }
+}
+
+# xclip doesn't work :-(
+
+open(FAKECLIP, ">$ENV{HOME}/.clip-message-ids")
+  or die "Couldn't open($ENV): $!\n";
+
+foreach (@found) {
+  my $URL = "<mairix://$_>";
+  print FAKECLIP "$URL\n";
+  print          "$URL\n";
+}
+
+close(FAKECLIP);
+
+# print "Press enter to continue ... ";
+# my $read_key = <STDIN>;
+sleep 1;
+
+exit 0; # for mutt wait_key
