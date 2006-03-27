@@ -59,6 +59,8 @@
    macro index X  "Dall\n" "mark all messages as deleted"
    macro index "\eh"  "/~h " "search by header substring"
 
+   macro index "\em"  ":set pipe_decode=no\n<pipe-message>mairix-copy-message-ids\n:set pipe_decode\n"
+
 # !!! PLEASE ALSO SEE CORRESPONDING SECTION FOR PAGER BINDINGS !!!
 
    macro index "\ef"  ";|formail -s parp -ev\n"   "parp: extract Friends"
@@ -148,6 +150,8 @@
    macro pager "\e7" ":set pager_index_lines=16\n"
    macro pager "\e8" ":set pager_index_lines=18\n"
    macro pager "\e9" ":set pager_index_lines=20\n"
+
+   macro pager "\em"  ":set pipe_decode=no\n<pipe-message>mairix-copy-message-ids\n:set pipe_decode\n"
 
    macro pager "\ei"  "|CRM-SA-parp-inject\n"   "parp: (re)Inject into spool"
    macro pager "\et"  "|parp -rtv\n"  "parp: Test run"

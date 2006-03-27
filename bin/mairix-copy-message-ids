@@ -23,7 +23,7 @@ open(FAKECLIP, ">$ENV{HOME}/.clip-message-ids")
   or die "Couldn't open($ENV): $!\n";
 
 foreach (@found) {
-  my $URL = "<mairix://$_>";
+  my $URL = "<mairix://m:$_>";
   print FAKECLIP "$URL\n";
   print          "$URL\n";
 }
