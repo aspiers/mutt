@@ -44,7 +44,8 @@ sub normalize_subject {
   1 while $new =~ s/^(Re:|Fwd:|\(Fwd\))\s*//i
        or $new =~ s/^\[Fwd:\s*(.+)\s*\]$/$1/i
        or $new =~ s/\s*\(Fwd\)\s*$//i
-       or $new =~ s/^\s*\[[\w -]+\]\s+//i;
+       or $new =~ s/^\s*\[[\w -]+\]\s+//i
+       or $new =~ s/\bv\d+(\.\d+)*(\b|$)//i;
   if ($new ne $original) {
     warn "Normalized '$original' to '$new'\n";
   }
