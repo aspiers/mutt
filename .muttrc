@@ -108,8 +108,7 @@
    # pager_index_lines gets set in .mutt/folders/DEFAULTS
    set   pager_stop       # next-page doesn't perform a next-undeleted when
                           # the end of the mail is shown
-   set   pipe_decode      # needed so that urlview can extract URLs
-                          # from quoted-printable, for instance   
+   set   pipe_decode=no
 #  set noprompt_after     # prompt when pager exits?
 #  set   point_new
    set   postponed="=.postponed"
