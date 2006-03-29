@@ -87,7 +87,7 @@ elsif ($mode eq 'field') {
 
     if (/^\s+(.+)/) {
       # continuation of header
-      $value .= $1;
+      $value .= " " . $1;
       next;
     }
 

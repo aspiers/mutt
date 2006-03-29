@@ -47,7 +47,7 @@ while (<STDIN>) {
     if ($subject) {
       if (/^\s+(.+)/) {
         # continuation line
-        $subject .= $1;
+        $subject .= " " . $1;
         next;
       }
 
