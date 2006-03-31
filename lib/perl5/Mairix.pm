@@ -41,9 +41,12 @@ sub normalize_subject {
   my ($original) = @_;
 
   my $new = $original;
-  1 while $new =~ s/^(Re:|Fwd:|\(Fwd\))\s*//i
+  1 while $new =~ s/^\s+//
+       or $new =~ s/\s+$//
+       or $new =~ s/^(Re:|Fwd:|\(Fwd\))\s*//i
        or $new =~ s/^\[Fwd:\s*(.+)\s*\]$/$1/i
-       or $new =~ s/\s*\(Fwd\)\s*$//i
+       or $new =~ s/\(Fwd\)$//i
+       or $new =~ s/^(FYI|FYEO|FCP|AHOD)(:|\b)//i
        or $new =~ s/^\s*\[[\w -]+\]\s+//i
        or $new =~ s/\bv\d+(\.\d+)*(\b|$)//i;
   if ($new ne $original) {
