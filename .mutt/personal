@@ -558,7 +558,9 @@ alias matt.shlomowitz Matthew Shlomowitz <mshlom@hotmail.com>
 alias shlom matt.shlomowitz
 fcc-save-hook shlom@hotmail.com =friends/RAM/matthew.shlomowitz
 
-alias RAM-party-friends nick.byrne, linz.both, mike.francis, kirsty, shlom, laura.stanford, roderick.chadwick, katie.chatburn
+alias nikki.gleed "Nikki Gleed" <nikkigleed@yahoo.co.uk>
+
+alias RAM-party-friends nick.byrne, linz.both, mike.francis, kirsty, shlom, laura.stanford, roderick.chadwick, katie.chatburn, nikki.gleed
 
 # }}}
 # {{{ RAM staff
