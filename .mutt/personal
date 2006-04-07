@@ -820,9 +820,11 @@ alias ak adrian.keward
 
 # NTS
 alias roger.whittaker Roger Whittaker <rwhittaker@novell.com>
+alias aran.stephens Aran Stephens <AStephens@novell.com>
 
 # IS&T
 alias simon.crute Simon Crute <scrute@novell.com>
+alias keith.humphrey Keith Humphrey <khumphrey@novell.com>
 
 # Admin
 alias deborah.thomas Deborah Thomas <DThomas@novell.com>
@@ -868,6 +870,11 @@ alias lisa.crispino Lisa Crispino <Lisa.Crispino@atpi.com>
 # }}}
 
 # }}}
+# {{{ HP
+
+alias terry.young Terry Young <Terry.Young@hp.com>
+
+# }}}
 # {{{ Lehman Brothers
 
 alias kordian.witek.work Kordian Witek <kordian.witek@gs.com>
@@ -902,6 +909,10 @@ alias rob.tunstall "Rob Tunstall" <robtun@yahoo.com>
 
 alias nicky.kovacs-gaspar "Nicky Kovacs-Gaspar" <nicola.kovacsgaspar@lehman.com>
 alias dave.mclennan "David McLennan" <dmclenna@lehman.com>
+
+alias toby.riddell Toby Riddell <Toby.Riddell@barclayscapital.com>
+alias dave.wishart.ubs Dave Wishart <David.Wishart@ubs.com>
+alias leon.cowle Leon Cowle <leon@leolizma.com>
 
 # }}}
 # {{{ Egenera
