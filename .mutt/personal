@@ -871,6 +871,11 @@ alias paul.treadgold Paul Treadgold <Paul.Treadgold@gossfs.co.uk>
 alias lisa.crispino Lisa Crispino <Lisa.Crispino@atpi.com>
 
 # }}}
+# {{{ customers
+
+alias alex.broad Alex Broad <abroad@messagelabs.com>
+
+# }}}
 
 # }}}
 # {{{ HP
@@ -1501,6 +1506,17 @@ folder-hook =(inboxes|lists)/mutt-dev source ~/.mutt/mailing-list
 # {{{ netatalk
 
 alias netatalk "netatalk mailing list" <netatalk@umich.edu>
+
+# }}}
+# {{{ offlineimap
+
+alias offlineimap "offlineimap mailing list" <offlineimap@complete.org>
+fcc-save-hook "offlineimap.*complete.org" =lists/offlineimap
+subscribe offlineimap@complete.org
+#mailboxes =inboxes/offlineimap
+send-hook "offlineimap.*complete.org" 'my_hdr From: "Adam Spiers" <offlineimap@adamspiers.org>'
+send-hook "offlineimap.*complete.org" 'my_hdr Reply-To: "Adam Spiers" <offlineimap@adamspiers.org>'
+folder-hook =(inboxes|lists)/offlineimap source ~/.mutt/mailing-list
 
 # }}}
 # {{{ OpenZaurus
