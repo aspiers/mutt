@@ -30,6 +30,8 @@ mono indicator reverse
 #color header brightwhite cyan "^(From|Subject):"
 color header brightred   white "^X-Junked-Because:"
 mono  header bold       "^(From|Subject|X-Junked-Because):"
+# highlight flagged messages
+color index brightred default ~F
 
 # Highlights inside the body of a message.
 
