@@ -4,6 +4,8 @@
 ## Format:
 ## color object      foreground   background
 
+# N.B. last matching rule wins
+
 color attachment green default
 color bold brightwhite default
 color error brightred default
