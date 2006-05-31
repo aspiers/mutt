@@ -823,6 +823,7 @@ alias ak adrian.keward
 alias roger.whittaker Roger Whittaker <rwhittaker@novell.com>
 alias aran.stephens Aran Stephens <AStephens@novell.com>
 alias marcus.naris Marcus Naris <mnaris@novell.com>
+alias rob.webb Rob Webb <rwebb@novell.com>
 
 # IS&T
 alias simon.crute Simon Crute <scrute@novell.com>
@@ -1846,6 +1847,7 @@ alias bcc-only lots of people <dev.null@adamspiers.org>
 alias philip.smithies "Philip Smithies" <philipsmithies@lineone.net>
 
 alias gordon.melvin Gordon Melvin <gordon.melvin@homecall.co.uk>
+alias gordon.melvin.new Gordon Melvin <gordon.melvin@keme.co.uk>
 
 #source ~/.mutt/quake-aliases
 
