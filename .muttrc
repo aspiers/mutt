@@ -120,6 +120,7 @@
    set   quote_regexp="^> *"
    set   recall=no
 #  set   record="PLEASE CHOOSE AN FCC FOLDER!"
+   set   reply_regexp="^((re([\[0-9\]+])*|aw|antw|svar):[ \t]*)+"
    set   reply_to=ask-yes # use address in Reply-To when replying?
    set   reverse_alias    # show name of sender as set with my alias for him
    set   resolve          # do not proceed to next unread mail after command
