@@ -4,6 +4,8 @@
 #
 #  http://www.rpcurnow.force9.co.uk/mairix/mairix.html#command_005fline
 #
+# Also run mairix -h for summary of syntax.
+#
 #  foo s:bar/baz=2,~qux,moo=
 #  ( ) (                   )  AND <- space-delimited
 #        (                 ) applies to subject only
