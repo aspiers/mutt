@@ -786,6 +786,8 @@ alias architects mh, mge, tf, ps
 # {{{ UK
 
 # Managers
+alias chris.papayianni "Chris Papayianni" <cpapayianni@novell.com>
+alias paul.roberts Paul Roberts <proberts@novell.com>
 alias tony.dunn Tony Dunn <tdunn@novell.com>
 
 # Partners / Alliances
@@ -804,7 +806,6 @@ alias andy.fleet Andrew Fleet <afleet@novell.com>
 # Account managers
 alias dave.nicholls David Nicholls <dnicholls@novell.com>
 alias simon.lidgett Simon Lidgett <slidgett@novell.com>
-alias paul.roberts Paul Roberts <proberts@novell.com>
 alias katrina.joiner Katrina Joiner <kjoiner@novell.com>
 alias sean.mccarry Sean McCarry <SMcCarry@novell.com>
 
@@ -852,6 +853,7 @@ alias stephanie.schatz Stephanie Schatz <Stephanie.Schatz@novell.com>
 alias roman.drahtmueller Roman Drahtmueller <draht@suse.de>
 alias holger.dyroff Holger Dyroff <hd@novell.com>
 alias hans.krogull Hans Krogull <HKrogull@novell.com>
+alias markus.wachovius "Markus Wachovius" <markus.wachovius@novell.com>
 
 # }}}
 # {{{ Lists
@@ -880,6 +882,7 @@ alias justin.steinman Justin Steinman <JSteinman@novell.com>
 alias bryan.cardoza Bryan Cardoza <bcardoza@novell.com>
 alias mark.longwell Mark Longwell <mlongwell@novell.com>
 alias michael.deis Michael Deis <mdeis@novell.com>
+alias djamel.souici "Djamel Souici" <DSouici@novell.com>,
 
 # }}}
 # {{{ Associated companies
@@ -895,6 +898,11 @@ alias mark.jeffery Mark Jeffery <MJeffery@Bladelogic.com>
 alias mark.hosking Mark Hosking <MHosking@Bladelogic.com>
 
 # }}}
+
+# }}}
+# {{{ JPMC
+
+alias john.ohara "John O'Hara" <john.r.ohara@jpmorgan.com>
 
 # }}}
 # {{{ HP
@@ -944,6 +952,7 @@ alias leon.cowle Leon Cowle <leon@leolizma.com>
 
 alias nick.blackwell.lehman Nick Blackwell <nblackwe@lehman.com>
 alias nicole.siebel Nicole Siebel <nicole.siebel@lehman.com>
+alias anthony.warden "Anthony Warden" <Awarden@Lehman.com>
 
 # }}}
 # {{{ Egenera
