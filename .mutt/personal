@@ -866,9 +866,9 @@ alias isabelle-caroline.von.weber Isabelle-Caroline von Weber <ivonweber@novell.
 
 alias cloc-list "CLOC list" <cloc@lists.novell.com>
 alias linux-list "Linux list" <linux@lists.novell.com>
-alias linux-server "Linux list" <linux-server@lists.novell.com>
-alias linux-desktop "Linux list" <linux-desktop@lists.novell.com>
-alias virtualization-xen "Xen Virtualization list" <virtualization-xen@lists.novell.com>
+alias linux-server "Linux server list" <linux-server@lists.novell.com>
+alias linux-desktop "Linux desktop list" <linux-desktop@lists.novell.com>
+alias virtualization-xen "Xen virtualization list" <virtualization-xen@lists.novell.com>
 alias open-source-community "Open Source Community list" <Open-source-Community@lists.novell.com>
 alias financial-services-community "Finance Services Community list" <financial-services-community@lists.novell.com>
 
@@ -894,6 +894,8 @@ alias patrick.mcbride Patrick McBride <pmcbride@novell.com>
 alias roger.levy Roger Levy <rlevy@novell.com>
 alias hal.bennett Hal Bennett <hbennett@novell.com>
 alias greg.jones Greg Jones <gsjones@novell.com>
+alias amy.cottle Amy Cottle <acottle@novell.com>
+alias jeff.jaffe Jeff Jaffe <jjaffe@novell.com>
 
 # }}}
 # {{{ Associated companies
