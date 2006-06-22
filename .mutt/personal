@@ -836,6 +836,7 @@ alias nickie.wing Nickie Wing <NWing@novell.com>
 # Admin
 alias jodie.walsh Jodie Walsh <jwalsh@novell.com>
 alias deborah.thomas Deborah Thomas <DThomas@novell.com>
+alias jamie.slade Jamie Slade <jslade@novell.com>
 
 # }}}
 # {{{ EMEA
@@ -913,14 +914,20 @@ alias mark.hosking Mark Hosking <MHosking@Bladelogic.com>
 # }}}
 
 # }}}
-# {{{ JPMC
+# {{{ Concurrent
 
-alias john.ohara "John O'Hara" <john.r.ohara@jpmorgan.com>
+alias birgit.grossmann "Birgit Grossmann" <birgit.grossmann@ccur.de>
+alias gary.beerman "Gary Beerman" <gary.beerman@ccur.com>
 
 # }}}
 # {{{ HP
 
 alias terry.young Terry Young <Terry.Young@hp.com>
+
+# }}}
+# {{{ JPMC
+
+alias john.ohara "John O'Hara" <john.r.ohara@jpmorgan.com>
 
 # }}}
 # {{{ Lehman Brothers
