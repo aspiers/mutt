@@ -61,6 +61,8 @@ die "Can't find executable mairix!\n" unless $mairix;
 if ($mode eq 'prompt') {
   print "mairix query? ";
   chomp(my $query = <STDIN>);
+  $query =~ s/^\s+//;
+  $query =~ s/\s+$//;
   if ($query) {
     my @words = split /\s+/, $query;
     my $exit_code = do_query(@words);
