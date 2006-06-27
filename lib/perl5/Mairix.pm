@@ -32,8 +32,7 @@ sub subject_query {
 
   my @tokens = split /\s+|[^\w]+/, $query;
 
-  return map "s:$_", grep { length($_) && /\w/ } @tokens;
-
+#  return map "s:$_", grep { length($_) && /\w/ } @tokens;
   return 's:' . join ",", grep { length($_) && /\w/ } @tokens;
 }
 
