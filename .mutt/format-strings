@@ -1,35 +1,4 @@
-## ===================================
-## format strings:
-## "forw_format", "hdr_format", "pager_format", and "status_format".
-## format strings use these format fields (as of version 0.67):
-##	a-cd-f--i--lmn----stu---y-  lower case letters (12)
-##	--C--F-----LMN----ST---XYZ  upper case letters (09)
-## %a      address of the author
-## %c      number of characters (bytes) in the message
-##    %C   current message number
-## %d      date and time of the message
-## %f      entire From: line (address + real name)
-##    %F   entire From: line, unless from self
-## %i      message-id of the current message
-## %l      number of lines in the message
-##    %L   list-from function
-## %m      number of the month (1-12)
-##    %M   three-letter abbreviation for the month
-## %n      real (personal) name of author
-##    %N   number of the day of the month
-## %s      subject of the message
-##    %S   status of the message ([New], [Deleted], [Flagged], [Tagged])
-## %t      the appropriate character from the ``tochars'' string
-##    %T   total number of message in the mailbox
-## %u      user (login) name of the author
-## %y      last two digits of the year
-## %>X     right justify the rest of the string and pad with characater "X"
-## %|X     pad to the end of the line with character "X"
-##    %Y   year
-##    %Z   message status flags
-
 ## forw_format - format the text used in the format attribution
-## default:  set forw_format="[%a: %s]"
 set forw_format="%s (fwd)"
 
 ## index_format - format of all mails shown in the index display
@@ -39,21 +8,4 @@ set forw_format="%s (fwd)"
 set pager_format="%S %T [%C/%m] %-.20n %s (%c)"
 
 ## status_format - format of summary on the current folder in the index
-## meta strings:
-##	-----f-h---lmn-p--st-v----  lower case letters (09)
-##	------------M----------X--  upper case letters (02)
-## %d      the number of messages with the flag 'delete'  (v64)
-## %f      the full pathname of the current mailbox
-## %h      local hostname
-## %l      size (in bytes) of the current mailbox
-## %m      the number of messages in the mailbox
-## %M      the number of messages shown (i.e., which match the current limit)
-## %n      number of new messages in the mailbox
-## %p      number of postponed messages
-## %s      current sorting mode
-## %t      number of tagged messages
-## %v      Mutt version string
-## %>X     right justify the rest of the string and pad with "X"
-## %|X     pad to the end of the line with "X"
-
 set status_format="Mutt: %f (%s/%S) [%M/%m (%L/%l)] [N=%n%?o?,O=%o?%?t?,*=%t?%?d?,D=%d?%?p?,p/p=%p?%?b?,new=%b?] %> %r"
