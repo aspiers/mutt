@@ -938,10 +938,13 @@ alias kordian.witek Kordian Witek <kordy@kordian.com>
 alias duncan.young.home Duncan Young <duncan@duncanyoung.com>
 alias alan.champion Alan Champion <achampio@lehman.com>
 
+alias mihai.georgian Mihai Georgian <mihgeo@interlog.com>
+
 alias dan.beimborn Dan Beimborn <dan@beimborn.com>
-alias dan.beimborn.lehman2 Dan Beimborn <dan.beimborn@lehman.com>
-alias dan.beimborn.lehman Dan Beimborn <dbeimbor@lehman.com>
+#alias dan.beimborn.lehman2 Dan Beimborn <dan.beimborn@lehman.com>
+#alias dan.beimborn.lehman Dan Beimborn <dbeimbor@lehman.com>
 alias dan.beimborn.celtic Dan Beimborn <Dan@Celticmusic.com>
+alias dan.beimborn.citadel Dan Beimborn <Dan.Beimborn@citadelgroup.com>
 fcc-save-hook 'beimborn|celticmusic|mandolinarchive' =computer-work/dan.beimborn
 
 alias james.hickie.lehman James Hickie <jhickie@lehman.com>
@@ -1004,6 +1007,7 @@ alias nina.loi Nina Loi <nloi@astoncarter.co.uk>
 # }}}
 # {{{ Huxley
 
+alias peter.barker Peter Barker <p.barker@huxley.com>
 alias joanna.cohen Joanna Cohen <j.cohen@huxley.com>
 
 # }}}
