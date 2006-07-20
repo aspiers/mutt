@@ -1000,6 +1000,8 @@ alias nicole.siebel Nicole Siebel <nicole.siebel@lehman.com>
 alias anthony.warden "Anthony Warden" <Awarden@Lehman.com>
 
 alias lorenz.moore.lehman "Lorenz Moore" <lorenz.moore@lehman.com>
+alias vanessa.bell Vanessa Bell <vbell@lehman.com>
+alias james.hall James Hall <james.hall@lehman.com>
 
 # }}}
 # {{{ Egenera
@@ -1896,7 +1898,10 @@ alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
 
 alias will.perrin Will Perrin <will.perrin@credit-suisse.com>
 
-alias computer-party-friends ture, ben.simpson, jasper.mccrea, will.perrin
+alias gg-party-friends ture, ben.simpson, jasper.mccrea
+alias lehman-party-friends dave.wishart, julian.morris, bob.cole, james.hickie, nicky.kovacs-gaspar, vanessa.bell, james.hall, nicole.siebel, nick.blackwell, pete.mchugh
+alias novell-party-friends matt.mckenzie
+alias computer-party-friends gg-party-friends, lehman-party-friends, novell-party-friends, will.perrin
 
 # }}}
 
