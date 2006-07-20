@@ -794,6 +794,7 @@ alias tony.dunn Tony Dunn <tdunn@novell.com>
 alias owain.mcguire Owain McGuire <omcguire@novell.com>
 alias steve.gaines Steven Gaines <sgaines@novell.com>
 alias peter.regent Peter Regent <PRegent@novell.com>
+alias clare.tinker Clare Tinker <CTinker@novell.com>
 
 # Financial Services
 alias andrew.voysey Andrew Voysey <avoysey@novell.com>
@@ -809,8 +810,10 @@ alias dave.nicholls David Nicholls <dnicholls@novell.com>
 alias simon.lidgett Simon Lidgett <slidgett@novell.com>
 alias katrina.joiner Katrina Joiner <kjoiner@novell.com>
 alias sean.mccarry Sean McCarry <SMcCarry@novell.com>
+alias leo.moccia Leo Moccia <LMoccia@novell.com>
 
 # Technical Specialists
+alias brian.green Brian Green <bgreen@novell.com>
 alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
 alias dan.homolka Dan Homolka <Dan.Homolka@novell.com>
 alias chris.hyde Chris Hyde <chyde@novell.com>
@@ -839,6 +842,7 @@ alias nickie.wing Nickie Wing <NWing@novell.com>
 alias jodie.walsh Jodie Walsh <jwalsh@novell.com>
 alias deborah.thomas Deborah Thomas <DThomas@novell.com>
 alias jamie.slade Jamie Slade <jslade@novell.com>
+alias rachel.berry Rachel Berry <RBerry@novell.com>
 
 # }}}
 # {{{ EMEA
@@ -863,6 +867,11 @@ alias hans.krogull Hans Krogull <HKrogull@novell.com>
 alias markus.wachovius "Markus Wachovius" <markus.wachovius@novell.com>
 
 alias isabelle-caroline.von.weber Isabelle-Caroline von Weber <ivonweber@novell.com>
+
+alias marcus.meissner Marcus Meissner <meissner@suse.de>
+alias stefan.horn Stefan Horn <SHorn@novell.com>
+
+alias don.morrison Don Morrison <DMorrison@novell.com>
 
 # }}}
 # {{{ Lists
@@ -912,8 +921,15 @@ alias lisa.crispino Lisa Crispino <Lisa.Crispino@atpi.com>
 # {{{ Customers/partners
 
 alias alex.broad Alex Broad <abroad@messagelabs.com>
+
 alias mark.jeffery Mark Jeffery <MJeffery@Bladelogic.com>
 alias mark.hosking Mark Hosking <MHosking@Bladelogic.com>
+
+alias mike.popescu Mike Popescu <mike.popescu@ccur.de>
+alias gerd.dolezal Gerd Dolezal <gerd.dolezal@ccur.de>
+
+alias eva.beck Eva Beck <Eva.Beck@hp.com>
+alias stephanie.schatz.ctp Stephanie Schatz <Stephanie.Schatz@ctp.com>
 
 # }}}
 
@@ -1878,7 +1894,9 @@ mailboxes =inboxes/amazon
 alias keet Christiaan Keet <keet@plig.net>
 alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
 
-alias computer-party-friends ture, ben.simpson, jasper.mccrea
+alias will.perrin Will Perrin <will.perrin@credit-suisse.com>
+
+alias computer-party-friends ture, ben.simpson, jasper.mccrea, will.perrin
 
 # }}}
 
