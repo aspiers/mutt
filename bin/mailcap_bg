@@ -25,7 +25,8 @@ need_wait=no
 fname=${1} ; shift
 prog=${1} ; shift
 if [[ -z "$prog" ]]; then
-    alertme "mailcap_bg: No program argument provided; aborting." >&2
+    echo "mailcap_bg: No program argument provided; aborting." >&2
+    alertme "mailcap_bg: No program argument provided; aborting."
     exit 1
 fi
 
