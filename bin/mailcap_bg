@@ -14,10 +14,21 @@
 PS4="${0##*/}+ "
 exec 1>>~/.mailcap_bg.log 2>&1
 
+cat <<EOF
+----------------------
+`date`
+pid $$, invoked as $@
+EOF
+
 # Setup global variables.
 need_wait=no
 fname=${1} ; shift
 prog=${1} ; shift
+if [[ -z "$prog" ]]; then
+    alertme "mailcap_bg: No program argument provided; aborting." >&2
+    exit 1
+fi
+
 declare -a args
 # gotta
 for ((i = 1; i <= $#; i = i+1)); do
