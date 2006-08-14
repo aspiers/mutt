@@ -883,7 +883,8 @@ alias virtualization-xen "Xen virtualization list" <virtualization-xen@lists.nov
 alias open-source-community "Open Source Community list" <Open-source-Community@lists.novell.com>
 alias financial-services-community "Finance Services Community list" <financial-services-community@lists.novell.com>
 
-alias UK-FS-extended-team "UK Financial Services Extended Team" <DL-UK-FinancialServicesExtendedTeam@novell.com>
+alias UK-FS-extended-team "UK Financial Services Extended Team" <DL-UK_Financial_Services_Extended_Team@novell.com>
+alias UK-FS-core-team "UK Financial Services Core Team" <DL-UK_Financial_Services_Core_Team@novell.com>
 
 # }}}
 # {{{ US
