@@ -64,6 +64,12 @@ while (<STDIN>) {
 
 # xclip doesn't work :-(
 
+if (! @found) {
+  warn "No Message-ID header found!  Press a key...\n";
+  my $read_key = <STDIN>;
+  exit 1;
+}
+
 open(FAKECLIP, ">$ENV{HOME}/.clip-mairix")
   or die "Couldn't open($ENV): $!\n";
 
