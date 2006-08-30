@@ -107,6 +107,7 @@ fi
 
     # run the program
     "$prog" "${args[@]}"
+    echo "$prog $* exited with status code $?"
 
     # delete the temp file when it's no longer in use.
     # this is important for mozilla, for example, which can return
