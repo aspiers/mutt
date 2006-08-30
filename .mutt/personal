@@ -796,7 +796,8 @@ alias tony.dunn Tony Dunn <tdunn@novell.com>
 alias owain.mcguire Owain McGuire <omcguire@novell.com>
 alias steve.gaines Steven Gaines <sgaines@novell.com>
 alias peter.regent Peter Regent <PRegent@novell.com>
-alias clare.tinker Clare Tinker <CTinker@novell.com>
+#alias clare.tinker Clare Tinker <CTinker@novell.com>
+alias denise.hand Denise Hand <dhand@novell.com>
 
 # Financial Services
 alias andrew.voysey Andrew Voysey <avoysey@novell.com>
@@ -876,6 +877,8 @@ alias marcus.meissner Marcus Meissner <meissner@suse.de>
 alias stefan.horn Stefan Horn <SHorn@novell.com>
 
 alias don.morrison Don Morrison <DMorrison@novell.com>
+
+alias greg.kh Greg Kroah-Hartman <gregkh@suse.de>
 
 # }}}
 # {{{ Lists
