@@ -3,4 +3,7 @@
 # Make this what gkrellm runs so we can keep the setting portable
 # between machines.
 
+# renice doesn't work on NLD9?!
+snice +19 $$
+
 . $ZDOT_RUN_HOOKS .gkrellm-mailcheck.d
