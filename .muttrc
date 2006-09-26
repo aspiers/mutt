@@ -171,6 +171,7 @@ source ~/.mutt/mutt-aliases
 source ~/.mutt/bindings
 source ~/.mutt/colours.default
 source ~/.mutt/format-strings
+source ~/.mutt/gpg.rc
 
 # dynamic ...
 source ~/.mutt/run-hooks|
