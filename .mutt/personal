@@ -55,17 +55,18 @@ folder-hook =lists/                           source ~/.mutt/mailing-list
 
 # }}}
 
-# {{{ send-hook, my_hdr
+# {{{ send-hook, my_hdr, fcc-save-hook
 
 #my_hdr X-URL: http://tigerpig.org/
 my_hdr X-OS: Linux
 send-hook . 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 send-hook . 'my_hdr Reply-To: "Adam Spiers" <adam@spiers.net>'
+fcc-save-hook . =archive.`date +'%Y.%m'`
 
 # }}}
 
 ################################################
-# Aliases, save-hooks, lists, mailboxes
+# Aliases, lists, mailboxes
 
 # {{{ Me :-)
 
@@ -94,7 +95,6 @@ alias OLD.sms "Adam Spiers mobile via SMS gateway" <adam.spiers@eMobile.co.uk>
 # {{{ Relatives
 
 alias daddy "Stuart Spiers" <stuart@spiers.net>
-fcc-save-hook stuart.*spiers =relatives/daddy
 
 alias mummy "Liz Spiers" <liz@spiers.net>
 
@@ -102,16 +102,11 @@ alias thea.rncm "Thea Spiers" <SpiersT@rncm.ac.uk>
 alias thea.spiers "Thea Spiers" <thea@spiers.net>
 alias thea.yahoo "Thea Spiers" <theaspiers@yahoo.co.uk>
 alias thea thea.yahoo
-fcc-save-hook thea@spiers\.net =relatives/thea
-fcc-save-hook theaspiers@hotmail\.com =relatives/thea
-fcc-save-hook theaspiers@yahoo\.co\.uk =relatives/thea
-fcc-save-hook spierst@(student\.)?rncm\.ac\.uk =relatives/thea
 
 alias chloe.spiers "Chloe Spiers" <chloe@spiers.net>
 alias chloe.yahoo "Chloe Spiers" <chloespiers@yahoo.co.uk>
 alias chloe.hotmail "Chloe Spiers" <chloespiers@hotmail.com>
 alias chloe chloe.spiers
-fcc-save-hook chloe.*spiers =relatives/chloe
 
 alias family daddy, chloe, thea, ian
 
@@ -119,7 +114,6 @@ alias family daddy, chloe, thea, ian
 #alias ian.spiers "Ian Spiers" <ian@spiers.net>
 alias ian.spiers Ian Spiers <ian.spiers@zen.co.uk>
 alias ian ian.spiers
-fcc-save-hook ian.*spiers =relatives/ian.spiers
 
 alias barry.spiers "Barry Spiers" <barry@spiers.net>
 alias barry.spiers.work "Barry Spiers, at work" <flexdeck@intelog.com>
@@ -129,12 +123,10 @@ alias david.spiers "David Spiers" <daveyspiers@msn.com>
 
 #alias daniel.spiers "Daniel Spiers" <dspiers9@home.com>
 alias daniel.spiers "Daniel Spiers" <spiers900@rogers.com>
-#fcc-save-hook d.*spiers@.*\.ca =relatives/daniel.spiers
-
+#
 alias helen.oconnor.mayo "Helen O'Connor at work" <oconh@mayo.edu>
 alias helen.oconnor.juno "Helen O'Connor at home" <helenoc@juno.com>
 alias helen.oconnor helen.oconnor.juno
-fcc-save-hook helenoc@juno\.com =relatives/helen.oconnor
 alias michael.oconnor "Michael O'Connor" <mkoconnor@mayo.edu>
 alias niamh.oconnor "Niamh O'Connor" <sive99@yahoo.com>
 
@@ -149,7 +141,6 @@ alias pat.griffith Pat Griffith <griffith@iol.ie>
 alias dermot.rogers "Dermot Rogers" <dermotr@microsoft.com>
 
 alias siobhan.supple "Siobhan Supple" <supple@iol.ie>
-fcc-save-hook supple@iol\.ie =relatives/siobhan.supple
 
 alias christina.french "Christina French" <realslim_16@hotmail.com>
 alias mary.richardson Mary Richardson <MaryR@MS-society.ie>
@@ -159,7 +150,6 @@ alias relatives-in-Eire david.griffith, nessa.griffith, viv.mchugh, pat.griffith
 
 alias sheila.davies "Sheila Davies" <SDAVI@doh.health.nsw.gov.au>
 alias sheila.davies2 "Sheila Davies" <DaviesS@sesahs.nsw.GOV.AU>
-fcc-save-hook daviess@.*\.gov\.au =relatives/sheila.davies
 
 alias peter.leckstein "Peter Leckstein" <pml@nildram.co.uk>
 alias leonard.pearce "Leonard Pearce" <leanard@pearcel63.freeserve.co.uk>
@@ -190,11 +180,8 @@ alias OLD.john.moore John Moore <JFM@shrewsbury.org.uk>
 # alias matthew.clay.old2 Matt Clay <mclay@e-mango.com>
 # alias matthew.clay.old3 Matt Clay <matt@clay76.freeserve.co.uk>
 # alias matthew.clay Matt Clay <misterclay@ukonline.co.uk>
-fcc-save-hook mclay@e-mango.com =friends/home/matthew.clay
 alias matthew.clay "Matthew Clay" <mattclay@hotmail.com>
-fcc-save-hook (mister|matt).*clay =friends/home/matthew.clay
 
-fcc-save-hook rosiesd@hotmail =friends/home/rowan.dennis
 #alias rowan.dennis Rowan Dennis <rozdennis@hotmail.com>
 alias rowan.dennis Rowan Dennis <rosiesd@hotmail.com>
 
@@ -204,8 +191,6 @@ alias dan.davies.lineone "Daniel Davies" <dddavies@lineone.net>
 alias dan.davies.hotmail Dan Davies <dddavies@hotmail.com>
 alias dan.davies.jhu "Daniel Davies" <ddavie12@jhu.edu>
 alias dan.davies dan.davies.jhu
-fcc-save-hook dddavies =friends/home/dan.davies
-fcc-save-hook daviesdd =friends/home/dan.davies
 
 #alias julian.thompson "Julian Thompson" <julianthompson@doctors.net.com>
 alias julian.thompson "Julian Thompson" <julianthompson@doctors.org.uk>
@@ -241,20 +226,17 @@ alias annabel annabel.borthwick
 alias bels annabel
 
 alias matt.jones Matt Jones <mattojones@hotmail.com>
-fcc-save-hook mattojones =friends/NYO/matt.jones
 
 #alias heather.mcnaughton "Heather McNaughton" <heather.mcnaughton@merton.ox.ac.uk>
 
 alias OLD.natasha.foster "Natasha Foster" <73420.3642@compuserve.com>
 
-fcc-save-hook rosiebiss =friends/NYO/rosie.biss
 alias rosie.biss "Rosie Biss" <rosiebiss@yahoo.com>
 alias rosie rosie.biss
 
 alias malcolm.cross "Malcolm Cross" <malcolm_cross@hotmail.com>
 alias malcs malcolm.cross
 
-fcc-save-hook bourby =friends/Oxford/bourby.norman
 alias OLD.bourby.norman Bourby Norman <bourbynorman@hotmail.com>
 alias OLD.rachel.norman bourby.norman
 
@@ -276,90 +258,58 @@ alias NYO-party-friends matt.jones, rosie, sali, olly, bels, mary
 # {{{ (Ex-)Oxford friends
 
 alias OLD.nick.williams2 "Nick Williams" <nickhw@btinternet.com>
-fcc-save-hook nickhw@btinternet\.com =Oxford/friends/nick.williams
-fcc-save-hook nwilliams@compd\.com =Oxford/friends/nick.williams
 
-fcc-save-hook mcgrog.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/nick.mcgrogan
-fcc-save-hook nmcgrogan@iname\.com =Oxford/friends/nick.mcgrogan
-fcc-save-hook nicholas\.mcgrogan@oxford-biosignals.com =Oxford/friends/nick.mcgrogan
-fcc-save-hook nick_mcgrogan@yahoo.co.uk =Oxford/friends/nick.mcgrogan
 alias nick.mcgrogan.iname "Nick McGrogan" <nmcgrogan@iname.com>
 alias nick.mcgrogan.yahoo "Nick McGrogan" <nick_mcgrogan@yahoo.co.uk>
 alias nick.mcgrogan.bio "Nick McGrogan" <nicholas.mcgrogan@oxford-biosignals.com>
 alias nick.mcgrogan.work nick.mcgrogan.bio
 alias nick nick.mcgrogan.yahoo
 
-# fcc-save-hook d.*nicker.*@.*.ox(ford)?.ac.uk =security/darren.nickerson
-# fcc-save-hook darren.*@.*roam\.tpc\.int =security/darren.nickerson
-
+# # 
 #alias rachael.gulliver.old "Rachael Gulliver" <rachaelgulliver@hotmail.com>
 #alias rachael.gulliver "Rachael Gulliver" <rg232@cam.ac.uk>
-#fcc-save-hook rg232@.*\.cam\.ac\.uk =friends/Oxford/rachael.gulliver
-alias rachael.gulliver "Rachael Schofield (nee Gulliver)" <jandrschofield@hotmail.com>
+#alias rachael.gulliver "Rachael Schofield (nee Gulliver)" <jandrschofield@hotmail.com>
 alias rachael.schofield rachael.gulliver
-fcc-save-hook jandrschofield@hotmail.com =friends/Oxford/rachael.gulliver
 
 alias vicky.hamilton Victoria Hamilton <victoria.hamilton@stagetech.com>
-fcc-save-hook v.*hamilt =Oxford/friends/victoria.hamilton
 
 alias stacey.work Stacey Steele <Stacey.Steele@bowne.com>
 alias stacey.hotmail Stacey Steele <goldfish_74@hotmail.com>
 alias stacey stacey.hotmail
-fcc-save-hook stacey.*steele =friends/Oxford/stacey.steele
-fcc-save-hook goldfish_74 =friends/Oxford/stacey.steele
 
 #alias graeme.wearden Graeme Wearden <Graeme_Wearden@zdnet.com>
 alias graeme.wearden Graeme Wearden <graeme.wearden@zdnet.co.uk>
-fcc-save-hook g.*wearden =friends/Oxford/graeme.wearden
 
 alias tim.corbett-clark.thirdphase Timothy Corbett-Clark <tcorbettclark@thirdphase.com>
 alias tim.corbett-clark Timothy Corbett-Clark <tim@corbettclark.com>
 alias tcc tim.corbett-clark
-fcc-save-hook tcorbettclark@thirdphase.com =Oxford/friends/tim.corbett-clark
-fcc-save-hook corbettclark.com =Oxford/friends/tim.corbett-clark
 
 alias giles.harrison Giles Harrison <giles.harrison@bbc.co.uk>
 
 alias OLD.lindsey.napier "Lindsey Napier" <lnapier@hotmail.com>
 
-fcc-save-hook ben\.teasdale@bbc\.co\.uk =friends/Oxford/ben.teasdale
-fcc-save-hook ben@litpop\.com =friends/Oxford/ben.teasdale
-fcc-save-hook strangetimes@hotmail\.com =friends/Oxford/ben.teasdale
 alias ben.teasdale.bbc "Ben Teasdale" <ben.teasdale@bbc.co.uk>
 alias ben.teasdale "Ben Teasdale" <ben@litpop.com>
 
-fcc-save-hook ben@corelli\.new\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
-fcc-save-hook north.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/ben.north
-fcc-save-hook Ben_North@eur.3com.com =Oxford/friends/ben.north
-fcc-save-hook ben@redfrontdoor.org =friends/Oxford/ben.north
 alias ben.north.corelli "Ben North" <ben@corelli.new.ox.ac.uk>
 alias ben.north.3com "Ben North" <Ben_North@eur.3com.com>
 alias ben.north.home Ben North <ben@redfrontdoor.org>
 alias ben.north.work Ben North <northb@sig.com>
 alias ben ben.north.home
 
-fcc-save-hook dave@corelli\.new\.ox\.ac\.uk =friends/Oxford/dave.lindgren
-fcc-save-hook dave@kites.org.uk =friends/Oxford/dave.lindgren
 alias dave.lindgren "David Lindgren" <dave@kites.org.uk>
 alias dave dave.lindgren
 
-fcc-save-hook clading.*@.*\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
-fcc-save-hook chris.*@.*\.wadham\.ox(ford)?\.ac\.uk =Oxford/friends/chris.cladingboel
 alias chris.cladingboel "Chris Cladingboel" <christopher.cladingboel@wadham.ox.ac.uk>
 
-fcc-save-hook c.*hildrew =friends/Oxford/chris.hildrew
 alias chris.hildrew "Chris Hildrew" <chris_hildrew@yahoo.com>
 
-fcc-save-hook sherrat =friends/Oxford/joanna.sherratt
-fcc-save-hook mzytjls@nottingham\.ac\.uk =friends/Oxford/joanna.sherratt
 alias jo.sherratt.hotmail Joanna Sherratt <josherratt@hotmail.com>
 alias jo.sherratt.notts Joanna Sherratt <mzytjls@nottingham.ac.uk>
 alias jo.sherratt.bm "Joanna Sherratt" <jsherrat@ibl.bm>
 #alias jo.sherratt.work Joanna Sherratt <jsherrat@CENTRERE.COM>
 alias jo.sherratt jo.sherratt.hotmail
 
-fcc-save-hook e-c-orch\.demon\.co\.uk =Oxford/friends/ivan.rockey
-fcc-save-hook ivan.rockey@btinternet.com =Oxford/friends/ivan.rockey
 alias ivan.rockey Ivan Rockey <Ivan.Rockey@btinternet.com>
 alias ivan.rockey.ECO "FAO: Ivan Rockey" <mail@e-c-orch.demon.co.uk>
 alias ivan ivan.rockey
@@ -378,12 +328,6 @@ alias kath.noble "Kath Noble" <kath_noble@hotmail.com>
 #alias jessie.hadley.hotmail Jess Hadley <jessiekate@hotmail.com>
 alias jessie.hadley Jess Hadley <jess@heretics.ca>
 
-fcc-save-hook bearbolton@hotmail\.com =friends/Oxford/bear.bolton
-fcc-save-hook bear@corelli\.new\.ox\.ac\.uk =friends/Oxford/bear.bolton
-fcc-save-hook bolton@susq\.com =friends/Oxford/bear.bolton
-fcc-save-hook bolton@sig\.com =friends/Oxford/bear.bolton
-fcc-save-hook mbolton@iol.ie =friends/Oxford/bear.bolton
-fcc-save-hook bear@redfrontdoor.org =friends/Oxford/bear.bolton
 alias bear.home "Bear North" <bear@redfrontdoor.org>
 alias bear.corelli "Bear" <bear@corelli.new.ox.ac.uk>
 alias bear.hotmail "Bear" <bearbolton@hotmail.com>
@@ -400,18 +344,14 @@ alias OLD.kevin.barsby "Kevin Barsby" <kevin.barsby@hummingbird-it.co.uk>
 
 #alias tania.abrahams Tania Abrahams <taniaabrahams@hotmail.com>
 
-fcc-save-hook oli.*dickson =friends/Oxford/olimpia.dickson
 alias olimpia.lindgren Oli Dickson <olimpia.lindgren@sainsburys.co.uk>
 alias oli olimpia.lindgren
 
-fcc-save-hook peronel =friends/Oxford/peronel.smith
 alias peronel.craddock "Peronel Craddock" <peronel@mgp.ltd.uk>
 alias peronel.smith peronel.craddock
 alias peronel peronel.craddock
 alias mat.craddock Mat Craddock <matthew.craddock@uk.pwcglobal.com>
 
-fcc-save-hook n\.collins@mdx\.ac\.uk =friends/Oxford/nick.collins
-fcc-save-hook nicolocollinsi =friends/Oxford/nick.collins
 alias nick.collins Nick Collins <nick@sicklincoln.org>
 alias nick.collins.hotmail Nick Collins <nickcollins@hotmail.com>
 alias nick.collins.mac Nick Collins <nicolocollinsi@mac.com>
@@ -422,8 +362,6 @@ alias OLD.matthew.kirkwood Matthew Kirkwood <weejock@ferret.lmh.ox.ac.uk>
 alias OLD.weejock matthew.kirkwood
 alias OLD.jock matthew.kirkwood
 
-fcc-save-hook chris.*@ferret\.lmh\.ox(ford)?\.ac\.uk =Oxford/friends/chris.evans
-fcc-save-hook chris.*@scary\.beasts\.org =Oxford/friends/chris.evans
 alias OLD.chris.evans.ferret "Chris Evans" <chris@ferret.lmh.ox.ac.uk>
 alias OLD.chris.evans "Chris Evans" <chris@scary.beasts.org>
 
@@ -454,11 +392,8 @@ alias OLD.geraint "Geraint Jones" <geraint.jones@comlab.ox.ac.uk>
 alias OLD.david.gavaghan "David Gavaghan" <gavaghan@vax.ox.ac.uk>
 
 alias james.dore "James Dore, New College sysadmin" <james.dore@new.ox.ac.uk>
-fcc-save-hook j(ames\.)?dore =Oxford/college/james.dore
 
 alias OLD.chris.tromans Chris Tromans <chris@corelli.new.ox.ac.uk>
-fcc-save-hook c.*tromans =Oxford/college/chris.tromans
-fcc-save-hook chris@corelli.new.ox.ac.uk =Oxford/college/chris.tromans
 
 alias OLD.majordomo.ox Oxford Majordomo <majordomo@maillist.ox.ac.uk>
 alias OLD.ncsec "Barbara Vardag, New College Secretary" <barbara.vardag@new.ox.ac.uk>
@@ -479,12 +414,9 @@ alias OLD.darren.nickerson.balliol Darren Nickerson <darren.nickerson@balliol.ox
 alias OLD.ganesh.sittampalam Ganesh Sittampalam <ganesh.sittampalam@magd.ox.ac.uk>
 
 alias OLD.gervase.markham Gervase Markham <gerv@gerv.net>
-fcc-save-hook gerv\.net =Oxford/acquaintances/gervase.markham
-fcc-save-hook gervase.*markham =Oxford/acquaintances/gervase.markham
 
 #alias OLD-robin.stevens.astro Robin Stevens <rejs@astro.ox.ac.uk>
 
-fcc-save-hook mgm@eskimoman\.net =Oxford/acquaintances/mike.mason
 alias OLD.jamie.lokier Jamie Lokier <jamie@comlab.ox.ac.uk>
 
 # }}}
@@ -504,11 +436,7 @@ alias OLD.hostmaster "OUCS host administration" <hostmaster@ox.ac.uk>
 alias yan.fitterer.home Yan Fitterer <yan@fitterer.org>
 alias yan.fitterer.novell Yan Fitterer <yfitterer@novell.com>
 alias yan yan.fitterer.novell
-fcc-save-hook y\.fitterer@ram\.ac\.uk =friends/RAM/yan.fitterer
-fcc-save-hook yanfitterer@yahoo\.co\.uk =friends/RAM/yan.fitterer
 
-fcc-save-hook n\.byrne@ram\.ac\.uk =friends/RAM/nick.byrne
-fcc-save-hook kaptainbirdeye@hotmail\.com =friends/RAM/nick.byrne
 alias nick.byrne Nick Byrne <kaptainbirdeye@hotmail.com>
 alias paul.newbold Paul Newbold <Paul.Newbold@unilever.com>
 
@@ -518,19 +446,15 @@ alias kirsten.lestrange Kirsten LeStrange <kirstenlestrange@hotmail.com>
 alias kirsty kirsten.lestrange
 
 alias sarah.hammel Sarah Hammel <naomihammel@hotmail.com>
-fcc-save-hook naomi.*hammel =friends/RAM/sarah.hammel
 
 alias ailsa.murdoch Ailsa Murdoch <ailsa.murdoch@virgin.net>
 
 alias mat.heighway Mat Heighway <meticulous@freeuk.com>
-fcc-save-hook meticulous.*freeuk\.com =friends/RAM/mat.heighway
 
 alias conny.lindgren Conny Lindgren <connylindgren@yahoo.com>
-fcc-save-hook conny.*lindgren =friends/RAM/conny.lindgren
 
 alias rosie.banks "Rosie Banks" <rosiebanks@hotmail.com>
 
-fcc-save-hook ben.trigg =friends/RAM/ben.trigg
 
 #alias lindsay.wood.RAM Lindsay Wood <l.wood@ram.ac.uk>
 alias lindsay.wood.hotmail Lindsay Wood <lawood79@hotmail.com>
@@ -540,12 +464,8 @@ alias lindsay.wood.RH "Lindsay Wood, at work" <lindsayw@richardhouse.org.uk>
 alias linz.hotmail lindsay.wood.hotmail
 alias linz.both linz.hotmail, linz.RH
 alias linz linz.both
-fcc-save-hook l\.wood@ram\.ac\.uk =friends/RAM/lindsay.wood
-fcc-save-hook lawood =friends/RAM/lindsay.wood
-fcc-save-hook lindsayw =friends/RAM/lindsay.wood
 
 alias mike.francis Mike Francis <mjfrancis@onetel.net.uk>
-fcc-save-hook mjfrancis =friends/RAM/mike.francis
 
 alias roderick.chadwick Roderick Chadwick <RoderickJC@aol.com>
 
@@ -556,7 +476,6 @@ alias laura.stanford Laura Stanford <lollydrofnats@hotmail.com>
 
 alias matt.shlomowitz Matthew Shlomowitz <mshlom@hotmail.com>
 alias shlom matt.shlomowitz
-fcc-save-hook shlom@hotmail.com =friends/RAM/matthew.shlomowitz
 
 alias nikki.gleed "Nikki Gleed" <nikkigleed@yahoo.co.uk>
 
@@ -584,15 +503,12 @@ alias cello-teachers philip.sheppard, colin.carr, david.strange
 alias heather.badke Heather Badke <heatherbadke@hotmail.com>
 
 alias OLD.paul.skinner Paul Skinner <paulski@supanet.com>
-fcc-save-hook paulski.*supanet\.com =friends/Jersey/paul.skinner
 
 alias samy.bishai Samy Bishai <s_bishai@hotmail.com>
-fcc-save-hook s.*bishai =friends/musicians/samy.bishai
 
 alias claire.roff Claire Roff <claire_roff@hotmail.com>
 
 alias david.lasserson David Lasserson <davidlasserson@hotmail.com>
-fcc-save-hook dav.*lasserson =friends/musicians/david.lasserson
 
 alias nick.rippon "Nick Rippon" <nicholas.rippon@tinyworld.co.uk>
 
@@ -620,9 +536,7 @@ alias OLD.sarah.boxall "Sarah Boxall" <Sarahb@Keltie.com>
 alias OLD.martin.grainger Martin Grainger <martin@fanbelt.freeserve.co.uk>
 
 # alias emma.cullender Emma Cullender <redneluc@globalnet.co.uk>
-# fcc-save-hook redneluc =friends/misc/emma.cullender
-# fcc-save-hook le7053@qmw\.ac\.uk =friends/misc/emma.cullender
-
+# # 
 alias OLD.jessica.ong Jessica Ong <jessica.ong@freshfields.com>
 
 alias josie.lyons Josephine Lyons <josephine_lyons@hotmail.com>
@@ -631,13 +545,11 @@ alias josie.lyons Josephine Lyons <josephine_lyons@hotmail.com>
 # {{{ Foreign friends
 
 alias miriam Miriam <Diamond5475@aol.com>
-fcc-save-hook Diamond5475@aol\.com =friends/misc/miriam
 
 # }}}
 # {{{ Jersey friends
 
 alias OLD.ron.hickman Ron Hickman <tekron@ic24.net>
-fcc-save-hook tekron@ic24\.net =friends/Jersey/ron.hickman
 
 alias OLD.sonia "Sonia (JSO)" <pg004593@sghms.ac.uk>
 
@@ -645,7 +557,6 @@ alias OLD.sonia "Sonia (JSO)" <pg004593@sghms.ac.uk>
 # {{{ Endellion friends
 
 alias matthew.pay Matthew Pay <matthew.pay@videonetworks.com>
-fcc-save-hook matt.*pay.*videonetworks.com =friends/Endellion/matthew.pay
 
 alias joanna.warden.hotmail Jo Warden <joannawarden@hotmail.com>
 alias joanna.warden.aol Jo Warden <wardenjoanna1809@aol.com>
@@ -702,12 +613,13 @@ alias mark.robinson "Mark Robinson" <kramrob@hotmail.com> # Percussion, Linz's M
 # shulah oliver <shulaho@hotmail.com> # violin
 
 alias meg.hamilton Meg Hamilton <megrosaleen@hotmail.com>
+alias triona.milne Triona Milne <treemilne@hotmail.com>
 
 alias tom.guthrie <tom@thomasguthrie.com>
 # These good people sponsored me or made a pledge
 alias Endellion-marathon-sponsors-2004 <stewart@mcilwham37.fsnet.co.uk>, tom.guthrie, <hilary.bentley@gartmore.com>, <colin.fleming@creditlyonnais.co.uk>, Dominic <devers@nspcc.org.uk>, <peter.howell@write-away.org>, tom.hickox, matthew.pay, <coghlanangie@aol.com>, <thorsten@terweiden.de>, <Jane.Dickinson@ncl.ac.uk>, oliver.wilson, annabel.borthwick, <jemima.peterken@virgin.net>, <jjp@ipswich.suffolk.sch.uk>, <harrymooregwyn@aol.com>, clare.raybould, ben.rogerson, michael.borthwick, <rjmbutler@aol.com>, <elaineft@mac.com>, myrtledene, <susanna.twiddy@zoo.ox.ac.uk>
 
-alias Endellion-party-friends clare.raybould, ben.rogerson, tom.hickox, matthew.pay, joanna.warden, anne-marie.cullum, claire.gibb, meg.hamilton
+alias Endellion-party-friends clare.raybould, ben.rogerson, tom.hickox, matthew.pay, joanna.warden, anne-marie.cullum, claire.gibb, meg.hamilton, triona.milne
 
 # Friends from Easter Festival 2005
 alias Endellion-marathon-2005 tom.guthrie, tom.hickox, matthew.pay, annabel.borthwick, <jemima.peterken@virgin.net>, <harrymooregwyn@aol.com>, clare.raybould, michael.borthwick, <ian.bysh@advantage-business.co.uk>, <mike@theeurekafactor.com>, joanna.warden, inga.taylor, anne-marie.cullum, mary.owen, claire.gibb, nancy.buchanan, kirsten.salter, katherine.barnecutt, alice.neary, linden.guest, mark.robinson, mary.owen
@@ -717,14 +629,10 @@ alias Endellion-marathon-2005 tom.guthrie, tom.hickox, matthew.pay, annabel.bort
 
 alias michael.borthwick.btopenworld "Michael Borthwick" <maborth@btopenworld.com>
 alias michael.borthwick "Michael Borthwick" <m@borthwick.org>
-
 alias john.hargreaves "John Hargreaves" <musicmaestros@netscapeonline.co.uk>
-
 alias adrian.warrick Adrian Warrick <awarrick@argonet.co.uk>
-fcc-save-hook awarrick.*argonet\.co\.uk =friends/musicians/adrian.warrick
-
 alias gareth.jones Gareth Jones <jones@garethd.freeserve.co.uk>
-fcc-save-hook jones.*garethd =friends/musicians/gareth.jones
+alias luis.leguia Luis Leguia <luisleguia@hotmail.com>
 
 # }}}
 # {{{ Running friends/acquaintances
@@ -733,7 +641,6 @@ alias OLD.marc.allison "Marc Allison" <Marc_Allison@standardandpoors.com>
 alias OLD.chris.williamson "Chris Williamson" <C.M.Williamson@btinternet.com>
 alias OLD.cecilia.desuiza "Cecilia deSuiza" <Cecilia.deSuiza@ubs.com>
 
-fcc-save-hook (marc.*allison|c.*williamson|desuiza) =exercise/reebok.sports.club
 
 # Nick Blackwell
 # Pete McHugh
@@ -973,7 +880,6 @@ alias dan.beimborn Dan Beimborn <dan@beimborn.com>
 #alias dan.beimborn.lehman Dan Beimborn <dbeimbor@lehman.com>
 alias dan.beimborn.celtic Dan Beimborn <Dan@Celticmusic.com>
 alias dan.beimborn.citadel Dan Beimborn <Dan.Beimborn@citadelgroup.com>
-fcc-save-hook 'beimborn|celticmusic|mandolinarchive' =computer-work/dan.beimborn
 
 alias james.hickie.lehman James Hickie <jhickie@lehman.com>
 alias carl.marino Carl Marino <cmarino@group14.co.uk>
@@ -1031,7 +937,6 @@ alias OLD.tina.patel Tina Patel - OG <tina.patel@orangegenie.com>
 
 alias jeff.harrod Jeff Harrod <jharrod@astoncarter.co.uk>
 alias jeff.harrod.home Jeff Harrod <jeff_harrod2002@yahoo.co.uk>
-fcc-save-hook jharrod =computer-work/jeff.harrod
 alias jason.yank Jason Yank <jyank@astoncarter.co.uk>
 alias nina.loi Nina Loi <nloi@astoncarter.co.uk>
 
@@ -1047,7 +952,6 @@ alias joanna.cohen Joanna Cohen <j.cohen@huxley.com>
 
 # {{{ cmed
 
-fcc-save-hook ghughes@cmedltd.com =computer-work/gareth.hughes
 alias OLD.gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
 
 # }}}
@@ -1059,21 +963,15 @@ alias OLD.gareth.hughes Gareth Hughes <ghughes@cmedltd.com>
 alias OLD.christof.damian "Christof Damian" <christof@damian.net>
 alias OLD.cdamian christof.damian
 alias OLD.xtof christof.damian
-fcc-save-hook christof@mediaconsult\.com =computer-work/christof.damian
-fcc-save-hook cdamian@guideguide\.com =computer-work/christof.damian
 
 # alias thomas.damian "Thomas Damian" <tdamian@guideguide.com>
 # alias tdamian thomas.damian
-# fcc-save-hook tdamian@guideguide\.com =computer-work/thomas.damian
-# fcc-save-hook thomas@ggid\.com =computer-work/thomas.damian
-
+# # 
 # alias mikel.hecken "Mikel Hecken" <mhecken@guideguide.com>
 # alias mhecken mikel.hecken
 
 alias andy.mcfarland "Andy McFarland" <andy@slab.org>
 alias andym andy.mcfarland
-fcc-save-hook amcfarland@guideguide\.com =computer-work/andy.mcfarland
-fcc-save-hook andy@slab\.org =computer-work/andy.mcfarland
 
 alias mark.hulme-jones.markhj "Mark Hulme-Jones" <mark@markhj.com>
 alias mark.hulme-jones.lehman "Mark Hulme-Jones" <mark.hulmejones@lehman.com>
@@ -1083,14 +981,9 @@ alias mjones mark.hulme-jones
 #alias ture Mark Hulme-Jones <mjones@ture.org>
 alias ture mark.hulme-jones
 alias recoil mark.hulme-jones
-fcc-save-hook mjones@guideguide\.com =computer-work/mark.hulme-jones
-fcc-save-hook @ture\.org =computer-work/mark.hulme-jones
-fcc-save-hook ture@.*plig\.net =computer-work/mark.hulme-jones
 
 alias rob.partington Rob Partington <rjp@plig.net>
 alias basho rob.partington
-fcc-save-hook rjp@.*plig\.net =hosting/plig.net
-fcc-save-hook rjp@browser\.org =hosting/plig.net
 #=computer-work/rob.partington
 
 alias OLD.nathan.carr Nathan Carr <nathan@nowt.net>
@@ -1100,53 +993,40 @@ alias OLD.nomad nathan.carr
 # alias luke.robinson Luke Robinson <lrobinson@guideguide.com>
 # alias luke luke.robinson
 # alias lrobinson luke.robinson
-# fcc-save-hook (lrobinson|luke)@guideguide\.com =computer-work/luke.robinson
-
+# 
 # alias rob.ryan Rob Ryan <rryan@guideguide.com>
 # alias rryan rob.ryan
 # alias rollmop rob.ryan
-# fcc-save-hook rryan@guideguide\.com =computer-work/robert.ryan
-
+# 
 # alias christian.allen Christian Allen <callen@guideguide.com>
 # alias callen christian.allen
 # alias pershino christian.allen
-# fcc-save-hook callen@guideguide\.com =computer-work/christian.allen
-
-# fcc-save-hook mcopping@guideguide\.com =computer-work/matt.copping
-alias OLD.matt.copping Matt Copping <matt@frontgarden.net>
+# 
+# alias OLD.matt.copping Matt Copping <matt@frontgarden.net>
 alias OLD.mcopping matt.copping
 
 # alias alix.poscharsky Alix Poscharsky <alix@guideguide.com>
 # alias youssou alix.poscharsky
-# fcc-save-hook (alix|aposcharsky)@guideguide\.com =computer-work/alix.poscharsky
-
+# 
 # alias rob.andrews Rob Andrews <randrews@guideguide.com>
 # alias nine rob.andrews
-# fcc-save-hook randrews@guideguide\.com =computer-work/rob.andrews
-
+# 
 # alias astrid.otoole "Astrid O\'Toole" <aotoole@guideguide.com>
-# fcc-save-hook aotoole@guideguide\.com =computer-work/astrid.otoole
-
+# 
 # alias sven.hessler "Sven Hessler" <shessler@guideguide.com>
-# fcc-save-hook shessler@guideguide\.com =computer-work/sven.hessler
-
+# 
 alias ben.simpson "Ben Simpson" <ben@hy-street.net>
-fcc-save-hook ben@hy-street\.net =computer-work/ben.simpson
 
 alias jasper.mccrea.gmail Jasper McCrea <jaspermccrea@gmail.com>
 alias jasper.mccrea "Jasper McCrea" <j@mccrea.demon.co.uk>
-fcc-save-hook mccrea =computer-work/jasper.mccrea
-fcc-save-hook jasper.*spamjab\.com =computer-work/jasper.mccrea
 
 alias OLD.anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 
 # alias anthony.gardner Anthony Gardner <agardner@guideguide.com>
 # alias agardner anthony.gardner
-# fcc-save-hook agardner@guideguide\.com =computer-work/anthony.gardner
-
+# 
 # alias roland.gockel Roland Gockel <rgockel@guideguide.com>
-# fcc-save-hook rgockel@guideguide\.com =computer-work/roland.gockel
-
+# 
 # }}}
 # {{{ other
 
@@ -1166,23 +1046,17 @@ alias OLD.anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 # alias gg-uk "guideguide UK list" <gg-uk@guideguide.com>
 # #send-hook ".*@guideguide\.com" 'my_hdr From: "Adam Spiers" <aspiers@guideguide.com>'
 # #send-hook ".*@guideguide\.com" 'my_hdr Reply-To: "Adam Spiers" <aspiers@guideguide.com>'
-# fcc-save-hook gg-uk@guideguide\.com =computer-work/gg-uk
-
+# 
 # alias codereview guideguide codereview list <codereview@guideguide.com>
 # alias translations "ggdev translations" <translations@guideguide.com>
 
-# fcc-save-hook ggdev@guideguide\.com =computer-work/ggdev
-# fcc-save-hook codereview@guideguide\.com =computer-work/codereview
-
+# # 
 # }}}
 
 # }}}
 # {{{ W3W
 
-# fcc-save-hook rian@w3w\.net =computer-work/rian.kruger
-# fcc-save-hook .*@.*w3w\.net =computer-work/W3W
-# fcc-save-hook powerhost\.co\.uk =computer-work/W3W
-# alias adam.bailey "Adam Bailey" <post@w3w.net>
+# # # # alias adam.bailey "Adam Bailey" <post@w3w.net>
 # alias paul.powerhost "Paul at PowerHost" <admin@powerhost.co.uk>
 
 # }}}
@@ -1204,23 +1078,18 @@ alias mjd Mark-Jason Dominus <mjd@plover.com>
 alias dave.cross Dave Cross <dave@dave.org.uk>
 
 alias simon.cozens Simon Cozens <simon@simon-cozens.org>
-fcc-save-hook simon@cozens\.net =Perl/simon.cozens
-fcc-save-hook .*@simon-cozens\.org =Perl/simon.cozens
 
 alias japhy "Jeff Pinyan (japhy)" <japhy@pobox.com>
 
 alias piers.cawley Piers Cawley <pdcawley@bofh.org.uk>
-fcc-save-hook pdcawley =Perl/piers.cawley
 
 alias fwp "Fun With Perl" <fwp@perl.org>
-fcc-save-hook fwp.*perl\.org =lists/fwp
 subscribe fwp
 mailboxes =inboxes/fwp
 send-hook "fwp" 'my_hdr From: "Adam Spiers" <fwp@adamspiers.org>'
 send-hook "fwp" 'my_hdr Reply-To: "Adam Spiers" <fwp@adamspiers.org>'
 
 alias perl-golf "Perl golf" <golf@perl.org>
-fcc-save-hook "golf.*perl.org" =lists/perl-golf
 subscribe golf
 mailboxes =inboxes/perl-golf
 send-hook "golf.*perl.org" 'my_hdr From: "Adam Spiers" <perl-golf@adamspiers.org>'
@@ -1247,7 +1116,6 @@ folder-hook =(inboxes|lists)/void             source ~/.mutt/folders/void
 #mailboxes =inboxes/void
 subscribe void
 alias void "(void)" <void@slab.org>
-fcc-save-hook void@slab\.org =lists/void
 
 alias alex.mclean "Alex McLean" <alex@slab.org>
 alias alex.mclean.lurk Alex McLean <alex@lurk.org>
@@ -1257,7 +1125,6 @@ alias alex.mclean.lurk Alex McLean <alex@lurk.org>
 # {{{ Oxford.pm
 
 #mailboxes =inboxes/oxford-pm
-fcc-save-hook oxford-pm-list@happyfunball\.pm\.org =lists/oxford-pm
 subscribe oxford-pm
 
 # }}}
@@ -1266,7 +1133,6 @@ subscribe oxford-pm
 subscribe london_pm london-list london-pm london.pm
 #mailboxes =inboxes/london.pm
 #alias london_pm "London Perl M[ou]ngers" <london-list@happyfunball.pm.org>
-fcc-save-hook london.*\.pm\.org =lists/london.pm
 send-hook "london.pm" 'my_hdr From: "Adam Spiers" <london.pm@adamspiers.org>'
 send-hook "london.pm" 'my_hdr Reply-To: "Adam Spiers" <london.pm@adamspiers.org>'
 
@@ -1278,7 +1144,6 @@ send-hook "london.pm" 'my_hdr Reply-To: "Adam Spiers" <london.pm@adamspiers.org>
 subscribe linux-security
 mailboxes =inboxes/linux-security
 alias linux-security "Linux Security mailing list" <linux-security@redhat.com>
-fcc-save-hook linux-security =lists/linux-security
 
 subscribe security-audit
 mailboxes =inboxes/security-audit
@@ -1292,9 +1157,7 @@ mailboxes =inboxes/unix-admin
 subscribe bugtraq
 mailboxes =inboxes/bugtraq
 alias bugtraq "Bugtraq, UNIX security mailing list" <bugtraq@securityfocus.com>
-fcc-save-hook bugtraq.*@.*securityfocus\.com =lists/bugtraq
 
-fcc-save-hook spaf.*@.*\.purdue\.edu =security/spaf
 
 # }}}
 # {{{ Software
@@ -1314,14 +1177,11 @@ mailboxes =inboxes/alsa-user
 mailboxes =inboxes/alsa-devel
 alias alsa-devel "ALSA development mailing list" <alsa-devel@alsa-project.org>
 alias alsa-user "ALSA users mailing list" <alsa-user@alsa-project.org>
-fcc-save-hook alsa-devel.*@.*alsa-project\.org =lists/alsa-devel
-fcc-save-hook alsa-user.*@.*alsa-project\.org =lists/alsa-user
 
 # }}}
 # {{{ apmd
 
 alias apmd-list "apmd mailing list" <apmd-list@worldvisions.ca>
-fcc-save-hook apmd =lists/apmd-list
 subscribe apmd-list
 #mailboxes =inboxes/apmd-list
 
@@ -1332,7 +1192,6 @@ folder-hook =inboxes/arch-                    source ~/.mutt/mailing-list
 
 #alias arch-users.old "arch-users mailing list" <arch-users@regexps.com>
 alias arch-users "arch users mailing list" <arch-users@lists.fifthvision.net>
-fcc-save-hook arch-users =lists/arch-users
 subscribe arch-users gnu-arch-users
 mailboxes =inboxes/arch-users
 send-hook "arch-users" 'my_hdr From: "Adam Spiers" <arch-users@adamspiers.org>'
@@ -1340,14 +1199,12 @@ send-hook "arch-users" 'my_hdr Reply-To: "Adam Spiers" <arch-users@adamspiers.or
 send-hook "arch-users" 'my_hdr Sender: "Adam Spiers" <arch-users@adamspiers.org>'
 
 alias arch-dev "arch-dev mailing list" <arch-dev@regexps.com>
-fcc-save-hook arch-dev =lists/arch-dev
 subscribe arch-dev
 mailboxes =inboxes/arch-dev
 send-hook "arch-dev" 'my_hdr From: "Adam Spiers" <arch-dev@adamspiers.org>'
 send-hook "arch-dev" 'my_hdr Reply-To: "Adam Spiers" <arch-dev@adamspiers.org>'
 
 alias bug-arch "bug-arch mailing list" <bug-arch@regexps.com>
-fcc-save-hook bug-arch =lists/bug-arch
 subscribe bug-arch
 mailboxes =inboxes/bug-arch
 send-hook "bug-arch" 'my_hdr From: "Adam Spiers" <bug-arch@adamspiers.org>'
@@ -1359,7 +1216,6 @@ send-hook "bug-arch" 'my_hdr Reply-To: "Adam Spiers" <bug-arch@adamspiers.org>'
 subscribe bash
 #mailboxes =inboxes/bashprompt
 alias bashprompt "bashprompt mailing list" <bash@current.nu>
-fcc-save-hook bash@current\.nu =lists/bashprompt
 #send-hook "bash@current\.nu" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 
 # }}}
@@ -1368,7 +1224,6 @@ fcc-save-hook bash@current\.nu =lists/bashprompt
 subscribe buggies 
 mailboxes =inboxes/buggies
 alias buggies "landfill bugzilla testing" <buggies@landfill.tequilarista.org>
-fcc-save-hook buggies@landfill\.tequilarista\.org =lists/buggies
 
 # }}}
 # {{{ buildkernel
@@ -1376,13 +1231,11 @@ fcc-save-hook buggies@landfill\.tequilarista\.org =lists/buggies
 alias william.stearns "William Stearns" <wstearns@pobox.com>
 alias buildkernel william.stearns
 alias bill.stearns william.stearns
-fcc-save-hook wstearns@pobox\.com =software/buildkernel
 
 # }}}
 # {{{ CRM114
 
 alias crm114-general "CRM114 general discussion" <crm114-general@lists.sourceforge.net>
-fcc-save-hook "crm114-general.*lists.sourceforge.net" =lists/crm114-general
 subscribe crm114-general@lists.sourceforge.net
 #mailboxes =inboxes/crm114-general
 send-hook "crm114-general.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <crm114-general@adamspiers.org>'
@@ -1390,7 +1243,6 @@ send-hook "crm114-general.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers
 folder-hook =(inboxes|lists)/crm114-general source ~/.mutt/mailing-list
 
 alias crm114-announce "CRM114 announcements" <crm114-announce@lists.sourceforge.net>
-fcc-save-hook "crm114-announce.*lists.sourceforge.net" =lists/crm114-announce
 subscribe crm114-announce@lists.sourceforge.net
 #mailboxes =inboxes/crm114-announce
 send-hook "crm114-announce.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <crm114-announce@adamspiers.org>'
@@ -1401,7 +1253,6 @@ folder-hook =(inboxes|lists)/crm114-announce source ~/.mutt/mailing-list
 # {{{ diald
 
 alias diald "linux-diald mailing list" <linux-diald@vger.rutgers.edu>
-fcc-save-hook linux-diald =lists/linux-diald
 subscribe linux-diald
 #mailboxes =inboxes/linux-diald
 
@@ -1411,7 +1262,6 @@ alias mike.jagdis "Mike Jagdis (diald maintainer)" <jaggy@purplet.demon.co.uk>
 # {{{ easytag
 
 alias easytag "EasyTAG mailing list" <easytag-mailing@lists.sourceforge.net>
-fcc-save-hook "easytag.*lists.sourceforge.net" =lists/easytag
 subscribe easytag
 #mailboxes =inboxes/easytag
 send-hook "easytag.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <easytag@adamspiers.org>'
@@ -1421,7 +1271,6 @@ send-hook "easytag.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <easy
 # {{{ eci
 
 alias eci "ECI ADSL mailing list" <eci@ml.free.fr>
-fcc-save-hook "eci.*ml.free.fr" =lists/eci
 subscribe eci
 #mailboxes =inboxes/eci
 send-hook "eci.*ml.free.fr" 'my_hdr From: "Adam Spiers" <eci@adamspiers.org>'
@@ -1431,7 +1280,6 @@ send-hook "eci.*ml.free.fr" 'my_hdr Reply-To: "Adam Spiers" <eci@adamspiers.org>
 # {{{ emacs-wiki-discuss (muse, planner, etc.)
 
 alias emacs-wiki-discuss "emacs-wiki-discuss" <emacs-wiki-discuss@nongnu.org>
-fcc-save-hook "emacs-wiki-discuss.*nongnu.org" =lists/emacs-wiki-discuss
 subscribe emacs-wiki-discuss@nongnu.org
 #mailboxes =inboxes/emacs-wiki-discuss
 send-hook "emacs-wiki-discuss.*nongnu.org" 'my_hdr From: "Adam Spiers" <emacs-wiki-discuss@adamspiers.org>'
@@ -1448,7 +1296,6 @@ alias folding-mode.maintainer "Anders Lindgren, maintainer of folding.el" <ander
 
 subscribe fetchmail-friends
 mailboxes =inboxes/fetchmail
-fcc-save-hook fetchmail-friends =lists/fetchmail-friends
 alias fetchmail-friends "fetchmail-friends mailing list" <fetchmail-friends@lists.ccil.org>
 
 # }}}
@@ -1457,8 +1304,6 @@ alias fetchmail-friends "fetchmail-friends mailing list" <fetchmail-friends@list
 subscribe galeon-user galeon-devel
 #mailboxes =inboxes/galeon-user
 #mailboxes =inboxes/galeon-devel
-fcc-save-hook galeon-user.*lists\.sourceforge\.net =lists/galeon-user
-fcc-save-hook galeon-devel.*lists\.sourceforge\.net =lists/galeon-devel
 alias galeon-user  "galeon user list"  <galeon-user@lists.sourceforge.net>
 alias galeon-devel "galeon devel list" <galeon-devel@lists.sourceforge.net>
 
@@ -1467,7 +1312,6 @@ alias galeon-devel "galeon devel list" <galeon-devel@lists.sourceforge.net>
 
 subscribe gconf-list
 #mailboxes =inboxes/gconf-list
-fcc-save-hook gconf-list.*gnome\.org =lists/gconf-list
 alias gconf-list  "galeon user list"  <gconf-list@gnome.org>
 
 # }}}
@@ -1476,24 +1320,19 @@ alias gconf-list  "galeon user list"  <gconf-list@gnome.org>
 subscribe gimp-perl
 mailboxes =inboxes/gimp-perl
 alias gimp-perl "gimp-perl mailing list" <gimp-perl@lists.netcentral.net>
-fcc-save-hook gimp-perl.*lists\.netcentral\.net =lists/gimp-perl
 
 # }}}
 # {{{ gnokii
 
 subscribe gnokii
 alias gnokii "gnokii mailing list" <gnokii@net.lut.ac.uk>
-fcc-save-hook gnokii =lists/gnokii
 
-fcc-save-hook chris.*kemp =lists/gnokii
-fcc-save-hook ck231@.*cam\.ac\.uk =lists/gnokii
 alias chris.kemp "Christopher Kemp" <ck231@cam.ac.uk>
 
 # }}}
 # {{{ gnucash
 
 alias gnucash-user "gnucash users lists" <gnucash-user@lists.gnucash.org>
-fcc-save-hook "gnucash-user.*lists.gnucash.org" =lists/gnucash-user
 subscribe gnucash-user
 #mailboxes =inboxes/gnucash-user
 send-hook "gnucash-user.*lists.gnucash.org" 'my_hdr From: "Adam Spiers" <gnucash@adamspiers.org>'
@@ -1504,7 +1343,6 @@ send-hook "gnucash-user.*lists.gnucash.org" 'my_hdr Reply-To: "Adam Spiers" <gnu
 
 subscribe gnu-screen
 mailboxes =inboxes/gnu-screen
-fcc-save-hook gnu-screen =lists/gnu-screen
 alias gnu-screen gnu-screen list <gnu-screen@yahoogroups.com>
 send-hook "gnu-screen.*@yahoogroups\.com" 'my_hdr From: "Adam Spiers" <gnu-screen@adamspiers.org>'
 send-hook "gnu-screen.*@yahoogroups\.com" 'my_hdr Reply-To: "Adam Spiers" <gnu-screen@adamspiers.org>'
@@ -1513,11 +1351,9 @@ send-hook "gnu-screen.*@yahoogroups\.com" 'my_hdr Reply-To: "Adam Spiers" <gnu-s
 # {{{ gphoto
 
 alias gphoto "gphoto developers\' list" <gphoto@gphoto.net>
-fcc-save-hook gphoto@gphoto.net =lists/gphoto
 subscribe gphoto
 
 alias gphoto-devel "gphoto developers\' list" <gphoto-devel@gphoto.net>
-fcc-save-hook gphoto-devel =lists/gphoto-devel
 subscribe gphoto-devel
 
 # }}}
@@ -1525,7 +1361,6 @@ subscribe gphoto-devel
 
 subscribe gqview-users
 mailboxes =inboxes/gqview-users
-fcc-save-hook gqview-users.*lists\.sourceforge\.net =lists/gqview-users
 alias gqview-users  "gqview user list"  <gqview-users@lists.sourceforge.net>
 
 # }}}
@@ -1539,7 +1374,6 @@ alias htmlpp "Nicolas Thiery, author of htmlpp" <Nicolas.Thiery@ens.fr>
 subscribe infobot
 #mailboxes =inboxes/infobot
 alias infobot "Infobot mailing list" <infobot-dev@cs.cmu.edu>
-fcc-save-hook infobot =lists/infobot
 
 alias oznoid "Oznoid (Kevin Lenzo)" <lenzo@cs.cmu.edu>
 
@@ -1552,7 +1386,6 @@ alias junkbuster.blocklist "Stefan Waldherr" <stefan@waldherr.org>
 # {{{ Linux IEEE1394 (FireWire)
 
 alias linux1394-user "Linux IEEE1394 users mailing list" <linux1394-user@lists.sourceforge.net>
-fcc-save-hook "linux1394-user.*lists.sourceforge.net" =lists/linux1394-user
 subscribe linux1394-user
 #mailboxes =inboxes/linux1394-user
 send-hook "linux1394-user.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <linux1394-user@adamspiers.org>'
@@ -1587,7 +1420,6 @@ mailboxes =inboxes/mozilla-announce
 # {{{ mutt
 
 alias mutt-dev "mutt developers lists" <mutt-dev@mutt.org>
-fcc-save-hook "mutt-dev.*mutt.org" =lists/mutt-dev
 subscribe mutt-dev@mutt.org
 #mailboxes =inboxes/mutt-dev
 send-hook "mutt-dev.*mutt.org" 'my_hdr From: "Adam Spiers" <mutt-dev@adamspiers.org>'
@@ -1603,7 +1435,6 @@ alias netatalk "netatalk mailing list" <netatalk@umich.edu>
 # {{{ offlineimap
 
 alias offlineimap "offlineimap mailing list" <offlineimap@complete.org>
-fcc-save-hook "offlineimap.*complete.org" =lists/offlineimap
 subscribe offlineimap@complete.org
 #mailboxes =inboxes/offlineimap
 send-hook "offlineimap.*complete.org" 'my_hdr From: "Adam Spiers" <offlineimap@adamspiers.org>'
@@ -1616,14 +1447,12 @@ folder-hook =(inboxes|lists)/offlineimap source ~/.mutt/mailing-list
 folder-hook =(inboxes|lists)/openzaurus- source ~/.mutt/folders/openzaurus
 
 alias openzaurus-users "OpenZaurus users mailing list" <openzaurus-users@lists.sourceforge.net>
-fcc-save-hook "openzaurus-users.*lists.sourceforge.net" =lists/openzaurus-users
 subscribe openzaurus-users
 #mailboxes =inboxes/openzaurus-users
 send-hook "openzaurus-users.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <openzaurus-users@adamspiers.org>'
 send-hook "openzaurus-users.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spiers" <openzaurus-users@adamspiers.org>'
 
 alias openzaurus-devel "OpenZaurus developers mailing list" <openzaurus-devel@lists.sourceforge.net>
-fcc-save-hook "openzaurus-devel.*lists.sourceforge.net" =lists/openzaurus-devel
 subscribe openzaurus-devel
 #mailboxes =inboxes/openzaurus-devel
 send-hook "openzaurus-devel.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <openzaurus-devel@adamspiers.org>'
@@ -1635,7 +1464,6 @@ send-hook "openzaurus-devel.*lists.sourceforge.net" 'my_hdr Reply-To: "Adam Spie
 # {{{ plucker
 
 alias plucker-dev "Plucker development" <plucker-dev@rubberchicken.org>
-fcc-save-hook plucker-dev =lists/plucker-dev
 subscribe plucker-dev
 #mailboxes =inboxes/plucker-dev
 
@@ -1643,7 +1471,6 @@ subscribe plucker-dev
 # {{{ sitescooper
 
 alias sitescooper-talk sitescooper-talk@lists.sourceforge.net
-fcc-save-hook sitescooper-talk =lists/sitescooper-talk
 subscribe sitescooper-talk
 #mailboxes =inboxes/sitescooper
 
@@ -1653,7 +1480,6 @@ subscribe sitescooper-talk
 subscribe gnome-pilot-list
 mailboxes =inboxes/gnome-pilot-list
 alias gnome-pilot "gnome-pilot mailing list" <gnome-pilot-list@gnome.org>
-fcc-save-hook gnome-pilot.*@gnome\.org =lists/gnome-pilot
 
 # }}}
 # {{{ DateBk4
@@ -1673,11 +1499,9 @@ alias david.hinds "David Hinds (PCMCIA author)" <dhinds@zen.stanford.edu>
 # {{{ Perl
 
 alias modules "modules@perl.org" <modules@perl.org>
-fcc-save-hook upload.*@.*speed-link\.de =Perl/PAUSE
 
 subscribe p5p
 mailboxes =inboxes/p5p
-fcc-save-hook perl5-porters.*perl.org =p5p
 
 alias Lingua::EN::Squeeze "Jari Aalto" <jari.aalto@poboxes.com>
 
@@ -1691,8 +1515,6 @@ subscribe perlunit-users perlunit-devel
 # mailboxes =inboxes/perlunit-devel
 alias perlunit-devel "PerlUnit development list" <perlunit-devel@lists.sourceforge.net>
 alias perlunit-users "PerlUnit users list" <perlunit-users@lists.sourceforge.net>
-fcc-save-hook perlunit-devel@.*sourceforge\.net =lists/perlunit-devel
-fcc-save-hook perlunit-users@.*sourceforge\.net =lists/perlunit-users
 
 # }}}
 # {{{ PJB
@@ -1714,13 +1536,11 @@ alias pjbox.developers PJB developers <pjbox@phobos.fs.tum.de>
 # alias dcl "Daniel C. L'Hommedieu (reqNG developer)" <dcl@explore.com>
 
 subscribe rt-users
-fcc-save-hook rt-users =lists/rt-users
 alias rt-users rt-users list <rt-users@lists.fsck.com>
 send-hook "rt-users.*@lists.fsck.com" 'my_hdr From: "Adam Spiers" <rt@adamspiers.org>'
 send-hook "rt-users.*@lists.fsck.com" 'my_hdr Reply-To: "Adam Spiers" <rt@adamspiers.org>'
 
 subscribe rt-devel
-fcc-save-hook rt-devel =lists/rt-devel
 alias rt-devel rt-devel list <rt-devel@lists.fsck.com>
 send-hook "rt-devel.*@lists.fsck.com" 'my_hdr From: "Adam Spiers" <rt@adamspiers.org>'
 send-hook "rt-devel.*@lists.fsck.com" 'my_hdr Reply-To: "Adam Spiers" <rt@adamspiers.org>'
@@ -1730,7 +1550,6 @@ send-hook "rt-devel.*@lists.fsck.com" 'my_hdr Reply-To: "Adam Spiers" <rt@adamsp
 
 folder-hook =(inboxes|lists)/rpm-list         source ~/.mutt/mailing-list
 alias rpm-list "rpm mailing list" <rpm-list@redhat.com>
-fcc-save-hook "rpm-list.*redhat.com" =lists/rpm-list
 subscribe rpm-list
 #mailboxes =inboxes/rpm-list
 
@@ -1739,7 +1558,6 @@ subscribe rpm-list
 
 #mailboxes =inboxes/rubyphoto
 alias rubyphoto "rubyphoto mailing list" <rubyphoto@plig.net>
-fcc-save-hook "rubyphoto.*plig.net" =lists/rubyphoto
 subscribe rubyphoto
 
 # }}}
@@ -1749,13 +1567,11 @@ subscribe sawmill
 #mailboxes =inboxes/sawfish
 alias sawfish "sawfish mailing list" <sawmill@aarg.net>
 alias sawmill sawfish
-fcc-save-hook sawmill.*aarg\.net =lists/sawfish
 
 # }}}
 # {{{ screen-devel
 
 alias screen-devel "GNU screen developers list" <screen-devel@gnu.org>
-fcc-save-hook "screen-devel.*gnu.org" =lists/screen-devel
 subscribe screen-devel@gnu.org
 #mailboxes =inboxes/screen-devel
 send-hook "screen-devel.*gnu.org" 'my_hdr From: "Adam Spiers" <screen-devel@adamspiers.org>'
@@ -1768,21 +1584,18 @@ folder-hook =(inboxes|lists)/screen-devel source ~/.mutt/mailing-list
 folder-hook =(inboxes|lists)/slim- source ~/.mutt/mailing-list
 
 alias slim-updates "Slim Devices updates" <updates@lists.slimdevices.com>
-fcc-save-hook "updates.*lists.slimdevices.com" =lists/slim-updates
 subscribe updates@lists.slimdevices.com
 mailboxes =inboxes/slim-updates
 send-hook "updates.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-updates@adamspiers.org>'
 send-hook "updates.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-updates@adamspiers.org>'
 
 alias slim-devel "Slim Devices development list" <developers@lists.slimdevices.com>
-fcc-save-hook "developers.*lists.slimdevices.com" =lists/slim-devel
 subscribe developers@lists.slimdevices.com
 mailboxes =inboxes/slim-devel
 send-hook "developers.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-devel@adamspiers.org>'
 send-hook "developers.*lists.slimdevices.com" 'my_hdr Reply-To: "Adam Spiers" <slim-devel@adamspiers.org>'
 
 alias slim-discuss "Slim Devices discussion list" <discuss@lists.slimdevices.com>
-fcc-save-hook "discuss.*lists.slimdevices.com" =lists/slim-discuss
 subscribe discuss@lists.slimdevices.com
 mailboxes =inboxes/slim-discuss
 send-hook "discuss.*lists.slimdevices.com" 'my_hdr From: "Adam Spiers" <slim-discuss@adamspiers.org>'
@@ -1805,7 +1618,6 @@ alias xwrits "Eddie Kohler, author of xwrits" <eddietwo@lcs.mit.edu>
 folder-hook =(inboxes|lists)/zoe- source ~/.mutt/mailing-list
 
 alias zoe "zoe-general list" <zoe-general@lists.sourceforge.net>
-fcc-save-hook "zoe-general.*@lists\.sourceforge\.net" =lists/zoe
 subscribe zoe
 mailboxes =inboxes/zoe
 send-hook "zoe-general.*@lists\.sourceforge\.net" 'my_hdr From: "Adam Spiers" <zoe@adamspiers.org>'
@@ -1821,11 +1633,7 @@ mailboxes =inboxes/zsh-users
 mailboxes =inboxes/zsh-workers
 alias zsh-users "zsh users mailing list" <zsh-users@sunsite.auc.dk>
 alias zsh-workers "zsh workers mailing list" <zsh-workers@sunsite.auc.dk>
-fcc-save-hook zsh-announce@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-announce
-fcc-save-hook zsh-users@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-users
-fcc-save-hook zsh-workers@(math\.gatech\.edu|sunsite\.(auc\.)?dk) =lists/zsh-workers
 
-fcc-save-hook schaefer.*brasslantern\.com =lists/zsh-workers
 
 alias pws "Peter Stephenson" <pws@ibmth.df.unipi.it>
 alias sven.wischnowsky "Sven Wischnowsky" <wischnow@informatik.hu-berlin.de>
@@ -1838,7 +1646,6 @@ alias zefram "Zefram" <zefram@fysh.org>
 # {{{ www-style
 
 alias www-style "W3C CSS mailing list" <www-style@w3.org>
-fcc-save-hook "www-style.*w3.org" =lists/www-style
 subscribe www-style@w3.org
 #mailboxes =inboxes/www-style
 send-hook "www-style.*w3.org" 'my_hdr From: "Adam Spiers" <www-style@adamspiers.org>'
@@ -1851,7 +1658,6 @@ folder-hook =(inboxes|lists)/www-style source ~/.mutt/mailing-list
 # {{{ iPod
 
 alias ipodlinux-devel "Linux on iPod mailing list" <ipodlinux-devel@lists.sourceforge.net>
-fcc-save-hook "ipodlinux-devel.*lists.sourceforge.net" =lists/ipodlinux-devel
 subscribe ipodlinux-devel
 #mailboxes =inboxes/ipodlinux-devel
 send-hook "ipodlinux-devel.*lists.sourceforge.net" 'my_hdr From: "Adam Spiers" <ipodlinux-devel@adamspiers.org>'
@@ -1865,7 +1671,6 @@ subscribe linux-thinkpad linux-laptop
 #mailboxes =inboxes/linux-laptop
 
 alias linux-thinkpad linux-thinkpad mailing list <linux-thinkpad@topica.com>
-fcc-save-hook linux-thinkpad =lists/linux-thinkpad
 #send-hook "linux-thinkpad.*topica\.com" 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 alias linux-thinkpad-maintainer "Linux on ThinkPads web page maintainer" <linux-tp@e-oasis.com>
 alias linux-laptop "linux-laptop mailing list" <linux-laptop@vger.rutgers.edu>
@@ -1876,7 +1681,6 @@ alias lilac "Werner Heuser, LiLAC website maintainer" <wehe@snafu.de>
 # {{{ p800
 
 alias p800-linux "P800 with Linux" <p800@linux.pt>
-fcc-save-hook "p800.*linux.pt" =lists/p800-linux
 subscribe p800-linux
 #mailboxes =inboxes/p800-linux
 send-hook "p800.*linux.pt" 'my_hdr From: "Adam Spiers" <p800-linux@adamspiers.org>'
@@ -1888,10 +1692,8 @@ send-hook "p800.*linux.pt" 'my_hdr Reply-To: "Adam Spiers" <p800-linux@adamspier
 # {{{ RedHat
 
 #mailboxes =inboxes/redhat-bugzilla
-fcc-save-hook bugzilla.*@.*redhat\.com =Linux/redhat-bugzilla
 
 #mailboxes =inboxes/redhat-contrib
-fcc-save-hook contrib-list.*@redhat\.com =lists/redhat-contrib
 subscribe contrib-list
 
 # }}}
