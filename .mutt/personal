@@ -8,10 +8,20 @@
 # {{{ Personal config variables
 
 # mutt 1.5 syntax
-alternates "adam@mandolinarchive\.com|adam@spiers\.net|.*@(adamspiers|tigerpig)\.org|(a25|pulse)\.ram\.ac\.uk|aspiers@musician\.org|aspiers@cpan\.org|adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk|((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com|(m93asp|newc0115)@.*\.ox\.ac\.uk|aspiers@novell\.com"
+alternates "(m93asp|newc0115)@.*\.ox\.ac\.uk"
+alternates "adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk"
+alternates "(a25|pulse)\.ram\.ac\.uk"
+alternates "aspiers@musician\.org"
+alternates "((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com"
+alternates "aspiers@lehman\.com"
+alternates "adam@mandolinarchive\.com"
+alternates "adam@spiers\.net"
+alternates "aspiers@cpan\.org"
+alternates ".*@(adamspiers|tigerpig)\.org"
+alternates "a(dam\.)?spiers.*@novell\.com"
 
 # mutt 1.4 syntax
-#set alternates="adam@mandolinarchive\.com|adam@spiers\.net|.*@(adamspiers|tigerpig)\.org|(a25|pulse)\.ram\.ac\.uk|aspiers@musician\.org|aspiers@cpan\.org|adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk|((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com|(m93asp|newc0115)@.*\.ox\.ac\.uk|aspiers@novell\.com"
+#set alternates="adam@mandolinarchive\.com|adam@spiers\.net|.*@(adamspiers|tigerpig)\.org|(a25|pulse)\.ram\.ac\.uk|aspiers@musician\.org|aspiers@cpan\.org|adam@((thelonio?us|cornholio|miles|www)\.|adam.spiers@)new\.ox(ford)?\.ac\.uk|((local)?adams|aspiers)@.*(mediaconsult|guideguide)\.com|(m93asp|newc0115)@.*\.ox\.ac\.uk|a(dam\.)?spiers.*@novell\.com"
 
 # }}}
 
@@ -721,6 +731,7 @@ alias simon.lidgett Simon Lidgett <slidgett@novell.com>
 alias katrina.joiner Katrina Joiner <kjoiner@novell.com>
 alias sean.mccarry Sean McCarry <SMcCarry@novell.com>
 alias leo.moccia Leo Moccia <LMoccia@novell.com>
+alias jo.meaneaux Jo Meaneaux <jmeaneaux@novell.com>
 
 # Technical Specialists
 alias brian.green Brian Green <bgreen@novell.com>
@@ -740,6 +751,7 @@ alias roger.whittaker Roger Whittaker <rwhittaker@novell.com>
 alias aran.stephens Aran Stephens <AStephens@novell.com>
 alias marcus.naris Marcus Naris <mnaris@novell.com>
 alias rob.webb Rob Webb <rwebb@novell.com>
+alias jon.ervine Jonathan Ervine <jervine@novell.com>
 
 # IS&T
 alias simon.crute Simon Crute <scrute@novell.com>
@@ -755,6 +767,7 @@ alias jamie.slade Jamie Slade <jslade@novell.com>
 alias rachel.berry Rachel Berry <RBerry@novell.com>
 alias donna.belony Donna Belony <DBelony@novell.com>
 alias trevor.vanderplank Trevor Vanderplank <tvdplank@novell.com>
+alias mark.godden Mark Godden <mgodden@novell.com>
 
 # }}}
 # {{{ EMEA
@@ -786,6 +799,9 @@ alias stefan.horn Stefan Horn <SHorn@novell.com>
 alias don.morrison Don Morrison <DMorrison@novell.com>
 
 alias greg.kh Greg Kroah-Hartman <gregkh@suse.de>
+
+alias matthias.nagorni Matthias Nagorni <mana@novell.com>
+alias michael.meeks Michael Meeks <mmeeks@novell.com>
 
 # }}}
 # {{{ Lists
@@ -832,6 +848,7 @@ alias carl.drisko Carl Drisko <cdrisko@novell.com>
 alias paul.treadgold Paul Treadgold <Paul.Treadgold@gossfs.co.uk>
 alias lisa.crispino Lisa Crispino <Lisa.Crispino@atpi.com>
 alias ivo.meekel Ivo Meekel <ivo.meekel@calyx.ie>
+alias lars.lorenzen Lars Lorenzen <lars.lorenzen@ccur.de>
 
 # }}}
 # {{{ Customers/partners
