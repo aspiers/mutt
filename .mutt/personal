@@ -71,7 +71,7 @@ folder-hook =lists/                           source ~/.mutt/mailing-list
 my_hdr X-OS: Linux
 send-hook . 'my_hdr From: "Adam Spiers" <adam@spiers.net>'
 send-hook . 'my_hdr Reply-To: "Adam Spiers" <adam@spiers.net>'
-fcc-save-hook . =archive.`date +'%Y.%m'`
+#fcc-save-hook . =archive.`date +'%Y.%m'`
 
 # }}}
 
@@ -551,6 +551,8 @@ alias OLD.jessica.ong Jessica Ong <jessica.ong@freshfields.com>
 
 alias josie.lyons Josephine Lyons <josephine_lyons@hotmail.com>
 
+alias isabel.wilson Isabel Wilson <isabel.wilson@turtleyoga.org>
+
 # }}}
 # {{{ Foreign friends
 
@@ -716,6 +718,9 @@ alias peter.regent Peter Regent <PRegent@novell.com>
 #alias clare.tinker Clare Tinker <CTinker@novell.com>
 alias denise.hand Denise Hand <dhand@novell.com>
 
+# Channel
+alias sally.donohoe Sally Donohoe <SDonohoe@novell.com>
+
 # Financial Services
 alias andrew.voysey Andrew Voysey <avoysey@novell.com>
 alias andy.voysey andrew.voysey
@@ -732,12 +737,14 @@ alias katrina.joiner Katrina Joiner <kjoiner@novell.com>
 alias sean.mccarry Sean McCarry <SMcCarry@novell.com>
 alias leo.moccia Leo Moccia <LMoccia@novell.com>
 alias jo.meaneaux Jo Meaneaux <jmeaneaux@novell.com>
+alias mark.conlan Mark Conlan <mconlan@novell.com>
 
 # Technical Specialists
 alias brian.green Brian Green <bgreen@novell.com>
 alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
 alias dan.homolka Dan Homolka <Dan.Homolka@novell.com>
 alias chris.hyde Chris Hyde <chyde@novell.com>
+alias paul.marshall Paul Marshall <PMarshall@novell.com>
 
 # Consulting
 alias jimmie.hay Jimmie Hay <jhay@novell.com>
@@ -759,6 +766,7 @@ alias keith.humphrey Keith Humphrey <khumphrey@novell.com>
 
 # Marketing
 alias nickie.wing Nickie Wing <NWing@novell.com>
+alias sophie.lawson Sophie Lawson <slawson@novell.com>
 
 # Admin
 alias jodie.walsh Jodie Walsh <jwalsh@novell.com>
@@ -841,6 +849,8 @@ alias amy.cottle Amy Cottle <acottle@novell.com>
 alias jeff.jaffe Jeff Jaffe <jjaffe@novell.com>
 alias moiz.kohari Moiz Kohari <mkohari@novell.com>
 alias carl.drisko Carl Drisko <cdrisko@novell.com>
+alias joe.wagner Joe Wagner <jwagner@novell.com>
+alias wendy.case Wendy Case <WCase@novell.com>
 
 # }}}
 # {{{ Associated companies
