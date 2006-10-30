@@ -3,4 +3,3 @@
 echo "FIXME: autogen hook to source gpg.rc"
 $ZDOTDIR/.mutt/run-hooks > $ZDOTDIR/.mutt/all-hooks.autogen
 mkdir -p ~/.smime/{certificates,keys}
-[ -e ~/.smime/keys/.index ] || smime_keys init
