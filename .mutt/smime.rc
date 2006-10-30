@@ -23,7 +23,7 @@ set crypt_verify_sig = yes
 
 # The (default) keyfile for signing/decrypting.  Uncomment the following
 # line and replace the keyid with your own.
-set smime_default_key="12345678.0"
+set smime_default_key="2cf86454.0"
 
 # Uncommen to make mutt ask what key to use when trying to decrypt a message.
 # It will use the default key above (if that was set) else.
