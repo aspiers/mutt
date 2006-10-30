@@ -68,7 +68,7 @@
 
    macro pager "\ei"  "|TESTMEFIRST formail -s CRM-SA-parp-inject\n"   "parp: (re)Inject into spool"
 
-   macro index "\ej"  "<save-message>=junk-mail-`date +%Y-%m`/\n"  "save as junk mail"
+   macro index "\ej"  "<save-message>=spam/`date +%Y-%m`/\n"  "save as junk mail"
 
    # manual spam classification for parp (changes stats/friends db)
 #   macro index "\eW"  ";|formail -s parp -rwv\n"   "please don't use this directly"
@@ -163,7 +163,7 @@
 # !!! PLEASE ALSO SEE CORRESPONDING SECTION FOR INDEX BINDINGS !!!
 
    macro pager "\ef"  "|parp -ev\n"   "parp: extract Friends"
-   macro pager "\ej"  "<save-message>=junk-mail-`date +%Y-%m`/\n"  "save as junk mail"
+   macro pager "\ej"  "<save-message>=spam/`date +%Y-%m`/\n"  "save as junk mail"
 
    # flag spam classification as wrong (changes stats/friends db)
    macro pager "\eW"  "|parp -rwv\n"   "please don't use this directly"
