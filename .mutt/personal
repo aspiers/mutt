@@ -809,6 +809,8 @@ alias don.morrison Don Morrison <DMorrison@novell.com>
 alias greg.kh Greg Kroah-Hartman <gregkh@suse.de>
 
 alias matthias.nagorni Matthias Nagorni <mana@novell.com>
+alias mana matthias.nagorni
+
 alias michael.meeks Michael Meeks <mmeeks@novell.com>
 
 # }}}
@@ -1799,3 +1801,4 @@ alias marathon-2005-sponsorship Endellion-marathon-2005, family, michael.oconnor
 # Unclassified
 #
 
+alias mike.duvall Mike Duvall <michael.duvall@ccur.com>
