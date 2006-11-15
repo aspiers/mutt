@@ -1,5 +1,8 @@
-set attribution="    -----Original Message-----\n    From: %n\n    Sent: %d\n    To: %t\n    Cc:\n    Subject: %s\n"
-set indent_string="    "
+set attribution="-------- Original Message --------\nFrom: %n\nSent: %d\nTo: %t\nCc:\nSubject: %s\n"
+set indent_string=""
+
+#set attribution="    -------- Original Message --------\n    From: %n\n    Sent: %d\n    To: %t\n    Cc:\n    Subject: %s\n"
+#set indent_string="    "
 
 # Give some visual feedback.
 echo "Jeopardy quoting selected" # Need my echo patch for this
