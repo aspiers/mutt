@@ -793,6 +793,7 @@ alias jochen.schaefer Jochen Schaefer <jschaef@novell.com>
 alias naji.almahmoud Naji Almahmoud <nalmahmoud@novell.com>
 
 alias stephanie.schatz Stephanie Schatz <Stephanie.Schatz@novell.com>
+alias stephanie.schatz.ctp Stephanie Schatz <Stephanie.Schatz@ctp.com>
 
 alias roman.drahtmueller Roman Drahtmueller <draht@suse.de>
 alias holger.dyroff Holger Dyroff <hd@novell.com>
@@ -812,6 +813,8 @@ alias matthias.nagorni Matthias Nagorni <mana@novell.com>
 alias mana matthias.nagorni
 
 alias michael.meeks Michael Meeks <mmeeks@novell.com>
+
+alias philippe.desmaison Philippe Desmaison <PDesmaison@novell.com>
 
 # }}}
 # {{{ Lists
@@ -861,34 +864,43 @@ alias paul.treadgold Paul Treadgold <Paul.Treadgold@gossfs.co.uk>
 alias lisa.crispino Lisa Crispino <Lisa.Crispino@atpi.com>
 alias ivo.meekel Ivo Meekel <ivo.meekel@calyx.ie>
 alias annette.lynch Annette Lynch <annette.lynch@calyx.ie>
-alias lars.lorenzen Lars Lorenzen <lars.lorenzen@ccur.de>
 
 # }}}
 # {{{ Customers/partners
 
-alias alex.broad Alex Broad <abroad@messagelabs.com>
-
-alias mark.jeffery Mark Jeffery <MJeffery@Bladelogic.com>
-alias mark.hosking Mark Hosking <MHosking@Bladelogic.com>
-
-alias mike.popescu Mike Popescu <mike.popescu@ccur.de>
-alias gerd.dolezal Gerd Dolezal <gerd.dolezal@ccur.de>
-
-alias eva.beck Eva Beck <Eva.Beck@hp.com>
-alias stephanie.schatz.ctp Stephanie Schatz <Stephanie.Schatz@ctp.com>
-
-# }}}
-
-# }}}
 # {{{ Concurrent
 
 alias birgit.grossmann "Birgit Grossmann" <birgit.grossmann@ccur.de>
 alias gary.beerman "Gary Beerman" <gary.beerman@ccur.com>
+alias mike.popescu Mike Popescu <mike.popescu@ccur.de>
+alias gerd.dolezal Gerd Dolezal <gerd.dolezal@ccur.de>
+alias lars.lorenzen Lars Lorenzen <lars.lorenzen@ccur.de>
+alias mike.duvall Mike Duvall <michael.duvall@ccur.com>
+alias caroline.court Caroline Court <caroline.court@ccur.com>
 
 # }}}
 # {{{ HP
 
+alias eva.beck Eva Beck <Eva.Beck@hp.com>
 alias terry.young Terry Young <Terry.Young@hp.com>
+
+# }}}
+# {{{ BT
+
+alias tim.oldham Tim Oldham <tim.oldham@bt.com>
+alias ashok.patel Ashok Patel <ashok.3.patel@bt.com>
+
+# }}}
+# {{{ BladeLogic
+
+alias mark.jeffery Mark Jeffery <MJeffery@Bladelogic.com>
+alias mark.hosking Mark Hosking <MHosking@Bladelogic.com>
+
+# }}}
+
+alias alex.broad Alex Broad <abroad@messagelabs.com>
+
+# }}}
 
 # }}}
 # {{{ JPMC
@@ -1801,5 +1813,3 @@ alias marathon-2005-sponsorship Endellion-marathon-2005, family, michael.oconnor
 # Unclassified
 #
 
-alias mike.duvall Mike Duvall <michael.duvall@ccur.com>
-alias caroline.court Caroline Court <caroline.court@ccur.com>
