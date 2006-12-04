@@ -16,8 +16,9 @@ if test "$url" = "$method" ; then
 	gopher)	    method=gopher	;;
 	*)
 	    case "${url}" in
-		/*) if test -r "${url}" ; then
-				  method=file
+		/*)
+                    if test -r "${url}" ; then
+                        method=file
 		    fi				;;
 		*/*.htm|*/*.html) method=http	;;
 		*/*.htmls)	  method=https	;;
@@ -56,10 +57,17 @@ case "$method" in
 	;;
     file|http|https|gopher)
 	if test -n "$DISPLAY"; then
-            type -p firefox >& /dev/null && \
-                firefox -remote "openURL($url,new-tab)" && exit 0
-            type -p mozilla >& /dev/null && \
+            if type -p firefox >& /dev/null; then
+                case "`firefox -version`" in
+                    *1.5.0.*)
+                        firefox "$url" && exit 0 ;;
+                    *)
+                        firefox -remote "openURL($url,new-tab)" && exit 0 ;;
+                esac                        
+            elif type -p mozilla >& /dev/null; then
+                # FIXME - which mozilla versions?
                 mozilla -remote "openURL($url,new-tab)" && exit 0
+            fi
         fi
 	type -p links >& /dev/null && links "$url" && exit 0
 	type -p w3m   >& /dev/null && w3m   "$url" && exit 0
