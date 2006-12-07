@@ -10,22 +10,24 @@
 method="${1%%:*}"
 
 if test "$url" = "$method" ; then
+    # no method was specified, try to guess one
     case "${url%%.*}" in
 	www|web|w3) method=http		;;
 	mail|mailx) method=mailto	;;
 	gopher)	    method=gopher	;;
 	*)
 	    case "${url}" in
-		/*)
-                    if test -r "${url}" ; then
+		*@*)
+                    method=mailto
+                    ;;
+		*)
+                    if [ -e "$url" ]; then
                         method=file
-		    fi				;;
-		*/*.htm|*/*.html) method=http	;;
-		*/*.htmls)	  method=https	;;
-		*@*)		  method=mailto ;;
-		*)				;;
+                        url="`abs $url`"
+                    fi
+                    ;;
 	    esac
-					;;
+        ;;
     esac
     case "$method" in
 	mailto|file)	url="${method}:$url"	;;
@@ -60,7 +62,7 @@ case "$method" in
             if type -p firefox >& /dev/null; then
                 case "`firefox -version`" in
                     *1.5.0.*)
-                        firefox "$url" && exit 0 ;;
+                        firefox "$url" & exit 0 ;;
                     *)
                         firefox -remote "openURL($url,new-tab)" && exit 0 ;;
                 esac                        
@@ -88,7 +90,7 @@ case "$method" in
 	fi
 	;;
     *)
-	echo "URL type \"$method\" not know"
+	echo "URL type \"$method\" not known"
 	read -p "Press return to continue: "
 	exit 0  # No error return
 	;;
