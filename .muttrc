@@ -160,7 +160,9 @@ mime_lookup application/octet-stream
 # as application/zip
 mime_lookup application/zip
 
-# Deal with .tar.gz sent as application/x-gzip
+# Deal with .tar.gz sent as application/x-gzip.  There could be other
+# MIME types "hidden" behind the gzipping which we could act on too,
+# e.g. .svg.gz etc.
 mime_lookup application/x-gzip
 
 # This works in conjunction with some magic text/html entries in .mailcap
