@@ -152,10 +152,16 @@ unignore x-spam-status
 #unignore x-spam-level
 unignore x-crm114
 
-# Base mime type on file extension for application/octet-stream - needs mutt 1.5.x
+# Base mime type on file extension for application/octet-stream
+#  - needs mutt 1.5.x
 mime_lookup application/octet-stream
-# Also some MUAs seem to be incorrectly attaching OO.o v2.x documents as application/zip
+
+# Also some MUAs seem to be incorrectly attaching OO.o v2.x documents
+# as application/zip
 mime_lookup application/zip
+
+# Deal with .tar.gz sent as application/x-gzip
+mime_lookup application/x-gzip
 
 # This works in conjunction with some magic text/html entries in .mailcap
 auto_view text/x-vcard text/html
