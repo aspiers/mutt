@@ -665,8 +665,6 @@ alias andrew.shields "Andrew Shields" <andrewshields@timeout.com>
 # }}}
 # {{{ Computing
 
-# {{{ Work
-
 # {{{ Novell
 
 # {{{ LST
@@ -706,6 +704,16 @@ alias architects mh, mge, tf, ps
 # }}}
 # {{{ UK
 
+# Technical Specialists
+alias brian.green Brian Green <bgreen@novell.com>
+alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
+alias dan.homolka Dan Homolka <Dan.Homolka@novell.com>
+alias chris.hyde Chris Hyde <chyde@novell.com>
+alias paul.marshall Paul Marshall <PMarshall@novell.com>
+
+alias uklinux matt.mckenzie, dan.homolka, paul.marshall
+alias ukts UK TS team <UKB-SysEng@novell.com>
+
 # Managers
 alias chris.papayianni "Chris Papayianni" <cpapayianni@novell.com>
 alias paul.roberts Paul Roberts <proberts@novell.com>
@@ -738,13 +746,6 @@ alias sean.mccarry Sean McCarry <SMcCarry@novell.com>
 alias leo.moccia Leo Moccia <LMoccia@novell.com>
 alias jo.meaneaux Jo Meaneaux <jmeaneaux@novell.com>
 alias mark.conlan Mark Conlan <mconlan@novell.com>
-
-# Technical Specialists
-alias brian.green Brian Green <bgreen@novell.com>
-alias matt.mckenzie Matt McKenzie <mmckenzie@novell.com>
-alias dan.homolka Dan Homolka <Dan.Homolka@novell.com>
-alias chris.hyde Chris Hyde <chyde@novell.com>
-alias paul.marshall Paul Marshall <PMarshall@novell.com>
 
 # Consulting
 alias jimmie.hay Jimmie Hay <jhay@novell.com>
@@ -856,6 +857,7 @@ alias moiz.kohari Moiz Kohari <mkohari@novell.com>
 alias carl.drisko Carl Drisko <cdrisko@novell.com>
 alias joe.wagner Joe Wagner <jwagner@novell.com>
 alias wendy.case Wendy Case <WCase@novell.com>
+alias guy.lunardi Guy Lunardi <glunardi@novell.com>
 
 # }}}
 # {{{ Associated companies
@@ -1105,8 +1107,6 @@ alias OLD.anita.dhillon Anita Dhillon <spokeydokey@yahoo.com>
 # {{{ MoneyWorld
 
 #alias danny.bowers "Danny Bowers" <danny@dircon.co.uk>
-
-# }}}
 
 # }}}
 
@@ -1745,7 +1745,6 @@ subscribe contrib-list
 mailboxes =inboxes/amazon
 
 # }}}
-
 
 alias keet Christiaan Keet <keet@plig.net>
 alias vger "majordomo@vger.rutgers.edu" <Majordomo@vger.rutgers.edu>
