@@ -551,6 +551,7 @@ alias OLD.jessica.ong Jessica Ong <jessica.ong@freshfields.com>
 
 alias josie.lyons Josephine Lyons <josephine_lyons@hotmail.com>
 
+alias gary.wilson Gary Wilson <gary.wilson@turtleyoga.org>
 alias isabel.wilson Isabel Wilson <isabel.wilson@turtleyoga.org>
 
 # }}}
@@ -698,6 +699,7 @@ alias ps peter.schinagl
 
 alias till.franke Till Franke <till.franke@novell.com>
 alias tf till.franke
+alias till.franke2 Till Franke <franke@novell.com>
 
 alias architects mh, mge, tf, ps
 
@@ -725,6 +727,7 @@ alias steve.gaines Steven Gaines <sgaines@novell.com>
 alias peter.regent Peter Regent <PRegent@novell.com>
 #alias clare.tinker Clare Tinker <CTinker@novell.com>
 alias denise.hand Denise Hand <dhand@novell.com>
+alias john.bainbridge John Bainbridge <JBainbridge@novell.com>
 
 # Channel
 alias sally.donohoe Sally Donohoe <SDonohoe@novell.com>
@@ -746,6 +749,7 @@ alias sean.mccarry Sean McCarry <SMcCarry@novell.com>
 alias leo.moccia Leo Moccia <LMoccia@novell.com>
 alias jo.meaneaux Jo Meaneaux <jmeaneaux@novell.com>
 alias mark.conlan Mark Conlan <mconlan@novell.com>
+alias kevin.mcateer Kevin McAteer <kmcateer@novell.com>
 
 # Consulting
 alias jimmie.hay Jimmie Hay <jhay@novell.com>
@@ -765,9 +769,10 @@ alias jon.ervine Jonathan Ervine <jervine@novell.com>
 alias simon.crute Simon Crute <scrute@novell.com>
 alias keith.humphrey Keith Humphrey <khumphrey@novell.com>
 
-# Marketing
+# Marketing / events
 alias nickie.wing Nickie Wing <NWing@novell.com>
 alias sophie.lawson Sophie Lawson <slawson@novell.com>
+alias helen.ellis Helen Ellis <hellis@novell.com>
 
 # Admin
 alias jodie.walsh Jodie Walsh <jwalsh@novell.com>
@@ -816,6 +821,8 @@ alias mana matthias.nagorni
 alias michael.meeks Michael Meeks <mmeeks@novell.com>
 
 alias philippe.desmaison Philippe Desmaison <PDesmaison@novell.com>
+alias ahmad.sadeghpour Ahmad Sadeghpour <asadeghpour@novell.com>
+alias johan.rosius Johan Rosius <jrosius@novell.com>
 
 # }}}
 # {{{ Lists
@@ -830,6 +837,7 @@ alias financial-services-community "Finance Services Community list" <financial-
 
 alias UK-FS-extended-team "UK Financial Services Extended Team" <DL-UK_Financial_Services_Extended_Team@novell.com>
 alias UK-FS-core-team "UK Financial Services Core Team" <DL-UK_Financial_Services_Core_Team@novell.com>
+alias ukts \"UK TS team list (UKB-SysEng)\" <UKB-SysEng@novell.com>
 
 # }}}
 # {{{ US
@@ -858,6 +866,7 @@ alias carl.drisko Carl Drisko <cdrisko@novell.com>
 alias joe.wagner Joe Wagner <jwagner@novell.com>
 alias wendy.case Wendy Case <WCase@novell.com>
 alias guy.lunardi Guy Lunardi <glunardi@novell.com>
+alias lowry.snow Lowry Snow <lsnow@novell.com>
 
 # }}}
 # {{{ Associated companies
@@ -891,6 +900,7 @@ alias terry.young Terry Young <Terry.Young@hp.com>
 
 alias tim.oldham Tim Oldham <tim.oldham@bt.com>
 alias ashok.patel Ashok Patel <ashok.3.patel@bt.com>
+alias david.tarrant David Tarrant <david.tarrant@bt.com>
 
 # }}}
 # {{{ BladeLogic
@@ -900,6 +910,8 @@ alias mark.hosking Mark Hosking <MHosking@Bladelogic.com>
 
 # }}}
 
+alias paul.ready Paul Ready <paul.k.ready@hsbcgroup.com>
+alias david.howe David Howe <David.Howe@ansplc.com>
 alias alex.broad Alex Broad <abroad@messagelabs.com>
 
 # }}}
@@ -1812,4 +1824,3 @@ alias marathon-2005-sponsorship Endellion-marathon-2005, family, michael.oconnor
 # Unclassified
 #
 
-alias john.bainbridge John Bainbridge <JBainbridge@novell.com>
