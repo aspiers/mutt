@@ -2,8 +2,15 @@
 
 . $ZDOTDIR/.zsh/functions/enable_nullglob
 
-for hook in $( . $ZDOT_FIND_HOOKS .mutt/hooks.d ); do
-    echo "# $hook follows:"
-    cat $hook
+for profile in "$@"; do
+  for hook in $( . $ZDOT_FIND_HOOKS ".mutt/${profile}.d" ); do
+    cat <<EOF
+#########################################################################
+# $hook follows:
+
+EOF
+    cat "$hook"
+    echo
+  done
 done
 

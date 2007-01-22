@@ -1,6 +1,6 @@
 # -*- mode: sh -*-
 
-# Some personalised bindings might be in ~/.mutt/personal.
+# Some personalised bindings might be elsewhere in ~/.mutt.
 
 # For macros, the "<function>" syntax is only used for functions
 # which we might conceivably rebind at some point in the future;
@@ -59,28 +59,6 @@
    macro index X  "Dall\n" "mark all messages as deleted"
    macro index "\eh"  "/~h " "search by header substring"
 
-   macro index "\em"  "<pipe-message>mairix-copy-message --ids\n" "Extract message id(s) into mairix clipboard"
-   macro index "\eB"  "<pipe-message>mairix-copy-message --threads\n" "Extract thread subject(s) into mairix clipboard"
-
-# !!! PLEASE ALSO SEE CORRESPONDING SECTION FOR PAGER BINDINGS !!!
-
-   macro index "\ef"  ";|formail -s parp -ev\n"   "parp: extract Friends"
-
-   macro pager "\ei"  "|TESTMEFIRST formail -s CRM-SA-parp-inject\n"   "parp: (re)Inject into spool"
-
-   macro index "\ej"  "<save-message>=spam/`date +%Y-%m`/\n"  "save as junk mail"
-
-   # manual spam classification for parp (changes stats/friends db)
-#   macro index "\eW"  ";|formail -s parp -rwv\n"   "please don't use this directly"
-
-   macro index "\eS"  "<copy-message>=inboxes/retry/is-spam/\n;\ej;|formail -s crm-learn spam\n"   "treat as false negative (spam)"
-   macro index "\eH"  "<copy-message>=inboxes/retry/is-ham/\n;s!\n;|formail -s crm-learn ham\n"    "treat as false positive (ham)"
-
-   macro index "\eA" "<limit>~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
-   macro index "\eV"  "<save-message>=misc/virii\n"   "treat as virus-related email"
-
-   macro index <f5> "<enter-command>source ~/.mutt/normal-quoting\n"   "select normal quoting"
-   macro index <f6> "<enter-command>source ~/.mutt/jeopardy-quoting\n" "select jeopardy quoting"
 
 # }}}
 # {{{ Bindings for pager
@@ -151,31 +129,6 @@
    macro pager "\e7" ":set pager_index_lines=16\n"
    macro pager "\e8" ":set pager_index_lines=18\n"
    macro pager "\e9" ":set pager_index_lines=20\n"
-
-   macro pager "\em"  "<pipe-message>mairix-copy-message --ids\n" "Extract message id(s) into mairix clipboard"
-   macro pager "\eB"  "<pipe-message>mairix-copy-message --threads\n" "Extract thread subject(s) into mairix clipboard"
-
-   macro pager "\ei"  "|CRM-SA-parp-inject\n"   "parp: (re)Inject into spool"
-   macro pager "\et"  "|parp -rtv\n"  "parp: Test run"
-   macro pager "\eM"  "|crm-classify-test\n"  "crm114: Test run"
-#  macro pager "\eT"  "|parp-new -rtv\n"  "parp: Test run, new code"
-
-# !!! PLEASE ALSO SEE CORRESPONDING SECTION FOR INDEX BINDINGS !!!
-
-   macro pager "\ef"  "|parp -ev\n"   "parp: extract Friends"
-   macro pager "\ej"  "<save-message>=spam/`date +%Y-%m`/\n"  "save as junk mail"
-
-   # flag spam classification as wrong (changes stats/friends db)
-   macro pager "\eW"  "|parp -rwv\n"   "please don't use this directly"
-
-   macro pager "\eS"  "<copy-message>=inboxes/retry/is-spam/\n\ej|crm-learn spam\n"   "treat as false negative (spam)"
-   macro pager "\eH"  "<copy-message>=inboxes/retry/is-ham/\ns!\n|crm-learn ham\n"    "treat as false positive (ham)"
-
-   macro pager "\eA" "<limit>~h 'x-spam-level: \\*{40}'" "limit to high SpamAssassin scores"
-   macro pager "\eV"  "<save-message>=misc/virii\n"   "treat as virus-related email"
-
-   macro pager <f5> "<enter-command>source ~/.mutt/normal-quoting\n"   "select normal quoting"
-   macro pager <f6> "<enter-command>source ~/.mutt/jeopardy-quoting\n" "select jeopardy quoting"
 
 # }}}
 # {{{ Bindings for compose menu

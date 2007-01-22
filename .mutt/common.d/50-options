@@ -1,15 +1,7 @@
-## ========================================================================
-## File:        $HOME/.muttrc
-## Author:      Adam Spiers (thanks to Sven Guckes)
-## Purpose:     Setup file for the Mail program "Mutt"
-## ========================================================================
-
    set   abort_nosubject=no
    set   abort_unmodified=no
-   set   alias_file=~/.mutt/personal
    set   ascii_chars
    set noconfirmappend
-   set   certificate_file=~/.mutt/certificates
    set   confirmcreate
    set   copy             # Always keep a copy of my mails!
    set   delete=yes
@@ -56,13 +48,7 @@
    # in the To: line, and some in From:.  Sometimes people even
    # Cc: to a list, or send To: me *and* To: the list...
 
-   set   editor="emacs -nw"
    set   fast_reply
-
-   # N.B. This has to come before any use of the '=' folder shortcut
-   # since '=' gets expanded at set-time not use-time :-(
-   set   folder=~/mail    # directory with all mail folders
-
    set   force_name       # save outbound mail by username
                           # (even if =username does not exist)
    set nohelp
@@ -111,7 +97,6 @@
    set   pipe_decode=no
 #  set noprompt_after     # prompt when pager exits?
 #  set   point_new
-   set   postponed="=.postponed"
    set   pgp_verify_sig=yes
    set   pgp_replyencrypt
    set   pgp_replysign
@@ -119,7 +104,6 @@
    set   pgp_retainable_sigs
    set   quote_regexp="^> *"
    set   recall=no
-#  set   record="PLEASE CHOOSE AN FCC FOLDER!"
    set   reply_regexp="^((re([\[0-9\]+])*|aw|antw|svar):[ \t]*)+"
    set   reply_to=ask-yes # use address in Reply-To when replying?
    set   reverse_alias    # show name of sender as set with my alias for him
@@ -138,54 +122,3 @@
    set   tilde            # show empty lines at end with a tilde
  unset   wait_key
    set   write_inc=1      # display increment count for every n-th mail
-
-  ignore *
-unignore from date subject to cc
-unignore organization organisation
-#unignore x-mailer x-newsreader
-#unignore x-mailing-list
-unignore posted-to
-unignore x-parp-accepted x-parp-rejected x-parp-received-parse
-unignore x-filter-accepted x-filter-rejected
-unignore x-cron-env x-seq x-hn-forum
-unignore x-spam-status
-#unignore x-spam-level
-unignore x-crm114
-
-# Base mime type on file extension for application/octet-stream
-#  - needs mutt 1.5.x
-mime_lookup application/octet-stream
-
-# Also some MUAs seem to be incorrectly attaching OO.o v2.x documents
-# as application/zip
-mime_lookup application/zip
-
-# Deal with .tar.gz sent as application/x-gzip.  There could be other
-# MIME types "hidden" behind the gzipping which we could act on too,
-# e.g. .svg.gz etc.
-mime_lookup application/x-gzip
-
-# This works in conjunction with some magic text/html entries in .mailcap
-auto_view text/x-vcard text/html
-
-# gpg.rc takes care of this
-#auto_view application/pgp-signature
-
-# Some people think that HTML is good for email <sigh>
-alternative_order text/enriched text/plain text/html
-
-source ~/.mutt/personal
-source ~/.mutt/mutt-aliases
-source ~/.mutt/bindings
-source ~/.mutt/colours.default
-source ~/.mutt/format-strings
-source ~/.mutt/gpg.rc
-source ~/.mutt/smime.rc
-
-# dynamic ...
-source ~/.mutt/run-hooks|
-
-# ... or static
-#source ~/.mutt/all-hooks.autogen
-
-push V
