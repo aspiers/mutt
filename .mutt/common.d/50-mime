@@ -4,7 +4,7 @@ mime_lookup application/octet-stream
 
 # Also some MUAs seem to be incorrectly attaching OO.o v2.x documents
 # as application/zip
-mime_lookup application/zip
+mime_lookup application/zip application/x-unknown
 
 # Deal with .tar.gz sent as application/x-gzip.  There could be other
 # MIME types "hidden" behind the gzipping which we could act on too,
