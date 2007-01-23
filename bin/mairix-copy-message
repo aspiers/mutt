@@ -38,8 +38,15 @@ my $subject;
 while (<STDIN>) {
   chomp;
 
-  if ($opts{ids} && /^message-id:\s+<(.+)>\s*$/i) {
-    push @found, "m:$1";
+  if ($opts{ids} && /^message-id:\s+(.+)\s*$/i) {
+    my $value = $1;
+    if ($value =~ /^<(.+)>$/) {
+      push @found, "m:$1";
+    }
+    else {
+      warn "WARNING: Message-ID '$value' violates RFC.\n";
+      push @found, "m:$value";
+    }
     next;
   }
 
