@@ -1,0 +1,13 @@
+#autoload
+
+mm () {
+  setopt local_traps
+  trap 'cxx' INT EXIT QUIT KILL
+  cx mutt
+  mutt -F ~/.mutt/personal "$@"
+}
+
+compdef _mutt mm
+
+mm "$@"
+
