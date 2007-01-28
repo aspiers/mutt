@@ -23,7 +23,7 @@ if test "$url" = "$method" ; then
 		*)
                     if [ -e "$url" ]; then
                         method=file
-                        url="`abs $url`"
+                        url="`abs \"$url\"`"
                     fi
                     ;;
 	    esac
