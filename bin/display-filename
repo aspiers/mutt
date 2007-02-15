@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Pipe a message from mutt into this and it will look for it
+# in the folder(s) given in ARGV and spit out the filename.
+# 
+# It's a nasty hack really - mutt should have a <display-filename>
+# function which works in maildir and mh folders.  It does have one
+# in the file browser though.
+
+mid=$( head -n 1k | egrep -i '^Message-ID:[ 	]' )
+grep -rl "$mid" "$@" | xargs -r file
+exit 1
