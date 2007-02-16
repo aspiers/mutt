@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 #
 # url_handler.sh for SuSE Linux
 #
@@ -60,7 +60,12 @@ case "$method" in
     file|http|https|gopher)
 	if test -n "$DISPLAY"; then
             if type -p firefox >& /dev/null; then
-                case "`firefox -version`" in
+                ff_version="`firefox -version`"
+                echo "ff_version $ff_version"
+                case "$ff_version" in
+                    *1.5.0.8)
+                        # tested on FC6
+                        firefox -remote "openURL($url,new-tab)" && exit 0 ;;
                     *1.5.0.*)
                         firefox "$url" & exit 0 ;;
                     *)
