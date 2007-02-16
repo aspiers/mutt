@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 #
 # url_handler.sh for SuSE Linux
 #
