@@ -4,5 +4,3 @@ set indent_string="    "
 # Give some visual feedback.
 #echo "Jeopardy quoting selected" # Need my echo patch for this
 push V
-
-macro index <f5> "<enter-command>source ~/.mutt/normal-quoting\n" "toggle normal/jeopardy quoting"
