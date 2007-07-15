@@ -3,7 +3,7 @@
 use strict;
 use File::Basename;
 
-my $mutt_file = "$ENV{HOME}/.mutt/personal";
+my $dir = "~/.mutt/common.d/person-adam.spiers";
 my $me = basename $0;
 
 unless (@ARGV == 3) {
@@ -25,9 +25,6 @@ $longer =~ s/%s/$short/g;
 (my $regexp = $addr) =~ s/\@/.*/;
 my $folder = $short;
 
-open(CONFIG, ">>$mutt_file")
-  or die "Couldn't append to $mutt_file: $!";
-
 my $new_stuff = <<EOTEMPLATE;
 
 alias $short "$longer" <$addr>
@@ -39,7 +36,17 @@ send-hook "$regexp" 'my_hdr Reply-To: "Adam Spiers" <$short\@adamspiers.org>'
 folder-hook =(inboxes|lists)/$short source ~/.mutt/mailing-list
 EOTEMPLATE
 
-print "Adding to $mutt_file:\n$new_stuff";
-print CONFIG $new_stuff;
+chomp $new_stuff;
+print <<EOSH;
+Run this:
 
-close(CONFIG);
+cat <<EOF >> $dir/50-alias-incoming
+$new_stuff
+
+or
+
+cat <<EOF >> $dir/50-alias-computing-community
+$new_stuff
+EOF
+EOSH
+
