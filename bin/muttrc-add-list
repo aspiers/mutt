@@ -1,23 +1,27 @@
 #!/usr/bin/perl -w
 
 use strict;
+use File::Basename;
 
 my $mutt_file = "$ENV{HOME}/.mutt/personal";
+my $me = basename $0;
 
 unless (@ARGV == 3) {
-  die <<'EOF';
-Usage: $0 <list short name> <list-addr> <list description>
+  die <<EOF;
+Usage: $me <list short name> <list-addr> <longer description>
 
-Short name gets used as folder name and @adamspiers.org prefix.
-Long name gets used as alias description text.
-Can include '%s' in long name and description which expands to short name.
+e.g. $me mercurial %s\@selenic.com '%s mailing list'
+
+Short name gets used as folder name and \@adamspiers.org prefix.
+Longer description gets used as mutt alias description text.
+Can include '%s' in address and longer description which expands to short name.
 EOF
 }
 
-my ($short, $addr, $long) = @ARGV;
+my ($short, $addr, $longer) = @ARGV;
 
 $addr =~ s/%s/$short/g;
-$long =~ s/%s/$short/g;
+$longer =~ s/%s/$short/g;
 (my $regexp = $addr) =~ s/\@/.*/;
 my $folder = $short;
 
@@ -26,7 +30,7 @@ open(CONFIG, ">>$mutt_file")
 
 my $new_stuff = <<EOTEMPLATE;
 
-alias $short "$long" <$addr>
+alias $short "$longer" <$addr>
 fcc-save-hook "$regexp" =lists/$short
 subscribe $addr
 #mailboxes =inboxes/$short
