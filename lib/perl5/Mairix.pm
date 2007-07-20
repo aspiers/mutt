@@ -2,15 +2,15 @@ package Mairix;
 
 =head1 NAME
 
-Mairix - 
+Mairix - helpers for mairix CLI utilities
 
 =head1 SYNOPSIS
 
-
+TODO
 
 =head1 DESCRIPTION
 
-
+TODO
 
 =cut
 
@@ -36,6 +36,13 @@ sub subject_query {
   return 's:' . join ",", grep { length($_) && /\w/ } @tokens;
 }
 
+=head2 normalize_subject
+
+Trim a subject of cruft accumulated as a result of replying
+to/forwarding the message etc.
+
+=cut
+
 sub normalize_subject {
   my ($original) = @_;
 
@@ -56,7 +63,11 @@ sub normalize_subject {
 
 =head1 BUGS
 
+None, zero, nada etc.
+
 =head1 SEE ALSO
+
+L<mairix-wrapper>, L<mairix-copy-message>
 
 =cut
 
