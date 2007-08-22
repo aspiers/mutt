@@ -29,12 +29,12 @@ my $new_stuff = <<EOTEMPLATE;
 # {{{ $short
 
 alias $short "$longer" <$addr>
-alias me.$short "Adam Spiers" <$short\@adamspiers.org>"
-fcc-save-hook "$regexp" =lists/$short
+alias me.$short "Adam Spiers" <$short\@adamspiers.org>
 subscribe $addr
-#mailboxes =inboxes/$short
 send-hook "$regexp" 'my_hdr From: "Adam Spiers" <$short\@adamspiers.org>'
 send-hook "$regexp" 'my_hdr Reply-To: "Adam Spiers" <$short\@adamspiers.org>'
+#mailboxes =inboxes/$short
+fcc-save-hook "$regexp" =lists/$short
 folder-hook =(inboxes|lists)/$short source ~/.mutt/mailing-list
 
 # }}}
