@@ -33,9 +33,8 @@ alias me.$short "Adam Spiers" <$short\@adamspiers.org>
 subscribe $addr
 send-hook "$regexp" 'my_hdr From: "Adam Spiers" <$short\@adamspiers.org>'
 send-hook "$regexp" 'my_hdr Reply-To: "Adam Spiers" <$short\@adamspiers.org>'
-#mailboxes =inboxes/$short
-fcc-save-hook "$regexp" =lists/$short
-folder-hook =(inboxes|lists)/$short source ~/.mutt/mailing-list
+#mailboxes =in/$short
+folder-hook =(in(boxes)?|lists)/$short source ~/.mutt/mailing-list
 
 # }}}
 EOTEMPLATE
