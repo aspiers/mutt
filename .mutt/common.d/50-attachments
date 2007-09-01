@@ -1,6 +1,6 @@
 # don't forget to attach stuff!
-# ~B not supported for send-hook :-(
-#send-hook '~B "attached"' ~X 0 'push a'
+# ~b not supported for send-hook :-(
+#send-hook '~b "attached"' ~X 0 'push a'
 
 ### Example from manual follows
 
