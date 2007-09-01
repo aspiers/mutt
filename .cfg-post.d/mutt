@@ -2,3 +2,5 @@
 
 mkdir -p ~/.smime/{certificates,keys}
 [ -e ~/.smime/keys/.index ] || smime_keys init
+
+mkdir -p ~/.mairix/personal
