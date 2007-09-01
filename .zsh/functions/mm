@@ -5,6 +5,7 @@ mm () {
   trap 'cxx' INT EXIT QUIT KILL
   cx mutt
   export MAIL_PROFILE=personal
+  export MAIRIXRC=$HOME/.mairix/$MAIL_PROFILE/config
   mutt -F ~/.mutt/$MAIL_PROFILE "$@"
 }
 
