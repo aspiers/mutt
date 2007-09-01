@@ -130,11 +130,11 @@ sub get_query {
 sub do_query {
   my (@query) = @_;
   warn "Searching for: @query\n";
-  my $query_file = "$ENV{HOME}/.mairix/last-query";
+  my $query_file = "$ENV{MAIRIX_DIR}/last-query";
   open(QUERY, ">$query_file")
     or die "Couldn't open($query_file): $!\n";
   print QUERY "@query\n";
   close(QUERY);
-  system($mairix, @query);
+  system($mairix, '-f', $ENV{MAIRIXRC}, @query);
   return $? >> 7;
 }
