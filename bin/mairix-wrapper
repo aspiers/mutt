@@ -40,8 +40,10 @@ EOF
 usage() unless @ARGV;
 my $mode = shift @ARGV;
 
-unless ($ENV{MAIRIX_RESULTS}) {
-  die "\$MAIRIX_RESULTS not set; aborting.\n";
+for my $var (qw/MAIRIX_RESULTS MAIRIX_DIR MAIRIXRC/) {
+  unless ($ENV{$var}) {
+    die "\$$var not set; aborting.\n";
+  }
 }
 
 if ($ENV{MAIRIX_RESULTS} =~ /mairix/i &&
