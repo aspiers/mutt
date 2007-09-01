@@ -4,7 +4,8 @@ mm () {
   setopt local_traps
   trap 'cxx' INT EXIT QUIT KILL
   cx mutt
-  mutt -F ~/.mutt/personal "$@"
+  export MAIL_PROFILE=personal
+  mutt -F ~/.mutt/$MAIL_PROFILE "$@"
 }
 
 compdef _mutt mm
