@@ -68,6 +68,8 @@ case "$method" in
                         firefox -remote "openURL($url,new-tab)" && exit 0 ;;
                     *1.5.0.*)
                         firefox "$url" & exit 0 ;;
+                    *2.0*)
+                        firefox -new-tab "$url" ;;
                     *)
                         firefox -remote "openURL($url,new-tab)" && exit 0 ;;
                 esac                        
