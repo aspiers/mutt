@@ -14,6 +14,8 @@ mime_lookup application/x-gzip
 # This works in conjunction with some magic text/html entries in .mailcap
 auto_view text/x-vcard text/html
 
+auto_view application/emacs-lisp
+
 # gpg.rc takes care of this
 #auto_view application/pgp-signature
 
