@@ -27,15 +27,15 @@
 ## analogously to PGP signature attachments. S/MIME isn't supported
 ## in a stock mutt build, but we can still treat it specially here.
 ##
-attachments   +A */.*
-attachments   -A text/x-vcard application/pgp.*
-attachments   -A application/x-pkcs7-.*
+# attachments   +A */.*
+# attachments   -A text/x-vcard application/pgp.*
+# attachments   -A application/x-pkcs7-.*
 
 ## Discount all MIME parts with an "inline" disposition, unless they're
 ## text/plain. (Why inline a text/plain part unless it's external to the
 ## message flow?)
 ##
-attachments   +I text/plain
+#attachments   +I text/plain
 
 ## These two lines make Mutt qualify MIME containers.  (So, for example,
 ## a message/rfc822 forward will count as an attachment.)  The first
@@ -48,6 +48,6 @@ attachments   +I text/plain
 #attachments  +I message/.* multipart/.*
 
 ## You probably don't really care to know about deleted attachments.
-attachments   -A message/external-body
-attachments   -I message/external-body
+# attachments   -A message/external-body
+# attachments   -I message/external-body
 
