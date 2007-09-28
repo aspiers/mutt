@@ -84,3 +84,11 @@ set pgp_list_secring_command="gpg   --no-verbose --batch --quiet   --with-colons
 set pgp_good_sign="^\\[GNUPG:\\] GOODSIG"
 
 set pgp_auto_decode
+
+# This won't work because %r passes the address not the key ID which gpg wants.
+# mutt would have to be able to parse the GPG signature and extract the key ID
+# to be able to pass it, and architecturally it's not supposed to work like that
+# because it supports multiple backends.  The solution is to configure gpg with
+# 'keyserver-options auto-key-retrieve' in ~/.gnupg/options
+# See http://www.webservertalk.com/archive204-2004-10-432208.html
+#set pgp_getkeys_command="gpg --recv-keys %r"
