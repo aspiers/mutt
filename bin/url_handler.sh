@@ -6,6 +6,22 @@
 #
 # Author: Werner Fink <werner@suse.de>
 #
+
+#exec 2>/tmp/url_handler.log
+
+# acrobat reader passes args: -remote openURL(url,new-window)
+
+if [ "$1" = -remote ]; then
+    shift
+    case "$1" in
+        openURL*)
+            set "${1#openURL(}"
+            set "${1%)}"
+            set "${1%,new-window}"
+            ;;
+    esac
+fi
+
    url="$1"
 method="${1%%:*}"
 
@@ -96,6 +112,10 @@ case "$method" in
 	    exit 0  # No error return
 	fi
 	;;
+    textedit)
+        lilypond-invoke-editor "$url"
+        exit 0
+        ;;
     *)
 	echo "URL type \"$method\" not known"
 	read -p "Press return to continue: "
