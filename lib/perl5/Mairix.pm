@@ -55,6 +55,7 @@ sub normalize_subject {
        or $new =~ s/^(FYI|FYEO|FCP|AHOD|F)(:|\b)//i
        or $new =~ s/^\[[\w -]+\]\s+//i
        or $new =~ s/^[(\[]?out of office( autoreply:?)?[)\]]?//i
+       or $new =~ s/[(\[]?on leave( [\d-]+ \w+)?[)\]]?//i
        or $new =~ s/\bv\d+(\.\d+)*(\b|$)//i;
   if ($new ne $original) {
     warn "Normalized '$original' to '$new'\n";
