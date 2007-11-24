@@ -1,5 +1,10 @@
 #!/usr/bin/perl
-
+#
+# Wrapper for integrating mairix queries with mutt.  Supports both
+# prompting for a search expression interactively, and constructing
+# one based on the contents of a mail fed in via STDIN (e.g. "search
+# for all mails with the same Subject: header as this one").
+#
 # Search syntax documented in a conflicting manner here:
 #
 #  http://www.rpcurnow.force9.co.uk/mairix/mairix.html#command_005fline
@@ -61,6 +66,18 @@ my $mairix = which('mairix');
 die "Can't find executable mairix!\n" unless $mairix;
 
 if ($mode eq 'prompt') {
+  prompter();
+}
+elsif ($mode eq 'field') {
+  usage() unless @ARGV;
+  my $field = shift @ARGV;
+  extract_field($field);
+}
+else {
+  die "$0: Invalid mode '$mode'\n";
+}
+
+sub prompter {
   print "mairix query? ";
   chomp(my $query = <STDIN>);
   $query =~ s/^\s+//;
@@ -71,10 +88,13 @@ if ($mode eq 'prompt') {
     # mutt's wait_key mechanism will ask for a key press on failure
     exit $exit_code;
   }
+  # Cancel search and return to mutt without wait_key asking for key
+  # press.  This relies on the rmtree above.
+  exit 0;
 }
-elsif ($mode eq 'field') {
-  usage() unless @ARGV;
-  my $field = shift @ARGV;
+
+sub extract_field {
+  my ($field) = @_;
   die "$0: Can't follow unsupported field '$field'\n"
     unless $fields{$field};
 
@@ -107,9 +127,6 @@ elsif ($mode eq 'field') {
   my $exit_code = do_query(@query);
   # mutt's wait_key mechanism will ask for a key press on failure
   exit $exit_code;
-}
-else {
-  die "$0: Invalid mode '$mode'\n";
 }
 
 sub get_query {
