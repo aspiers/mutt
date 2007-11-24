@@ -17,9 +17,39 @@ TODO
 use strict;
 use warnings;
 
+=head2 field_query
+
+Generic dispatcher for turning a (field, value) pair into a mairix
+query which returns mails matching that pair.
+
+=cut
+
+sub field_query {
+  my ($field, $value) = @_;
+  return subject_query($value) if lc $field eq 'subject';
+  return message_id_query($value) if lc $field eq 'message-id';
+  die "Unrecognised field $field to convert into mairix query";
+}
+
+=head2 message_id_query
+
+Turns a Message-ID into a mairix query which retrieves the mail with
+that Message-ID.
+
+=cut
+
+sub message_id_query {
+  my ($id) = @_;
+  if ($id =~ /^<(.+)>$/) {
+    return "m:$1";
+  }
+  warn "WARNING: Message-ID '$id' violates RFC.\n";
+  return "m:$id";
+}
+
 =head2 subject_query
 
-Turn a subject into a mairix query to retrieve mail's with related
+Turn a subject into a mairix query which retrieves mails with related
 subjects.
 
 =cut
