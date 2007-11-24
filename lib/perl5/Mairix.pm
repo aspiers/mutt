@@ -79,6 +79,7 @@ sub normalize_subject {
   my $new = $original;
   1 while $new =~ s/^\s+//
        or $new =~ s/\s+$//
+       or $new =~ s/\s{2,}/ /g
        or $new =~ s/^((Re|Fwd|Aw|Antw|Svar):|\(Fwd\))\s*//i
        or $new =~ s/^\[Fwd:\s*(.+)\s*\]$/$1/i
        or $new =~ s/\(Fwd\)$//i
@@ -86,6 +87,7 @@ sub normalize_subject {
        or $new =~ s/^\[[\w -]+\]\s+//i
        or $new =~ s/^[(\[]?out of office( autoreply:?)?[)\]]?//i
        or $new =~ s/[(\[]?on leave( [\d-]+ \w+)?[)\]]?//i
+       or $new =~ s/[(\[]?away from my mail?[)\]]?//i
        or $new =~ s/\bv\d+(\.\d+)*(\b|$)//i;
   if ($new ne $original) {
     warn "Normalized '$original' to '$new'\n";
