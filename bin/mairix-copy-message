@@ -7,8 +7,14 @@
 
 use strict;
 use warnings;
+
 use Getopt::Long;
+use Mail::Header;
+use Mail::Address;
+
 use Mairix;
+
+my $AUTO = 0;
 
 my %opts;
 GetOptions(
@@ -32,64 +38,139 @@ Options:
 EOUSAGE
 }
 
-my @found;
+my $header = parse_header();
+my @fields = qw(message-id subject from);
+my %h = extract_fields($header);
+my $query_type = $opts{ids}     ? 'message-id-query'
+               : $opts{threads} ? 'subject-query'
+               : usage();
+my $query = $h{$query_type};
+write_file("$ENV{HOME}/.clip-mairix", "<mairix://$query>");
+print "\n";
+s/"/\\"/g foreach values %h;
+write_file("$ENV{HOME}/.mairix-link-props.el", <<EOF);
+(org-store-link-props
+  :type "mairix"
+  :from "$h{from}"
+  :fromname "$h{fromname}"
+  :fromaddr "$h{fromaddr}"
+  :subject "$h{subject}"
+  :subjectquery "$h{'subject-query'}"
+  :message-id "$h{'message-id'}"
+  :message-id-query "$h{'message-id-query'}")
+EOF
 
-my $subject;
-while (<STDIN>) {
-  chomp;
-
-  if ($opts{ids} && /^message-id:\s+(.+)\s*$/i) {
-    my $value = $1;
-    if ($value =~ /^<(.+)>$/) {
-      push @found, "m:$1";
-    }
-    else {
-      warn "WARNING: Message-ID '$value' violates RFC.\n";
-      push @found, "m:$value";
-    }
-    next;
-  }
-
-  if ($opts{threads}) {
-    if ($subject) {
-      if (/^\s+(.+)/) {
-        # continuation line
-        $subject .= " " . $1;
-        next;
-      }
-
-      # next header
-      push @found, join ' ', Mairix::subject_query($subject);
-      undef $subject;
-      next;
-    }
-    elsif (/^Subject:\s+(.+)\s*$/i) {
-      $subject = $1;
-    }
-  }
+if ($AUTO) {
+  sleep 1;
+  exit 0; # so that mutt wait_key doesn't ask for a key-press
 }
-
-# xclip doesn't work :-(
-
-if (! @found) {
-  warn "No Message-ID header found!  Press a key...\n";
-  my $read_key = <STDIN>;
+else {
+  # This doesn't work as we've already redirected STDIN.
+  #print "Press enter to continue ... ";
+  #my $read_key = <STDIN>;
+  # So we use mutt wait_key instead:
   exit 1;
 }
 
-open(FAKECLIP, ">$ENV{HOME}/.clip-mairix")
-  or die "Couldn't open($ENV): $!\n";
+######################################################################
 
-foreach (@found) {
-  my $URL = "<mairix://$_>";
-  print FAKECLIP "$URL\n";
-  print          "$URL\n";
+sub parse_header {
+  my $header = new Mail::Header \*STDIN;
+  return $header;
 }
 
-close(FAKECLIP);
+sub extract_fields {
+  my ($header) = @_;
 
-# print "Press enter to continue ... ";
-# my $read_key = <STDIN>;
-sleep 1;
+  my %h;
+  for (@fields) {
+    $h{$_} = $header->get($_);
+    next unless defined $h{$_};
+    chomp $h{$_};
+    $h{$_} =~ s/\s{2,}/ /g;
+  }
 
-exit 0; # for mutt wait_key
+  my $from = $header->get('From');
+  $from =~ s/\s{2,}/ /g;
+  my @from_addrs = Mail::Address->parse($from);
+  die "not exactly 1 from address" if @from_addrs != 1;
+  $h{fromaddr} = $from_addrs[0]->address;
+  $h{fromname} = $from_addrs[0]->name || $h{fromaddr};
+
+  $h{'message-id-query'} = Mairix::message_id_query($h{'message-id'});
+  $h{'subject-query'} = Mairix::subject_query($h{subject});
+
+  return %h;
+}
+
+sub build_query {
+  my (%h) = @_;
+  my $field = $opts{ids}     ? 'message-id'
+            : $opts{threads} ? 'subject'
+            : usage();
+  my $value = $h{$field};
+  unless (defined $value) {
+    warn "No $field header found!  Press a key ...\n";
+    my $read_key = <STDIN>;
+    exit 1;
+  }
+  return Mairix::field_query($field, $value);
+}
+
+# Old code which doesn't use Mail::Header
+#
+# sub get_message_id {
+#   return uniq(
+#     map Mairix::message_id_query($_),
+#         get_header_field_quick('Message-ID')
+#   );
+# }
+
+# sub get_subject {
+#   return uniq(
+#     map { join ' ', Mairix::subject_query($_) }
+#         get_header_field_quick('Subject')
+#         $header->get('Subject')
+#   );
+# }
+#
+# sub uniq {
+#   my %h = map { $_ => 1 } @_;
+#   return keys %h;
+# }
+#
+# sub get_header_field_quick {
+#   my ($field) = @_;
+#   my %found;
+#   my $value;
+#   while (<STDIN>) {
+#     chomp;
+#     if ($value) {
+#       if (/^\s+(.+)/) {
+#         # continuation line
+#         $value .= " " . $1;
+#         next;
+#       }
+#
+#       # next header
+#       $found{$value}++;
+#       undef $value;
+#       next;
+#     }
+#     elsif (/^$field:\s+(.+)\s*$/i) {
+#       $value = $1;
+#     }
+#   }
+#   return keys %found;
+# }
+
+sub write_file {
+  my ($dst, @lines) = @_;
+  open(OUT, ">$dst") or die "Couldn't open(>$dst): $!\n";
+  print "-- Writing to $dst:\n";
+  foreach my $line (@lines) {
+    print OUT "$line\n";
+    print     "$line\n";
+  }
+  close(OUT);
+}
