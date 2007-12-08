@@ -51,6 +51,7 @@ s/"/\\"/g foreach values %h;
 write_file("$ENV{HOME}/.mairix-link-props.el", <<EOF);
 (org-store-link-props
   :type "mairix"
+  :link "mairix:$h{'message-id-query'}"
   :from "$h{from}"
   :fromname "$h{fromname}"
   :fromaddr "$h{fromaddr}"
@@ -116,53 +117,6 @@ sub build_query {
   }
   return Mairix::field_query($field, $value);
 }
-
-# Old code which doesn't use Mail::Header
-#
-# sub get_message_id {
-#   return uniq(
-#     map Mairix::message_id_query($_),
-#         get_header_field_quick('Message-ID')
-#   );
-# }
-
-# sub get_subject {
-#   return uniq(
-#     map { join ' ', Mairix::subject_query($_) }
-#         get_header_field_quick('Subject')
-#         $header->get('Subject')
-#   );
-# }
-#
-# sub uniq {
-#   my %h = map { $_ => 1 } @_;
-#   return keys %h;
-# }
-#
-# sub get_header_field_quick {
-#   my ($field) = @_;
-#   my %found;
-#   my $value;
-#   while (<STDIN>) {
-#     chomp;
-#     if ($value) {
-#       if (/^\s+(.+)/) {
-#         # continuation line
-#         $value .= " " . $1;
-#         next;
-#       }
-#
-#       # next header
-#       $found{$value}++;
-#       undef $value;
-#       next;
-#     }
-#     elsif (/^$field:\s+(.+)\s*$/i) {
-#       $value = $1;
-#     }
-#   }
-#   return keys %found;
-# }
 
 sub write_file {
   my ($dst, @lines) = @_;
