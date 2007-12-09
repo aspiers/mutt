@@ -45,13 +45,21 @@ my $query_type = $opts{ids}     ? 'message-id-query'
                : $opts{threads} ? 'subject-query'
                : usage();
 my $query = $h{$query_type};
-write_file("$ENV{HOME}/.clip-mairix", "<mairix://$query>");
+write_file(
+  "$ENV{HOME}/.clip-mairix",
+  "<mairix://$query>"
+);
+print "\n";
+write_file(
+  "$ENV{HOME}/.mairix-link",
+  "[[$h{link}][m{f:$h{fromname}, $h{subject}}]]",
+);
 print "\n";
 s/"/\\"/g foreach values %h;
 write_file("$ENV{HOME}/.mairix-link-props.el", <<EOF);
 (org-store-link-props
   :type "mairix"
-  :link "mairix:$h{'message-id-query'}"
+  :link "$h{link}"
   :from "$h{from}"
   :fromname "$h{fromname}"
   :fromaddr "$h{fromaddr}"
@@ -104,6 +112,7 @@ sub extract_fields {
 
   $h{'message-id-query'} = Mairix::message_id_query($h{'message-id'});
   $h{'subject-query'} = Mairix::subject_query($h{subject});
+  $h{'link'} = "mairix:$h{'message-id-query'}";
 
   return %h;
 }
