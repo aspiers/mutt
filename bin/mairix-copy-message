@@ -39,8 +39,7 @@ EOUSAGE
 }
 
 my $header = parse_header();
-my @fields = qw(message-id subject from);
-my %h = extract_fields($header);
+my %h = extract_fields($header, qw(message-id subject from));
 my $query_type = $opts{ids}     ? 'message-id-query'
                : $opts{threads} ? 'subject-query'
                : usage();
@@ -49,12 +48,18 @@ write_file(
   "$ENV{HOME}/.clip-mairix",
   "<mairix://$query>"
 );
+
 print "\n";
+
+my $subject = $h{subject};
+$subject =~ tr/[]/<>/;
 write_file(
   "$ENV{HOME}/.mairix-link",
-  "[[$h{link}][m{f:$h{fromname}, $h{subject}}]]",
+  "[[$h{link}][m{f:$h{fromname} s:$subject]]",
 );
+
 print "\n";
+
 s/"/\\"/g foreach values %h;
 write_file("$ENV{HOME}/.mairix-link-props.el", <<EOF);
 (org-store-link-props
@@ -89,7 +94,7 @@ sub parse_header {
 }
 
 sub extract_fields {
-  my ($header) = @_;
+  my ($header, @fields) = @_;
 
   my %h;
   for (@fields) {
