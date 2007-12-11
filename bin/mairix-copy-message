@@ -140,9 +140,8 @@ sub write_file {
   my ($dst, @lines) = @_;
   open(OUT, ">$dst") or die "Couldn't open(>$dst): $!\n";
   print "-- Writing to $dst:\n";
-  foreach my $line (@lines) {
-    print OUT "$line\n";
-    print     "$line\n";
-  }
+  my $out = join "\n", @lines;
+  print OUT "$out";
+  print     "$out\n";
   close(OUT);
 }
