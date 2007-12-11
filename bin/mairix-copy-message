@@ -54,7 +54,7 @@ print "\n";
 my $subject = $h{subject};
 $subject =~ tr/[]/<>/;
 write_file(
-  "$ENV{HOME}/.mairix-link",
+  "$ENV{HOME}/.org-mairix-link",
   "[[$h{link}][f:$h{fromname} s:$subject]]",
 );
 
