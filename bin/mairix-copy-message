@@ -62,12 +62,8 @@ print "\n";
 
 s/"/\\"/g foreach values %h;
 write_file("$ENV{HOME}/.org-mairix-store-link.el", <<EOF);
-(org-store-link-props
-  :type "mairix"
-  :link "$h{link}"
+(org-store-mairix-link-props
   :from "$h{from}"
-  :fromname "$h{fromname}"
-  :fromaddr "$h{fromaddr}"
   :subject "$h{subject}"
   :subjectquery "$h{'subject-query'}"
   :message-id "$h{'message-id'}"
