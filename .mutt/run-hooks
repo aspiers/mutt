@@ -2,16 +2,25 @@
 
 . $ZDOTDIR/.zsh/functions/enable_nullglob
 
+if [ "$1" == '-l' ]; then
+    list=yes
+    shift
+fi
+
 for profile in "$@"; do
     . $ZDOT_FIND_HOOKS ".mutt/${profile}.d"
 done | sort-by-filename |
 while read hook; do
-    cat <<EOF
+    if [ -n "$list" ]; then
+        echo "$hook"
+    else
+        cat <<EOF
 #########################################################################
 # $hook follows:
 
 EOF
-    cat "$hook"
-    echo
+        cat "$hook"
+        echo
+    fi
 done
 
