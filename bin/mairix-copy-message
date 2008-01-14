@@ -100,6 +100,8 @@ sub extract_fields {
     $h{$_} =~ s/\s{2,}/ /g;
   }
 
+  $h{subject} = Mairix::normalize_subject($h{subject});
+
   my $from = $header->get('From');
   $from =~ s/\s{2,}/ /g;
   # FIXME: `org-store-link-props' will automatically extract
@@ -110,6 +112,7 @@ sub extract_fields {
   die "not exactly 1 from address" if @from_addrs != 1;
   $h{fromaddr} = $from_addrs[0]->address;
   $h{fromname} = $from_addrs[0]->name || $h{fromaddr};
+  $h{fromname} =~ s/([A-Z])[a-z]+ /$1 /g;
 
   $h{'message-id-query'} = Mairix::message_id_query($h{'message-id'});
   $h{'subject-query'} = Mairix::subject_query($h{subject});
