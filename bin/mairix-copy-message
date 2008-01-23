@@ -38,15 +38,19 @@ Options:
 EOUSAGE
 }
 
+die "\$MAIL_PROFILE not set" unless length $ENV{MAIL_PROFILE};
+my $protocol = $ENV{MAIL_PROFILE} eq 'personal' ? 'mairixp' : 'mairix';
+
 my $header = parse_header();
 my %h = extract_fields($header, qw(message-id subject from));
 my $query_type = $opts{ids}     ? 'message-id-query'
                : $opts{threads} ? 'subject-query'
                : usage();
 my $query = $h{$query_type};
+
 write_file(
   "$ENV{HOME}/.clip-mairix",
-  "<mairix://$query>"
+  "<$protocol://$query>"
 );
 
 print "\n";
@@ -116,7 +120,7 @@ sub extract_fields {
 
   $h{'message-id-query'} = Mairix::message_id_query($h{'message-id'});
   $h{'subject-query'} = Mairix::subject_query($h{subject});
-  $h{'link'} = "mairix:$h{'message-id-query'}";
+  $h{'link'} = "$protocol:$h{'message-id-query'}";
 
   return %h;
 }
