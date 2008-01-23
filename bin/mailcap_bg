@@ -1,15 +1,20 @@
-#!/usr/bin/env bash
+#!/bin/bash
+# $Id$
 #
-# Mutt mailcap helper -- this program creates a hard link to the file
-# to be viewed prior to starting the viewer in the background.  This
-# allows mutt to delete the temporary file without disturbing the
-# viewer.
+# Mutt mailcap helper -- this program copies the file to be viewed
+# prior to starting the viewer in the background.  This allows mutt to
+# delete the temporary file without disturbing the viewer.
 #
 # Syntax: mailcap_bg filename prog [args]
 #         mailcap_test filename prog (determines if mailcap_bg can run)
 #
-# Copyright 2003 Aron Griffis
+# Copyright 2003, 2006 Aron Griffis <agriffis n01se.net>
 # released under the GNU General Public License version 2
+#
+# Tweaked by Adam Spiers <mutt@adamspiers.org>
+#
+# Upstream version:
+# http://agriffis.n01se.net/skel.hg/?file/tip/bin/mailcap_bg
 
 PS4="${0##*/}+ "
 exec 1>>~/.mailcap_bg.log 2>&1
@@ -19,6 +24,13 @@ cat <<EOF
 `date`
 pid $$, invoked as $@
 EOF
+
+# Test mode
+testing=false
+if [[ $1 == -test ]]; then
+    testing=true
+    shift
+fi
 
 # Setup global variables.
 need_wait=no
@@ -30,16 +42,10 @@ if [[ -z "$prog" ]]; then
     exit 1
 fi
 
-declare -a args
-# gotta
-for ((i = 1; i <= $#; i = i+1)); do
-  eval args[i]="\$$i"
-done
-
-set -x
+declare -a args=("${@}")
 
 # Test only if called as mailcap_test
-if [[ $0 == *_test ]]; then
+if $testing || [[ $0 == *_test ]]; then
     # Note regarding mailcap %s usage in test= section: This will only
     # resolve to a value when there is a filename specified in the
     # attachment, for example
@@ -57,34 +63,29 @@ if [[ $0 == *_test ]]; then
     # make sure the requested program exists
     type -P "$prog" &>/dev/null || exit 1
 
-    # need a local display for browsers,
-    # and a (local or remote) display for everything else
-    case "$prog" in
-    *[Mm]oz*|*galeon*|run_browser)
-        [[ $DISPLAY == :* ]] || exit 1 ;; 
-    display)
-        [[ -n $DISPLAY ]] || exit 1
-        # Doesn't seem to work for some png files :-(
-        # identify "${fname}" &>/dev/null || exit $?
-        ;;
-    *)
-        [[ -n $DISPLAY ]] || exit 1 ;;
-    esac
+    # and we have a display
+    [[ -n $DISPLAY ]] || exit 1
 
     # no other restrictions of which we're aware at this point
     exit 0
 fi
 
-# Link the file so that mutt can delete the original.
+# Copy the file so that mutt can do whatever it wants to the original.
 # Using a temp dir instead of a temp file preserves the original
 # extension.  Note that fname should always be an absolute path.
 #
-# Mutt appears to zero out the file from the disk prior to deleting
-# it.  That results in the hard link being zero'd before the browser
-# gets a chance to access it.  For that reason we have to mv rather
-# than ln.
-tname=$(mktemp -d "${fname%/*}/mailcap_bg.XXXXXX") \
-    && mv -f "${fname}" "${tname}/${fname##*/}" \
+# If mutt is providing a temporary file, it will zero out the file
+# from the disk prior to deleting it.  Therefore we can't use a hard
+# link as it would be zero'd before the viewer gets a chance to access
+# it.  We can't mv either, since if mutt is providing a file attached
+# to a draft mail, it's not a temporary file.  Therefore copy is the
+# only safe solution which will work in every scenario.
+
+#template="${fname%/*}/mailcap_bg.XXXXXX"
+# Since we're not hard linking, these can go in /tmp now
+template="/tmp/mailcap_bg.XXXXXX"
+tname=$(mktemp -d "$template") \
+    && cp "${fname}" "${tname}/${fname##*/}" \
     && tname="${tname}/${fname##*/}"
 if [[ $? != 0 ]]; then
     # Can't background, unfortunately
@@ -109,13 +110,14 @@ fi
     "$prog" "${args[@]}"
     echo "$prog $* exited with status code $?"
 
-    # delete the temp file when it's no longer in use.
-    # this is important for mozilla, for example, which can return
+    # Delete the temp file when it's no longer in use.
+    # This is important for mozilla, for example, which can return
     # immediately once it has signalled a running instance.
-    # An hour is pretty arbitrary and arguably too low and high.
     if [[ $tname != $fname ]]; then
         while true; do
-            sleep $((60*60))                        # 1 hour
+            # An hour is pretty arbitrary and arguably too low and high.
+            # Let's see how we get on with checking every minute.
+            sleep $((1*60))
             [[ -f $tname ]] || break                # no longer exists
             fuser "$tname" &>/dev/null && continue  # still in use
             rm -f "$tname"
