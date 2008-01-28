@@ -46,12 +46,11 @@ my %h = extract_fields($header, qw(message-id subject from));
 my $query_type = $opts{ids}     ? 'message-id-query'
                : $opts{threads} ? 'subject-query'
                : usage();
-my $query = $h{$query_type};
+my $query    = $h{$query_type};
+my $URL      = "$protocol://$query";
+my $org_link = "$protocol:$query";
 
-write_file(
-  "$ENV{HOME}/.clip-mairix",
-  "<$protocol://$query>"
-);
+write_file("$ENV{HOME}/.clip-mairix", "<$URL>");
 
 print "\n";
 
@@ -59,7 +58,7 @@ my $subject = $h{subject};
 $subject =~ tr/[]/<>/;
 write_file(
   "$ENV{HOME}/.org-mairix-link",
-  "[[$h{link}][f:$h{fromname} s:$subject]]",
+  "[[$org_link][f:$h{fromname} s:$subject]]",
 );
 
 print "\n";
@@ -120,7 +119,6 @@ sub extract_fields {
 
   $h{'message-id-query'} = Mairix::message_id_query($h{'message-id'});
   $h{'subject-query'} = Mairix::subject_query($h{subject});
-  $h{'link'} = "$protocol:$h{'message-id-query'}";
 
   return %h;
 }
