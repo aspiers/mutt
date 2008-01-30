@@ -14,13 +14,11 @@ use Mail::Address;
 
 use Mairix;
 
-my $AUTO = 0;
-
 my %opts;
 GetOptions(
   \%opts,
   'help',
-  'ids', 'threads',
+  'ids', 'threads', 'no-wait',
 ) or usage();
 usage() if @ARGV or $opts{help};
 
@@ -30,11 +28,12 @@ sub usage {
   (my $me = $0) =~ s,.*/,,;
 
   die <<EOUSAGE;
-Usage: cat mail1 [mail2 ...] | $me [--ids] [--threads]
+Usage: cat mail1 [mail2 ...] | $me [--ids | --threads] [--no-wait]
 Options:
   -h, --help     Show this help
       --ids      Extract Message-ID header(s)
       --threads  Extract thread subject(s)
+      --no-wait  Exit zero so that mutt doesn't wait_key
 EOUSAGE
 }
 
@@ -73,7 +72,7 @@ write_file("$ENV{HOME}/.org-mairix-store-link.el", <<EOF);
   :message-id-query "$h{'message-id-query'}")
 EOF
 
-if ($AUTO) {
+if ($opts{'no-wait'}) {
   sleep 1;
   exit 0; # so that mutt wait_key doesn't ask for a key-press
 }
