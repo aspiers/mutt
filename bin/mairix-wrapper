@@ -29,17 +29,33 @@ $SIG{PIPE} = sub {
 
 use File::Path;
 use File::Which;
+use Getopt::Long;
 
 use Mairix;
 
 my %fields = map { $_ => 1 } qw(subject from to message-id);
 
+my %opts;
+GetOptions(
+  \%opts,
+  'help', 'threads',
+) or usage();
+usage() if $opts{help};
+
 sub usage {
-  die <<EOF;
+  warn @_, "\n" if @_;
+
+  (my $me = $0) =~ s,.*/,,;
+
+  die <<EOUSAGE;
 Usage:
-  $0 prompter
-  $0 field Subject < mail
-EOF
+  $me prompter
+  $me [--threads] field Subject < mail
+  $me [ -h | --help]
+
+Options:
+   --threads  include all messages in same threads as matching messages
+EOUSAGE
 }
 
 usage() unless @ARGV;
@@ -66,18 +82,18 @@ my $mairix = which('mairix');
 die "Can't find executable mairix!\n" unless $mairix;
 
 if ($mode eq 'prompt') {
-  prompter();
+  prompt_and_search();
 }
 elsif ($mode eq 'field') {
   usage() unless @ARGV;
   my $field = lc shift @ARGV;
-  extract_field($field);
+  extract_field_and_search($field);
 }
 else {
   die "$0: Invalid mode '$mode'\n";
 }
 
-sub prompter {
+sub prompt_and_search {
   print "mairix query? ";
   chomp(my $query = <STDIN>);
   $query =~ s/^\s+//;
@@ -93,7 +109,7 @@ sub prompter {
   exit 0;
 }
 
-sub extract_field {
+sub extract_field_and_search {
   my ($field) = @_;
   die "$0: Can't follow unsupported field '$field'\n"
     unless $fields{lc $field};
@@ -158,6 +174,8 @@ sub do_query {
     or die "Couldn't open($query_file): $!\n";
   print QUERY "@query\n";
   close(QUERY);
-  system($mairix, '-f', $ENV{MAIRIXRC}, @query);
+  my @args = ( '-f', $ENV{MAIRIXRC} );
+  push @args, '-t' if $opts{threads};
+  system($mairix, @args, @query);
   return $? >> 7;
 }
