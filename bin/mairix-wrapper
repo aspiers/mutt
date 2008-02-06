@@ -32,7 +32,7 @@ use File::Which;
 
 use Mairix;
 
-my %fields = map { $_ => 1 } qw(Subject From To);
+my %fields = map { $_ => 1 } qw(subject from to message-id);
 
 sub usage {
   die <<EOF;
@@ -70,7 +70,7 @@ if ($mode eq 'prompt') {
 }
 elsif ($mode eq 'field') {
   usage() unless @ARGV;
-  my $field = shift @ARGV;
+  my $field = lc shift @ARGV;
   extract_field($field);
 }
 else {
@@ -96,7 +96,7 @@ sub prompter {
 sub extract_field {
   my ($field) = @_;
   die "$0: Can't follow unsupported field '$field'\n"
-    unless $fields{$field};
+    unless $fields{lc $field};
 
   my $value = '';
   while (<STDIN>) {
@@ -105,7 +105,7 @@ sub extract_field {
     last if /^$/; # no longer in header
     
     if (! $value) {
-      if (/^$field:\s+(.+)/) {
+      if (/^$field:\s+(.+)/i) {
         $value = $1;
       }
       next;
@@ -132,15 +132,19 @@ sub extract_field {
 sub get_query {
   my ($field, $value) = @_;
 
-  if ($field eq 'From') {
+  if ($field eq 'from') {
     # extract email address and real name
     # search for real name (AND of all words) OR email address
     require Mail::Address;
     die "TODO";
   }
 
-  if ($field eq 'Subject') {
+  if ($field eq 'subject') {
     return Mairix::subject_query($value);
+  }
+
+  if ($field eq 'message-id') {
+    return Mairix::message_id_query($value);
   }
 
   die "BUG";
