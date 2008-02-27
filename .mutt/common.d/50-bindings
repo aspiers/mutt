@@ -49,7 +49,7 @@
 
    bind  index H           display-toggle-weed
 
-   macro index I  "<change-folder>!\n"  "switch to MAIN inbox"
+   macro index,pager I  "<change-folder>!\n"  "switch to MAIN inbox"
 
    macro index B     ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
@@ -108,8 +108,6 @@
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
    macro pager "\cB" "|w3m\n"      "call w3m to extract URLs out of a message"
 
-   macro pager  I   "<change-folder>!\n"  "switch to MAIN inbox"
- 
    macro pager  l   "<exit><limit>"  "show only messages matching a pattern"
  
    macro pager  w   ":set invsmart_wrap\n" "toggle wrap mode"
