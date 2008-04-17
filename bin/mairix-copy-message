@@ -96,8 +96,7 @@ sub extract_fields {
 
   my %h;
   for (@fields) {
-    $h{$_} = $header->get($_);
-    next unless defined $h{$_};
+    $h{$_} = $header->get($_) || '';
     chomp $h{$_};
     $h{$_} =~ s/\s{2,}/ /g;
   }
