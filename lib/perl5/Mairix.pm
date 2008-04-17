@@ -76,7 +76,7 @@ to/forwarding the message etc.
 sub normalize_subject {
   my ($original) = @_;
 
-  my $new = $original;
+  my $new = length($original) ? $original : '__BLANKSUBJECT__';
   1 while $new =~ s/^\s+//
        or $new =~ s/\s+$//
        or $new =~ s/\s{2,}/ /g
