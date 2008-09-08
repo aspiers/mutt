@@ -48,6 +48,8 @@
    # in the To: line, and some in From:.  Sometimes people even
    # Cc: to a list, or send To: me *and* To: the list...
 
+   set   duplicate_threads
+
    set   fast_reply
    set   force_name       # save outbound mail by username
                           # (even if =username does not exist)
@@ -107,6 +109,9 @@
    set   reply_regexp="^((re([\[0-9\]+])*|aw|antw|svar):[ \t]*)+"
    set   reply_to=ask-yes # use address in Reply-To when replying?
    set   reverse_alias    # show name of sender as set with my alias for him
+   set   reverse_name     # reply with address I received the mail to
+   set   reverse_realname # override real name as per above in case they
+                          # spelt my name wrong :-)
    set   resolve          # do not proceed to next unread mail after command
    set nosave_name        # save outbound mail to =username if it exists
    set   timeout=30       # time in seconds until new mail check
