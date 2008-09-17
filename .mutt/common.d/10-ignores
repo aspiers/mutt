@@ -1,5 +1,6 @@
   ignore *
 unignore from date subject to cc
+unignore reply-to
 unignore organization organisation
 #unignore x-mailer x-newsreader
 #unignore x-mailing-list
