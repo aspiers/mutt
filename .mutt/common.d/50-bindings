@@ -40,6 +40,10 @@
  
 #  bind  index P           recall-message
    bind  index L           list-reply
+
+# does this go against the GTD-FIFO idea?
+   macro index "\ea"       "<limit>all<enter>" "remove limit and show all"
+
 #  bind  index  \t         next-unread
 #  bind  index ,\t         previous-unread
    bind  index "\eT"       tag-subthread
@@ -108,8 +112,8 @@
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
    macro pager "\cB" "|w3m\n"      "call w3m to extract URLs out of a message"
 
-   macro pager  l   "<exit><limit>"  "show only messages matching a pattern"
- 
+   macro pager  l    "<exit><limit>"  "show only messages matching a pattern"
+
    macro pager  w   ":set invsmart_wrap\n" "toggle wrap mode"
 
    # Change PIL size.  Count includes status line, 
