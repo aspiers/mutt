@@ -41,8 +41,8 @@
 #  bind  index P           recall-message
    bind  index L           list-reply
 
-# does this go against the GTD-FIFO idea?
-   macro index "\ea"       "<limit>all<enter>" "remove limit and show all"
+# This goes against the GTD-FIFO idea.
+#  macro index "\ea"       "<limit>all<enter>" "remove limit and show all"
 
 #  bind  index  \t         next-unread
 #  bind  index ,\t         previous-unread
