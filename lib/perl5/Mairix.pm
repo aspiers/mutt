@@ -84,7 +84,7 @@ sub normalize_subject {
        or $new =~ s/^\[Fwd:\s*(.+)\s*\]$/$1/i
        or $new =~ s/\(Fwd\)$//i
        or $new =~ s/^(FYI|FYEO|FCP|AHOD|F)(:|\b)//i
-       or $new =~ s/^\[[\w -]+\]\s+//i
+       or $new =~ s/^\[(?!bug )[\w -]+\]\s+//i
        or $new =~ s/^[(\[]?out of office( autoreply:?)?[)\]]?//i
        or $new =~ s/[(\[]?on leave( [\d-]+ \w+)?[)\]]?//i
        or $new =~ s/[(\[]?away from my mail?[)\]]?//i
