@@ -7,6 +7,7 @@
 # Author: Werner Fink <werner@suse.de>
 #
 
+#logger -t $0 "$@" / $DISPLAY
 #exec 2>/tmp/url_handler.log
 
 # acrobat reader passes args: -remote openURL(url,new-window)
@@ -87,7 +88,10 @@ case "$method" in
                     *2.0*)
                         firefox -new-tab "$url" && exit 0 ;;
                     *)
-                        firefox -remote "openURL($url,new-tab)" && exit 0 ;;
+                        # unset of DESKTOP_STARTUP_ID needed for
+                        # launching browser tabs within skype - go
+                        # figure...
+                        DESKTOP_STARTUP_ID= firefox -remote "openURL($url,new-tab)" && exit 0 ;;
                 esac                        
             elif type -p mozilla >& /dev/null; then
                 # FIXME - which mozilla versions?
