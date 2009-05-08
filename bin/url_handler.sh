@@ -64,7 +64,9 @@ shift
 case "$method" in
     ftp)
 	ftp=ftp
-	if type -p ncftp >& /dev/null ; then
+	if type -p lftp >& /dev/null ; then
+            ftp=lftp
+	elif type -p ncftp >& /dev/null ; then
 	    ftp=ncftp
 	else
 	    url="${url#ftp://}"
