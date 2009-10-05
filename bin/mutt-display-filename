@@ -7,6 +7,9 @@
 # function which works in maildir and mh folders.  It does have one
 # in the file browser though.
 
-mid=$( head -n 1k | egrep -i '^Message-ID:[ 	]' )
+mid=$( head -n 1k | sed -n '/^Message-ID:[ 	]/{s///;p}' )
+
+echo "Searching for: $mid ..."
 grep -rl "$mid" "$@" | xargs -r file
-exit 1
+
+exit 1 # trigger mutt's wait_key
