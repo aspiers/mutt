@@ -1,15 +1,27 @@
 #!/bin/sh
 #
 # Pipe a message from mutt into this and it will look for it
-# in the folder(s) given in ARGV and spit out the filename.
+# via mairix and spit out the filename.
 # 
 # It's a nasty hack really - mutt should have a <display-filename>
 # function which works in maildir and mh folders.  It does have one
 # in the file browser though.
 
-mid=$( head -n 1k | sed -n '/^Message-ID:[ 	]/{s///;p}' )
+me=`basename $0`
+
+mid=$( head -n 1k | sed -n '/^Message-ID:[ 	]\+</{s///;s/>.*//;p}' )
+
+if [ -z "$mid" ]; then
+    echo "$me: Couldn't extract message id"
+    exit 1
+fi
 
 echo "Searching for: $mid ..."
-grep -rl "$mid" "$@" | xargs -r file
+
+mairix-profile "$MAIL_PROFILE" "m:$mid"
+
+echo
+grep -rl "$mid" "$MAIRIX_RESULTS" | xargs -r readlink
+echo
 
 exit 1 # trigger mutt's wait_key
