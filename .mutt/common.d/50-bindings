@@ -157,6 +157,9 @@
 # }}}
 # {{{ Bindings for attach
 
+   # http://article.gmane.org/gmane.mail.mutt.user/34196
+   bind  attach <Return> view-mailcap
+
    bind  attach <space> view-attach
    bind  attach \Cg     exit
 
