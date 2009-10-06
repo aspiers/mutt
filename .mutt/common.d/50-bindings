@@ -158,6 +158,7 @@
 # {{{ Bindings for attach
 
    # http://article.gmane.org/gmane.mail.mutt.user/34196
+   # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=546760
    bind  attach <Return> view-mailcap
 
    bind  attach <space> view-attach
