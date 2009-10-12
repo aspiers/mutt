@@ -23,15 +23,19 @@ if [ "$1" = -remote ]; then
     esac
 fi
 
-# Add support for VersionOne "URLs"
-case "$1" in
-    B-[0-9][0-9][0-9][0-9][0-9]*)
-        set "https://v1.innerweb.novell.com/VersionOne/Search.aspx?q=${1#B-}&type=Story"
-        ;;
-    TK-[0-9][0-9][0-9][0-9][0-9]*)
-        set "https://v1.innerweb.novell.com/VersionOne/Search.aspx?q=${1#TK-}&type=Task"
-        ;;
-esac
+# Allow hooks to manipulate "$1" prior to parsing.
+HOOK_DIR=".url_handler.d"
+source "$ZDOTDIR/lib/libhooks.sh"
+while read hook; do
+    if source "$hook"; then
+        echo "$hook returned 0"
+        break
+    else
+        echo "$hook didn't match"
+    fi
+done < <(source $ZDOT_FIND_HOOKS ".url_handler.d")
+# The while read; do ... done < <() is necessary to
+# avoid the while's body running in a subshell.
 
    url="$1"
 method="${1%%:*}"
