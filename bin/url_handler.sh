@@ -23,6 +23,16 @@ if [ "$1" = -remote ]; then
     esac
 fi
 
+# Add support for VersionOne "URLs"
+case "$1" in
+    B-[0-9][0-9][0-9][0-9][0-9]*)
+        set "https://v1.innerweb.novell.com/VersionOne/Search.aspx?q=${1#B-}&type=Story"
+        ;;
+    TK-[0-9][0-9][0-9][0-9][0-9]*)
+        set "https://v1.innerweb.novell.com/VersionOne/Search.aspx?q=${1#TK-}&type=Task"
+        ;;
+esac
+
    url="$1"
 method="${1%%:*}"
 
