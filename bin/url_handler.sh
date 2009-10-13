@@ -28,10 +28,7 @@ HOOK_DIR=".url_handler.d"
 source "$ZDOTDIR/lib/libhooks.sh"
 while read hook; do
     if source "$hook"; then
-        echo "$hook returned 0"
         break
-    else
-        echo "$hook didn't match"
     fi
 done < <(source $ZDOT_FIND_HOOKS ".url_handler.d")
 # The while read; do ... done < <() is necessary to
