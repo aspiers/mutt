@@ -119,15 +119,7 @@ case "$method" in
         exit 1
 	;;
     mailto)
-	: ${MAILER:=mutt}
-	if type -p ${MAILER} >& /dev/null ; then
-	    exec ${MAILER} "${url#mailto:}"
-	else
-	    echo "No mailer ${MAILER} found in path."
-	    echo "Please check your environment variable MAILER."
-	    read -p "Press return to continue: "
-	    exit 0  # No error return
-	fi
+        mailto-handler "$url"
 	;;
     textedit)
         lilypond-invoke-editor "$url"
