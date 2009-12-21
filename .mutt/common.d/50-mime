@@ -15,6 +15,7 @@ mime_lookup application/x-unknown text/x-unknown-content-type
 mime_lookup application/x-gzip
 
 # This works in conjunction with some magic text/html entries in .mailcap
+# See also `view-mailcap' in ~/.cfg/mutt/.mutt/common.d/50-bindings
 auto_view text/x-vcard text/html
 
 auto_view application/emacs-lisp application/x-shellscript text/x-patch
