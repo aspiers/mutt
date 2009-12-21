@@ -36,13 +36,8 @@ fi
 
 # Setup global variables.
 need_wait=no
-fname=${1} ; shift
-prog=${1} ; shift
-if [[ -z "$prog" ]]; then
-    echo "mailcap_bg: No program argument provided; aborting." >&2
-    alertme "mailcap_bg: No program argument provided; aborting."
-    exit 1
-fi
+fname="$1" ; shift
+prog="$1"  ; shift
 
 declare -a args=("${@}")
 
@@ -70,6 +65,12 @@ if $testing || [[ $0 == *_test ]]; then
 
     # no other restrictions of which we're aware at this point
     exit 0
+fi
+
+if [[ -z "$prog" ]]; then
+    echo "mailcap_bg: No program argument provided; aborting." >&2
+    alertme "mailcap_bg: No program argument provided; aborting."
+    exit 1
 fi
 
 # Copy the file so that mutt can do whatever it wants to the original.
