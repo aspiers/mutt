@@ -140,6 +140,11 @@
    bind  compose  q  noop
 
    bind  compose  g  send-message
+
+   # How the fuck are you supposed to view mailcap entries in 1.5.20?
+   # Fucking losers have no idea how to make software usable.
+   #bind  compose <Return> view-mailcap
+
    bind  compose  v  view-attach
 
    # no <view-text> command in compose menu :-(
