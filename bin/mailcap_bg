@@ -22,8 +22,10 @@ exec 1>>~/.mailcap_bg.log 2>&1
 cat <<EOF
 ----------------------
 `date`
-pid $$, invoked as $@
+pid $$, invoked as $0 $@
 EOF
+
+set -x
 
 # Test mode
 testing=false
@@ -64,7 +66,7 @@ if $testing || [[ $0 == *_test ]]; then
     type -P "$prog" &>/dev/null || exit 1
 
     # and we have a display
-    [[ -n $DISPLAY ]] || exit 1
+    [[ -n "$DISPLAY" ]] || exit 1
 
     # no other restrictions of which we're aware at this point
     exit 0
