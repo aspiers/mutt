@@ -4,3 +4,9 @@ mkdir -p ~/.smime/{certificates,keys}
 [ -e ~/.smime/keys/.index ] || smime_keys init
 
 mkdir -p ~/.mairix/personal
+
+if [ -z "$OTHER_USER" ]; then
+    cd ~/bin
+    rm -f mailcap_test
+    ln -s mailcap_bg mailcap_test
+fi
