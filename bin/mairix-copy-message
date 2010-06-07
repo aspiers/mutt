@@ -103,17 +103,25 @@ sub extract_fields {
 
   $h{subject} = Mairix::normalize_subject($h{subject});
 
-  my $from = $header->get('From');
+  my $from = $header->get('From') || '';
   $from =~ s/\s{2,}/ /g;
   # FIXME: `org-store-link-props' will automatically extract
   # 'fromname' and 'fromaddress' properties from the 'from' property,
   # and similarly for 'toname' and 'toaddress', therefore we can
   # probably ditch these and hence the dependency on Mail::Address.
   my @from_addrs = Mail::Address->parse($from);
-  die "not exactly 1 from address" if @from_addrs != 1;
-  $h{fromaddr} = $from_addrs[0]->address;
-  $h{fromname} = $from_addrs[0]->name || $h{fromaddr};
-  $h{fromname} =~ s/([A-Z])[a-z]+ /$1 /g;
+  if (@from_addrs) {
+    if (@from_addrs > 1) {
+      die "more than one From address in header";
+    }
+    $h{fromaddr} = $from_addrs[0]->address;
+    $h{fromname} = $from_addrs[0]->name || $h{fromaddr};
+    $h{fromname} =~ s/([A-Z])[a-z]+ /$1 /g;
+  }
+  else {
+    warn "no From address in header";
+    $h{fromname} = 'unknown sender (no From header)';
+  }
 
   $h{'message-id-query'} = Mairix::message_id_query($h{'message-id'});
   $h{'subject-query'} = Mairix::subject_query($h{subject});
