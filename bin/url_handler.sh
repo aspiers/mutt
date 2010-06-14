@@ -72,6 +72,30 @@ fi
 
 shift
 
+firefox_handler () {
+    ff_version="`firefox -version`"
+    echo "ff_version $ff_version"
+    case "$ff_version" in
+        *1.5.0.8)
+            # tested on FC6
+            firefox -remote "openURL($url,new-tab)" && exit 0 ;;
+        *1.5.0.*)
+            firefox "$url" & exit 0 ;;
+        *2.0*)
+            firefox -new-tab "$url" && exit 0 ;;
+        *)
+            # unset of DESKTOP_STARTUP_ID needed for
+            # launching browser tabs within skype - go
+            # figure...
+            DESKTOP_STARTUP_ID= firefox -remote "openURL($url,new-tab)" && exit 0 ;;
+    esac
+}
+
+chrome_handler () {
+    wmctrl -a chrome
+    google-chrome "$1"
+}
+
 case "$method" in
     ftp)
 	ftp=ftp
@@ -89,27 +113,16 @@ case "$method" in
 	;;
     file|http|https|gopher)
 	if test -n "$DISPLAY"; then
-            if type -p firefox >& /dev/null; then
-                ff_version="`firefox -version`"
-                echo "ff_version $ff_version"
-                case "$ff_version" in
-                    *1.5.0.8)
-                        # tested on FC6
-                        firefox -remote "openURL($url,new-tab)" && exit 0 ;;
-                    *1.5.0.*)
-                        firefox "$url" & exit 0 ;;
-                    *2.0*)
-                        firefox -new-tab "$url" && exit 0 ;;
-                    *)
-                        # unset of DESKTOP_STARTUP_ID needed for
-                        # launching browser tabs within skype - go
-                        # figure...
-                        DESKTOP_STARTUP_ID= firefox -remote "openURL($url,new-tab)" && exit 0 ;;
-                esac                        
-            elif type -p mozilla >& /dev/null; then
-                # FIXME - which mozilla versions?
-                mozilla -remote "openURL($url,new-tab)" && exit 0
+            if type -p google-chrome >& /dev/null; then
+                chrome_handler "$url" && exit 0
             fi
+            if type -p firefox >& /dev/null; then
+                firefox_handler "$url" && exit 0
+            fi
+            # if type -p mozilla >& /dev/null; then
+            #     # FIXME - which mozilla versions?
+            #     mozilla -remote "openURL($url,new-tab)" && exit 0
+            # fi
         fi
 	type -p links >& /dev/null && links "$url" && exit 0
 	type -p w3m   >& /dev/null && w3m   "$url" && exit 0
