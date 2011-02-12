@@ -9,7 +9,11 @@
 
 me=`basename $0`
 
-mid=$( head -n 1k | sed -n '/^Message-ID:[ 	]\+</{s///;s/>.*//;p}' )
+mid=$(
+    head -n 1k | \
+    grep -i '^Message-ID:' | \
+    sed -n '/^[^:]\+: </{s///;s/>.*//;p}'
+)
 
 if [ -z "$mid" ]; then
     echo "$me: Couldn't extract message id"
