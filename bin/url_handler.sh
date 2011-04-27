@@ -92,7 +92,7 @@ firefox_handler () {
 }
 
 chrome_handler () {
-    wmctrl -a chrome
+    [ -z "$SSH_CLIENT" ] && wmctrl -a chrome
     google-chrome "$1"
 }
 
