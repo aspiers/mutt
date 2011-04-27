@@ -25,7 +25,7 @@ echo "Searching for: $mid ..."
 mairix-profile "$MAIL_PROFILE" "m:$mid"
 
 echo
-grep -rl "$mid" "$MAIRIX_RESULTS" | xargs -r readlink
+grep -rl "$mid" "$MAIRIX_RESULTS" | xargs -r -n1 readlink
 echo
 
 exit 1 # trigger mutt's wait_key
