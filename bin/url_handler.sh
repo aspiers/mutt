@@ -92,7 +92,13 @@ firefox_handler () {
 }
 
 chrome_handler () {
-    [ -z "$SSH_CLIENT" ] && wmctrl -a chrome
+    if [ -z "$SSH_CLIENT" ]; then
+        if which wmctrl >&/dev/null; then
+            wmctrl -a chrome
+        else
+            echo "WARNING: Didn't find wmctrl on \$PATH" >&2
+        fi
+    fi
     google-chrome "$1"
 }
 
