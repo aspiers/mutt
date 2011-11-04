@@ -1,9 +1,14 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
 use strict;
-use File::Basename;
+use warnings;
 
-my $dir = "~/.mutt/common.d/person-adam.spiers";
+use File::Basename;
+use Term::ReadLine;
+
+use Sh qw(append_to_file);
+
+my $dir = "~/.mutt/personal.d/person-adam.spiers";
 my $me = basename $0;
 
 unless (@ARGV == 3) {
@@ -39,17 +44,9 @@ folder-hook =(in(boxes)?|lists)/$short source ~/.mutt/mailing-list
 # }}}
 EOTEMPLATE
 
-chomp $new_stuff;
-print <<EOSH;
-Run this:
+my $term = Term::ReadLine->new('foo');
+my $prompt = "Enter destination file: ";
+my $dst = $term->readline($prompt, "$dir/50-alias-computing-community");
+$dst =~ s/^~/$ENV{HOME}/;
 
-cat <<EOF >> $dir/50-alias-incoming
-$new_stuff
-
-or
-
-cat <<EOF >> $dir/50-alias-computing-community
-$new_stuff
-EOF
-EOSH
-
+append_to_file($dst, $new_stuff);
