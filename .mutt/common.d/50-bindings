@@ -21,7 +21,8 @@
    bind  index <home>      first-entry
    bind  index <end>       last-entry
                          
-   bind  index g           group-reply
+   bind  index a           group-reply
+   bind  index \Ca         create-alias
                          
    bind  index \Cv         forget-passphrase
    bind  index <           previous-page
@@ -66,6 +67,9 @@
 # {{{ Bindings for pager
 
    bind  pager  h      help   
+
+   bind  pager \Ca         create-alias
+   bind  pager  a      group-reply
 
    bind  pager  <down> next-line
    bind  pager  <up>   previous-line
