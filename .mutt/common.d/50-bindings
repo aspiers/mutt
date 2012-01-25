@@ -54,7 +54,12 @@
 
    bind  index H           display-toggle-weed
 
-   macro index,pager I  "<change-folder>!\n"  "switch to MAIN inbox"
+   bind  index,pager c     mail
+   macro index gd          "<change-folder>$postponed\n" "Change folder"
+   macro index gi          "<change-folder>!\n"          "Go to inbox"
+   macro index gf          "<change-folder>?"            "Change folder"
+
+   macro index,pager I     "<change-folder>!<enter>"   "switch to MAIN inbox"
 
    macro index B     ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
