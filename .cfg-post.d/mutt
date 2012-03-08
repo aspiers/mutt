@@ -1,12 +1,5 @@
 #!/bin/sh
 
-mkdir -p ~/.smime/{certificates,keys}
-
-. ~/lib/personal-mail.sh
-[ -e ~/.smime/keys/.index ] || smime_keys init
-
-mkdir -p ~/.mairix/personal
-
 if [ -z "$OTHER_USER" ]; then
     cd ~/bin
     rm -f mailcap_test
