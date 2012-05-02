@@ -55,9 +55,11 @@
    bind  index H           display-toggle-weed
 
    bind  index,pager c     mail
-   macro index gd          "<change-folder>$postponed\n" "Change folder"
+   macro index gd          "<change-folder>$postponed\n" "Change to drafts folder"
    macro index gi          "<change-folder>!\n"          "Go to inbox"
-   macro index gf          "<change-folder>?"            "Change folder"
+   macro index gc          "<change-folder>"             "Change to manually specified folder"
+   macro index gf          "<change-folder>"             "Change to manually specified folder"
+   macro index gl          "<change-folder>?"            "Change to existing folder"
 
    macro index,pager I     "<change-folder>!<enter>"   "switch to MAIN inbox"
 
