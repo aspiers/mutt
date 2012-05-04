@@ -1,5 +1,6 @@
 #!/bin/bash
 
+. $ZDOTDIR/.shared_env # for ZDOT_FIND_HOOKS
 . $ZDOTDIR/.zsh/functions/enable_nullglob
 
 if [ "$1" == '-l' ]; then
