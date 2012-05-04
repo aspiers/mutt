@@ -67,6 +67,8 @@
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
    macro index "\cB" "|w3m\n"      "call w3m to extract URLs out of a message"
 
+   macro index "\eD" "<pipe-message>maildir-deduplicate -H | less\n" "debug maildir-deduplicate detection algorithm"
+
    macro index X  "Dall\n" "mark all messages as deleted"
    macro index "\eh"  "/~h " "search by header substring"
 
@@ -121,7 +123,9 @@
  
    macro pager  B    ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
-   macro pager "\cB" "|w3m\n"      "call w3m to extract URLs out of a message"
+   macro pager "\cB" "<pipe-message>w3m\n"  "call w3m to extract URLs out of a message"
+
+   macro pager "\eD" "<pipe-message>maildir-deduplicate -H | less\n" "debug maildir-deduplicate detection algorithm"
 
    macro pager  l    "<exit><limit>"  "show only messages matching a pattern"
 
