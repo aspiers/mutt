@@ -1,2 +1,0 @@
-source ~/.mutt/mailing-list
-macro pager z "C=software/zsh-patches\rC~/zsh-patches\r"
