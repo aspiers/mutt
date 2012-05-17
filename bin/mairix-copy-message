@@ -55,9 +55,12 @@ print "\n";
 
 my $subject = $h{subject};
 $subject =~ tr/[]/<>/;
+my $link_text = $query_type eq 'subject-query'
+              ? "s:$subject"
+              : "f:$h{fromname} s:$subject";
 write_file(
   "$ENV{HOME}/.org-mairix-link",
-  "[[$org_link][f:$h{fromname} s:$subject]]",
+  "[[$org_link][$link_text]]",
 );
 
 print "\n";
