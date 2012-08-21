@@ -8,7 +8,7 @@ use Term::ReadLine;
 
 use Sh qw(append_to_file);
 
-my $dir = "~/.mutt/personal.d/person-adam.spiers";
+my $dir = "~/.mutt/common.d/person-adam.spiers";
 my $me = basename $0;
 
 unless (@ARGV == 3) {
