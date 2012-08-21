@@ -40,7 +40,7 @@ alias $short "$longer" <$addr>
 subscribe $addr
 #send-hook "$regexp" 'my_hdr From: "Adam Spiers" <$short\@adamspiers.org>'
 #send-hook "$regexp" 'my_hdr From: "Adam Spiers" <aspiers\@suse.com>'
-#mailboxes =in/$short
+#mailboxes =in.$short
 folder-hook =(in(boxes)?|lists)/$short source ~/.mutt/mailing-list
 
 # }}}
