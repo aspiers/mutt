@@ -11,21 +11,23 @@ use Sh qw(append_to_file);
 my $dir = "~/.mutt/common.d/person-adam.spiers";
 my $me = basename $0;
 
-unless (@ARGV == 3) {
+unless (@ARGV == 2 or @ARGV == 3) {
   die <<EOF;
-Usage: $me <list short name> <list-addr> <longer description>
+Usage: $me <list short name> <list-addr> [<longer description>]
 
-e.g. $me mercurial %s\@selenic.com '%s mailing list'
+e.g. $me mercurial %s\@selenic.com '%s group'
 
 Short name gets used as folder name and \@adamspiers.org prefix.
 Longer description gets used as mutt alias description text.
 Can include '%s' in address and longer description which expands to short name.
+Longer description defaults to '%s mailing list'.
 EOF
 }
 
 my ($short, $addr, $longer) = @ARGV;
 
 $addr =~ s/%s/$short/g;
+$longer ||= '%s mailing list';
 $longer =~ s/%s/$short/g;
 (my $regexp = $addr) =~ s/\@/.*/;
 my $folder = $short;
