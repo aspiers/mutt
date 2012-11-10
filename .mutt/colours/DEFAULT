@@ -4,9 +4,11 @@
 ## Format:
 ## color object      foreground   background
 
-uncolor *
+uncolor index *
 
 # N.B. last matching rule wins
+
+color index white default all
 
 color attachment green default
 color bold brightwhite default
@@ -53,3 +55,6 @@ mono  body bold                "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[a-z][a-z]+"
 color body brightgreen default "<[Gg]>"               # <g>
 color body brightgreen default "<[Bb][Gg]>"           # <bg>
 color body brightgreen default " [;:]-*[)>(<|]"       # :-) etc...
+
+# mail directed at me and from a human
+color index brightwhite default '~p ! ~f "hermes|bugzilla|mailman-owner"'

@@ -6,3 +6,5 @@ bind pager z noop
   set pgp_verify_sig
   set pager_index_lines=8
 unset signature
+
+source ~/.mutt/colours/DEFAULT
