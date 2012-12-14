@@ -1,0 +1,4 @@
+# This is required in addition to doing it via the default folder
+# hook, so that colours are configured even when invoking mutt
+# in compose-only mode, e.g. via the -H CLI option.
+source ~/.mutt/colours/DEFAULT
