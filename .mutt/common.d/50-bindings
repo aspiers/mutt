@@ -99,7 +99,8 @@
    bind  pager  b            previous-page     
  
    bind  pager  ^      top
-   bind  pager  g      top
+   bind  pager  =      top
+   bind  pager  gg     top
    bind  pager  G      bottom
  
    bind  pager  /      search
