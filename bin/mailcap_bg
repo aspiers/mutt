@@ -17,7 +17,7 @@
 # http://agriffis.n01se.net/skel.hg/?file/tip/bin/mailcap_bg
 
 PS4="${0##*/}+ "
-exec 1>>~/.mailcap_bg.log 2>&1
+exec 1>>~/.log/mailcap_bg.log 2>&1
 
 cat <<EOF
 ----------------------
