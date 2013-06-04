@@ -185,6 +185,8 @@
    bind  attach <space> view-attach
    bind  attach \Cg     exit
 
+   bind  attach a       group-reply
+
    macro attach F       "<pipe-message>festival --tts\n"
    macro attach <left>  "<exit><previous-undeleted><view-attachments>"  "move to previous message"
    macro attach <right> "<exit><next-undeleted><view-attachments>"  "move to next message"
