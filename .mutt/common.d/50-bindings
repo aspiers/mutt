@@ -121,17 +121,17 @@
 
    bind  pager  .      parent-message
 
-   macro pager  $   "<exit><sync-mailbox>" "quit pager and sync mailbox"
+   macro pager  $      "<exit><sync-mailbox>" "quit pager and sync mailbox"
  
-   macro pager  B    ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
+   macro pager  B      ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
-   macro pager "\cB" "<pipe-message>w3m\n"  "call w3m to extract URLs out of a message"
+   macro pager "\cB"   "<pipe-message>w3m\n"  "call w3m to extract URLs out of a message"
 
-   macro pager "\eD" "<pipe-message>maildir-deduplicate -H | less\n" "debug maildir-deduplicate detection algorithm"
+   macro pager "\eD"   "<pipe-message>maildir-deduplicate -H | less\n" "debug maildir-deduplicate detection algorithm"
 
-   macro pager  l    "<exit><limit>"  "show only messages matching a pattern"
+   macro pager  l      "<exit><limit>"  "show only messages matching a pattern"
 
-   macro pager  w   ":set invsmart_wrap\n" "toggle wrap mode"
+   macro pager  w      ":set invsmart_wrap\n" "toggle wrap mode"
 
    # Change PIL size.  Count includes status line, 
    # e.g. setting to 4 means only 3 message lines are visible.
