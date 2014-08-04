@@ -90,6 +90,7 @@
    bind  pager  d      half-down
  
    bind  pager  :      enter-command      
+   macro pager  ";"    "<exit><tag-prefix>"
  
    bind  pager  <pagedown>   next-page
    bind  pager  <pageup>     previous-page     
