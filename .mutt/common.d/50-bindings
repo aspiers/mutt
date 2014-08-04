@@ -129,6 +129,8 @@
 
    macro pager "\eD"   "<pipe-message>maildir-deduplicate -H | less\n" "debug maildir-deduplicate detection algorithm"
 
+   macro pager "\et"   "<exit><tag-subthread>"
+
    macro pager  l      "<exit><limit>"  "show only messages matching a pattern"
 
    macro pager  w      ":set invsmart_wrap\n" "toggle wrap mode"
