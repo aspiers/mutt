@@ -28,3 +28,29 @@ auto_view text/calendar application/ics
 
 # Some people think that HTML is good for email <sigh>
 alternative_order text/enriched text/plain text/html
+
+# We could include text/calendar at the beginning of alternative_order.
+# Impact:
+#
+#   - Invites from Groupwise are structured like this:
+#
+#       multipart/alternative
+#         |-> text/plain
+#         `-> text/calendar
+#
+#     so this would result in just the output from mutt-ics, which is
+#     a bit more informative (but may risk dropping minor info only
+#     visible via the text/plain).
+#
+#   - Invites from Google Calendar are structured like this:
+#
+#       multipart/alternative
+#         |-> text/plain
+#         |-> text/html
+#         `-> text/calendar
+#       application/ics
+#
+#     so this would result in a double-decker from mutt-ics, once from
+#     the text/calendar and once from the application/ics.
+#
+# So it's probably better not to bother.
