@@ -23,5 +23,8 @@ auto_view application/emacs-lisp application/x-shellscript text/x-patch
 # gpg.rc takes care of this
 #auto_view application/pgp-signature
 
+# iCal / ics
+auto_view text/calendar application/ics
+
 # Some people think that HTML is good for email <sigh>
 alternative_order text/enriched text/plain text/html
