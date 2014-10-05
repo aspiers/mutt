@@ -1,3 +1,5 @@
+# -*- mode: muttrc -*-
+
 alias muttann      MUTT Announcements      <mutt-announce@cs.hmc.edu>
 alias muttusers    MUTT Users                <mutt-users@cs.hmc.edu>
 alias muttdev      MUTT Developers             <mutt-dev@cs.hmc.edu>

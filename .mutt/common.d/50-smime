@@ -1,4 +1,5 @@
-# -*-muttrc-*-
+# -*- mode: muttrc -*-
+
 ## The following options are only available if you have
 ## compiled in S/MIME support
 

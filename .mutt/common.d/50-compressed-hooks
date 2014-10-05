@@ -1,3 +1,5 @@
+# -*- mode: muttrc -*-
+
 # Support for compressed folders
 # See <http://www.spinnaker.de/mutt/compressed/>
 #

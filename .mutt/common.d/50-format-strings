@@ -1,3 +1,5 @@
+# -*- mode: muttrc -*-
+
 ## forw_format - format the text used in the format attribution
 set forw_format="%s (fwd)"
 

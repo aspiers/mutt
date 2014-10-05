@@ -1,3 +1,5 @@
+# -*- mode: muttrc -*-
+
 bind pager z noop
 
 ## N.B. This gets altered by ~/.mutt/{scoring,mailing-list} !

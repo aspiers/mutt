@@ -1,3 +1,5 @@
+# -*- mode: muttrc -*-
+
 # don't forget to attach stuff!
 # ~b not supported for send-hook :-(
 #send-hook '~b "attached"' ~X 0 'push a'
