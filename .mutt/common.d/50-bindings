@@ -10,7 +10,7 @@
 
 # {{{ Bindings for index
 
-   bind  index h           help   
+   bind  index h           help
 
    bind  index /           search
    bind  index ?           search-reverse
@@ -20,25 +20,25 @@
    bind  index <pageup>    previous-page
    bind  index <home>      first-entry
    bind  index <end>       last-entry
-                         
+
    bind  index a           group-reply
    bind  index \Ca         create-alias
-                         
+
    bind  index \Cv         forget-passphrase
    bind  index <           previous-page
    bind  index >           next-page
-                         
+
 #  bind  index ^           first-entry
    bind  index =           first-entry
    bind  index *           last-entry
 #  bind  index <home>      first-entry
 #  bind  index <end>       last-entry
-                          
+
    bind  index $           sync-mailbox
-                          
+
    bind  index +           next-page
    bind  index -           previous-page
- 
+
 #  bind  index P           recall-message
    bind  index L           list-reply
 
@@ -75,54 +75,54 @@
 # }}}
 # {{{ Bindings for pager
 
-   bind  pager  h      help   
+   bind  pager  h      help
 
    bind  pager \Ca         create-alias
    bind  pager  a      group-reply
 
    bind  pager  <down> next-line
    bind  pager  <up>   previous-line
-   bind  pager  j      next-line         
-   bind  pager  k      previous-line     
-   bind  pager  \Cm    next-line         
-                       
+   bind  pager  j      next-line
+   bind  pager  k      previous-line
+   bind  pager  \Cm    next-line
+
    bind  pager  u      half-up
    bind  pager  d      half-down
- 
-   bind  pager  :      enter-command      
+
+   bind  pager  :      enter-command
    macro pager  ";"    "<exit><tag-prefix>"
- 
+
    bind  pager  <pagedown>   next-page
-   bind  pager  <pageup>     previous-page     
+   bind  pager  <pageup>     previous-page
    bind  pager  <space>      next-page
    bind  pager  <backspace>  previous-page
    bind  pager  f            next-page
-   bind  pager  b            previous-page     
- 
+   bind  pager  b            previous-page
+
    bind  pager  ^      top
    bind  pager  =      top
    bind  pager  gg     top
    bind  pager  G      bottom
- 
+
    bind  pager  /      search
    bind  pager  ?      search-reverse
    bind  pager  N      search-next
- 
+
    bind  pager  H      display-toggle-weed
 
    bind  pager  n      next-undeleted
    bind  pager  p      previous-undeleted
    bind  pager  P      print-message
- 
+
    bind  pager  L      list-reply
-   bind  pager  r      reply             
+   bind  pager  r      reply
 #  bind  pager  F      forward-message
    bind  pager  D      delete-message
 
    bind  pager  .      parent-message
 
    macro pager  $      "<exit><sync-mailbox>" "quit pager and sync mailbox"
- 
+
    macro pager  B      ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
    macro pager "\cB"   "<pipe-message>w3m\n"  "call w3m to extract URLs out of a message"
@@ -136,7 +136,7 @@
 
    macro pager  w      ":set invsmart_wrap\n" "toggle wrap mode"
 
-   # Change PIL size.  Count includes status line, 
+   # Change PIL size.  Count includes status line,
    # e.g. setting to 4 means only 3 message lines are visible.
    macro pager "\e0" ":set pager_index_lines=0\n"
    macro pager "\e1" ":set pager_index_lines=4\n"
