@@ -4,7 +4,7 @@
 # set hdr_format="%4C %Z %{%b %d} %-15.15n (%4l) %s"
 
   set sort=threads
-  set pager_index_lines=9
+  set pager_index_lines=15
 
  exec collapse-all
 
