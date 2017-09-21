@@ -16,8 +16,8 @@
 # Upstream version:
 # http://agriffis.n01se.net/skel.hg/?file/tip/bin/mailcap_bg
 
-PS4="${0##*/}+ "
-exec 1>>~/.log/mailcap_bg.log 2>&1
+PS4="+\${BASH_SOURCE/\$HOME/\~}@\${LINENO}(\${FUNCNAME[0]}): "
+exec >>~/.log/mailcap_bg.log 2>&1
 
 cat <<EOF
 ----------------------
@@ -29,6 +29,11 @@ set -x
 
 # Test mode
 testing=false
+if [[ $1 == -test ]]; then
+    testing=true
+    shift
+fi
+
 if [[ $1 == -test ]]; then
     testing=true
     shift
@@ -96,43 +101,46 @@ if [[ $? != 0 ]]; then
     tname=${fname}
 fi
 
+# replace @s if it exists in the viewer string
+if [[ "${args[*]}" == *@s* ]]; then
+    args=("${args[@]//@s/$tname}")
+    # Alternative method follows; do them one at a time
+    #for ((i = 0; i < ${#args[@]}; i = i+1)); do
+    #    args[i] = "${args[i]//%s/$tname}"
+    #done
+else
+    args=("${args[@]}" "${tname}")
+fi
+
 # Run the viewer in the background
-(
-    # replace @s if it exists in the viewer string
-    if [[ "${args[*]}" == *@s* ]]; then
-        args=("${args[@]//@s/$tname}")
-        # Alternative method follows; do them one at a time
-        #for ((i = 0; i < ${#args[@]}; i = i+1)); do
-        #    args[i] = "${args[i]//%s/$tname}"
-        #done
-    else 
-        args=("${args[@]}" "${tname}")
-    fi
+nohup "$prog" "${args[@]}" </dev/null &
+viewer_pid=$!
+echo "Viewer pid is $viewer_pid"
 
-    # run the program
-    "$prog" "${args[@]}"
-    echo "$prog $* exited with status code $?"
+if [[ $tname != $fname ]]; then
+    nohup tmp-cleaner "$tname" </dev/null >&/dev/null &
+    cleaner_pid=$!
+    echo "Cleaner is $cleaner_pid"
+fi
 
-    # Delete the temp file when it's no longer in use.
-    # This is important for mozilla, for example, which can return
-    # immediately once it has signalled a running instance.
-    if [[ $tname != $fname ]]; then
-        while true; do
-            # An hour is pretty arbitrary and arguably too low and high.
-            # Let's see how we get on with checking every minute.
-            sleep $((1*60))
-            [[ -f $tname ]] || break                # no longer exists
-            fuser "$tname" &>/dev/null && continue  # still in use
-            rm -f "$tname"
-            rmdir "${tname%/*}"  # tname is a file in a temporary directory
-            break
-        done &
-    fi
-) &
+# Horrible, mysterious hack to make opening URLs or files work.  No
+# idea why it's necessary!  But must be some kind of race condition,
+# e.g. that when this script exits, for some weird reason it also
+# kills the viewer, despite it being run in the background with no
+# STDIN and protected by nohup(1).
+if [[ $prog == url-handler ]]; then
+    need_wait=yes
+fi
 
-# Only wait if we have to (couldn't hard link)... this could lead to
-# problems because of the 30-second pause
-[[ $need_wait == yes ]] && wait
+# Only wait for viewer process to exit if we have to (couldn't hard
+# link)... This could lead to problems because of the 30-second pause
+# (huh? what 30s pause was I talking about?)
+if [[ $need_wait == yes ]]; then
+    wait $viewer_pid
+else
+    echo "Viewer $viewer_pid still running?"
+    ps -fp $viewer_pid
+fi
 
 # If we exit non-zero, mutt will do its wait_key prompt which is annoying.
 exit 0

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Used by mailcap_bg to clean temp files and their containing temp directory
+# after the temp file is no longer in use.
+#
+# This is important for url-handler invoking Chrome or Firefox for example,
+# since they can return immediately once they have signalled a
+# running instance to open a temporary file.
+
+PS4="+\${BASH_SOURCE/\$HOME/\~}@\${LINENO}(\${FUNCNAME[0]}): "
+set -x
+exec >>~/.log/mailcap_bg.log 2>&1
+
+tname="$1"
+
+while true; do
+    sleep $((1*60))
+    [[ -f $tname ]] || break                # no longer exists
+    fuser "$tname" >&/dev/null && continue  # still in use
+    rm -f "$tname"
+    rmdir "${tname%/*}"  # tname is a file in a temporary directory
+    break
+done
