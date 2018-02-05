@@ -83,6 +83,7 @@ sub normalize_subject {
        or $new =~ s/^((Re|Fwd|Aw|Antw|Svar):|\(Fwd\))\s*//i
        or $new =~ s/^\[Fwd:\s*(.+)\s*\]$/$1/i
        or $new =~ s/\(Fwd\)$//i
+       or $new =~ s/\bFW: //
        or $new =~ s/^(FYI|FYEO|FCP|AHOD|F)(:|\b)//i
        or $new =~ s/^\[(?!bug )[\w -]+\]\s+//i
        or $new =~ s/^[(\[]?out of office( autoreply:?)?[)\]]?//i
