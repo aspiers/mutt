@@ -132,6 +132,7 @@
    set   ssl_use_sslv3=no # avoid POODLE security bug
    set   status_on_top
 #  set   strict_threads   # use only references for threading?
+   set   skip_quoted_offset=3 # https://neomutt.org/feature/skip-quoted
    set   reflow_text=yes
    set   text_flowed=yes
    set   reflow_space_quotes=yes
