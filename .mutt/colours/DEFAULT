@@ -76,3 +76,11 @@ color body brightgreen default "<[Gg]>"               # <g>
 color body brightgreen default "<[Bb][Gg]>"           # <bg>
 color body brightgreen default " [;:]-*[)>(<|]"       # :-) etc...
 
+# PGP stuff from https://github.com/altercation/mutt-colors-solarized/blob/master/mutt-colors-solarized-dark-16.muttrc
+color body          red             default         "(BAD signature)"
+color body          cyan            default         "(Good signature)"
+color body          brightblack     default         "^gpg: Good signature .*"
+color body          brightyellow    default         "^gpg: "
+color body          brightyellow    red             "^gpg: BAD signature from.*"
+mono  body          bold                            "^gpg: Good signature"
+mono  body          bold                            "^gpg: BAD signature from.*"
