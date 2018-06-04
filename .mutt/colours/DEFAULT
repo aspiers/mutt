@@ -45,6 +45,9 @@ color index brightred default ~F
 # highlight messages I sent
 color index yellow default ~P
 
+# mail directed at me and from a human
+color index brightwhite default '~p ! ~f "hermes|bugzilla|mailman-owner"'
+
 # Highlights inside the body of a message.
 
 # URLs
@@ -62,5 +65,3 @@ color body brightgreen default "<[Gg]>"               # <g>
 color body brightgreen default "<[Bb][Gg]>"           # <bg>
 color body brightgreen default " [;:]-*[)>(<|]"       # :-) etc...
 
-# mail directed at me and from a human
-color index brightwhite default '~p ! ~f "hermes|bugzilla|mailman-owner"'
