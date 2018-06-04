@@ -113,7 +113,7 @@
    set   pgp_replysign
    set   pgp_replysignencrypted
    set   pgp_retainable_sigs
-   set   quote_regexp="^> *"
+   set   quote_regexp="^(> *)+"
    set   recall=no
    set   reply_regexp="^((re([\[0-9\]+])*|aw|antw|svar):[ \t]*)+"
    set   reply_to=ask-yes # use address in Reply-To when replying?

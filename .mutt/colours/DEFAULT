@@ -50,6 +50,17 @@ color index brightwhite default '~p ! ~f "hermes|bugzilla|mailman-owner"'
 
 # Highlights inside the body of a message.
 
+color quoted  yellow      default
+color quoted1 yellow      default
+color quoted2 red         default
+color quoted3 red         default
+color quoted4 cyan        default
+color quoted5 cyan        default
+color quoted6 green       default
+color quoted7 green       default
+color quoted8 brightgreen default
+color quoted9 brightgreen default
+
 # URLs
 color body brightblue  default "(https?|(wu-?|s)?ftp|news|telnet|finger)://[^ \"\t\r\n]*"
 color body brightblue  default "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
