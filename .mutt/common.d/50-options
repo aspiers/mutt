@@ -136,8 +136,10 @@
    set   reflow_text=yes
    set   text_flowed=yes
    set   reflow_space_quotes=yes
+   set   reflow_wrap=72
    set   tmpdir=/tmp      # directory where temporary files are to be placed
 #  set   to_chars=
    set   tilde            # show empty lines at end with a tilde
  unset   wait_key
+   set   wrap=90
    set   write_inc=1      # display increment count for every n-th mail
