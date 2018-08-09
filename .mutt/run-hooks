@@ -21,7 +21,8 @@ while read hook; do
 
 EOF
         if ! "$hook"; then
-            exit 1
+            echo "# Hook failed with exit code $?"
+            echo "Hook $hook failed with exit code $?" >&2
         fi
         echo
     else
