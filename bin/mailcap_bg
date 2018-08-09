@@ -123,24 +123,8 @@ if [[ $tname != $fname ]]; then
     echo "Cleaner is $cleaner_pid"
 fi
 
-# Horrible, mysterious hack to make opening URLs or files work.  No
-# idea why it's necessary!  But must be some kind of race condition,
-# e.g. that when this script exits, for some weird reason it also
-# kills the viewer, despite it being run in the background with no
-# STDIN and protected by nohup(1).
-if [[ $prog == url-handler ]]; then
-    need_wait=yes
-fi
-
-# Only wait for viewer process to exit if we have to (couldn't hard
-# link)... This could lead to problems because of the 30-second pause
-# (huh? what 30s pause was I talking about?)
-if [[ $need_wait == yes ]]; then
-    wait $viewer_pid
-else
-    echo "Viewer $viewer_pid still running?"
-    ps -fp $viewer_pid
-fi
+echo "Viewer $viewer_pid still running?"
+ps -fp $viewer_pid
 
 # If we exit non-zero, mutt will do its wait_key prompt which is annoying.
 exit 0
