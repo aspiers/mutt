@@ -1,0 +1,3 @@
+macro pager  \Cw  "<enter-command>set wrap=0\n"   "Disable text wrapping"
+macro pager "\ew" "<enter-command>set wrap=90\n"  "Enable text wrapping at 90"
+macro pager "\eW" "<enter-command>set wrap=120\n" "Enable text wrapping at 120"
