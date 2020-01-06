@@ -59,7 +59,6 @@ color quoted5 cyan        default
 color quoted6 green       default
 color quoted7 green       default
 color quoted8 brightgreen default
-color quoted9 brightgreen default
 
 # URLs
 color body brightblue  default "(https?|(wu-?|s)?ftp|news|telnet|finger)://[^ \"\t\r\n]*"
