@@ -1,5 +1,10 @@
 # -*- mode: muttrc -*-
 
+# Nice trick from
+# https://demu.red/blog/2017/11/neomutt-macro-opening-texthtml-attachment-from-the-index-view/
+bind  index,pager V  noop        ## Unbinds V from version
+macro index,pager V "<view-attachments><search>html<enter><view-mailcap><exit>"
+
 # don't forget to attach stuff!
 # ~b not supported for send-hook :-(
 #send-hook '~b "attached"' ~X 0 'push a'
