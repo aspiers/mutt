@@ -4,5 +4,5 @@ set attribution="%n <%a> wrote:"
 set indent_string="> "
 
 # Give some visual feedback.
-#echo "Normal quoting selected" # Need my echo patch for this
+echo "Normal quoting selected" # Need my echo patch for this
 
