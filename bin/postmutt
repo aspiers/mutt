@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# View an item from a postfix queue via mutt
+
+file="$1"
+tmp="$(mktemp --tmpdir postmutt-XXXXXXX)"
+
+(
+    echo "From ${file//\//-} $(date +'%a %b %e %T %Y')"
+    postcat -bh "$file"
+) >"$tmp"
+
+mutt -f "$tmp"
+rm "$tmp"
