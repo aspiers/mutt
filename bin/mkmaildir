@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for d in "$@"; do
+    mkdir -p $d/{cur,new,tmp}
+done
