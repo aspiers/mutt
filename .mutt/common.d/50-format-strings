@@ -10,4 +10,4 @@ set forw_format="%s (fwd)"
 set pager_format="%S %T [%C/%m] %-.20n %s (%c)"
 
 ## status_format - format of summary on the current folder in the index
-set status_format="Mutt: %f (%s/%S) [%M/%m (%L/%l)] [N=%n%?o?,O=%o?%?t?,*=%t?%?d?,D=%d?%?p?,p/p=%p?%?b?,new=%b?] %> %r"
+set status_format="%r %f (%<T?%T/>%s/%S) %M/%m (%L/%l) N=%n%?o?,O=%o?%?t?,*=%t?%?d?,D=%d? %P [%?p?p/p=%p?%?b?,new=%b?] %> %V"
