@@ -3,7 +3,7 @@
 bind pager z noop
 
 ## N.B. This gets altered by ~/.mutt/{scoring,mailing-list} !
-  set index_format="%Z%3C %[%b %d] %-21.21F %s%>  %c"
+  set index_format='%Z%4C %[%b %d] %-18.18f %s%>  %g%c'
 
   set pgp_verify_sig
   set pager_index_lines=12
