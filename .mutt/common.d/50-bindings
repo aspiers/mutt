@@ -118,6 +118,7 @@
 #  bind  pager  F      forward-message
    bind  pager  D      delete-message
    bind  index,pager E edit
+   macro  index,pager e ":echo \"Don't know how to archive here\"\n"
 
    bind  pager  .      parent-message
 
