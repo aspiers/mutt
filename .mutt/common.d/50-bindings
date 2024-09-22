@@ -117,6 +117,7 @@
    bind  pager  r      reply
 #  bind  pager  F      forward-message
    bind  pager  D      delete-message
+   bind  index,pager E edit
 
    bind  pager  .      parent-message
 
