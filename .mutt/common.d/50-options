@@ -1,5 +1,3 @@
-# -*- mode: muttrc -*-
-
    set   abort_nosubject=no
    set   abort_unmodified=no
    set   ascii_chars

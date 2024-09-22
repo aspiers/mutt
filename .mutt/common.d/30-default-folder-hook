@@ -1,3 +1,1 @@
-# -*- mode: muttrc -*-
-
 folder-hook . source ~/.mutt/folders/DEFAULTS

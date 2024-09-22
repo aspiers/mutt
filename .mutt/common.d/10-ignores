@@ -1,5 +1,3 @@
-# -*- mode: muttrc -*-
-
   ignore *
 unignore from date subject to cc
 unignore reply-to mail-followup-to

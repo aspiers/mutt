@@ -1,5 +1,3 @@
-# -*- mode: muttrc -*-
-
 # Nice trick from
 # https://demu.red/blog/2017/11/neomutt-macro-opening-texthtml-attachment-from-the-index-view/
 bind  index,pager V  noop        ## Unbinds V from version

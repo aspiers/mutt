@@ -1,5 +1,3 @@
-# -*- mode: muttrc -*-
-#
 # Command formats for gpg.
 # 
 # This version uses gpg-2comp from 

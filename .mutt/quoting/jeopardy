@@ -1,5 +1,3 @@
-# -*- mode: muttrc -*-
-
 set attribution="    -----Original Message-----\n    From: %n\n    Sent: %d\n    To: %t\n    Cc:\n    Subject: %s\n"
 set indent_string="    "
 

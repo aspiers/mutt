@@ -1,5 +1,3 @@
-# -*- mode: muttrc -*-
-
 set attribution="%n <%a> wrote:"
 set indent_string="> "
 
