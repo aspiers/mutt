@@ -3,7 +3,7 @@
 
 bind pager z noop
 
-  set index_format='%Z%4C %[%b %d] %-18.18f %s%>  %g%c'
+  set index_format='%Z%4C %[%b %d] %-18.18f %s%>  %g %c'
   set pgp_verify_sig
   set pager_index_lines=12
 unset signature
