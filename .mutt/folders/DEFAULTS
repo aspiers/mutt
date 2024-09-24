@@ -8,7 +8,4 @@ bind pager z noop
   set pager_index_lines=12
 unset signature
 
-# resets mutt.pub/.mutt/folders/notmuch-vfolder.pub
-bind index $ sync-mailbox
-
 source ~/.mutt/colours/DEFAULT
