@@ -28,7 +28,7 @@ auto_view application/emacs-lisp application/x-shellscript text/x-patch
 auto_view text/calendar application/ics
 
 # Some people think that HTML is good for email <sigh>
-alternative_order text/enriched text/plain text/html
+alternative_order text/html text/enriched text/plain
 
 # We could include text/calendar at the beginning of alternative_order.
 # Impact:
