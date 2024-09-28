@@ -1,6 +1,6 @@
    set   abort_nosubject=no
    set   abort_unmodified=no
-   set   ascii_chars
+   set noascii_chars
    set noconfirmappend
    set   confirmcreate
    set   copy             # Always keep a copy of my mails!
