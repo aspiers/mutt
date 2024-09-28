@@ -3,9 +3,13 @@
 
 bind pager z noop
 
-  set index_format='%Z%4C %[%b %d] %-18.18f %s%>  %g %c'
+  set index_format='%Z%4C %@date@ %-18.18f %s%>  %g %c'
   set pgp_verify_sig
   set pager_index_lines=12
 unset signature
 
+index-format-hook  date  "~d <24H"  "%[ %H:%M]"
+index-format-hook  date  "~d <1m"   "%[%a %d]"
+index-format-hook  date  "~d <1y"   "%[%b %d]"
+index-format-hook  date  "~A"       "%[%b%Y]"
 source ~/.mutt/colours/DEFAULT
