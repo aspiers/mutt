@@ -1,3 +1,5 @@
+set mailcap_path="~/.config/neomutt/mailcap:~/.mailcap:/usr/share/neomutt/mailcap:/etc/mailcap:/usr/etc/mailcap:/usr/local/etc/mailcap"
+
 # Base mime type on file extension for application/octet-stream
 #  - needs mutt 1.5.x
 mime_lookup application/octet-stream
