@@ -15,7 +15,7 @@
 #  ~c USER         message is Cc: USER
 #  ~C USER         message is to: or Cc: USER
 
-   # Mutt's default 
+   # Mutt's default
 #  set default_hook="~f %s !~P | (~P ~C %s)"
 
    # My attempts.  The tricky bit is getting it right when it's
@@ -24,7 +24,7 @@
    # first clause should handle group mails from friends, since ~p
    # includes messages Cc'd to me.  The 3rd clause is for list mail
    # which doesn't have me in From: or To:.
-   # 
+   #
    # I suspect the main problem is that with default_hook set to
    # multiple clauses, internally, mutt's algorithm is effectively
    # "iterate through all save-hooks, setting %s and seeing if any
@@ -34,7 +34,7 @@
    # %s, only one of the many clauses (generated from the many values
    # of %s) can ever match, so the order of clause matching ceases to
    # matter.
-   
+
    #set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~C %s)"
    # This one's better when friends bcc me:
    set default_hook="(~p ~f %s) | (~P ~t %s) | (!~p !~P ~f %s)"
@@ -43,7 +43,7 @@
    # worth adopting the
    #
    #   foo-hook "~f foo-list@lists\.foo\.com" =folder
-   # 
+   #
    # form when matching lists; I think some lists have their address
    # in the To: line, and some in From:.  Sometimes people even
    # Cc: to a list, or send To: me *and* To: the list...
