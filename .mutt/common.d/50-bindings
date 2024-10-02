@@ -56,8 +56,8 @@
    bind  index,pager g     noop
    macro index gd          "<change-folder>$postponed\n" "Change to drafts folder"
    macro index gi          "<change-folder>!\n"          "Go to inbox"
-   macro index gc          "<change-folder>"             "Change to manually specified folder"
-   macro index gf          "<change-folder>"             "Change to manually specified folder"
+   macro index,pager gc    "<change-folder>"             "Change to manually specified folder"
+   macro index,pager gf    "<change-folder>"             "Change to manually specified folder"
    macro index gl          "<change-folder>?"            "Change to existing folder"
 
    macro index,pager I     "<change-folder>!<enter>"   "switch to MAIN inbox"
