@@ -10,6 +10,6 @@ unset signature
 
 index-format-hook  date  "~d <24H"  "%[ %H:%M]"
 index-format-hook  date  "~d <1m"   "%[%a %d]"
-index-format-hook  date  "~d <1y"   "%[%b %d]"
+index-format-hook  date  "~d <1y"   "%[%d %b]"
 index-format-hook  date  "~A"       "%[%b%Y]"
 source ~/.mutt/colours/DEFAULT
