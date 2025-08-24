@@ -47,28 +47,30 @@
 #  bind  index ,\t         previous-unread
    bind  index "\eT"       tag-subthread
 
-   bind  index y           collapse-thread
-   bind  index Y           collapse-all
+   bind  index "y"         collapse-thread
+   bind  index "Y"         collapse-all
 
-   bind  index H           display-toggle-weed
+   bind  index "H"         display-toggle-weed
 
-   bind  index,pager c     mail
-   bind  index,pager g     noop
-   macro index gd          "<change-folder>$postponed\n" "Change to drafts folder"
-   macro index gi          "<change-folder>!\n"          "Go to inbox"
+   bind  index,pager "c"   mail
+   bind  index,pager "g"   noop
+   macro index "gd"        "<change\"-folder>$postponed\\n\"" "Change to drafts folder"
+   macro index "gi"        "<change-folder>!\n"          "Go to inbox"
    macro index,pager gc    "<change-folder>"             "Change to manually specified folder"
    macro index,pager gf    "<change-folder>"             "Change to manually specified folder"
-   macro index gl          "<change-folder>?"            "Change to existing folder"
+   macro index "gl"        "<change-folder>?"            "Change to existing folder"
+
+   bind  index "m"         mark-message
 
    macro index,pager I     "<change-folder>!<enter>"   "switch to MAIN inbox"
 
-   macro index B     ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
+   macro index "B"    ":set pipe_decode=yes\n|urlview\n:set pipe_decode=no\n"  "pipe message to urlview"
    # http://www.spocom.com/users/gjohnson/mutt/#w3m
-   macro index "\cB" "|w3m\n"      "call w3m to extract URLs out of a message"
+   macro index "\cB"  "|w3m\n"      "call w3m to extract URLs out of a message"
 
-   macro index "\eD" "<pipe-message>maildir-deduplicate -H | less\n" "debug maildir-deduplicate detection algorithm"
+   macro index "\eD"  "<pipe-message>maildir-deduplicate -H | less\n" "debug maildir-deduplicate detection algorithm"
 
-   macro index X  "Dall\n" "mark all messages as deleted"
+   macro index "X"    "Dall\n" "mark all messages as deleted"
    macro index "\eh"  "/~h " "search by header substring"
 
 # }}}
@@ -76,7 +78,7 @@
 
    bind  pager  h      help
 
-   bind  pager \Ca         create-alias
+   bind  pager \Ca     create-alias
    bind  pager  a      group-reply
 
    bind  pager  <down> next-line
@@ -117,8 +119,8 @@
    bind  pager  r      reply
 #  bind  pager  F      forward-message
    bind  pager  D      delete-message
-   bind  index,pager E edit
-   macro  index,pager e ":echo \"Don't know how to archive here\"\n"
+   bind  index,pager "E" edit
+   macro index,pager "e" ":echo \"Don't know how to archive here\"\n"
 
    bind  pager  .      parent-message
 
