@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# This script tells the kitty terminal to open a new pane to the right (a vertical split)
+# and run the 'awrit' command on the file passed to this script ($1).
+
+# --location=vsplit  : Creates a vertical split. Use 'hsplit' for horizontal.
+# --cwd=current      : (Optional but recommended) Runs the new command in the
+#                      same directory as the current pane.
+kitty @ launch --location=vsplit --cwd=current awrit "$@"
